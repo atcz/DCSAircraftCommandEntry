@@ -1,1 +1,1 @@
-# DCSCommandEditor
+# DCS Aircraft Command Entry
