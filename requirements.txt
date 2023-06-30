@@ -1,5 +1,7 @@
 keyboard==0.13.5
+packaging==23.1
 peewee==3.16.2
 pyperclip==1.8.2
+pyproj==3.6.0
 PySimpleGUI==4.60.5
 Requests==2.31.0
