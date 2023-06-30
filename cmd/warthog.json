@@ -1,0 +1,7185 @@
+{
+	"id": [
+		{
+			"aircraft": "A-10C",
+			"date": "",
+			"version": "0.7.48"
+		}
+	],
+	"commands": [
+		{
+			"IFF": [
+				{
+					"IFF_CODE": [
+						{
+							"category": "IFF",
+							"type": "SetCommandTumb",
+							"msg": "IFF_CODE",
+							"device_id": "43",
+							"command": "3007",
+							"arg_number": "199",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": " nil",
+							"cycle": "FALSE",
+							"description": "IFF Code: ZERO - B - A - (HOLD)"
+						}
+					]
+				}
+			],
+			"ILS Panel": [
+				{
+					"ILS_MHZ": [
+						{
+							"category": "ILS Panel",
+							"type": "SetCommandTumb",
+							"msg": "ILS_MHZ",
+							"device_id": "53",
+							"command": "3002",
+							"arg_number": "248",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "{108, 109, 110, 111}",
+							"cycle": "FALSE",
+							"description": "ILS Frequency MHz"
+						}
+					]
+				},
+				{
+					"ILS_KHZ": [
+						{
+							"category": "ILS Panel",
+							"type": "SetCommandTumb",
+							"msg": "ILS_KHZ",
+							"device_id": "53",
+							"command": "3003",
+							"arg_number": "249",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "{10, 15, 30, 35, 50, 55, 70, 75, 90, 95}",
+							"cycle": "FALSE",
+							"description": "ILS Frequency KHz"
+						}
+					]
+				}
+			],
+			"TACAN Panel": [
+				{
+					"TACAN_10": [
+						{
+							"category": "TACAN Panel",
+							"type": "FixedStepTumb",
+							"msg": "TACAN_10",
+							"device_id": "74",
+							"command": "3001",
+							"arg_number": "256",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": " {-0.1,  0.1}",
+							"cycle": "nil",
+							"description": "Left Channel Selector"
+						}
+					]
+				},
+				{
+					"TACAN_1": [
+						{
+							"category": "TACAN Panel",
+							"type": "FixedStepTumb",
+							"msg": "TACAN_1",
+							"device_id": "74",
+							"command": "3002",
+							"arg_number": "257",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": " {-0.1,  0.1}",
+							"cycle": "nil",
+							"description": "Right Channel Selector"
+						}
+					]
+				}
+			],
+			"AAP": [
+				{
+					"AAP_STEERPT": [
+						{
+							"category": "AAP",
+							"type": "3PosTumb1",
+							"msg": "AAP_STEERPT",
+							"device_id": "22",
+							"command": "3001",
+							"arg_number": "473",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "STEERPT FLTPLAN - MARK - MISSION"
+						}
+					]
+				},
+				{
+					"AAP_PAGE": [
+						{
+							"category": "AAP",
+							"type": "Tumb",
+							"msg": "AAP_PAGE",
+							"device_id": "22",
+							"command": "3004",
+							"arg_number": "475",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "PAGE OTHER - POSITION - STEER - WAYPT"
+						}
+					]
+				},
+				{
+					"AAP_CDUPWR": [
+						{
+							"category": "AAP",
+							"type": "ToggleSwitch",
+							"msg": "AAP_CDUPWR",
+							"device_id": "22",
+							"command": "3005",
+							"arg_number": "476",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Power"
+						}
+					]
+				},
+				{
+					"AAP_EGIPWR": [
+						{
+							"category": "AAP",
+							"type": "ToggleSwitch",
+							"msg": "AAP_EGIPWR",
+							"device_id": "22",
+							"command": "3006",
+							"arg_number": "477",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "EGI Power"
+						}
+					]
+				}
+			],
+			"Accelerometer": [
+				{
+					"ACCEL_PTS": [
+						{
+							"category": "Accelerometer",
+							"type": "PushButton",
+							"msg": "ACCEL_PTS",
+							"device_id": "72",
+							"command": "3001",
+							"arg_number": "904",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Accelerometer Button"
+						}
+					]
+				}
+			],
+			"ADI": [
+				{
+					"ADI_PITCH_TRIM": [
+						{
+							"category": "ADI",
+							"type": "Potentiometer",
+							"msg": "ADI_PITCH_TRIM",
+							"device_id": "47",
+							"command": "3001",
+							"arg_number": "22",
+							"step": "",
+							"limitLow": "-0.5",
+							"limitHigh": "0.5",
+							"output_map": "",
+							"cycle": "",
+							"description": "ADI Pitch Trim"
+						}
+					]
+				}
+			],
+			"AHCP": [
+				{
+					"AHCP_MASTER_ARM": [
+						{
+							"category": "AHCP",
+							"type": "3PosTumb1",
+							"msg": "AHCP_MASTER_ARM",
+							"device_id": "7",
+							"command": "3001",
+							"arg_number": "375",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Master Arm TRAIN - SAFE - ARM"
+						}
+					]
+				},
+				{
+					"AHCP_GUNPAC": [
+						{
+							"category": "AHCP",
+							"type": "3PosTumb1",
+							"msg": "AHCP_GUNPAC",
+							"device_id": "7",
+							"command": "3002",
+							"arg_number": "376",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "GUN/PAC GUNARM - SAFE - ARM"
+						}
+					]
+				},
+				{
+					"AHCP_LASER_ARM": [
+						{
+							"category": "AHCP",
+							"type": "3PosTumb1",
+							"msg": "AHCP_LASER_ARM",
+							"device_id": "7",
+							"command": "3003",
+							"arg_number": "377",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Laser Arm TRAIN - SAFE - ARM"
+						}
+					]
+				},
+				{
+					"AHCP_TGP": [
+						{
+							"category": "AHCP",
+							"type": "ToggleSwitch",
+							"msg": "AHCP_TGP",
+							"device_id": "7",
+							"command": "3004",
+							"arg_number": "378",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TGP OFF - ON"
+						}
+					]
+				},
+				{
+					"AHCP_ALT_SCE": [
+						{
+							"category": "AHCP",
+							"type": "3PosTumb1",
+							"msg": "AHCP_ALT_SCE",
+							"device_id": "7",
+							"command": "3005",
+							"arg_number": "379",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Altimeter Source RADAR - DELTA - BARO"
+						}
+					]
+				},
+				{
+					"AHCP_HUD_DAYNIGHT": [
+						{
+							"category": "AHCP",
+							"type": "ToggleSwitch",
+							"msg": "AHCP_HUD_DAYNIGHT",
+							"device_id": "7",
+							"command": "3006",
+							"arg_number": "380",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Hud Mode NIGHT - DAY"
+						}
+					]
+				},
+				{
+					"AHCP_HUD_MODE": [
+						{
+							"category": "AHCP",
+							"type": "ToggleSwitch",
+							"msg": "AHCP_HUD_MODE",
+							"device_id": "7",
+							"command": "3007",
+							"arg_number": "381",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Hud Mode STBY - NORM"
+						}
+					]
+				},
+				{
+					"AHCP_CICU": [
+						{
+							"category": "AHCP",
+							"type": "ToggleSwitch",
+							"msg": "AHCP_CICU",
+							"device_id": "7",
+							"command": "3008",
+							"arg_number": "382",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CICU OFF - ON"
+						}
+					]
+				},
+				{
+					"AHCP_JTRS": [
+						{
+							"category": "AHCP",
+							"type": "ToggleSwitch",
+							"msg": "AHCP_JTRS",
+							"device_id": "7",
+							"command": "3009",
+							"arg_number": "383",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "JTRS OFF - ON"
+						}
+					]
+				},
+				{
+					"AHCP_IFFCC": [
+						{
+							"category": "AHCP",
+							"type": "3PosTumb1",
+							"msg": "AHCP_IFFCC",
+							"device_id": "7",
+							"command": "3010",
+							"arg_number": "384",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFFCC OFF - TEST - ON"
+						}
+					]
+				}
+			],
+			"Altimeter": [
+				{
+					"ALT_SET_PRESSURE": [
+						{
+							"category": "Altimeter",
+							"type": "Rotary",
+							"msg": "ALT_SET_PRESSURE",
+							"device_id": "35",
+							"command": "3001",
+							"arg_number": "62",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Set Pressure"
+						}
+					]
+				}
+			],
+			"Antenna Panel": [
+				{
+					"ANT_IFF": [
+						{
+							"category": "Antenna Panel",
+							"type": "MultipositionSwitch",
+							"msg": "ANT_IFF",
+							"device_id": "43",
+							"command": "3019",
+							"arg_number": "706",
+							"step": "0.5",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF Antenna Switch"
+						}
+					]
+				},
+				{
+					"ANT_UHF": [
+						{
+							"category": "Antenna Panel",
+							"type": "MultipositionSwitch",
+							"msg": "ANT_UHF",
+							"device_id": "54",
+							"command": "3016",
+							"arg_number": "707",
+							"step": "0.5",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF Antenna Switch"
+						}
+					]
+				},
+				{
+					"ANT_EGIHQTOD": [
+						{
+							"category": "Antenna Panel",
+							"type": "ToggleSwitch",
+							"msg": "ANT_EGIHQTOD",
+							"device_id": "54",
+							"command": "3017",
+							"arg_number": "708",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "EGI HQ TOD Switch"
+						}
+					]
+				}
+			],
+			"ARC-210 Radio": [
+				{
+					"ARC210_25KHZ_SEL": [
+						{
+							"category": "ARC-210 Radio",
+							"type": "Tumb",
+							"msg": "ARC210_25KHZ_SEL",
+							"device_id": "55",
+							"command": "3017",
+							"arg_number": "558",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "ARC-210 25kHz Selector"
+						}
+					]
+				},
+				{
+					"ARC210_100KHZ_SEL": [
+						{
+							"category": "ARC-210 Radio",
+							"type": "Tumb",
+							"msg": "ARC210_100KHZ_SEL",
+							"device_id": "55",
+							"command": "3019",
+							"arg_number": "557",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "ARC-210 100kHz Selector"
+						}
+					]
+				},
+				{
+					"ARC210_1MHZ_SEL": [
+						{
+							"category": "ARC-210 Radio",
+							"type": "Tumb",
+							"msg": "ARC210_1MHZ_SEL",
+							"device_id": "55",
+							"command": "3021",
+							"arg_number": "556",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "ARC-210 1MHz Selector"
+						}
+					]
+				},
+				{
+					"ARC210_10MHZ_SEL": [
+						{
+							"category": "ARC-210 Radio",
+							"type": "Tumb",
+							"msg": "ARC210_10MHZ_SEL",
+							"device_id": "55",
+							"command": "3023",
+							"arg_number": "555",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "ARC-210 10MHz Selector"
+						}
+					]
+				},
+				{
+					"ARC210_100MHZ_SEL": [
+						{
+							"category": "ARC-210 Radio",
+							"type": "Tumb",
+							"msg": "ARC210_100MHZ_SEL",
+							"device_id": "55",
+							"command": "3025",
+							"arg_number": "554",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "ARC-210 100MHz Selector"
+						}
+					]
+				}
+			],
+			"ARC-210": [
+				{
+					"ARC210_TOD_SEND": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_TOD_SEND",
+							"device_id": "55",
+							"command": "3001",
+							"arg_number": "564",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Time of Day Send"
+						}
+					]
+				},
+				{
+					"ARC210_TOD_REC": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_TOD_REC",
+							"device_id": "55",
+							"command": "3002",
+							"arg_number": "565",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Time of Day Receive"
+						}
+					]
+				},
+				{
+					"ARC210_GPS": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_GPS",
+							"device_id": "55",
+							"command": "3003",
+							"arg_number": "566",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 GPS"
+						}
+					]
+				},
+				{
+					"ARC210_TRANS_REC_SEL": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_TRANS_REC_SEL",
+							"device_id": "55",
+							"command": "3004",
+							"arg_number": "567",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Select Receiver - Transmitter"
+						}
+					]
+				},
+				{
+					"ARC210_FSK_UP": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_FSK_UP",
+							"device_id": "55",
+							"command": "3005",
+							"arg_number": "563",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Upper FSK"
+						}
+					]
+				},
+				{
+					"ARC210_FSK_MID": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_FSK_MID",
+							"device_id": "55",
+							"command": "3006",
+							"arg_number": "562",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Middle FSK"
+						}
+					]
+				},
+				{
+					"ARC210_FSK_LOW": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_FSK_LOW",
+							"device_id": "55",
+							"command": "3007",
+							"arg_number": "561",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Lower FSK"
+						}
+					]
+				},
+				{
+					"ARC210_BRIGHT_INC": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_BRIGHT_INC",
+							"device_id": "55",
+							"command": "3008",
+							"arg_number": "560",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Brightness Increase"
+						}
+					]
+				},
+				{
+					"ARC210_BRIGHT_DEC": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_BRIGHT_DEC",
+							"device_id": "55",
+							"command": "3009",
+							"arg_number": "559",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Brightness Decrease"
+						}
+					]
+				},
+				{
+					"ARC210_MENU": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_MENU",
+							"device_id": "55",
+							"command": "3010",
+							"arg_number": "569",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Menu Pages"
+						}
+					]
+				},
+				{
+					"ARC210_AMP_FREQ_MODUL": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_AMP_FREQ_MODUL",
+							"device_id": "55",
+							"command": "3011",
+							"arg_number": "570",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Amplitude / Frequency Modulation Select"
+						}
+					]
+				},
+				{
+					"ARC210_TRANS_REC_FUNC": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_TRANS_REC_FUNC",
+							"device_id": "55",
+							"command": "3012",
+							"arg_number": "571",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Transmit / Receive Function Toggle"
+						}
+					]
+				},
+				{
+					"ARC210_OFF_FREQ": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_OFF_FREQ",
+							"device_id": "55",
+							"command": "3013",
+							"arg_number": "572",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Offset Frequency"
+						}
+					]
+				},
+				{
+					"ARC210_ENTER": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_ENTER",
+							"device_id": "55",
+							"command": "3014",
+							"arg_number": "573",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Enter"
+						}
+					]
+				},
+				{
+					"ARC210_SQUELCH": [
+						{
+							"category": "ARC-210",
+							"type": "PushButton",
+							"msg": "ARC210_SQUELCH",
+							"device_id": "55",
+							"command": "3015",
+							"arg_number": "568",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Squelch ON/OFF"
+						}
+					]
+				},
+				{
+					"ARC210_CHN_KNB": [
+						{
+							"category": "ARC-210",
+							"type": "Rotary",
+							"msg": "ARC210_CHN_KNB",
+							"device_id": "55",
+							"command": "3027",
+							"arg_number": "552",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Channel Selector Knob"
+						}
+					]
+				},
+				{
+					"ARC210_MASTER": [
+						{
+							"category": "ARC-210",
+							"type": "MultipositionSwitch",
+							"msg": "ARC210_MASTER",
+							"device_id": "55",
+							"command": "3043",
+							"arg_number": "551",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "7",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Master Switch"
+						}
+					]
+				},
+				{
+					"ARC210_SEC_SW": [
+						{
+							"category": "ARC-210",
+							"type": "MultipositionSwitch",
+							"msg": "ARC210_SEC_SW",
+							"device_id": "55",
+							"command": "3044",
+							"arg_number": "553",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "7",
+							"output_map": "",
+							"cycle": "",
+							"description": "ARC-210 Secondary Switch"
+						}
+					]
+				}
+			],
+			"Auxiliary Light Control Panel": [
+				{
+					"LAMP_TEST_BTN": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "PushButton",
+							"msg": "LAMP_TEST_BTN",
+							"device_id": "24",
+							"command": "3002",
+							"arg_number": "197",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Signal Lights Test"
+						}
+					]
+				},
+				{
+					"ALCP_FDBA_TEST": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "PushButton",
+							"msg": "ALCP_FDBA_TEST",
+							"device_id": "24",
+							"command": "3004",
+							"arg_number": "198",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fire Detect Bleed Air Test"
+						}
+					]
+				},
+				{
+					"ALCP_HARSSAS": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "ALCP_HARSSAS",
+							"device_id": "38",
+							"command": "3031",
+							"arg_number": "196",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS-SAS Override/Norm"
+						}
+					]
+				},
+				{
+					"ALCP_RSIL": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "Potentiometer",
+							"msg": "ALCP_RSIL",
+							"device_id": "49",
+							"command": "3015",
+							"arg_number": "193",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Refuel Status Indexer Lights"
+						}
+					]
+				},
+				{
+					"ALCP_WPNSTA": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "Potentiometer",
+							"msg": "ALCP_WPNSTA",
+							"device_id": "49",
+							"command": "3016",
+							"arg_number": "195",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Weapon Station Lights (No Function)"
+						}
+					]
+				},
+				{
+					"ALCP_NVIS_LTS": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "3PosTumb1",
+							"msg": "ALCP_NVIS_LTS",
+							"device_id": "49",
+							"command": "3017",
+							"arg_number": "194",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Nightvision Lights"
+						}
+					]
+				},
+				{
+					"ALCP_RCVR_LTS": [
+						{
+							"category": "Auxiliary Light Control Panel",
+							"type": "Potentiometer",
+							"msg": "ALCP_RCVR_LTS",
+							"device_id": "49",
+							"command": "3018",
+							"arg_number": "116",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Refueling Lighting Dial"
+						}
+					]
+				}
+			],
+			"CDU": [
+				{
+					"CDU_LSK_3L": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_3L",
+							"device_id": "9",
+							"command": "3001",
+							"arg_number": "410",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 3L"
+						}
+					]
+				},
+				{
+					"CDU_LSK_5L": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_5L",
+							"device_id": "9",
+							"command": "3002",
+							"arg_number": "411",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 5L"
+						}
+					]
+				},
+				{
+					"CDU_LSK_7L": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_7L",
+							"device_id": "9",
+							"command": "3003",
+							"arg_number": "412",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 7L"
+						}
+					]
+				},
+				{
+					"CDU_LSK_9L": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_9L",
+							"device_id": "9",
+							"command": "3004",
+							"arg_number": "413",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 9L"
+						}
+					]
+				},
+				{
+					"CDU_LSK_3R": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_3R",
+							"device_id": "9",
+							"command": "3005",
+							"arg_number": "414",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 3R"
+						}
+					]
+				},
+				{
+					"CDU_LSK_5R": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_5R",
+							"device_id": "9",
+							"command": "3006",
+							"arg_number": "415",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 5R"
+						}
+					]
+				},
+				{
+					"CDU_LSK_7R": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_7R",
+							"device_id": "9",
+							"command": "3007",
+							"arg_number": "416",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 7R"
+						}
+					]
+				},
+				{
+					"CDU_LSK_9R": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_LSK_9R",
+							"device_id": "9",
+							"command": "3008",
+							"arg_number": "417",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LSK 9R"
+						}
+					]
+				},
+				{
+					"CDU_SYS": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_SYS",
+							"device_id": "9",
+							"command": "3009",
+							"arg_number": "418",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SYS"
+						}
+					]
+				},
+				{
+					"CDU_NAV": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_NAV",
+							"device_id": "9",
+							"command": "3010",
+							"arg_number": "419",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "NAV"
+						}
+					]
+				},
+				{
+					"CDU_WP": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_WP",
+							"device_id": "9",
+							"command": "3011",
+							"arg_number": "420",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "WP"
+						}
+					]
+				},
+				{
+					"CDU_OSET": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_OSET",
+							"device_id": "9",
+							"command": "3012",
+							"arg_number": "421",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSET"
+						}
+					]
+				},
+				{
+					"CDU_FPM": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_FPM",
+							"device_id": "9",
+							"command": "3013",
+							"arg_number": "422",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "FPM"
+						}
+					]
+				},
+				{
+					"CDU_PREV": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_PREV",
+							"device_id": "9",
+							"command": "3014",
+							"arg_number": "423",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "PREV"
+						}
+					]
+				},
+				{
+					"CDU_1": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_1",
+							"device_id": "9",
+							"command": "3015",
+							"arg_number": "425",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 1"
+						}
+					]
+				},
+				{
+					"CDU_2": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_2",
+							"device_id": "9",
+							"command": "3016",
+							"arg_number": "426",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 2"
+						}
+					]
+				},
+				{
+					"CDU_3": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_3",
+							"device_id": "9",
+							"command": "3017",
+							"arg_number": "427",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 3"
+						}
+					]
+				},
+				{
+					"CDU_4": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_4",
+							"device_id": "9",
+							"command": "3018",
+							"arg_number": "428",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 4"
+						}
+					]
+				},
+				{
+					"CDU_5": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_5",
+							"device_id": "9",
+							"command": "3019",
+							"arg_number": "429",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 5"
+						}
+					]
+				},
+				{
+					"CDU_6": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_6",
+							"device_id": "9",
+							"command": "3020",
+							"arg_number": "430",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 6"
+						}
+					]
+				},
+				{
+					"CDU_7": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_7",
+							"device_id": "9",
+							"command": "3021",
+							"arg_number": "431",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 7"
+						}
+					]
+				},
+				{
+					"CDU_8": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_8",
+							"device_id": "9",
+							"command": "3022",
+							"arg_number": "432",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 8"
+						}
+					]
+				},
+				{
+					"CDU_9": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_9",
+							"device_id": "9",
+							"command": "3023",
+							"arg_number": "433",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 9"
+						}
+					]
+				},
+				{
+					"CDU_0": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_0",
+							"device_id": "9",
+							"command": "3024",
+							"arg_number": "434",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Number 0"
+						}
+					]
+				},
+				{
+					"CDU_POINT": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_POINT",
+							"device_id": "9",
+							"command": "3025",
+							"arg_number": "435",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Decimal Point"
+						}
+					]
+				},
+				{
+					"CDU_SLASH": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_SLASH",
+							"device_id": "9",
+							"command": "3026",
+							"arg_number": "436",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Slash"
+						}
+					]
+				},
+				{
+					"CDU_A": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_A",
+							"device_id": "9",
+							"command": "3027",
+							"arg_number": "437",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha A"
+						}
+					]
+				},
+				{
+					"CDU_B": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_B",
+							"device_id": "9",
+							"command": "3028",
+							"arg_number": "438",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha B"
+						}
+					]
+				},
+				{
+					"CDU_C": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_C",
+							"device_id": "9",
+							"command": "3029",
+							"arg_number": "439",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha C"
+						}
+					]
+				},
+				{
+					"CDU_D": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_D",
+							"device_id": "9",
+							"command": "3030",
+							"arg_number": "440",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha D"
+						}
+					]
+				},
+				{
+					"CDU_E": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_E",
+							"device_id": "9",
+							"command": "3031",
+							"arg_number": "441",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha E"
+						}
+					]
+				},
+				{
+					"CDU_F": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_F",
+							"device_id": "9",
+							"command": "3032",
+							"arg_number": "442",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha F"
+						}
+					]
+				},
+				{
+					"CDU_G": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_G",
+							"device_id": "9",
+							"command": "3033",
+							"arg_number": "443",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha G"
+						}
+					]
+				},
+				{
+					"CDU_H": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_H",
+							"device_id": "9",
+							"command": "3034",
+							"arg_number": "444",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha H"
+						}
+					]
+				},
+				{
+					"CDU_I": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_I",
+							"device_id": "9",
+							"command": "3035",
+							"arg_number": "445",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha I"
+						}
+					]
+				},
+				{
+					"CDU_J": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_J",
+							"device_id": "9",
+							"command": "3036",
+							"arg_number": "446",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha J"
+						}
+					]
+				},
+				{
+					"CDU_K": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_K",
+							"device_id": "9",
+							"command": "3037",
+							"arg_number": "447",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha K"
+						}
+					]
+				},
+				{
+					"CDU_L": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_L",
+							"device_id": "9",
+							"command": "3038",
+							"arg_number": "448",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha L"
+						}
+					]
+				},
+				{
+					"CDU_M": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_M",
+							"device_id": "9",
+							"command": "3039",
+							"arg_number": "449",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha M"
+						}
+					]
+				},
+				{
+					"CDU_N": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_N",
+							"device_id": "9",
+							"command": "3040",
+							"arg_number": "450",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha N"
+						}
+					]
+				},
+				{
+					"CDU_O": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_O",
+							"device_id": "9",
+							"command": "3041",
+							"arg_number": "451",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha O"
+						}
+					]
+				},
+				{
+					"CDU_P": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_P",
+							"device_id": "9",
+							"command": "3042",
+							"arg_number": "452",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha P"
+						}
+					]
+				},
+				{
+					"CDU_Q": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_Q",
+							"device_id": "9",
+							"command": "3043",
+							"arg_number": "453",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha Q"
+						}
+					]
+				},
+				{
+					"CDU_R": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_R",
+							"device_id": "9",
+							"command": "3044",
+							"arg_number": "454",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha R"
+						}
+					]
+				},
+				{
+					"CDU_S": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_S",
+							"device_id": "9",
+							"command": "3045",
+							"arg_number": "455",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha S"
+						}
+					]
+				},
+				{
+					"CDU_T": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_T",
+							"device_id": "9",
+							"command": "3046",
+							"arg_number": "456",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha T"
+						}
+					]
+				},
+				{
+					"CDU_U": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_U",
+							"device_id": "9",
+							"command": "3047",
+							"arg_number": "457",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha U"
+						}
+					]
+				},
+				{
+					"CDU_V": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_V",
+							"device_id": "9",
+							"command": "3048",
+							"arg_number": "458",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha V"
+						}
+					]
+				},
+				{
+					"CDU_W": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_W",
+							"device_id": "9",
+							"command": "3049",
+							"arg_number": "459",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha W"
+						}
+					]
+				},
+				{
+					"CDU_X": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_X",
+							"device_id": "9",
+							"command": "3050",
+							"arg_number": "460",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha X"
+						}
+					]
+				},
+				{
+					"CDU_Y": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_Y",
+							"device_id": "9",
+							"command": "3051",
+							"arg_number": "461",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha Y"
+						}
+					]
+				},
+				{
+					"CDU_Z": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_Z",
+							"device_id": "9",
+							"command": "3052",
+							"arg_number": "462",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Alpha Z"
+						}
+					]
+				},
+				{
+					"CDU_NA1": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_NA1",
+							"device_id": "9",
+							"command": "3053",
+							"arg_number": "464",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "No Function 1"
+						}
+					]
+				},
+				{
+					"CDU_NA2": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_NA2",
+							"device_id": "9",
+							"command": "3054",
+							"arg_number": "465",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "No Function 2"
+						}
+					]
+				},
+				{
+					"CDU_MK": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_MK",
+							"device_id": "9",
+							"command": "3055",
+							"arg_number": "466",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MK"
+						}
+					]
+				},
+				{
+					"CDU_BCK": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_BCK",
+							"device_id": "9",
+							"command": "3056",
+							"arg_number": "467",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "BCK"
+						}
+					]
+				},
+				{
+					"CDU_SPC": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_SPC",
+							"device_id": "9",
+							"command": "3057",
+							"arg_number": "468",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SPC"
+						}
+					]
+				},
+				{
+					"CDU_CLR": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_CLR",
+							"device_id": "9",
+							"command": "3058",
+							"arg_number": "470",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CLR"
+						}
+					]
+				},
+				{
+					"CDU_FA": [
+						{
+							"category": "CDU",
+							"type": "PushButton",
+							"msg": "CDU_FA",
+							"device_id": "9",
+							"command": "3059",
+							"arg_number": "471",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "FA"
+						}
+					]
+				}
+			],
+			"CMSC": [
+				{
+					"CMSC_JMR": [
+						{
+							"category": "CMSC",
+							"type": "PushButton",
+							"msg": "CMSC_JMR",
+							"device_id": "5",
+							"command": "3001",
+							"arg_number": "365",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Select Jammer Program"
+						}
+					]
+				},
+				{
+					"CMSC_MWS": [
+						{
+							"category": "CMSC",
+							"type": "PushButton",
+							"msg": "CMSC_MWS",
+							"device_id": "5",
+							"command": "3002",
+							"arg_number": "366",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Select MWS Programs (No Function)"
+						}
+					]
+				},
+				{
+					"CMSC_PRI": [
+						{
+							"category": "CMSC",
+							"type": "PushButton",
+							"msg": "CMSC_PRI",
+							"device_id": "5",
+							"command": "3003",
+							"arg_number": "369",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Toggle between 5 and 16 Priority Threats Displayed"
+						}
+					]
+				},
+				{
+					"CMSC_SEP": [
+						{
+							"category": "CMSC",
+							"type": "PushButton",
+							"msg": "CMSC_SEP",
+							"device_id": "5",
+							"command": "3004",
+							"arg_number": "370",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Separate RWR Symbols"
+						}
+					]
+				},
+				{
+					"CMSC_UNK": [
+						{
+							"category": "CMSC",
+							"type": "PushButton",
+							"msg": "CMSC_UNK",
+							"device_id": "5",
+							"command": "3005",
+							"arg_number": "371",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Display Unknown Threats"
+						}
+					]
+				},
+				{
+					"CMSC_BRT": [
+						{
+							"category": "CMSC",
+							"type": "Potentiometer",
+							"msg": "CMSC_BRT",
+							"device_id": "5",
+							"command": "3006",
+							"arg_number": "367",
+							"step": "",
+							"limitLow": "0.15",
+							"limitHigh": "0.85",
+							"output_map": "",
+							"cycle": "",
+							"description": "Adjust Display Brightness"
+						}
+					]
+				},
+				{
+					"CMSC_RWR_VOL": [
+						{
+							"category": "CMSC",
+							"type": "Potentiometer",
+							"msg": "CMSC_RWR_VOL",
+							"device_id": "5",
+							"command": "3007",
+							"arg_number": "368",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "nil",
+							"cycle": "",
+							"description": "Adjust RWR Volume"
+						}
+					]
+				}
+			],
+			"CMSP": [
+				{
+					"CMSP_ARW1": [
+						{
+							"category": "CMSP",
+							"type": "PushButton",
+							"msg": "CMSP_ARW1",
+							"device_id": "4",
+							"command": "3001",
+							"arg_number": "352",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SET Button 1"
+						}
+					]
+				},
+				{
+					"CMSP_ARW2": [
+						{
+							"category": "CMSP",
+							"type": "PushButton",
+							"msg": "CMSP_ARW2",
+							"device_id": "4",
+							"command": "3002",
+							"arg_number": "353",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SET Button 2"
+						}
+					]
+				},
+				{
+					"CMSP_ARW3": [
+						{
+							"category": "CMSP",
+							"type": "PushButton",
+							"msg": "CMSP_ARW3",
+							"device_id": "4",
+							"command": "3003",
+							"arg_number": "354",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SET Button 3"
+						}
+					]
+				},
+				{
+					"CMSP_ARW4": [
+						{
+							"category": "CMSP",
+							"type": "PushButton",
+							"msg": "CMSP_ARW4",
+							"device_id": "4",
+							"command": "3004",
+							"arg_number": "355",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SET Button 4"
+						}
+					]
+				},
+				{
+					"CMSP_RTN": [
+						{
+							"category": "CMSP",
+							"type": "PushButton",
+							"msg": "CMSP_RTN",
+							"device_id": "4",
+							"command": "3007",
+							"arg_number": "357",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "RTN"
+						}
+					]
+				},
+				{
+					"CMSP_JTSN": [
+						{
+							"category": "CMSP",
+							"type": "ToggleSwitch",
+							"msg": "CMSP_JTSN",
+							"device_id": "4",
+							"command": "3008",
+							"arg_number": "358",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "JTSN / OFF"
+						}
+					]
+				},
+				{
+					"CMSP_BRT": [
+						{
+							"category": "CMSP",
+							"type": "Potentiometer",
+							"msg": "CMSP_BRT",
+							"device_id": "4",
+							"command": "3009",
+							"arg_number": "359",
+							"step": "",
+							"limitLow": "0.15",
+							"limitHigh": "0.85",
+							"output_map": "",
+							"cycle": "",
+							"description": "Brightness"
+						}
+					]
+				},
+				{
+					"CMSP_MODE": [
+						{
+							"category": "CMSP",
+							"type": "Tumb",
+							"msg": "CMSP_MODE",
+							"device_id": "4",
+							"command": "3018",
+							"arg_number": "364",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "CMSP Mode Select"
+						}
+					]
+				}
+			],
+			"Digital Clock": [
+				{
+					"CLOCK_SET": [
+						{
+							"category": "Digital Clock",
+							"type": "PushButton",
+							"msg": "CLOCK_SET",
+							"device_id": "15",
+							"command": "3001",
+							"arg_number": "68",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Clock SET"
+						}
+					]
+				},
+				{
+					"CLOCK_CTRL": [
+						{
+							"category": "Digital Clock",
+							"type": "PushButton",
+							"msg": "CLOCK_CTRL",
+							"device_id": "15",
+							"command": "3002",
+							"arg_number": "69",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Clock CTRL"
+						}
+					]
+				}
+			],
+			"DVADR": [
+				{
+					"DVADR_FUNCTION": [
+						{
+							"category": "DVADR",
+							"type": "MultipositionSwitch",
+							"msg": "DVADR_FUNCTION",
+							"device_id": "73",
+							"command": "3001",
+							"arg_number": "789",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "Function Control Toggle Switch"
+						}
+					]
+				},
+				{
+					"DVADR_VIDEO": [
+						{
+							"category": "DVADR",
+							"type": "MultipositionSwitch",
+							"msg": "DVADR_VIDEO",
+							"device_id": "73",
+							"command": "3002",
+							"arg_number": "790",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "Video Selector Toggle Switch"
+						}
+					]
+				}
+			],
+			"Electrical Power Panel": [
+				{
+					"EPP_APU_GEN_PWR": [
+						{
+							"category": "Electrical Power Panel",
+							"type": "ToggleSwitch",
+							"msg": "EPP_APU_GEN_PWR",
+							"device_id": "1",
+							"command": "3001",
+							"arg_number": "241",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "APU GEN PWR"
+						}
+					]
+				},
+				{
+					"EPP_AC_GEN_PWR_L": [
+						{
+							"category": "Electrical Power Panel",
+							"type": "ToggleSwitch",
+							"msg": "EPP_AC_GEN_PWR_L",
+							"device_id": "1",
+							"command": "3004",
+							"arg_number": "244",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "AC GEN PWR Left"
+						}
+					]
+				},
+				{
+					"EPP_AC_GEN_PWR_R": [
+						{
+							"category": "Electrical Power Panel",
+							"type": "ToggleSwitch",
+							"msg": "EPP_AC_GEN_PWR_R",
+							"device_id": "1",
+							"command": "3005",
+							"arg_number": "245",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "AC GEN PWR Right"
+						}
+					]
+				},
+				{
+					"EPP_BATTERY_PWR": [
+						{
+							"category": "Electrical Power Panel",
+							"type": "ToggleSwitch",
+							"msg": "EPP_BATTERY_PWR",
+							"device_id": "1",
+							"command": "3006",
+							"arg_number": "246",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Battery Power"
+						}
+					]
+				},
+				{
+					"EPP_EMER_FLOOD": [
+						{
+							"category": "Electrical Power Panel",
+							"type": "ToggleSwitch",
+							"msg": "EPP_EMER_FLOOD",
+							"device_id": "49",
+							"command": "3007",
+							"arg_number": "243",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Emergency Flood Light"
+						}
+					]
+				}
+			],
+			"Emergency Flight Control Panel": [
+				{
+					"EFCP_SPDBK_EMER_RETR": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "EFCP_SPDBK_EMER_RETR",
+							"device_id": "38",
+							"command": "3015",
+							"arg_number": "174",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Speed Brake Emergency Retract"
+						}
+					]
+				},
+				{
+					"EFCP_TRIM_OVERRIDE": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "EFCP_TRIM_OVERRIDE",
+							"device_id": "38",
+							"command": "3016",
+							"arg_number": "175",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Pitch/Roll Trim Override EMER - NORM"
+						}
+					]
+				},
+				{
+					"EFCP_AILERON_EMER_DISENGAGE": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "3PosTumb",
+							"msg": "EFCP_AILERON_EMER_DISENGAGE",
+							"device_id": "38",
+							"command": "3021",
+							"arg_number": "177",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Aileron Emergency Disengage LEFT - OFF - RIGHT"
+						}
+					]
+				},
+				{
+					"EFCP_ELEVATOR_EMER_DISENGAGE": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "3PosTumb",
+							"msg": "EFCP_ELEVATOR_EMER_DISENGAGE",
+							"device_id": "38",
+							"command": "3022",
+							"arg_number": "180",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Elevator Emergency Disengage LEFT - OFF - RIGHT"
+						}
+					]
+				},
+				{
+					"EFCP_FLAPS_EMER_RETR": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "EFCP_FLAPS_EMER_RETR",
+							"device_id": "38",
+							"command": "3023",
+							"arg_number": "183",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Flaps Emergency Retract"
+						}
+					]
+				},
+				{
+					"EFCP_MRFCS": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "EFCP_MRFCS",
+							"device_id": "38",
+							"command": "3024",
+							"arg_number": "184",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Manual Reversion Flight Control System MAN REVERSION - NORM"
+						}
+					]
+				},
+				{
+					"EFCP_EMER_TRIM": [
+						{
+							"category": "Emergency Flight Control Panel",
+							"type": "Tumb",
+							"msg": "EFCP_EMER_TRIM",
+							"device_id": "38",
+							"command": "3025",
+							"arg_number": "176",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "Emergency Trim CENTER - NOSE DN - RWD - NOSE UP - LWD"
+						}
+					]
+				}
+			],
+			"Environment Control Panel": [
+				{
+					"ENVCP_OXY_TEST": [
+						{
+							"category": "Environment Control Panel",
+							"type": "PushButton",
+							"msg": "ENVCP_OXY_TEST",
+							"device_id": "41",
+							"command": "3001",
+							"arg_number": "275",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Oxygen Indicator Test"
+						}
+					]
+				},
+				{
+					"ENVCP_WINDSHIELD_DEFOG": [
+						{
+							"category": "Environment Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "ENVCP_WINDSHIELD_DEFOG",
+							"device_id": "41",
+							"command": "3002",
+							"arg_number": "276",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Windshield Defog/Deice"
+						}
+					]
+				},
+				{
+					"ENVCP_CANOPY_DEFOG": [
+						{
+							"category": "Environment Control Panel",
+							"type": "Potentiometer",
+							"msg": "ENVCP_CANOPY_DEFOG",
+							"device_id": "41",
+							"command": "3003",
+							"arg_number": "277",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Canopy Defog"
+						}
+					]
+				},
+				{
+					"ENVCP_WRRW": [
+						{
+							"category": "Environment Control Panel",
+							"type": "3PosTumb",
+							"msg": "ENVCP_WRRW",
+							"device_id": "41",
+							"command": "3004",
+							"arg_number": "278",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Windshield Rain Removal/Wash"
+						}
+					]
+				},
+				{
+					"ENVCP_PITOT_HEAT": [
+						{
+							"category": "Environment Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "ENVCP_PITOT_HEAT",
+							"device_id": "41",
+							"command": "3005",
+							"arg_number": "279",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Pitot Heat"
+						}
+					]
+				},
+				{
+					"ENVCP_BLEED_AIR": [
+						{
+							"category": "Environment Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "ENVCP_BLEED_AIR",
+							"device_id": "41",
+							"command": "3006",
+							"arg_number": "280",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Bleed Air"
+						}
+					]
+				},
+				{
+					"ENVCP_TEMP_PRESS": [
+						{
+							"category": "Environment Control Panel",
+							"type": "3PosTumb",
+							"msg": "ENVCP_TEMP_PRESS",
+							"device_id": "41",
+							"command": "3007",
+							"arg_number": "282",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Temperature/Pressure Control"
+						}
+					]
+				},
+				{
+					"ENVCP_AIR_SUPPLY": [
+						{
+							"category": "Environment Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "ENVCP_AIR_SUPPLY",
+							"device_id": "41",
+							"command": "3008",
+							"arg_number": "283",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Main Air Supply"
+						}
+					]
+				},
+				{
+					"ENVCP_FLOW_LEVEL": [
+						{
+							"category": "Environment Control Panel",
+							"type": "Potentiometer",
+							"msg": "ENVCP_FLOW_LEVEL",
+							"device_id": "41",
+							"command": "3009",
+							"arg_number": "284",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Flow Level"
+						}
+					]
+				},
+				{
+					"ENVCP_AC_OPER": [
+						{
+							"category": "Environment Control Panel",
+							"type": "Tumb",
+							"msg": "ENVCP_AC_OPER",
+							"device_id": "41",
+							"command": "3010",
+							"arg_number": "285",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "Air Conditioner MAN/AUTO/COLD/HOT"
+						}
+					]
+				},
+				{
+					"ENVCP_TEMP_LEVEL": [
+						{
+							"category": "Environment Control Panel",
+							"type": "Potentiometer",
+							"msg": "ENVCP_TEMP_LEVEL",
+							"device_id": "41",
+							"command": "3013",
+							"arg_number": "286",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Temp Level Control"
+						}
+					]
+				}
+			],
+			"Fuel Panel": [
+				{
+					"FQIS_SELECT": [
+						{
+							"category": "Fuel Panel",
+							"type": "Tumb",
+							"msg": "FQIS_SELECT",
+							"device_id": "36",
+							"command": "3017",
+							"arg_number": "645",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "Fuel Display Selector"
+						}
+					]
+				},
+				{
+					"FQIS_TEST": [
+						{
+							"category": "Fuel Panel",
+							"type": "PushButton",
+							"msg": "FQIS_TEST",
+							"device_id": "36",
+							"command": "3018",
+							"arg_number": "646",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fuel Gauge Test"
+						}
+					]
+				}
+			],
+			"Fuel System Control Panel": [
+				{
+					"FSCP_EXT_TANKS_WING": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_EXT_TANKS_WING",
+							"device_id": "36",
+							"command": "3001",
+							"arg_number": "106",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "External Wing Tanks Boost Pumps"
+						}
+					]
+				},
+				{
+					"FSCP_EXT_TANKS_FUS": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_EXT_TANKS_FUS",
+							"device_id": "36",
+							"command": "3002",
+							"arg_number": "107",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "External Fuselage Tanks Boost Pumps"
+						}
+					]
+				},
+				{
+					"FSCP_TK_GATE": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_TK_GATE",
+							"device_id": "36",
+							"command": "3003",
+							"arg_number": "108",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Tank Gate"
+						}
+					]
+				},
+				{
+					"FSCP_CROSSFEED": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_CROSSFEED",
+							"device_id": "36",
+							"command": "3004",
+							"arg_number": "109",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Crossfeed"
+						}
+					]
+				},
+				{
+					"FSCP_BOOST_WING_L": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_BOOST_WING_L",
+							"device_id": "36",
+							"command": "3005",
+							"arg_number": "110",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Boost Pumps Left Wing"
+						}
+					]
+				},
+				{
+					"FSCP_BOOST_WING_R": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_BOOST_WING_R",
+							"device_id": "36",
+							"command": "3006",
+							"arg_number": "111",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Boost Pumps Right Wing"
+						}
+					]
+				},
+				{
+					"FSCP_BOOST_MAIN_L": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_BOOST_MAIN_L",
+							"device_id": "36",
+							"command": "3007",
+							"arg_number": "112",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Boost Pumps Main Fuselage Left"
+						}
+					]
+				},
+				{
+					"FSCP_BOOST_MAIN_R": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_BOOST_MAIN_R",
+							"device_id": "36",
+							"command": "3008",
+							"arg_number": "113",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Boost Pumps Main Fuselage Right"
+						}
+					]
+				},
+				{
+					"FSCP_AMPL": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_AMPL",
+							"device_id": "36",
+							"command": "3009",
+							"arg_number": "114",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Signal Amplifier NORM - OVERRIDE"
+						}
+					]
+				},
+				{
+					"FSCP_LINE_CHECK": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "PushButton",
+							"msg": "FSCP_LINE_CHECK",
+							"device_id": "36",
+							"command": "3010",
+							"arg_number": "115",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Line Check"
+						}
+					]
+				},
+				{
+					"FSCP_FD_WING_L": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "PushButton",
+							"msg": "FSCP_FD_WING_L",
+							"device_id": "36",
+							"command": "3012",
+							"arg_number": "117",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fill Disable Wing Left"
+						}
+					]
+				},
+				{
+					"FSCP_FD_WING_R": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "PushButton",
+							"msg": "FSCP_FD_WING_R",
+							"device_id": "36",
+							"command": "3013",
+							"arg_number": "118",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fill Disable Wing Right"
+						}
+					]
+				},
+				{
+					"FSCP_FD_MAIN_L": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "PushButton",
+							"msg": "FSCP_FD_MAIN_L",
+							"device_id": "36",
+							"command": "3014",
+							"arg_number": "119",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fill Disable Main Left"
+						}
+					]
+				},
+				{
+					"FSCP_FD_MAIN_R": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "PushButton",
+							"msg": "FSCP_FD_MAIN_R",
+							"device_id": "36",
+							"command": "3015",
+							"arg_number": "120",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fill Disable Main Right"
+						}
+					]
+				},
+				{
+					"FSCP_RCVR_LEVER": [
+						{
+							"category": "Fuel System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "FSCP_RCVR_LEVER",
+							"device_id": "36",
+							"command": "3016",
+							"arg_number": "121",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Aerial Refueling Slipway Control Lever"
+						}
+					]
+				}
+			],
+			"Glare Shield": [
+				{
+					"EXT_STORES_JETTISON": [
+						{
+							"category": "Glare Shield",
+							"type": "PushButton",
+							"msg": "EXT_STORES_JETTISON",
+							"device_id": "12",
+							"command": "3001",
+							"arg_number": "101",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "External Stores Jettison Button"
+						}
+					]
+				},
+				{
+					"FIRE_LENG_PULL": [
+						{
+							"category": "Glare Shield",
+							"type": "ToggleSwitch",
+							"msg": "FIRE_LENG_PULL",
+							"device_id": "50",
+							"command": "3001",
+							"arg_number": "102",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Left Engine Fire T-Handle"
+						}
+					]
+				},
+				{
+					"FIRE_APU_PULL": [
+						{
+							"category": "Glare Shield",
+							"type": "ToggleSwitch",
+							"msg": "FIRE_APU_PULL",
+							"device_id": "50",
+							"command": "3002",
+							"arg_number": "103",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "APU Fire T-Handle"
+						}
+					]
+				},
+				{
+					"FIRE_RENG_PULL": [
+						{
+							"category": "Glare Shield",
+							"type": "ToggleSwitch",
+							"msg": "FIRE_RENG_PULL",
+							"device_id": "50",
+							"command": "3003",
+							"arg_number": "104",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Right Engine Fire T-Handle"
+						}
+					]
+				},
+				{
+					"FIRE_EXT_DISCH": [
+						{
+							"category": "Glare Shield",
+							"type": "3PosTumb",
+							"msg": "FIRE_EXT_DISCH",
+							"device_id": "50",
+							"command": "3004",
+							"arg_number": "105",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fire Extinguisher Discharge Left/Off/Right"
+						}
+					]
+				}
+			],
+			"HARS": [
+				{
+					"HARS_FAST_ERECT": [
+						{
+							"category": "HARS",
+							"type": "PushButton",
+							"msg": "HARS_FAST_ERECT",
+							"device_id": "44",
+							"command": "3001",
+							"arg_number": "711",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS Fast Erect Button"
+						}
+					]
+				},
+				{
+					"HARS_SLAVE_DG": [
+						{
+							"category": "HARS",
+							"type": "ToggleSwitch",
+							"msg": "HARS_SLAVE_DG",
+							"device_id": "44",
+							"command": "3002",
+							"arg_number": "270",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS SLAVE-DG Mode"
+						}
+					]
+				},
+				{
+					"HARS_NS": [
+						{
+							"category": "HARS",
+							"type": "ToggleSwitch",
+							"msg": "HARS_NS",
+							"device_id": "44",
+							"command": "3003",
+							"arg_number": "273",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS N/S toggle switch"
+						}
+					]
+				},
+				{
+					"HARS_MAGVAR": [
+						{
+							"category": "HARS",
+							"type": "3PosTumb",
+							"msg": "HARS_MAGVAR",
+							"device_id": "44",
+							"command": "3004",
+							"arg_number": "272",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS MAG VAR"
+						}
+					]
+				},
+				{
+					"HARS_LATITUDE": [
+						{
+							"category": "HARS",
+							"type": "Potentiometer",
+							"msg": "HARS_LATITUDE",
+							"device_id": "44",
+							"command": "3005",
+							"arg_number": "271",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS Latitude Dial"
+						}
+					]
+				},
+				{
+					"HARS_PTS": [
+						{
+							"category": "HARS",
+							"type": "PushButton",
+							"msg": "HARS_PTS",
+							"device_id": "44",
+							"command": "3006",
+							"arg_number": "267",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS Push-to-Sync"
+						}
+					]
+				},
+				{
+					"HARS_HDG": [
+						{
+							"category": "HARS",
+							"type": "Potentiometer",
+							"msg": "HARS_HDG",
+							"device_id": "44",
+							"command": "3007",
+							"arg_number": "268",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS Heading"
+						}
+					]
+				}
+			],
+			"HMCS Panel": [
+				{
+					"A102_HMCS_PW": [
+						{
+							"category": "HMCS Panel",
+							"type": "3PosTumb",
+							"msg": "A102_HMCS_PW",
+							"device_id": "75",
+							"command": "3001",
+							"arg_number": "550",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Scorpion HMCS Power BAT/OFF/ON (A-10C II)"
+						}
+					]
+				}
+			],
+			"HSI": [
+				{
+					"HSI_HDG_KNOB": [
+						{
+							"category": "HSI",
+							"type": "VariableStepTumb",
+							"msg": "HSI_HDG_KNOB",
+							"device_id": "45",
+							"command": "3001",
+							"arg_number": "45",
+							"step": "1",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Heading Select Knob"
+						}
+					]
+				},
+				{
+					"HSI_CRS_KNOB": [
+						{
+							"category": "HSI",
+							"type": "VariableStepTumb",
+							"msg": "HSI_CRS_KNOB",
+							"device_id": "45",
+							"command": "3002",
+							"arg_number": "44",
+							"step": "1",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Course Select Knob"
+						}
+					]
+				}
+			],
+			"IFF": [
+				{
+					"IFF_MODE1_WHEEL1": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MODE1_WHEEL1",
+							"device_id": "43",
+							"command": "3001",
+							"arg_number": "209",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.7",
+							"output_map": "nil",
+							"cycle": " true",
+							"description": "Mode-1 Wheel 1"
+						}
+					]
+				},
+				{
+					"IFF_MODE1_WHEEL2": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MODE1_WHEEL2",
+							"device_id": "43",
+							"command": "3002",
+							"arg_number": "210",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": " true",
+							"description": "Mode-1 Wheel 2"
+						}
+					]
+				},
+				{
+					"IFF_MODE3A_WHEEL1": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MODE3A_WHEEL1",
+							"device_id": "43",
+							"command": "3003",
+							"arg_number": "211",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.7",
+							"output_map": "nil",
+							"cycle": " true",
+							"description": "Mode-3A Wheel 1"
+						}
+					]
+				},
+				{
+					"IFF_MODE3A_WHEEL2": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MODE3A_WHEEL2",
+							"device_id": "43",
+							"command": "3004",
+							"arg_number": "212",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.7",
+							"output_map": "nil",
+							"cycle": " true",
+							"description": "Mode-3A Wheel 2"
+						}
+					]
+				},
+				{
+					"IFF_MODE3A_WHEEL3": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MODE3A_WHEEL3",
+							"device_id": "43",
+							"command": "3005",
+							"arg_number": "213",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.7",
+							"output_map": "nil",
+							"cycle": " true",
+							"description": "Mode-3A Wheel 3"
+						}
+					]
+				},
+				{
+					"IFF_MODE3A_WHEEL4": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MODE3A_WHEEL4",
+							"device_id": "43",
+							"command": "3006",
+							"arg_number": "214",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.7",
+							"output_map": "nil",
+							"cycle": " true",
+							"description": "Mode-3A Wheel 4"
+						}
+					]
+				},
+				{
+					"IFF_MASTER": [
+						{
+							"category": "IFF",
+							"type": "Tumb",
+							"msg": "IFF_MASTER",
+							"device_id": "43",
+							"command": "3008",
+							"arg_number": "200",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "IFF Master: OFF - STBY - LOW - NORM - EMER"
+						}
+					]
+				},
+				{
+					"IFF_OUT_AUDIO_LIGHT": [
+						{
+							"category": "IFF",
+							"type": "3PosTumb",
+							"msg": "IFF_OUT_AUDIO_LIGHT",
+							"device_id": "43",
+							"command": "3009",
+							"arg_number": "201",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF Out: LIGHT - OFF - AUDIO"
+						}
+					]
+				},
+				{
+					"IFF_ON_OUT": [
+						{
+							"category": "IFF",
+							"type": "ToggleSwitch",
+							"msg": "IFF_ON_OUT",
+							"device_id": "43",
+							"command": "3016",
+							"arg_number": "208",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF On/Out"
+						}
+					]
+				},
+				{
+					"IFF_REPLY_TEST": [
+						{
+							"category": "IFF",
+							"type": "PushButton",
+							"msg": "IFF_REPLY_TEST",
+							"device_id": "43",
+							"command": "3017",
+							"arg_number": "795",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "REPLY Push to Test"
+						}
+					]
+				},
+				{
+					"IFF_TEST_TEST": [
+						{
+							"category": "IFF",
+							"type": "PushButton",
+							"msg": "IFF_TEST_TEST",
+							"device_id": "43",
+							"command": "3018",
+							"arg_number": "796",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TEST Push to Test"
+						}
+					]
+				},
+				{
+					"IFF_REPLY_DIM": [
+						{
+							"category": "IFF",
+							"type": "Potentiometer",
+							"msg": "IFF_REPLY_DIM",
+							"device_id": "43",
+							"command": "3020",
+							"arg_number": "900",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF Reply Dim"
+						}
+					]
+				},
+				{
+					"IFF_TEST_DIM": [
+						{
+							"category": "IFF",
+							"type": "Potentiometer",
+							"msg": "IFF_TEST_DIM",
+							"device_id": "43",
+							"command": "3021",
+							"arg_number": "901",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "TEST Reply Dim"
+						}
+					]
+				}
+			],
+			"ILS Panel": [
+				{
+					"ILS_PWR": [
+						{
+							"category": "ILS Panel",
+							"type": "ToggleSwitch",
+							"msg": "ILS_PWR",
+							"device_id": "53",
+							"command": "3001",
+							"arg_number": "247",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ILS Power"
+						}
+					]
+				},
+				{
+					"ILS_VOL": [
+						{
+							"category": "ILS Panel",
+							"type": "Potentiometer",
+							"msg": "ILS_VOL",
+							"device_id": "53",
+							"command": "3004",
+							"arg_number": "250",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "ILS Volume"
+						}
+					]
+				}
+			],
+			"Intercom Panel": [
+				{
+					"INT_INT_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_INT_UNMUTE",
+							"device_id": "58",
+							"command": "3001",
+							"arg_number": "222",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "INT Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_INT_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_INT_VOL",
+							"device_id": "58",
+							"command": "3002",
+							"arg_number": "221",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "INT Volume"
+						}
+					]
+				},
+				{
+					"INT_FM_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_FM_UNMUTE",
+							"device_id": "58",
+							"command": "3003",
+							"arg_number": "224",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "FM Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_FM_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_FM_VOL",
+							"device_id": "58",
+							"command": "3004",
+							"arg_number": "223",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "FM Volume"
+						}
+					]
+				},
+				{
+					"INT_VHF_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_VHF_UNMUTE",
+							"device_id": "58",
+							"command": "3005",
+							"arg_number": "226",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "VHF Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_VHF_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_VHF_VOL",
+							"device_id": "58",
+							"command": "3006",
+							"arg_number": "225",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "VHF Volume"
+						}
+					]
+				},
+				{
+					"INT_UHF_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_UHF_UNMUTE",
+							"device_id": "58",
+							"command": "3007",
+							"arg_number": "228",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "UHF Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_UHF_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_UHF_VOL",
+							"device_id": "58",
+							"command": "3008",
+							"arg_number": "227",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF Volume"
+						}
+					]
+				},
+				{
+					"INT_AIM_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_AIM_UNMUTE",
+							"device_id": "58",
+							"command": "3009",
+							"arg_number": "230",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "AIM Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_AIM_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_AIM_VOL",
+							"device_id": "58",
+							"command": "3010",
+							"arg_number": "229",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "AIM Volume"
+						}
+					]
+				},
+				{
+					"INT_IFF_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_IFF_UNMUTE",
+							"device_id": "58",
+							"command": "3011",
+							"arg_number": "232",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "IFF Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_IFF_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_IFF_VOL",
+							"device_id": "58",
+							"command": "3012",
+							"arg_number": "231",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF Volume"
+						}
+					]
+				},
+				{
+					"INT_ILS_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_ILS_UNMUTE",
+							"device_id": "58",
+							"command": "3013",
+							"arg_number": "234",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "ILS Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_ILS_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_ILS_VOL",
+							"device_id": "58",
+							"command": "3014",
+							"arg_number": "233",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "ILS Volume"
+						}
+					]
+				},
+				{
+					"INT_TCN_UNMUTE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_TCN_UNMUTE",
+							"device_id": "58",
+							"command": "3015",
+							"arg_number": "236",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "TCN Un-Mute"
+						}
+					]
+				},
+				{
+					"INT_TCN_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_TCN_VOL",
+							"device_id": "58",
+							"command": "3016",
+							"arg_number": "235",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "TCN Volume"
+						}
+					]
+				},
+				{
+					"INT_HM": [
+						{
+							"category": "Intercom Panel",
+							"type": "ToggleSwitch",
+							"msg": "INT_HM",
+							"device_id": "58",
+							"command": "3017",
+							"arg_number": "237",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HM Switch"
+						}
+					]
+				},
+				{
+					"INT_VOL": [
+						{
+							"category": "Intercom Panel",
+							"type": "Potentiometer",
+							"msg": "INT_VOL",
+							"device_id": "58",
+							"command": "3018",
+							"arg_number": "238",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Intercom Volume"
+						}
+					]
+				},
+				{
+					"INT_MODE": [
+						{
+							"category": "Intercom Panel",
+							"type": "Tumb",
+							"msg": "INT_MODE",
+							"device_id": "58",
+							"command": "3019",
+							"arg_number": "239",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "Intercom Selector Switch INT/FM/VHF/HF/Blank"
+						}
+					]
+				},
+				{
+					"INT_CALL": [
+						{
+							"category": "Intercom Panel",
+							"type": "PushButton",
+							"msg": "INT_CALL",
+							"device_id": "58",
+							"command": "3020",
+							"arg_number": "240",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Call Button"
+						}
+					]
+				}
+			],
+			"Landing Gear and Flap Control Panel": [
+				{
+					"GEAR_HORN_SILENCE": [
+						{
+							"category": "Landing Gear and Flap Control Panel",
+							"type": "PushButton",
+							"msg": "GEAR_HORN_SILENCE",
+							"device_id": "24",
+							"command": "3003",
+							"arg_number": "127",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Landing Gear Horn Silence"
+						}
+					]
+				},
+				{
+					"ENGINE_TEMS_DATA": [
+						{
+							"category": "Landing Gear and Flap Control Panel",
+							"type": "PushButton",
+							"msg": "ENGINE_TEMS_DATA",
+							"device_id": "37",
+							"command": "3009",
+							"arg_number": "652",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TEMS Data"
+						}
+					]
+				},
+				{
+					"GEAR_LEVER": [
+						{
+							"category": "Landing Gear and Flap Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "GEAR_LEVER",
+							"device_id": "39",
+							"command": "3001",
+							"arg_number": "716",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Gear Lever DOWN - UP"
+						}
+					]
+				},
+				{
+					"DOWNLOCK_OVERRIDE": [
+						{
+							"category": "Landing Gear and Flap Control Panel",
+							"type": "PushButton",
+							"msg": "DOWNLOCK_OVERRIDE",
+							"device_id": "39",
+							"command": "3003",
+							"arg_number": "651",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Downlock Override Button"
+						}
+					]
+				},
+				{
+					"LANDING_LIGHTS": [
+						{
+							"category": "Landing Gear and Flap Control Panel",
+							"type": "3PosTumb1",
+							"msg": "LANDING_LIGHTS",
+							"device_id": "49",
+							"command": "3014",
+							"arg_number": "655",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Landing Lights TAXI/OFF/LAND"
+						}
+					]
+				}
+			],
+			"LASTE Panel": [
+				{
+					"LASTE_AP_MODE": [
+						{
+							"category": "LASTE Panel",
+							"type": "3PosTumb",
+							"msg": "LASTE_AP_MODE",
+							"device_id": "38",
+							"command": "3001",
+							"arg_number": "132",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "AP MODE"
+						}
+					]
+				},
+				{
+					"LASTE_AP_TOGGLE": [
+						{
+							"category": "LASTE Panel",
+							"type": "PushButton",
+							"msg": "LASTE_AP_TOGGLE",
+							"device_id": "38",
+							"command": "3002",
+							"arg_number": "131",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Autopilot Engage/Disengage"
+						}
+					]
+				},
+				{
+					"LASTE_RDR_ALTM": [
+						{
+							"category": "LASTE Panel",
+							"type": "ToggleSwitch",
+							"msg": "LASTE_RDR_ALTM",
+							"device_id": "67",
+							"command": "3001",
+							"arg_number": "130",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Radar Altimeter"
+						}
+					]
+				}
+			],
+			"Left MFCD": [
+				{
+					"LMFD_01": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_01",
+							"device_id": "2",
+							"command": "3001",
+							"arg_number": "300",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 1"
+						}
+					]
+				},
+				{
+					"LMFD_02": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_02",
+							"device_id": "2",
+							"command": "3002",
+							"arg_number": "301",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 2"
+						}
+					]
+				},
+				{
+					"LMFD_03": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_03",
+							"device_id": "2",
+							"command": "3003",
+							"arg_number": "302",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 3"
+						}
+					]
+				},
+				{
+					"LMFD_04": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_04",
+							"device_id": "2",
+							"command": "3004",
+							"arg_number": "303",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 4"
+						}
+					]
+				},
+				{
+					"LMFD_05": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_05",
+							"device_id": "2",
+							"command": "3005",
+							"arg_number": "304",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 5"
+						}
+					]
+				},
+				{
+					"LMFD_06": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_06",
+							"device_id": "2",
+							"command": "3006",
+							"arg_number": "305",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 6"
+						}
+					]
+				},
+				{
+					"LMFD_07": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_07",
+							"device_id": "2",
+							"command": "3007",
+							"arg_number": "306",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 7"
+						}
+					]
+				},
+				{
+					"LMFD_08": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_08",
+							"device_id": "2",
+							"command": "3008",
+							"arg_number": "307",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 8"
+						}
+					]
+				},
+				{
+					"LMFD_09": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_09",
+							"device_id": "2",
+							"command": "3009",
+							"arg_number": "308",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 9"
+						}
+					]
+				},
+				{
+					"LMFD_10": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_10",
+							"device_id": "2",
+							"command": "3010",
+							"arg_number": "309",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 10"
+						}
+					]
+				},
+				{
+					"LMFD_11": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_11",
+							"device_id": "2",
+							"command": "3011",
+							"arg_number": "310",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 11"
+						}
+					]
+				},
+				{
+					"LMFD_12": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_12",
+							"device_id": "2",
+							"command": "3012",
+							"arg_number": "311",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 12"
+						}
+					]
+				},
+				{
+					"LMFD_13": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_13",
+							"device_id": "2",
+							"command": "3013",
+							"arg_number": "312",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 13"
+						}
+					]
+				},
+				{
+					"LMFD_14": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_14",
+							"device_id": "2",
+							"command": "3014",
+							"arg_number": "313",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 14"
+						}
+					]
+				},
+				{
+					"LMFD_15": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_15",
+							"device_id": "2",
+							"command": "3015",
+							"arg_number": "314",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 15"
+						}
+					]
+				},
+				{
+					"LMFD_16": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_16",
+							"device_id": "2",
+							"command": "3016",
+							"arg_number": "315",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 16"
+						}
+					]
+				},
+				{
+					"LMFD_17": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_17",
+							"device_id": "2",
+							"command": "3017",
+							"arg_number": "316",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 17"
+						}
+					]
+				},
+				{
+					"LMFD_18": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_18",
+							"device_id": "2",
+							"command": "3018",
+							"arg_number": "317",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 18"
+						}
+					]
+				},
+				{
+					"LMFD_19": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_19",
+							"device_id": "2",
+							"command": "3019",
+							"arg_number": "318",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 19"
+						}
+					]
+				},
+				{
+					"LMFD_20": [
+						{
+							"category": "Left MFCD",
+							"type": "PushButton",
+							"msg": "LMFD_20",
+							"device_id": "2",
+							"command": "3020",
+							"arg_number": "319",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 20"
+						}
+					]
+				},
+				{
+					"LMFD_PWR": [
+						{
+							"category": "Left MFCD",
+							"type": "3PosTumb1",
+							"msg": "LMFD_PWR",
+							"device_id": "2",
+							"command": "3036",
+							"arg_number": "325",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "PWR OFF - NT - DAY"
+						}
+					]
+				}
+			],
+			"Light System Control Panel": [
+				{
+					"LCP_ENG_INST": [
+						{
+							"category": "Light System Control Panel",
+							"type": "Potentiometer",
+							"msg": "LCP_ENG_INST",
+							"device_id": "49",
+							"command": "3001",
+							"arg_number": "290",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Engine Instrument Lights"
+						}
+					]
+				},
+				{
+					"LCP_FLIGHT_INST": [
+						{
+							"category": "Light System Control Panel",
+							"type": "Potentiometer",
+							"msg": "LCP_FLIGHT_INST",
+							"device_id": "49",
+							"command": "3002",
+							"arg_number": "292",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Flight Instrument Lights"
+						}
+					]
+				},
+				{
+					"LCP_AUX_INST": [
+						{
+							"category": "Light System Control Panel",
+							"type": "Potentiometer",
+							"msg": "LCP_AUX_INST",
+							"device_id": "49",
+							"command": "3003",
+							"arg_number": "293",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Aux Instrument Lights"
+						}
+					]
+				},
+				{
+					"LCP_ACCEL_COMP": [
+						{
+							"category": "Light System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "LCP_ACCEL_COMP",
+							"device_id": "49",
+							"command": "3004",
+							"arg_number": "295",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Accelerometer and Compass Lights"
+						}
+					]
+				},
+				{
+					"LCP_FLOOD": [
+						{
+							"category": "Light System Control Panel",
+							"type": "Potentiometer",
+							"msg": "LCP_FLOOD",
+							"device_id": "49",
+							"command": "3005",
+							"arg_number": "296",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Flood Lights"
+						}
+					]
+				},
+				{
+					"LCP_CONSOLE": [
+						{
+							"category": "Light System Control Panel",
+							"type": "Potentiometer",
+							"msg": "LCP_CONSOLE",
+							"device_id": "49",
+							"command": "3006",
+							"arg_number": "297",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Console Lights"
+						}
+					]
+				},
+				{
+					"LCP_POSITION": [
+						{
+							"category": "Light System Control Panel",
+							"type": "3PosTumb",
+							"msg": "LCP_POSITION",
+							"device_id": "49",
+							"command": "3008",
+							"arg_number": "287",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Position Lights FLASH/OFF/STEADY"
+						}
+					]
+				},
+				{
+					"LCP_FORMATION": [
+						{
+							"category": "Light System Control Panel",
+							"type": "Potentiometer",
+							"msg": "LCP_FORMATION",
+							"device_id": "49",
+							"command": "3009",
+							"arg_number": "288",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Formation Lights"
+						}
+					]
+				},
+				{
+					"LCP_NOSE_ILLUM": [
+						{
+							"category": "Light System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "LCP_NOSE_ILLUM",
+							"device_id": "49",
+							"command": "3012",
+							"arg_number": "291",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Nose Illumination"
+						}
+					]
+				},
+				{
+					"LCP_SIGNAL_LIGHTS": [
+						{
+							"category": "Light System Control Panel",
+							"type": "ToggleSwitch",
+							"msg": "LCP_SIGNAL_LIGHTS",
+							"device_id": "49",
+							"command": "3013",
+							"arg_number": "294",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Signal Lights"
+						}
+					]
+				}
+			],
+			"Misc": [
+				{
+					"MIRROR_TOGGLE": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "MIRROR_TOGGLE",
+							"device_id": "0",
+							"command": "3001",
+							"arg_number": "719",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Toggle Mirrors"
+						}
+					]
+				},
+				{
+					"GND_SAFE_OVERRIDE_COVER": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "GND_SAFE_OVERRIDE_COVER",
+							"device_id": "12",
+							"command": "3002",
+							"arg_number": "709",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ground Safety Override Switch Cover"
+						}
+					]
+				},
+				{
+					"GND_SAFE_OVERRIDE": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "GND_SAFE_OVERRIDE",
+							"device_id": "12",
+							"command": "3003",
+							"arg_number": "710",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ground Safety Override"
+						}
+					]
+				},
+				{
+					"EMER_BRAKE": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "EMER_BRAKE",
+							"device_id": "38",
+							"command": "3030",
+							"arg_number": "772",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Emergency Brake"
+						}
+					]
+				},
+				{
+					"AUX_GEAR": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "AUX_GEAR",
+							"device_id": "39",
+							"command": "3008",
+							"arg_number": "718",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Auxiliary Landing Gear Handle"
+						}
+					]
+				},
+				{
+					"AUX_GEAR_LOCK": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "AUX_GEAR_LOCK",
+							"device_id": "39",
+							"command": "3009",
+							"arg_number": "722",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Auxiliary Landing Gear Handle Lock Button"
+						}
+					]
+				},
+				{
+					"SEAT_ARM": [
+						{
+							"category": "Misc",
+							"type": "Tumb",
+							"msg": "SEAT_ARM",
+							"device_id": "39",
+							"command": "3010",
+							"arg_number": "733",
+							"step": "1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "Seat Arm Handle (0 = ARM 1 = DISARM)"
+						}
+					]
+				},
+				{
+					"LADDER_EXTEND_COVER": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "LADDER_EXTEND_COVER",
+							"device_id": "39",
+							"command": "3011",
+							"arg_number": "787",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Extend Boarding Ladder Button Cover"
+						}
+					]
+				},
+				{
+					"LADDER_EXTEND": [
+						{
+							"category": "Misc",
+							"type": "PushButton",
+							"msg": "LADDER_EXTEND",
+							"device_id": "39",
+							"command": "3012",
+							"arg_number": "788",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Extend Boarding Ladder Button"
+						}
+					]
+				},
+				{
+					"CANOPY_DISENGAGE": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "CANOPY_DISENGAGE",
+							"device_id": "39",
+							"command": "3013",
+							"arg_number": "777",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Canopy actuator disengage lever"
+						}
+					]
+				},
+				{
+					"CANOPY_JTSN": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "CANOPY_JTSN",
+							"device_id": "39",
+							"command": "3014",
+							"arg_number": "785",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Canopy Jettison"
+						}
+					]
+				},
+				{
+					"CANOPY_JTSN_UNLOCK": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "CANOPY_JTSN_UNLOCK",
+							"device_id": "39",
+							"command": "3015",
+							"arg_number": "786",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Canopy Jettison Unlock"
+						}
+					]
+				},
+				{
+					"STICK_HIDE": [
+						{
+							"category": "Misc",
+							"type": "ToggleSwitch",
+							"msg": "STICK_HIDE",
+							"device_id": "39",
+							"command": "3016",
+							"arg_number": "999",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Hide Stick toggle"
+						}
+					]
+				},
+				{
+					"SUIT_TEST": [
+						{
+							"category": "Misc",
+							"type": "PushButton",
+							"msg": "SUIT_TEST",
+							"device_id": "41",
+							"command": "3014",
+							"arg_number": "776",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Anti-G Suit Valve Test Button"
+						}
+					]
+				}
+			],
+			"NMSP": [
+				{
+					"NMSP_HARS_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_HARS_BTN",
+							"device_id": "46",
+							"command": "3001",
+							"arg_number": "605",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HARS Button"
+						}
+					]
+				},
+				{
+					"NMSP_EGI_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_EGI_BTN",
+							"device_id": "46",
+							"command": "3002",
+							"arg_number": "607",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "EGI Button"
+						}
+					]
+				},
+				{
+					"NMSP_TISL_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_TISL_BTN",
+							"device_id": "46",
+							"command": "3003",
+							"arg_number": "609",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TISL Button (No Function)"
+						}
+					]
+				},
+				{
+					"NMSP_STEERPT_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_STEERPT_BTN",
+							"device_id": "46",
+							"command": "3004",
+							"arg_number": "611",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "STEERPT Button"
+						}
+					]
+				},
+				{
+					"NMSP_ANCHR_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_ANCHR_BTN",
+							"device_id": "46",
+							"command": "3005",
+							"arg_number": "613",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ANCHR Button"
+						}
+					]
+				},
+				{
+					"NMSP_TCN_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_TCN_BTN",
+							"device_id": "46",
+							"command": "3006",
+							"arg_number": "615",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TCN Button"
+						}
+					]
+				},
+				{
+					"NMSP_ILS_BTN": [
+						{
+							"category": "NMSP",
+							"type": "PushButton",
+							"msg": "NMSP_ILS_BTN",
+							"device_id": "46",
+							"command": "3007",
+							"arg_number": "617",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ILS Button"
+						}
+					]
+				},
+				{
+					"NMSP_ABLE_STOW": [
+						{
+							"category": "NMSP",
+							"type": "ToggleSwitch",
+							"msg": "NMSP_ABLE_STOW",
+							"device_id": "46",
+							"command": "3008",
+							"arg_number": "621",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Able/Stow Localizer Bars"
+						}
+					]
+				}
+			],
+			"Oxygen Regulator Panel": [
+				{
+					"OXY_SUPPLY": [
+						{
+							"category": "Oxygen Regulator Panel",
+							"type": "ToggleSwitch",
+							"msg": "OXY_SUPPLY",
+							"device_id": "40",
+							"command": "3001",
+							"arg_number": "603",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Oxygen Supply On/Off"
+						}
+					]
+				},
+				{
+					"OXY_DILUTER": [
+						{
+							"category": "Oxygen Regulator Panel",
+							"type": "ToggleSwitch",
+							"msg": "OXY_DILUTER",
+							"device_id": "40",
+							"command": "3002",
+							"arg_number": "602",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Oxygen Normal/100%"
+						}
+					]
+				}
+			],
+			"Right MFCD": [
+				{
+					"RMFD_01": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_01",
+							"device_id": "3",
+							"command": "3001",
+							"arg_number": "326",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 1"
+						}
+					]
+				},
+				{
+					"RMFD_02": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_02",
+							"device_id": "3",
+							"command": "3002",
+							"arg_number": "327",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 2"
+						}
+					]
+				},
+				{
+					"RMFD_03": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_03",
+							"device_id": "3",
+							"command": "3003",
+							"arg_number": "328",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 3"
+						}
+					]
+				},
+				{
+					"RMFD_04": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_04",
+							"device_id": "3",
+							"command": "3004",
+							"arg_number": "329",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 4"
+						}
+					]
+				},
+				{
+					"RMFD_05": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_05",
+							"device_id": "3",
+							"command": "3005",
+							"arg_number": "330",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 5"
+						}
+					]
+				},
+				{
+					"RMFD_06": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_06",
+							"device_id": "3",
+							"command": "3006",
+							"arg_number": "331",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 6"
+						}
+					]
+				},
+				{
+					"RMFD_07": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_07",
+							"device_id": "3",
+							"command": "3007",
+							"arg_number": "332",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 7"
+						}
+					]
+				},
+				{
+					"RMFD_08": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_08",
+							"device_id": "3",
+							"command": "3008",
+							"arg_number": "333",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 8"
+						}
+					]
+				},
+				{
+					"RMFD_09": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_09",
+							"device_id": "3",
+							"command": "3009",
+							"arg_number": "334",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 9"
+						}
+					]
+				},
+				{
+					"RMFD_10": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_10",
+							"device_id": "3",
+							"command": "3010",
+							"arg_number": "335",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 10"
+						}
+					]
+				},
+				{
+					"RMFD_11": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_11",
+							"device_id": "3",
+							"command": "3011",
+							"arg_number": "336",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 11"
+						}
+					]
+				},
+				{
+					"RMFD_12": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_12",
+							"device_id": "3",
+							"command": "3012",
+							"arg_number": "337",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 12"
+						}
+					]
+				},
+				{
+					"RMFD_13": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_13",
+							"device_id": "3",
+							"command": "3013",
+							"arg_number": "338",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 13"
+						}
+					]
+				},
+				{
+					"RMFD_14": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_14",
+							"device_id": "3",
+							"command": "3014",
+							"arg_number": "339",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 14"
+						}
+					]
+				},
+				{
+					"RMFD_15": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_15",
+							"device_id": "3",
+							"command": "3015",
+							"arg_number": "340",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 15"
+						}
+					]
+				},
+				{
+					"RMFD_16": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_16",
+							"device_id": "3",
+							"command": "3016",
+							"arg_number": "341",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 16"
+						}
+					]
+				},
+				{
+					"RMFD_17": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_17",
+							"device_id": "3",
+							"command": "3017",
+							"arg_number": "342",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 17"
+						}
+					]
+				},
+				{
+					"RMFD_18": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_18",
+							"device_id": "3",
+							"command": "3018",
+							"arg_number": "343",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 18"
+						}
+					]
+				},
+				{
+					"RMFD_19": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_19",
+							"device_id": "3",
+							"command": "3019",
+							"arg_number": "344",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 19"
+						}
+					]
+				},
+				{
+					"RMFD_20": [
+						{
+							"category": "Right MFCD",
+							"type": "PushButton",
+							"msg": "RMFD_20",
+							"device_id": "3",
+							"command": "3020",
+							"arg_number": "345",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "OSB 20"
+						}
+					]
+				},
+				{
+					"RMFD_PWR": [
+						{
+							"category": "Right MFCD",
+							"type": "3PosTumb1",
+							"msg": "RMFD_PWR",
+							"device_id": "3",
+							"command": "3036",
+							"arg_number": "351",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "PWR OFF - NT - DAY"
+						}
+					]
+				}
+			],
+			"RWR": [
+				{
+					"RWR_BRT": [
+						{
+							"category": "RWR",
+							"type": "Potentiometer",
+							"msg": "RWR_BRT",
+							"device_id": "29",
+							"command": "3001",
+							"arg_number": "16",
+							"step": "",
+							"limitLow": "0.15",
+							"limitHigh": "0.85",
+							"output_map": "",
+							"cycle": "",
+							"description": "Display Brightness"
+						}
+					]
+				}
+			],
+			"SAS Panel": [
+				{
+					"SASP_TO_TRIM": [
+						{
+							"category": "SAS Panel",
+							"type": "PushButton",
+							"msg": "SASP_TO_TRIM",
+							"device_id": "38",
+							"command": "3012",
+							"arg_number": "190",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "T/O Trim Button"
+						}
+					]
+				},
+				{
+					"SASP_YAW_TRIM": [
+						{
+							"category": "SAS Panel",
+							"type": "Potentiometer",
+							"msg": "SASP_YAW_TRIM",
+							"device_id": "38",
+							"command": "3013",
+							"arg_number": "192",
+							"step": "",
+							"limitLow": "-1",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Yaw Trim"
+						}
+					]
+				}
+			],
+			"Secure Voice Comms Panel": [
+				{
+					"KY58_ZEROIZE_COVER": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "ToggleSwitch",
+							"msg": "KY58_ZEROIZE_COVER",
+							"device_id": "69",
+							"command": "3001",
+							"arg_number": "778",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Zeroize Switch Cover"
+						}
+					]
+				},
+				{
+					"KY58_ZEROIZE": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "ToggleSwitch",
+							"msg": "KY58_ZEROIZE",
+							"device_id": "69",
+							"command": "3002",
+							"arg_number": "779",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Zeroize Switch"
+						}
+					]
+				},
+				{
+					"KY58_DELAY": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "ToggleSwitch",
+							"msg": "KY58_DELAY",
+							"device_id": "69",
+							"command": "3003",
+							"arg_number": "780",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Delay Switch"
+						}
+					]
+				},
+				{
+					"KY58_PLAIN": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "MultipositionSwitch",
+							"msg": "KY58_PLAIN",
+							"device_id": "69",
+							"command": "3004",
+							"arg_number": "781",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "C/RAD Switch"
+						}
+					]
+				},
+				{
+					"KY58_1TO5": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "MultipositionSwitch",
+							"msg": "KY58_1TO5",
+							"device_id": "69",
+							"command": "3005",
+							"arg_number": "782",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "6",
+							"output_map": "",
+							"cycle": "",
+							"description": "Full Switch"
+						}
+					]
+				},
+				{
+					"KY58_MODE": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "MultipositionSwitch",
+							"msg": "KY58_MODE",
+							"device_id": "69",
+							"command": "3006",
+							"arg_number": "783",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "Mode Switch"
+						}
+					]
+				},
+				{
+					"KY58_PWR": [
+						{
+							"category": "Secure Voice Comms Panel",
+							"type": "ToggleSwitch",
+							"msg": "KY58_PWR",
+							"device_id": "69",
+							"command": "3007",
+							"arg_number": "784",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Power Switch"
+						}
+					]
+				}
+			],
+			"Stall System Volume Controls": [
+				{
+					"STALL_VOL": [
+						{
+							"category": "Stall System Volume Controls",
+							"type": "Potentiometer",
+							"msg": "STALL_VOL",
+							"device_id": "52",
+							"command": "3001",
+							"arg_number": "704",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "nil",
+							"cycle": "",
+							"description": "Stall Volume"
+						}
+					]
+				},
+				{
+					"STALL_PEAK_VOL": [
+						{
+							"category": "Stall System Volume Controls",
+							"type": "Potentiometer",
+							"msg": "STALL_PEAK_VOL",
+							"device_id": "52",
+							"command": "3002",
+							"arg_number": "705",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "nil",
+							"cycle": "",
+							"description": "Peak Volume"
+						}
+					]
+				}
+			],
+			"Standby Attitude Indicator": [
+				{
+					"SAI_CAGE": [
+						{
+							"category": "Standby Attitude Indicator",
+							"type": "PushButton",
+							"msg": "SAI_CAGE",
+							"device_id": "48",
+							"command": "3002",
+							"arg_number": "67",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Cage SAI"
+						}
+					]
+				},
+				{
+					"SAI_PITCH_TRIM": [
+						{
+							"category": "Standby Attitude Indicator",
+							"type": "Potentiometer",
+							"msg": "SAI_PITCH_TRIM",
+							"device_id": "48",
+							"command": "3003",
+							"arg_number": "66",
+							"step": "",
+							"limitLow": "-1",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "SAI Pitch Trim"
+						}
+					]
+				}
+			],
+			"TACAN Panel": [
+				{
+					"TACAN_XY": [
+						{
+							"category": "TACAN Panel",
+							"type": "ToggleSwitch",
+							"msg": "TACAN_XY",
+							"device_id": "74",
+							"command": "3003",
+							"arg_number": "258",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TACAN Channel X/Y Toggle"
+						}
+					]
+				},
+				{
+					"TACAN_TEST_BTN": [
+						{
+							"category": "TACAN Panel",
+							"type": "PushButton",
+							"msg": "TACAN_TEST_BTN",
+							"device_id": "74",
+							"command": "3004",
+							"arg_number": "259",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TACAN Test Button"
+						}
+					]
+				},
+				{
+					"TACAN_VOL": [
+						{
+							"category": "TACAN Panel",
+							"type": "Potentiometer",
+							"msg": "TACAN_VOL",
+							"device_id": "74",
+							"command": "3005",
+							"arg_number": "261",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "TACAN Signal Volume"
+						}
+					]
+				},
+				{
+					"TACAN_MODE": [
+						{
+							"category": "TACAN Panel",
+							"type": "Tumb",
+							"msg": "TACAN_MODE",
+							"device_id": "74",
+							"command": "3006",
+							"arg_number": "262",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "TACAN Mode Dial"
+						}
+					]
+				}
+			],
+			"Throttle": [
+				{
+					"ENGINE_FUEL_FLOW_L": [
+						{
+							"category": "Throttle",
+							"type": "ToggleSwitch",
+							"msg": "ENGINE_FUEL_FLOW_L",
+							"device_id": "37",
+							"command": "3001",
+							"arg_number": "122",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fuel Flow L"
+						}
+					]
+				},
+				{
+					"ENGINE_FUEL_FLOW_R": [
+						{
+							"category": "Throttle",
+							"type": "ToggleSwitch",
+							"msg": "ENGINE_FUEL_FLOW_R",
+							"device_id": "37",
+							"command": "3002",
+							"arg_number": "123",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fuel Flow R"
+						}
+					]
+				},
+				{
+					"ENGINE_APU_START": [
+						{
+							"category": "Throttle",
+							"type": "ToggleSwitch",
+							"msg": "ENGINE_APU_START",
+							"device_id": "37",
+							"command": "3005",
+							"arg_number": "126",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "APU START"
+						}
+					]
+				},
+				{
+					"ENGINE_THROTTLE_FRICTION": [
+						{
+							"category": "Throttle",
+							"type": "Potentiometer",
+							"msg": "ENGINE_THROTTLE_FRICTION",
+							"device_id": "37",
+							"command": "3006",
+							"arg_number": "128",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "nil",
+							"cycle": "",
+							"description": "Friction Control"
+						}
+					]
+				},
+				{
+					"FLAPS_SWITCH": [
+						{
+							"category": "Throttle",
+							"type": "Tumb",
+							"msg": "FLAPS_SWITCH",
+							"device_id": "39",
+							"command": "3002",
+							"arg_number": "773",
+							"step": "0.5",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "Flaps Setting DN - MVR - UP"
+						}
+					]
+				}
+			],
+			"TISL Panel": [
+				{
+					"TISL_MODE": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_MODE",
+							"device_id": "57",
+							"command": "3001",
+							"arg_number": "622",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "TISL Mode (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_SLANT_RANGE": [
+						{
+							"category": "TISL Panel",
+							"type": "3PosTumb",
+							"msg": "TISL_SLANT_RANGE",
+							"device_id": "57",
+							"command": "3002",
+							"arg_number": "623",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Slant Range UNDER 5 - 5 - 10 (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_ALT_10000": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_ALT_10000",
+							"device_id": "57",
+							"command": "3003",
+							"arg_number": "624",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0}",
+							"cycle": "skiplast",
+							"description": "Altitude Above Target, 10000 ft (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_ALT_1000": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_ALT_1000",
+							"device_id": "57",
+							"command": "3004",
+							"arg_number": "626",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0}",
+							"cycle": "skiplast",
+							"description": "Altitude Above Target, 1000 ft (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_CODE1": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_CODE1",
+							"device_id": "57",
+							"command": "3005",
+							"arg_number": "636",
+							"step": "0.05",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 0}",
+							"cycle": "skiplast",
+							"description": "Code Wheel 1 (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_CODE2": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_CODE2",
+							"device_id": "57",
+							"command": "3006",
+							"arg_number": "638",
+							"step": "0.05",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 0}",
+							"cycle": "skiplast",
+							"description": "Code Wheel 2 (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_CODE3": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_CODE3",
+							"device_id": "57",
+							"command": "3007",
+							"arg_number": "640",
+							"step": "0.05",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 0}",
+							"cycle": "skiplast",
+							"description": "Code Wheel 3 (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_CODE4": [
+						{
+							"category": "TISL Panel",
+							"type": "Tumb",
+							"msg": "TISL_CODE4",
+							"device_id": "57",
+							"command": "3008",
+							"arg_number": "642",
+							"step": "0.05",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 0}",
+							"cycle": "skiplast",
+							"description": "Code Wheel 4 (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_AUX": [
+						{
+							"category": "TISL Panel",
+							"type": "3PosTumb",
+							"msg": "TISL_AUX",
+							"device_id": "57",
+							"command": "3009",
+							"arg_number": "644",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TISL AUX Switch (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_ENTER": [
+						{
+							"category": "TISL Panel",
+							"type": "PushButton",
+							"msg": "TISL_ENTER",
+							"device_id": "57",
+							"command": "3010",
+							"arg_number": "628",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TISL ENTER (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_BITE": [
+						{
+							"category": "TISL Panel",
+							"type": "PushButton",
+							"msg": "TISL_BITE",
+							"device_id": "57",
+							"command": "3011",
+							"arg_number": "632",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TISL BITE (A-10C)"
+						}
+					]
+				},
+				{
+					"TISL_OVERTEMP": [
+						{
+							"category": "TISL Panel",
+							"type": "PushButton",
+							"msg": "TISL_OVERTEMP",
+							"device_id": "57",
+							"command": "3012",
+							"arg_number": "630",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TISL OVER TEMP"
+						}
+					]
+				},
+				{
+					"TISL_TRACK": [
+						{
+							"category": "TISL Panel",
+							"type": "PushButton",
+							"msg": "TISL_TRACK",
+							"device_id": "57",
+							"command": "3013",
+							"arg_number": "634",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "TISL TRACK"
+						}
+					]
+				}
+			],
+			"UFC": [
+				{
+					"UFC_1": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_1",
+							"device_id": "8",
+							"command": "3001",
+							"arg_number": "385",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "1"
+						}
+					]
+				},
+				{
+					"UFC_2": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_2",
+							"device_id": "8",
+							"command": "3002",
+							"arg_number": "386",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "2"
+						}
+					]
+				},
+				{
+					"UFC_3": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_3",
+							"device_id": "8",
+							"command": "3003",
+							"arg_number": "387",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "3"
+						}
+					]
+				},
+				{
+					"UFC_4": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_4",
+							"device_id": "8",
+							"command": "3004",
+							"arg_number": "388",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "4"
+						}
+					]
+				},
+				{
+					"UFC_5": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_5",
+							"device_id": "8",
+							"command": "3005",
+							"arg_number": "389",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "5"
+						}
+					]
+				},
+				{
+					"UFC_6": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_6",
+							"device_id": "8",
+							"command": "3006",
+							"arg_number": "390",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "6"
+						}
+					]
+				},
+				{
+					"UFC_7": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_7",
+							"device_id": "8",
+							"command": "3007",
+							"arg_number": "391",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "7"
+						}
+					]
+				},
+				{
+					"UFC_8": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_8",
+							"device_id": "8",
+							"command": "3008",
+							"arg_number": "392",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "8"
+						}
+					]
+				},
+				{
+					"UFC_9": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_9",
+							"device_id": "8",
+							"command": "3009",
+							"arg_number": "393",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "9"
+						}
+					]
+				},
+				{
+					"UFC_10": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_10",
+							"device_id": "8",
+							"command": "3010",
+							"arg_number": "395",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "10"
+						}
+					]
+				},
+				{
+					"UFC_SPC": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_SPC",
+							"device_id": "8",
+							"command": "3011",
+							"arg_number": "396",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SPC"
+						}
+					]
+				},
+				{
+					"UFC_HACK": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_HACK",
+							"device_id": "8",
+							"command": "3012",
+							"arg_number": "394",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HACK"
+						}
+					]
+				},
+				{
+					"UFC_FUNC": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_FUNC",
+							"device_id": "8",
+							"command": "3013",
+							"arg_number": "397",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "FUNC"
+						}
+					]
+				},
+				{
+					"UFC_LTR": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_LTR",
+							"device_id": "8",
+							"command": "3014",
+							"arg_number": "398",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LTR"
+						}
+					]
+				},
+				{
+					"UFC_CLR": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_CLR",
+							"device_id": "8",
+							"command": "3015",
+							"arg_number": "399",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CLR"
+						}
+					]
+				},
+				{
+					"UFC_ENT": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_ENT",
+							"device_id": "8",
+							"command": "3016",
+							"arg_number": "400",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ENT"
+						}
+					]
+				},
+				{
+					"UFC_MK": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_MK",
+							"device_id": "8",
+							"command": "3017",
+							"arg_number": "401",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MK"
+						}
+					]
+				},
+				{
+					"UFC_ALT_ALRT": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_ALT_ALRT",
+							"device_id": "8",
+							"command": "3018",
+							"arg_number": "402",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ALT ALRT"
+						}
+					]
+				},
+				{
+					"UFC_COM1": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_COM1",
+							"device_id": "8",
+							"command": "3030",
+							"arg_number": "531",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Control VHF UHF Radio (A-10C II)"
+						}
+					]
+				},
+				{
+					"UFC_COM_SEC": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_COM_SEC",
+							"device_id": "8",
+							"command": "3031",
+							"arg_number": "532",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "No Function 1"
+						}
+					]
+				},
+				{
+					"UFC_IFF": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_IFF",
+							"device_id": "8",
+							"command": "3032",
+							"arg_number": "533",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "No Function 2"
+						}
+					]
+				},
+				{
+					"UFC_COM2": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_COM2",
+							"device_id": "8",
+							"command": "3033",
+							"arg_number": "534",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Toggle ARC-210 RT2 Status (A-10C II)"
+						}
+					]
+				},
+				{
+					"UFC_ECCM": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_ECCM",
+							"device_id": "8",
+							"command": "3034",
+							"arg_number": "535",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "No Function 3"
+						}
+					]
+				},
+				{
+					"UFC_IDM": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_IDM",
+							"device_id": "8",
+							"command": "3035",
+							"arg_number": "536",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "No Function 4"
+						}
+					]
+				},
+				{
+					"UFC_MASTER_CAUTION": [
+						{
+							"category": "UFC",
+							"type": "PushButton",
+							"msg": "UFC_MASTER_CAUTION",
+							"device_id": "24",
+							"command": "3001",
+							"arg_number": "403",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Master Caution Reset"
+						}
+					]
+				}
+			],
+			"UHF Radio": [
+				{
+					"UHF_PRESET_SEL": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_PRESET_SEL",
+							"device_id": "54",
+							"command": "3001",
+							"arg_number": "161",
+							"step": "0.05",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}",
+							"cycle": "FALSE",
+							"description": "UHF Preset Channel Selector"
+						}
+					]
+				},
+				{
+					"UHF_100MHZ_SEL": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_100MHZ_SEL",
+							"device_id": "54",
+							"command": "3002",
+							"arg_number": "162",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.2",
+							"output_map": "{2, 3, A}",
+							"cycle": "FALSE",
+							"description": "UHF 100MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_10MHZ_SEL": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_10MHZ_SEL",
+							"device_id": "54",
+							"command": "3003",
+							"arg_number": "163",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "UHF 10MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_1MHZ_SEL": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_1MHZ_SEL",
+							"device_id": "54",
+							"command": "3004",
+							"arg_number": "164",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "UHF 1MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_POINT1MHZ_SEL": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_POINT1MHZ_SEL",
+							"device_id": "54",
+							"command": "3005",
+							"arg_number": "165",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "UHF 0.1MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_POINT25_SEL": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_POINT25_SEL",
+							"device_id": "54",
+							"command": "3006",
+							"arg_number": "166",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "{00, 25, 50, 75}",
+							"cycle": "FALSE",
+							"description": "UHF 0.25MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_MODE": [
+						{
+							"category": "UHF Radio",
+							"type": "3PosTumb1",
+							"msg": "UHF_MODE",
+							"device_id": "54",
+							"command": "3007",
+							"arg_number": "167",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Frequency Mode Dial MNL/PRESET/GRD"
+						}
+					]
+				},
+				{
+					"UHF_FUNCTION": [
+						{
+							"category": "UHF Radio",
+							"type": "Tumb",
+							"msg": "UHF_FUNCTION",
+							"device_id": "54",
+							"command": "3008",
+							"arg_number": "168",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": " false",
+							"description": "UHF Function Dial OFF/MAIN/BOTH/ADF"
+						}
+					]
+				},
+				{
+					"UHF_T_TONE": [
+						{
+							"category": "UHF Radio",
+							"type": "3PosTumb",
+							"msg": "UHF_T_TONE",
+							"device_id": "54",
+							"command": "3009",
+							"arg_number": "169",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "T-Tone Button"
+						}
+					]
+				},
+				{
+					"UHF_SQUELCH": [
+						{
+							"category": "UHF Radio",
+							"type": "ToggleSwitch",
+							"msg": "UHF_SQUELCH",
+							"device_id": "54",
+							"command": "3010",
+							"arg_number": "170",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Squelch Switch"
+						}
+					]
+				},
+				{
+					"UHF_VOL": [
+						{
+							"category": "UHF Radio",
+							"type": "Potentiometer",
+							"msg": "UHF_VOL",
+							"device_id": "54",
+							"command": "3011",
+							"arg_number": "171",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF Volume Control"
+						}
+					]
+				},
+				{
+					"UHF_TEST": [
+						{
+							"category": "UHF Radio",
+							"type": "PushButton",
+							"msg": "UHF_TEST",
+							"device_id": "54",
+							"command": "3012",
+							"arg_number": "172",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Display Test Button"
+						}
+					]
+				},
+				{
+					"UHF_STATUS": [
+						{
+							"category": "UHF Radio",
+							"type": "PushButton",
+							"msg": "UHF_STATUS",
+							"device_id": "54",
+							"command": "3013",
+							"arg_number": "173",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Status Button"
+						}
+					]
+				},
+				{
+					"UHF_COVER": [
+						{
+							"category": "UHF Radio",
+							"type": "ToggleSwitch",
+							"msg": "UHF_COVER",
+							"device_id": "54",
+							"command": "3014",
+							"arg_number": "734",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Load Button Cover"
+						}
+					]
+				},
+				{
+					"UHF_LOAD": [
+						{
+							"category": "UHF Radio",
+							"type": "PushButton",
+							"msg": "UHF_LOAD",
+							"device_id": "54",
+							"command": "3015",
+							"arg_number": "735",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Load Button"
+						}
+					]
+				}
+			],
+			"VHF AM Radio": [
+				{
+					"VHFAM_MODE": [
+						{
+							"category": "VHF AM Radio",
+							"type": "MultipositionSwitch",
+							"msg": "VHFAM_MODE",
+							"device_id": "55",
+							"command": "3003",
+							"arg_number": "138",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "Mode OFF/TR/DF"
+						}
+					]
+				},
+				{
+					"VHFAM_FREQEMER": [
+						{
+							"category": "VHF AM Radio",
+							"type": "MultipositionSwitch",
+							"msg": "VHFAM_FREQEMER",
+							"device_id": "55",
+							"command": "3004",
+							"arg_number": "135",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "4",
+							"output_map": "",
+							"cycle": "",
+							"description": "Frequency Selection Dial FM/AM/MAN/PRE"
+						}
+					]
+				},
+				{
+					"VHFAM_VOL": [
+						{
+							"category": "VHF AM Radio",
+							"type": "Potentiometer",
+							"msg": "VHFAM_VOL",
+							"device_id": "55",
+							"command": "3005",
+							"arg_number": "133",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "VHF AM Volume Control"
+						}
+					]
+				},
+				{
+					"VHFAM_LOAD": [
+						{
+							"category": "VHF AM Radio",
+							"type": "PushButton",
+							"msg": "VHFAM_LOAD",
+							"device_id": "55",
+							"command": "3006",
+							"arg_number": "136",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Load Button"
+						}
+					]
+				},
+				{
+					"VHFAM_SQUELCH": [
+						{
+							"category": "VHF AM Radio",
+							"type": "3PosTumb",
+							"msg": "VHFAM_SQUELCH",
+							"device_id": "55",
+							"command": "3007",
+							"arg_number": "134",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Squelch"
+						}
+					]
+				}
+			],
+			"VHF FM Radio": [
+				{
+					"VHFFM_MODE": [
+						{
+							"category": "VHF FM Radio",
+							"type": "MultipositionSwitch",
+							"msg": "VHFFM_MODE",
+							"device_id": "56",
+							"command": "3003",
+							"arg_number": "152",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "3",
+							"output_map": "",
+							"cycle": "",
+							"description": "Mode OFF/TR/DF"
+						}
+					]
+				},
+				{
+					"VHFFM_FREQEMER": [
+						{
+							"category": "VHF FM Radio",
+							"type": "MultipositionSwitch",
+							"msg": "VHFFM_FREQEMER",
+							"device_id": "56",
+							"command": "3004",
+							"arg_number": "149",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "4",
+							"output_map": "",
+							"cycle": "",
+							"description": "Frequency Selection Dial FM/AM/MAN/PRE"
+						}
+					]
+				},
+				{
+					"VHFFM_VOL": [
+						{
+							"category": "VHF FM Radio",
+							"type": "Potentiometer",
+							"msg": "VHFFM_VOL",
+							"device_id": "56",
+							"command": "3005",
+							"arg_number": "147",
+							"step": "",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "VHF FM Volume Control"
+						}
+					]
+				},
+				{
+					"VHFFM_LOAD": [
+						{
+							"category": "VHF FM Radio",
+							"type": "PushButton",
+							"msg": "VHFFM_LOAD",
+							"device_id": "56",
+							"command": "3006",
+							"arg_number": "150",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Load Button"
+						}
+					]
+				},
+				{
+					"VHFFM_SQUELCH": [
+						{
+							"category": "VHF FM Radio",
+							"type": "3PosTumb",
+							"msg": "VHFFM_SQUELCH",
+							"device_id": "56",
+							"command": "3007",
+							"arg_number": "148",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Squelch"
+						}
+					]
+				}
+			]
+		}
+	]
+}
