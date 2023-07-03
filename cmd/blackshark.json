@@ -187,8 +187,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.9",
-							"output_map": " nil",
-							"cycle": " true",
+							"output_map": "nil",
+							"cycle": "TRUE",
 							"description": "Channel selector"
 						}
 					]
@@ -499,8 +499,8 @@
 							"step": "0.3",
 							"limitLow": "-0.15",
 							"limitHigh": "0.15",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Right lever rotary"
 						}
 					]
@@ -885,8 +885,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.3",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Datalink self ID selector"
 						}
 					]
@@ -903,8 +903,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.3",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Datalink master mode selector"
 						}
 					]
@@ -1107,8 +1107,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.6",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Ejecting system circuit selector"
 						}
 					]
@@ -3043,8 +3043,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "1",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Unguided rocket and gun pods ballistics data settings selector"
 						}
 					]
@@ -3097,8 +3097,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "1",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "ATGM Temperature selector"
 						}
 					]
@@ -3115,8 +3115,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.8",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Systems BIT selector"
 						}
 					]
@@ -3675,8 +3675,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.6",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Master mode selector"
 						}
 					]
@@ -3837,7 +3837,7 @@
 							"command": "3007",
 							"arg_number": "424",
 							"step": "0.04545455",
-							"limitLow": "0",
+							"limitLow": "-1",
 							"limitHigh": "1",
 							"output_map": "{10, 11, 12, 13, 14, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39}",
 							"cycle": "",
@@ -3855,9 +3855,9 @@
 							"command": "3008",
 							"arg_number": "425",
 							"step": "0.11111111",
-							"limitLow": "0",
+							"limitLow": "-1",
 							"limitHigh": "1",
-							"output_map": " nil",
+							"output_map": "nil",
 							"cycle": "",
 							"description": "Frequency 2"
 						}
@@ -3873,9 +3873,9 @@
 							"command": "3009",
 							"arg_number": "426",
 							"step": "0.11111111",
-							"limitLow": "0",
+							"limitLow": "-1",
 							"limitHigh": "1",
-							"output_map": " nil",
+							"output_map": "nil",
 							"cycle": "",
 							"description": "Frequency 3"
 						}
@@ -3891,7 +3891,7 @@
 							"command": "3010",
 							"arg_number": "427",
 							"step": "0.33333333",
-							"limitLow": "0",
+							"limitLow": "-1",
 							"limitHigh": "1",
 							"output_map": "{00, 25, 50, 75}",
 							"cycle": "",
@@ -3913,8 +3913,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.9",
-							"output_map": " nil",
-							"cycle": " true",
+							"output_map": "nil",
+							"cycle": "TRUE",
 							"description": "Radio channel selector"
 						}
 					]
@@ -4007,8 +4007,8 @@
 							"step": "0.11",
 							"limitLow": "0",
 							"limitHigh": "0.33",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Radio communicator selector"
 						}
 					]
@@ -4103,8 +4103,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.7",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "SHKVAL scan rate selector"
 						}
 					]
@@ -4325,8 +4325,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.7",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "SHKVAL Optics adjustment selector (no function)"
 						}
 					]
@@ -4343,8 +4343,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.2",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Laser code selector"
 						}
 					]
@@ -4489,8 +4489,8 @@
 							"step": "0.1",
 							"limitLow": "0",
 							"limitHigh": "0.4",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Weapon system mode selector"
 						}
 					]
@@ -4507,8 +4507,8 @@
 							"step": "0.6",
 							"limitLow": "0",
 							"limitHigh": "0.6",
-							"output_map": " nil",
-							"cycle": " false",
+							"output_map": "nil",
+							"cycle": "FALSE",
 							"description": "Targeting mode reset button"
 						}
 					]

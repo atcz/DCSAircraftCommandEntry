@@ -724,24 +724,6 @@
 					]
 				},
 				{
-					"CMDS_DISPENSE_BTN": [
-						{
-							"category": "CMDS",
-							"type": "PushButton",
-							"msg": "CMDS_DISPENSE_BTN",
-							"device_id": "32",
-							"command": "3011",
-							"arg_number": "604",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "CHAFF/FLARE Dispense Button - Push to dispense"
-						}
-					]
-				},
-				{
 					"CMDS_PROG_KNB": [
 						{
 							"category": "CMDS",
@@ -776,6 +758,24 @@
 							"description": "CMDS MODE Knob, OFF/STBY/MAN/SEMI/AUTO/BYP"
 						}
 					]
+				},
+				{
+					"CMDS_DISPENSE_BTN": [
+						{
+							"category": "CMDS",
+							"type": "PushButton",
+							"msg": "CMDS_DISPENSE_BTN",
+							"device_id": "32",
+							"command": "3011",
+							"arg_number": "604",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CHAFF/FLARE Dispense Button - Push to dispense"
+						}
+					]
 				}
 			],
 			"Cockpit Mechanics": [
@@ -794,24 +794,6 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Canopy Switch, OPEN/HOLD/CLOSE"
-						}
-					]
-				},
-				{
-					"SEAT_ADJ": [
-						{
-							"category": "Cockpit Mechanics",
-							"type": "Springloaded_3PosTumb",
-							"msg": "SEAT_ADJ",
-							"device_id": "10",
-							"command": "3014",
-							"arg_number": "786",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "SEAT ADJ Switch, UP/OFF/DOWN"
 						}
 					]
 				},
@@ -884,6 +866,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Ejection Safety Lever, ARMED/LOCKED"
+						}
+					]
+				},
+				{
+					"SEAT_ADJ": [
+						{
+							"category": "Cockpit Mechanics",
+							"type": "Springloaded_3PosTumb",
+							"msg": "SEAT_ADJ",
+							"device_id": "10",
+							"command": "3014",
+							"arg_number": "786",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SEAT ADJ Switch, UP/OFF/DOWN"
 						}
 					]
 				},
@@ -1472,42 +1472,6 @@
 			],
 			"EHSI": [
 				{
-					"EHSI_HDG_SET_KNB": [
-						{
-							"category": "EHSI",
-							"type": "Rotary",
-							"msg": "EHSI_HDG_SET_KNB",
-							"device_id": "28",
-							"command": "3002",
-							"arg_number": "45",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "EHSI HDG Set Knob"
-						}
-					]
-				},
-				{
-					"EHSI_CRS_SET_KNB": [
-						{
-							"category": "EHSI",
-							"type": "Rotary",
-							"msg": "EHSI_CRS_SET_KNB",
-							"device_id": "28",
-							"command": "3004",
-							"arg_number": "44",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "EHSI CRS Set Knob"
-						}
-					]
-				},
-				{
 					"EHSI_MODE": [
 						{
 							"category": "EHSI",
@@ -1526,6 +1490,24 @@
 					]
 				},
 				{
+					"EHSI_HDG_SET_KNB": [
+						{
+							"category": "EHSI",
+							"type": "Rotary",
+							"msg": "EHSI_HDG_SET_KNB",
+							"device_id": "28",
+							"command": "3002",
+							"arg_number": "45",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "EHSI HDG Set Knob"
+						}
+					]
+				},
+				{
 					"EHSI_HDG_SET_BTN": [
 						{
 							"category": "EHSI",
@@ -1540,6 +1522,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "EHSI HDG Set Button"
+						}
+					]
+				},
+				{
+					"EHSI_CRS_SET_KNB": [
+						{
+							"category": "EHSI",
+							"type": "Rotary",
+							"msg": "EHSI_CRS_SET_KNB",
+							"device_id": "28",
+							"command": "3004",
+							"arg_number": "44",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "EHSI CRS Set Knob"
 						}
 					]
 				},
@@ -2462,6 +2462,42 @@
 			],
 			"IFF": [
 				{
+					"IFF_C_I_KNB": [
+						{
+							"category": "IFF",
+							"type": "ToggleSwitch",
+							"msg": "IFF_C_I_KNB",
+							"device_id": "35",
+							"command": "3001",
+							"arg_number": "542",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF C & I Knob, UFC/BACKUP"
+						}
+					]
+				},
+				{
+					"IFF_MASTER_KNB": [
+						{
+							"category": "IFF",
+							"type": "MultipositionSwitch",
+							"msg": "IFF_MASTER_KNB",
+							"device_id": "35",
+							"command": "3002",
+							"arg_number": "540",
+							"step": "0.1",
+							"limitLow": "1",
+							"limitHigh": "5",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF MASTER Knob, OFF/STBY/LOW/NORM/EMER"
+						}
+					]
+				},
+				{
 					"IFF_M4_CODE_SW": [
 						{
 							"category": "IFF",
@@ -2494,6 +2530,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "IFF MODE 4 REPLY Switch, OUT/A/B"
+						}
+					]
+				},
+				{
+					"IFF_M4_MONITOR_SW": [
+						{
+							"category": "IFF",
+							"type": "ToggleSwitch",
+							"msg": "IFF_M4_MONITOR_SW",
+							"device_id": "35",
+							"command": "3005",
+							"arg_number": "544",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "IFF MODE 4 MONITOR Switch, OUT/AUDIO"
 						}
 					]
 				},
@@ -2584,60 +2638,6 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "IFF MODE 3 Selector Lever, DIGIT 2"
-						}
-					]
-				},
-				{
-					"IFF_C_I_KNB": [
-						{
-							"category": "IFF",
-							"type": "ToggleSwitch",
-							"msg": "IFF_C_I_KNB",
-							"device_id": "35",
-							"command": "3001",
-							"arg_number": "542",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "IFF C & I Knob, UFC/BACKUP"
-						}
-					]
-				},
-				{
-					"IFF_MASTER_KNB": [
-						{
-							"category": "IFF",
-							"type": "MultipositionSwitch",
-							"msg": "IFF_MASTER_KNB",
-							"device_id": "35",
-							"command": "3002",
-							"arg_number": "540",
-							"step": "0.1",
-							"limitLow": "1",
-							"limitHigh": "5",
-							"output_map": "",
-							"cycle": "",
-							"description": "IFF MASTER Knob, OFF/STBY/LOW/NORM/EMER"
-						}
-					]
-				},
-				{
-					"IFF_M4_MONITOR_SW": [
-						{
-							"category": "IFF",
-							"type": "ToggleSwitch",
-							"msg": "IFF_M4_MONITOR_SW",
-							"device_id": "35",
-							"command": "3005",
-							"arg_number": "544",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "IFF MODE 4 MONITOR Switch, OUT/AUDIO"
 						}
 					]
 				}
@@ -2826,42 +2826,6 @@
 					]
 				},
 				{
-					"ZEROIZE_SW": [
-						{
-							"category": "KY-58",
-							"type": "3PosTumb",
-							"msg": "ZEROIZE_SW",
-							"device_id": "39",
-							"command": "3018",
-							"arg_number": "695",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "ZEROIZE Switch, OFP/OFF/DATA"
-						}
-					]
-				},
-				{
-					"KY58_VOL_KNB": [
-						{
-							"category": "KY-58",
-							"type": "Potentiometer",
-							"msg": "KY58_VOL_KNB",
-							"device_id": "42",
-							"command": "3005",
-							"arg_number": "708",
-							"step": "",
-							"limitLow": " nil",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "KY-58 VOLUME Knob"
-						}
-					]
-				},
-				{
 					"ZEROIZE_SW_COVER": [
 						{
 							"category": "KY-58",
@@ -2876,6 +2840,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "ZEROIZE Switch Cover, OPEN/CLOSE"
+						}
+					]
+				},
+				{
+					"ZEROIZE_SW": [
+						{
+							"category": "KY-58",
+							"type": "3PosTumb",
+							"msg": "ZEROIZE_SW",
+							"device_id": "39",
+							"command": "3018",
+							"arg_number": "695",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ZEROIZE Switch, OFP/OFF/DATA"
 						}
 					]
 				},
@@ -2930,6 +2912,98 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "KY-58 Power Knob, OFF/ON/TD"
+						}
+					]
+				},
+				{
+					"KY58_VOL_KNB": [
+						{
+							"category": "KY-58",
+							"type": "Potentiometer",
+							"msg": "KY58_VOL_KNB",
+							"device_id": "42",
+							"command": "3005",
+							"arg_number": "708",
+							"step": "",
+							"limitLow": " nil",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "KY-58 VOLUME Knob"
+						}
+					]
+				}
+			],
+			"MFD Left": [
+				{
+					"MFD_L_GAIN_SW": [
+						{
+							"category": "MFD Left",
+							"type": "RockerSwitch",
+							"msg": "MFD_L_GAIN_SW",
+							"device_id": "24",
+							"command": "3021",
+							"arg_number": "320",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Left GAIN Rocker Switch"
+						}
+					]
+				},
+				{
+					"MFD_L_SYM_SW": [
+						{
+							"category": "MFD Left",
+							"type": "RockerSwitch",
+							"msg": "MFD_L_SYM_SW",
+							"device_id": "24",
+							"command": "3023",
+							"arg_number": "321",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Left SYM Rocker Switch"
+						}
+					]
+				},
+				{
+					"MFD_L_CON_SW": [
+						{
+							"category": "MFD Left",
+							"type": "RockerSwitch",
+							"msg": "MFD_L_CON_SW",
+							"device_id": "24",
+							"command": "3025",
+							"arg_number": "322",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Left CON Rocker Switch"
+						}
+					]
+				},
+				{
+					"MFD_L_BRT_SW": [
+						{
+							"category": "MFD Left",
+							"type": "RockerSwitch",
+							"msg": "MFD_L_BRT_SW",
+							"device_id": "24",
+							"command": "3027",
+							"arg_number": "323",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Left BRT Rocker Switch"
 						}
 					]
 				}
@@ -3292,6 +3366,80 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "MFD Left Button 20"
+						}
+					]
+				}
+			],
+			"MFD Right": [
+				{
+					"MFD_R_GAIN_SW": [
+						{
+							"category": "MFD Right",
+							"type": "RockerSwitch",
+							"msg": "MFD_R_GAIN_SW",
+							"device_id": "25",
+							"command": "3021",
+							"arg_number": "346",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Right GAIN Rocker Switch"
+						}
+					]
+				},
+				{
+					"MFD_R_SYM_SW": [
+						{
+							"category": "MFD Right",
+							"type": "RockerSwitch",
+							"msg": "MFD_R_SYM_SW",
+							"device_id": "25",
+							"command": "3023",
+							"arg_number": "347",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Right SYM Rocker Switch"
+						}
+					]
+				},
+				{
+					"MFD_R_CON_SW": [
+						{
+							"category": "MFD Right",
+							"type": "RockerSwitch",
+							"msg": "MFD_R_CON_SW",
+							"device_id": "25",
+							"command": "3025",
+							"arg_number": "348",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Right CON Rocker Switch"
+						}
+					]
+				},
+				{
+					"MFD_R_BRT_SW": [
+						{
+							"category": "MFD Right",
+							"type": "RockerSwitch",
+							"msg": "MFD_R_BRT_SW",
+							"device_id": "25",
+							"command": "3027",
+							"arg_number": "349",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MFD Right BRT Rocker Switch"
 						}
 					]
 				}
@@ -4734,114 +4882,6 @@
 			],
 			"UHF": [
 				{
-					"UHF_TONE_BTN": [
-						{
-							"category": "UHF",
-							"type": "PushButton",
-							"msg": "UHF_TONE_BTN",
-							"device_id": "37",
-							"command": "3009",
-							"arg_number": "418",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "UHF Tone Button"
-						}
-					]
-				},
-				{
-					"UHF_SQUELCH_SW": [
-						{
-							"category": "UHF",
-							"type": "ToggleSwitch",
-							"msg": "UHF_SQUELCH_SW",
-							"device_id": "37",
-							"command": "3010",
-							"arg_number": "419",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "UHF SQUELCH Switch"
-						}
-					]
-				},
-				{
-					"UHF_VOL_KNB": [
-						{
-							"category": "UHF",
-							"type": "Potentiometer",
-							"msg": "UHF_VOL_KNB",
-							"device_id": "37",
-							"command": "3011",
-							"arg_number": "420",
-							"step": "",
-							"limitLow": " nil",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "UHF VOL Knob"
-						}
-					]
-				},
-				{
-					"UHF_TEST_BTN": [
-						{
-							"category": "UHF",
-							"type": "PushButton",
-							"msg": "UHF_TEST_BTN",
-							"device_id": "37",
-							"command": "3012",
-							"arg_number": "421",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "UHF TEST DISPLAY Button"
-						}
-					]
-				},
-				{
-					"UHF_STATUS_BTN": [
-						{
-							"category": "UHF",
-							"type": "PushButton",
-							"msg": "UHF_STATUS_BTN",
-							"device_id": "37",
-							"command": "3013",
-							"arg_number": "422",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "UHF STATUS Button"
-						}
-					]
-				},
-				{
-					"UHF_DOOR": [
-						{
-							"category": "UHF",
-							"type": "ToggleSwitch",
-							"msg": "UHF_DOOR",
-							"device_id": "37",
-							"command": "3014",
-							"arg_number": "734",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "UHF Access Door, OPEN/CLOSE"
-						}
-					]
-				},
-				{
 					"UHF_CHAN_KNB": [
 						{
 							"category": "UHF",
@@ -4982,6 +5022,114 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "UHF Function Knob"
+						}
+					]
+				},
+				{
+					"UHF_TONE_BTN": [
+						{
+							"category": "UHF",
+							"type": "PushButton",
+							"msg": "UHF_TONE_BTN",
+							"device_id": "37",
+							"command": "3009",
+							"arg_number": "418",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF Tone Button"
+						}
+					]
+				},
+				{
+					"UHF_SQUELCH_SW": [
+						{
+							"category": "UHF",
+							"type": "ToggleSwitch",
+							"msg": "UHF_SQUELCH_SW",
+							"device_id": "37",
+							"command": "3010",
+							"arg_number": "419",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF SQUELCH Switch"
+						}
+					]
+				},
+				{
+					"UHF_VOL_KNB": [
+						{
+							"category": "UHF",
+							"type": "Potentiometer",
+							"msg": "UHF_VOL_KNB",
+							"device_id": "37",
+							"command": "3011",
+							"arg_number": "420",
+							"step": "",
+							"limitLow": " nil",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF VOL Knob"
+						}
+					]
+				},
+				{
+					"UHF_TEST_BTN": [
+						{
+							"category": "UHF",
+							"type": "PushButton",
+							"msg": "UHF_TEST_BTN",
+							"device_id": "37",
+							"command": "3012",
+							"arg_number": "421",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF TEST DISPLAY Button"
+						}
+					]
+				},
+				{
+					"UHF_STATUS_BTN": [
+						{
+							"category": "UHF",
+							"type": "PushButton",
+							"msg": "UHF_STATUS_BTN",
+							"device_id": "37",
+							"command": "3013",
+							"arg_number": "422",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF STATUS Button"
+						}
+					]
+				},
+				{
+					"UHF_DOOR": [
+						{
+							"category": "UHF",
+							"type": "ToggleSwitch",
+							"msg": "UHF_DOOR",
+							"device_id": "37",
+							"command": "3014",
+							"arg_number": "734",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF Access Door, OPEN/CLOSE"
 						}
 					]
 				}

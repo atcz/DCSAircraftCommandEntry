@@ -556,6 +556,24 @@
 							"description": "APU Control Switch, ON/OFF"
 						}
 					]
+				},
+				{
+					"ENGINE_CRANK_SW": [
+						{
+							"category": "Auxiliary Power Unit Panel",
+							"type": "RockerSwitch",
+							"msg": "ENGINE_CRANK_SW",
+							"device_id": "12",
+							"command": "3003",
+							"arg_number": "377",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Engine Crank Switch,  LEFT/OFF/RIGHT"
+						}
+					]
 				}
 			],
 			"Canopy Internal Jettison Handle": [
@@ -814,6 +832,24 @@
 					]
 				},
 				{
+					"COM_CRYPTO_SW": [
+						{
+							"category": "Communication Panel",
+							"type": "RockerSwitch",
+							"msg": "COM_CRYPTO_SW",
+							"device_id": "40",
+							"command": "3015",
+							"arg_number": "354",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CRYPTO Switch,  HOLD/NORM/ZERO"
+						}
+					]
+				},
+				{
 					"COM_ILS_UFC_MAN_SW": [
 						{
 							"category": "Communication Panel",
@@ -1056,6 +1092,24 @@
 					]
 				},
 				{
+					"SEAT_HEIGHT_SW": [
+						{
+							"category": "Ejection Seat",
+							"type": "RockerSwitch",
+							"msg": "SEAT_HEIGHT_SW",
+							"device_id": "7",
+							"command": "3011",
+							"arg_number": "514",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Seat Height Adjustment Switch,  UP/HOLD/DOWN"
+						}
+					]
+				},
+				{
 					"HIDE_STICK_TOGGLE": [
 						{
 							"category": "Ejection Seat",
@@ -1146,6 +1200,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Emergency/Parking Brake Pull"
+						}
+					]
+				},
+				{
+					"EMERGENCY_PARKING_BRAKE_ROTATE": [
+						{
+							"category": "Emergency and Parking Brake Handle",
+							"type": "EmergencyParkingBrake",
+							"msg": "EMERGENCY_PARKING_BRAKE_ROTATE",
+							"device_id": "5",
+							"command": "3007",
+							"arg_number": "241",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Emergency/Parking Brake Rotate"
 						}
 					]
 				}
@@ -1408,24 +1480,6 @@
 							"description": "Strobe Lights Switch"
 						}
 					]
-				},
-				{
-					"LDG_TAXI_SW": [
-						{
-							"category": "Exterior Lights Panel",
-							"type": "ToggleSwitch",
-							"msg": "LDG_TAXI_SW",
-							"device_id": "8",
-							"command": "3004",
-							"arg_number": "237",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "LDG/TAXI LIGHT Switch"
-						}
-					]
 				}
 			],
 			"Fire Systems": [
@@ -1444,6 +1498,26 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Fire Extinguisher Pushbutton"
+						}
+					]
+				}
+			],
+			"Fire Test Panel": [
+				{
+					"FIRE_TEST_SW": [
+						{
+							"category": "Fire Test Panel",
+							"type": "RockerSwitch",
+							"msg": "FIRE_TEST_SW",
+							"device_id": "12",
+							"command": "3006",
+							"arg_number": "331",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Fire and Bleed Air Test Switch,  (RMB) TEST A/(LMB) TEST B"
 						}
 					]
 				}
@@ -1686,6 +1760,136 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Generator TIE Control Switch Cover, OPEN/CLOSE"
+						}
+					]
+				}
+			],
+			"Ground Power Panel": [
+				{
+					"EXT_PWR_SW": [
+						{
+							"category": "Ground Power Panel",
+							"type": "RockerSwitch",
+							"msg": "EXT_PWR_SW",
+							"device_id": "3",
+							"command": "3005",
+							"arg_number": "336",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "External Power Switch,  RESET/NORM/OFF"
+						}
+					]
+				},
+				{
+					"GND_PWR_1_SW": [
+						{
+							"category": "Ground Power Panel",
+							"type": "RockerSwitch",
+							"msg": "GND_PWR_1_SW",
+							"device_id": "3",
+							"command": "3008",
+							"arg_number": "332",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ground Power Switch 1,  A ON/AUTO/B ON"
+						}
+					]
+				},
+				{
+					"GND_PWR_2_SW": [
+						{
+							"category": "Ground Power Panel",
+							"type": "RockerSwitch",
+							"msg": "GND_PWR_2_SW",
+							"device_id": "3",
+							"command": "3010",
+							"arg_number": "333",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ground Power Switch 2,  A ON/AUTO/B ON"
+						}
+					]
+				},
+				{
+					"GND_PWR_3_SW": [
+						{
+							"category": "Ground Power Panel",
+							"type": "RockerSwitch",
+							"msg": "GND_PWR_3_SW",
+							"device_id": "3",
+							"command": "3012",
+							"arg_number": "334",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ground Power Switch 3,  A ON/AUTO/B ON"
+						}
+					]
+				},
+				{
+					"GND_PWR_4_SW": [
+						{
+							"category": "Ground Power Panel",
+							"type": "RockerSwitch",
+							"msg": "GND_PWR_4_SW",
+							"device_id": "3",
+							"command": "3014",
+							"arg_number": "335",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ground Power Switch 4,  A ON/AUTO/B ON"
+						}
+					]
+				}
+			],
+			"Heading and Course Set Switches": [
+				{
+					"LEFT_DDI_HDG_SW": [
+						{
+							"category": "Heading and Course Set Switches",
+							"type": "RockerSwitch",
+							"msg": "LEFT_DDI_HDG_SW",
+							"device_id": "35",
+							"command": "3004",
+							"arg_number": "312",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Heading Set Switch"
+						}
+					]
+				},
+				{
+					"LEFT_DDI_CRS_SW": [
+						{
+							"category": "Heading and Course Set Switches",
+							"type": "RockerSwitch",
+							"msg": "LEFT_DDI_CRS_SW",
+							"device_id": "35",
+							"command": "3006",
+							"arg_number": "313",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Course Set Switch"
 						}
 					]
 				}
@@ -2218,6 +2422,26 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "HOOK BYPASS Switch, FIELD/CARRIER"
+						}
+					]
+				}
+			],
+			"Internal Canopy Switch": [
+				{
+					"CANOPY_SW": [
+						{
+							"category": "Internal Canopy Switch",
+							"type": "RockerSwitch",
+							"msg": "CANOPY_SW",
+							"device_id": "7",
+							"command": "3001",
+							"arg_number": "453",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Canopy Control Switch,  OPEN/HOLD/CLOSE"
 						}
 					]
 				}
@@ -3068,6 +3292,24 @@
 			],
 			"Mission Computer and Hydraulic Isolate Panel": [
 				{
+					"MC_SW": [
+						{
+							"category": "Mission Computer and Hydraulic Isolate Panel",
+							"type": "MissionComputerSwitch",
+							"msg": "MC_SW",
+							"device_id": "3",
+							"command": "3025",
+							"arg_number": "368",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "MC Switch,  1 OFF/NORM/2 OFF"
+						}
+					]
+				},
+				{
 					"HYD_ISOLATE_OVERRIDE_SW": [
 						{
 							"category": "Mission Computer and Hydraulic Isolate Panel",
@@ -3910,6 +4152,24 @@
 					]
 				},
 				{
+					"LDG_TAXI_SW": [
+						{
+							"category": "Select Jettison Button",
+							"type": "ToggleSwitch",
+							"msg": "LDG_TAXI_SW",
+							"device_id": "8",
+							"command": "3004",
+							"arg_number": "237",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "LDG/TAXI LIGHT Switch"
+						}
+					]
+				},
+				{
 					"SEL_JETT_BTN": [
 						{
 							"category": "Select Jettison Button",
@@ -4368,6 +4628,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Throttle Cage/Uncage Button"
+						}
+					]
+				},
+				{
+					"THROTTLE_DISP_SW": [
+						{
+							"category": "Throttle Quadrant",
+							"type": "RockerSwitch",
+							"msg": "THROTTLE_DISP_SW",
+							"device_id": "13",
+							"command": "3032",
+							"arg_number": "488",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Throttle Dispense Switch,  Aft(FLARE)/Center(OFF)/Forward(CHAFF)"
 						}
 					]
 				},
@@ -5096,24 +5374,6 @@
 					]
 				},
 				{
-					"UFC_COMM1_CHANNEL_SELECT": [
-						{
-							"category": "Up Front Controller (UFC)",
-							"type": "Rotary",
-							"msg": "UFC_COMM1_CHANNEL_SELECT",
-							"device_id": "25",
-							"command": "3033",
-							"arg_number": "124",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
-							"output_map": "",
-							"cycle": "",
-							"description": "COMM 1 Channel Select Knob"
-						}
-					]
-				},
-				{
 					"UFC_COMM2_CHANNEL_SELECT": [
 						{
 							"category": "Up Front Controller (UFC)",
@@ -5125,24 +5385,6 @@
 							"step": "",
 							"limitLow": "-0.03",
 							"limitHigh": "0.03",
-							"output_map": "",
-							"cycle": "",
-							"description": "COMM 2 Channel Select Knob"
-						}
-					]
-				},
-				{
-					"UFC_COMM2_CHANNEL_SELECT": [
-						{
-							"category": "Up Front Controller (UFC)",
-							"type": "Rotary",
-							"msg": "UFC_COMM2_CHANNEL_SELECT",
-							"device_id": "25",
-							"command": "3034",
-							"arg_number": "126",
-							"step": "",
-							"limitLow": "",
-							"limitHigh": "",
 							"output_map": "",
 							"cycle": "",
 							"description": "COMM 2 Channel Select Knob"

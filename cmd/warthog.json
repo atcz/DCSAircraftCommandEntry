@@ -8,102 +8,6 @@
 	],
 	"commands": [
 		{
-			"IFF": [
-				{
-					"IFF_CODE": [
-						{
-							"category": "IFF",
-							"type": "SetCommandTumb",
-							"msg": "IFF_CODE",
-							"device_id": "43",
-							"command": "3007",
-							"arg_number": "199",
-							"step": "0.1",
-							"limitLow": "0",
-							"limitHigh": "0.3",
-							"output_map": " nil",
-							"cycle": "FALSE",
-							"description": "IFF Code: ZERO - B - A - (HOLD)"
-						}
-					]
-				}
-			],
-			"ILS Panel": [
-				{
-					"ILS_MHZ": [
-						{
-							"category": "ILS Panel",
-							"type": "SetCommandTumb",
-							"msg": "ILS_MHZ",
-							"device_id": "53",
-							"command": "3002",
-							"arg_number": "248",
-							"step": "0.1",
-							"limitLow": "0",
-							"limitHigh": "0.3",
-							"output_map": "{108, 109, 110, 111}",
-							"cycle": "FALSE",
-							"description": "ILS Frequency MHz"
-						}
-					]
-				},
-				{
-					"ILS_KHZ": [
-						{
-							"category": "ILS Panel",
-							"type": "SetCommandTumb",
-							"msg": "ILS_KHZ",
-							"device_id": "53",
-							"command": "3003",
-							"arg_number": "249",
-							"step": "0.1",
-							"limitLow": "0",
-							"limitHigh": "0.9",
-							"output_map": "{10, 15, 30, 35, 50, 55, 70, 75, 90, 95}",
-							"cycle": "FALSE",
-							"description": "ILS Frequency KHz"
-						}
-					]
-				}
-			],
-			"TACAN Panel": [
-				{
-					"TACAN_10": [
-						{
-							"category": "TACAN Panel",
-							"type": "FixedStepTumb",
-							"msg": "TACAN_10",
-							"device_id": "74",
-							"command": "3001",
-							"arg_number": "256",
-							"step": "0.1",
-							"limitLow": "0",
-							"limitHigh": "1",
-							"output_map": " {-0.1,  0.1}",
-							"cycle": "nil",
-							"description": "Left Channel Selector"
-						}
-					]
-				},
-				{
-					"TACAN_1": [
-						{
-							"category": "TACAN Panel",
-							"type": "FixedStepTumb",
-							"msg": "TACAN_1",
-							"device_id": "74",
-							"command": "3002",
-							"arg_number": "257",
-							"step": "0.1",
-							"limitLow": "0",
-							"limitHigh": "1",
-							"output_map": " {-0.1,  0.1}",
-							"cycle": "nil",
-							"description": "Right Channel Selector"
-						}
-					]
-				}
-			],
 			"AAP": [
 				{
 					"AAP_STEERPT": [
@@ -124,6 +28,24 @@
 					]
 				},
 				{
+					"AAP_STEER": [
+						{
+							"category": "AAP",
+							"type": "Springloaded_3PosTumb",
+							"msg": "AAP_STEER",
+							"device_id": "22",
+							"command": "3003",
+							"arg_number": "474",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Toggle Steerpoint"
+						}
+					]
+				},
+				{
 					"AAP_PAGE": [
 						{
 							"category": "AAP",
@@ -136,7 +58,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.3",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "PAGE OTHER - POSITION - STEER - WAYPT"
 						}
 					]
@@ -418,6 +340,24 @@
 							"description": "Set Pressure"
 						}
 					]
+				},
+				{
+					"ALT_ELECT_PNEU": [
+						{
+							"category": "Altimeter",
+							"type": "Springloaded_3PosTumb",
+							"msg": "ALT_ELECT_PNEU",
+							"device_id": "62",
+							"command": "3002",
+							"arg_number": "60",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ELECT / PNEU"
+						}
+					]
 				}
 			],
 			"Antenna Panel": [
@@ -490,7 +430,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.3",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "ARC-210 25kHz Selector"
 						}
 					]
@@ -508,7 +448,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.9",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "ARC-210 100kHz Selector"
 						}
 					]
@@ -526,7 +466,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.9",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "ARC-210 1MHz Selector"
 						}
 					]
@@ -544,7 +484,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.9",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "ARC-210 10MHz Selector"
 						}
 					]
@@ -562,7 +502,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.3",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "ARC-210 100MHz Selector"
 						}
 					]
@@ -2084,6 +2024,78 @@
 							"description": "FA"
 						}
 					]
+				},
+				{
+					"CDU_BRT": [
+						{
+							"category": "CDU",
+							"type": "RockerSwitch",
+							"msg": "CDU_BRT",
+							"device_id": "9",
+							"command": "3060",
+							"arg_number": "424",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDU Display Brightness Adjustment"
+						}
+					]
+				},
+				{
+					"CDU_PG": [
+						{
+							"category": "CDU",
+							"type": "RockerSwitch",
+							"msg": "CDU_PG",
+							"device_id": "9",
+							"command": "3062",
+							"arg_number": "463",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "PG Rocker"
+						}
+					]
+				},
+				{
+					"CDU_SCROLL": [
+						{
+							"category": "CDU",
+							"type": "RockerSwitch",
+							"msg": "CDU_SCROLL",
+							"device_id": "9",
+							"command": "3064",
+							"arg_number": "469",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Scroll Waypoint Names (Blank Rocker)"
+						}
+					]
+				},
+				{
+					"CDU_DATA": [
+						{
+							"category": "CDU",
+							"type": "RockerSwitch",
+							"msg": "CDU_DATA",
+							"device_id": "9",
+							"command": "3066",
+							"arg_number": "472",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "+/- Rocker"
+						}
+					]
 				}
 			],
 			"CMSC": [
@@ -2288,6 +2300,24 @@
 					]
 				},
 				{
+					"CMSP_UPDN": [
+						{
+							"category": "CMSP",
+							"type": "RockerSwitch",
+							"msg": "CMSP_UPDN",
+							"device_id": "4",
+							"command": "3005",
+							"arg_number": "356",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Cycle Program or Value Up/Down"
+						}
+					]
+				},
+				{
 					"CMSP_RTN": [
 						{
 							"category": "CMSP",
@@ -2342,6 +2372,78 @@
 					]
 				},
 				{
+					"CMSP_MWS": [
+						{
+							"category": "CMSP",
+							"type": "CMSPSwitch",
+							"msg": "CMSP_MWS",
+							"device_id": "4",
+							"command": "3010",
+							"arg_number": "360",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Missile Warning System OFF - ON - (MENU)"
+						}
+					]
+				},
+				{
+					"CMSP_JMR": [
+						{
+							"category": "CMSP",
+							"type": "CMSPSwitch",
+							"msg": "CMSP_JMR",
+							"device_id": "4",
+							"command": "3012",
+							"arg_number": "361",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Jammer OFF - ON - (MENU)"
+						}
+					]
+				},
+				{
+					"CMSP_RWR": [
+						{
+							"category": "CMSP",
+							"type": "CMSPSwitch",
+							"msg": "CMSP_RWR",
+							"device_id": "4",
+							"command": "3014",
+							"arg_number": "362",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Radar Warning Receiver OFF - ON - (MENU)"
+						}
+					]
+				},
+				{
+					"CMSP_DISP": [
+						{
+							"category": "CMSP",
+							"type": "CMSPSwitch",
+							"msg": "CMSP_DISP",
+							"device_id": "4",
+							"command": "3016",
+							"arg_number": "363",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Countermeasure Dispenser OFF - ON - (MENU)"
+						}
+					]
+				},
+				{
 					"CMSP_MODE": [
 						{
 							"category": "CMSP",
@@ -2354,7 +2456,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "CMSP Mode Select"
 						}
 					]
@@ -2510,6 +2612,24 @@
 					]
 				},
 				{
+					"EPP_INVERTER": [
+						{
+							"category": "Electrical Power Panel",
+							"type": "Springloaded_3PosTumb",
+							"msg": "EPP_INVERTER",
+							"device_id": "1",
+							"command": "3055",
+							"arg_number": "242",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Inverter TEST - OFF - STBY"
+						}
+					]
+				},
+				{
 					"EPP_EMER_FLOOD": [
 						{
 							"category": "Electrical Power Panel",
@@ -2650,7 +2770,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "Emergency Trim CENTER - NOSE DN - RWD - NOSE UP - LWD"
 						}
 					]
@@ -2832,7 +2952,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.3",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "Air Conditioner MAN/AUTO/COLD/HOT"
 						}
 					]
@@ -2870,7 +2990,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "Fuel Display Selector"
 						}
 					]
@@ -3458,7 +3578,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.7",
 							"output_map": "nil",
-							"cycle": " true",
+							"cycle": "TRUE",
 							"description": "Mode-1 Wheel 1"
 						}
 					]
@@ -3476,7 +3596,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.3",
 							"output_map": "nil",
-							"cycle": " true",
+							"cycle": "TRUE",
 							"description": "Mode-1 Wheel 2"
 						}
 					]
@@ -3494,7 +3614,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.7",
 							"output_map": "nil",
-							"cycle": " true",
+							"cycle": "TRUE",
 							"description": "Mode-3A Wheel 1"
 						}
 					]
@@ -3512,7 +3632,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.7",
 							"output_map": "nil",
-							"cycle": " true",
+							"cycle": "TRUE",
 							"description": "Mode-3A Wheel 2"
 						}
 					]
@@ -3530,7 +3650,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.7",
 							"output_map": "nil",
-							"cycle": " true",
+							"cycle": "TRUE",
 							"description": "Mode-3A Wheel 3"
 						}
 					]
@@ -3548,8 +3668,26 @@
 							"limitLow": "0",
 							"limitHigh": "0.7",
 							"output_map": "nil",
-							"cycle": " true",
+							"cycle": "TRUE",
 							"description": "Mode-3A Wheel 4"
+						}
+					]
+				},
+				{
+					"IFF_CODE": [
+						{
+							"category": "IFF",
+							"type": "SetCommandTumb",
+							"msg": "IFF_CODE",
+							"device_id": "43",
+							"command": "3007",
+							"arg_number": "199",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "nil",
+							"cycle": "FALSE",
+							"description": "IFF Code: ZERO - B - A - (HOLD)"
 						}
 					]
 				},
@@ -3566,7 +3704,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "IFF Master: OFF - STBY - LOW - NORM - EMER"
 						}
 					]
@@ -3586,6 +3724,114 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "IFF Out: LIGHT - OFF - AUDIO"
+						}
+					]
+				},
+				{
+					"IFF_TEST_M1": [
+						{
+							"category": "IFF",
+							"type": "RockerSwitch",
+							"msg": "IFF_TEST_M1",
+							"device_id": "43",
+							"command": "3010",
+							"arg_number": "202",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Test M-1"
+						}
+					]
+				},
+				{
+					"IFF_TEST_M2": [
+						{
+							"category": "IFF",
+							"type": "RockerSwitch",
+							"msg": "IFF_TEST_M2",
+							"device_id": "43",
+							"command": "3011",
+							"arg_number": "203",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Test M-2"
+						}
+					]
+				},
+				{
+					"IFF_TEST_M3": [
+						{
+							"category": "IFF",
+							"type": "RockerSwitch",
+							"msg": "IFF_TEST_M3",
+							"device_id": "43",
+							"command": "3012",
+							"arg_number": "204",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Test M-3"
+						}
+					]
+				},
+				{
+					"IFF_TEST_M4": [
+						{
+							"category": "IFF",
+							"type": "RockerSwitch",
+							"msg": "IFF_TEST_M4",
+							"device_id": "43",
+							"command": "3013",
+							"arg_number": "205",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Test M-4"
+						}
+					]
+				},
+				{
+					"IFF_RADTEST": [
+						{
+							"category": "IFF",
+							"type": "RockerSwitch",
+							"msg": "IFF_RADTEST",
+							"device_id": "43",
+							"command": "3014",
+							"arg_number": "206",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "RAD Test/Mon"
+						}
+					]
+				},
+				{
+					"IFF_MIC_IDENT": [
+						{
+							"category": "IFF",
+							"type": "RockerSwitch",
+							"msg": "IFF_MIC_IDENT",
+							"device_id": "43",
+							"command": "3015",
+							"arg_number": "207",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Ident/Mic"
 						}
 					]
 				},
@@ -3700,6 +3946,42 @@
 					]
 				},
 				{
+					"ILS_MHZ": [
+						{
+							"category": "ILS Panel",
+							"type": "SetCommandTumb",
+							"msg": "ILS_MHZ",
+							"device_id": "53",
+							"command": "3002",
+							"arg_number": "248",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "{108, 109, 110, 111}",
+							"cycle": "FALSE",
+							"description": "ILS Frequency MHz"
+						}
+					]
+				},
+				{
+					"ILS_KHZ": [
+						{
+							"category": "ILS Panel",
+							"type": "SetCommandTumb",
+							"msg": "ILS_KHZ",
+							"device_id": "53",
+							"command": "3003",
+							"arg_number": "249",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.9",
+							"output_map": "{10, 15, 30, 35, 50, 55, 70, 75, 90, 95}",
+							"cycle": "FALSE",
+							"description": "ILS Frequency KHz"
+						}
+					]
+				},
+				{
 					"ILS_VOL": [
 						{
 							"category": "ILS Panel",
@@ -3732,7 +4014,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "INT Un-Mute"
 						}
 					]
@@ -3768,7 +4050,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "FM Un-Mute"
 						}
 					]
@@ -3804,7 +4086,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "VHF Un-Mute"
 						}
 					]
@@ -3840,7 +4122,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "UHF Un-Mute"
 						}
 					]
@@ -3876,7 +4158,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "AIM Un-Mute"
 						}
 					]
@@ -3912,7 +4194,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "IFF Un-Mute"
 						}
 					]
@@ -3948,7 +4230,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "ILS Un-Mute"
 						}
 					]
@@ -3984,7 +4266,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "TCN Un-Mute"
 						}
 					]
@@ -4056,7 +4338,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "Intercom Selector Switch INT/FM/VHF/HF/Blank"
 						}
 					]
@@ -4114,6 +4396,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "TEMS Data"
+						}
+					]
+				},
+				{
+					"ANTI_SKID_SWITCH": [
+						{
+							"category": "Landing Gear and Flap Control Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "ANTI_SKID_SWITCH",
+							"device_id": "38",
+							"command": "3028",
+							"arg_number": "654",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Anti-Skid Switch"
 						}
 					]
 				},
@@ -4206,6 +4506,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Autopilot Engage/Disengage"
+						}
+					]
+				},
+				{
+					"LASTE_EAC": [
+						{
+							"category": "LASTE Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "LASTE_EAC",
+							"device_id": "38",
+							"command": "3026",
+							"arg_number": "129",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "EAC On/Off"
 						}
 					]
 				},
@@ -4590,6 +4908,96 @@
 					]
 				},
 				{
+					"LMFD_ADJ": [
+						{
+							"category": "Left MFCD",
+							"type": "RockerSwitch",
+							"msg": "LMFD_ADJ",
+							"device_id": "2",
+							"command": "3021",
+							"arg_number": "320",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ADJ"
+						}
+					]
+				},
+				{
+					"LMFD_DSP": [
+						{
+							"category": "Left MFCD",
+							"type": "RockerSwitch",
+							"msg": "LMFD_DSP",
+							"device_id": "2",
+							"command": "3024",
+							"arg_number": "321",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "DSP"
+						}
+					]
+				},
+				{
+					"LMFD_BRT": [
+						{
+							"category": "Left MFCD",
+							"type": "RockerSwitch",
+							"msg": "LMFD_BRT",
+							"device_id": "2",
+							"command": "3027",
+							"arg_number": "322",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "BRT"
+						}
+					]
+				},
+				{
+					"LMFD_CON": [
+						{
+							"category": "Left MFCD",
+							"type": "RockerSwitch",
+							"msg": "LMFD_CON",
+							"device_id": "2",
+							"command": "3030",
+							"arg_number": "323",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CON"
+						}
+					]
+				},
+				{
+					"LMFD_SYM": [
+						{
+							"category": "Left MFCD",
+							"type": "RockerSwitch",
+							"msg": "LMFD_SYM",
+							"device_id": "2",
+							"command": "3033",
+							"arg_number": "324",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SYM"
+						}
+					]
+				},
+				{
 					"LMFD_PWR": [
 						{
 							"category": "Left MFCD",
@@ -4754,6 +5162,24 @@
 					]
 				},
 				{
+					"LCP_ANTICOLLISION": [
+						{
+							"category": "Light System Control Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "LCP_ANTICOLLISION",
+							"device_id": "49",
+							"command": "3010",
+							"arg_number": "289",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Anticollision Lights"
+						}
+					]
+				},
+				{
 					"LCP_NOSE_ILLUM": [
 						{
 							"category": "Light System Control Panel",
@@ -4864,6 +5290,42 @@
 					]
 				},
 				{
+					"SEAT_ADJUST": [
+						{
+							"category": "Misc",
+							"type": "Springloaded_3PosTumb",
+							"msg": "SEAT_ADJUST",
+							"device_id": "39",
+							"command": "3004",
+							"arg_number": "770",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Seat Adjust"
+						}
+					]
+				},
+				{
+					"CANOPY_OPEN": [
+						{
+							"category": "Misc",
+							"type": "3Pos2CommandSwitchA10",
+							"msg": "CANOPY_OPEN",
+							"device_id": "39",
+							"command": "3006",
+							"arg_number": "712",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Canopy Open Switch"
+						}
+					]
+				},
+				{
 					"AUX_GEAR": [
 						{
 							"category": "Misc",
@@ -4912,7 +5374,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "Seat Arm Handle (0 = ARM 1 = DISARM)"
 						}
 					]
@@ -5224,6 +5686,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Oxygen Normal/100%"
+						}
+					]
+				},
+				{
+					"OXY_EMERGENCY": [
+						{
+							"category": "Oxygen Regulator Panel",
+							"type": "Springloaded_3PosTumb",
+							"msg": "OXY_EMERGENCY",
+							"device_id": "40",
+							"command": "3004",
+							"arg_number": "601",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Oxygen Flow: Emergency / Normal / Test"
 						}
 					]
 				}
@@ -5590,6 +6070,96 @@
 					]
 				},
 				{
+					"RMFD_ADJ": [
+						{
+							"category": "Right MFCD",
+							"type": "RockerSwitch",
+							"msg": "RMFD_ADJ",
+							"device_id": "3",
+							"command": "3021",
+							"arg_number": "346",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ADJ"
+						}
+					]
+				},
+				{
+					"RMFD_DSP": [
+						{
+							"category": "Right MFCD",
+							"type": "RockerSwitch",
+							"msg": "RMFD_DSP",
+							"device_id": "3",
+							"command": "3024",
+							"arg_number": "347",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "DSP"
+						}
+					]
+				},
+				{
+					"RMFD_BRT": [
+						{
+							"category": "Right MFCD",
+							"type": "RockerSwitch",
+							"msg": "RMFD_BRT",
+							"device_id": "3",
+							"command": "3027",
+							"arg_number": "348",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "BRT"
+						}
+					]
+				},
+				{
+					"RMFD_CON": [
+						{
+							"category": "Right MFCD",
+							"type": "RockerSwitch",
+							"msg": "RMFD_CON",
+							"device_id": "3",
+							"command": "3030",
+							"arg_number": "349",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CON"
+						}
+					]
+				},
+				{
+					"RMFD_SYM": [
+						{
+							"category": "Right MFCD",
+							"type": "RockerSwitch",
+							"msg": "RMFD_SYM",
+							"device_id": "3",
+							"command": "3033",
+							"arg_number": "350",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SYM"
+						}
+					]
+				},
+				{
 					"RMFD_PWR": [
 						{
 							"category": "Right MFCD",
@@ -5629,6 +6199,96 @@
 				}
 			],
 			"SAS Panel": [
+				{
+					"SASP_YAW_SAS_L": [
+						{
+							"category": "SAS Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "SASP_YAW_SAS_L",
+							"device_id": "38",
+							"command": "3003",
+							"arg_number": "185",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Yaw SAS Left OFF - ENGAGE"
+						}
+					]
+				},
+				{
+					"SASP_YAW_SAS_R": [
+						{
+							"category": "SAS Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "SASP_YAW_SAS_R",
+							"device_id": "38",
+							"command": "3005",
+							"arg_number": "186",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Yaw SAS Right OFF - ENGAGE"
+						}
+					]
+				},
+				{
+					"SASP_PITCH_SAS_L": [
+						{
+							"category": "SAS Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "SASP_PITCH_SAS_L",
+							"device_id": "38",
+							"command": "3007",
+							"arg_number": "187",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Pitch SAS Left OFF - ENGAGE"
+						}
+					]
+				},
+				{
+					"SASP_PITCH_SAS_R": [
+						{
+							"category": "SAS Panel",
+							"type": "ElectricallyHeldSwitch",
+							"msg": "SASP_PITCH_SAS_R",
+							"device_id": "38",
+							"command": "3009",
+							"arg_number": "188",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Pitch SAS Right OFF - ENGAGE"
+						}
+					]
+				},
+				{
+					"SASP_MONITOR_TEST": [
+						{
+							"category": "SAS Panel",
+							"type": "Springloaded_3PosTumb",
+							"msg": "SASP_MONITOR_TEST",
+							"device_id": "38",
+							"command": "3011",
+							"arg_number": "189",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Monitor Test Left/Right"
+						}
+					]
+				},
 				{
 					"SASP_TO_TRIM": [
 						{
@@ -5872,6 +6532,42 @@
 			],
 			"TACAN Panel": [
 				{
+					"TACAN_10": [
+						{
+							"category": "TACAN Panel",
+							"type": "FixedStepTumb",
+							"msg": "TACAN_10",
+							"device_id": "74",
+							"command": "3001",
+							"arg_number": "256",
+							"step": "0.1",
+							"limitLow": "-1",
+							"limitHigh": "1",
+							"output_map": " {-0.1,  0.1}",
+							"cycle": "nil",
+							"description": "Left Channel Selector"
+						}
+					]
+				},
+				{
+					"TACAN_1": [
+						{
+							"category": "TACAN Panel",
+							"type": "FixedStepTumb",
+							"msg": "TACAN_1",
+							"device_id": "74",
+							"command": "3002",
+							"arg_number": "257",
+							"step": "0.1",
+							"limitLow": "-1",
+							"limitHigh": "1",
+							"output_map": " {-0.1,  0.1}",
+							"cycle": "nil",
+							"description": "Right Channel Selector"
+						}
+					]
+				},
+				{
 					"TACAN_XY": [
 						{
 							"category": "TACAN Panel",
@@ -5938,7 +6634,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "TACAN Mode Dial"
 						}
 					]
@@ -5978,6 +6674,42 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Fuel Flow R"
+						}
+					]
+				},
+				{
+					"ENGINE_OPER_L": [
+						{
+							"category": "Throttle",
+							"type": "Springloaded_3PosTumb",
+							"msg": "ENGINE_OPER_L",
+							"device_id": "37",
+							"command": "3003",
+							"arg_number": "124",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ENG OPER L"
+						}
+					]
+				},
+				{
+					"ENGINE_OPER_R": [
+						{
+							"category": "Throttle",
+							"type": "Springloaded_3PosTumb",
+							"msg": "ENGINE_OPER_R",
+							"device_id": "37",
+							"command": "3004",
+							"arg_number": "125",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ENG OPER R"
 						}
 					]
 				},
@@ -6030,7 +6762,7 @@
 							"limitLow": "0",
 							"limitHigh": "1",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "Flaps Setting DN - MVR - UP"
 						}
 					]
@@ -6050,7 +6782,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.4",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "TISL Mode (A-10C)"
 						}
 					]
@@ -6598,6 +7330,96 @@
 					]
 				},
 				{
+					"UFC_STEER": [
+						{
+							"category": "UFC",
+							"type": "RockerSwitch",
+							"msg": "UFC_STEER",
+							"device_id": "8",
+							"command": "3020",
+							"arg_number": "405",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "STEER Up/Down"
+						}
+					]
+				},
+				{
+					"UFC_DATA": [
+						{
+							"category": "UFC",
+							"type": "RockerSwitch",
+							"msg": "UFC_DATA",
+							"device_id": "8",
+							"command": "3022",
+							"arg_number": "406",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "DATA Up/Down"
+						}
+					]
+				},
+				{
+					"UFC_SEL": [
+						{
+							"category": "UFC",
+							"type": "RockerSwitch",
+							"msg": "UFC_SEL",
+							"device_id": "8",
+							"command": "3024",
+							"arg_number": "407",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "SEL Up/Down"
+						}
+					]
+				},
+				{
+					"UFC_DEPR": [
+						{
+							"category": "UFC",
+							"type": "RockerSwitch",
+							"msg": "UFC_DEPR",
+							"device_id": "8",
+							"command": "3026",
+							"arg_number": "408",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "DEPR Up/Down"
+						}
+					]
+				},
+				{
+					"UFC_INTEN": [
+						{
+							"category": "UFC",
+							"type": "RockerSwitch",
+							"msg": "UFC_INTEN",
+							"device_id": "8",
+							"command": "3028",
+							"arg_number": "409",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "INTEN Incr/Decr"
+						}
+					]
+				},
+				{
 					"UFC_COM1": [
 						{
 							"category": "UFC",
@@ -6774,7 +7596,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.9",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "UHF 10MHz Selector"
 						}
 					]
@@ -6792,7 +7614,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.9",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "UHF 1MHz Selector"
 						}
 					]
@@ -6810,7 +7632,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.9",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "UHF 0.1MHz Selector"
 						}
 					]
@@ -6864,7 +7686,7 @@
 							"limitLow": "0",
 							"limitHigh": "0.3",
 							"output_map": "nil",
-							"cycle": " false",
+							"cycle": "FALSE",
 							"description": "UHF Function Dial OFF/MAIN/BOTH/ADF"
 						}
 					]
@@ -6998,6 +7820,24 @@
 			],
 			"VHF AM Radio": [
 				{
+					"VHFAM_PRESET": [
+						{
+							"category": "VHF AM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFAM_PRESET",
+							"device_id": "55",
+							"command": "3001",
+							"arg_number": "137",
+							"step": "0.01",
+							"limitLow": "-0.01",
+							"limitHigh": "0.01",
+							"output_map": "{ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}",
+							"cycle": "",
+							"description": "Preset Channel Selector"
+						}
+					]
+				},
+				{
 					"VHFAM_MODE": [
 						{
 							"category": "VHF AM Radio",
@@ -7086,9 +7926,99 @@
 							"description": "Squelch"
 						}
 					]
+				},
+				{
+					"VHFAM_FREQ1": [
+						{
+							"category": "VHF AM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFAM_FREQ1",
+							"device_id": "55",
+							"command": "3009",
+							"arg_number": "143",
+							"step": "0.05",
+							"limitLow": "-0.1",
+							"limitHigh": "0.1",
+							"output_map": " {3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15}",
+							"cycle": "",
+							"description": "Frequency Selector 1"
+						}
+					]
+				},
+				{
+					"VHFAM_FREQ2": [
+						{
+							"category": "VHF AM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFAM_FREQ2",
+							"device_id": "55",
+							"command": "3011",
+							"arg_number": "144",
+							"step": "0.1",
+							"limitLow": "-0.1",
+							"limitHigh": "0.1",
+							"output_map": "",
+							"cycle": "nil",
+							"description": "Frequency Selector 2"
+						}
+					]
+				},
+				{
+					"VHFAM_FREQ3": [
+						{
+							"category": "VHF AM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFAM_FREQ3",
+							"device_id": "55",
+							"command": "3013",
+							"arg_number": "145",
+							"step": "0.1",
+							"limitLow": "-0.1",
+							"limitHigh": "0.1",
+							"output_map": "",
+							"cycle": "nil",
+							"description": "Frequency Selector 3"
+						}
+					]
+				},
+				{
+					"VHFAM_FREQ4": [
+						{
+							"category": "VHF AM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFAM_FREQ4",
+							"device_id": "55",
+							"command": "3015",
+							"arg_number": "146",
+							"step": "0.25",
+							"limitLow": "-0.25",
+							"limitHigh": "0.25",
+							"output_map": " {00,25, 50, 75}",
+							"cycle": "",
+							"description": "Frequency Selector 4"
+						}
+					]
 				}
 			],
 			"VHF FM Radio": [
+				{
+					"VHFFM_PRESET": [
+						{
+							"category": "VHF FM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFFM_PRESET",
+							"device_id": "56",
+							"command": "3001",
+							"arg_number": "151",
+							"step": "0.01",
+							"limitLow": "-0.01",
+							"limitHigh": "0.01",
+							"output_map": "{ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}",
+							"cycle": "",
+							"description": "Preset Channel Selector"
+						}
+					]
+				},
 				{
 					"VHFFM_MODE": [
 						{
@@ -7176,6 +8106,78 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Squelch"
+						}
+					]
+				},
+				{
+					"VHFFM_FREQ1": [
+						{
+							"category": "VHF FM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFFM_FREQ1",
+							"device_id": "56",
+							"command": "3009",
+							"arg_number": "157",
+							"step": "0.05",
+							"limitLow": "-0.1",
+							"limitHigh": "0.1",
+							"output_map": " {3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15}",
+							"cycle": "",
+							"description": "Frequency Selector 1"
+						}
+					]
+				},
+				{
+					"VHFFM_FREQ2": [
+						{
+							"category": "VHF FM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFFM_FREQ2",
+							"device_id": "56",
+							"command": "3011",
+							"arg_number": "158",
+							"step": "0.1",
+							"limitLow": "-0.1",
+							"limitHigh": "0.1",
+							"output_map": "",
+							"cycle": "nil",
+							"description": "Frequency Selector 2"
+						}
+					]
+				},
+				{
+					"VHFFM_FREQ3": [
+						{
+							"category": "VHF FM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFFM_FREQ3",
+							"device_id": "56",
+							"command": "3013",
+							"arg_number": "159",
+							"step": "0.1",
+							"limitLow": "-0.1",
+							"limitHigh": "0.1",
+							"output_map": "",
+							"cycle": "nil",
+							"description": "Frequency Selector 3"
+						}
+					]
+				},
+				{
+					"VHFFM_FREQ4": [
+						{
+							"category": "VHF FM Radio",
+							"type": "RadioWheel",
+							"msg": "VHFFM_FREQ4",
+							"device_id": "56",
+							"command": "3015",
+							"arg_number": "160",
+							"step": "0.25",
+							"limitLow": "-0.25",
+							"limitHigh": "0.25",
+							"output_map": " {00,25, 50, 75}",
+							"cycle": "",
+							"description": "Frequency Selector 4"
 						}
 					]
 				}

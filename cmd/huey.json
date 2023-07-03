@@ -46,6 +46,24 @@
 					]
 				},
 				{
+					"ADF_TUNE": [
+						{
+							"category": "ADF",
+							"type": "Rotary",
+							"msg": "ADF_TUNE",
+							"device_id": "27",
+							"command": "3003",
+							"arg_number": "39",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "ADF Tune"
+						}
+					]
+				},
+				{
 					"ADF_GAIN": [
 						{
 							"category": "ADF",
@@ -228,7 +246,63 @@
 					]
 				}
 			],
+			"Caution Lights Panel": [
+				{
+					"CLP_RESET_TEST_SW": [
+						{
+							"category": "Caution Lights Panel",
+							"type": "RockerSwitch",
+							"msg": "CLP_RESET_TEST_SW",
+							"device_id": "15",
+							"command": "3001",
+							"arg_number": "111",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Test/Reset Rocker Switch"
+						}
+					]
+				},
+				{
+					"CLP_BRIGHT_DIM_SW": [
+						{
+							"category": "Caution Lights Panel",
+							"type": "RockerSwitch",
+							"msg": "CLP_BRIGHT_DIM_SW",
+							"device_id": "15",
+							"command": "3002",
+							"arg_number": "112",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Bright/Dim Rocker Switch"
+						}
+					]
+				}
+			],
 			"Center Console": [
+				{
+					"CHIP_DET_SW": [
+						{
+							"category": "Center Console",
+							"type": "RockerSwitch",
+							"msg": "CHIP_DET_SW",
+							"device_id": "3",
+							"command": "3013",
+							"arg_number": "86",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Chip Detector Rocker Switch"
+						}
+					]
+				},
 				{
 					"HYD_CONT_SW": [
 						{
@@ -1618,9 +1692,45 @@
 							"description": "Adjustment Dial Pull"
 						}
 					]
+				},
+				{
+					"CLOCK_ADJUST": [
+						{
+							"category": "Clock",
+							"type": "Rotary",
+							"msg": "CLOCK_ADJUST",
+							"device_id": "30",
+							"command": "3002",
+							"arg_number": "130",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Adjustment Dial"
+						}
+					]
 				}
 			],
 			"Collective": [
+				{
+					"GOV_RPM_SW": [
+						{
+							"category": "Collective",
+							"type": "RockerSwitch",
+							"msg": "GOV_RPM_SW",
+							"device_id": "3",
+							"command": "3015",
+							"arg_number": "203",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Governor RPM Rocker Switch"
+						}
+					]
+				},
 				{
 					"THROTTLE": [
 						{
@@ -1654,6 +1764,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Throttle Stop Switch ON/OFF"
+						}
+					]
+				},
+				{
+					"GOV_RPM_SW2": [
+						{
+							"category": "Collective",
+							"type": "RockerSwitch",
+							"msg": "GOV_RPM_SW2",
+							"device_id": "3",
+							"command": "3029",
+							"arg_number": "210",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Copilot Governor RPM Rocker Switch"
 						}
 					]
 				},
@@ -1858,6 +1986,24 @@
 					]
 				},
 				{
+					"CM_FLARECNT": [
+						{
+							"category": "Countermeasures",
+							"type": "FixedStepInput",
+							"msg": "CM_FLARECNT",
+							"device_id": "50",
+							"command": "3004",
+							"arg_number": "",
+							"step": "",
+							"limitLow": "-1",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Flare Counter Decrease/Increase"
+						}
+					]
+				},
+				{
 					"CM_ARM_SW": [
 						{
 							"category": "Countermeasures",
@@ -1908,6 +2054,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Chaff Counter Reset Button"
+						}
+					]
+				},
+				{
+					"CM_CHAFFCNT": [
+						{
+							"category": "Countermeasures",
+							"type": "FixedStepInput",
+							"msg": "CM_CHAFFCNT",
+							"device_id": "50",
+							"command": "3008",
+							"arg_number": "",
+							"step": "",
+							"limitLow": "-1",
+							"limitHigh": "1",
+							"output_map": "",
+							"cycle": "",
+							"description": "Chaff Counter Decrease/Increase"
 						}
 					]
 				},
@@ -2464,6 +2628,24 @@
 					]
 				},
 				{
+					"HDG_SET": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "HDG_SET",
+							"device_id": "10",
+							"command": "3003",
+							"arg_number": "163",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "HDG SET Knob"
+						}
+					]
+				},
+				{
 					"ADF_VOR_SW": [
 						{
 							"category": "Front Dash",
@@ -2482,6 +2664,24 @@
 					]
 				},
 				{
+					"HDG_SYNC": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "HDG_SYNC",
+							"device_id": "10",
+							"command": "3005",
+							"arg_number": "161",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Compass Synchronizing"
+						}
+					]
+				},
+				{
 					"RADAR_ALT_TEST": [
 						{
 							"category": "Front Dash",
@@ -2496,6 +2696,78 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Radar Altimeter Test"
+						}
+					]
+				},
+				{
+					"RADAR_ALT_LO": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "RADAR_ALT_LO",
+							"device_id": "13",
+							"command": "3002",
+							"arg_number": "445",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Radar Altimeter Low Setting"
+						}
+					]
+				},
+				{
+					"RADAR_ALT_HI": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "RADAR_ALT_HI",
+							"device_id": "13",
+							"command": "3003",
+							"arg_number": "448",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Radar Altimeter High Setting"
+						}
+					]
+				},
+				{
+					"ALT_ADJ_PLT": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "ALT_ADJ_PLT",
+							"device_id": "18",
+							"command": "3001",
+							"arg_number": "181",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Pilot Altimeter Pressure Adjustment"
+						}
+					]
+				},
+				{
+					"ALT_ADJ_CPLT": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "ALT_ADJ_CPLT",
+							"device_id": "19",
+							"command": "3001",
+							"arg_number": "172",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "Copilot Altimeter Pressure Adjustment"
 						}
 					]
 				},
@@ -2532,6 +2804,24 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Marker Beacon Sensing LOW / HIGH"
+						}
+					]
+				},
+				{
+					"CRS_KNOB": [
+						{
+							"category": "Front Dash",
+							"type": "Rotary",
+							"msg": "CRS_KNOB",
+							"device_id": "29",
+							"command": "3001",
+							"arg_number": "155",
+							"step": "",
+							"limitLow": "",
+							"limitHigh": "",
+							"output_map": "",
+							"cycle": "",
+							"description": "CDI CRS Selector Knob"
 						}
 					]
 				}
@@ -2680,6 +2970,24 @@
 							"output_map": "nil",
 							"cycle": "TRUE",
 							"description": "Mode-3A Wheel 4"
+						}
+					]
+				},
+				{
+					"IFF_CODE": [
+						{
+							"category": "IFF",
+							"type": "FixedStepTumb",
+							"msg": "IFF_CODE",
+							"device_id": "17",
+							"command": "3007",
+							"arg_number": "58",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.3",
+							"output_map": "{1, -1}",
+							"cycle": "nil",
+							"description": "IFF Code: ZERO - B - A - (HOLD)"
 						}
 					]
 				},
@@ -3318,6 +3626,24 @@
 					]
 				},
 				{
+					"WIPER_SPD": [
+						{
+							"category": "Overhead Panel",
+							"type": "FixedStepTumb",
+							"msg": "WIPER_SPD",
+							"device_id": "12",
+							"command": "3001",
+							"arg_number": "229",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "0.4",
+							"output_map": "{-1, 1}",
+							"cycle": "nil",
+							"description": "Wiper Speed PARK - STOP - SLOW - MED - HIGH"
+						}
+					]
+				},
+				{
 					"WIPER_SEL": [
 						{
 							"category": "Overhead Panel",
@@ -3406,6 +3732,60 @@
 							"output_map": "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}",
 							"cycle": "FALSE",
 							"description": "Preset Channel Selector"
+						}
+					]
+				},
+				{
+					"UHF_10MHZ": [
+						{
+							"category": "UHF Radio",
+							"type": "FixedStepInput",
+							"msg": "UHF_10MHZ",
+							"device_id": "22",
+							"command": "3002",
+							"arg_number": "",
+							"step": "",
+							"limitLow": "0.1",
+							"limitHigh": "-0.1",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF 10 MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_1MHZ": [
+						{
+							"category": "UHF Radio",
+							"type": "FixedStepInput",
+							"msg": "UHF_1MHZ",
+							"device_id": "22",
+							"command": "3003",
+							"arg_number": "",
+							"step": "",
+							"limitLow": "0.1",
+							"limitHigh": "-0.1",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF 1 MHz Selector"
+						}
+					]
+				},
+				{
+					"UHF_50KHZ": [
+						{
+							"category": "UHF Radio",
+							"type": "FixedStepInput",
+							"msg": "UHF_50KHZ",
+							"device_id": "22",
+							"command": "3004",
+							"arg_number": "",
+							"step": "",
+							"limitLow": "0.1",
+							"limitHigh": "-0.1",
+							"output_map": "",
+							"cycle": "",
+							"description": "UHF 50 KHz Selector"
 						}
 					]
 				},
@@ -3534,6 +3914,42 @@
 							"output_map": "",
 							"cycle": "",
 							"description": "Volume Control (step size less than 8192 may not work)"
+						}
+					]
+				},
+				{
+					"VHFCOMM_MHZ": [
+						{
+							"category": "VHF COMM Radio",
+							"type": "FixedStepTumb",
+							"msg": "VHFCOMM_MHZ",
+							"device_id": "20",
+							"command": "3004",
+							"arg_number": "7",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{-0.1, 0.1}",
+							"cycle": "nil",
+							"description": "VHF MHz Selector"
+						}
+					]
+				},
+				{
+					"VHFCOMM_KHZ": [
+						{
+							"category": "VHF COMM Radio",
+							"type": "FixedStepTumb",
+							"msg": "VHFCOMM_KHZ",
+							"device_id": "20",
+							"command": "3005",
+							"arg_number": "8",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{-0.1, 0.1}",
+							"cycle": "nil",
+							"description": "VHF KHz Selector"
 						}
 					]
 				}
@@ -3667,6 +4083,42 @@
 				}
 			],
 			"VHF NAV Radio": [
+				{
+					"VHFNAV_MHZ": [
+						{
+							"category": "VHF NAV Radio",
+							"type": "FixedStepTumb",
+							"msg": "VHFNAV_MHZ",
+							"device_id": "25",
+							"command": "3001",
+							"arg_number": "52",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0.1, -0.1}",
+							"cycle": "nil",
+							"description": "VHF NAV MHz Selector"
+						}
+					]
+				},
+				{
+					"VHFNAV_KHZ": [
+						{
+							"category": "VHF NAV Radio",
+							"type": "FixedStepTumb",
+							"msg": "VHFNAV_KHZ",
+							"device_id": "25",
+							"command": "3002",
+							"arg_number": "53",
+							"step": "0.1",
+							"limitLow": "0",
+							"limitHigh": "1",
+							"output_map": "{0.1, -0.1}",
+							"cycle": "nil",
+							"description": "VHF NAV KHz Selector"
+						}
+					]
+				},
 				{
 					"VHFNAV_PWR": [
 						{
