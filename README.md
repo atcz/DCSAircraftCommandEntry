@@ -25,10 +25,13 @@ DCS Aircraft Command Entry creates a sequence of aircraft commands for DCS-BIOS 
 to the aircraft.
 
 Supported control types:
+- 3PosMossi
 - 3PosTumb
 - 3PosTumb1
+- 3Pos2CommandSwitchF5
 - 3Pos2CommandSwitchA10
 - CMSPSwitch
+- DoubleCommandButton
 - EjectionHandleSwitch
 - ElectricallyHeldSwitch
 - EmergencyParkingBrake
@@ -36,13 +39,16 @@ Supported control types:
 - FixedStepTumb
 - LedPushButton
 - MissionComputerSwitch
+- MomentaryRockerSwitch
 - MultipositionSwitch
 - Potentiometer
 - PushButton
 - RadioWheel
 - RockerSwitch
 - Rotary
+- RotaryPlus
 - SetCommandTumb
+- Springloaded_2PosTumb
 - Springloaded_3PosTumb
 - ToggleSwitch
 - ToggleSwitchToggleOnly
@@ -61,16 +67,17 @@ the Profile menu.
 
 General guidelines for setting the command values:
 
-- 3PosTumb, 3PosTumb1, MissionComputerSwitch, Springloaded_3PosTumb:
-The three switch positions correspond to values 0, 1 and 2.  RockerSwitch and Springloaded_3PosTumb return to position 1 after selecting either
-0 or 2.  Value of 2 is sent if not specified.
+- 3Pos2CommandSwitchF5, 3PosMossi, 3PosTumb, 3PosTumb1, MissionComputerSwitch, MomentaryRockerSwitch, RockerSwitch, Springloaded_3PosTumb:
+The three switch positions correspond to values 0, 1 and 2.  MomentaryRockerSwitch, RockerSwitch and Springloaded_3PosTumb return to 
+position 1 after selecting either 0 or 2.  Value of 2 is sent if not specified.
+
+- CMSPSwitch, DoubleCommandButton, EjectionHandleSwitch, ElectricallyHeldSwitch, Springloaded_2PosTumb, ToggleSwitch, ToggleSwitchToggleOnly,
+ToggleSwitchToggleOnly2:
+Accepts values 0 or 1.  Springloaded_2PosTumb returns to position 1 after selecting position 0.  Value of 1 is sent if not specified.
 
 - 3Pos2CommandSwitchA10:
 This switch is used for the A-10C canopy open/close.  Setting value 2 opens the canopy, and value 0 holds the close switch for 7 seconds
 and then releases.  Value of 2 is sent if not specified.
-
-- CMSPSwitch, EjectionHandleSwitch, ElectricallyHeldSwitch, ToggleSwitch, ToggleSwitchToggleOnly, ToggleSwitchToggleOnly2:
-Accepts values 0 or 1.  Value of 1 is sent if not specified.
 
 - EmergencyParkingBrake:
 This is the rotate function of the F18 parking brake control.  Values 0 and 1 rotate the handle, value 2 releases the brake.
@@ -91,7 +98,7 @@ will be sent if not specified.
 The allowable setting is specified by Min and Max, corresponding to the range of the potentiometer.  Max value will be sent
 if not specified. The Range pulldown will list 6 values from Min to Max.
 
-- Rotary:
+- Rotary, RotaryPlus:
 The value used by DCS-BIOS is the entered value / 65535.  This will take experimentation to find the correct value to
 use.  In the F18, with the radar altimeter off, a value of 11,000 turns on the radar altimeter and sets the altitude to 200 feet.
 A value of -50,000 changes the altitude from 3,000 to 1,000.
