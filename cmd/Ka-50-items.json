@@ -1,0 +1,2801 @@
+{
+    "commands": {
+        "Overhead Panel": {
+            "OP_NAV_LIGHTS": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_NAV_LIGHTS",
+                "device_id": "45",
+                "device_command": "3004",
+                "arg_number": "146",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "Overhead Panel",
+                "description": "Navigation Lights 10% / 30% / 100% / Off Switch"
+            },
+            "OP_WINDSHIELD_WIPER": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_WINDSHIELD_WIPER",
+                "device_id": "34",
+                "device_command": "3006",
+                "arg_number": "147",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "Overhead Panel",
+                "description": "Windshield wiper Switch"
+            },
+            "OP_WINDSHIELD_WASH": {
+                "type": "ToggleSwitch",
+                "msg": "OP_WINDSHIELD_WASH",
+                "device_id": "0",
+                "command": "3008",
+                "arg_number": "148",
+                "category": "Overhead Panel",
+                "description": "Windshield washer fluid Switch"
+            },
+            "OP_PITOT_PORT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_PITOT_PORT_HEAT",
+                "device_id": "34",
+                "command": "3008",
+                "arg_number": "539",
+                "category": "Overhead Panel",
+                "description": "Pitot static port and AoA sensors heat Switch"
+            },
+            "OP_PITOT_RAM_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_PITOT_RAM_HEAT",
+                "device_id": "34",
+                "command": "3009",
+                "arg_number": "151",
+                "category": "Overhead Panel",
+                "description": "Pitot ram air and clock heat Switch"
+            },
+            "OP_ROTOR_DEICE": {
+                "type": "ToggleSwitch",
+                "msg": "OP_ROTOR_DEICE",
+                "device_id": "4",
+                "command": "3013",
+                "arg_number": "153",
+                "category": "Overhead Panel",
+                "description": "Rotor de-icing system Switch"
+            },
+            "OP_ENG_DEICE": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ENG_DEICE",
+                "device_id": "4",
+                "device_command": "3014",
+                "arg_number": "154",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Overhead Panel",
+                "description": "Engines de-icing / dust-protection systems Switch"
+            },
+            "OP_PITOT_HEAT_TEST": {
+                "type": "PushButton",
+                "msg": "OP_PITOT_HEAT_TEST",
+                "device_id": "34",
+                "command": "3010",
+                "arg_number": "156",
+                "category": "Overhead Panel",
+                "description": "Pitot heat system test button"
+            },
+            "OP_WARNLIGHTS_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "OP_WARNLIGHTS_BRIGHTNESS",
+                "device_id": "14",
+                "command": "3005",
+                "arg_number": "149",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Warning Lights Brightness Knob"
+            }
+        },
+        "Datalink Control Panel": {
+            "DLNK_SEND_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_SEND_BTN",
+                "device_id": "25",
+                "device_command": "3001",
+                "arg_number": "159",
+                "category": "Datalink Control Panel",
+                "description": "Send/Memory button"
+            },
+            "DLNK_ESCAPE_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_ESCAPE_BTN",
+                "device_id": "25",
+                "device_command": "3002",
+                "arg_number": "150",
+                "category": "Datalink Control Panel",
+                "description": "Ingress to target button"
+            },
+            "DLNK_ERASE_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_ERASE_BTN",
+                "device_id": "25",
+                "device_command": "3003",
+                "arg_number": "161",
+                "category": "Datalink Control Panel",
+                "description": "Erase button"
+            },
+            "DLNK_CLEAN_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_CLEAN_BTN",
+                "device_id": "25",
+                "device_command": "3004",
+                "arg_number": "15",
+                "category": "Datalink Control Panel",
+                "description": "N/A button"
+            },
+            "DLNK_WINGMAN_ALL_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_WINGMAN_ALL_BTN",
+                "device_id": "25",
+                "device_command": "3005",
+                "arg_number": "16",
+                "category": "Datalink Control Panel",
+                "description": "To aLL button"
+            },
+            "DLNK_WINGMAN_1_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_WINGMAN_1_BTN",
+                "device_id": "25",
+                "device_command": "3006",
+                "arg_number": "17",
+                "category": "Datalink Control Panel",
+                "description": "To wingman 1 button"
+            },
+            "DLNK_WINGMAN_2_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_WINGMAN_2_BTN",
+                "device_id": "25",
+                "device_command": "3007",
+                "arg_number": "18",
+                "category": "Datalink Control Panel",
+                "description": "To wingman 2 button"
+            },
+            "DLNK_WINGMAN_3_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_WINGMAN_3_BTN",
+                "device_id": "25",
+                "device_command": "3008",
+                "arg_number": "19",
+                "category": "Datalink Control Panel",
+                "description": "To wingman 3 button"
+            },
+            "DLNK_WINGMAN_4_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_WINGMAN_4_BTN",
+                "device_id": "25",
+                "device_command": "3009",
+                "arg_number": "20",
+                "category": "Datalink Control Panel",
+                "description": "To wingman 4 button"
+            },
+            "DLNK_TARGET_VEHICLE_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_TARGET_VEHICLE_BTN",
+                "device_id": "25",
+                "device_command": "3010",
+                "arg_number": "21",
+                "category": "Datalink Control Panel",
+                "description": "Target #1/Vehicle button"
+            },
+            "DLNK_TARGET_SAM_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_TARGET_SAM_BTN",
+                "device_id": "25",
+                "device_command": "3011",
+                "arg_number": "22",
+                "category": "Datalink Control Panel",
+                "description": "Target #2/SAM button"
+            },
+            "DLNK_TARGET_OTHER_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_TARGET_OTHER_BTN",
+                "device_id": "25",
+                "device_command": "3012",
+                "arg_number": "23",
+                "category": "Datalink Control Panel",
+                "description": "Target #3/Other type button"
+            },
+            "DLNK_TARGET_POINT_BTN": {
+                "type": "LedPushButton",
+                "msg": "DLNK_TARGET_POINT_BTN",
+                "device_id": "25",
+                "device_command": "3013",
+                "arg_number": "50",
+                "category": "Datalink Control Panel",
+                "description": "Ingress point button"
+            }
+        },
+        "LWR": {
+            "LWR_RESET": {
+                "type": "PushButton",
+                "msg": "LWR_RESET",
+                "device_id": "36",
+                "command": "3001",
+                "arg_number": "35",
+                "category": "LWR",
+                "description": "Reset Button"
+            }
+        },
+        "UV-26 Control Panel": {
+            "UV26_DISPENSERS_SELECTOR": {
+                "type": "MultipositionSwitch",
+                "msg": "UV26_DISPENSERS_SELECTOR",
+                "device_id": "22",
+                "device_command": "3001",
+                "arg_number": "36",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "UV-26 Control Panel",
+                "description": "Select Left/Both/Right board flares dispensers Switch"
+            },
+            "UV26_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "UV26_MODE",
+                "device_id": "22",
+                "device_command": "3003",
+                "arg_number": "37",
+                "num_positions": "2",
+                "increment": "0.1",
+                "category": "UV-26 Control Panel",
+                "description": "Amount flares counter/Programming Switch"
+            },
+            "UV26_SERIES": {
+                "type": "PushButton",
+                "msg": "UV26_SERIES",
+                "device_id": "22",
+                "command": "3004",
+                "arg_number": "38",
+                "category": "UV-26 Control Panel",
+                "description": "Num of sequences Button"
+            },
+            "UV26_BURST": {
+                "type": "PushButton",
+                "msg": "UV26_BURST",
+                "device_id": "22",
+                "command": "3005",
+                "arg_number": "39",
+                "category": "UV-26 Control Panel",
+                "description": "Num in sequence Button"
+            },
+            "UV26_INTERVAL": {
+                "type": "PushButton",
+                "msg": "UV26_INTERVAL",
+                "device_id": "22",
+                "command": "3006",
+                "arg_number": "41",
+                "category": "UV-26 Control Panel",
+                "description": "Dispense interval Button"
+            },
+            "UV26_START": {
+                "type": "PushButton",
+                "msg": "UV26_START",
+                "device_id": "22",
+                "command": "3007",
+                "arg_number": "43",
+                "category": "UV-26 Control Panel",
+                "description": "Start dispense button"
+            },
+            "UV26_RESET": {
+                "type": "PushButton",
+                "msg": "UV26_RESET",
+                "device_id": "22",
+                "command": "3008",
+                "arg_number": "42",
+                "category": "UV-26 Control Panel",
+                "description": "Reset to default program Button"
+            },
+            "UV26_STOP": {
+                "type": "PushButton",
+                "msg": "UV26_STOP",
+                "device_id": "22",
+                "command": "3009",
+                "arg_number": "40",
+                "category": "UV-26 Control Panel",
+                "description": "Stop dispense Button"
+            }
+        },
+        "System Controller": {
+            "SC_MASTER_CAUTION_BTN": {
+                "type": "LedPushButton",
+                "msg": "SC_MASTER_CAUTION_BTN",
+                "device_id": "14",
+                "device_command": "3001",
+                "arg_number": "44",
+                "category": "System Controller",
+                "description": "Master Caution Button"
+            },
+            "SC_LAMPS_TEST": {
+                "type": "PushButton",
+                "msg": "SC_LAMPS_TEST",
+                "device_id": "14",
+                "command": "3002",
+                "arg_number": "45",
+                "category": "System Controller",
+                "description": "Lamps Test Button"
+            },
+            "SC_ROTOR_RPM_BTN": {
+                "type": "LedPushButton",
+                "msg": "SC_ROTOR_RPM_BTN",
+                "device_id": "14",
+                "device_command": "3003",
+                "arg_number": "46",
+                "category": "System Controller",
+                "description": "Rotor RPM warning Button"
+            },
+            "SC_ODS_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "SC_ODS_MODE",
+                "device_id": "64",
+                "command": "3001",
+                "arg_number": "49",
+                "category": "System Controller",
+                "description": "ODS Operation Mode Switch"
+            }
+        },
+        "ADI": {
+            "ADI_TEST": {
+                "type": "PushButton",
+                "msg": "ADI_TEST",
+                "device_id": "31",
+                "command": "3003",
+                "arg_number": "110",
+                "category": "ADI",
+                "description": "Self-test button"
+            },
+            "ADI_TEST_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ADI_TEST_COVER",
+                "device_id": "31",
+                "command": "3002",
+                "arg_number": "550",
+                "category": "ADI",
+                "description": "Self-test button cover"
+            },
+            "ADI_PITCH_TRIM": {
+                "type": "VariableStepTumb",
+                "msg": "ADI_PITCH_TRIM",
+                "device_id": "31",
+                "command": "3001",
+                "arg_number": "105",
+                "max_step": "0.1",
+                "category": "ADI",
+                "description": "Zero pitch trim rotary"
+            }
+        },
+        "HSI": {
+            "HSI_COURSE_ROT": {
+                "type": "VariableStepTumb",
+                "msg": "HSI_COURSE_ROT",
+                "device_id": "30",
+                "command": "3001",
+                "arg_number": "126",
+                "max_step": "1.0",
+                "category": "HSI",
+                "description": "Desired course rotary"
+            },
+            "HSI_HDG_ROT": {
+                "type": "VariableStepTumb",
+                "msg": "HSI_HDG_ROT",
+                "device_id": "30",
+                "command": "3002",
+                "arg_number": "129",
+                "max_step": "1.0",
+                "category": "HSI",
+                "description": "Desired heading rotary"
+            },
+            "HSI_TEST": {
+                "type": "PushButton",
+                "msg": "HSI_TEST",
+                "device_id": "30",
+                "command": "3003",
+                "arg_number": "113",
+                "category": "HSI",
+                "description": "Self-test button"
+            },
+            "HSI_DH_DTA_MANUAL_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "HSI_DH_DTA_MANUAL_AUTO",
+                "device_id": "30",
+                "command": "3004",
+                "arg_number": "54",
+                "category": "HSI",
+                "description": "DH/DTA Manual - Auto Switch"
+            }
+        },
+        "Laser Designator Panel": {
+            "LASER_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "LASER_MODE",
+                "device_id": "11",
+                "command": "3003",
+                "arg_number": "56",
+                "category": "Laser Designator Panel",
+                "description": "Laser rangefinder / designator - mode Switch"
+            },
+            "LASER_MODE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "LASER_MODE_COVER",
+                "device_id": "11",
+                "command": "3002",
+                "arg_number": "57",
+                "category": "Laser Designator Panel",
+                "description": "Laser rangefinder / designator - mode Switch cover"
+            },
+            "LASER_RESET": {
+                "type": "PushButton",
+                "msg": "LASER_RESET",
+                "device_id": "11",
+                "command": "3004",
+                "arg_number": "55",
+                "category": "Laser Designator Panel",
+                "description": "Laser designator reset button"
+            }
+        },
+        "Accelerometer": {
+            "ACCEL_RESET": {
+                "type": "PushButton",
+                "msg": "ACCEL_RESET",
+                "device_id": "61",
+                "command": "3001",
+                "arg_number": "572",
+                "category": "Accelerometer",
+                "description": "Accelerometer reset button"
+            }
+        },
+        "Radar Altimeter": {
+            "RALT_SAFE_ALT_KNOB": {
+                "type": "VariableStepTumb",
+                "msg": "RALT_SAFE_ALT_KNOB",
+                "device_id": "38",
+                "command": "3001",
+                "arg_number": "91",
+                "max_step": "1.0",
+                "category": "Radar Altimeter",
+                "description": "Safe altitude treshold rotary"
+            },
+            "RALT_TEST": {
+                "type": "PushButton",
+                "msg": "RALT_TEST",
+                "device_id": "38",
+                "command": "3002",
+                "arg_number": "96",
+                "category": "Radar Altimeter",
+                "description": "Test button"
+            }
+        },
+        "Barometric Altimeter": {
+            "ALT_QFE_KNOB": {
+                "type": "Potentiometer",
+                "msg": "ALT_QFE_KNOB",
+                "device_id": "41",
+                "command": "3005",
+                "arg_number": "90",
+                "limits": "{0, 1}",
+                "category": "Barometric Altimeter",
+                "description": "QFE Knob"
+            }
+        },
+        "Clock": {
+            "CLK_L_LEVER": {
+                "type": "3PosTumb",
+                "msg": "CLK_L_LEVER",
+                "device_id": "29",
+                "command": "3001",
+                "arg_number": "76",
+                "category": "Clock",
+                "description": "Left lever push/pull"
+            },
+            "CLK_L_LEVER_ROT": {
+                "type": "VariableStepTumb",
+                "msg": "CLK_L_LEVER_ROT",
+                "device_id": "29",
+                "command": "3003",
+                "arg_number": "511",
+                "max_step": "1.0",
+                "category": "Clock",
+                "description": "Left lever rotary"
+            },
+            "CLK_R_LEVER": {
+                "type": "PushButton",
+                "msg": "CLK_R_LEVER",
+                "device_id": "29",
+                "command": "3004",
+                "arg_number": "77",
+                "category": "Clock",
+                "description": "Right lever push"
+            },
+            "CLK_R_LEVER_ROT": {
+                "type": "Tumb",
+                "msg": "CLK_R_LEVER_ROT",
+                "device_id": "29",
+                "command": "3005",
+                "arg_number": "525",
+                "step": "0.3",
+                "limits": "{-0.15, 0.15}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Clock",
+                "description": "Right lever rotary"
+            }
+        },
+        "Landing Gear Control Panel": {
+            "GEAR_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_LEVER",
+                "device_id": "34",
+                "command": "3001",
+                "arg_number": "65",
+                "category": "Landing Gear Control Panel",
+                "description": "Gear lever"
+            },
+            "GEAR_EMER_HYD": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_EMER_HYD",
+                "device_id": "34",
+                "command": "3004",
+                "arg_number": "66",
+                "category": "Landing Gear Control Panel",
+                "description": "Emergency Gear hydraulics selector Switch"
+            },
+            "GEAR_EMER_HYD_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_EMER_HYD_COVER",
+                "device_id": "34",
+                "command": "3005",
+                "arg_number": "67",
+                "category": "Landing Gear Control Panel",
+                "description": "Emergency Gear hydraulics selector Switch cover"
+            }
+        },
+        "HUD": {
+            "HUD_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "HUD_BRIGHTNESS",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "8",
+                "limits": "{0, 1}",
+                "category": "HUD",
+                "description": "Brightness Knob"
+            },
+            "HUD_MODE": {
+                "type": "3PosTumb",
+                "msg": "HUD_MODE",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "9",
+                "category": "HUD",
+                "description": "Reticle/Night/Day mode selector"
+            },
+            "HUD_TEST": {
+                "type": "PushButton",
+                "msg": "HUD_TEST",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "7",
+                "category": "HUD",
+                "description": "Self-test button"
+            },
+            "HUD_FILTER_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "HUD_FILTER_HANDLE",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "510",
+                "category": "HUD",
+                "description": "Filter lever Switch"
+            }
+        },
+        "Weapons Control Panel": {
+            "WEAPONS_MASTER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_MASTER_ARM",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "387",
+                "category": "Weapons Control Panel",
+                "description": "Master arm Switch"
+            },
+            "WEAPONS_JETTISON_AA_MIS": {
+                "type": "PushButton",
+                "msg": "WEAPONS_JETTISON_AA_MIS",
+                "device_id": "12",
+                "command": "3002",
+                "arg_number": "401",
+                "category": "Weapons Control Panel",
+                "description": "Emergency jettison of AA missiles button (no function)"
+            },
+            "WEAPONS_JETTISON_EXT": {
+                "type": "PushButton",
+                "msg": "WEAPONS_JETTISON_EXT",
+                "device_id": "12",
+                "command": "3003",
+                "arg_number": "402",
+                "category": "Weapons Control Panel",
+                "description": "External stores jettison button (except Vikhr)"
+            },
+            "WEAPONS_JETTISON_ARM_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_JETTISON_ARM_MODE",
+                "device_id": "12",
+                "command": "3022",
+                "arg_number": "396",
+                "category": "Weapons Control Panel",
+                "description": "Jettison arm mode - arm fuse/disarm fuse Switch"
+            },
+            "WEAPONS_MANUAL_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_MANUAL_AUTO",
+                "device_id": "12",
+                "command": "3005",
+                "arg_number": "403",
+                "category": "Weapons Control Panel",
+                "description": "Manual/Auto weapon system control Switch"
+            },
+            "WEAPONS_CANNON_ROUND": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_CANNON_ROUND",
+                "device_id": "12",
+                "command": "3006",
+                "arg_number": "399",
+                "category": "Weapons Control Panel",
+                "description": "Cannon round selector Switch HE/AP"
+            },
+            "WEAPONS_CANNON_BURST": {
+                "type": "MultipositionSwitch",
+                "msg": "WEAPONS_CANNON_BURST",
+                "device_id": "12",
+                "device_command": "3004",
+                "arg_number": "400",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Weapons Control Panel",
+                "description": "Long-medium-short cannon burst mode Switch"
+            },
+            "WEAPONS_CANNON_RATE": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_CANNON_RATE",
+                "device_id": "12",
+                "command": "3020",
+                "arg_number": "398",
+                "category": "Weapons Control Panel",
+                "description": "Cannon rate of fire setting Switch"
+            },
+            "WEAPONS_EXPEDITE_ATGM_JETTISON": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_EXPEDITE_ATGM_JETTISON",
+                "device_id": "12",
+                "command": "3021",
+                "arg_number": "397",
+                "category": "Weapons Control Panel",
+                "description": "Expedite emergency ATGM launch Switch"
+            }
+        },
+        "Targeting Display Control Panel": {
+            "SHKVAL_POLARITY": {
+                "type": "ToggleSwitch",
+                "msg": "SHKVAL_POLARITY",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "404",
+                "category": "Targeting Display Control Panel",
+                "description": "SHKVAL Black-White indication Switch"
+            },
+            "HMS_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "HMS_BRIGHTNESS",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "405",
+                "limits": "{0, 1}",
+                "category": "Targeting Display Control Panel",
+                "description": "Helmet device Brightness Knob"
+            },
+            "SHKVAL_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "SHKVAL_BRIGHTNESS",
+                "device_id": "8",
+                "command": "3002",
+                "arg_number": "406",
+                "limits": "{0, 1}",
+                "category": "Targeting Display Control Panel",
+                "description": "SHKVAL Brightness Knob"
+            },
+            "SKHVAL_CONTRAST": {
+                "type": "Potentiometer",
+                "msg": "SKHVAL_CONTRAST",
+                "device_id": "8",
+                "command": "3003",
+                "arg_number": "407",
+                "limits": "{0, 1}",
+                "category": "Targeting Display Control Panel",
+                "description": "SHKVAL contrast Knob"
+            },
+            "LASER_CODE": {
+                "type": "Tumb",
+                "msg": "LASER_CODE",
+                "device_id": "12",
+                "command": "3007",
+                "arg_number": "408",
+                "step": "0.1",
+                "limits": "{0, 0.2}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Targeting Display Control Panel",
+                "description": "Laser code selector"
+            },
+            "HUD_DECLUTTER": {
+                "type": "ToggleSwitch",
+                "msg": "HUD_DECLUTTER",
+                "device_id": "41",
+                "command": "3001",
+                "arg_number": "409",
+                "category": "Targeting Display Control Panel",
+                "description": "HUD/TV declutter Switch"
+            },
+            "TRACER": {
+                "type": "ToggleSwitch",
+                "msg": "TRACER",
+                "device_id": "8",
+                "command": "3004",
+                "arg_number": "410",
+                "category": "Targeting Display Control Panel",
+                "description": "Tracer Switch (no function)"
+            },
+            "SHKVAL_OPTICS_ADJ": {
+                "type": "Tumb",
+                "msg": "SHKVAL_OPTICS_ADJ",
+                "device_id": "8",
+                "command": "3005",
+                "arg_number": "411",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Targeting Display Control Panel",
+                "description": "SHKVAL Optics adjustment selector (no function)"
+            }
+        },
+        "Landing Lights & Voice Warning Control Panel": {
+            "LIGHT_LANDING_ON_RETR_OFF": {
+                "type": "MultipositionSwitch",
+                "msg": "LIGHT_LANDING_ON_RETR_OFF",
+                "device_id": "44",
+                "device_command": "3001",
+                "arg_number": "382",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Landing Lights & Voice Warning Control Panel",
+                "description": "Landing light On/Retraction/Off Switch"
+            },
+            "LIGHT_LANDING_MAIN_BACKUP": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_LANDING_MAIN_BACKUP",
+                "device_id": "44",
+                "command": "3002",
+                "arg_number": "383",
+                "category": "Landing Lights & Voice Warning Control Panel",
+                "description": "Main/BackUp landing light Switch"
+            },
+            "ADF_NDB_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "ADF_NDB_MODE",
+                "device_id": "46",
+                "device_command": "3003",
+                "arg_number": "381",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Landing Lights & Voice Warning Control Panel",
+                "description": "ADF Inner-Auto-Outer NDB Switch"
+            },
+            "VOICE_MSG_OFF": {
+                "type": "PushButton",
+                "msg": "VOICE_MSG_OFF",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "384",
+                "category": "Landing Lights & Voice Warning Control Panel",
+                "description": "Voice message system messages OFF button"
+            },
+            "VOICE_MSG_EMER": {
+                "type": "ToggleSwitch",
+                "msg": "VOICE_MSG_EMER",
+                "device_id": "13",
+                "command": "3002",
+                "arg_number": "386",
+                "category": "Landing Lights & Voice Warning Control Panel",
+                "description": "Voice message system emergency ON Switch"
+            },
+            "VOICE_MSG_REPEAT": {
+                "type": "PushButton",
+                "msg": "VOICE_MSG_REPEAT",
+                "device_id": "13",
+                "command": "3003",
+                "arg_number": "385",
+                "category": "Landing Lights & Voice Warning Control Panel",
+                "description": "Voice message system messages repeat button"
+            }
+        },
+        "SAI": {
+            "SAI_CTRL": {
+                "type": "3PosTumb",
+                "msg": "SAI_CTRL",
+                "device_id": "55",
+                "command": "3001",
+                "arg_number": "141",
+                "category": "SAI",
+                "description": "Cage/Control handle push/pull"
+            },
+            "SAI_CTRL_ROT": {
+                "type": "VariableStepTumb",
+                "msg": "SAI_CTRL_ROT",
+                "device_id": "55",
+                "command": "3003",
+                "arg_number": "597",
+                "max_step": "1.0",
+                "category": "SAI",
+                "description": "Cage/control handle rotary"
+            }
+        },
+        "EGT Indicator": {
+            "ENG_RUNNING_EGT_TEST": {
+                "type": "PushButton",
+                "msg": "ENG_RUNNING_EGT_TEST",
+                "device_id": "4",
+                "command": "3022",
+                "arg_number": "131",
+                "category": "EGT Indicator",
+                "description": "Running engines EGT indicator test button"
+            },
+            "ENG_STOPPED_EGT_TEST": {
+                "type": "PushButton",
+                "msg": "ENG_STOPPED_EGT_TEST",
+                "device_id": "4",
+                "command": "3023",
+                "arg_number": "132",
+                "category": "EGT Indicator",
+                "description": "Stopped engines EGT indicator test button"
+            }
+        },
+        "Fuel Quantity": {
+            "FUEL_TEST": {
+                "type": "PushButton",
+                "msg": "FUEL_TEST",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "616",
+                "category": "Fuel Quantity",
+                "description": "Self test button"
+            }
+        },
+        "ABRIS Display": {
+            "ABRIS_BTN_1": {
+                "type": "PushButton",
+                "msg": "ABRIS_BTN_1",
+                "device_id": "9",
+                "command": "3001",
+                "arg_number": "512",
+                "category": "ABRIS Display",
+                "description": "Button 1"
+            },
+            "ABRIS_BTN_2": {
+                "type": "PushButton",
+                "msg": "ABRIS_BTN_2",
+                "device_id": "9",
+                "command": "3002",
+                "arg_number": "513",
+                "category": "ABRIS Display",
+                "description": "Button 2"
+            },
+            "ABRIS_BTN_3": {
+                "type": "PushButton",
+                "msg": "ABRIS_BTN_3",
+                "device_id": "9",
+                "command": "3003",
+                "arg_number": "514",
+                "category": "ABRIS Display",
+                "description": "Button 3"
+            },
+            "ABRIS_BTN_4": {
+                "type": "PushButton",
+                "msg": "ABRIS_BTN_4",
+                "device_id": "9",
+                "command": "3004",
+                "arg_number": "515",
+                "category": "ABRIS Display",
+                "description": "Button 4"
+            },
+            "ABRIS_BTN_5": {
+                "type": "PushButton",
+                "msg": "ABRIS_BTN_5",
+                "device_id": "9",
+                "command": "3005",
+                "arg_number": "516",
+                "category": "ABRIS Display",
+                "description": "Button 5"
+            },
+            "ABRIS_CURSOR_ROT": {
+                "type": "VariableStepTumb",
+                "msg": "ABRIS_CURSOR_ROT",
+                "device_id": "9",
+                "command": "3006",
+                "arg_number": "518",
+                "max_step": "1.0",
+                "category": "ABRIS Display",
+                "description": "Cursor rotary"
+            },
+            "ABRIS_CURSOR_BTN": {
+                "type": "PushButton",
+                "msg": "ABRIS_CURSOR_BTN",
+                "device_id": "9",
+                "command": "3007",
+                "arg_number": "523",
+                "category": "ABRIS Display",
+                "description": "Cursor button"
+            },
+            "ABRIS_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "ABRIS_BRIGHTNESS",
+                "device_id": "9",
+                "command": "3008",
+                "arg_number": "517",
+                "limits": "{0, 1}",
+                "category": "ABRIS Display",
+                "description": "Brightness Knob"
+            },
+            "ABRIS_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "ABRIS_POWER",
+                "device_id": "9",
+                "command": "3009",
+                "arg_number": "130",
+                "category": "ABRIS Display",
+                "description": "Power Switch"
+            }
+        },
+        "R-800 VHF-2": {
+            "R800_TEST_BTN": {
+                "type": "PushButton",
+                "msg": "R800_TEST_BTN",
+                "device_id": "48",
+                "command": "3001",
+                "arg_number": "418",
+                "category": "R-800 VHF-2",
+                "description": "BIT button"
+            },
+            "R800_AM_FM": {
+                "type": "ToggleSwitch",
+                "msg": "R800_AM_FM",
+                "device_id": "48",
+                "command": "3002",
+                "arg_number": "417",
+                "category": "R-800 VHF-2",
+                "description": "AM-FM toggle Switch"
+            },
+            "R800_EMER_RCVR": {
+                "type": "ToggleSwitch",
+                "msg": "R800_EMER_RCVR",
+                "device_id": "48",
+                "command": "3003",
+                "arg_number": "421",
+                "category": "R-800 VHF-2",
+                "description": "Emergency receiver Switch"
+            },
+            "R800_ADF": {
+                "type": "ToggleSwitch",
+                "msg": "R800_ADF",
+                "device_id": "48",
+                "command": "3004",
+                "arg_number": "422",
+                "category": "R-800 VHF-2",
+                "description": "ADF Switch"
+            },
+            "R800_DATA_TRANSFER_RATE": {
+                "type": "ToggleSwitch",
+                "msg": "R800_DATA_TRANSFER_RATE",
+                "device_id": "48",
+                "command": "3005",
+                "arg_number": "420",
+                "category": "R-800 VHF-2",
+                "description": "Data transfer rate Switch"
+            },
+            "R800_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "R800_SQUELCH",
+                "device_id": "48",
+                "command": "3006",
+                "arg_number": "423",
+                "category": "R-800 VHF-2",
+                "description": "Squelch button"
+            },
+            "R800_FREQ1": {
+                "type": "FixedStepTumb",
+                "msg": "R800_FREQ1",
+                "device_id": "48",
+                "command": "3007",
+                "arg_number": "424",
+                "step": "0.04545455",
+                "limits": "{0, 1}",
+                "rel_args": "{-1, 1}",
+                "output_map": "{\"10\", \"11\", \"12\", \"13\", \"14\", \"22\", \"23\", \"24\", \"25\", \"26\", \"27\", \"28\", \"29\", \"30\", \"31\", \"32\", \"33\", \"34\", \"35\", \"36\", \"37\", \"38\", \"39\"}",
+                "category": "R-800 VHF-2",
+                "description": "Frequency 1"
+            },
+            "R800_FREQ2": {
+                "type": "FixedStepTumb",
+                "msg": "R800_FREQ2",
+                "device_id": "48",
+                "command": "3008",
+                "arg_number": "425",
+                "step": "0.11111111",
+                "limits": "{0, 1}",
+                "rel_args": "{-1, 1}",
+                "output_map": "nil",
+                "category": "R-800 VHF-2",
+                "description": "Frequency 2"
+            },
+            "R800_FREQ3": {
+                "type": "FixedStepTumb",
+                "msg": "R800_FREQ3",
+                "device_id": "48",
+                "command": "3009",
+                "arg_number": "426",
+                "step": "0.11111111",
+                "limits": "{0, 1}",
+                "rel_args": "{-1, 1}",
+                "output_map": "nil",
+                "category": "R-800 VHF-2",
+                "description": "Frequency 3"
+            },
+            "R800_FREQ4": {
+                "type": "FixedStepTumb",
+                "msg": "R800_FREQ4",
+                "device_id": "48",
+                "command": "3010",
+                "arg_number": "427",
+                "step": "0.33333333",
+                "limits": "{0, 1}",
+                "rel_args": "{-1, 1}",
+                "output_map": "{\"00\", \"25\", \"50\", \"75\"}",
+                "category": "R-800 VHF-2",
+                "description": "Frequency 4"
+            }
+        },
+        "Targeting Mode Control Panel": {
+            "WEAPONS_AUTO_TURN_BTN": {
+                "type": "LedPushButton",
+                "msg": "WEAPONS_AUTO_TURN_BTN",
+                "device_id": "12",
+                "device_command": "3010",
+                "arg_number": "437",
+                "category": "Targeting Mode Control Panel",
+                "description": "Automatic turn on target button"
+            },
+            "WEAPONS_AIRBORNE_TARGET_BTN": {
+                "type": "LedPushButton",
+                "msg": "WEAPONS_AIRBORNE_TARGET_BTN",
+                "device_id": "12",
+                "device_command": "3011",
+                "arg_number": "438",
+                "category": "Targeting Mode Control Panel",
+                "description": "Airborne target button"
+            },
+            "WEAPONS_FORWARD_HEMI_TARGET_BTN": {
+                "type": "LedPushButton",
+                "msg": "WEAPONS_FORWARD_HEMI_TARGET_BTN",
+                "device_id": "12",
+                "device_command": "3012",
+                "arg_number": "439",
+                "category": "Targeting Mode Control Panel",
+                "description": "Head-on airborne target button"
+            },
+            "WEAPONS_GROUND_TARGET_BTN": {
+                "type": "LedPushButton",
+                "msg": "WEAPONS_GROUND_TARGET_BTN",
+                "device_id": "12",
+                "device_command": "3013",
+                "arg_number": "440",
+                "category": "Targeting Mode Control Panel",
+                "description": "Ground moving target button"
+            },
+            "WEAPONS_TARGET_RESET_BTN": {
+                "type": "Tumb",
+                "msg": "WEAPONS_TARGET_RESET_BTN",
+                "device_id": "12",
+                "command": "3016",
+                "arg_number": "441",
+                "step": "0.6",
+                "limits": "{0, 0.6}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Targeting Mode Control Panel",
+                "description": "Targeting mode reset button"
+            },
+            "WEAPONS_TRAINING_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_TRAINING_MODE",
+                "device_id": "12",
+                "command": "3009",
+                "arg_number": "432",
+                "category": "Targeting Mode Control Panel",
+                "description": "Training mode Switch"
+            },
+            "K041_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "K041_POWER",
+                "device_id": "59",
+                "command": "3002",
+                "arg_number": "433",
+                "category": "Targeting Mode Control Panel",
+                "description": "K-041 power Switch"
+            },
+            "HMS_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "HMS_POWER",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "434",
+                "category": "Targeting Mode Control Panel",
+                "description": "HMS/NVG power Switch"
+            },
+            "WEAPONS_AUTOTRACK_GUNSIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_AUTOTRACK_GUNSIGHT",
+                "device_id": "12",
+                "command": "3017",
+                "arg_number": "436",
+                "category": "Targeting Mode Control Panel",
+                "description": "Automatic Tracking / gun sight Switch"
+            },
+            "LASER_STANDBY": {
+                "type": "ToggleSwitch",
+                "msg": "LASER_STANDBY",
+                "device_id": "11",
+                "command": "3001",
+                "arg_number": "435",
+                "category": "Targeting Mode Control Panel",
+                "description": "Laser standby ON/OFF Switch"
+            },
+            "WEAPONS_MODE": {
+                "type": "Tumb",
+                "msg": "WEAPONS_MODE",
+                "device_id": "12",
+                "command": "3014",
+                "arg_number": "431",
+                "step": "0.1",
+                "limits": "{0, 0.4}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Targeting Mode Control Panel",
+                "description": "Weapon system mode selector"
+            }
+        },
+        "Engines Start-Up Control Panel": {
+            "ENG_START": {
+                "type": "PushButton",
+                "msg": "ENG_START",
+                "device_id": "4",
+                "command": "3005",
+                "arg_number": "412",
+                "category": "Engines Start-Up Control Panel",
+                "description": "Start-Up selected engine button"
+            },
+            "ENG_STOP": {
+                "type": "PushButton",
+                "msg": "ENG_STOP",
+                "device_id": "4",
+                "command": "3006",
+                "arg_number": "413",
+                "category": "Engines Start-Up Control Panel",
+                "description": "InterrUpt start-Up button"
+            },
+            "ENG_APU_STOP": {
+                "type": "PushButton",
+                "msg": "ENG_APU_STOP",
+                "device_id": "4",
+                "command": "3007",
+                "arg_number": "414",
+                "category": "Engines Start-Up Control Panel",
+                "description": "Stop APU button"
+            },
+            "ENG_STARTUP_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "ENG_STARTUP_MODE",
+                "device_id": "4",
+                "device_command": "3012",
+                "arg_number": "415",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Engines Start-Up Control Panel",
+                "description": "Engine StartUp/Crank/False Start selector"
+            },
+            "ENG_SELECTOR": {
+                "type": "MultipositionSwitch",
+                "msg": "ENG_SELECTOR",
+                "device_id": "4",
+                "device_command": "3008",
+                "arg_number": "416",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Engines Start-Up Control Panel",
+                "description": "Engine selector"
+            }
+        },
+        "Radio Intercom SPU-9 Panel": {
+            "RADIO_SELECTOR": {
+                "type": "Tumb",
+                "msg": "RADIO_SELECTOR",
+                "device_id": "50",
+                "command": "3002",
+                "arg_number": "428",
+                "step": "0.11",
+                "limits": "{0, 0.33}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio Intercom SPU-9 Panel",
+                "description": "Radio communicator selector"
+            }
+        },
+        "Engines Cut-Off Valves": {
+            "ENG_L_CUTOFF_VLV_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_L_CUTOFF_VLV_HANDLE",
+                "device_id": "4",
+                "command": "3009",
+                "arg_number": "554",
+                "category": "Engines Cut-Off Valves",
+                "description": "Left engine cut-off valve handle"
+            },
+            "ENG_R_CUTOFF_VLV_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_R_CUTOFF_VLV_HANDLE",
+                "device_id": "4",
+                "command": "3010",
+                "arg_number": "555",
+                "category": "Engines Cut-Off Valves",
+                "description": "Right engine cut-off valve handle"
+            },
+            "ENG_ROTOR_BREAK": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_ROTOR_BREAK",
+                "device_id": "4",
+                "command": "3011",
+                "arg_number": "556",
+                "category": "Engines Cut-Off Valves",
+                "description": "Rotor break"
+            }
+        },
+        "PVI-800 Control Panel": {
+            "PVI_0": {
+                "type": "LedPushButton",
+                "msg": "PVI_0",
+                "device_id": "20",
+                "device_command": "3001",
+                "arg_number": "312",
+                "category": "PVI-800 Control Panel",
+                "description": "'0' button"
+            },
+            "PVI_1": {
+                "type": "LedPushButton",
+                "msg": "PVI_1",
+                "device_id": "20",
+                "device_command": "3002",
+                "arg_number": "303",
+                "category": "PVI-800 Control Panel",
+                "description": "'1' button"
+            },
+            "PVI_2": {
+                "type": "LedPushButton",
+                "msg": "PVI_2",
+                "device_id": "20",
+                "device_command": "3003",
+                "arg_number": "304",
+                "category": "PVI-800 Control Panel",
+                "description": "'2' button"
+            },
+            "PVI_3": {
+                "type": "LedPushButton",
+                "msg": "PVI_3",
+                "device_id": "20",
+                "device_command": "3004",
+                "arg_number": "305",
+                "category": "PVI-800 Control Panel",
+                "description": "'3' button"
+            },
+            "PVI_4": {
+                "type": "LedPushButton",
+                "msg": "PVI_4",
+                "device_id": "20",
+                "device_command": "3005",
+                "arg_number": "306",
+                "category": "PVI-800 Control Panel",
+                "description": "'4' button"
+            },
+            "PVI_5": {
+                "type": "LedPushButton",
+                "msg": "PVI_5",
+                "device_id": "20",
+                "device_command": "3006",
+                "arg_number": "307",
+                "category": "PVI-800 Control Panel",
+                "description": "'5' button"
+            },
+            "PVI_6": {
+                "type": "LedPushButton",
+                "msg": "PVI_6",
+                "device_id": "20",
+                "device_command": "3007",
+                "arg_number": "308",
+                "category": "PVI-800 Control Panel",
+                "description": "'6' button"
+            },
+            "PVI_7": {
+                "type": "LedPushButton",
+                "msg": "PVI_7",
+                "device_id": "20",
+                "device_command": "3008",
+                "arg_number": "309",
+                "category": "PVI-800 Control Panel",
+                "description": "'7' button"
+            },
+            "PVI_8": {
+                "type": "LedPushButton",
+                "msg": "PVI_8",
+                "device_id": "20",
+                "device_command": "3009",
+                "arg_number": "310",
+                "category": "PVI-800 Control Panel",
+                "description": "'8' button"
+            },
+            "PVI_9": {
+                "type": "LedPushButton",
+                "msg": "PVI_9",
+                "device_id": "20",
+                "device_command": "3010",
+                "arg_number": "311",
+                "category": "PVI-800 Control Panel",
+                "description": "'9' button"
+            },
+            "PVI_WAYPOINTS_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_WAYPOINTS_BTN",
+                "device_id": "20",
+                "device_command": "3011",
+                "arg_number": "315",
+                "category": "PVI-800 Control Panel",
+                "description": "Waypoints button"
+            },
+            "PVI_INU_INFLIGHT_REALIGN_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_INU_INFLIGHT_REALIGN_BTN",
+                "device_id": "20",
+                "device_command": "3012",
+                "arg_number": "519",
+                "category": "PVI-800 Control Panel",
+                "description": "Inflight INU Realignment button"
+            },
+            "PVI_FIXPOINTS_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_FIXPOINTS_BTN",
+                "device_id": "20",
+                "device_command": "3013",
+                "arg_number": "316",
+                "category": "PVI-800 Control Panel",
+                "description": "Fixpoints button"
+            },
+            "PVI_INU_PRECISE_ALIGN_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_INU_PRECISE_ALIGN_BTN",
+                "device_id": "20",
+                "device_command": "3014",
+                "arg_number": "520",
+                "category": "PVI-800 Control Panel",
+                "description": "Precise INU Alignment button"
+            },
+            "PVI_AIRFIELDS_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_AIRFIELDS_BTN",
+                "device_id": "20",
+                "device_command": "3015",
+                "arg_number": "317",
+                "category": "PVI-800 Control Panel",
+                "description": "Airfields button"
+            },
+            "PVI_INU_NORMAL_ALIGN_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_INU_NORMAL_ALIGN_BTN",
+                "device_id": "20",
+                "device_command": "3016",
+                "arg_number": "521",
+                "category": "PVI-800 Control Panel",
+                "description": "Normal INU Alignment button"
+            },
+            "PVI_TARGETS_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_TARGETS_BTN",
+                "device_id": "20",
+                "device_command": "3017",
+                "arg_number": "318",
+                "category": "PVI-800 Control Panel",
+                "description": "Targets button"
+            },
+            "PVI_ENTER_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_ENTER_BTN",
+                "device_id": "20",
+                "device_command": "3018",
+                "arg_number": "313",
+                "category": "PVI-800 Control Panel",
+                "description": "Enter button"
+            },
+            "PVI_RESET_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_RESET_BTN",
+                "device_id": "20",
+                "device_command": "3019",
+                "arg_number": "314",
+                "category": "PVI-800 Control Panel",
+                "description": "Cancel button"
+            },
+            "PVI_INIT_PNT_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_INIT_PNT_BTN",
+                "device_id": "20",
+                "device_command": "3020",
+                "arg_number": "522",
+                "category": "PVI-800 Control Panel",
+                "description": "Initial Nav Pos button"
+            },
+            "PVI_SELF_COOR_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_SELF_COOR_BTN",
+                "device_id": "20",
+                "device_command": "3021",
+                "arg_number": "319",
+                "category": "PVI-800 Control Panel",
+                "description": "Self coordinates button"
+            },
+            "PVI_DTA_DH_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_DTA_DH_BTN",
+                "device_id": "20",
+                "device_command": "3022",
+                "arg_number": "320",
+                "category": "PVI-800 Control Panel",
+                "description": "Course:Course Deviation/Time/Range to WPT button"
+            },
+            "PVI_WIND_HDG_SPEED_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_WIND_HDG_SPEED_BTN",
+                "device_id": "20",
+                "device_command": "3023",
+                "arg_number": "321",
+                "category": "PVI-800 Control Panel",
+                "description": "Wind Heading/Speed button"
+            },
+            "PVI_THDG_TIME_RANGE_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_THDG_TIME_RANGE_BTN",
+                "device_id": "20",
+                "device_command": "3024",
+                "arg_number": "322",
+                "category": "PVI-800 Control Panel",
+                "description": "True Heading/Time/Range to final WPT button"
+            },
+            "PVI_BEARING_RANGE_BTN": {
+                "type": "LedPushButton",
+                "msg": "PVI_BEARING_RANGE_BTN",
+                "device_id": "20",
+                "device_command": "3025",
+                "arg_number": "323",
+                "category": "PVI-800 Control Panel",
+                "description": "Bearing/Range to target button"
+            },
+            "PVI_INU_FIX": {
+                "type": "ToggleSwitch",
+                "msg": "PVI_INU_FIX",
+                "device_id": "20",
+                "command": "3028",
+                "arg_number": "325",
+                "category": "PVI-800 Control Panel",
+                "description": "INU fixtaking method Switch"
+            },
+            "PVI_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "PVI_POWER",
+                "device_id": "25",
+                "command": "3016",
+                "arg_number": "326",
+                "category": "PVI-800 Control Panel",
+                "description": "Datalink power Switch"
+            },
+            "PVI_MODES": {
+                "type": "Tumb",
+                "msg": "PVI_MODES",
+                "device_id": "20",
+                "command": "3026",
+                "arg_number": "324",
+                "step": "0.1",
+                "limits": "{0, 0.6}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PVI-800 Control Panel",
+                "description": "Master mode selector"
+            },
+            "PVI_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "PVI_BRIGHTNESS",
+                "device_id": "20",
+                "command": "3029",
+                "arg_number": "327",
+                "limits": "{0, 1}",
+                "category": "PVI-800 Control Panel",
+                "description": "Brightness Knob"
+            }
+        },
+        "Datalink Mode Panel": {
+            "DLNK_SELF_ID": {
+                "type": "Tumb",
+                "msg": "DLNK_SELF_ID",
+                "device_id": "25",
+                "command": "3014",
+                "arg_number": "328",
+                "step": "0.1",
+                "limits": "{0, 0.3}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink Mode Panel",
+                "description": "Datalink self ID selector"
+            },
+            "DLNK_MASTER_MODE": {
+                "type": "Tumb",
+                "msg": "DLNK_MASTER_MODE",
+                "device_id": "25",
+                "command": "3015",
+                "arg_number": "329",
+                "step": "0.1",
+                "limits": "{0, 0.3}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink Mode Panel",
+                "description": "Datalink master mode selector"
+            }
+        },
+        "Autopilot Panel": {
+            "AP_BANK_HOLD_BTN": {
+                "type": "LedPushButton",
+                "msg": "AP_BANK_HOLD_BTN",
+                "device_id": "33",
+                "device_command": "3001",
+                "arg_number": "330",
+                "category": "Autopilot Panel",
+                "description": "Bank hold button"
+            },
+            "AP_HDG_HOLD_BTN": {
+                "type": "LedPushButton",
+                "msg": "AP_HDG_HOLD_BTN",
+                "device_id": "33",
+                "device_command": "3002",
+                "arg_number": "332",
+                "category": "Autopilot Panel",
+                "description": "Heading hold button"
+            },
+            "AP_PITCH_HOLD_BTN": {
+                "type": "LedPushButton",
+                "msg": "AP_PITCH_HOLD_BTN",
+                "device_id": "33",
+                "device_command": "3003",
+                "arg_number": "331",
+                "category": "Autopilot Panel",
+                "description": "Pitch hold button"
+            },
+            "AP_ALT_HOLD_BTN": {
+                "type": "LedPushButton",
+                "msg": "AP_ALT_HOLD_BTN",
+                "device_id": "33",
+                "device_command": "3004",
+                "arg_number": "333",
+                "category": "Autopilot Panel",
+                "description": "Altitude hold button"
+            },
+            "AP_FD_BTN": {
+                "type": "LedPushButton",
+                "msg": "AP_FD_BTN",
+                "device_id": "33",
+                "device_command": "3005",
+                "arg_number": "334",
+                "category": "Autopilot Panel",
+                "description": "Flight director button"
+            },
+            "AP_BARO_RALT": {
+                "type": "MultipositionSwitch",
+                "msg": "AP_BARO_RALT",
+                "device_id": "33",
+                "device_command": "3006",
+                "arg_number": "335",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Autopilot Panel",
+                "description": "BARO/RALT altitude hold mode Switch"
+            },
+            "AP_DH_DT": {
+                "type": "MultipositionSwitch",
+                "msg": "AP_DH_DT",
+                "device_id": "28",
+                "device_command": "3003",
+                "arg_number": "336",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Autopilot Panel",
+                "description": "DH/DT Switch"
+            }
+        },
+        "Magnetic Variation Panel": {
+            "ZMS3_MAGVAR_SELECTOR": {
+                "type": "VariableStepTumb",
+                "msg": "ZMS3_MAGVAR_SELECTOR",
+                "device_id": "58",
+                "command": "3001",
+                "arg_number": "338",
+                "max_step": "1.0",
+                "category": "Magnetic Variation Panel",
+                "description": "Magnetic variation selection rotaty"
+            }
+        },
+        "SHKVAL Scan Rate": {
+            "SHKVAL_OPTICS_SCAN_RATE": {
+                "type": "Tumb",
+                "msg": "SHKVAL_OPTICS_SCAN_RATE",
+                "device_id": "8",
+                "command": "3006",
+                "arg_number": "301",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "SHKVAL Scan Rate",
+                "description": "SHKVAL scan rate selector"
+            }
+        },
+        "Latitude Correction Panel": {
+            "PSHK7_NORTH_SOUTH": {
+                "type": "ToggleSwitch",
+                "msg": "PSHK7_NORTH_SOUTH",
+                "device_id": "57",
+                "command": "3002",
+                "arg_number": "341",
+                "category": "Latitude Correction Panel",
+                "description": "North/South latitude selection Switch"
+            },
+            "PSHK7_LAT_ROT": {
+                "type": "VariableStepTumb",
+                "msg": "PSHK7_LAT_ROT",
+                "device_id": "57",
+                "command": "3001",
+                "arg_number": "340",
+                "max_step": "1.0",
+                "category": "Latitude Correction Panel",
+                "description": "Latitude selection rotaty"
+            }
+        },
+        "ADF": {
+            "ADF_CHANNEL": {
+                "type": "Tumb",
+                "msg": "ADF_CHANNEL",
+                "device_id": "46",
+                "command": "3001",
+                "arg_number": "357",
+                "step": "0.1",
+                "limits": "{0.0, 0.9}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "ADF",
+                "description": "Channel selector"
+            },
+            "ADF_CMPS_ANT": {
+                "type": "ToggleSwitch",
+                "msg": "ADF_CMPS_ANT",
+                "device_id": "46",
+                "command": "3004",
+                "arg_number": "356",
+                "category": "ADF",
+                "description": "COMPASS-ANTENNA modes Switch"
+            },
+            "ADF_TLF_TLG": {
+                "type": "ToggleSwitch",
+                "msg": "ADF_TLF_TLG",
+                "device_id": "46",
+                "command": "3005",
+                "arg_number": "354",
+                "category": "ADF",
+                "description": "TLF-TLG modes Switch"
+            },
+            "ADF_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "ADF_VOLUME",
+                "device_id": "46",
+                "command": "3006",
+                "arg_number": "353",
+                "limits": "{0, 1}",
+                "category": "ADF",
+                "description": "Volume Knob"
+            },
+            "ADF_TEST": {
+                "type": "PushButton",
+                "msg": "ADF_TEST",
+                "device_id": "46",
+                "command": "3007",
+                "arg_number": "355",
+                "category": "ADF",
+                "description": "Self-test button"
+            }
+        },
+        "R-828 VHF-1": {
+            "R828_CHANNEL": {
+                "type": "Tumb",
+                "msg": "R828_CHANNEL",
+                "device_id": "49",
+                "command": "3001",
+                "arg_number": "371",
+                "step": "0.1",
+                "limits": "{0, 0.9}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "R-828 VHF-1",
+                "description": "Radio channel selector"
+            },
+            "R828_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "R828_VOLUME",
+                "device_id": "49",
+                "command": "3002",
+                "arg_number": "372",
+                "limits": "{0, 1}",
+                "category": "R-828 VHF-1",
+                "description": "Radio Volume"
+            },
+            "R828_TUNER": {
+                "type": "PushButton",
+                "msg": "R828_TUNER",
+                "device_id": "49",
+                "command": "3003",
+                "arg_number": "373",
+                "category": "R-828 VHF-1",
+                "description": "Tuner button"
+            },
+            "R828_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "R828_SQUELCH",
+                "device_id": "49",
+                "command": "3004",
+                "arg_number": "374",
+                "category": "R-828 VHF-1",
+                "description": "Squelch Switch"
+            }
+        },
+        "Signal Flares": {
+            "FLARES_RED": {
+                "type": "ToggleSwitch",
+                "msg": "FLARES_RED",
+                "device_id": "52",
+                "command": "3002",
+                "arg_number": "376",
+                "category": "Signal Flares",
+                "description": "Signal flare red button"
+            },
+            "FLARES_GREEN": {
+                "type": "ToggleSwitch",
+                "msg": "FLARES_GREEN",
+                "device_id": "52",
+                "command": "3001",
+                "arg_number": "377",
+                "category": "Signal Flares",
+                "description": "Signal flare green button"
+            },
+            "FLARES_WHITE": {
+                "type": "ToggleSwitch",
+                "msg": "FLARES_WHITE",
+                "device_id": "52",
+                "command": "3003",
+                "arg_number": "378",
+                "category": "Signal Flares",
+                "description": "Signal flare white button"
+            },
+            "FLARES_YELLOW": {
+                "type": "ToggleSwitch",
+                "msg": "FLARES_YELLOW",
+                "device_id": "52",
+                "command": "3004",
+                "arg_number": "379",
+                "category": "Signal Flares",
+                "description": "Signal flare yellow button"
+            },
+            "FLARES_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "FLARES_POWER",
+                "device_id": "52",
+                "command": "3005",
+                "arg_number": "380",
+                "category": "Signal Flares",
+                "description": "Signal flare system power"
+            }
+        },
+        "Electrics Power": {
+            "ELEC_DC_GROUND_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_DC_GROUND_POWER",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "262",
+                "category": "Electrics Power",
+                "description": "DC ground power Switch"
+            },
+            "ELEC_DC_GROUND_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_DC_GROUND_POWER_COVER",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "263",
+                "category": "Electrics Power",
+                "description": "DC ground power Switch cover"
+            },
+            "ELEC_BATTERY_2": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_BATTERY_2",
+                "device_id": "2",
+                "command": "3003",
+                "arg_number": "543",
+                "category": "Electrics Power",
+                "description": "Battery 2 Switch"
+            },
+            "ELEC_BATTERY_2_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_BATTERY_2_COVER",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "544",
+                "category": "Electrics Power",
+                "description": "Battery 2 Switch cover"
+            },
+            "ELEC_BATTERY_1": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_BATTERY_1",
+                "device_id": "2",
+                "command": "3005",
+                "arg_number": "264",
+                "category": "Electrics Power",
+                "description": "Battery 1 Switch"
+            },
+            "ELEC_BATTERY_1_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_BATTERY_1_COVER",
+                "device_id": "2",
+                "command": "3006",
+                "arg_number": "265",
+                "category": "Electrics Power",
+                "description": "Battery 1 Switch cover"
+            },
+            "ELEC_AC_GROUND_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_AC_GROUND_POWER",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "267",
+                "category": "Electrics Power",
+                "description": "AC ground power Switch"
+            },
+            "ELEC_AC_L_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_AC_L_GEN",
+                "device_id": "2",
+                "command": "3008",
+                "arg_number": "268",
+                "category": "Electrics Power",
+                "description": "AC left generator Switch"
+            },
+            "ELEC_AC_R_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_AC_R_GEN",
+                "device_id": "2",
+                "command": "3009",
+                "arg_number": "269",
+                "category": "Electrics Power",
+                "description": "AC right generator Switch"
+            },
+            "ELEC_DC_AC": {
+                "type": "MultipositionSwitch",
+                "msg": "ELEC_DC_AC",
+                "device_id": "2",
+                "device_command": "3010",
+                "arg_number": "270",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Electrics Power",
+                "description": "DC/AC inverter Switch"
+            }
+        },
+        "Comms Power": {
+            "COMM_INTERCOM_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "COMM_INTERCOM_POWER",
+                "device_id": "50",
+                "command": "3001",
+                "arg_number": "284",
+                "category": "Comms Power",
+                "description": "Intercom power Switch"
+            },
+            "COMM_VHF1_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "COMM_VHF1_POWER",
+                "device_id": "49",
+                "command": "3005",
+                "arg_number": "285",
+                "category": "Comms Power",
+                "description": "VHF-1 (R828) power Switch"
+            },
+            "COMM_VHF2_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "COMM_VHF2_POWER",
+                "device_id": "48",
+                "command": "3011",
+                "arg_number": "286",
+                "category": "Comms Power",
+                "description": "VHF-2 (R-800) power Switch"
+            },
+            "COMM_DATALINK_TLK_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "COMM_DATALINK_TLK_POWER",
+                "device_id": "25",
+                "command": "3017",
+                "arg_number": "287",
+                "category": "Comms Power",
+                "description": "Radio equipment datalink TLK power Switch"
+            },
+            "COMM_DATALINK_VHF_TLK_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "COMM_DATALINK_VHF_TLK_POWER",
+                "device_id": "25",
+                "command": "3018",
+                "arg_number": "288",
+                "category": "Comms Power",
+                "description": "Radio equipment datalink VHF TLK power Switch"
+            },
+            "COMM_DATALINK_SA_TLF_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "COMM_DATALINK_SA_TLF_POWER",
+                "device_id": "0",
+                "command": "3007",
+                "arg_number": "289",
+                "category": "Comms Power",
+                "description": "Radio equipment datalink SA-TLF power Switch (no function)"
+            }
+        },
+        "Fuel System": {
+            "FUEL_FORWARD_PUMP_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_FORWARD_PUMP_POWER",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "271",
+                "category": "Fuel System",
+                "description": "Forward fuel tank pumps power Switch"
+            },
+            "FUEL_AFT_PUMP_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_AFT_PUMP_POWER",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "272",
+                "category": "Fuel System",
+                "description": "Rear fuel tank pumps power Switch"
+            },
+            "FUEL_INNER_PUMP_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_INNER_PUMP_POWER",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "273",
+                "category": "Fuel System",
+                "description": "Inner external fuel tanks pumps power Switch"
+            },
+            "FUEL_OUTER_PUMP_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_OUTER_PUMP_POWER",
+                "device_id": "3",
+                "command": "3004",
+                "arg_number": "274",
+                "category": "Fuel System",
+                "description": "Outer external fuel tanks pumps power Switch"
+            },
+            "FUEL_METER_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_METER_POWER",
+                "device_id": "3",
+                "command": "3005",
+                "arg_number": "275",
+                "category": "Fuel System",
+                "description": "Fuelmeter power Switch"
+            },
+            "FUEL_L_ENG_VLV": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_L_ENG_VLV",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "276",
+                "category": "Fuel System",
+                "description": "Left engine fuel valve Switch"
+            },
+            "FUEL_L_ENG_VLV_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_L_ENG_VLV_COVER",
+                "device_id": "3",
+                "command": "3007",
+                "arg_number": "277",
+                "category": "Fuel System",
+                "description": "Left engine fuel valve Switch cover"
+            },
+            "FUEL_R_ENG_VLV": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_R_ENG_VLV",
+                "device_id": "3",
+                "command": "3008",
+                "arg_number": "278",
+                "category": "Fuel System",
+                "description": "Right engine fuel valve Switch"
+            },
+            "FUEL_R_ENG_VLV_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_R_ENG_VLV_COVER",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "279",
+                "category": "Fuel System",
+                "description": "Right engine fuel valve Switch cover"
+            },
+            "FUEL_APU_VLV": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_APU_VLV",
+                "device_id": "3",
+                "command": "3010",
+                "arg_number": "280",
+                "category": "Fuel System",
+                "description": "APU fuel valve Switch"
+            },
+            "FUEL_APU_VLV_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_APU_VLV_COVER",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "281",
+                "category": "Fuel System",
+                "description": "APU fuel valve Switch cover"
+            },
+            "FUEL_XFEED_VLV": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_XFEED_VLV",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "282",
+                "category": "Fuel System",
+                "description": "Fuel crossfeed valve Switch"
+            },
+            "FUEL_XFEED_VLV_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_XFEED_VLV_COVER",
+                "device_id": "3",
+                "command": "3013",
+                "arg_number": "283",
+                "category": "Fuel System",
+                "description": "Fuel crossfeed valve Switch cover"
+            }
+        },
+        "Fire Extinguishers Control Panel": {
+            "FIREEXT_L_ENG_EXT": {
+                "type": "PushButton",
+                "msg": "FIREEXT_L_ENG_EXT",
+                "device_id": "40",
+                "command": "3001",
+                "arg_number": "236",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Left engine extinguisher button"
+            },
+            "FIREEXT_APU_EXT": {
+                "type": "PushButton",
+                "msg": "FIREEXT_APU_EXT",
+                "device_id": "40",
+                "command": "3002",
+                "arg_number": "238",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "APU extinguisher button"
+            },
+            "FIREEXT_R_ENG_EXT": {
+                "type": "PushButton",
+                "msg": "FIREEXT_R_ENG_EXT",
+                "device_id": "40",
+                "command": "3003",
+                "arg_number": "240",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Right engine extinguisher button"
+            },
+            "FIREEXT_VENT_EXT": {
+                "type": "PushButton",
+                "msg": "FIREEXT_VENT_EXT",
+                "device_id": "40",
+                "command": "3004",
+                "arg_number": "242",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Ventilator extinguisher button"
+            },
+            "FIREEXT_EXT_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "FIREEXT_EXT_MODE",
+                "device_id": "40",
+                "device_command": "3005",
+                "arg_number": "248",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Fire extinguisher Work / Off / Test Switch"
+            },
+            "FIREEXT_EXT_MODE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FIREEXT_EXT_MODE_COVER",
+                "device_id": "40",
+                "command": "3007",
+                "arg_number": "249",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Fire extinguisher Work / Off / Test Switch cover"
+            },
+            "FIREEXT_MONITOR": {
+                "type": "ToggleSwitch",
+                "msg": "FIREEXT_MONITOR",
+                "device_id": "40",
+                "command": "3008",
+                "arg_number": "250",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Fire monitor Switch"
+            },
+            "FIREEXT_AUTO_MANUAL": {
+                "type": "ToggleSwitch",
+                "msg": "FIREEXT_AUTO_MANUAL",
+                "device_id": "40",
+                "command": "3009",
+                "arg_number": "246",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Fire extinguisher First (Auto) / Second (Manual) selector"
+            },
+            "FIREEXT_AUTO_MANUAL_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FIREEXT_AUTO_MANUAL_COVER",
+                "device_id": "40",
+                "command": "3010",
+                "arg_number": "247",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Fire extinguisher First (Auto) / Second (Manual) selector cover"
+            },
+            "FIREEXT_WARN_TEST": {
+                "type": "MultipositionSwitch",
+                "msg": "FIREEXT_WARN_TEST",
+                "device_id": "40",
+                "device_command": "3011",
+                "arg_number": "251",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Fire Extinguishers Control Panel",
+                "description": "Fire warning sensors groUp BIT Switch"
+            }
+        },
+        "Ejection System": {
+            "EJECT_POWER_1": {
+                "type": "ToggleSwitch",
+                "msg": "EJECT_POWER_1",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "214",
+                "category": "Ejection System",
+                "description": "Ejecting system power 1 Switch"
+            },
+            "EJECT_POWER_2": {
+                "type": "ToggleSwitch",
+                "msg": "EJECT_POWER_2",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "215",
+                "category": "Ejection System",
+                "description": "Ejecting system power 2 Switch"
+            },
+            "EJECT_POWER_3": {
+                "type": "ToggleSwitch",
+                "msg": "EJECT_POWER_3",
+                "device_id": "6",
+                "command": "3003",
+                "arg_number": "216",
+                "category": "Ejection System",
+                "description": "Ejecting system power 3 Switch"
+            },
+            "EJECT_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "EJECT_POWER_COVER",
+                "device_id": "6",
+                "command": "3004",
+                "arg_number": "217",
+                "category": "Ejection System",
+                "description": "Ejecting system power cover"
+            }
+        },
+        "Onboard Equipment Control Panel": {
+            "HYD_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "HYD_POWER",
+                "device_id": "5",
+                "command": "3001",
+                "arg_number": "220",
+                "category": "Onboard Equipment Control Panel",
+                "description": "Main hydraulics power Switch"
+            },
+            "HYD_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "HYD_POWER_COVER",
+                "device_id": "5",
+                "command": "3002",
+                "arg_number": "221",
+                "category": "Onboard Equipment Control Panel",
+                "description": "Main hydraulics power Switch cover"
+            },
+            "IFF_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_POWER",
+                "device_id": "42",
+                "command": "3001",
+                "arg_number": "218",
+                "category": "Onboard Equipment Control Panel",
+                "description": "IFF power Switch"
+            },
+            "IFF_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_POWER_COVER",
+                "device_id": "42",
+                "command": "3002",
+                "arg_number": "219",
+                "category": "Onboard Equipment Control Panel",
+                "description": "IFF power Switch cover"
+            },
+            "NAV_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "NAV_POWER",
+                "device_id": "59",
+                "command": "3001",
+                "arg_number": "222",
+                "category": "Onboard Equipment Control Panel",
+                "description": "Navigation system power Switch"
+            },
+            "SHKVAL_WINDSCREEN_WIPER": {
+                "type": "PushButton",
+                "msg": "SHKVAL_WINDSCREEN_WIPER",
+                "device_id": "8",
+                "command": "3007",
+                "arg_number": "224",
+                "category": "Onboard Equipment Control Panel",
+                "description": "SHKVAL windscreen wiper button"
+            },
+            "WEAPONS_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_POWER",
+                "device_id": "12",
+                "command": "3018",
+                "arg_number": "547",
+                "category": "Onboard Equipment Control Panel",
+                "description": "Weapons system power Switch"
+            },
+            "WEAPONS_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPONS_POWER_COVER",
+                "device_id": "12",
+                "command": "3019",
+                "arg_number": "548",
+                "category": "Onboard Equipment Control Panel",
+                "description": "Weapons system power Switch cover"
+            },
+            "LIGHT_BEACON": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_BEACON",
+                "device_id": "45",
+                "command": "3003",
+                "arg_number": "228",
+                "category": "Onboard Equipment Control Panel",
+                "description": "Anticollision beacon Switch"
+            },
+            "NAV_GYRO_MAG_MAN_HDG": {
+                "type": "MultipositionSwitch",
+                "msg": "NAV_GYRO_MAG_MAN_HDG",
+                "device_id": "28",
+                "device_command": "3001",
+                "arg_number": "229",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Onboard Equipment Control Panel",
+                "description": "NAV Gyro/Mag/Manual heading Switch"
+            },
+            "SAI_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "SAI_POWER",
+                "device_id": "55",
+                "command": "3004",
+                "arg_number": "230",
+                "category": "Onboard Equipment Control Panel",
+                "description": "SAI power Switch"
+            }
+        },
+        "Lighting Control Panel": {
+            "LIGHT_ROTOR_TIP": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_ROTOR_TIP",
+                "device_id": "45",
+                "command": "3001",
+                "arg_number": "296",
+                "category": "Lighting Control Panel",
+                "description": "Rotor tip lights Switch"
+            },
+            "LIGHT_FORMATION": {
+                "type": "MultipositionSwitch",
+                "msg": "LIGHT_FORMATION",
+                "device_id": "45",
+                "device_command": "3002",
+                "arg_number": "297",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Lighting Control Panel",
+                "description": "Formation lights Switch"
+            },
+            "LIGHT_ADI_SAI": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_ADI_SAI",
+                "device_id": "51",
+                "command": "3003",
+                "arg_number": "298",
+                "category": "Lighting Control Panel",
+                "description": "ADI and SAI lighting Switch"
+            },
+            "LIGHT_COCKPIT_NVG": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_COCKPIT_NVG",
+                "device_id": "51",
+                "command": "3007",
+                "arg_number": "299",
+                "category": "Lighting Control Panel",
+                "description": "Night vision cockpit lighting Switch"
+            },
+            "LIGHT_COCKPIT": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_COCKPIT",
+                "device_id": "51",
+                "command": "3001",
+                "arg_number": "300",
+                "category": "Lighting Control Panel",
+                "description": "Cockpit panel lighting Switch"
+            },
+            "LIGHT_CPT_INT": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHT_CPT_INT",
+                "device_id": "51",
+                "command": "3009",
+                "arg_number": "1001",
+                "category": "Lighting Control Panel",
+                "description": "Lighting cockpit interior Lamp Switch"
+            }
+        },
+        "EEG": {
+            "ENG_L_ENG_EEG": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_L_ENG_EEG",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "290",
+                "category": "EEG",
+                "description": "Left engine Electronic Engine Governor Switch"
+            },
+            "ENG_L_ENG_EEG_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_L_ENG_EEG_COVER",
+                "device_id": "4",
+                "command": "3002",
+                "arg_number": "291",
+                "category": "EEG",
+                "description": "Left engine Electronic Engine Governor Switch cover"
+            },
+            "ENG_R_ENG_EEG": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_R_ENG_EEG",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "292",
+                "category": "EEG",
+                "description": "Right engine Electronic Engine Governor Switch"
+            },
+            "ENG_R_ENG_EEG_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_R_ENG_EEG_COVER",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "293",
+                "category": "EEG",
+                "description": "Right engine Electronic Engine Governor Switch cover"
+            },
+            "ENG_EEG_GG_TEST_OPER": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_EEG_GG_TEST_OPER",
+                "device_id": "4",
+                "command": "3015",
+                "arg_number": "294",
+                "category": "EEG",
+                "description": "EEG gas generator Test / Operate Switch"
+            },
+            "ENG_EEG_GG_TEST_OPER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_EEG_GG_TEST_OPER_COVER",
+                "device_id": "4",
+                "command": "3016",
+                "arg_number": "569",
+                "category": "EEG",
+                "description": "EEG gas generator Test / Operate Switch cover"
+            },
+            "ENG_EEG_PT1_OPER_PT2": {
+                "type": "MultipositionSwitch",
+                "msg": "ENG_EEG_PT1_OPER_PT2",
+                "device_id": "4",
+                "device_command": "3017",
+                "arg_number": "295",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "EEG",
+                "description": "EEG power turbine channel 1 test / Operate / EEG power turbine channel 2 test Switch"
+            },
+            "ENG_EEG_PT1_OPER_PT2_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_EEG_PT1_OPER_PT2_COVER",
+                "device_id": "4",
+                "command": "3018",
+                "arg_number": "570",
+                "category": "EEG",
+                "description": "EEG power turbine channel 1 test / Operate / EEG power turbine channel 2 test Switch cover"
+            }
+        },
+        "Engines Control Instruments Panel": {
+            "ENG_L_EGT_GOVERNOR": {
+                "type": "PushButton",
+                "msg": "ENG_L_EGT_GOVERNOR",
+                "device_id": "4",
+                "command": "3019",
+                "arg_number": "457",
+                "category": "Engines Control Instruments Panel",
+                "description": "Left EGT control threshold governor button"
+            },
+            "ENG_R_EGT_GOVERNOR": {
+                "type": "PushButton",
+                "msg": "ENG_R_EGT_GOVERNOR",
+                "device_id": "4",
+                "command": "3020",
+                "arg_number": "458",
+                "category": "Engines Control Instruments Panel",
+                "description": "Right EGT control threshold governor button"
+            },
+            "ENG_VIBR_MONITOR": {
+                "type": "PushButton",
+                "msg": "ENG_VIBR_MONITOR",
+                "device_id": "4",
+                "command": "3021",
+                "arg_number": "459",
+                "category": "Engines Control Instruments Panel",
+                "description": "Engines vibrations monitoring system control button"
+            }
+        },
+        "Ejection System BIT Panel": {
+            "EJECT_SYS_SELECTOR": {
+                "type": "Tumb",
+                "msg": "EJECT_SYS_SELECTOR",
+                "device_id": "6",
+                "command": "3005",
+                "arg_number": "462",
+                "step": "0.1",
+                "limits": "{0, 0.6}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Ejection System BIT Panel",
+                "description": "Ejecting system circuit selector"
+            },
+            "EJECT_SYS_TEST_BTN": {
+                "type": "PushButton",
+                "msg": "EJECT_SYS_TEST_BTN",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "460",
+                "category": "Ejection System BIT Panel",
+                "description": "Ejecting system circuit test button"
+            }
+        },
+        "EKRAN and Voice Warning System Control": {
+            "VOICE_MSG_SYS_TEST": {
+                "type": "PushButton",
+                "msg": "VOICE_MSG_SYS_TEST",
+                "device_id": "13",
+                "command": "3004",
+                "arg_number": "442",
+                "category": "EKRAN and Voice Warning System Control",
+                "description": "Voice message system check button"
+            }
+        },
+        "PPK-800 Systems Preparation and Check Panel": {
+            "PPK800_ATGM_TEMP": {
+                "type": "Tumb",
+                "msg": "PPK800_ATGM_TEMP",
+                "device_id": "32",
+                "command": "3001",
+                "arg_number": "483",
+                "step": "0.1",
+                "limits": "{0, 1.0}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "ATGM Temperature selector"
+            },
+            "PPK800_BAL_DATA": {
+                "type": "Tumb",
+                "msg": "PPK800_BAL_DATA",
+                "device_id": "12",
+                "command": "3023",
+                "arg_number": "484",
+                "step": "0.1",
+                "limits": "{0, 1.0}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Unguided rocket and gun pods ballistics data settings selector"
+            },
+            "PPK800_SYS_BIT": {
+                "type": "Tumb",
+                "msg": "PPK800_SYS_BIT",
+                "device_id": "32",
+                "command": "3003",
+                "arg_number": "485",
+                "step": "0.1",
+                "limits": "{0, 0.8}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Systems BIT selector"
+            },
+            "PPK800_CTRL_COMP_BIT": {
+                "type": "ToggleSwitch",
+                "msg": "PPK800_CTRL_COMP_BIT",
+                "device_id": "32",
+                "command": "3004",
+                "arg_number": "486",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Control computers BIT Switch"
+            },
+            "PPK800_INU_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "PPK800_INU_POWER",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "487",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "INU Power Switch"
+            },
+            "PPK800_INU_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PPK800_INU_HEAT",
+                "device_id": "15",
+                "command": "3002",
+                "arg_number": "488",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "INU Heater Switch"
+            },
+            "PPK800_SELF_TEST": {
+                "type": "PushButton",
+                "msg": "PPK800_SELF_TEST",
+                "device_id": "32",
+                "command": "3007",
+                "arg_number": "489",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Self test system push-button"
+            },
+            "PPK800_EMER_INU_ALIGN": {
+                "type": "ToggleSwitch",
+                "msg": "PPK800_EMER_INU_ALIGN",
+                "device_id": "32",
+                "command": "3008",
+                "arg_number": "490",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Emergency INU alignment Switch"
+            },
+            "PPK800_SLING_STAB": {
+                "type": "ToggleSwitch",
+                "msg": "PPK800_SLING_STAB",
+                "device_id": "32",
+                "command": "3009",
+                "arg_number": "491",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Stabilisation and indication of hanger cable Switch"
+            },
+            "PPK800_VIDEO_TAPE_REC": {
+                "type": "ToggleSwitch",
+                "msg": "PPK800_VIDEO_TAPE_REC",
+                "device_id": "32",
+                "command": "3010",
+                "arg_number": "492",
+                "category": "PPK-800 Systems Preparation and Check Panel",
+                "description": "Video Tape Recorder Switch"
+            }
+        },
+        "LWS": {
+            "LWS_TEST": {
+                "type": "PushButton",
+                "msg": "LWS_TEST",
+                "device_id": "36",
+                "command": "3003",
+                "arg_number": "584",
+                "category": "LWS",
+                "description": "Self-test button"
+            },
+            "LWS_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "LWS_POWER",
+                "device_id": "36",
+                "command": "3002",
+                "arg_number": "583",
+                "category": "LWS",
+                "description": "Power Switch"
+            }
+        },
+        "UV-26 Power and Test Panel": {
+            "UV26_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "UV26_POWER",
+                "device_id": "22",
+                "command": "3010",
+                "arg_number": "496",
+                "category": "UV-26 Power and Test Panel",
+                "description": "UV-26 Power Switch"
+            },
+            "UV26_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "UV26_POWER_COVER",
+                "device_id": "22",
+                "command": "3012",
+                "arg_number": "497",
+                "category": "UV-26 Power and Test Panel",
+                "description": "UV-26 Power Switch cover"
+            },
+            "UV26_TEST": {
+                "type": "ToggleSwitch",
+                "msg": "UV26_TEST",
+                "device_id": "22",
+                "command": "3011",
+                "arg_number": "498",
+                "category": "UV-26 Power and Test Panel",
+                "description": "UV-26 BIT Switch"
+            },
+            "UV26_TEST_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "UV26_TEST_COVER",
+                "device_id": "22",
+                "command": "3013",
+                "arg_number": "499",
+                "category": "UV-26 Power and Test Panel",
+                "description": "UV-26 BIT Switch cover"
+            }
+        },
+        "Electrical System Control Panel": {
+            "ELEC_AUX_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "ELEC_AUX_BRIGHTNESS",
+                "device_id": "51",
+                "command": "3006",
+                "arg_number": "451",
+                "limits": "{0, 1}",
+                "category": "Electrical System Control Panel",
+                "description": "Auxiliary panel Brightness Knob"
+            },
+            "ELEC_AUX_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_AUX_LIGHTS",
+                "device_id": "51",
+                "command": "3005",
+                "arg_number": "450",
+                "category": "Electrical System Control Panel",
+                "description": "Auxiliary panel lightning Switch"
+            },
+            "ELEC_HYD_TRAN_EKRAN_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_HYD_TRAN_EKRAN_POWER",
+                "device_id": "34",
+                "command": "3002",
+                "arg_number": "452",
+                "category": "Electrical System Control Panel",
+                "description": "Hydraulics/transmission groUp and EKRAN power Switch"
+            },
+            "ELEC_HYD_TRAN_EKRAN_POWER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ELEC_HYD_TRAN_EKRAN_POWER_COVER",
+                "device_id": "34",
+                "command": "3003",
+                "arg_number": "453",
+                "category": "Electrical System Control Panel",
+                "description": "Hydraulics/transmission groUp and EKRAN power Switch cover"
+            }
+        },
+        "Lighting Brightness Control Panel": {
+            "LIGHT_AUX_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "LIGHT_AUX_BRIGHTNESS",
+                "device_id": "51",
+                "command": "3008",
+                "arg_number": "507",
+                "limits": "{0, 1}",
+                "category": "Lighting Brightness Control Panel",
+                "description": "Lighting night vision cockpit Brightness Knob (blue)"
+            },
+            "LIGHT_COCKPIT_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "LIGHT_COCKPIT_BRIGHTNESS",
+                "device_id": "51",
+                "command": "3002",
+                "arg_number": "593",
+                "limits": "{0, 1}",
+                "category": "Lighting Brightness Control Panel",
+                "description": "Lighting cockpit panel Brightness Knob"
+            },
+            "LIGHT_HSI_ADI_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "LIGHT_HSI_ADI_BRIGHTNESS",
+                "device_id": "51",
+                "command": "3004",
+                "arg_number": "508",
+                "limits": "{0, 1}",
+                "category": "Lighting Brightness Control Panel",
+                "description": "Lighting HSI and ADI Brightness Knob"
+            }
+        },
+        "Right Panel": {
+            "REDU_GEAR_OIL_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "REDU_GEAR_OIL_PRESS",
+                "device_id": "4",
+                "command": "3024",
+                "arg_number": "258",
+                "category": "Right Panel",
+                "description": "Reducing Gear box oil pressure indication selector"
+            },
+            "SLING_AUT_MAN": {
+                "type": "ToggleSwitch",
+                "msg": "SLING_AUT_MAN",
+                "device_id": "41",
+                "command": "3004",
+                "arg_number": "259",
+                "category": "Right Panel",
+                "description": "Sling load Auto/Manual"
+            }
+        },
+        "Cockpit": {
+            "DOOR_HDL": {
+                "type": "ToggleSwitch",
+                "msg": "DOOR_HDL",
+                "device_id": "34",
+                "command": "3018",
+                "arg_number": "1020",
+                "category": "Cockpit",
+                "description": "Door handle"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Ka-50",
+        "date": "Jul 04 2023, 17:00 PM -0700",
+        "version": null
+    }
+}

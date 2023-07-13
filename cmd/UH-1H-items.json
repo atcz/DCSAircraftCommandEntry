@@ -1,0 +1,2273 @@
+{
+    "commands": {
+        "Electrical System": {
+            "BAT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BAT_SW",
+                "device_id": "1",
+                "command": "3001",
+                "arg_number": "219",
+                "category": "Electrical System",
+                "description": "Battery Switch"
+            },
+            "STARTER_GEN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "STARTER_GEN_SW",
+                "device_id": "1",
+                "command": "3003",
+                "arg_number": "220",
+                "category": "Electrical System",
+                "description": "Starter/Stdby GEN"
+            },
+            "DC_VM_SRC": {
+                "type": "MultipositionSwitch",
+                "msg": "DC_VM_SRC",
+                "device_id": "1",
+                "device_command": "3004",
+                "arg_number": "218",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "Electrical System",
+                "description": "DC Voltmeter Source"
+            },
+            "NON_ESS_BUS_SW": {
+                "type": "ToggleSwitch",
+                "msg": "NON_ESS_BUS_SW",
+                "device_id": "1",
+                "command": "3005",
+                "arg_number": "221",
+                "category": "Electrical System",
+                "description": "NON ESS BUS Switch"
+            },
+            "AC_VM_SRC": {
+                "type": "MultipositionSwitch",
+                "msg": "AC_VM_SRC",
+                "device_id": "1",
+                "device_command": "3007",
+                "arg_number": "214",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Electrical System",
+                "description": "AC Voltmeter Source"
+            },
+            "INVERTER_SW": {
+                "type": "3PosTumb",
+                "msg": "INVERTER_SW",
+                "device_id": "1",
+                "command": "3008",
+                "arg_number": "215",
+                "category": "Electrical System",
+                "description": "Inverter Switch"
+            }
+        },
+        "Circuit Breakers": {
+            "CB_IFF_APX1": {
+                "type": "ToggleSwitch",
+                "msg": "CB_IFF_APX1",
+                "device_id": "1",
+                "command": "3021",
+                "arg_number": "285",
+                "category": "Circuit Breakers",
+                "description": "IFF APX 1 (No Function)"
+            },
+            "CB_IFF_APX2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_IFF_APX2",
+                "device_id": "1",
+                "command": "3022",
+                "arg_number": "287",
+                "category": "Circuit Breakers",
+                "description": "IFF APX 2 (No Function)"
+            },
+            "CB_PORX_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PORX_WARN",
+                "device_id": "1",
+                "command": "3023",
+                "arg_number": "289",
+                "category": "Circuit Breakers",
+                "description": "Prox. warn. (No Function)"
+            },
+            "CB_MARKER_BEACON": {
+                "type": "ToggleSwitch",
+                "msg": "CB_MARKER_BEACON",
+                "device_id": "1",
+                "command": "3024",
+                "arg_number": "291",
+                "category": "Circuit Breakers",
+                "description": "Marker Beacon"
+            },
+            "CB_VHF_NAV": {
+                "type": "ToggleSwitch",
+                "msg": "CB_VHF_NAV",
+                "device_id": "1",
+                "command": "3025",
+                "arg_number": "293",
+                "category": "Circuit Breakers",
+                "description": "VHF Nav. (ARN-82)"
+            },
+            "CB_LF_NAV": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LF_NAV",
+                "device_id": "1",
+                "command": "3026",
+                "arg_number": "295",
+                "category": "Circuit Breakers",
+                "description": "LF Nav. (ARN-83)"
+            },
+            "CB_INT_CPLT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INT_CPLT",
+                "device_id": "1",
+                "command": "3027",
+                "arg_number": "297",
+                "category": "Circuit Breakers",
+                "description": "Intercom Copilot (No Function)"
+            },
+            "CB_INT_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INT_PLT",
+                "device_id": "1",
+                "command": "3028",
+                "arg_number": "299",
+                "category": "Circuit Breakers",
+                "description": "Intercom Pilot"
+            },
+            "CB_ARC_102": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ARC_102",
+                "device_id": "1",
+                "command": "3029",
+                "arg_number": "349",
+                "category": "Circuit Breakers",
+                "description": "ARC-102 HF Static Inverter (No Function)"
+            },
+            "CB_HF_ANT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HF_ANT",
+                "device_id": "1",
+                "command": "3030",
+                "arg_number": "351",
+                "category": "Circuit Breakers",
+                "description": "HF ANT COUPLR (No Function)"
+            },
+            "CB_HF_ARC_102": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HF_ARC_102",
+                "device_id": "1",
+                "command": "3031",
+                "arg_number": "353",
+                "category": "Circuit Breakers",
+                "description": "HF ARC-102 (No Function)"
+            },
+            "CB_FM_RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FM_RADIO",
+                "device_id": "1",
+                "command": "3032",
+                "arg_number": "355",
+                "category": "Circuit Breakers",
+                "description": "FM Radio"
+            },
+            "CB_UHF_RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_UHF_RADIO",
+                "device_id": "1",
+                "command": "3033",
+                "arg_number": "357",
+                "category": "Circuit Breakers",
+                "description": "UHF Radio"
+            },
+            "CB_FM2_RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FM2_RADIO",
+                "device_id": "1",
+                "command": "3034",
+                "arg_number": "359",
+                "category": "Circuit Breakers",
+                "description": "FM 2 Radio (No Function)"
+            },
+            "CB_AM_RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AM_RADIO",
+                "device_id": "1",
+                "command": "3035",
+                "arg_number": "361",
+                "category": "Circuit Breakers",
+                "description": "VHF AM Radio"
+            },
+            "CB_PITOT_TUBE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PITOT_TUBE",
+                "device_id": "1",
+                "command": "3037",
+                "arg_number": "321",
+                "category": "Circuit Breakers",
+                "description": "Pitot tube (No Function)"
+            },
+            "CB_RESCUE_CONT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_RESCUE_CONT",
+                "device_id": "1",
+                "command": "3039",
+                "arg_number": "345",
+                "category": "Circuit Breakers",
+                "description": "Rescue hoist CTL (No Function)"
+            },
+            "CB_CABLE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CABLE",
+                "device_id": "1",
+                "command": "3040",
+                "arg_number": "347",
+                "category": "Circuit Breakers",
+                "description": "Rescoue hoist cable cutter (No Function)"
+            },
+            "CB_WIPER_CPLT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WIPER_CPLT",
+                "device_id": "1",
+                "command": "3041",
+                "arg_number": "301",
+                "category": "Circuit Breakers",
+                "description": "Wind wiper CPLT"
+            },
+            "CB_WIPER_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WIPER_PLT",
+                "device_id": "1",
+                "command": "3042",
+                "arg_number": "303",
+                "category": "Circuit Breakers",
+                "description": "Wind wiper PLT"
+            },
+            "CB_KY20": {
+                "type": "ToggleSwitch",
+                "msg": "CB_KY20",
+                "device_id": "1",
+                "command": "3043",
+                "arg_number": "305",
+                "category": "Circuit Breakers",
+                "description": "KY-28 Secure Radio (No Function)"
+            },
+            "CB_STARTER": {
+                "type": "ToggleSwitch",
+                "msg": "CB_STARTER",
+                "device_id": "1",
+                "command": "3044",
+                "arg_number": "403",
+                "category": "Circuit Breakers",
+                "description": "Starter Relay (No Function)"
+            },
+            "CB_SL_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SL_PWR",
+                "device_id": "1",
+                "command": "3045",
+                "arg_number": "307",
+                "category": "Circuit Breakers",
+                "description": "Search Light power (No Function)"
+            },
+            "CB_LDGLTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LDGLTS",
+                "device_id": "1",
+                "command": "3046",
+                "arg_number": "309",
+                "category": "Circuit Breakers",
+                "description": "Landing Lights power (No Function)"
+            },
+            "CB_SL_CTL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SL_CTL",
+                "device_id": "1",
+                "command": "3047",
+                "arg_number": "311",
+                "category": "Circuit Breakers",
+                "description": "Landing and Search Lights Control (No Function)"
+            },
+            "CB_ANTICOLL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ANTICOLL",
+                "device_id": "1",
+                "command": "3048",
+                "arg_number": "313",
+                "category": "Circuit Breakers",
+                "description": "Anticollision light (No Function)"
+            },
+            "CB_FUS_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUS_LTS",
+                "device_id": "1",
+                "command": "3049",
+                "arg_number": "363",
+                "category": "Circuit Breakers",
+                "description": "Fuselage lights (No Function)"
+            },
+            "CB_NAV_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_NAV_LTS",
+                "device_id": "1",
+                "command": "3050",
+                "arg_number": "365",
+                "category": "Circuit Breakers",
+                "description": "Navigation lights (No Function)"
+            },
+            "CB_DOME_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_DOME_LTS",
+                "device_id": "1",
+                "command": "3051",
+                "arg_number": "367",
+                "category": "Circuit Breakers",
+                "description": "Dome lights (No Function)"
+            },
+            "CB_COCKPIT_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_COCKPIT_LTS",
+                "device_id": "1",
+                "command": "3052",
+                "arg_number": "369",
+                "category": "Circuit Breakers",
+                "description": "Cockpit lights (No Function)"
+            },
+            "CB_CAUTION_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CAUTION_LTS",
+                "device_id": "1",
+                "command": "3053",
+                "arg_number": "371",
+                "category": "Circuit Breakers",
+                "description": "Caution lights (No Function)"
+            },
+            "CB_CONSOLE_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CONSOLE_LTS",
+                "device_id": "1",
+                "command": "3054",
+                "arg_number": "373",
+                "category": "Circuit Breakers",
+                "description": "Console lights (No Function)"
+            },
+            "CB_INST_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INST_LTS",
+                "device_id": "1",
+                "command": "3055",
+                "arg_number": "375",
+                "category": "Circuit Breakers",
+                "description": "INST Panel lights (No Function)"
+            },
+            "CB_INST_SEC_LTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INST_SEC_LTS",
+                "device_id": "1",
+                "command": "3056",
+                "arg_number": "377",
+                "category": "Circuit Breakers",
+                "description": "INST SEC lights (No Function)"
+            },
+            "CB_OUTLET_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_OUTLET_VALVE",
+                "device_id": "1",
+                "command": "3057",
+                "arg_number": "323",
+                "category": "Circuit Breakers",
+                "description": "Cabin Heater Outlet Valve (No Function)"
+            },
+            "CB_AIR_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AIR_VALVE",
+                "device_id": "1",
+                "command": "3058",
+                "arg_number": "325",
+                "category": "Circuit Breakers",
+                "description": "Cabin Heater Air Valve (No Function)"
+            },
+            "CB_RESCUE_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_RESCUE_PWR",
+                "device_id": "1",
+                "command": "3059",
+                "arg_number": "343",
+                "category": "Circuit Breakers",
+                "description": "Rescue Hoist Power (No Function)"
+            },
+            "CB_RPM_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_RPM_WARN",
+                "device_id": "1",
+                "command": "3060",
+                "arg_number": "327",
+                "category": "Circuit Breakers",
+                "description": "RPM Warning System (No Function)"
+            },
+            "CB_ANTI_ICE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ANTI_ICE",
+                "device_id": "1",
+                "command": "3061",
+                "arg_number": "329",
+                "category": "Circuit Breakers",
+                "description": "Engine anti-ice (No Function)"
+            },
+            "CB_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FIRE",
+                "device_id": "1",
+                "command": "3062",
+                "arg_number": "331",
+                "category": "Circuit Breakers",
+                "description": "Fire detector (No Function)"
+            },
+            "CB_LH_FUEL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LH_FUEL",
+                "device_id": "1",
+                "command": "3063",
+                "arg_number": "333",
+                "category": "Circuit Breakers",
+                "description": "LH fuel boost pump (No Function)"
+            },
+            "CB_TURN_SLIP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TURN_SLIP",
+                "device_id": "1",
+                "command": "3064",
+                "arg_number": "335",
+                "category": "Circuit Breakers",
+                "description": "Turn & Slip Indicator"
+            },
+            "CB_TEMP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TEMP",
+                "device_id": "1",
+                "command": "3065",
+                "arg_number": "337",
+                "category": "Circuit Breakers",
+                "description": "TEMP indicator (No Function)"
+            },
+            "CB_HYDCTL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HYDCTL",
+                "device_id": "1",
+                "command": "3066",
+                "arg_number": "339",
+                "category": "Circuit Breakers",
+                "description": "HYD Control (No Function)"
+            },
+            "CB_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TRIM",
+                "device_id": "1",
+                "command": "3068",
+                "arg_number": "341",
+                "category": "Circuit Breakers",
+                "description": "Force Trim (No Function)"
+            },
+            "CB_HOOK": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HOOK",
+                "device_id": "1",
+                "command": "3069",
+                "arg_number": "379",
+                "category": "Circuit Breakers",
+                "description": "Cargo hook release (No Function)"
+            },
+            "CB_JTSN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_JTSN",
+                "device_id": "1",
+                "command": "3070",
+                "arg_number": "381",
+                "category": "Circuit Breakers",
+                "description": "EXT Stores jettison (No Function)"
+            },
+            "CB_SPARE_INVTR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SPARE_INVTR",
+                "device_id": "1",
+                "command": "3071",
+                "arg_number": "383",
+                "category": "Circuit Breakers",
+                "description": "Spare Inverter (No Function)"
+            },
+            "CB_INVTR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INVTR",
+                "device_id": "1",
+                "command": "3072",
+                "arg_number": "385",
+                "category": "Circuit Breakers",
+                "description": "Inverter CTRL (No Function)"
+            },
+            "CB_MAIN_INVTR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_MAIN_INVTR",
+                "device_id": "1",
+                "command": "3073",
+                "arg_number": "387",
+                "category": "Circuit Breakers",
+                "description": "Main Inverter PWR (No Function)"
+            },
+            "CB_GEN_BUS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GEN_BUS",
+                "device_id": "1",
+                "command": "3074",
+                "arg_number": "389",
+                "category": "Circuit Breakers",
+                "description": "Generator & Bus Reset (No Function)"
+            },
+            "CB_STBY_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_STBY_GEN",
+                "device_id": "1",
+                "command": "3075",
+                "arg_number": "391",
+                "category": "Circuit Breakers",
+                "description": "STBY Generator Field (No Function)"
+            },
+            "CB_GOV": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GOV",
+                "device_id": "1",
+                "command": "3076",
+                "arg_number": "393",
+                "category": "Circuit Breakers",
+                "description": "Governor Control (No Function)"
+            },
+            "CB_IDLE_STOP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_IDLE_STOP",
+                "device_id": "1",
+                "command": "3077",
+                "arg_number": "395",
+                "category": "Circuit Breakers",
+                "description": "IDLE Stop release (No Function)"
+            },
+            "CB_RH_FUEL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_RH_FUEL",
+                "device_id": "1",
+                "command": "3078",
+                "arg_number": "397",
+                "category": "Circuit Breakers",
+                "description": "RH fuel boost pumps (No Function)"
+            },
+            "CB_FUEL_TRANS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_TRANS",
+                "device_id": "1",
+                "command": "3079",
+                "arg_number": "399",
+                "category": "Circuit Breakers",
+                "description": "Fuel TRANS (No Function)"
+            },
+            "CB_FUEL_VALVES": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_VALVES",
+                "device_id": "1",
+                "command": "3080",
+                "arg_number": "401",
+                "category": "Circuit Breakers",
+                "description": "Fuel valves (No Function)"
+            },
+            "CB_HEATED_BLANKET1": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HEATED_BLANKET1",
+                "device_id": "1",
+                "command": "3081",
+                "arg_number": "315",
+                "category": "Circuit Breakers",
+                "description": "Heated blanket 1 (No Function)"
+            },
+            "CB_HEATED_BLANKET2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HEATED_BLANKET2",
+                "device_id": "1",
+                "command": "3082",
+                "arg_number": "317",
+                "category": "Circuit Breakers",
+                "description": "Heated blanket 2 (No Function)"
+            },
+            "CB_VM": {
+                "type": "ToggleSwitch",
+                "msg": "CB_VM",
+                "device_id": "1",
+                "command": "3083",
+                "arg_number": "319",
+                "category": "Circuit Breakers",
+                "description": "Voltmeter Non Ess Bus (No Function)"
+            },
+            "CB_IGN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_IGN",
+                "device_id": "1",
+                "command": "3085",
+                "arg_number": "405",
+                "category": "Circuit Breakers",
+                "description": "Ignition system (No Function)"
+            },
+            "CB_PLT_ATTD1": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PLT_ATTD1",
+                "device_id": "1",
+                "command": "3086",
+                "arg_number": "423",
+                "category": "Circuit Breakers",
+                "description": "Pilot ATTD1 (No Function)"
+            },
+            "CB_PLT_ATTD2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PLT_ATTD2",
+                "device_id": "1",
+                "command": "3087",
+                "arg_number": "424",
+                "category": "Circuit Breakers",
+                "description": "Pilot ATTD2 (No Function)"
+            },
+            "CB_CPLT_ATTD1": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CPLT_ATTD1",
+                "device_id": "1",
+                "command": "3088",
+                "arg_number": "425",
+                "category": "Circuit Breakers",
+                "description": "Copilot ATTD1 (No Function)"
+            },
+            "CB_CPLT_ATTD2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CPLT_ATTD2",
+                "device_id": "1",
+                "command": "3089",
+                "arg_number": "426",
+                "category": "Circuit Breakers",
+                "description": "Coilot ATTD2 (No Function)"
+            },
+            "CB_GYRO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GYRO",
+                "device_id": "1",
+                "command": "3090",
+                "arg_number": "427",
+                "category": "Circuit Breakers",
+                "description": "Gyro Compass (No Function)"
+            },
+            "CB_FUEL_QTY": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_QTY",
+                "device_id": "1",
+                "command": "3091",
+                "arg_number": "428",
+                "category": "Circuit Breakers",
+                "description": "Fuel Quantity (No Function)"
+            },
+            "CB_28V": {
+                "type": "ToggleSwitch",
+                "msg": "CB_28V",
+                "device_id": "1",
+                "command": "3092",
+                "arg_number": "429",
+                "category": "Circuit Breakers",
+                "description": "28V Trans (No Function)"
+            },
+            "CB_FAIL_RELAY": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FAIL_RELAY",
+                "device_id": "1",
+                "command": "3093",
+                "arg_number": "430",
+                "category": "Circuit Breakers",
+                "description": "Fail Relay (No Function)"
+            },
+            "CB_FUEL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL",
+                "device_id": "1",
+                "command": "3094",
+                "arg_number": "431",
+                "category": "Circuit Breakers",
+                "description": "Pressure Fuel (No Function)"
+            },
+            "CB_TORQ": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TORQ",
+                "device_id": "1",
+                "command": "30295",
+                "arg_number": "432",
+                "category": "Circuit Breakers",
+                "description": "Pressure Torque (No Function)"
+            },
+            "CB_XMSN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_XMSN",
+                "device_id": "1",
+                "command": "3096",
+                "arg_number": "433",
+                "category": "Circuit Breakers",
+                "description": "Pressure XMSN (No Function)"
+            },
+            "CB_ENG": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ENG",
+                "device_id": "1",
+                "command": "3097",
+                "arg_number": "434",
+                "category": "Circuit Breakers",
+                "description": "Pressure Eng (No Function)"
+            },
+            "CB_CRSIND": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CRSIND",
+                "device_id": "1",
+                "command": "3098",
+                "arg_number": "435",
+                "category": "Circuit Breakers",
+                "description": "Course Ind (No Function)"
+            }
+        },
+        "Overhead Panel": {
+            "PITOT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_HEAT",
+                "device_id": "1",
+                "command": "3016",
+                "arg_number": "238",
+                "category": "Overhead Panel",
+                "description": "Pitot Heater"
+            },
+            "MAIN_GEN_SW": {
+                "type": "3PosTumb",
+                "msg": "MAIN_GEN_SW",
+                "device_id": "1",
+                "command": "3002",
+                "arg_number": "216",
+                "category": "Overhead Panel",
+                "description": "Main Generator RESET/OFF/ON"
+            },
+            "MAIN_GEN_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "MAIN_GEN_COVER",
+                "device_id": "1",
+                "command": "3019",
+                "arg_number": "217",
+                "category": "Overhead Panel",
+                "description": "Main Generator Switch Cover"
+            },
+            "NVG_POS_LTS": {
+                "type": "MultipositionSwitch",
+                "msg": "NVG_POS_LTS",
+                "device_id": "7",
+                "device_command": "3001",
+                "arg_number": "222",
+                "num_positions": "6",
+                "increment": "0.1",
+                "category": "Overhead Panel",
+                "description": "NVG Position Lights"
+            },
+            "NAV_LTS_SW": {
+                "type": "3PosTumb",
+                "msg": "NAV_LTS_SW",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "223",
+                "category": "Overhead Panel",
+                "description": "Navigation Lights STEADY - OFF - FLASH"
+            },
+            "POS_LTS_SW": {
+                "type": "ToggleSwitch",
+                "msg": "POS_LTS_SW",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "224",
+                "category": "Overhead Panel",
+                "description": "Position LIghts DIM / BRT"
+            },
+            "ANTICOLL_LTS_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ANTICOLL_LTS_SW",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "225",
+                "category": "Overhead Panel",
+                "description": "Anticollision Lights OFF / ON"
+            },
+            "BRT_CONSOLE": {
+                "type": "Potentiometer",
+                "msg": "BRT_CONSOLE",
+                "device_id": "7",
+                "command": "3015",
+                "arg_number": "230",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Overhead Console Panel Lights Brightness"
+            },
+            "BRT_PED": {
+                "type": "Potentiometer",
+                "msg": "BRT_PED",
+                "device_id": "7",
+                "command": "3016",
+                "arg_number": "231",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Pedestal Lights Brightness"
+            },
+            "BRT_SEC": {
+                "type": "Potentiometer",
+                "msg": "BRT_SEC",
+                "device_id": "7",
+                "command": "3017",
+                "arg_number": "232",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Secondary Instrument Lights Brightness"
+            },
+            "BRT_ENGINE": {
+                "type": "Potentiometer",
+                "msg": "BRT_ENGINE",
+                "device_id": "7",
+                "command": "3018",
+                "arg_number": "233",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Engine Instrument Lights Brightness"
+            },
+            "BRT_COPILOT": {
+                "type": "Potentiometer",
+                "msg": "BRT_COPILOT",
+                "device_id": "7",
+                "command": "3019",
+                "arg_number": "234",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Copilot Instrument Lights Brightness"
+            },
+            "BRT_PILOT": {
+                "type": "Potentiometer",
+                "msg": "BRT_PILOT",
+                "device_id": "7",
+                "command": "3020",
+                "arg_number": "235",
+                "limits": "{0, 1}",
+                "category": "Overhead Panel",
+                "description": "Pilot Instrument Lights Brightness"
+            },
+            "DOME_LIGHT_SW": {
+                "type": "3PosTumb",
+                "msg": "DOME_LIGHT_SW",
+                "device_id": "7",
+                "command": "3021",
+                "arg_number": "226",
+                "category": "Overhead Panel",
+                "description": "Dome Light Switch WHITE / OFF / GREEN"
+            },
+            "BLEED_AIR_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "BLEED_AIR_SW",
+                "device_id": "47",
+                "device_command": "3001",
+                "arg_number": "236",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "Overhead Panel",
+                "description": "Bleed Air Dial"
+            },
+            "WIPER_SEL": {
+                "type": "3PosTumb",
+                "msg": "WIPER_SEL",
+                "device_id": "12",
+                "command": "3002",
+                "arg_number": "227",
+                "category": "Overhead Panel",
+                "description": "Wiper PILOT / BOTH / OPERATOR"
+            },
+            "WIPER_SPD": {
+                "type": "FixedStepTumb",
+                "msg": "WIPER_SPD",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "229",
+                "step": "0.1",
+                "limits": "{0, 0.4}",
+                "rel_args": "{-1, 1}",
+                "output_map": "nil",
+                "category": "Overhead Panel",
+                "description": "Wiper Speed PARK - STOP - SLOW - MED - HIGH"
+            },
+            "RADAR_ALT_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_ALT_PWR",
+                "device_id": "13",
+                "command": "3007",
+                "arg_number": "449",
+                "category": "Overhead Panel",
+                "description": "Radar Altimeter Power"
+            },
+            "CARGO_REL_SAFE": {
+                "type": "ToggleSwitch",
+                "msg": "CARGO_REL_SAFE",
+                "device_id": "52",
+                "command": "3003",
+                "arg_number": "228",
+                "category": "Overhead Panel",
+                "description": "Cargo Safety OFF / ARM"
+            }
+        },
+        "Caution Lights Panel": {
+            "CLP_RESET_TEST_SW": {
+                "type": "RockerSwitch",
+                "msg": "CLP_RESET_TEST_SW",
+                "device_id": "15",
+                "pos_command": "3001",
+                "pos_stop_command": "3001",
+                "neg_command": "3001",
+                "neg_stop_command": "3001",
+                "arg_number": "111",
+                "category": "Caution Lights Panel",
+                "description": "Test/Reset Rocker Switch"
+            },
+            "CLP_BRIGHT_DIM_SW": {
+                "type": "RockerSwitch",
+                "msg": "CLP_BRIGHT_DIM_SW",
+                "device_id": "15",
+                "pos_command": "3002",
+                "pos_stop_command": "3002",
+                "neg_command": "3002",
+                "neg_stop_command": "3002",
+                "arg_number": "112",
+                "category": "Caution Lights Panel",
+                "description": "Bright/Dim Rocker Switch"
+            }
+        },
+        "Fuel System": {
+            "MAIN_FUEL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "MAIN_FUEL_SW",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "81",
+                "category": "Fuel System",
+                "description": "Main Fuel Switch"
+            },
+            "TEST_FUEL_GAUGE_BTN": {
+                "type": "PushButton",
+                "msg": "TEST_FUEL_GAUGE_BTN",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "240",
+                "category": "Fuel System",
+                "description": "Test Fuel Gauge Button"
+            }
+        },
+        "IFF": {
+            "IFF_CODE": {
+                "type": "FixedStepTumb",
+                "msg": "IFF_CODE",
+                "device_id": "17",
+                "command": "3007",
+                "arg_number": "58",
+                "step": "0.1",
+                "limits": "{0, 0.3}",
+                "rel_args": "{1, -1}",
+                "output_map": "nil",
+                "category": "IFF",
+                "description": "IFF Code: ZERO - B - A - (HOLD)"
+            },
+            "IFF_MASTER": {
+                "type": "MultipositionSwitch",
+                "msg": "IFF_MASTER",
+                "device_id": "17",
+                "device_command": "3008",
+                "arg_number": "59",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "IFF",
+                "description": "IFF Master"
+            },
+            "IFF_OUT_AUDIO_LIGHT": {
+                "type": "3PosTumb",
+                "msg": "IFF_OUT_AUDIO_LIGHT",
+                "device_id": "17",
+                "command": "3009",
+                "arg_number": "60",
+                "category": "IFF",
+                "description": "IFF Out: LIGHT - OFF - AUDIO"
+            },
+            "IFF_TEST_M1": {
+                "type": "Tumb",
+                "msg": "IFF_TEST_M1",
+                "device_id": "17",
+                "command": "3010",
+                "arg_number": "61",
+                "step": "1.0",
+                "limits": "{-1, 1}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Test M-1"
+            },
+            "IFF_TEST_M2": {
+                "type": "Tumb",
+                "msg": "IFF_TEST_M2",
+                "device_id": "17",
+                "command": "3011",
+                "arg_number": "62",
+                "step": "1.0",
+                "limits": "{-1, 1}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Test M-2"
+            },
+            "IFF_TEST_M3": {
+                "type": "Tumb",
+                "msg": "IFF_TEST_M3",
+                "device_id": "17",
+                "command": "3012",
+                "arg_number": "63",
+                "step": "1.0",
+                "limits": "{-1, 1}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Test M-3"
+            },
+            "IFF_TEST_M4": {
+                "type": "Tumb",
+                "msg": "IFF_TEST_M4",
+                "device_id": "17",
+                "command": "3013",
+                "arg_number": "64",
+                "step": "1.0",
+                "limits": "{-1, 1}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Test M-4"
+            },
+            "IFF_RADTEST": {
+                "type": "Tumb",
+                "msg": "IFF_RADTEST",
+                "device_id": "17",
+                "command": "3014",
+                "arg_number": "65",
+                "step": "1.0",
+                "limits": "{-1, 1}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "RAD Test/Mon"
+            },
+            "IFF_MIC_IDENT": {
+                "type": "Tumb",
+                "msg": "IFF_MIC_IDENT",
+                "device_id": "17",
+                "command": "3015",
+                "arg_number": "66",
+                "step": "1.0",
+                "limits": "{-1, 1}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Ident/Mic Switch"
+            },
+            "IFF_ON_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_ON_OUT",
+                "device_id": "17",
+                "command": "3016",
+                "arg_number": "67",
+                "category": "IFF",
+                "description": "IFF On/Out"
+            },
+            "IFF_MODE1_WHEEL1": {
+                "type": "Tumb",
+                "msg": "IFF_MODE1_WHEEL1",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "68",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Mode-1 Wheel 1"
+            },
+            "IFF_MODE1_WHEEL2": {
+                "type": "Tumb",
+                "msg": "IFF_MODE1_WHEEL2",
+                "device_id": "17",
+                "command": "3002",
+                "arg_number": "69",
+                "step": "0.1",
+                "limits": "{0, 0.3}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Mode-1 Wheel 2"
+            },
+            "IFF_MODE3A_WHEEL1": {
+                "type": "Tumb",
+                "msg": "IFF_MODE3A_WHEEL1",
+                "device_id": "17",
+                "command": "3003",
+                "arg_number": "70",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Mode-3A Wheel 1"
+            },
+            "IFF_MODE3A_WHEEL2": {
+                "type": "Tumb",
+                "msg": "IFF_MODE3A_WHEEL2",
+                "device_id": "17",
+                "command": "3004",
+                "arg_number": "71",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Mode-3A Wheel 2"
+            },
+            "IFF_MODE3A_WHEEL3": {
+                "type": "Tumb",
+                "msg": "IFF_MODE3A_WHEEL3",
+                "device_id": "17",
+                "command": "3005",
+                "arg_number": "72",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Mode-3A Wheel 3"
+            },
+            "IFF_MODE3A_WHEEL4": {
+                "type": "Tumb",
+                "msg": "IFF_MODE3A_WHEEL4",
+                "device_id": "17",
+                "command": "3006",
+                "arg_number": "73",
+                "step": "0.1",
+                "limits": "{0, 0.7}",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "IFF",
+                "description": "Mode-3A Wheel 4"
+            },
+            "IFF_REPLY_TEST": {
+                "type": "PushButton",
+                "msg": "IFF_REPLY_TEST",
+                "device_id": "17",
+                "command": "3017",
+                "arg_number": "74",
+                "category": "IFF",
+                "description": "REPLY Push to Test"
+            },
+            "IFF_REPLY_DIM": {
+                "type": "Potentiometer",
+                "msg": "IFF_REPLY_DIM",
+                "device_id": "17",
+                "command": "3020",
+                "arg_number": "78",
+                "limits": "{0, 1}",
+                "category": "IFF",
+                "description": "IFF Reply Dim"
+            },
+            "IFF_TEST_TEST": {
+                "type": "PushButton",
+                "msg": "IFF_TEST_TEST",
+                "device_id": "17",
+                "command": "3018",
+                "arg_number": "75",
+                "category": "IFF",
+                "description": "TEST Push to Test"
+            },
+            "IFF_TEST_DIM": {
+                "type": "Potentiometer",
+                "msg": "IFF_TEST_DIM",
+                "device_id": "17",
+                "command": "3021",
+                "arg_number": "79",
+                "limits": "{0, 1}",
+                "category": "IFF",
+                "description": "TEST Reply Dim"
+            }
+        },
+        "Clock": {
+            "CLOCK_ADJUST_PULL": {
+                "type": "ToggleSwitchToggleOnly",
+                "msg": "CLOCK_ADJUST_PULL",
+                "device_id": "30",
+                "command": "3001",
+                "arg_number": "131",
+                "category": "Clock",
+                "description": "Adjustment Dial Pull"
+            },
+            "CLOCK_ADJUST": {
+                "type": "Rotary",
+                "msg": "CLOCK_ADJUST",
+                "device_id": "30",
+                "command": "3002",
+                "arg_number": "130",
+                "category": "Clock",
+                "description": "Adjustment Dial"
+            }
+        },
+        "Collective": {
+            "THROTTLE": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE",
+                "device_id": "3",
+                "command": "3024",
+                "arg_number": "250",
+                "limits": "{-1.0, 0.4}",
+                "category": "Collective",
+                "description": "Throttle Axis"
+            },
+            "THROTTLE_STOP": {
+                "type": "ToggleSwitch",
+                "msg": "THROTTLE_STOP",
+                "device_id": "3",
+                "command": "3027",
+                "arg_number": "206",
+                "category": "Collective",
+                "description": "Throttle Stop Switch, ON/OFF"
+            },
+            "GOV_RPM_SW": {
+                "type": "RockerSwitch",
+                "msg": "GOV_RPM_SW",
+                "device_id": "3",
+                "pos_command": "3015",
+                "pos_stop_command": "3015",
+                "neg_command": "3015",
+                "neg_stop_command": "3015",
+                "arg_number": "203",
+                "category": "Collective",
+                "description": "Governor RPM Rocker Switch"
+            },
+            "LDG_LIGHT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "LDG_LIGHT_SW",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "202",
+                "category": "Collective",
+                "description": "Landing Lights Switch"
+            },
+            "SEARCH_LIGHT_SW": {
+                "type": "3PosTumb",
+                "msg": "SEARCH_LIGHT_SW",
+                "device_id": "7",
+                "command": "3006",
+                "arg_number": "201",
+                "category": "Collective",
+                "description": "Search Light STOW / OFF / ON"
+            },
+            "LDG_LT_CTRL": {
+                "type": "3PosTumb",
+                "msg": "LDG_LT_CTRL",
+                "device_id": "7",
+                "command": "3007",
+                "arg_number": "205",
+                "category": "Collective",
+                "description": "Landing Lights Control Switch"
+            },
+            "THROTTLE2": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE2",
+                "device_id": "3",
+                "command": "3030",
+                "arg_number": "250",
+                "limits": "{-1.0, 0.4}",
+                "category": "Collective",
+                "description": "Copilot Throttle Axis"
+            },
+            "THROTTLE_STOP2": {
+                "type": "ToggleSwitch",
+                "msg": "THROTTLE_STOP2",
+                "device_id": "3",
+                "command": "3031",
+                "arg_number": "213",
+                "category": "Collective",
+                "description": "Copilot Throttle Stop Switch, ON/OFF"
+            },
+            "GOV_RPM_SW2": {
+                "type": "RockerSwitch",
+                "msg": "GOV_RPM_SW2",
+                "device_id": "3",
+                "pos_command": "3029",
+                "pos_stop_command": "3029",
+                "neg_command": "3029",
+                "neg_stop_command": "3029",
+                "arg_number": "210",
+                "category": "Collective",
+                "description": "Copilot Governor RPM Rocker Switch"
+            },
+            "LDG_LIGHT_SW2": {
+                "type": "ToggleSwitch",
+                "msg": "LDG_LIGHT_SW2",
+                "device_id": "7",
+                "command": "3034",
+                "arg_number": "209",
+                "category": "Collective",
+                "description": "Copilot Landing Lights Switch"
+            },
+            "SEARCH_LIGHT_SW2": {
+                "type": "3PosTumb",
+                "msg": "SEARCH_LIGHT_SW2",
+                "device_id": "7",
+                "command": "3035",
+                "arg_number": "208",
+                "category": "Collective",
+                "description": "Copilot Search Light STOW / OFF / ON"
+            },
+            "LDG_LT_CTRL2": {
+                "type": "3PosTumb",
+                "msg": "LDG_LT_CTRL2",
+                "device_id": "7",
+                "command": "3036",
+                "arg_number": "212",
+                "category": "Collective",
+                "description": "Copilot Landing Lights Control Switch"
+            }
+        },
+        "Engine Panel": {
+            "ENG_DEICE": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_DEICE",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "84",
+                "category": "Engine Panel",
+                "description": "De-Ice Switch"
+            },
+            "LOW_RPM_AUDIO": {
+                "type": "ToggleSwitch",
+                "msg": "LOW_RPM_AUDIO",
+                "device_id": "3",
+                "command": "3021",
+                "arg_number": "80",
+                "category": "Engine Panel",
+                "description": "Low RPM Audio Switch"
+            },
+            "EMER_GOV_SW": {
+                "type": "ToggleSwitch",
+                "msg": "EMER_GOV_SW",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "85",
+                "category": "Engine Panel",
+                "description": "Emergency Govenor Switch"
+            }
+        },
+        "Center Console": {
+            "CHIP_DET_SW": {
+                "type": "RockerSwitch",
+                "msg": "CHIP_DET_SW",
+                "device_id": "3",
+                "pos_command": "3013",
+                "pos_stop_command": "3013",
+                "neg_command": "3013",
+                "neg_stop_command": "3013",
+                "arg_number": "86",
+                "category": "Center Console",
+                "description": "Chip Detector Rocker Switch"
+            },
+            "HYD_CONT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "HYD_CONT_SW",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "90",
+                "category": "Center Console",
+                "description": "Hydraulic Control Switch"
+            },
+            "FORCE_TRIM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FORCE_TRIM_SW",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "89",
+                "category": "Center Console",
+                "description": "Force Trim Enable Switch"
+            }
+        },
+        "Front Dash": {
+            "FIRE_TEST_BTN": {
+                "type": "PushButton",
+                "msg": "FIRE_TEST_BTN",
+                "device_id": "3",
+                "command": "3023",
+                "arg_number": "278",
+                "category": "Front Dash",
+                "description": "Fire Test Button"
+            },
+            "CPLT_ADI_CAGE": {
+                "type": "PushButton",
+                "msg": "CPLT_ADI_CAGE",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "140",
+                "category": "Front Dash",
+                "description": "Copilot ADI Cage"
+            },
+            "ADI_PITCH_TRIM_CPLT": {
+                "type": "Potentiometer",
+                "msg": "ADI_PITCH_TRIM_CPLT",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "146",
+                "limits": "{0, 1}",
+                "category": "Front Dash",
+                "description": "Copilot ADI Pitch Trim Knob"
+            },
+            "ADI_ROLL_TRIM": {
+                "type": "Potentiometer",
+                "msg": "ADI_ROLL_TRIM",
+                "device_id": "5",
+                "command": "3001",
+                "arg_number": "145",
+                "limits": "{-1, 1}",
+                "category": "Front Dash",
+                "description": "ADI Roll Trim Knob"
+            },
+            "ADI_PITCH_TRIM": {
+                "type": "Potentiometer",
+                "msg": "ADI_PITCH_TRIM",
+                "device_id": "5",
+                "command": "3002",
+                "arg_number": "144",
+                "limits": "{-1, 1}",
+                "category": "Front Dash",
+                "description": "ADI Pitch Trim Knob"
+            },
+            "ALT_ADJ_CPLT": {
+                "type": "Rotary",
+                "msg": "ALT_ADJ_CPLT",
+                "device_id": "19",
+                "command": "3001",
+                "arg_number": "172",
+                "category": "Front Dash",
+                "description": "Copilot Altimeter Pressure Adjustment"
+            },
+            "ALT_ADJ_PLT": {
+                "type": "Rotary",
+                "msg": "ALT_ADJ_PLT",
+                "device_id": "18",
+                "command": "3001",
+                "arg_number": "181",
+                "category": "Front Dash",
+                "description": "Pilot Altimeter Pressure Adjustment"
+            },
+            "BEACON_VOL": {
+                "type": "Potentiometer",
+                "msg": "BEACON_VOL",
+                "device_id": "26",
+                "command": "3001",
+                "arg_number": "57",
+                "limits": "{0, 1}",
+                "category": "Front Dash",
+                "description": "Marker Beacon Volume"
+            },
+            "BEACON_SENSING_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BEACON_SENSING_SW",
+                "device_id": "26",
+                "command": "3002",
+                "arg_number": "55",
+                "category": "Front Dash",
+                "description": "Marker Beacon Sensing LOW / HIGH"
+            },
+            "HDG_SET": {
+                "type": "Rotary",
+                "msg": "HDG_SET",
+                "device_id": "10",
+                "command": "3003",
+                "arg_number": "163",
+                "category": "Front Dash",
+                "description": "HDG SET Knob"
+            },
+            "HDG_SYNC": {
+                "type": "Rotary",
+                "msg": "HDG_SYNC",
+                "device_id": "10",
+                "command": "3005",
+                "arg_number": "161",
+                "category": "Front Dash",
+                "description": "Compass Synchronizing"
+            },
+            "ADF_VOR_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ADF_VOR_SW",
+                "device_id": "10",
+                "command": "3004",
+                "arg_number": "164",
+                "category": "Front Dash",
+                "description": "ADF / VOR Switch: VOR / ADF"
+            },
+            "GYRO_MODE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GYRO_MODE_SW",
+                "device_id": "10",
+                "command": "3002",
+                "arg_number": "241",
+                "category": "Front Dash",
+                "description": "DG / Slave Gyro Mode: MAG / DG"
+            },
+            "CRS_KNOB": {
+                "type": "Rotary",
+                "msg": "CRS_KNOB",
+                "device_id": "29",
+                "command": "3001",
+                "arg_number": "155",
+                "category": "Front Dash",
+                "description": "CDI CRS Selector Knob"
+            },
+            "RADAR_ALT_LO": {
+                "type": "Rotary",
+                "msg": "RADAR_ALT_LO",
+                "device_id": "13",
+                "command": "3002",
+                "arg_number": "445",
+                "category": "Front Dash",
+                "description": "Radar Altimeter Low Setting"
+            },
+            "RADAR_ALT_HI": {
+                "type": "Rotary",
+                "msg": "RADAR_ALT_HI",
+                "device_id": "13",
+                "command": "3003",
+                "arg_number": "448",
+                "category": "Front Dash",
+                "description": "Radar Altimeter High Setting"
+            },
+            "RADAR_ALT_TEST": {
+                "type": "PushButton",
+                "msg": "RADAR_ALT_TEST",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "446",
+                "category": "Front Dash",
+                "description": "Radar Altimeter Test"
+            }
+        },
+        "VHF COMM Radio": {
+            "VHFCOMM_TEST_SW": {
+                "type": "PushButton",
+                "msg": "VHFCOMM_TEST_SW",
+                "device_id": "20",
+                "command": "3002",
+                "arg_number": "6",
+                "category": "VHF COMM Radio",
+                "description": "Communication Test Button"
+            },
+            "VHFCOMM_PWR": {
+                "type": "Tumb",
+                "msg": "VHFCOMM_PWR",
+                "device_id": "20",
+                "command": "3001",
+                "arg_number": "5",
+                "step": "0.15",
+                "limits": "{0.85, 1.0}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "VHF COMM Radio",
+                "description": "Power"
+            },
+            "VHFCOMM_VOL": {
+                "type": "Potentiometer",
+                "msg": "VHFCOMM_VOL",
+                "device_id": "20",
+                "command": "3003",
+                "arg_number": "9",
+                "limits": "{0, 0.65}",
+                "category": "VHF COMM Radio",
+                "description": "Volume Control (step size less than 8192 may not work)"
+            },
+            "VHFCOMM_MHZ": {
+                "type": "FixedStepTumb",
+                "msg": "VHFCOMM_MHZ",
+                "device_id": "20",
+                "command": "3004",
+                "arg_number": "7",
+                "step": "0.1",
+                "limits": "{0, 1}",
+                "rel_args": "{-0.1, 0.1}",
+                "output_map": "nil",
+                "category": "VHF COMM Radio",
+                "description": "VHF MHz Selector"
+            },
+            "VHFCOMM_KHZ": {
+                "type": "FixedStepTumb",
+                "msg": "VHFCOMM_KHZ",
+                "device_id": "20",
+                "command": "3005",
+                "arg_number": "8",
+                "step": "0.1",
+                "limits": "{0, 1}",
+                "rel_args": "{-0.1, 0.1}",
+                "output_map": "nil",
+                "category": "VHF COMM Radio",
+                "description": "VHF KHz Selector"
+            }
+        },
+        "Intercom Panel": {
+            "INT_VOL": {
+                "type": "Potentiometer",
+                "msg": "INT_VOL",
+                "device_id": "21",
+                "command": "3007",
+                "arg_number": "29",
+                "limits": "{0.3, 1.0}",
+                "category": "Intercom Panel",
+                "description": "Intercom Volume"
+            },
+            "INT_RCVR1_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INT_RCVR1_SW",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "23",
+                "category": "Intercom Panel",
+                "description": "Receiver 1 Switch (VHF AM)"
+            },
+            "INT_RCVR2_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INT_RCVR2_SW",
+                "device_id": "21",
+                "command": "3002",
+                "arg_number": "24",
+                "category": "Intercom Panel",
+                "description": "Receiver 2 Switch (UHF)"
+            },
+            "INT_RCVR3_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INT_RCVR3_SW",
+                "device_id": "21",
+                "command": "3003",
+                "arg_number": "25",
+                "category": "Intercom Panel",
+                "description": "Receiver 3 Switch (VHF FM)"
+            },
+            "INT_RECVR4_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INT_RECVR4_SW",
+                "device_id": "21",
+                "command": "3004",
+                "arg_number": "26",
+                "category": "Intercom Panel",
+                "description": "Receiver 4 Switch (No Function)"
+            },
+            "INT_INT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INT_INT_SW",
+                "device_id": "21",
+                "command": "3005",
+                "arg_number": "27",
+                "category": "Intercom Panel",
+                "description": "INT Receiver Switch"
+            },
+            "INT_NAV_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INT_NAV_SW",
+                "device_id": "21",
+                "command": "3006",
+                "arg_number": "28",
+                "category": "Intercom Panel",
+                "description": "NAV Receiver Switch"
+            },
+            "INT_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "INT_MODE",
+                "device_id": "21",
+                "device_command": "3008",
+                "arg_number": "30",
+                "num_positions": "6",
+                "increment": "0.1",
+                "category": "Intercom Panel",
+                "description": "Intercom Mode: PVT - INT - 1 - 2 - 3 - 4"
+            }
+        },
+        "Cyclic": {
+            "RADIO_ICS_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_ICS_SW",
+                "device_id": "21",
+                "command": "3009",
+                "arg_number": "194",
+                "category": "Cyclic",
+                "description": "Radio/ICS Switch"
+            },
+            "TRIM_PLT": {
+                "type": "PushButton",
+                "msg": "TRIM_PLT",
+                "device_id": "41",
+                "command": "3001",
+                "arg_number": "189",
+                "category": "Cyclic",
+                "description": "Force Trim (Pilot Side)"
+            },
+            "TRIM_CPLT": {
+                "type": "PushButton",
+                "msg": "TRIM_CPLT",
+                "device_id": "41",
+                "command": "3002",
+                "arg_number": "193",
+                "category": "Cyclic",
+                "description": "Force Trim (Copilot Side)"
+            },
+            "CARGO_REL_P": {
+                "type": "PushButton",
+                "msg": "CARGO_REL_P",
+                "device_id": "52",
+                "command": "3001",
+                "arg_number": "195",
+                "category": "Cyclic",
+                "description": "Cargo Release Pilot"
+            },
+            "CARGO_REL_CP": {
+                "type": "PushButton",
+                "msg": "CARGO_REL_CP",
+                "device_id": "52",
+                "command": "3002",
+                "arg_number": "198",
+                "category": "Cyclic",
+                "description": "Cargo Release CoPilot"
+            }
+        },
+        "UHF Radio": {
+            "UHF_PRESET": {
+                "type": "Tumb",
+                "msg": "UHF_PRESET",
+                "device_id": "22",
+                "command": "3001",
+                "arg_number": "16",
+                "step": "0.05",
+                "limits": "{0, 0.95}",
+                "output_map": "{\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11\", \"12\", \"13\", \"14\", \"15\", \"16\", \"17\", \"18\", \"19\", \"20\"}",
+                "cycle": "False",
+                "category": "UHF Radio",
+                "description": "Preset Channel Selector"
+            },
+            "UHF_10MHZ": {
+                "type": "FixedStepInput",
+                "msg": "UHF_10MHZ",
+                "device_id": "22",
+                "command": "3002",
+                "rel_args": "{0.1, -0.1}",
+                "category": "UHF Radio",
+                "description": "UHF 10 MHz Selector"
+            },
+            "UHF_1MHZ": {
+                "type": "FixedStepInput",
+                "msg": "UHF_1MHZ",
+                "device_id": "22",
+                "command": "3003",
+                "rel_args": "{0.1, -0.1}",
+                "category": "UHF Radio",
+                "description": "UHF 1 MHz Selector"
+            },
+            "UHF_50KHZ": {
+                "type": "FixedStepInput",
+                "msg": "UHF_50KHZ",
+                "device_id": "22",
+                "command": "3004",
+                "rel_args": "{0.1, -0.1}",
+                "category": "UHF Radio",
+                "description": "UHF 50 KHz Selector"
+            },
+            "UHF_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "UHF_MODE",
+                "device_id": "22",
+                "device_command": "3005",
+                "arg_number": "15",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "UHF Radio",
+                "description": "Frequency Mode Select"
+            },
+            "UHF_FUNCTION": {
+                "type": "MultipositionSwitch",
+                "msg": "UHF_FUNCTION",
+                "device_id": "22",
+                "device_command": "3006",
+                "arg_number": "17",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "UHF Radio",
+                "description": "Function Dial"
+            },
+            "UHF_SQUELCH_SW": {
+                "type": "ToggleSwitch",
+                "msg": "UHF_SQUELCH_SW",
+                "device_id": "22",
+                "command": "3007",
+                "arg_number": "22",
+                "category": "UHF Radio",
+                "description": "Squelch Switch"
+            },
+            "UHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "UHF_VOL",
+                "device_id": "22",
+                "command": "3008",
+                "arg_number": "21",
+                "limits": "{0, 1}",
+                "category": "UHF Radio",
+                "description": "Volume Control"
+            }
+        },
+        "VHF FM Radio": {
+            "VHFFM_FREQ1": {
+                "type": "Tumb",
+                "msg": "VHFFM_FREQ1",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "31",
+                "step": "0.1",
+                "limits": "{0.3, 0.7}",
+                "output_map": "{\"3\", \"4\", \"5\", \"6\", \"7\"}",
+                "cycle": "False",
+                "category": "VHF FM Radio",
+                "description": "Frequency Tens of MHz"
+            },
+            "VHFFM_FREQ2": {
+                "type": "Tumb",
+                "msg": "VHFFM_FREQ2",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "32",
+                "step": "0.1",
+                "limits": "{0.0, 0.9}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "VHF FM Radio",
+                "description": "Frequency 1 MHz"
+            },
+            "VHFFM_FREQ3": {
+                "type": "Tumb",
+                "msg": "VHFFM_FREQ3",
+                "device_id": "23",
+                "command": "3003",
+                "arg_number": "33",
+                "step": "0.1",
+                "limits": "{0.0, 0.9}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "VHF FM Radio",
+                "description": "Frequency Decimals MHz"
+            },
+            "VHFFM_FREQ4": {
+                "type": "Tumb",
+                "msg": "VHFFM_FREQ4",
+                "device_id": "23",
+                "command": "3004",
+                "arg_number": "34",
+                "step": "0.1",
+                "limits": "{0.0, 0.1}",
+                "output_map": "{\"0\", \"5\"}",
+                "cycle": "False",
+                "category": "VHF FM Radio",
+                "description": "Frequency Hundreds of MHz"
+            },
+            "VHFFM_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "VHFFM_MODE",
+                "device_id": "23",
+                "device_command": "3007",
+                "arg_number": "35",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "VHF FM Radio",
+                "description": "Mode Dial: OFF / T/R / RETRAN / HOME"
+            },
+            "VHFFM_SQUELCH": {
+                "type": "Tumb",
+                "msg": "VHFFM_SQUELCH",
+                "device_id": "23",
+                "command": "3005",
+                "arg_number": "36",
+                "step": "0.1",
+                "limits": "{0, 0.2}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "VHF FM Radio",
+                "description": "Squelch Mode: DIS / CARR / TONE"
+            },
+            "VHFFM_VOL": {
+                "type": "Potentiometer",
+                "msg": "VHFFM_VOL",
+                "device_id": "23",
+                "command": "3006",
+                "arg_number": "37",
+                "limits": "{0.3, 1}",
+                "category": "VHF FM Radio",
+                "description": "Volume Control"
+            }
+        },
+        "VHF NAV Radio": {
+            "VHFNAV_PWR": {
+                "type": "Tumb",
+                "msg": "VHFNAV_PWR",
+                "device_id": "25",
+                "command": "3003",
+                "arg_number": "51",
+                "step": "0.1",
+                "limits": "{0.8, 1.0}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "VHF NAV Radio",
+                "description": "VHF NAV Off / On / Test"
+            },
+            "VHFNAV_MHZ": {
+                "type": "FixedStepTumb",
+                "msg": "VHFNAV_MHZ",
+                "device_id": "25",
+                "command": "3001",
+                "arg_number": "52",
+                "step": "0.1",
+                "limits": "{0, 1}",
+                "rel_args": "{0.1, -0.1}",
+                "output_map": "nil",
+                "category": "VHF NAV Radio",
+                "description": "VHF NAV MHz Selector"
+            },
+            "VHFNAV_KHZ": {
+                "type": "FixedStepTumb",
+                "msg": "VHFNAV_KHZ",
+                "device_id": "25",
+                "command": "3002",
+                "arg_number": "53",
+                "step": "0.1",
+                "limits": "{0, 1}",
+                "rel_args": "{0.1, -0.1}",
+                "output_map": "nil",
+                "category": "VHF NAV Radio",
+                "description": "VHF NAV KHz Selector"
+            },
+            "VHFNAV_VOL": {
+                "type": "Potentiometer",
+                "msg": "VHFNAV_VOL",
+                "device_id": "25",
+                "command": "3004",
+                "arg_number": "54",
+                "limits": "{0, 0.65}",
+                "category": "VHF NAV Radio",
+                "description": "Volume Control (step size less than 8192 may not work)"
+            }
+        },
+        "ADF": {
+            "ADF_LOOP_LR": {
+                "type": "Tumb",
+                "msg": "ADF_LOOP_LR",
+                "device_id": "27",
+                "command": "3005",
+                "arg_number": "42",
+                "step": "0.1",
+                "limits": "{0, 0.4}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ADF",
+                "description": "ADF LOOP Left Low Speed / Left High Speed /Center / Right Low Speed / Right High Speed"
+            },
+            "ADF_BFO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ADF_BFO_SW",
+                "device_id": "27",
+                "command": "3006",
+                "arg_number": "41",
+                "category": "ADF",
+                "description": "BFO Switch"
+            },
+            "ADF_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "ADF_MODE",
+                "device_id": "27",
+                "device_command": "3001",
+                "arg_number": "43",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "ADF",
+                "description": "ADF Mode OFF / ADF / ANT / LOOP"
+            },
+            "ADF_GAIN": {
+                "type": "Potentiometer",
+                "msg": "ADF_GAIN",
+                "device_id": "27",
+                "command": "3004",
+                "arg_number": "44",
+                "limits": "{0, 1}",
+                "category": "ADF",
+                "description": "ADF Gain"
+            },
+            "ADF_BAND": {
+                "type": "3PosTumb",
+                "msg": "ADF_BAND",
+                "device_id": "27",
+                "command": "3002",
+                "arg_number": "38",
+                "category": "ADF",
+                "description": "ADF Band"
+            },
+            "ADF_TUNE": {
+                "type": "Rotary",
+                "msg": "ADF_TUNE",
+                "device_id": "27",
+                "command": "3003",
+                "arg_number": "39",
+                "category": "ADF",
+                "description": "ADF Tune"
+            }
+        },
+        "Armament Panel": {
+            "MASTER_ARM_SW": {
+                "type": "3PosTumb",
+                "msg": "MASTER_ARM_SW",
+                "device_id": "9",
+                "command": "3008",
+                "arg_number": "252",
+                "category": "Armament Panel",
+                "description": "Master Arm OFF - SAFE - ARMED"
+            },
+            "GUN_SEL": {
+                "type": "3PosTumb",
+                "msg": "GUN_SEL",
+                "device_id": "9",
+                "command": "3009",
+                "arg_number": "253",
+                "category": "Armament Panel",
+                "description": "Gun Selector LEFT / BOTH / RIGHT"
+            },
+            "ROCKET_SEL": {
+                "type": "3PosTumb",
+                "msg": "ROCKET_SEL",
+                "device_id": "9",
+                "command": "3010",
+                "arg_number": "256",
+                "category": "Armament Panel",
+                "description": "7.62 / 2.75 / 40"
+            },
+            "ROCKET_PAIR": {
+                "type": "MultipositionSwitch",
+                "msg": "ROCKET_PAIR",
+                "device_id": "9",
+                "device_command": "3011",
+                "arg_number": "257",
+                "num_positions": "8",
+                "increment": "0.1",
+                "category": "Armament Panel",
+                "description": "Rocket Pair"
+            },
+            "ROCKET_RESET": {
+                "type": "PushButton",
+                "msg": "ROCKET_RESET",
+                "device_id": "9",
+                "command": "3012",
+                "arg_number": "258",
+                "category": "Armament Panel",
+                "description": "Rocket Reset"
+            },
+            "JTSN_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "JTSN_COVER",
+                "device_id": "9",
+                "command": "3013",
+                "arg_number": "259",
+                "category": "Armament Panel",
+                "description": "Jettison Switch Cover"
+            },
+            "JTSN_BTN": {
+                "type": "PushButton",
+                "msg": "JTSN_BTN",
+                "device_id": "9",
+                "command": "3014",
+                "arg_number": "260",
+                "category": "Armament Panel",
+                "description": "Jettison Switch"
+            }
+        },
+        "Flex Sight": {
+            "SIGHT_INTEN_CPLT": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_INTEN_CPLT",
+                "device_id": "32",
+                "command": "3001",
+                "arg_number": "281",
+                "limits": "{0, 1}",
+                "category": "Flex Sight",
+                "description": "Copilot Sighting System Intensity Knob"
+            },
+            "SIGHT_LAMP_SW": {
+                "type": "3PosTumb",
+                "msg": "SIGHT_LAMP_SW",
+                "device_id": "32",
+                "command": "3003",
+                "arg_number": "408",
+                "category": "Flex Sight",
+                "description": "Sighting Station Lamp Switch BACKUP / OFF / MAIN"
+            },
+            "SIGHT_ARM_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "SIGHT_ARM_PLT",
+                "device_id": "49",
+                "command": "3005",
+                "arg_number": "438",
+                "category": "Flex Sight",
+                "description": "Pilot Sight Armed / Safe"
+            },
+            "SIGHT_PWR_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "SIGHT_PWR_PLT",
+                "device_id": "49",
+                "command": "3006",
+                "arg_number": "439",
+                "category": "Flex Sight",
+                "description": "Pilot Sight Off / On"
+            },
+            "SIGHT_INTEN_PLT": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_INTEN_PLT",
+                "device_id": "49",
+                "command": "3001",
+                "arg_number": "440",
+                "limits": "{0, 1}",
+                "category": "Flex Sight",
+                "description": "Pilot Sight Intensity Knob"
+            },
+            "SIGHT_ELEV_PLT": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_ELEV_PLT",
+                "device_id": "49",
+                "command": "3003",
+                "arg_number": "441",
+                "limits": "{-1, 1}",
+                "category": "Flex Sight",
+                "description": "Pilot Sight Elevation"
+            }
+        },
+        "Countermeasures": {
+            "CM_RIPPLE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "CM_RIPPLE_COVER",
+                "device_id": "50",
+                "command": "3001",
+                "arg_number": "450",
+                "category": "Countermeasures",
+                "description": "Ripple Fire Cover"
+            },
+            "CM_RIPPLE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CM_RIPPLE_SW",
+                "device_id": "50",
+                "command": "3002",
+                "arg_number": "451",
+                "category": "Countermeasures",
+                "description": "Ripple Fire Switch"
+            },
+            "CM_ARM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CM_ARM_SW",
+                "device_id": "50",
+                "command": "3005",
+                "arg_number": "456",
+                "category": "Countermeasures",
+                "description": "SAFE / ARMED Switch"
+            },
+            "CM_MAN_PGRM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CM_MAN_PGRM_SW",
+                "device_id": "50",
+                "command": "3009",
+                "arg_number": "459",
+                "category": "Countermeasures",
+                "description": "MAN / PGRM Switch"
+            },
+            "CM_FLARE_BTN": {
+                "type": "PushButton",
+                "msg": "CM_FLARE_BTN",
+                "device_id": "50",
+                "command": "3006",
+                "arg_number": "464",
+                "category": "Countermeasures",
+                "description": "Flare Button"
+            },
+            "CM_ARMED_TEST": {
+                "type": "PushButton",
+                "msg": "CM_ARMED_TEST",
+                "device_id": "50",
+                "command": "3010",
+                "arg_number": "457",
+                "category": "Countermeasures",
+                "description": "Armed Lamp Test"
+            },
+            "CM_FLARECNT_RESET": {
+                "type": "PushButton",
+                "msg": "CM_FLARECNT_RESET",
+                "device_id": "50",
+                "command": "3003",
+                "arg_number": "453",
+                "category": "Countermeasures",
+                "description": "Flare Counter Reset Button"
+            },
+            "CM_FLARECNT": {
+                "type": "FixedStepInput",
+                "msg": "CM_FLARECNT",
+                "device_id": "50",
+                "command": "3004",
+                "rel_args": "{-1, 1}",
+                "category": "Countermeasures",
+                "description": "Flare Counter Decrease/Increase"
+            },
+            "CM_CHAFFCNT_RESET": {
+                "type": "PushButton",
+                "msg": "CM_CHAFFCNT_RESET",
+                "device_id": "50",
+                "command": "3007",
+                "arg_number": "455",
+                "category": "Countermeasures",
+                "description": "Chaff Counter Reset Button"
+            },
+            "CM_CHAFFCNT": {
+                "type": "FixedStepInput",
+                "msg": "CM_CHAFFCNT",
+                "device_id": "50",
+                "command": "3008",
+                "rel_args": "{-1, 1}",
+                "category": "Countermeasures",
+                "description": "Chaff Counter Decrease/Increase"
+            }
+        },
+        "Doors": {
+            "DOOR_L-PTR": {
+                "type": "PushButton",
+                "msg": "DOOR_L-PTR",
+                "device_id": "12",
+                "command": "3005",
+                "arg_number": "419",
+                "category": "Doors",
+                "description": "Door Handle Left"
+            },
+            "DOOR_R-PTR": {
+                "type": "PushButton",
+                "msg": "DOOR_R-PTR",
+                "device_id": "12",
+                "command": "3006",
+                "arg_number": "421",
+                "category": "Doors",
+                "description": "Door Handle Right"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "UH-1H",
+        "date": "Jul 04 2023, 17:00 PM -0700",
+        "version": null
+    }
+}

@@ -1,0 +1,4428 @@
+{
+    "commands": {
+        "PLT MPD Left": {
+            "PLT_MPD_L_T1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_T1",
+                "device_id": "42",
+                "command": "3001",
+                "arg_number": "20",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD T1 Button"
+            },
+            "PLT_MPD_L_T2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_T2",
+                "device_id": "42",
+                "command": "3002",
+                "arg_number": "21",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD T2 Button"
+            },
+            "PLT_MPD_L_T3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_T3",
+                "device_id": "42",
+                "command": "3003",
+                "arg_number": "22",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD T3 Button"
+            },
+            "PLT_MPD_L_T4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_T4",
+                "device_id": "42",
+                "command": "3004",
+                "arg_number": "23",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD T4 Button"
+            },
+            "PLT_MPD_L_T5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_T5",
+                "device_id": "42",
+                "command": "3005",
+                "arg_number": "24",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD T5 Button"
+            },
+            "PLT_MPD_L_T6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_T6",
+                "device_id": "42",
+                "command": "3006",
+                "arg_number": "25",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD T6 Button"
+            },
+            "PLT_MPD_L_R1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_R1",
+                "device_id": "42",
+                "command": "3007",
+                "arg_number": "28",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD R1 Button"
+            },
+            "PLT_MPD_L_R2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_R2",
+                "device_id": "42",
+                "command": "3008",
+                "arg_number": "29",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD R2 Button"
+            },
+            "PLT_MPD_L_R3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_R3",
+                "device_id": "42",
+                "command": "3009",
+                "arg_number": "30",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD R3 Button"
+            },
+            "PLT_MPD_L_R4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_R4",
+                "device_id": "42",
+                "command": "3010",
+                "arg_number": "31",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD R4 Button"
+            },
+            "PLT_MPD_L_R5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_R5",
+                "device_id": "42",
+                "command": "3011",
+                "arg_number": "32",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD R5 Button"
+            },
+            "PLT_MPD_L_R6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_R6",
+                "device_id": "42",
+                "command": "3012",
+                "arg_number": "33",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD R6 Button"
+            },
+            "PLT_MPD_L_B1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_B1",
+                "device_id": "42",
+                "command": "3018",
+                "arg_number": "42",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD B1/M(Menu) Button"
+            },
+            "PLT_MPD_L_B2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_B2",
+                "device_id": "42",
+                "command": "3017",
+                "arg_number": "41",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD B2 Button"
+            },
+            "PLT_MPD_L_B3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_B3",
+                "device_id": "42",
+                "command": "3016",
+                "arg_number": "40",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD B3 Button"
+            },
+            "PLT_MPD_L_B4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_B4",
+                "device_id": "42",
+                "command": "3015",
+                "arg_number": "39",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD B4 Button"
+            },
+            "PLT_MPD_L_B5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_B5",
+                "device_id": "42",
+                "command": "3014",
+                "arg_number": "38",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD B5 Button"
+            },
+            "PLT_MPD_L_B6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_B6",
+                "device_id": "42",
+                "command": "3013",
+                "arg_number": "37",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD B6 Button"
+            },
+            "PLT_MPD_L_L1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_L1",
+                "device_id": "42",
+                "command": "3024",
+                "arg_number": "17",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD L1 Button"
+            },
+            "PLT_MPD_L_L2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_L2",
+                "device_id": "42",
+                "command": "3023",
+                "arg_number": "16",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD L2 Button"
+            },
+            "PLT_MPD_L_L3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_L3",
+                "device_id": "42",
+                "command": "3022",
+                "arg_number": "15",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD L3 Button"
+            },
+            "PLT_MPD_L_L4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_L4",
+                "device_id": "42",
+                "command": "3021",
+                "arg_number": "14",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD L4 Button"
+            },
+            "PLT_MPD_L_L5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_L5",
+                "device_id": "42",
+                "command": "3020",
+                "arg_number": "13",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD L5 Button"
+            },
+            "PLT_MPD_L_L6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_L6",
+                "device_id": "42",
+                "command": "3019",
+                "arg_number": "12",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD L6 Button"
+            },
+            "PLT_MPD_L_AST": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_AST",
+                "device_id": "42",
+                "command": "3025",
+                "arg_number": "27",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD Asterisk Button"
+            },
+            "PLT_MPD_L_VID": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_VID",
+                "device_id": "42",
+                "command": "3026",
+                "arg_number": "34",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD VID Button"
+            },
+            "PLT_MPD_L_COM": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_COM",
+                "device_id": "42",
+                "command": "3027",
+                "arg_number": "35",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD COM Button"
+            },
+            "PLT_MPD_L_AC": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_AC",
+                "device_id": "42",
+                "command": "3028",
+                "arg_number": "36",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD A/C Button"
+            },
+            "PLT_MPD_L_TSD": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_TSD",
+                "device_id": "42",
+                "command": "3029",
+                "arg_number": "43",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD TSD Button"
+            },
+            "PLT_MPD_L_WPN": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_WPN",
+                "device_id": "42",
+                "command": "3030",
+                "arg_number": "10",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD WPN Button"
+            },
+            "PLT_MPD_L_FCR": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_L_FCR",
+                "device_id": "42",
+                "command": "3031",
+                "arg_number": "11",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD FCR Button"
+            },
+            "PLT_MPD_L_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_MPD_L_BRT",
+                "device_id": "42",
+                "command": "3032",
+                "arg_number": "18",
+                "limits": "{0, 1}",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD Brightness Control Knob"
+            },
+            "PLT_MPD_L_VIDEO": {
+                "type": "Potentiometer",
+                "msg": "PLT_MPD_L_VIDEO",
+                "device_id": "42",
+                "command": "3033",
+                "arg_number": "19",
+                "limits": "{0, 1}",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD Video Control Knob"
+            },
+            "PLT_MPD_L_MODE": {
+                "type": "Tumb",
+                "msg": "PLT_MPD_L_MODE",
+                "device_id": "42",
+                "command": "3034",
+                "arg_number": "26",
+                "step": "0.5",
+                "limits": "{0, 1}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PLT MPD Left",
+                "description": "Pilot Left MPD Mode Knob, DAY/NIGHT/MONO"
+            }
+        },
+        "CPG MPD Left": {
+            "CPG_MPD_L_T1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_T1",
+                "device_id": "44",
+                "command": "3001",
+                "arg_number": "88",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD T1 Button"
+            },
+            "CPG_MPD_L_T2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_T2",
+                "device_id": "44",
+                "command": "3002",
+                "arg_number": "89",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD T2 Button"
+            },
+            "CPG_MPD_L_T3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_T3",
+                "device_id": "44",
+                "command": "3003",
+                "arg_number": "90",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD T3 Button"
+            },
+            "CPG_MPD_L_T4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_T4",
+                "device_id": "44",
+                "command": "3004",
+                "arg_number": "91",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD T4 Button"
+            },
+            "CPG_MPD_L_T5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_T5",
+                "device_id": "44",
+                "command": "3005",
+                "arg_number": "92",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD T5 Button"
+            },
+            "CPG_MPD_L_T6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_T6",
+                "device_id": "44",
+                "command": "3006",
+                "arg_number": "93",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD T6 Button"
+            },
+            "CPG_MPD_L_R1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_R1",
+                "device_id": "44",
+                "command": "3007",
+                "arg_number": "96",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD R1 Button"
+            },
+            "CPG_MPD_L_R2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_R2",
+                "device_id": "44",
+                "command": "3008",
+                "arg_number": "97",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD R2 Button"
+            },
+            "CPG_MPD_L_R3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_R3",
+                "device_id": "44",
+                "command": "3009",
+                "arg_number": "98",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD R3 Button"
+            },
+            "CPG_MPD_L_R4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_R4",
+                "device_id": "44",
+                "command": "3010",
+                "arg_number": "99",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD R4 Button"
+            },
+            "CPG_MPD_L_R5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_R5",
+                "device_id": "44",
+                "command": "3011",
+                "arg_number": "100",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD R5 Button"
+            },
+            "CPG_MPD_L_R6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_R6",
+                "device_id": "44",
+                "command": "3012",
+                "arg_number": "101",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD R6 Button"
+            },
+            "CPG_MPD_L_B1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_B1",
+                "device_id": "44",
+                "command": "3018",
+                "arg_number": "110",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD B1/M(Menu) Button"
+            },
+            "CPG_MPD_L_B2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_B2",
+                "device_id": "44",
+                "command": "3017",
+                "arg_number": "109",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD B2 Button"
+            },
+            "CPG_MPD_L_B3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_B3",
+                "device_id": "44",
+                "command": "3016",
+                "arg_number": "108",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD B3 Button"
+            },
+            "CPG_MPD_L_B4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_B4",
+                "device_id": "44",
+                "command": "3015",
+                "arg_number": "107",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD B4 Button"
+            },
+            "CPG_MPD_L_B5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_B5",
+                "device_id": "44",
+                "command": "3014",
+                "arg_number": "106",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD B5 Button"
+            },
+            "CPG_MPD_L_B6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_B6",
+                "device_id": "44",
+                "command": "3013",
+                "arg_number": "105",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD B6 Button"
+            },
+            "CPG_MPD_L_L1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_L1",
+                "device_id": "44",
+                "command": "3024",
+                "arg_number": "80",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD L1 Button"
+            },
+            "CPG_MPD_L_L2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_L2",
+                "device_id": "44",
+                "command": "3023",
+                "arg_number": "81",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD L2 Button"
+            },
+            "CPG_MPD_L_L3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_L3",
+                "device_id": "44",
+                "command": "3022",
+                "arg_number": "82",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD L3 Button"
+            },
+            "CPG_MPD_L_L4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_L4",
+                "device_id": "44",
+                "command": "3021",
+                "arg_number": "83",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD L4 Button"
+            },
+            "CPG_MPD_L_L5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_L5",
+                "device_id": "44",
+                "command": "3020",
+                "arg_number": "84",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD L5 Button"
+            },
+            "CPG_MPD_L_L6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_L6",
+                "device_id": "44",
+                "command": "3019",
+                "arg_number": "85",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD L6 Button"
+            },
+            "CPG_MPD_L_AST": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_AST",
+                "device_id": "44",
+                "command": "3025",
+                "arg_number": "95",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD Asterisk Button"
+            },
+            "CPG_MPD_L_VID": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_VID",
+                "device_id": "44",
+                "command": "3026",
+                "arg_number": "102",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD VID Button"
+            },
+            "CPG_MPD_L_COM": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_COM",
+                "device_id": "44",
+                "command": "3027",
+                "arg_number": "103",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD COM Button"
+            },
+            "CPG_MPD_L_AC": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_AC",
+                "device_id": "44",
+                "command": "3028",
+                "arg_number": "104",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD A/C Button"
+            },
+            "CPG_MPD_L_TSD": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_TSD",
+                "device_id": "44",
+                "command": "3029",
+                "arg_number": "111",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD TSD Button"
+            },
+            "CPG_MPD_L_WPN": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_WPN",
+                "device_id": "44",
+                "command": "3030",
+                "arg_number": "78",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD WPN Button"
+            },
+            "CPG_MPD_L_FCR": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_L_FCR",
+                "device_id": "44",
+                "command": "3031",
+                "arg_number": "79",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD FCR Button"
+            },
+            "CPG_MPD_L_BRT": {
+                "type": "Potentiometer",
+                "msg": "CPG_MPD_L_BRT",
+                "device_id": "44",
+                "command": "3032",
+                "arg_number": "86",
+                "limits": "{0, 1}",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD Brightness Control Knob"
+            },
+            "CPG_MPD_L_VIDEO": {
+                "type": "Potentiometer",
+                "msg": "CPG_MPD_L_VIDEO",
+                "device_id": "44",
+                "command": "3033",
+                "arg_number": "87",
+                "limits": "{0, 1}",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD Video Control Knob"
+            },
+            "CPG_MPD_L_MODE": {
+                "type": "Tumb",
+                "msg": "CPG_MPD_L_MODE",
+                "device_id": "44",
+                "command": "3034",
+                "arg_number": "94",
+                "step": "0.5",
+                "limits": "{0, 1}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CPG MPD Left",
+                "description": "Gunner Left MPD Mode Knob, DAY/NIGHT/MONO"
+            }
+        },
+        "PLT MPD Right": {
+            "PLT_MPD_R_T1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_T1",
+                "device_id": "43",
+                "command": "3001",
+                "arg_number": "54",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD T1 Button"
+            },
+            "PLT_MPD_R_T2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_T2",
+                "device_id": "43",
+                "command": "3002",
+                "arg_number": "55",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD T2 Button"
+            },
+            "PLT_MPD_R_T3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_T3",
+                "device_id": "43",
+                "command": "3003",
+                "arg_number": "56",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD T3 Button"
+            },
+            "PLT_MPD_R_T4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_T4",
+                "device_id": "43",
+                "command": "3004",
+                "arg_number": "57",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD T4 Button"
+            },
+            "PLT_MPD_R_T5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_T5",
+                "device_id": "43",
+                "command": "3005",
+                "arg_number": "58",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD T5 Button"
+            },
+            "PLT_MPD_R_T6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_T6",
+                "device_id": "43",
+                "command": "3006",
+                "arg_number": "59",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD T6 Button"
+            },
+            "PLT_MPD_R_R1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_R1",
+                "device_id": "43",
+                "command": "3007",
+                "arg_number": "62",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD R1 Button"
+            },
+            "PLT_MPD_R_R2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_R2",
+                "device_id": "43",
+                "command": "3008",
+                "arg_number": "63",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD R2 Button"
+            },
+            "PLT_MPD_R_R3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_R3",
+                "device_id": "43",
+                "command": "3009",
+                "arg_number": "64",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD R3 Button"
+            },
+            "PLT_MPD_R_R4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_R4",
+                "device_id": "43",
+                "command": "3010",
+                "arg_number": "65",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD R4 Button"
+            },
+            "PLT_MPD_R_R5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_R5",
+                "device_id": "43",
+                "command": "3011",
+                "arg_number": "66",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD R5 Button"
+            },
+            "PLT_MPD_R_R6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_R6",
+                "device_id": "43",
+                "command": "3012",
+                "arg_number": "67",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD R6 Button"
+            },
+            "PLT_MPD_R_B1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_B1",
+                "device_id": "43",
+                "command": "3018",
+                "arg_number": "76",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD B1/M(Menu) Button"
+            },
+            "PLT_MPD_R_B2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_B2",
+                "device_id": "43",
+                "command": "3017",
+                "arg_number": "75",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD B2 Button"
+            },
+            "PLT_MPD_R_B3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_B3",
+                "device_id": "43",
+                "command": "3016",
+                "arg_number": "74",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD B3 Button"
+            },
+            "PLT_MPD_R_B4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_B4",
+                "device_id": "43",
+                "command": "3015",
+                "arg_number": "73",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD B4 Button"
+            },
+            "PLT_MPD_R_B5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_B5",
+                "device_id": "43",
+                "command": "3014",
+                "arg_number": "72",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD B5 Button"
+            },
+            "PLT_MPD_R_B6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_B6",
+                "device_id": "43",
+                "command": "3013",
+                "arg_number": "71",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD B6 Button"
+            },
+            "PLT_MPD_R_L1": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_L1",
+                "device_id": "43",
+                "command": "3024",
+                "arg_number": "51",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD L1 Button"
+            },
+            "PLT_MPD_R_L2": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_L2",
+                "device_id": "43",
+                "command": "3023",
+                "arg_number": "50",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD L2 Button"
+            },
+            "PLT_MPD_R_L3": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_L3",
+                "device_id": "43",
+                "command": "3022",
+                "arg_number": "49",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD L3 Button"
+            },
+            "PLT_MPD_R_L4": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_L4",
+                "device_id": "43",
+                "command": "3021",
+                "arg_number": "48",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD L4 Button"
+            },
+            "PLT_MPD_R_L5": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_L5",
+                "device_id": "43",
+                "command": "3020",
+                "arg_number": "47",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD L5 Button"
+            },
+            "PLT_MPD_R_L6": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_L6",
+                "device_id": "43",
+                "command": "3019",
+                "arg_number": "46",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD L6 Button"
+            },
+            "PLT_MPD_R_AST": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_AST",
+                "device_id": "43",
+                "command": "3025",
+                "arg_number": "61",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD Asterisk Button"
+            },
+            "PLT_MPD_R_VID": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_VID",
+                "device_id": "43",
+                "command": "3026",
+                "arg_number": "68",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD VID Button"
+            },
+            "PLT_MPD_R_COM": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_COM",
+                "device_id": "43",
+                "command": "3027",
+                "arg_number": "69",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD COM Button"
+            },
+            "PLT_MPD_R_AC": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_AC",
+                "device_id": "43",
+                "command": "3028",
+                "arg_number": "70",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD A/C Button"
+            },
+            "PLT_MPD_R_TSD": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_TSD",
+                "device_id": "43",
+                "command": "3029",
+                "arg_number": "77",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD TSD Button"
+            },
+            "PLT_MPD_R_WPN": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_WPN",
+                "device_id": "43",
+                "command": "3030",
+                "arg_number": "44",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD WPN Button"
+            },
+            "PLT_MPD_R_FCR": {
+                "type": "PushButton",
+                "msg": "PLT_MPD_R_FCR",
+                "device_id": "43",
+                "command": "3031",
+                "arg_number": "45",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD FCR Button"
+            },
+            "PLT_MPD_R_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_MPD_R_BRT",
+                "device_id": "43",
+                "command": "3032",
+                "arg_number": "52",
+                "limits": "{0, 1}",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD Brightness Control Knob"
+            },
+            "PLT_MPD_R_VIDEO": {
+                "type": "Potentiometer",
+                "msg": "PLT_MPD_R_VIDEO",
+                "device_id": "43",
+                "command": "3033",
+                "arg_number": "53",
+                "limits": "{0, 1}",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD Video Control Knob"
+            },
+            "PLT_MPD_R_MODE": {
+                "type": "Tumb",
+                "msg": "PLT_MPD_R_MODE",
+                "device_id": "43",
+                "command": "3034",
+                "arg_number": "60",
+                "step": "0.5",
+                "limits": "{0, 1}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PLT MPD Right",
+                "description": "Pilot Right MPD Mode Knob, DAY/NIGHT/MONO"
+            },
+            "PLT_WIPER_SW": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_SW",
+                "device_id": "9",
+                "command": "3002",
+                "arg_number": "357",
+                "step": "0.1",
+                "limits": "{0, 0.3}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PLT MPD Right",
+                "description": "Pilot Wiper Control Switch, PARK/OFF/LO/HI"
+            }
+        },
+        "CPG MPD Right": {
+            "CPG_MPD_R_T1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_T1",
+                "device_id": "45",
+                "command": "3001",
+                "arg_number": "122",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD T1 Button"
+            },
+            "CPG_MPD_R_T2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_T2",
+                "device_id": "45",
+                "command": "3002",
+                "arg_number": "123",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD T2 Button"
+            },
+            "CPG_MPD_R_T3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_T3",
+                "device_id": "45",
+                "command": "3003",
+                "arg_number": "124",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD T3 Button"
+            },
+            "CPG_MPD_R_T4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_T4",
+                "device_id": "45",
+                "command": "3004",
+                "arg_number": "125",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD T4 Button"
+            },
+            "CPG_MPD_R_T5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_T5",
+                "device_id": "45",
+                "command": "3005",
+                "arg_number": "126",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD T5 Button"
+            },
+            "CPG_MPD_R_T6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_T6",
+                "device_id": "45",
+                "command": "3006",
+                "arg_number": "127",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD T6 Button"
+            },
+            "CPG_MPD_R_R1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_R1",
+                "device_id": "45",
+                "command": "3007",
+                "arg_number": "130",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD R1 Button"
+            },
+            "CPG_MPD_R_R2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_R2",
+                "device_id": "45",
+                "command": "3008",
+                "arg_number": "131",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD R2 Button"
+            },
+            "CPG_MPD_R_R3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_R3",
+                "device_id": "45",
+                "command": "3009",
+                "arg_number": "132",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD R3 Button"
+            },
+            "CPG_MPD_R_R4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_R4",
+                "device_id": "45",
+                "command": "3010",
+                "arg_number": "133",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD R4 Button"
+            },
+            "CPG_MPD_R_R5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_R5",
+                "device_id": "45",
+                "command": "3011",
+                "arg_number": "134",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD R5 Button"
+            },
+            "CPG_MPD_R_R6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_R6",
+                "device_id": "45",
+                "command": "3012",
+                "arg_number": "135",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD R6 Button"
+            },
+            "CPG_MPD_R_B1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_B1",
+                "device_id": "45",
+                "command": "3018",
+                "arg_number": "144",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD B1/M(Menu) Button"
+            },
+            "CPG_MPD_R_B2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_B2",
+                "device_id": "45",
+                "command": "3017",
+                "arg_number": "143",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD B2 Button"
+            },
+            "CPG_MPD_R_B3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_B3",
+                "device_id": "45",
+                "command": "3016",
+                "arg_number": "142",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD B3 Button"
+            },
+            "CPG_MPD_R_B4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_B4",
+                "device_id": "45",
+                "command": "3015",
+                "arg_number": "141",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD B4 Button"
+            },
+            "CPG_MPD_R_B5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_B5",
+                "device_id": "45",
+                "command": "3014",
+                "arg_number": "140",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD B5 Button"
+            },
+            "CPG_MPD_R_B6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_B6",
+                "device_id": "45",
+                "command": "3013",
+                "arg_number": "139",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD B6 Button"
+            },
+            "CPG_MPD_R_L1": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_L1",
+                "device_id": "45",
+                "command": "3024",
+                "arg_number": "119",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD L1 Button"
+            },
+            "CPG_MPD_R_L2": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_L2",
+                "device_id": "45",
+                "command": "3023",
+                "arg_number": "118",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD L2 Button"
+            },
+            "CPG_MPD_R_L3": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_L3",
+                "device_id": "45",
+                "command": "3022",
+                "arg_number": "117",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD L3 Button"
+            },
+            "CPG_MPD_R_L4": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_L4",
+                "device_id": "45",
+                "command": "3021",
+                "arg_number": "116",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD L4 Button"
+            },
+            "CPG_MPD_R_L5": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_L5",
+                "device_id": "45",
+                "command": "3020",
+                "arg_number": "115",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD L5 Button"
+            },
+            "CPG_MPD_R_L6": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_L6",
+                "device_id": "45",
+                "command": "3019",
+                "arg_number": "114",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD L6 Button"
+            },
+            "CPG_MPD_R_AST": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_AST",
+                "device_id": "45",
+                "command": "3025",
+                "arg_number": "129",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD Asterisk Button"
+            },
+            "CPG_MPD_R_VID": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_VID",
+                "device_id": "45",
+                "command": "3026",
+                "arg_number": "136",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD VID Button"
+            },
+            "CPG_MPD_R_COM": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_COM",
+                "device_id": "45",
+                "command": "3027",
+                "arg_number": "137",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD COM Button"
+            },
+            "CPG_MPD_R_AC": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_AC",
+                "device_id": "45",
+                "command": "3028",
+                "arg_number": "138",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD A/C Button"
+            },
+            "CPG_MPD_R_TSD": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_TSD",
+                "device_id": "45",
+                "command": "3029",
+                "arg_number": "145",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD TSD Button"
+            },
+            "CPG_MPD_R_WPN": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_WPN",
+                "device_id": "45",
+                "command": "3030",
+                "arg_number": "112",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD WPN Button"
+            },
+            "CPG_MPD_R_FCR": {
+                "type": "PushButton",
+                "msg": "CPG_MPD_R_FCR",
+                "device_id": "45",
+                "command": "3031",
+                "arg_number": "113",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD FCR Button"
+            },
+            "CPG_MPD_R_BRT": {
+                "type": "Potentiometer",
+                "msg": "CPG_MPD_R_BRT",
+                "device_id": "45",
+                "command": "3032",
+                "arg_number": "120",
+                "limits": "{0, 1}",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD Brightness Control Knob"
+            },
+            "CPG_MPD_R_VIDEO": {
+                "type": "Potentiometer",
+                "msg": "CPG_MPD_R_VIDEO",
+                "device_id": "45",
+                "command": "3033",
+                "arg_number": "121",
+                "limits": "{0, 1}",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD Video Control Knob"
+            },
+            "CPG_MPD_R_MODE": {
+                "type": "Tumb",
+                "msg": "CPG_MPD_R_MODE",
+                "device_id": "45",
+                "command": "3034",
+                "arg_number": "128",
+                "step": "0.5",
+                "limits": "{0, 1}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CPG MPD Right",
+                "description": "Gunner Right MPD Mode Knob, DAY/NIGHT/MONO"
+            },
+            "CPG_WIPER_SW": {
+                "type": "Tumb",
+                "msg": "CPG_WIPER_SW",
+                "device_id": "9",
+                "command": "3004",
+                "arg_number": "395",
+                "step": "0.1",
+                "limits": "{0, 0.3}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CPG MPD Right",
+                "description": "Gunner Wiper Control Switch, PARK/OFF/LO/HI"
+            }
+        },
+        "PLT External Light System": {
+            "PLT_EXTL_NAV_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_EXTL_NAV_L_SW",
+                "device_id": "10",
+                "command": "3002",
+                "arg_number": "326",
+                "category": "PLT External Light System",
+                "description": "Pilot Navigation Lights Switch, BRT/OFF/DIM"
+            },
+            "PLT_EXTL_FROMATION_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "PLT_EXTL_FROMATION_L_KNB",
+                "device_id": "10",
+                "command": "3001",
+                "arg_number": "329",
+                "limits": "{0, 1}",
+                "category": "PLT External Light System",
+                "description": "Pilot Formation Lights Control Knob"
+            },
+            "PLT_EXTL_ACOL_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_EXTL_ACOL_L_SW",
+                "device_id": "10",
+                "command": "3003",
+                "arg_number": "332",
+                "category": "PLT External Light System",
+                "description": "Pilot Anti-Collision Lights Switch, WHT/OFF/RED"
+            }
+        },
+        "PLT Internal Light System": {
+            "PLT_INTL_MCAUTION_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_INTL_MCAUTION_BTN",
+                "device_id": "11",
+                "command": "3001",
+                "arg_number": "305",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Master Caution Button"
+            },
+            "PLT_INTL_MWARN_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_INTL_MWARN_BTN",
+                "device_id": "11",
+                "command": "3002",
+                "arg_number": "304",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Master Warning Button"
+            },
+            "PLT_INTL_TEST_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_INTL_TEST_BTN",
+                "device_id": "11",
+                "command": "3005",
+                "arg_number": "333",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Light Test Button"
+            },
+            "PLT_INTL_SIGNAL_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "PLT_INTL_SIGNAL_L_KNB",
+                "device_id": "11",
+                "command": "3006",
+                "arg_number": "327",
+                "limits": "{0, 1}",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Signal Lights Control Knob"
+            },
+            "PLT_INTL_PRIMARY_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "PLT_INTL_PRIMARY_L_KNB",
+                "device_id": "11",
+                "command": "3007",
+                "arg_number": "328",
+                "limits": "{0, 1}",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Primary Lights Control Knob"
+            },
+            "PLT_INTL_FLOOD_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "PLT_INTL_FLOOD_L_KNB",
+                "device_id": "11",
+                "command": "3008",
+                "arg_number": "330",
+                "limits": "{0, 1}",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Flood Lights Control Knob"
+            },
+            "PLT_INTL_STBYINST_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "PLT_INTL_STBYINST_L_KNB",
+                "device_id": "11",
+                "command": "3009",
+                "arg_number": "331",
+                "limits": "{0, 1}",
+                "category": "PLT Internal Light System",
+                "description": "Pilot Standby Instrument Lights Control Knob"
+            }
+        },
+        "CPG Internal Light System": {
+            "CPG_INTL_MCAUTION_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_INTL_MCAUTION_BTN",
+                "device_id": "11",
+                "command": "3003",
+                "arg_number": "807",
+                "category": "CPG Internal Light System",
+                "description": "Gunner Master Caution Button"
+            },
+            "CPG_INTL_MWARN_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_INTL_MWARN_BTN",
+                "device_id": "11",
+                "command": "3004",
+                "arg_number": "805",
+                "category": "CPG Internal Light System",
+                "description": "Gunner Master Warning Button"
+            },
+            "CPG_INTL_TEST_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_INTL_TEST_BTN",
+                "device_id": "11",
+                "command": "3011",
+                "arg_number": "367",
+                "category": "CPG Internal Light System",
+                "description": "Gunner Light Test Button"
+            },
+            "CPG_INTL_SIGNAL_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "CPG_INTL_SIGNAL_L_KNB",
+                "device_id": "11",
+                "command": "3012",
+                "arg_number": "364",
+                "limits": "{0, 1}",
+                "category": "CPG Internal Light System",
+                "description": "Gunner Signal Lights Control Knob"
+            },
+            "CPG_INTL_PRIMARY_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "CPG_INTL_PRIMARY_L_KNB",
+                "device_id": "11",
+                "command": "3013",
+                "arg_number": "365",
+                "limits": "{0, 1}",
+                "category": "CPG Internal Light System",
+                "description": "Gunner Primary Lights Control Knob"
+            },
+            "CPG_INTL_FLOOD_L_KNB": {
+                "type": "Potentiometer",
+                "msg": "CPG_INTL_FLOOD_L_KNB",
+                "device_id": "11",
+                "command": "3014",
+                "arg_number": "366",
+                "limits": "{0, 1}",
+                "category": "CPG Internal Light System",
+                "description": "Gunner Flood Lights Control Knob"
+            }
+        },
+        "PLT SAI": {
+            "PLT_SAI_CAGE": {
+                "type": "PushButton",
+                "msg": "PLT_SAI_CAGE",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "620",
+                "category": "PLT SAI",
+                "description": "Pilot SAI Cage Knob, (LMB) Pull to cage"
+            },
+            "PLT_SAI_PITCH_TRIM": {
+                "type": "Rotary",
+                "msg": "PLT_SAI_PITCH_TRIM",
+                "device_id": "13",
+                "command": "3002",
+                "arg_number": "619",
+                "category": "PLT SAI",
+                "description": "Pilot SAI Cage Knob, (MW) Adjust aircraft reference symbol"
+            }
+        },
+        "PLT Altimeter": {
+            "PLT_ALT_SET_KNB": {
+                "type": "Rotary",
+                "msg": "PLT_ALT_SET_KNB",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "477",
+                "category": "PLT Altimeter",
+                "description": "Pilot Altimeter Barometric Setting Knob"
+            }
+        },
+        "PLT COMM Panel": {
+            "PLT_COM_VHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_VHF_VOL",
+                "device_id": "63",
+                "command": "3001",
+                "arg_number": "334",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot VHF Volume Control Knob"
+            },
+            "PLT_COM_VHF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_VHF_PW",
+                "device_id": "63",
+                "command": "3020",
+                "arg_number": "449",
+                "category": "PLT COMM Panel",
+                "description": "Pilot VHF Disable Knob"
+            },
+            "PLT_COM_UHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_UHF_VOL",
+                "device_id": "63",
+                "command": "3002",
+                "arg_number": "335",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot UHF Volume Control Knob"
+            },
+            "PLT_COM_UHF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_UHF_PW",
+                "device_id": "63",
+                "command": "3021",
+                "arg_number": "450",
+                "category": "PLT COMM Panel",
+                "description": "Pilot UHF Disable Knob"
+            },
+            "PLT_COM_FM1_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_FM1_VOL",
+                "device_id": "63",
+                "command": "3003",
+                "arg_number": "336",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot FM1 Volume Control Knob"
+            },
+            "PLT_COM_FM1_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_FM1_PW",
+                "device_id": "63",
+                "command": "3022",
+                "arg_number": "451",
+                "category": "PLT COMM Panel",
+                "description": "Pilot FM1 Disable Knob"
+            },
+            "PLT_COM_FM2_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_FM2_VOL",
+                "device_id": "63",
+                "command": "3004",
+                "arg_number": "337",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot FM2 Volume Control Knob"
+            },
+            "PLT_COM_FM2_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_FM2_PW",
+                "device_id": "63",
+                "command": "3023",
+                "arg_number": "452",
+                "category": "PLT COMM Panel",
+                "description": "Pilot FM2 Disable Knob"
+            },
+            "PLT_COM_HF_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_HF_VOL",
+                "device_id": "63",
+                "command": "3005",
+                "arg_number": "338",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot HF Volume Control Knob"
+            },
+            "PLT_COM_HF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_HF_PW",
+                "device_id": "63",
+                "command": "3024",
+                "arg_number": "453",
+                "category": "PLT COMM Panel",
+                "description": "Pilot HF Disable Knob"
+            },
+            "PLT_COM_IFF_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_IFF_VOL",
+                "device_id": "63",
+                "command": "3006",
+                "arg_number": "348",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot IFF Volume Control Knob"
+            },
+            "PLT_COM_RLWR_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_RLWR_VOL",
+                "device_id": "63",
+                "command": "3007",
+                "arg_number": "349",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot RLWR Volume Control Knob"
+            },
+            "PLT_COM_ATA_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_ATA_VOL",
+                "device_id": "63",
+                "command": "3008",
+                "arg_number": "350",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot ATA Volume Control Knob"
+            },
+            "PLT_COM_VCR_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_VCR_VOL",
+                "device_id": "63",
+                "command": "3009",
+                "arg_number": "351",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot VCR Volume Control Knob"
+            },
+            "PLT_COM_VCR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_VCR_PW",
+                "device_id": "63",
+                "command": "3028",
+                "arg_number": "457",
+                "category": "PLT COMM Panel",
+                "description": "Pilot VCR Disable Knob"
+            },
+            "PLT_COM_ADF_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_ADF_VOL",
+                "device_id": "63",
+                "command": "3010",
+                "arg_number": "352",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot ADF Volume Control Knob"
+            },
+            "PLT_COM_ADF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COM_ADF_PW",
+                "device_id": "63",
+                "command": "3029",
+                "arg_number": "458",
+                "category": "PLT COMM Panel",
+                "description": "Pilot ADF Disable Knob"
+            },
+            "PLT_COM_MASTER_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_MASTER_VOL",
+                "device_id": "63",
+                "command": "3011",
+                "arg_number": "344",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot MASTER Volume Control Knob"
+            },
+            "PLT_COM_SENS_KNB": {
+                "type": "Potentiometer",
+                "msg": "PLT_COM_SENS_KNB",
+                "device_id": "63",
+                "command": "3012",
+                "arg_number": "345",
+                "limits": "{0, 1}",
+                "category": "PLT COMM Panel",
+                "description": "Pilot SENS Control Knob"
+            },
+            "PLT_COM_VHF_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COM_VHF_SQL",
+                "device_id": "63",
+                "downSwitch": "3070",
+                "upSwitch": "3013",
+                "arg_number": "339",
+                "category": "PLT COMM Panel",
+                "description": "Pilot VHF Squelch Switch, ON/OFF"
+            },
+            "PLT_COM_UHF_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COM_UHF_SQL",
+                "device_id": "63",
+                "downSwitch": "3071",
+                "upSwitch": "3014",
+                "arg_number": "340",
+                "category": "PLT COMM Panel",
+                "description": "Pilot UHF Squelch Switch, ON/OFF"
+            },
+            "PLT_COM_FM1_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COM_FM1_SQL",
+                "device_id": "63",
+                "downSwitch": "3072",
+                "upSwitch": "3015",
+                "arg_number": "341",
+                "category": "PLT COMM Panel",
+                "description": "Pilot FM1 Squelch Switch, ON/OFF"
+            },
+            "PLT_COM_FM2_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COM_FM2_SQL",
+                "device_id": "63",
+                "downSwitch": "3073",
+                "upSwitch": "3016",
+                "arg_number": "342",
+                "category": "PLT COMM Panel",
+                "description": "Pilot FM2 Squelch Switch, ON/OFF"
+            },
+            "PLT_COM_HF_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COM_HF_SQL",
+                "device_id": "63",
+                "downSwitch": "3074",
+                "upSwitch": "3017",
+                "arg_number": "343",
+                "category": "PLT COMM Panel",
+                "description": "Pilot HF Squelch Switch, ON/OFF"
+            },
+            "PLT_COM_ICS_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_COM_ICS_MODE",
+                "device_id": "63",
+                "command": "3018",
+                "arg_number": "346",
+                "category": "PLT COMM Panel",
+                "description": "Pilot ICS Mode Switch, HOT MIC/VOX/PTT"
+            },
+            "PLT_COM_IDENT_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_COM_IDENT_BTN",
+                "device_id": "63",
+                "command": "3019",
+                "arg_number": "347",
+                "category": "PLT COMM Panel",
+                "description": "Pilot IDENT Button"
+            }
+        },
+        "CPG COMM Panel": {
+            "CPG_COM_VHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_VHF_VOL",
+                "device_id": "62",
+                "command": "3001",
+                "arg_number": "375",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner VHF Volume Control Knob"
+            },
+            "CPG_COM_VHF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_VHF_PW",
+                "device_id": "62",
+                "command": "3020",
+                "arg_number": "459",
+                "category": "CPG COMM Panel",
+                "description": "Gunner VHF Disable Knob"
+            },
+            "CPG_COM_UHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_UHF_VOL",
+                "device_id": "62",
+                "command": "3002",
+                "arg_number": "376",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner UHF Volume Control Knob"
+            },
+            "CPG_COM_UHF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_UHF_PW",
+                "device_id": "62",
+                "command": "3021",
+                "arg_number": "460",
+                "category": "CPG COMM Panel",
+                "description": "Gunner UHF Disable Knob"
+            },
+            "CPG_COM_FM1_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_FM1_VOL",
+                "device_id": "62",
+                "command": "3003",
+                "arg_number": "377",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner FM1 Volume Control Knob"
+            },
+            "CPG_COM_FM1_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_FM1_PW",
+                "device_id": "62",
+                "command": "3022",
+                "arg_number": "461",
+                "category": "CPG COMM Panel",
+                "description": "Gunner FM1 Disable Knob"
+            },
+            "CPG_COM_FM2_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_FM2_VOL",
+                "device_id": "62",
+                "command": "3004",
+                "arg_number": "378",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner FM2 Volume Control Knob"
+            },
+            "CPG_COM_FM2_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_FM2_PW",
+                "device_id": "62",
+                "command": "3023",
+                "arg_number": "462",
+                "category": "CPG COMM Panel",
+                "description": "Gunner FM2 Disable Knob"
+            },
+            "CPG_COM_HF_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_HF_VOL",
+                "device_id": "62",
+                "command": "3005",
+                "arg_number": "379",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner HF Volume Control Knob"
+            },
+            "CPG_COM_HF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_HF_PW",
+                "device_id": "62",
+                "command": "3024",
+                "arg_number": "463",
+                "category": "CPG COMM Panel",
+                "description": "Gunner HF Disable Knob"
+            },
+            "CPG_COM_IFF_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_IFF_VOL",
+                "device_id": "62",
+                "command": "3006",
+                "arg_number": "389",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner IFF Volume Control Knob"
+            },
+            "CPG_COM_RLWR_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_RLWR_VOL",
+                "device_id": "62",
+                "command": "3007",
+                "arg_number": "390",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner RLWR Volume Control Knob"
+            },
+            "CPG_COM_ATA_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_ATA_VOL",
+                "device_id": "62",
+                "command": "3008",
+                "arg_number": "391",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner ATA Volume Control Knob"
+            },
+            "CPG_COM_VCR_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_VCR_VOL",
+                "device_id": "62",
+                "command": "3009",
+                "arg_number": "392",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner VCR Volume Control Knob"
+            },
+            "CPG_COM_VCR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_VCR_PW",
+                "device_id": "62",
+                "command": "3028",
+                "arg_number": "467",
+                "category": "CPG COMM Panel",
+                "description": "Gunner VCR Disable Knob"
+            },
+            "CPG_COM_ADF_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_ADF_VOL",
+                "device_id": "62",
+                "command": "3010",
+                "arg_number": "393",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner ADF Volume Control Knob"
+            },
+            "CPG_COM_ADF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COM_ADF_PW",
+                "device_id": "62",
+                "command": "3029",
+                "arg_number": "468",
+                "category": "CPG COMM Panel",
+                "description": "Gunner ADF Disable Knob"
+            },
+            "CPG_COM_MASTER_VOL": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_MASTER_VOL",
+                "device_id": "62",
+                "command": "3011",
+                "arg_number": "385",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner MASTER Volume Control Knob"
+            },
+            "CPG_COM_SENS_KNB": {
+                "type": "Potentiometer",
+                "msg": "CPG_COM_SENS_KNB",
+                "device_id": "62",
+                "command": "3012",
+                "arg_number": "386",
+                "limits": "{0, 1}",
+                "category": "CPG COMM Panel",
+                "description": "Gunner SENS Control Knob"
+            },
+            "CPG_COM_VHF_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COM_VHF_SQL",
+                "device_id": "62",
+                "downSwitch": "3070",
+                "upSwitch": "3013",
+                "arg_number": "380",
+                "category": "CPG COMM Panel",
+                "description": "Gunner VHF Squelch Switch, ON/OFF"
+            },
+            "CPG_COM_UHF_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COM_UHF_SQL",
+                "device_id": "62",
+                "downSwitch": "3071",
+                "upSwitch": "3014",
+                "arg_number": "381",
+                "category": "CPG COMM Panel",
+                "description": "Gunner UHF Squelch Switch, ON/OFF"
+            },
+            "CPG_COM_FM1_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COM_FM1_SQL",
+                "device_id": "62",
+                "downSwitch": "3072",
+                "upSwitch": "3015",
+                "arg_number": "382",
+                "category": "CPG COMM Panel",
+                "description": "Gunner FM1 Squelch Switch, ON/OFF"
+            },
+            "CPG_COM_FM2_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COM_FM2_SQL",
+                "device_id": "62",
+                "downSwitch": "3073",
+                "upSwitch": "3016",
+                "arg_number": "383",
+                "category": "CPG COMM Panel",
+                "description": "Gunner FM2 Squelch Switch, ON/OFF"
+            },
+            "CPG_COM_HF_SQL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COM_HF_SQL",
+                "device_id": "62",
+                "downSwitch": "3074",
+                "upSwitch": "3017",
+                "arg_number": "384",
+                "category": "CPG COMM Panel",
+                "description": "Gunner HF Squelch Switch, ON/OFF"
+            },
+            "CPG_COM_ICS_MODE": {
+                "type": "3PosTumb",
+                "msg": "CPG_COM_ICS_MODE",
+                "device_id": "62",
+                "command": "3018",
+                "arg_number": "387",
+                "category": "CPG COMM Panel",
+                "description": "Gunner ICS Mode Switch, HOT MIC/VOX/PTT"
+            },
+            "CPG_COM_IDENT_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_COM_IDENT_BTN",
+                "device_id": "62",
+                "command": "3019",
+                "arg_number": "388",
+                "category": "CPG COMM Panel",
+                "description": "Gunner IDENT Button"
+            }
+        },
+        "PLT Emergency Panel": {
+            "PLT_EMERG_GUARD_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_EMERG_GUARD_BTN",
+                "device_id": "56",
+                "command": "3001",
+                "arg_number": "310",
+                "category": "PLT Emergency Panel",
+                "description": "Pilot Guard Button, ON/OFF"
+            },
+            "PLT_EMERG_XPNDR_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_EMERG_XPNDR_BTN",
+                "device_id": "56",
+                "command": "3003",
+                "arg_number": "311",
+                "category": "PLT Emergency Panel",
+                "description": "Pilot XPNDR Button, ON/OFF"
+            },
+            "PLT_EMERG_ZERO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EMERG_ZERO_SW",
+                "device_id": "56",
+                "command": "3005",
+                "arg_number": "312",
+                "category": "PLT Emergency Panel",
+                "description": "Pilot Zeroize Switch, ON/OFF"
+            },
+            "PLT_INST_MZERO_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_INST_MZERO_CVR",
+                "device_id": "56",
+                "command": "3008",
+                "arg_number": "803",
+                "category": "PLT Emergency Panel",
+                "description": "Pilot Master Zeroize Switch Cover, OPEN/CLOSE"
+            },
+            "PLT_INST_MZERO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_INST_MZERO_SW",
+                "device_id": "56",
+                "command": "3007",
+                "arg_number": "804",
+                "category": "PLT Emergency Panel",
+                "description": "Pilot Master Zeroize Switch, ON/OFF"
+            }
+        },
+        "CPG Emergency Panel": {
+            "CPG_EMERG_GUARD_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_EMERG_GUARD_BTN",
+                "device_id": "56",
+                "command": "3002",
+                "arg_number": "358",
+                "category": "CPG Emergency Panel",
+                "description": "Gunner Guard Button, ON/OFF"
+            },
+            "CPG_EMERG_XPNDR_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_EMERG_XPNDR_BTN",
+                "device_id": "56",
+                "command": "3004",
+                "arg_number": "359",
+                "category": "CPG Emergency Panel",
+                "description": "Gunner XPNDR Button, ON/OFF"
+            },
+            "CPG_EMERG_ZERO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_EMERG_ZERO_SW",
+                "device_id": "56",
+                "command": "3006",
+                "arg_number": "360",
+                "category": "CPG Emergency Panel",
+                "description": "Gunner Zeroize Switch, ON/OFF"
+            },
+            "CPG_INST_MZERO_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_INST_MZERO_CVR",
+                "device_id": "56",
+                "command": "3010",
+                "arg_number": "801",
+                "category": "CPG Emergency Panel",
+                "description": "Gunner Master Zeroize Switch Cover, OPEN/CLOSE"
+            },
+            "CPG_INST_MZERO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_INST_MZERO_SW",
+                "device_id": "56",
+                "command": "3009",
+                "arg_number": "802",
+                "category": "CPG Emergency Panel",
+                "description": "Gunner Master Zeroize Switch, ON/OFF"
+            }
+        },
+        "PLT Keyboard Unit": {
+            "PLT_KU_A": {
+                "type": "PushButton",
+                "msg": "PLT_KU_A",
+                "device_id": "29",
+                "command": "3007",
+                "arg_number": "213",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit A Key"
+            },
+            "PLT_KU_B": {
+                "type": "PushButton",
+                "msg": "PLT_KU_B",
+                "device_id": "29",
+                "command": "3008",
+                "arg_number": "214",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit B Key"
+            },
+            "PLT_KU_C": {
+                "type": "PushButton",
+                "msg": "PLT_KU_C",
+                "device_id": "29",
+                "command": "3009",
+                "arg_number": "215",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit C Key"
+            },
+            "PLT_KU_D": {
+                "type": "PushButton",
+                "msg": "PLT_KU_D",
+                "device_id": "29",
+                "command": "3010",
+                "arg_number": "216",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit D Key"
+            },
+            "PLT_KU_E": {
+                "type": "PushButton",
+                "msg": "PLT_KU_E",
+                "device_id": "29",
+                "command": "3011",
+                "arg_number": "217",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit E Key"
+            },
+            "PLT_KU_F": {
+                "type": "PushButton",
+                "msg": "PLT_KU_F",
+                "device_id": "29",
+                "command": "3012",
+                "arg_number": "218",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit F Key"
+            },
+            "PLT_KU_G": {
+                "type": "PushButton",
+                "msg": "PLT_KU_G",
+                "device_id": "29",
+                "command": "3013",
+                "arg_number": "222",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit G Key"
+            },
+            "PLT_KU_H": {
+                "type": "PushButton",
+                "msg": "PLT_KU_H",
+                "device_id": "29",
+                "command": "3014",
+                "arg_number": "223",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit H Key"
+            },
+            "PLT_KU_I": {
+                "type": "PushButton",
+                "msg": "PLT_KU_I",
+                "device_id": "29",
+                "command": "3015",
+                "arg_number": "224",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit I Key"
+            },
+            "PLT_KU_J": {
+                "type": "PushButton",
+                "msg": "PLT_KU_J",
+                "device_id": "29",
+                "command": "3016",
+                "arg_number": "225",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit J Key"
+            },
+            "PLT_KU_K": {
+                "type": "PushButton",
+                "msg": "PLT_KU_K",
+                "device_id": "29",
+                "command": "3017",
+                "arg_number": "226",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit K Key"
+            },
+            "PLT_KU_L": {
+                "type": "PushButton",
+                "msg": "PLT_KU_L",
+                "device_id": "29",
+                "command": "3018",
+                "arg_number": "227",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit L Key"
+            },
+            "PLT_KU_M": {
+                "type": "PushButton",
+                "msg": "PLT_KU_M",
+                "device_id": "29",
+                "command": "3019",
+                "arg_number": "231",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit M Key"
+            },
+            "PLT_KU_N": {
+                "type": "PushButton",
+                "msg": "PLT_KU_N",
+                "device_id": "29",
+                "command": "3020",
+                "arg_number": "232",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit N Key"
+            },
+            "PLT_KU_O": {
+                "type": "PushButton",
+                "msg": "PLT_KU_O",
+                "device_id": "29",
+                "command": "3021",
+                "arg_number": "233",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit O Key"
+            },
+            "PLT_KU_P": {
+                "type": "PushButton",
+                "msg": "PLT_KU_P",
+                "device_id": "29",
+                "command": "3022",
+                "arg_number": "234",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit P Key"
+            },
+            "PLT_KU_Q": {
+                "type": "PushButton",
+                "msg": "PLT_KU_Q",
+                "device_id": "29",
+                "command": "3023",
+                "arg_number": "235",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit Q Key"
+            },
+            "PLT_KU_R": {
+                "type": "PushButton",
+                "msg": "PLT_KU_R",
+                "device_id": "29",
+                "command": "3024",
+                "arg_number": "236",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit R Key"
+            },
+            "PLT_KU_S": {
+                "type": "PushButton",
+                "msg": "PLT_KU_S",
+                "device_id": "29",
+                "command": "3025",
+                "arg_number": "240",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit S Key"
+            },
+            "PLT_KU_T": {
+                "type": "PushButton",
+                "msg": "PLT_KU_T",
+                "device_id": "29",
+                "command": "3026",
+                "arg_number": "241",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit T Key"
+            },
+            "PLT_KU_U": {
+                "type": "PushButton",
+                "msg": "PLT_KU_U",
+                "device_id": "29",
+                "command": "3027",
+                "arg_number": "242",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit U Key"
+            },
+            "PLT_KU_V": {
+                "type": "PushButton",
+                "msg": "PLT_KU_V",
+                "device_id": "29",
+                "command": "3028",
+                "arg_number": "243",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit V Key"
+            },
+            "PLT_KU_W": {
+                "type": "PushButton",
+                "msg": "PLT_KU_W",
+                "device_id": "29",
+                "command": "3029",
+                "arg_number": "244",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit W Key"
+            },
+            "PLT_KU_X": {
+                "type": "PushButton",
+                "msg": "PLT_KU_X",
+                "device_id": "29",
+                "command": "3030",
+                "arg_number": "245",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit X Key"
+            },
+            "PLT_KU_Y": {
+                "type": "PushButton",
+                "msg": "PLT_KU_Y",
+                "device_id": "29",
+                "command": "3031",
+                "arg_number": "249",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit Y Key"
+            },
+            "PLT_KU_Z": {
+                "type": "PushButton",
+                "msg": "PLT_KU_Z",
+                "device_id": "29",
+                "command": "3032",
+                "arg_number": "250",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit Z Key"
+            },
+            "PLT_KU_SLASH": {
+                "type": "PushButton",
+                "msg": "PLT_KU_SLASH",
+                "device_id": "29",
+                "command": "3045",
+                "arg_number": "251",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit / Key"
+            },
+            "PLT_KU_0": {
+                "type": "PushButton",
+                "msg": "PLT_KU_0",
+                "device_id": "29",
+                "command": "3043",
+                "arg_number": "247",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 0 Key"
+            },
+            "PLT_KU_1": {
+                "type": "PushButton",
+                "msg": "PLT_KU_1",
+                "device_id": "29",
+                "command": "3033",
+                "arg_number": "219",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 1 Key"
+            },
+            "PLT_KU_2": {
+                "type": "PushButton",
+                "msg": "PLT_KU_2",
+                "device_id": "29",
+                "command": "3034",
+                "arg_number": "220",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 2 Key"
+            },
+            "PLT_KU_3": {
+                "type": "PushButton",
+                "msg": "PLT_KU_3",
+                "device_id": "29",
+                "command": "3035",
+                "arg_number": "221",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 3 Key"
+            },
+            "PLT_KU_4": {
+                "type": "PushButton",
+                "msg": "PLT_KU_4",
+                "device_id": "29",
+                "command": "3036",
+                "arg_number": "228",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 4 Key"
+            },
+            "PLT_KU_5": {
+                "type": "PushButton",
+                "msg": "PLT_KU_5",
+                "device_id": "29",
+                "command": "3037",
+                "arg_number": "229",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 5 Key"
+            },
+            "PLT_KU_6": {
+                "type": "PushButton",
+                "msg": "PLT_KU_6",
+                "device_id": "29",
+                "command": "3038",
+                "arg_number": "230",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 6 Key"
+            },
+            "PLT_KU_7": {
+                "type": "PushButton",
+                "msg": "PLT_KU_7",
+                "device_id": "29",
+                "command": "3039",
+                "arg_number": "237",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 7 Key"
+            },
+            "PLT_KU_8": {
+                "type": "PushButton",
+                "msg": "PLT_KU_8",
+                "device_id": "29",
+                "command": "3040",
+                "arg_number": "238",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 8 Key"
+            },
+            "PLT_KU_9": {
+                "type": "PushButton",
+                "msg": "PLT_KU_9",
+                "device_id": "29",
+                "command": "3041",
+                "arg_number": "239",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit 9 Key"
+            },
+            "PLT_KU_DOT": {
+                "type": "PushButton",
+                "msg": "PLT_KU_DOT",
+                "device_id": "29",
+                "command": "3042",
+                "arg_number": "246",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit . Key"
+            },
+            "PLT_KU_SIGN": {
+                "type": "PushButton",
+                "msg": "PLT_KU_SIGN",
+                "device_id": "29",
+                "command": "3044",
+                "arg_number": "248",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit +/- Key"
+            },
+            "PLT_KU_BKS": {
+                "type": "PushButton",
+                "msg": "PLT_KU_BKS",
+                "device_id": "29",
+                "command": "3002",
+                "arg_number": "252",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit BKS Key"
+            },
+            "PLT_KU_SPC": {
+                "type": "PushButton",
+                "msg": "PLT_KU_SPC",
+                "device_id": "29",
+                "command": "3003",
+                "arg_number": "253",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit SPC Key"
+            },
+            "PLT_KU_MULTI": {
+                "type": "PushButton",
+                "msg": "PLT_KU_MULTI",
+                "device_id": "29",
+                "command": "3049",
+                "arg_number": "254",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit * Key"
+            },
+            "PLT_KU_DIV": {
+                "type": "PushButton",
+                "msg": "PLT_KU_DIV",
+                "device_id": "29",
+                "command": "3048",
+                "arg_number": "255",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit / (divide) Key"
+            },
+            "PLT_KU_PLUS": {
+                "type": "PushButton",
+                "msg": "PLT_KU_PLUS",
+                "device_id": "29",
+                "command": "3046",
+                "arg_number": "256",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit + Key"
+            },
+            "PLT_KU_MINUS": {
+                "type": "PushButton",
+                "msg": "PLT_KU_MINUS",
+                "device_id": "29",
+                "command": "3047",
+                "arg_number": "257",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit - Key"
+            },
+            "PLT_KU_CLR": {
+                "type": "PushButton",
+                "msg": "PLT_KU_CLR",
+                "device_id": "29",
+                "command": "3001",
+                "arg_number": "258",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit CLR Key"
+            },
+            "PLT_KU_LEFT": {
+                "type": "PushButton",
+                "msg": "PLT_KU_LEFT",
+                "device_id": "29",
+                "command": "3004",
+                "arg_number": "259",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit Left Key"
+            },
+            "PLT_KU_RIGHT": {
+                "type": "PushButton",
+                "msg": "PLT_KU_RIGHT",
+                "device_id": "29",
+                "command": "3005",
+                "arg_number": "260",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit Right Key"
+            },
+            "PLT_KU_ENT": {
+                "type": "PushButton",
+                "msg": "PLT_KU_ENT",
+                "device_id": "29",
+                "command": "3006",
+                "arg_number": "261",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Keyboard Unit ENTER Key"
+            },
+            "PLT_KU_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_KU_BRT",
+                "device_id": "29",
+                "command": "3050",
+                "arg_number": "316",
+                "limits": "{0, 1}",
+                "category": "PLT Keyboard Unit",
+                "description": "Pilot Scratchpad Keyboard Brightness Knob"
+            }
+        },
+        "CPG Keyboard Unit": {
+            "CPG_KU_A": {
+                "type": "PushButton",
+                "msg": "CPG_KU_A",
+                "device_id": "30",
+                "command": "3007",
+                "arg_number": "164",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit A Key"
+            },
+            "CPG_KU_B": {
+                "type": "PushButton",
+                "msg": "CPG_KU_B",
+                "device_id": "30",
+                "command": "3008",
+                "arg_number": "165",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit B Key"
+            },
+            "CPG_KU_C": {
+                "type": "PushButton",
+                "msg": "CPG_KU_C",
+                "device_id": "30",
+                "command": "3009",
+                "arg_number": "166",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit C Key"
+            },
+            "CPG_KU_D": {
+                "type": "PushButton",
+                "msg": "CPG_KU_D",
+                "device_id": "30",
+                "command": "3010",
+                "arg_number": "167",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit D Key"
+            },
+            "CPG_KU_E": {
+                "type": "PushButton",
+                "msg": "CPG_KU_E",
+                "device_id": "30",
+                "command": "3011",
+                "arg_number": "168",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit E Key"
+            },
+            "CPG_KU_F": {
+                "type": "PushButton",
+                "msg": "CPG_KU_F",
+                "device_id": "30",
+                "command": "3012",
+                "arg_number": "169",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit F Key"
+            },
+            "CPG_KU_G": {
+                "type": "PushButton",
+                "msg": "CPG_KU_G",
+                "device_id": "30",
+                "command": "3013",
+                "arg_number": "173",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit G Key"
+            },
+            "CPG_KU_H": {
+                "type": "PushButton",
+                "msg": "CPG_KU_H",
+                "device_id": "30",
+                "command": "3014",
+                "arg_number": "174",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit H Key"
+            },
+            "CPG_KU_I": {
+                "type": "PushButton",
+                "msg": "CPG_KU_I",
+                "device_id": "30",
+                "command": "3015",
+                "arg_number": "175",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit I Key"
+            },
+            "CPG_KU_J": {
+                "type": "PushButton",
+                "msg": "CPG_KU_J",
+                "device_id": "30",
+                "command": "3016",
+                "arg_number": "176",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit J Key"
+            },
+            "CPG_KU_K": {
+                "type": "PushButton",
+                "msg": "CPG_KU_K",
+                "device_id": "30",
+                "command": "3017",
+                "arg_number": "177",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit K Key"
+            },
+            "CPG_KU_L": {
+                "type": "PushButton",
+                "msg": "CPG_KU_L",
+                "device_id": "30",
+                "command": "3018",
+                "arg_number": "178",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit L Key"
+            },
+            "CPG_KU_M": {
+                "type": "PushButton",
+                "msg": "CPG_KU_M",
+                "device_id": "30",
+                "command": "3019",
+                "arg_number": "182",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit M Key"
+            },
+            "CPG_KU_N": {
+                "type": "PushButton",
+                "msg": "CPG_KU_N",
+                "device_id": "30",
+                "command": "3020",
+                "arg_number": "183",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit N Key"
+            },
+            "CPG_KU_O": {
+                "type": "PushButton",
+                "msg": "CPG_KU_O",
+                "device_id": "30",
+                "command": "3021",
+                "arg_number": "184",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit O Key"
+            },
+            "CPG_KU_P": {
+                "type": "PushButton",
+                "msg": "CPG_KU_P",
+                "device_id": "30",
+                "command": "3022",
+                "arg_number": "185",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit P Key"
+            },
+            "CPG_KU_Q": {
+                "type": "PushButton",
+                "msg": "CPG_KU_Q",
+                "device_id": "30",
+                "command": "3023",
+                "arg_number": "186",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit Q Key"
+            },
+            "CPG_KU_R": {
+                "type": "PushButton",
+                "msg": "CPG_KU_R",
+                "device_id": "30",
+                "command": "3024",
+                "arg_number": "187",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit R Key"
+            },
+            "CPG_KU_S": {
+                "type": "PushButton",
+                "msg": "CPG_KU_S",
+                "device_id": "30",
+                "command": "3025",
+                "arg_number": "191",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit S Key"
+            },
+            "CPG_KU_T": {
+                "type": "PushButton",
+                "msg": "CPG_KU_T",
+                "device_id": "30",
+                "command": "3026",
+                "arg_number": "192",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit T Key"
+            },
+            "CPG_KU_U": {
+                "type": "PushButton",
+                "msg": "CPG_KU_U",
+                "device_id": "30",
+                "command": "3027",
+                "arg_number": "193",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit U Key"
+            },
+            "CPG_KU_V": {
+                "type": "PushButton",
+                "msg": "CPG_KU_V",
+                "device_id": "30",
+                "command": "3028",
+                "arg_number": "194",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit V Key"
+            },
+            "CPG_KU_W": {
+                "type": "PushButton",
+                "msg": "CPG_KU_W",
+                "device_id": "30",
+                "command": "3029",
+                "arg_number": "195",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit W Key"
+            },
+            "CPG_KU_X": {
+                "type": "PushButton",
+                "msg": "CPG_KU_X",
+                "device_id": "30",
+                "command": "3030",
+                "arg_number": "196",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit X Key"
+            },
+            "CPG_KU_Y": {
+                "type": "PushButton",
+                "msg": "CPG_KU_Y",
+                "device_id": "30",
+                "command": "3031",
+                "arg_number": "200",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit Y Key"
+            },
+            "CPG_KU_Z": {
+                "type": "PushButton",
+                "msg": "CPG_KU_Z",
+                "device_id": "30",
+                "command": "3032",
+                "arg_number": "201",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit Z Key"
+            },
+            "CPG_KU_SLASH": {
+                "type": "PushButton",
+                "msg": "CPG_KU_SLASH",
+                "device_id": "30",
+                "command": "3045",
+                "arg_number": "202",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit / Key"
+            },
+            "CPG_KU_0": {
+                "type": "PushButton",
+                "msg": "CPG_KU_0",
+                "device_id": "30",
+                "command": "3043",
+                "arg_number": "198",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 0 Key"
+            },
+            "CPG_KU_1": {
+                "type": "PushButton",
+                "msg": "CPG_KU_1",
+                "device_id": "30",
+                "command": "3033",
+                "arg_number": "170",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 1 Key"
+            },
+            "CPG_KU_2": {
+                "type": "PushButton",
+                "msg": "CPG_KU_2",
+                "device_id": "30",
+                "command": "3034",
+                "arg_number": "171",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 2 Key"
+            },
+            "CPG_KU_3": {
+                "type": "PushButton",
+                "msg": "CPG_KU_3",
+                "device_id": "30",
+                "command": "3035",
+                "arg_number": "172",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 3 Key"
+            },
+            "CPG_KU_4": {
+                "type": "PushButton",
+                "msg": "CPG_KU_4",
+                "device_id": "30",
+                "command": "3036",
+                "arg_number": "179",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 4 Key"
+            },
+            "CPG_KU_5": {
+                "type": "PushButton",
+                "msg": "CPG_KU_5",
+                "device_id": "30",
+                "command": "3037",
+                "arg_number": "180",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 5 Key"
+            },
+            "CPG_KU_6": {
+                "type": "PushButton",
+                "msg": "CPG_KU_6",
+                "device_id": "30",
+                "command": "3038",
+                "arg_number": "181",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 6 Key"
+            },
+            "CPG_KU_7": {
+                "type": "PushButton",
+                "msg": "CPG_KU_7",
+                "device_id": "30",
+                "command": "3039",
+                "arg_number": "188",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 7 Key"
+            },
+            "CPG_KU_8": {
+                "type": "PushButton",
+                "msg": "CPG_KU_8",
+                "device_id": "30",
+                "command": "3040",
+                "arg_number": "189",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 8 Key"
+            },
+            "CPG_KU_9": {
+                "type": "PushButton",
+                "msg": "CPG_KU_9",
+                "device_id": "30",
+                "command": "3041",
+                "arg_number": "190",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit 9 Key"
+            },
+            "CPG_KU_DOT": {
+                "type": "PushButton",
+                "msg": "CPG_KU_DOT",
+                "device_id": "30",
+                "command": "3042",
+                "arg_number": "197",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit . Key"
+            },
+            "CPG_KU_SIGN": {
+                "type": "PushButton",
+                "msg": "CPG_KU_SIGN",
+                "device_id": "30",
+                "command": "3044",
+                "arg_number": "199",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit +/- Key"
+            },
+            "CPG_KU_BKS": {
+                "type": "PushButton",
+                "msg": "CPG_KU_BKS",
+                "device_id": "30",
+                "command": "3002",
+                "arg_number": "203",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit BKS Key"
+            },
+            "CPG_KU_SPC": {
+                "type": "PushButton",
+                "msg": "CPG_KU_SPC",
+                "device_id": "30",
+                "command": "3003",
+                "arg_number": "204",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit SPC Key"
+            },
+            "CPG_KU_MULTI": {
+                "type": "PushButton",
+                "msg": "CPG_KU_MULTI",
+                "device_id": "30",
+                "command": "3049",
+                "arg_number": "205",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit * Key"
+            },
+            "CPG_KU_DIV": {
+                "type": "PushButton",
+                "msg": "CPG_KU_DIV",
+                "device_id": "30",
+                "command": "3048",
+                "arg_number": "206",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit / (divide) Key"
+            },
+            "CPG_KU_PLUS": {
+                "type": "PushButton",
+                "msg": "CPG_KU_PLUS",
+                "device_id": "30",
+                "command": "3046",
+                "arg_number": "207",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit + Key"
+            },
+            "CPG_KU_MINUS": {
+                "type": "PushButton",
+                "msg": "CPG_KU_MINUS",
+                "device_id": "30",
+                "command": "3047",
+                "arg_number": "208",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit - Key"
+            },
+            "CPG_KU_CLR": {
+                "type": "PushButton",
+                "msg": "CPG_KU_CLR",
+                "device_id": "30",
+                "command": "3001",
+                "arg_number": "209",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit CLR Key"
+            },
+            "CPG_KU_LEFT": {
+                "type": "PushButton",
+                "msg": "CPG_KU_LEFT",
+                "device_id": "30",
+                "command": "3004",
+                "arg_number": "210",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit Left Key"
+            },
+            "CPG_KU_RIGHT": {
+                "type": "PushButton",
+                "msg": "CPG_KU_RIGHT",
+                "device_id": "30",
+                "command": "3005",
+                "arg_number": "211",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit Right Key"
+            },
+            "CPG_KU_ENT": {
+                "type": "PushButton",
+                "msg": "CPG_KU_ENT",
+                "device_id": "30",
+                "command": "3006",
+                "arg_number": "212",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Keyboard Unit ENTER Key"
+            },
+            "CPG_KU_BRT": {
+                "type": "Potentiometer",
+                "msg": "CPG_KU_BRT",
+                "device_id": "30",
+                "command": "3050",
+                "arg_number": "621",
+                "limits": "{0, 1}",
+                "category": "CPG Keyboard Unit",
+                "description": "Gunner Scratchpad Keyboard Brightness Knob"
+            }
+        },
+        "PLT Up-Front Display": {
+            "PLT_EUFD_WCA": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_EUFD_WCA",
+                "device_id": "48",
+                "downSwitch": "3002",
+                "upSwitch": "3001",
+                "arg_number": "271",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display WCA Rocker Switch"
+            },
+            "PLT_EUFD_IDM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_EUFD_IDM",
+                "device_id": "48",
+                "downSwitch": "3004",
+                "upSwitch": "3003",
+                "arg_number": "270",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display IDM Rocker Switch"
+            },
+            "PLT_EUFD_RTS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_EUFD_RTS",
+                "device_id": "48",
+                "downSwitch": "3006",
+                "upSwitch": "3005",
+                "arg_number": "272",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display RTS Rocker Switch"
+            },
+            "PLT_EUFD_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_EUFD_BRT",
+                "device_id": "48",
+                "command": "3011",
+                "arg_number": "273",
+                "limits": "{0, 1}",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display Brightness Knob"
+            },
+            "PLT_EUFD_ENT": {
+                "type": "PushButton",
+                "msg": "PLT_EUFD_ENT",
+                "device_id": "48",
+                "command": "3008",
+                "arg_number": "275",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display ENTER Button"
+            },
+            "PLT_EUFD_SWAP": {
+                "type": "PushButton",
+                "msg": "PLT_EUFD_SWAP",
+                "device_id": "48",
+                "command": "3010",
+                "arg_number": "277",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display Swap Button"
+            },
+            "PLT_EUFD_PRESET": {
+                "type": "PushButton",
+                "msg": "PLT_EUFD_PRESET",
+                "device_id": "48",
+                "command": "3007",
+                "arg_number": "274",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display Preset Button"
+            },
+            "PLT_EUFD_STOPWATCH": {
+                "type": "PushButton",
+                "msg": "PLT_EUFD_STOPWATCH",
+                "device_id": "48",
+                "command": "3009",
+                "arg_number": "276",
+                "category": "PLT Up-Front Display",
+                "description": "Pilot Up-Front Display Stopwatch Button - Press to start/stop, Hold to reset"
+            }
+        },
+        "CPG Up-Front Display": {
+            "CPG_EUFD_WCA": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_EUFD_WCA",
+                "device_id": "49",
+                "downSwitch": "3002",
+                "upSwitch": "3001",
+                "arg_number": "263",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display WCA Rocker Switch"
+            },
+            "CPG_EUFD_IDM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_EUFD_IDM",
+                "device_id": "49",
+                "downSwitch": "3004",
+                "upSwitch": "3003",
+                "arg_number": "262",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display IDM Rocker Switch"
+            },
+            "CPG_EUFD_RTS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_EUFD_RTS",
+                "device_id": "49",
+                "downSwitch": "3006",
+                "upSwitch": "3005",
+                "arg_number": "264",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display RTS Rocker Switch"
+            },
+            "CPG_EUFD_BRT": {
+                "type": "Potentiometer",
+                "msg": "CPG_EUFD_BRT",
+                "device_id": "49",
+                "command": "3011",
+                "arg_number": "265",
+                "limits": "{0, 1}",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display Brightness Knob"
+            },
+            "CPG_EUFD_ENT": {
+                "type": "PushButton",
+                "msg": "CPG_EUFD_ENT",
+                "device_id": "49",
+                "command": "3008",
+                "arg_number": "267",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display ENTER Button"
+            },
+            "CPG_EUFD_SWAP": {
+                "type": "PushButton",
+                "msg": "CPG_EUFD_SWAP",
+                "device_id": "49",
+                "command": "3010",
+                "arg_number": "269",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display Swap Button"
+            },
+            "CPG_EUFD_PRESET": {
+                "type": "PushButton",
+                "msg": "CPG_EUFD_PRESET",
+                "device_id": "49",
+                "command": "3007",
+                "arg_number": "266",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display Preset Button"
+            },
+            "CPG_EUFD_STOPWATCH": {
+                "type": "PushButton",
+                "msg": "CPG_EUFD_STOPWATCH",
+                "device_id": "49",
+                "command": "3009",
+                "arg_number": "268",
+                "category": "CPG Up-Front Display",
+                "description": "Gunner Up-Front Display Stopwatch Button - Press to start/stop, Hold to reset"
+            }
+        },
+        "CPG TEDAC Display": {
+            "CPG_TEDAC_TAD_SEL": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_TAD_SEL",
+                "device_id": "51",
+                "command": "3005",
+                "arg_number": "150",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display TAD Video Select Button"
+            },
+            "CPG_TEDAC_FCR_SEL": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_FCR_SEL",
+                "device_id": "51",
+                "command": "3006",
+                "arg_number": "151",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display FCR Video Select Button"
+            },
+            "CPG_TEDAC_PNV_SEL": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_PNV_SEL",
+                "device_id": "51",
+                "command": "3007",
+                "arg_number": "152",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display PNV Video Select Button"
+            },
+            "CPG_TEDAC_GS_SEL": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_GS_SEL",
+                "device_id": "51",
+                "command": "3008",
+                "arg_number": "153",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display G/S Video Select Button"
+            },
+            "CPG_TEDAC_SYM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_TEDAC_SYM",
+                "device_id": "51",
+                "downSwitch": "3010",
+                "upSwitch": "3009",
+                "arg_number": "155",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display SYM Rocker Switch"
+            },
+            "CPG_TEDAC_BRT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_TEDAC_BRT",
+                "device_id": "51",
+                "downSwitch": "3012",
+                "upSwitch": "3011",
+                "arg_number": "156",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display BRT Rocker Switch"
+            },
+            "CPG_TEDAC_CON": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_TEDAC_CON",
+                "device_id": "51",
+                "downSwitch": "3014",
+                "upSwitch": "3013",
+                "arg_number": "157",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display CON Rocker Switch"
+            },
+            "CPG_TEDAC_RF": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_TEDAC_RF",
+                "device_id": "51",
+                "downSwitch": "3020",
+                "upSwitch": "3019",
+                "arg_number": "147",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display R/F Rocker Switch"
+            },
+            "CPG_TEDAC_EL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_TEDAC_EL",
+                "device_id": "51",
+                "downSwitch": "3018",
+                "upSwitch": "3017",
+                "arg_number": "146",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display EL Rocker Switch"
+            },
+            "CPG_TEDAC_AZ": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_TEDAC_AZ",
+                "device_id": "51",
+                "downSwitch": "3016",
+                "upSwitch": "3015",
+                "arg_number": "163",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display AZ Rocker Switch"
+            },
+            "CPG_TEDAC_MULTI": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_MULTI",
+                "device_id": "51",
+                "command": "3004",
+                "arg_number": "158",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display Asterisk (*) Button"
+            },
+            "CPG_TEDAC_BORESIGHT": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_BORESIGHT",
+                "device_id": "51",
+                "command": "3021",
+                "arg_number": "162",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display AZ/EL Boresight Enable Button"
+            },
+            "CPG_TEDAC_ACM": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_ACM",
+                "device_id": "51",
+                "command": "3022",
+                "arg_number": "161",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display ACM Button"
+            },
+            "CPG_TEDAC_FREEZE": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_FREEZE",
+                "device_id": "51",
+                "command": "3023",
+                "arg_number": "160",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display FREEZE Button"
+            },
+            "CPG_TEDAC_FILTER": {
+                "type": "PushButton",
+                "msg": "CPG_TEDAC_FILTER",
+                "device_id": "51",
+                "command": "3024",
+                "arg_number": "159",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display FILTER Button"
+            },
+            "CPG_TEDAC_FLIR_GAIN": {
+                "type": "Potentiometer",
+                "msg": "CPG_TEDAC_FLIR_GAIN",
+                "device_id": "51",
+                "command": "3002",
+                "arg_number": "148",
+                "limits": "{0, 1}",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display FLIR GAIN Control Knob"
+            },
+            "CPG_TEDAC_FLIR_LEV": {
+                "type": "Potentiometer",
+                "msg": "CPG_TEDAC_FLIR_LEV",
+                "device_id": "51",
+                "command": "3003",
+                "arg_number": "149",
+                "limits": "{0, 1}",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display FLIR LEV Control Knob"
+            },
+            "CPG_TEDAC_DISP_MODE": {
+                "type": "Tumb",
+                "msg": "CPG_TEDAC_DISP_MODE",
+                "device_id": "51",
+                "command": "3001",
+                "arg_number": "154",
+                "step": "0.5",
+                "limits": "{0, 1}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CPG TEDAC Display",
+                "description": "Gunner TEDAC Display Mode Knob, DAY/NT/OFF"
+            }
+        },
+        "CPG TEDAC Left Handgrip": {
+            "CPG_LHG_TEDAC_L_IAT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_TEDAC_L_IAT",
+                "device_id": "51",
+                "downSwitch": "3031",
+                "upSwitch": "3030",
+                "arg_number": "491",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Image AutoTrack/Offset Switch, OFS/IAT"
+            },
+            "CPG_LHG_TADS_FOV_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_TADS_FOV_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3033",
+                "upSwitch": "3032",
+                "arg_number": "492",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner TADS FOV Select Switch, Z (Zoom)/M (Medium)"
+            },
+            "CPG_LHG_TADS_FOV_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_TADS_FOV_L_R",
+                "device_id": "51",
+                "downSwitch": "3035",
+                "upSwitch": "3034",
+                "arg_number": "49",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner TADS FOV Select Switch, N (Narrow)/W (Wide)"
+            },
+            "CPG_LHG_TADS_SEL": {
+                "type": "3PosTumb",
+                "msg": "CPG_LHG_TADS_SEL",
+                "device_id": "51",
+                "command": "3092",
+                "arg_number": "494",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner TADS Sensor Select Switch, FLIR/TV/DVO"
+            },
+            "CPG_LHG_STORE_UPDATE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_STORE_UPDATE",
+                "device_id": "51",
+                "downSwitch": "3040",
+                "upSwitch": "3039",
+                "arg_number": "495",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner STORE/Update Switch, UPDT/STORE"
+            },
+            "CPG_LHG_FCR_SCAN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_FCR_SCAN",
+                "device_id": "51",
+                "downSwitch": "3042",
+                "upSwitch": "3041",
+                "arg_number": "500",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner FCR Scan Switch, C/S"
+            },
+            "CPG_LHG_CUED_SEARCH": {
+                "type": "PushButton",
+                "msg": "CPG_LHG_CUED_SEARCH",
+                "device_id": "51",
+                "command": "3043",
+                "arg_number": "501",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner CUED Search Button"
+            },
+            "CPG_LHG_LMC": {
+                "type": "PushButton",
+                "msg": "CPG_LHG_LMC",
+                "device_id": "51",
+                "command": "3044",
+                "arg_number": "496",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Linear Motion Compensation Button"
+            },
+            "CPG_LHG_FCR_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_FCR_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3046",
+                "upSwitch": "3045",
+                "arg_number": "498",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner FCR Mode Switch, GTM/ATM"
+            },
+            "CPG_LHG_FCR_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_FCR_L_R",
+                "device_id": "51",
+                "downSwitch": "3048",
+                "upSwitch": "3047",
+                "arg_number": "499",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner FCR Mode Switch, TPM/RMAP"
+            },
+            "CPG_LHG_WPN_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_WPN_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3050",
+                "upSwitch": "3049",
+                "arg_number": "502",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Weapons Action Switch, GUN/ATA"
+            },
+            "CPG_LHG_WPN_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_WPN_L_R",
+                "device_id": "51",
+                "downSwitch": "3052",
+                "upSwitch": "3051",
+                "arg_number": "503",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Weapons Action Switch, RKT/MSL"
+            },
+            "CPG_LHG_CURSOR_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_CURSOR_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3054",
+                "upSwitch": "3053",
+                "arg_number": "487",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Cursor Controller, Up/Down"
+            },
+            "CPG_LHG_CURSOR_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_LHG_CURSOR_L_R",
+                "device_id": "51",
+                "downSwitch": "3056",
+                "upSwitch": "3055",
+                "arg_number": "488",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Cursor Controller, Left/Right"
+            },
+            "CPG_LHG_CURSOR_ENT": {
+                "type": "PushButton",
+                "msg": "CPG_LHG_CURSOR_ENT",
+                "device_id": "51",
+                "command": "3057",
+                "arg_number": "489",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Cursor Controller, Enter"
+            },
+            "CPG_LHG_LR_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_LHG_LR_BTN",
+                "device_id": "51",
+                "command": "3060",
+                "arg_number": "490",
+                "category": "CPG TEDAC Left Handgrip",
+                "description": "Gunner Cursor Display Select (L/R) Button"
+            }
+        },
+        "CPG TEDAC Right Handgrip": {
+            "CPG_RHG_SIGHT_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_SIGHT_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3064",
+                "upSwitch": "3063",
+                "arg_number": "508",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Sight Select Switch, HMD/LINK"
+            },
+            "CPG_RHG_SIGHT_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_SIGHT_L_R",
+                "device_id": "51",
+                "downSwitch": "3066",
+                "upSwitch": "3065",
+                "arg_number": "509",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Sight Select Switch, FCR/TADS"
+            },
+            "CPG_RHG_LASER_TRACK": {
+                "type": "3PosTumb",
+                "msg": "CPG_RHG_LASER_TRACK",
+                "device_id": "51",
+                "command": "3093",
+                "arg_number": "510",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Laser Tracker Mode Switch, A/O/M"
+            },
+            "CPG_RHG_FCR_SCAN_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_FCR_SCAN_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3071",
+                "upSwitch": "3070",
+                "arg_number": "511",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner FCR Scan Size Switch, Z (Zoom)/M (Medium)"
+            },
+            "CPG_RHG_FCR_SCAN_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_FCR_SCAN_L_R",
+                "device_id": "51",
+                "downSwitch": "3073",
+                "upSwitch": "3072",
+                "arg_number": "512",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner FCR Scan Size Switch, N (Narrow)/W (Wide)"
+            },
+            "CPG_RHG_C_SCOPE": {
+                "type": "PushButton",
+                "msg": "CPG_RHG_C_SCOPE",
+                "device_id": "51",
+                "command": "3074",
+                "arg_number": "513",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner C-Scope Button"
+            },
+            "CPG_RHG_FLIR_POL": {
+                "type": "PushButton",
+                "msg": "CPG_RHG_FLIR_POL",
+                "device_id": "51",
+                "command": "3075",
+                "arg_number": "504",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner FLIR Polarity Button"
+            },
+            "CPG_RHG_SIGHT_SLAVE": {
+                "type": "PushButton",
+                "msg": "CPG_RHG_SIGHT_SLAVE",
+                "device_id": "51",
+                "command": "3076",
+                "arg_number": "514",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Sight Slave Button"
+            },
+            "CPG_RHG_DISP_ZOOM": {
+                "type": "PushButton",
+                "msg": "CPG_RHG_DISP_ZOOM",
+                "device_id": "51",
+                "command": "3077",
+                "arg_number": "517",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Display Zoom Button"
+            },
+            "CPG_RHG_SPARE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_SPARE",
+                "device_id": "51",
+                "downSwitch": "3080",
+                "upSwitch": "3079",
+                "arg_number": "519",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Spare Switch, PREVIOUS/NEXT"
+            },
+            "CPG_RHG_HDD_SW": {
+                "type": "PushButton",
+                "msg": "CPG_RHG_HDD_SW",
+                "device_id": "51",
+                "command": "3081",
+                "arg_number": "505",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner HDD/HOD Select Button"
+            },
+            "CPG_RHG_ENTER": {
+                "type": "PushButton",
+                "msg": "CPG_RHG_ENTER",
+                "device_id": "51",
+                "command": "3082",
+                "arg_number": "518",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Cursor Enter Button"
+            },
+            "CPG_RHG_MAN_TRK_UP_DN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_MAN_TRK_UP_DN",
+                "device_id": "51",
+                "downSwitch": "3084",
+                "upSwitch": "3083",
+                "arg_number": "515",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Sight Manual Tracker Controller, Up/Down"
+            },
+            "CPG_RHG_MAN_TRK_L_R": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_RHG_MAN_TRK_L_R",
+                "device_id": "51",
+                "downSwitch": "3086",
+                "upSwitch": "3085",
+                "arg_number": "516",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Sight Manual Tracker Controller, Left/Right"
+            },
+            "CPG_RHG_IAT_POL": {
+                "type": "3PosTumb",
+                "msg": "CPG_RHG_IAT_POL",
+                "device_id": "51",
+                "command": "3094",
+                "arg_number": "507",
+                "category": "CPG TEDAC Right Handgrip",
+                "description": "Gunner Image Auto Tracker Polarity Switch, W/A/B"
+            }
+        },
+        "PLT Video Control Panel": {
+            "PLT_VIDEO_IHADSS_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_VIDEO_IHADSS_BRT",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "278",
+                "limits": "{0, 1}",
+                "category": "PLT Video Control Panel",
+                "description": "Pilot IHADSS BRT Control Knob"
+            },
+            "PLT_VIDEO_IHADSS_CON": {
+                "type": "Potentiometer",
+                "msg": "PLT_VIDEO_IHADSS_CON",
+                "device_id": "3",
+                "command": "3010",
+                "arg_number": "279",
+                "limits": "{0, 1}",
+                "category": "PLT Video Control Panel",
+                "description": "Pilot IHADSS CON Control Knob"
+            },
+            "PLT_VIDEO_SYM_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_VIDEO_SYM_BRT",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "280",
+                "limits": "{0, 1}",
+                "category": "PLT Video Control Panel",
+                "description": "Pilot SYM BRT Control Knob"
+            },
+            "PLT_VIDEO_FLIR_LVL": {
+                "type": "Potentiometer",
+                "msg": "PLT_VIDEO_FLIR_LVL",
+                "device_id": "3",
+                "command": "3008",
+                "arg_number": "282",
+                "limits": "{0, 1}",
+                "category": "PLT Video Control Panel",
+                "description": "Pilot FLIR LVL Control Knob"
+            },
+            "PLT_VIDEO_FLIR_GAIN": {
+                "type": "Potentiometer",
+                "msg": "PLT_VIDEO_FLIR_GAIN",
+                "device_id": "3",
+                "command": "3007",
+                "arg_number": "283",
+                "limits": "{0, 1}",
+                "category": "PLT Video Control Panel",
+                "description": "Pilot FLIR GAIN Control Knob"
+            },
+            "PLT_VIDEO_AUTO_CON": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_VIDEO_AUTO_CON",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "281",
+                "category": "PLT Video Control Panel",
+                "description": "Pilot Automatic Contrast Mode Switch, ACM/OFF"
+            }
+        },
+        "PLT NVS Panel": {
+            "PLT_NVS_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_NVS_MODE",
+                "device_id": "3",
+                "command": "3005",
+                "arg_number": "309",
+                "category": "PLT NVS Panel",
+                "description": "Pilot NVS MODE Switch, FIXED/NORM/OFF"
+            }
+        },
+        "CPG NVS Panel": {
+            "CPG_NVS_MODE": {
+                "type": "3PosTumb",
+                "msg": "CPG_NVS_MODE",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "363",
+                "category": "CPG NVS Panel",
+                "description": "Gunner NVS MODE Switch, FIXED/NORM/OFF"
+            }
+        },
+        "PLT Generator Panel": {
+            "PLT_GEN_RESET": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_GEN_RESET",
+                "device_id": "3",
+                "downSwitch": "3002",
+                "upSwitch": "3001",
+                "arg_number": "355",
+                "category": "PLT Generator Panel",
+                "description": "Pilot Generator Reset Switch, GEN 1/GEN 2"
+            },
+            "PLT_CHK_OSPD_ENG_A": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CHK_OSPD_ENG_A",
+                "device_id": "6",
+                "downSwitch": "3008",
+                "upSwitch": "3007",
+                "arg_number": "353",
+                "category": "PLT Generator Panel",
+                "description": "Pilot CKT A Check Overspeed Test Switch, ENG 2/ENG 1"
+            },
+            "PLT_CHK_OSPD_ENG_B": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CHK_OSPD_ENG_B",
+                "device_id": "6",
+                "downSwitch": "3010",
+                "upSwitch": "3009",
+                "arg_number": "354",
+                "category": "PLT Generator Panel",
+                "description": "Pilot CKT B Check Overspeed Test Switch, ENG 2/ENG 1"
+            }
+        },
+        "PLT Armament Panel": {
+            "PLT_MASTER_ARM_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_MASTER_ARM_BTN",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "306",
+                "category": "PLT Armament Panel",
+                "description": "Pilot A/S Pushbutton, ARM/SAFE"
+            },
+            "PLT_GROUND_OVERRIDE_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_GROUND_OVERRIDE_BTN",
+                "device_id": "3",
+                "command": "3013",
+                "arg_number": "307",
+                "category": "PLT Armament Panel",
+                "description": "Pilot GND ORIDE Pushbutton, ON/OFF"
+            }
+        },
+        "CPG Armament Panel": {
+            "CPG_MASTER_ARM_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_MASTER_ARM_BTN",
+                "device_id": "3",
+                "command": "3016",
+                "arg_number": "293",
+                "category": "CPG Armament Panel",
+                "description": "Gunner A/S Pushbutton, ARM/SAFE"
+            },
+            "CPG_GROUND_OVERRIDE_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_GROUND_OVERRIDE_BTN",
+                "device_id": "3",
+                "command": "3015",
+                "arg_number": "294",
+                "category": "CPG Armament Panel",
+                "description": "Gunner GND ORIDE Pushbutton, ON/OFF"
+            }
+        },
+        "PLT Left Console": {
+            "PLT_JETT_STORE_LO": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_STORE_LO",
+                "device_id": "75",
+                "command": "3001",
+                "arg_number": "319",
+                "category": "PLT Left Console",
+                "description": "Pilot L OUTBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "PLT_JETT_STORE_LI": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_STORE_LI",
+                "device_id": "75",
+                "command": "3002",
+                "arg_number": "320",
+                "category": "PLT Left Console",
+                "description": "Pilot L INBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "PLT_JETT_STORE_RI": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_STORE_RI",
+                "device_id": "75",
+                "command": "3003",
+                "arg_number": "321",
+                "category": "PLT Left Console",
+                "description": "Pilot R INBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "PLT_JETT_STORE_RO": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_STORE_RO",
+                "device_id": "75",
+                "command": "3004",
+                "arg_number": "322",
+                "category": "PLT Left Console",
+                "description": "Pilot R OUTBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "PLT_JETT_STORE_LW": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_STORE_LW",
+                "device_id": "75",
+                "command": "3005",
+                "arg_number": "323",
+                "category": "PLT Left Console",
+                "description": "Pilot L TIP Station Select Pushbutton, ARM/SAFE"
+            },
+            "PLT_JETT_STORE_RW": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_STORE_RW",
+                "device_id": "75",
+                "command": "3006",
+                "arg_number": "325",
+                "category": "PLT Left Console",
+                "description": "Pilot R TIP Station Select Pushbutton, ARM/SAFE"
+            },
+            "PLT_JETT_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_JETT_BTN",
+                "device_id": "75",
+                "command": "3007",
+                "arg_number": "324",
+                "category": "PLT Left Console",
+                "description": "Pilot JETT Pushbutton"
+            },
+            "PLT_EMERG_HYD_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_EMERG_HYD_BTN",
+                "device_id": "5",
+                "command": "3002",
+                "arg_number": "313",
+                "category": "PLT Left Console",
+                "description": "Pilot EMERG HYD Pushbutton, ON/OFF"
+            },
+            "PLT_T_WHEEL_UNLOCK_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_T_WHEEL_UNLOCK_BTN",
+                "device_id": "5",
+                "command": "3003",
+                "arg_number": "308",
+                "category": "PLT Left Console",
+                "description": "Pilot TAIL WHEEL Pushbutton, LOCK/UNLOCK"
+            },
+            "PLT_ROTOR_BRK": {
+                "type": "3PosTumb",
+                "msg": "PLT_ROTOR_BRK",
+                "device_id": "5",
+                "command": "3001",
+                "arg_number": "314",
+                "category": "PLT Left Console",
+                "description": "Pilot Rotor Brake Switch, OFF/BRK/LOCK"
+            },
+            "PLT_APU_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_APU_BTN",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "400",
+                "category": "PLT Left Console",
+                "description": "Pilot APU Pushbutton"
+            },
+            "PLT_APU_BTN_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_APU_BTN_CVR",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "4001",
+                "category": "PLT Left Console",
+                "description": "Pilot APU Pushbutton Cover, OPEN/CLOSE"
+            },
+            "PLT_PW_LVR_FRIC": {
+                "type": "Potentiometer",
+                "msg": "PLT_PW_LVR_FRIC",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "633",
+                "limits": "{0, 1}",
+                "category": "PLT Left Console",
+                "description": "Pilot Power Lever Friction Adjustment Lever"
+            },
+            "PLT_ENG1_START": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_ENG1_START",
+                "device_id": "6",
+                "downSwitch": "3004",
+                "upSwitch": "3003",
+                "arg_number": "317",
+                "category": "PLT Left Console",
+                "description": "Pilot No.1 Engine Start Switch, IGN ORIDE/START"
+            },
+            "PLT_ENG2_START": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_ENG2_START",
+                "device_id": "6",
+                "downSwitch": "3006",
+                "upSwitch": "3005",
+                "arg_number": "318",
+                "category": "PLT Left Console",
+                "description": "Pilot No.2 Engine Start Switch, IGN ORIDE/START"
+            }
+        },
+        "CPG Left Console": {
+            "CPG_JETT_STORE_LO": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_STORE_LO",
+                "device_id": "75",
+                "command": "3001",
+                "arg_number": "368",
+                "category": "CPG Left Console",
+                "description": "Gunner L OUTBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "CPG_JETT_STORE_LI": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_STORE_LI",
+                "device_id": "75",
+                "command": "3002",
+                "arg_number": "369",
+                "category": "CPG Left Console",
+                "description": "Gunner L INBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "CPG_JETT_STORE_RI": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_STORE_RI",
+                "device_id": "75",
+                "command": "3003",
+                "arg_number": "370",
+                "category": "CPG Left Console",
+                "description": "Gunner R INBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "CPG_JETT_STORE_RO": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_STORE_RO",
+                "device_id": "75",
+                "command": "3004",
+                "arg_number": "371",
+                "category": "CPG Left Console",
+                "description": "Gunner R OUTBD Station Select Pushbutton, ARM/SAFE"
+            },
+            "CPG_JETT_STORE_LW": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_STORE_LW",
+                "device_id": "75",
+                "command": "3005",
+                "arg_number": "372",
+                "category": "CPG Left Console",
+                "description": "Gunner L TIP Station Select Pushbutton, ARM/SAFE"
+            },
+            "CPG_JETT_STORE_RW": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_STORE_RW",
+                "device_id": "75",
+                "command": "3006",
+                "arg_number": "374",
+                "category": "CPG Left Console",
+                "description": "Gunner R TIP Station Select Pushbutton, ARM/SAFE"
+            },
+            "CPG_JETT_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_JETT_BTN",
+                "device_id": "75",
+                "command": "3007",
+                "arg_number": "373",
+                "category": "CPG Left Console",
+                "description": "Gunner JETT Pushbutton"
+            },
+            "CPG_EMERG_HYD_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_EMERG_HYD_BTN",
+                "device_id": "5",
+                "command": "3004",
+                "arg_number": "361",
+                "category": "CPG Left Console",
+                "description": "Gunner EMERG HYD Pushbutton, ON/OFF"
+            },
+            "CPG_T_WHEEL_UNLOCK_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_T_WHEEL_UNLOCK_BTN",
+                "device_id": "5",
+                "command": "3005",
+                "arg_number": "362",
+                "category": "CPG Left Console",
+                "description": "Gunner TAIL WHEEL Pushbutton, LOCK/UNLOCK"
+            }
+        },
+        "PLT Fire Control Panel": {
+            "PLT_FIRE_ENG1_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_ENG1_BTN",
+                "device_id": "6",
+                "command": "3011",
+                "arg_number": "295",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot ENG 1 Fire Pushbutton"
+            },
+            "PLT_FIRE_ENG1_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_ENG1_CVR",
+                "device_id": "6",
+                "command": "3012",
+                "arg_number": "296",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot ENG 1 Fire Pushbutton Cover, OPEN/CLOSE"
+            },
+            "PLT_FIRE_APU_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_APU_BTN",
+                "device_id": "6",
+                "command": "3015",
+                "arg_number": "297",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot APU Fire Pushbutton"
+            },
+            "PLT_FIRE_APU_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_APU_CVR",
+                "device_id": "6",
+                "command": "3016",
+                "arg_number": "298",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot APU Fire Pushbutton Cover, OPEN/CLOSE"
+            },
+            "PLT_FIRE_ENG2_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_ENG2_BTN",
+                "device_id": "6",
+                "command": "3013",
+                "arg_number": "299",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot ENG 2 Fire Pushbutton"
+            },
+            "PLT_FIRE_ENG2_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_ENG2_CVR",
+                "device_id": "6",
+                "command": "3014",
+                "arg_number": "300",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot ENG 2 Fire Pushbutton Cover, OPEN/CLOSE"
+            },
+            "PLT_FIRE_PRIME_EXT": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_PRIME_EXT",
+                "device_id": "6",
+                "command": "3017",
+                "arg_number": "301",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot Primary Fire Extinguisher Discharge Pushbutton"
+            },
+            "PLT_FIRE_RES_EXT": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_RES_EXT",
+                "device_id": "6",
+                "command": "3018",
+                "arg_number": "303",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot Reserve Fire Extinguisher Discharge Pushbutton"
+            },
+            "PLT_FIRE_DETECT_TEST": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_FIRE_DETECT_TEST",
+                "device_id": "6",
+                "downSwitch": "3019",
+                "upSwitch": "3020",
+                "arg_number": "302",
+                "category": "PLT Fire Control Panel",
+                "description": "Pilot Fire Detection Circuit Test Switch"
+            }
+        },
+        "CPG Fire Control Panel": {
+            "CPG_FIRE_ENG1_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_FIRE_ENG1_BTN",
+                "device_id": "6",
+                "command": "3021",
+                "arg_number": "284",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner ENG 1 Fire Pushbutton"
+            },
+            "CPG_FIRE_ENG1_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_FIRE_ENG1_CVR",
+                "device_id": "6",
+                "command": "3022",
+                "arg_number": "285",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner ENG 1 Fire Pushbutton Cover, OPEN/CLOSE"
+            },
+            "CPG_FIRE_APU_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_FIRE_APU_BTN",
+                "device_id": "6",
+                "command": "3025",
+                "arg_number": "286",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner APU Fire Pushbutton"
+            },
+            "CPG_FIRE_APU_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_FIRE_APU_CVR",
+                "device_id": "6",
+                "command": "3026",
+                "arg_number": "287",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner APU Fire Pushbutton Cover, OPEN/CLOSE"
+            },
+            "CPG_FIRE_ENG2_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_FIRE_ENG2_BTN",
+                "device_id": "6",
+                "command": "3023",
+                "arg_number": "288",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner ENG 2 Fire Pushbutton"
+            },
+            "CPG_FIRE_ENG2_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_FIRE_ENG2_CVR",
+                "device_id": "6",
+                "command": "3024",
+                "arg_number": "289",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner ENG 2 Fire Pushbutton Cover, OPEN/CLOSE"
+            },
+            "CPG_FIRE_PRIME_EXT": {
+                "type": "PushButton",
+                "msg": "CPG_FIRE_PRIME_EXT",
+                "device_id": "6",
+                "command": "3027",
+                "arg_number": "290",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner Primary Fire Extinguisher Discharge Pushbutton"
+            },
+            "CPG_FIRE_RES_EXT": {
+                "type": "PushButton",
+                "msg": "CPG_FIRE_RES_EXT",
+                "device_id": "6",
+                "command": "3028",
+                "arg_number": "292",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner Reserve Fire Extinguisher Discharge Pushbutton"
+            },
+            "CPG_FIRE_DETECT_TEST": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_FIRE_DETECT_TEST",
+                "device_id": "6",
+                "downSwitch": "3029",
+                "upSwitch": "3030",
+                "arg_number": "291",
+                "category": "CPG Fire Control Panel",
+                "description": "Gunner Fire Detection Circuit Test Switch"
+            }
+        },
+        "PLT Cockpit": {
+            "PLT_PARK_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PARK_BRAKE",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "634",
+                "category": "PLT Cockpit",
+                "description": "Pilot Parking Brake Handle, Pull/Stow"
+            },
+            "PLT_CANOPY": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CANOPY",
+                "device_id": "9",
+                "command": "3005",
+                "arg_number": "796",
+                "category": "PLT Cockpit",
+                "description": "Pilot Canopy, OPEN/CLOSE"
+            },
+            "PLT_M4_TRIGGER": {
+                "type": "PushButton",
+                "msg": "PLT_M4_TRIGGER",
+                "device_id": "9",
+                "command": "3009",
+                "arg_number": "827",
+                "category": "PLT Cockpit",
+                "description": "Pilot M4 Trigger"
+            },
+            "PLT_M4_SAVE": {
+                "type": "3PosTumb",
+                "msg": "PLT_M4_SAVE",
+                "device_id": "9",
+                "command": "3007",
+                "arg_number": "828",
+                "category": "PLT Cockpit",
+                "description": "Pilot M4 Safety"
+            },
+            "PLT_DEFOG_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_DEFOG_BTN",
+                "device_id": "9",
+                "command": "3001",
+                "arg_number": "356",
+                "category": "PLT Cockpit",
+                "description": "Pilot Defog Button"
+            },
+            "PLT_ENG_L_PW_LVR": {
+                "type": "Potentiometer",
+                "msg": "PLT_ENG_L_PW_LVR",
+                "device_id": "6",
+                "command": "3031",
+                "arg_number": "398",
+                "limits": "{0, 1}",
+                "category": "PLT Cockpit",
+                "description": "Pilot Power Lever Smoothly (Left)"
+            },
+            "PLT_ENG_R_PW_LVR": {
+                "type": "Potentiometer",
+                "msg": "PLT_ENG_R_PW_LVR",
+                "device_id": "6",
+                "command": "3032",
+                "arg_number": "399",
+                "limits": "{0, 1}",
+                "category": "PLT Cockpit",
+                "description": "Pilot Power Lever Smoothly (Right)"
+            },
+            "PLT_MASTER_IGN_SW": {
+                "type": "Tumb",
+                "msg": "PLT_MASTER_IGN_SW",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "315",
+                "step": "0.5",
+                "limits": "{0, 1}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PLT Cockpit",
+                "description": "Pilot Master Ignition Switch, OFF/BATT/EXT PWR"
+            },
+            "PLT_L_SUNVISOR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_L_SUNVISOR",
+                "device_id": "9",
+                "command": "3017",
+                "arg_number": "849",
+                "category": "PLT Cockpit",
+                "description": "Pilot Left Sunvisor"
+            },
+            "PLT_R_SUNVISOR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R_SUNVISOR",
+                "device_id": "9",
+                "command": "3018",
+                "arg_number": "850",
+                "category": "PLT Cockpit",
+                "description": "Pilot Right Sunvisor"
+            }
+        },
+        "CPG Cockpit": {
+            "CPG_CANOPY": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_CANOPY",
+                "device_id": "9",
+                "command": "3006",
+                "arg_number": "799",
+                "category": "CPG Cockpit",
+                "description": "Gunner Canopy, OPEN/CLOSE"
+            },
+            "CPG_M4_TRIGGER": {
+                "type": "PushButton",
+                "msg": "CPG_M4_TRIGGER",
+                "device_id": "9",
+                "command": "3010",
+                "arg_number": "825",
+                "category": "CPG Cockpit",
+                "description": "Gunner M4 Trigger"
+            },
+            "CPG_M4_SAVE": {
+                "type": "3PosTumb",
+                "msg": "CPG_M4_SAVE",
+                "device_id": "9",
+                "command": "3008",
+                "arg_number": "826",
+                "category": "CPG Cockpit",
+                "description": "Gunner M4 Safety"
+            },
+            "CPG_DEFOG_BTN": {
+                "type": "PushButton",
+                "msg": "CPG_DEFOG_BTN",
+                "device_id": "9",
+                "command": "3003",
+                "arg_number": "394",
+                "category": "CPG Cockpit",
+                "description": "Gunner Defog Button"
+            },
+            "CPG_ENG_L_PW_LVR": {
+                "type": "Potentiometer",
+                "msg": "CPG_ENG_L_PW_LVR",
+                "device_id": "6",
+                "command": "3031",
+                "arg_number": "398",
+                "limits": "{0, 1}",
+                "category": "CPG Cockpit",
+                "description": "Gunner Power Lever Smoothly (Left)"
+            },
+            "CPG_ENG_R_PW_LVR": {
+                "type": "Potentiometer",
+                "msg": "CPG_ENG_R_PW_LVR",
+                "device_id": "6",
+                "command": "3032",
+                "arg_number": "399",
+                "limits": "{0, 1}",
+                "category": "CPG Cockpit",
+                "description": "Gunner Power Lever Smoothly (Right)"
+            },
+            "CPG_STICK_FOLD": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_STICK_FOLD",
+                "device_id": "87",
+                "command": "3007",
+                "arg_number": "809",
+                "category": "CPG Cockpit",
+                "description": "Gunner Stick Folding, UP/DOWN"
+            },
+            "CPG_PROC_SEL_SW": {
+                "type": "3PosTumb",
+                "msg": "CPG_PROC_SEL_SW",
+                "device_id": "3",
+                "command": "3004",
+                "arg_number": "397",
+                "category": "CPG Cockpit",
+                "description": "Gunner Processor Select Switch, SP 1/AUTO/SP 2"
+            }
+        },
+        "PLT CMWS": {
+            "PLT_CMWS_PW": {
+                "type": "Tumb",
+                "msg": "PLT_CMWS_PW",
+                "device_id": "80",
+                "command": "3001",
+                "arg_number": "610",
+                "step": "1.0",
+                "limits": "{-1, 0}",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS PWR Switch, OFF/ON"
+            },
+            "PLT_CMWS_PW_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_CMWS_PW_TEST",
+                "device_id": "80",
+                "command": "3002",
+                "arg_number": "610",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS PWR Switch, TEST"
+            },
+            "PLT_CMWS_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_CMWS_VOL",
+                "device_id": "80",
+                "command": "3003",
+                "arg_number": "611",
+                "limits": "{0, 1}",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Audio Volume Knob"
+            },
+            "PLT_CMWS_LAMP": {
+                "type": "Potentiometer",
+                "msg": "PLT_CMWS_LAMP",
+                "device_id": "80",
+                "command": "3004",
+                "arg_number": "612",
+                "limits": "{0, 1}",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Lamp Knob"
+            },
+            "PLT_CMWS_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CMWS_ARM",
+                "device_id": "80",
+                "command": "3005",
+                "arg_number": "614",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Flare Squibs Switch, ARM/SAFE"
+            },
+            "PLT_CMWS_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CMWS_MODE",
+                "device_id": "80",
+                "command": "3006",
+                "arg_number": "615",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Mode Switch, CMWS/NAV"
+            },
+            "PLT_CMWS_BYPASS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CMWS_BYPASS",
+                "device_id": "80",
+                "command": "3007",
+                "arg_number": "616",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Operation Switch, BYPASS/AUTO"
+            },
+            "PLT_CMWS_JETT_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CMWS_JETT_CVR",
+                "device_id": "80",
+                "command": "3008",
+                "arg_number": "617",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Flare Jettison Switch Cover, OPEN/CLOSE"
+            },
+            "PLT_CMWS_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CMWS_JETT",
+                "device_id": "80",
+                "command": "3009",
+                "arg_number": "618",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS Flare Jettison Switch"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "AH-64D",
+        "date": "Jul 04 2023, 16:59 PM -0700",
+        "version": null
+    }
+}
