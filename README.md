@@ -8,6 +8,7 @@ Currently supported aircraft:
 * AH-64D
 * F-15E
 * F-16C
+* F-86F
 * F/A-18C
 * Ka-50
 * Mi-8MT
@@ -60,8 +61,8 @@ Supported control types:
 
 After selecting an aircraft type, command group and command, the command details are displayed and a command value can be set.
 The range pulldown list will display a guess for the values to use for each command. Choose a value from the list or enter one
-manually in the Setting box. Click 'Add' to add the command to the profile.  Profiles can be saved or exported/imported using
-the Profile menu.
+manually in the Setting box. Click `Add` to add the command to the profile.  To use `Insert`, select a command from the profile,
+select a command from the command selector, then click `Insert`.  Profiles can be saved or exported/imported using the Profile menu.
 
 #### Command values entry
 
@@ -113,12 +114,12 @@ Similar to Rotary, this control accepts values up to 65535.
 #### Entering the commands into your aircraft
 
 An optional hotkey can be assigned for sending commands to the aircraft.  This is done during initial setup of the 
-application.  Example formats for Python hotkeys are Ctrl+T, Ctrl+Alt+S or ctrl+alt+s.  Changing the hotkey requires
+application.  Example formats for Python hotkeys are `Ctrl+T`, `Ctrl+Alt+S` or `ctrl+alt+s`.  Changing the hotkey requires
 a restart of the program.
 
 #### Profile saving
 
-You may save your current list of waypoints as a profile and then load it later. Selecting "Save Profile" with a profile
+You may save your current list of waypoints as a profile and then load it later. Selecting `Save Profile` with a profile
 active will overwrite it with the current list.
 
 #### Exporting to encoded string
@@ -154,4 +155,4 @@ DCS ACE is released under the GNU General Public License v3.0.  The executable i
 DCS-BIOS is released under a slightly modified Simple Public License 2.0 (think "a version of the GPL readable by 
 mere mortals"). Please see DCS-BIOS-License.txt.
 
-DCS-BIOS: https://github.com/DCSFlightpanels/dcs-bios
+DCS-BIOS: https://github.com/DCS-Skunkworks/dcs-bios
