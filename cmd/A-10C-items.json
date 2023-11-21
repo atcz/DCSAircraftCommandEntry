@@ -4535,7 +4535,7 @@
                 "arg_number": "558",
                 "step": "0.1",
                 "limits": "{0, 0.3}",
-                "output_map": "nil",
+                "output_map": "{\"00\", \"25\", \"50\", \"75\"}",
                 "cycle": "False",
                 "category": "ARC-210 Radio",
                 "description": "ARC-210 25KHz Selector"
@@ -4544,7 +4544,7 @@
     },
     "id": {
         "aircraft": "A-10C",
-        "date": "Jul 04 2023, 16:59 PM -0700",
-        "version": null
+        "date": "Nov 21 2023, 10:53 AM -0800",
+        "version": "v0.7.49"
     }
 }

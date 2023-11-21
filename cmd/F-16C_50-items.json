@@ -2751,8 +2751,8 @@
         }
     },
     "id": {
-        "aircraft": "F-16C",
-        "date": "Jul 04 2023, 17:00 PM -0700",
-        "version": null
+        "aircraft": "F-16C_50",
+        "date": "Nov 21 2023, 10:53 AM -0800",
+        "version": "v0.7.49"
     }
 }
