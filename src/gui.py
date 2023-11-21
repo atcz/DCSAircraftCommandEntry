@@ -192,9 +192,10 @@ class GUI:
         ]
 
         buttonslist = [
-            sg.Button('Move up', size=(8, 1), key='Up', pad=((12,6),3)),
-            sg.Button('Move down', size=(8, 1), key='Down'),
-            sg.Button('Remove', size=(8, 1)),
+            sg.Button('Up', size=(4, 1), key='Up', pad=((12,6),3)),
+            sg.Button('Down', size=(4, 1), key='Down'),
+            sg.Button('Insert', size=(7,1), key='Insert'),
+            sg.Button('Remove', size=(7, 1)),
             sg.Button('Pause', size=(8, 1), pad=((28,6),3)),
             sg.Button('Update', size=(8, 1)),
             sg.Button('Add', size=(8, 1)),
@@ -449,6 +450,33 @@ class GUI:
 
         return True
 
+    def insert_command(self, name, value=None):
+        reorder = list()
+        try:
+            wp = self.find_selected_command()
+            wp_number = wp.as_dict['number']
+            wp = Command(device_type=self.values.get('type'),
+                         msg=self.values.get('name'),
+                         step=self.values.get('step'),
+                         limitLow=self.values.get('min'),
+                         limitHigh=self.values.get('max'),
+                         description=self.command_detail[name].get('description'),
+                         value=self.values.get('setValue'),
+                         number=len(self.profile.commands_of_type())+1)
+            for w in self.profile.commands:
+                if w.number == wp_number:
+                    reorder.append(wp)
+                reorder.append(w)
+            self.profile.commands = reorder
+            self.update_profile_commands()
+        except (KeyError, ValueError):
+            self.winpos = self.window.CurrentLocation()
+            psize = (273, 101)
+            pposition = self.calculate_popup_position(psize)
+            sg.Popup("Error: missing data or invalid data format.", location=pposition)
+
+        return True
+
     def export_to_string(self):
         dump = str(self.profile)
         encoded = str_zip(dump)
@@ -669,6 +697,19 @@ class GUI:
                             command.step=self.values.get('step')
                             command.limitLow=self.values.get('min')
                             command.limitHigh=self.values.get('max')
+
+                elif event == "Insert":
+                    if self.values['activesList']:
+                        name = self.values.get('name')
+                        try:
+                            value = self.values.get('setValue') and float(self.values.get('setValue'))
+                        except ValueError:
+                            self.winpos = self.window.CurrentLocation()
+                            psize = (264, 133)
+                            pposition = self.calculate_popup_position(psize)
+                            sg.Popup("Error: missing data or invalid data format.", location=pposition)
+                        else:
+                            self.insert_command(name, value)
 
                 elif event == "Remove":
                     if self.values['activesList']:
