@@ -395,8 +395,8 @@ class GUI:
     def filter_profile_dropdown(self):
         text = self.values["profileSelector"]
         self.window.Element("profileSelector").Update\
-            (values=[""] + sorted(filter(lambda name: text.lower() in name, Profile.list_all())),
-             set_to_index=0)
+            (values=[""] + sorted([profile.name for profile in Profile.list_all()
+             if text.lower() in profile.name.lower()]), set_to_index=0)
 
     def move_command_up(self):
         reorder = list()
