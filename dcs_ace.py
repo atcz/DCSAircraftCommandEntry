@@ -2,7 +2,7 @@
 *
 * dcs_ace.py: DCS Aircraft Command Entry                                    *
 *                                                                           *
-* Copyright (C) 2023 Atcz                                                   *
+* Copyright (C) 2024 Atcz                                                   *
 *                                                                           *
 * This program is free software: you can redistribute it and/or modify it   *
 * under the terms of the GNU General Public License as published by the     *
@@ -29,7 +29,7 @@ import logging
 from pyproj import datadir, _datadir
 
 
-version = "1.0.0b1"
+version = "1.0.0b3"
 
 
 def main():
