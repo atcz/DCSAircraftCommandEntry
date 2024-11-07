@@ -2,7 +2,7 @@
 *
 * gui.py: DCS Aircraft Command Entry - Main GUI Module                      *
 *                                                                           *
-* Copyright (C) 2023 Atcz                                                   *
+* Copyright (C) 2024 Atcz                                                   *
 *                                                                           *
 * This program is free software: you can redistribute it and/or modify it   *
 * under the terms of the GNU General Public License as published by the     *
@@ -299,13 +299,13 @@ class GUI:
             elif dev_type in ("FixedStepInput", "FixedStepTumb"):
                 #get rel_args
                 self.logger.info(f"Getting rel_args {item['rel_args']}")
-                match = re.match(r'{(\s*-?\d+\.?\d*),\s(\s*-?\d+\.?\d*)}', item['rel_args'])
+                match = re.match(r'{\s*(-?\d+\.?\d*),\s*(-?\d+\.?\d*)\s*}', item['rel_args'])
                 val_min = match.group(1)
                 val_max = match.group(2)
             else:
                 #look for limits
                 try:
-                    match = re.match(r'{(\s*-?\d+\.?\d*),\s(\s*-?\d+\.?\d*)}', item['limits'])
+                    match = re.match(r'{\s*(-?\d+\.?\d*),\s*(-?\d+\.?\d*)\s*}', item['limits'])
                     val_min = match.group(1)
                     val_max = match.group(2)
                 except:
