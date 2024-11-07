@@ -2,7 +2,7 @@
 *
 * first_setup.py: DCS Aircraft Command Entry - Program Settings Module      *
 *                                                                           *
-* Copyright (C) 2023 Atcz                                                   *
+* Copyright (C) 2024 Atcz                                                   *
 *                                                                           *
 * This program is free software: you can redistribute it and/or modify it   *
 * under the terms of the GNU General Public License as published by the     *
@@ -29,7 +29,7 @@ import tempfile
 import requests
 import zipfile
 
-DCS_BIOS_VERSION = '0.7.49'
+DCS_BIOS_VERSION = '0.8.0'
 DCS_BIOS_URL = "https://github.com/DCS-Skunkworks/dcs-bios/releases/download/v{}/DCS-BIOS_{}.zip"
 
 logger = get_logger(__name__)
