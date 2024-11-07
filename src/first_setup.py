@@ -23,7 +23,7 @@ from configparser import ConfigParser
 from shutil import copytree, rmtree
 from src.logger import get_logger
 from pathlib import Path
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 import os
 import tempfile
 import requests

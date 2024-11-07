@@ -31,7 +31,7 @@ import json
 import base64
 from packaging import version
 import pyperclip
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 import re
 import winsound
 import zlib
