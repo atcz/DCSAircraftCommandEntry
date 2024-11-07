@@ -800,7 +800,7 @@
                 "device_id": "7",
                 "command": "3015",
                 "arg_number": "230",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Overhead Panel",
                 "description": "Overhead Console Panel Lights Brightness"
             },
@@ -810,7 +810,7 @@
                 "device_id": "7",
                 "command": "3016",
                 "arg_number": "231",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Overhead Panel",
                 "description": "Pedestal Lights Brightness"
             },
@@ -820,7 +820,7 @@
                 "device_id": "7",
                 "command": "3017",
                 "arg_number": "232",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Overhead Panel",
                 "description": "Secondary Instrument Lights Brightness"
             },
@@ -830,7 +830,7 @@
                 "device_id": "7",
                 "command": "3018",
                 "arg_number": "233",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Overhead Panel",
                 "description": "Engine Instrument Lights Brightness"
             },
@@ -840,7 +840,7 @@
                 "device_id": "7",
                 "command": "3019",
                 "arg_number": "234",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Overhead Panel",
                 "description": "Copilot Instrument Lights Brightness"
             },
@@ -850,7 +850,7 @@
                 "device_id": "7",
                 "command": "3020",
                 "arg_number": "235",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Overhead Panel",
                 "description": "Pilot Instrument Lights Brightness"
             },
@@ -890,8 +890,8 @@
                 "command": "3001",
                 "arg_number": "229",
                 "step": "0.1",
-                "limits": "{0, 0.4}",
-                "rel_args": "{-1, 1}",
+                "limits": "{ 0, 0.4 }",
+                "rel_args": "{ -1, 1 }",
                 "output_map": "nil",
                 "category": "Overhead Panel",
                 "description": "Wiper Speed PARK - STOP - SLOW - MED - HIGH"
@@ -969,8 +969,8 @@
                 "command": "3007",
                 "arg_number": "58",
                 "step": "0.1",
-                "limits": "{0, 0.3}",
-                "rel_args": "{1, -1}",
+                "limits": "{ 0, 0.3 }",
+                "rel_args": "{ 1, -1 }",
                 "output_map": "nil",
                 "category": "IFF",
                 "description": "IFF Code: ZERO - B - A - (HOLD)"
@@ -1002,7 +1002,7 @@
                 "command": "3010",
                 "arg_number": "61",
                 "step": "1.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1015,7 +1015,7 @@
                 "command": "3011",
                 "arg_number": "62",
                 "step": "1.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1028,7 +1028,7 @@
                 "command": "3012",
                 "arg_number": "63",
                 "step": "1.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1041,7 +1041,7 @@
                 "command": "3013",
                 "arg_number": "64",
                 "step": "1.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1054,7 +1054,7 @@
                 "command": "3014",
                 "arg_number": "65",
                 "step": "1.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1067,7 +1067,7 @@
                 "command": "3015",
                 "arg_number": "66",
                 "step": "1.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1089,7 +1089,7 @@
                 "command": "3001",
                 "arg_number": "68",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1102,7 +1102,7 @@
                 "command": "3002",
                 "arg_number": "69",
                 "step": "0.1",
-                "limits": "{0, 0.3}",
+                "limits": "{ 0, 0.3 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1115,7 +1115,7 @@
                 "command": "3003",
                 "arg_number": "70",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1128,7 +1128,7 @@
                 "command": "3004",
                 "arg_number": "71",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1141,7 +1141,7 @@
                 "command": "3005",
                 "arg_number": "72",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1154,7 +1154,7 @@
                 "command": "3006",
                 "arg_number": "73",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "IFF",
@@ -1175,7 +1175,7 @@
                 "device_id": "17",
                 "command": "3020",
                 "arg_number": "78",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "IFF",
                 "description": "IFF Reply Dim"
             },
@@ -1194,14 +1194,14 @@
                 "device_id": "17",
                 "command": "3021",
                 "arg_number": "79",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "IFF",
                 "description": "TEST Reply Dim"
             }
         },
         "Clock": {
             "CLOCK_ADJUST_PULL": {
-                "type": "ToggleSwitchToggleOnly",
+                "type": "ToggleSwitch",
                 "msg": "CLOCK_ADJUST_PULL",
                 "device_id": "30",
                 "command": "3001",
@@ -1226,7 +1226,7 @@
                 "device_id": "3",
                 "command": "3024",
                 "arg_number": "250",
-                "limits": "{-1.0, 0.4}",
+                "limits": "{ -1.0, 0.4 }",
                 "category": "Collective",
                 "description": "Throttle Axis"
             },
@@ -1284,7 +1284,7 @@
                 "device_id": "3",
                 "command": "3030",
                 "arg_number": "250",
-                "limits": "{-1.0, 0.4}",
+                "limits": "{ -1.0, 0.4 }",
                 "category": "Collective",
                 "description": "Copilot Throttle Axis"
             },
@@ -1423,7 +1423,7 @@
                 "device_id": "6",
                 "command": "3002",
                 "arg_number": "146",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Dash",
                 "description": "Copilot ADI Pitch Trim Knob"
             },
@@ -1433,7 +1433,7 @@
                 "device_id": "5",
                 "command": "3001",
                 "arg_number": "145",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Front Dash",
                 "description": "ADI Roll Trim Knob"
             },
@@ -1443,7 +1443,7 @@
                 "device_id": "5",
                 "command": "3002",
                 "arg_number": "144",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Front Dash",
                 "description": "ADI Pitch Trim Knob"
             },
@@ -1471,7 +1471,7 @@
                 "device_id": "26",
                 "command": "3001",
                 "arg_number": "57",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Dash",
                 "description": "Marker Beacon Volume"
             },
@@ -1574,7 +1574,7 @@
                 "command": "3001",
                 "arg_number": "5",
                 "step": "0.15",
-                "limits": "{0.85, 1.0}",
+                "limits": "{ 0.85, 1.0 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "VHF COMM Radio",
@@ -1586,7 +1586,7 @@
                 "device_id": "20",
                 "command": "3003",
                 "arg_number": "9",
-                "limits": "{0, 0.65}",
+                "limits": "{ 0, 0.65 }",
                 "category": "VHF COMM Radio",
                 "description": "Volume Control (step size less than 8192 may not work)"
             },
@@ -1597,8 +1597,8 @@
                 "command": "3004",
                 "arg_number": "7",
                 "step": "0.1",
-                "limits": "{0, 1}",
-                "rel_args": "{-0.1, 0.1}",
+                "limits": "{ 0, 1 }",
+                "rel_args": "{ -0.1, 0.1 }",
                 "output_map": "nil",
                 "category": "VHF COMM Radio",
                 "description": "VHF MHz Selector"
@@ -1610,8 +1610,8 @@
                 "command": "3005",
                 "arg_number": "8",
                 "step": "0.1",
-                "limits": "{0, 1}",
-                "rel_args": "{-0.1, 0.1}",
+                "limits": "{ 0, 1 }",
+                "rel_args": "{ -0.1, 0.1 }",
                 "output_map": "nil",
                 "category": "VHF COMM Radio",
                 "description": "VHF KHz Selector"
@@ -1624,7 +1624,7 @@
                 "device_id": "21",
                 "command": "3007",
                 "arg_number": "29",
-                "limits": "{0.3, 1.0}",
+                "limits": "{ 0.3, 1.0 }",
                 "category": "Intercom Panel",
                 "description": "Intercom Volume"
             },
@@ -1749,8 +1749,8 @@
                 "command": "3001",
                 "arg_number": "16",
                 "step": "0.05",
-                "limits": "{0, 0.95}",
-                "output_map": "{\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11\", \"12\", \"13\", \"14\", \"15\", \"16\", \"17\", \"18\", \"19\", \"20\"}",
+                "limits": "{ 0, 0.95 }",
+                "output_map": "{ \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11\", \"12\", \"13\", \"14\", \"15\", \"16\", \"17\", \"18\", \"19\", \"20\" }",
                 "cycle": "False",
                 "category": "UHF Radio",
                 "description": "Preset Channel Selector"
@@ -1760,7 +1760,7 @@
                 "msg": "UHF_10MHZ",
                 "device_id": "22",
                 "command": "3002",
-                "rel_args": "{0.1, -0.1}",
+                "rel_args": "{ 0.1, -0.1 }",
                 "category": "UHF Radio",
                 "description": "UHF 10 MHz Selector"
             },
@@ -1769,7 +1769,7 @@
                 "msg": "UHF_1MHZ",
                 "device_id": "22",
                 "command": "3003",
-                "rel_args": "{0.1, -0.1}",
+                "rel_args": "{ 0.1, -0.1 }",
                 "category": "UHF Radio",
                 "description": "UHF 1 MHz Selector"
             },
@@ -1778,7 +1778,7 @@
                 "msg": "UHF_50KHZ",
                 "device_id": "22",
                 "command": "3004",
-                "rel_args": "{0.1, -0.1}",
+                "rel_args": "{ 0.1, -0.1 }",
                 "category": "UHF Radio",
                 "description": "UHF 50 KHz Selector"
             },
@@ -1819,7 +1819,7 @@
                 "device_id": "22",
                 "command": "3008",
                 "arg_number": "21",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "UHF Radio",
                 "description": "Volume Control"
             }
@@ -1832,8 +1832,8 @@
                 "command": "3001",
                 "arg_number": "31",
                 "step": "0.1",
-                "limits": "{0.3, 0.7}",
-                "output_map": "{\"3\", \"4\", \"5\", \"6\", \"7\"}",
+                "limits": "{ 0.3, 0.7 }",
+                "output_map": "{ \"3\", \"4\", \"5\", \"6\", \"7\" }",
                 "cycle": "False",
                 "category": "VHF FM Radio",
                 "description": "Frequency Tens of MHz"
@@ -1845,7 +1845,7 @@
                 "command": "3002",
                 "arg_number": "32",
                 "step": "0.1",
-                "limits": "{0.0, 0.9}",
+                "limits": "{ 0.0, 0.9 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "VHF FM Radio",
@@ -1858,7 +1858,7 @@
                 "command": "3003",
                 "arg_number": "33",
                 "step": "0.1",
-                "limits": "{0.0, 0.9}",
+                "limits": "{ 0.0, 0.9 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "VHF FM Radio",
@@ -1871,8 +1871,8 @@
                 "command": "3004",
                 "arg_number": "34",
                 "step": "0.1",
-                "limits": "{0.0, 0.1}",
-                "output_map": "{\"0\", \"5\"}",
+                "limits": "{ 0.0, 0.1 }",
+                "output_map": "{ \"0\", \"5\" }",
                 "cycle": "False",
                 "category": "VHF FM Radio",
                 "description": "Frequency Hundreds of MHz"
@@ -1895,7 +1895,7 @@
                 "command": "3005",
                 "arg_number": "36",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "VHF FM Radio",
@@ -1907,7 +1907,7 @@
                 "device_id": "23",
                 "command": "3006",
                 "arg_number": "37",
-                "limits": "{0.3, 1}",
+                "limits": "{ 0.3, 1 }",
                 "category": "VHF FM Radio",
                 "description": "Volume Control"
             }
@@ -1920,7 +1920,7 @@
                 "command": "3003",
                 "arg_number": "51",
                 "step": "0.1",
-                "limits": "{0.8, 1.0}",
+                "limits": "{ 0.8, 1.0 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "VHF NAV Radio",
@@ -1933,8 +1933,8 @@
                 "command": "3001",
                 "arg_number": "52",
                 "step": "0.1",
-                "limits": "{0, 1}",
-                "rel_args": "{0.1, -0.1}",
+                "limits": "{ 0, 1 }",
+                "rel_args": "{ 0.1, -0.1 }",
                 "output_map": "nil",
                 "category": "VHF NAV Radio",
                 "description": "VHF NAV MHz Selector"
@@ -1946,8 +1946,8 @@
                 "command": "3002",
                 "arg_number": "53",
                 "step": "0.1",
-                "limits": "{0, 1}",
-                "rel_args": "{0.1, -0.1}",
+                "limits": "{ 0, 1 }",
+                "rel_args": "{ 0.1, -0.1 }",
                 "output_map": "nil",
                 "category": "VHF NAV Radio",
                 "description": "VHF NAV KHz Selector"
@@ -1958,7 +1958,7 @@
                 "device_id": "25",
                 "command": "3004",
                 "arg_number": "54",
-                "limits": "{0, 0.65}",
+                "limits": "{ 0, 0.65 }",
                 "category": "VHF NAV Radio",
                 "description": "Volume Control (step size less than 8192 may not work)"
             }
@@ -1971,7 +1971,7 @@
                 "command": "3005",
                 "arg_number": "42",
                 "step": "0.1",
-                "limits": "{0, 0.4}",
+                "limits": "{ 0, 0.4 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "ADF",
@@ -2003,7 +2003,7 @@
                 "device_id": "27",
                 "command": "3004",
                 "arg_number": "44",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "ADF",
                 "description": "ADF Gain"
             },
@@ -2100,7 +2100,7 @@
                 "device_id": "32",
                 "command": "3001",
                 "arg_number": "281",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Flex Sight",
                 "description": "Copilot Sighting System Intensity Knob"
             },
@@ -2137,7 +2137,7 @@
                 "device_id": "49",
                 "command": "3001",
                 "arg_number": "440",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Flex Sight",
                 "description": "Pilot Sight Intensity Knob"
             },
@@ -2147,7 +2147,7 @@
                 "device_id": "49",
                 "command": "3003",
                 "arg_number": "441",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Flex Sight",
                 "description": "Pilot Sight Elevation"
             }
@@ -2221,7 +2221,7 @@
                 "msg": "CM_FLARECNT",
                 "device_id": "50",
                 "command": "3004",
-                "rel_args": "{-1, 1}",
+                "rel_args": "{ -1, 1 }",
                 "category": "Countermeasures",
                 "description": "Flare Counter Decrease/Increase"
             },
@@ -2239,24 +2239,24 @@
                 "msg": "CM_CHAFFCNT",
                 "device_id": "50",
                 "command": "3008",
-                "rel_args": "{-1, 1}",
+                "rel_args": "{ -1, 1 }",
                 "category": "Countermeasures",
                 "description": "Chaff Counter Decrease/Increase"
             }
         },
         "Doors": {
-            "DOOR_L-PTR": {
+            "DOOR_L_PTR": {
                 "type": "PushButton",
-                "msg": "DOOR_L-PTR",
+                "msg": "DOOR_L_PTR",
                 "device_id": "12",
                 "command": "3005",
                 "arg_number": "419",
                 "category": "Doors",
                 "description": "Door Handle Left"
             },
-            "DOOR_R-PTR": {
+            "DOOR_R_PTR": {
                 "type": "PushButton",
-                "msg": "DOOR_R-PTR",
+                "msg": "DOOR_R_PTR",
                 "device_id": "12",
                 "command": "3006",
                 "arg_number": "421",
@@ -2267,7 +2267,7 @@
     },
     "id": {
         "aircraft": "UH-1H",
-        "date": "Nov 21 2023, 10:53 AM -0800",
-        "version": "v0.7.49"
+        "date": "Jul 26 2024, 06:53 AM -0700",
+        "version": "v0.8.0"
     }
 }

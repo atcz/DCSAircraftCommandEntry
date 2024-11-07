@@ -141,7 +141,7 @@
                 "command": "3001",
                 "arg_number": "51",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Left DDI",
@@ -153,7 +153,7 @@
                 "device_id": "35",
                 "command": "3002",
                 "arg_number": "52",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Left DDI",
                 "description": "Brightness Control Knob"
             },
@@ -163,7 +163,7 @@
                 "device_id": "35",
                 "command": "3003",
                 "arg_number": "53",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Left DDI",
                 "description": "Contrast Control Knob"
             },
@@ -616,7 +616,7 @@
                 "device_id": "25",
                 "command": "3030",
                 "arg_number": "108",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Up Front Controller (UFC)",
                 "description": "COMM 1 Volume Control Knob"
             },
@@ -626,7 +626,7 @@
                 "device_id": "25",
                 "command": "3031",
                 "arg_number": "123",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Up Front Controller (UFC)",
                 "description": "COMM 2 Volume Control Knob"
             },
@@ -636,7 +636,7 @@
                 "device_id": "25",
                 "command": "3032",
                 "arg_number": "109",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Up Front Controller (UFC)",
                 "description": "Brightness Control Knob"
             },
@@ -645,7 +645,7 @@
                 "msg": "UFC_COMM1_CHANNEL_SELECT",
                 "device_id": "25",
                 "command": "3033",
-                "rel_args": "{-0.03, 0.03}",
+                "rel_args": "{ -0.03, 0.03 }",
                 "category": "Up Front Controller (UFC)",
                 "description": "COMM 1 Channel Select Knob"
             },
@@ -654,7 +654,7 @@
                 "msg": "UFC_COMM2_CHANNEL_SELECT",
                 "device_id": "25",
                 "command": "3034",
-                "rel_args": "{-0.03, 0.03}",
+                "rel_args": "{ -0.03, 0.03 }",
                 "category": "Up Front Controller (UFC)",
                 "description": "COMM 2 Channel Select Knob"
             }
@@ -667,7 +667,7 @@
                 "command": "3001",
                 "arg_number": "76",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Right DDI",
@@ -679,7 +679,7 @@
                 "device_id": "36",
                 "command": "3002",
                 "arg_number": "77",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Right DDI",
                 "description": "Brightness Control Knob"
             },
@@ -689,7 +689,7 @@
                 "device_id": "36",
                 "command": "3003",
                 "arg_number": "78",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Right DDI",
                 "description": "Contrast Control Knob"
             },
@@ -899,7 +899,7 @@
                 "device_id": "58",
                 "command": "3001",
                 "arg_number": "136",
-                "limits": "{0, 0.75}",
+                "limits": "{ 0, 0.75 }",
                 "category": "Map Gain/Spin Recovery Panel",
                 "description": "HMD OFF/BRT Knob"
             },
@@ -910,7 +910,7 @@
                 "command": "3013",
                 "arg_number": "135",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Map Gain/Spin Recovery Panel",
@@ -936,7 +936,7 @@
                 "command": "3001",
                 "arg_number": "140",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "HUD Control Panel",
@@ -948,7 +948,7 @@
                 "device_id": "34",
                 "command": "3002",
                 "arg_number": "141",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "HUD Control Panel",
                 "description": "HUD Symbology Brightness Control Knob"
             },
@@ -967,7 +967,7 @@
                 "device_id": "34",
                 "command": "3004",
                 "arg_number": "143",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "HUD Control Panel",
                 "description": "Black Level Control Knob"
             },
@@ -978,7 +978,7 @@
                 "command": "3005",
                 "arg_number": "144",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "HUD Control Panel",
@@ -990,7 +990,7 @@
                 "device_id": "34",
                 "command": "3006",
                 "arg_number": "145",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "HUD Control Panel",
                 "description": "Balance Control Knob"
             },
@@ -1000,7 +1000,7 @@
                 "device_id": "34",
                 "command": "3007",
                 "arg_number": "146",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "HUD Control Panel",
                 "description": "AOA Indexer Control Knob"
             },
@@ -1133,7 +1133,7 @@
                 "device_id": "33",
                 "command": "3007",
                 "arg_number": "174",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "HUD Video Record Panel",
                 "description": "Brightness Control Knob"
             },
@@ -1172,7 +1172,7 @@
                 "device_id": "37",
                 "command": "3001",
                 "arg_number": "203",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "AMPCD",
                 "description": "Brightness Control Knob"
             },
@@ -1440,7 +1440,7 @@
                 "device_id": "11",
                 "command": "3010",
                 "arg_number": "505",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Environment Control Louver",
                 "description": "Left Louver"
             },
@@ -1450,7 +1450,7 @@
                 "device_id": "11",
                 "command": "3011",
                 "arg_number": "506",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Environment Control Louver",
                 "description": "Right Louver"
             }
@@ -1510,7 +1510,7 @@
                 "command": "3011",
                 "arg_number": "236",
                 "step": "0.1",
-                "limits": "{-0.1, 0.3}",
+                "limits": "{ -0.1, 0.3 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Select Jettison Button",
@@ -1526,7 +1526,7 @@
                 "description": "Anti Skid"
             },
             "LAUNCH_BAR_SW": {
-                "type": "ToggleSwitchToggleOnly2",
+                "type": "ToggleSwitchToggleOnly",
                 "msg": "LAUNCH_BAR_SW",
                 "device_id": "5",
                 "command": "3008",
@@ -1535,7 +1535,7 @@
                 "description": "Launch Bar"
             },
             "HOOK_BYPASS_SW": {
-                "type": "ToggleSwitchToggleOnly2",
+                "type": "ToggleSwitchToggleOnly",
                 "msg": "HOOK_BYPASS_SW",
                 "device_id": "9",
                 "command": "3009",
@@ -1591,7 +1591,7 @@
                 "command": "3001",
                 "arg_number": "517",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Dispenser/EMC Panel",
@@ -1613,7 +1613,7 @@
                 "command": "3001",
                 "arg_number": "248",
                 "step": "0.1",
-                "limits": "{0, 0.4}",
+                "limits": "{ 0, 0.4 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Dispenser/EMC Panel",
@@ -1681,7 +1681,7 @@
                 "device_id": "53",
                 "command": "3006",
                 "arg_number": "263",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "RWR Control Indicator",
                 "description": "ALR-67 DMR Control Knob"
             },
@@ -1692,7 +1692,7 @@
                 "command": "3007",
                 "arg_number": "261",
                 "step": "0.1",
-                "limits": "{0, 0.4}",
+                "limits": "{ 0, 0.4 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "RWR Control Indicator",
@@ -1704,7 +1704,7 @@
                 "device_id": "53",
                 "command": "3008",
                 "arg_number": "216",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "RWR Control Indicator",
                 "description": "RWR Intensity Knob"
             },
@@ -1714,7 +1714,7 @@
                 "device_id": "0",
                 "command": "3130",
                 "arg_number": "262",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "RWR Control Indicator",
                 "description": "ALR-67 AUDIO Control Knob"
             }
@@ -1901,7 +1901,7 @@
                 "device_id": "2",
                 "command": "3012",
                 "arg_number": "504",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Throttle Quadrant",
                 "description": "Throttles Friction Adjusting Lever"
             },
@@ -1959,7 +1959,7 @@
                 "device_id": "13",
                 "command": "3026",
                 "arg_number": "493",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Throttle Quadrant",
                 "description": "Throttle Radar Elevation Control"
             },
@@ -1970,7 +1970,7 @@
                 "command": "3041",
                 "arg_number": "494",
                 "step": "2.0",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Throttle Quadrant",
@@ -1984,7 +1984,7 @@
                 "device_id": "8",
                 "command": "3001",
                 "arg_number": "338",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Exterior Lights Panel",
                 "description": "Position Lights Dimmer"
             },
@@ -1994,7 +1994,7 @@
                 "device_id": "8",
                 "command": "3002",
                 "arg_number": "337",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Exterior Lights Panel",
                 "description": "Formation Lights Dimmer"
             },
@@ -2028,7 +2028,7 @@
                 "description": "Probe Control Switch, EXTEND/RETRACT/EMERG EXTD"
             },
             "FUEL_DUMP_SW": {
-                "type": "ToggleSwitchToggleOnly2",
+                "type": "ToggleSwitchToggleOnly",
                 "msg": "FUEL_DUMP_SW",
                 "device_id": "6",
                 "command": "3003",
@@ -2062,7 +2062,7 @@
                 "device_id": "2",
                 "command": "3001",
                 "arg_number": "345",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Flight Control System Panel",
                 "description": "RUD TRIM Control"
             },
@@ -2110,7 +2110,7 @@
                 "device_id": "40",
                 "command": "3002",
                 "arg_number": "357",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "VOX Volume Control Knob"
             },
@@ -2120,7 +2120,7 @@
                 "device_id": "40",
                 "command": "3003",
                 "arg_number": "358",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "ICS Volume Control Knob"
             },
@@ -2130,7 +2130,7 @@
                 "device_id": "40",
                 "command": "3004",
                 "arg_number": "359",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "RWR Volume Control Knob"
             },
@@ -2140,7 +2140,7 @@
                 "device_id": "40",
                 "command": "3005",
                 "arg_number": "360",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "WPN Volume Control Knob"
             },
@@ -2150,7 +2150,7 @@
                 "device_id": "40",
                 "command": "3006",
                 "arg_number": "362",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "MIDS A Volume Control Knob"
             },
@@ -2160,7 +2160,7 @@
                 "device_id": "40",
                 "command": "3007",
                 "arg_number": "361",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "MIDS B Volume Control Knob"
             },
@@ -2170,7 +2170,7 @@
                 "device_id": "40",
                 "command": "3008",
                 "arg_number": "363",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "TACAN Volume Control Knob"
             },
@@ -2180,7 +2180,7 @@
                 "device_id": "40",
                 "command": "3009",
                 "arg_number": "364",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Communication Panel",
                 "description": "AUX Volume Control Knob"
             },
@@ -2248,7 +2248,7 @@
                 "command": "3017",
                 "arg_number": "352",
                 "step": "0.05",
-                "limits": "{0, 0.95}",
+                "limits": "{ 0, 0.95 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Communication Panel",
@@ -2271,7 +2271,7 @@
                 "device_id": "10",
                 "command": "3002",
                 "arg_number": "366",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "LOX Indicator",
                 "description": "OXY Flow Knob"
             }
@@ -2319,7 +2319,7 @@
         },
         "Auxiliary Power Unit Panel": {
             "APU_CONTROL_SW": {
-                "type": "ToggleSwitchToggleOnly2",
+                "type": "ToggleSwitchToggleOnly",
                 "msg": "APU_CONTROL_SW",
                 "device_id": "12",
                 "command": "3001",
@@ -2446,7 +2446,7 @@
                 "command": "3001",
                 "arg_number": "411",
                 "step": "0.1",
-                "limits": "{0, 0.3}",
+                "limits": "{ 0, 0.3 }",
                 "output_map": "nil",
                 "cycle": "True",
                 "category": "Environment Control System Panel",
@@ -2485,7 +2485,7 @@
                 "device_id": "11",
                 "command": "3006",
                 "arg_number": "407",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Environment Control System Panel",
                 "description": "Cabin Temperature Knob"
             },
@@ -2495,7 +2495,7 @@
                 "device_id": "11",
                 "command": "3007",
                 "arg_number": "406",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Environment Control System Panel",
                 "description": "Suit Temperature Knob"
             },
@@ -2509,7 +2509,7 @@
                 "description": "Engine Anti-Ice Switch, ON/OFF/TEST"
             },
             "PITOT_HEAT_SW": {
-                "type": "ToggleSwitchToggleOnly2",
+                "type": "ToggleSwitchToggleOnly",
                 "msg": "PITOT_HEAT_SW",
                 "device_id": "3",
                 "command": "3016",
@@ -2525,7 +2525,7 @@
                 "device_id": "9",
                 "command": "3001",
                 "arg_number": "413",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Interior Lights Panel",
                 "description": "CONSOLES Lights Dimmer"
             },
@@ -2535,7 +2535,7 @@
                 "device_id": "9",
                 "command": "3002",
                 "arg_number": "414",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Interior Lights Panel",
                 "description": "INST PNL Dimmer"
             },
@@ -2545,7 +2545,7 @@
                 "device_id": "9",
                 "command": "3003",
                 "arg_number": "415",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Interior Lights Panel",
                 "description": "FLOOD Light Dimmer"
             },
@@ -2564,7 +2564,7 @@
                 "device_id": "9",
                 "command": "3005",
                 "arg_number": "418",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Interior Lights Panel",
                 "description": "CHART Light Dimmer"
             },
@@ -2574,7 +2574,7 @@
                 "device_id": "9",
                 "command": "3006",
                 "arg_number": "417",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Interior Lights Panel",
                 "description": "WARN/CAUTION Light Dimmer"
             },
@@ -2623,7 +2623,7 @@
                 "command": "3001",
                 "arg_number": "440",
                 "step": "0.1",
-                "limits": "{0, 0.3}",
+                "limits": "{ 0, 0.3 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Sensor Panel",
@@ -2645,7 +2645,7 @@
                 "command": "3001",
                 "arg_number": "443",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Sensor Panel",
@@ -2660,7 +2660,7 @@
                 "command": "3001",
                 "arg_number": "444",
                 "step": "0.1",
-                "limits": "{0, 0.3}",
+                "limits": "{ 0, 0.3 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "KY-58 Control",
@@ -2672,7 +2672,7 @@
                 "device_id": "41",
                 "command": "3005",
                 "arg_number": "445",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "KY-58 Control",
                 "description": "KY-58 Volume Control Knob"
             },
@@ -2683,7 +2683,7 @@
                 "command": "3002",
                 "arg_number": "446",
                 "step": "0.1",
-                "limits": "{0, 0.7}",
+                "limits": "{ 0, 0.7 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "KY-58 Control",
@@ -2696,7 +2696,7 @@
                 "command": "3004",
                 "arg_number": "447",
                 "step": "0.1",
-                "limits": "{0, 0.2}",
+                "limits": "{ 0, 0.2 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "KY-58 Control",
@@ -2719,7 +2719,7 @@
                 "device_id": "11",
                 "command": "3005",
                 "arg_number": "451",
-                "limits": "{-1, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Defog Panel",
                 "description": "Defog Handle"
             },
@@ -2932,7 +2932,7 @@
     },
     "id": {
         "aircraft": "F/A-18C",
-        "date": "Nov 21 2023, 10:53 AM -0800",
-        "version": "v0.7.49"
+        "date": "Jul 13 2024, 12:51 PM -0700",
+        "version": "v0.8.0"
     }
 }

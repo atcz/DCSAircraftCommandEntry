@@ -133,7 +133,7 @@
                 "device_id": "56",
                 "command": "3013",
                 "arg_number": "282",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front UFC",
                 "description": "FRONT UHF Radio 1 Volume"
             },
@@ -143,7 +143,7 @@
                 "device_id": "56",
                 "command": "3014",
                 "arg_number": "283",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front UFC",
                 "description": "FRONT UHF Radio 2 Volume"
             },
@@ -153,7 +153,7 @@
                 "device_id": "56",
                 "command": "3015",
                 "arg_number": "284",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front UFC",
                 "description": "FRONT UHF Radio 3 Volume"
             },
@@ -163,7 +163,7 @@
                 "device_id": "56",
                 "command": "3016",
                 "arg_number": "285",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front UFC",
                 "description": "FRONT UHF Radio 4 Volume"
             },
@@ -173,7 +173,7 @@
                 "device_id": "56",
                 "command": "3017",
                 "arg_number": "286",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front UFC",
                 "description": "FRONT UFC LCD Brightness"
             },
@@ -285,9 +285,9 @@
                 "category": "Front UFC",
                 "description": "FRONT Decimal Point Key"
             },
-            "F_UFC_KEY__7": {
+            "F_UFC_KEY_7": {
                 "type": "PushButton",
-                "msg": "F_UFC_KEY__7",
+                "msg": "F_UFC_KEY_7",
                 "device_id": "56",
                 "command": "3030",
                 "arg_number": "299",
@@ -339,9 +339,9 @@
                 "category": "Front UFC",
                 "description": "FRONT Clear Key"
             },
-            "F_UFC_KEY__0": {
+            "F_UFC_KEY_0": {
                 "type": "PushButton",
-                "msg": "F_UFC_KEY__0",
+                "msg": "F_UFC_KEY_0",
                 "device_id": "56",
                 "command": "3036",
                 "arg_number": "305",
@@ -374,7 +374,7 @@
                 "device_id": "55",
                 "command": "3120",
                 "arg_number": "120",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front HUD Control Panel",
                 "description": "FRONT HUD Brightness Control"
             },
@@ -413,7 +413,7 @@
                 "device_id": "55",
                 "command": "3124",
                 "arg_number": "124",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front HUD Control Panel",
                 "description": "FRONT HUD Video Brightness Control"
             },
@@ -423,7 +423,7 @@
                 "device_id": "55",
                 "command": "3125",
                 "arg_number": "125",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front HUD Control Panel",
                 "description": "FRONT HUD Contrast Control"
             },
@@ -540,13 +540,15 @@
                 "description": "FRONT Armament Panel Master Arm"
             },
             "F_ARM_JETT_SEL": {
-                "type": "MultipositionSwitch",
+                "type": "Tumb",
                 "msg": "F_ARM_JETT_SEL",
                 "device_id": "44",
-                "device_command": "3321",
+                "command": "3321",
                 "arg_number": "321",
-                "num_positions": "7",
-                "increment": "0.3",
+                "step": "0.3",
+                "limits": "{ -0.9, 0.9 }",
+                "output_map": "nil",
+                "cycle": "False",
                 "category": "Front Armament Panel",
                 "description": "FRONT Armament Jettison Selector"
             },
@@ -571,23 +573,24 @@
         },
         "Front Fuel Monitor Panel": {
             "F_FUEL_TOTAL": {
-                "type": "MultipositionSwitch",
+                "type": "Tumb",
                 "msg": "F_FUEL_TOTAL",
                 "device_id": "17",
-                "device_command": "3381",
+                "command": "3381",
                 "arg_number": "381",
-                "num_positions": "7",
-                "increment": "0.1",
+                "step": "0.1",
+                "limits": "{ -0.1, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
                 "category": "Front Fuel Monitor Panel",
                 "description": "FRONT Fuel Totalizer Selector"
             },
             "F_FUEL_BINGO": {
-                "type": "Potentiometer",
+                "type": "Rotary",
                 "msg": "F_FUEL_BINGO",
                 "device_id": "17",
                 "command": "3385",
                 "arg_number": "385",
-                "limits": "{0, 1}",
                 "category": "Front Fuel Monitor Panel",
                 "description": "FRONT Fuel Bingo Selection"
             }
@@ -605,7 +608,7 @@
             "F_LG_GEAR_TONE": {
                 "type": "PushButton",
                 "msg": "F_LG_GEAR_TONE",
-                "device_id": "21",
+                "device_id": "29",
                 "command": "3325",
                 "arg_number": "325",
                 "category": "Front Landing Gear Panel",
@@ -646,7 +649,7 @@
                 "device_id": "17",
                 "command": "3351",
                 "arg_number": "351",
-                "limits": "{0, 1}",
+                "limits": "{ -1, 1 }",
                 "category": "Front Flight Instruments",
                 "description": "FRONT Backup ADI Cage/Pitch Adjust Knob"
             },
@@ -660,14 +663,13 @@
                 "description": "FRONT Backup ADI Cage/Pitch Adjust Pull"
             },
             "F_FI_ALT_ADJ": {
-                "type": "Potentiometer",
+                "type": "Rotary",
                 "msg": "F_FI_ALT_ADJ",
                 "device_id": "17",
                 "command": "3360",
                 "arg_number": "360",
-                "limits": "{0, 1}",
                 "category": "Front Flight Instruments",
-                "description": "FRONT Altitude adjust"
+                "description": "FRONT Altitude Adjust"
             },
             "F_FI_CLOCK_ADJ": {
                 "type": "Potentiometer",
@@ -675,9 +677,9 @@
                 "device_id": "17",
                 "command": "3366",
                 "arg_number": "366",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Flight Instruments",
-                "description": "FRONT Clock adjust"
+                "description": "FRONT Clock Adjust"
             },
             "F_FI_CLOCK_STOP": {
                 "type": "Potentiometer",
@@ -685,7 +687,7 @@
                 "device_id": "17",
                 "command": "3367",
                 "arg_number": "367",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Flight Instruments",
                 "description": "FRONT Timer Stop"
             }
@@ -1442,8 +1444,17 @@
         },
         "Front NUC": {
             "F_NUC_N_CONS_CVR": {
-                "type": "3PosTumb",
+                "type": "ToggleSwitch",
                 "msg": "F_NUC_N_CONS_CVR",
+                "device_id": "17",
+                "command": "3450",
+                "arg_number": "450",
+                "category": "Front NUC",
+                "description": "FRONT Nuclear Consent Switch Cover"
+            },
+            "F_NUC_N_CONS_SWITCH": {
+                "type": "3PosTumb",
+                "msg": "F_NUC_N_CONS_SWITCH",
                 "device_id": "17",
                 "command": "3451",
                 "arg_number": "451",
@@ -1497,7 +1508,7 @@
             "F_CAS_TF_COUP": {
                 "type": "ToggleSwitch",
                 "msg": "F_CAS_TF_COUP",
-                "device_id": "18",
+                "device_id": "65",
                 "command": "3456",
                 "arg_number": "456",
                 "category": "Front CAS",
@@ -1625,7 +1636,7 @@
                 "device_id": "59",
                 "command": "3501",
                 "arg_number": "502",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Volume",
                 "description": "FRONT Caution Volume"
             },
@@ -1635,7 +1646,7 @@
                 "device_id": "59",
                 "command": "3502",
                 "arg_number": "503",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Volume",
                 "description": "FRONT Launch Volume"
             },
@@ -1645,17 +1656,17 @@
                 "device_id": "13",
                 "command": "3503",
                 "arg_number": "504",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Volume",
                 "description": "FRONT ICS Volume"
             },
             "F_VOL_WPN": {
                 "type": "Potentiometer",
                 "msg": "F_VOL_WPN",
-                "device_id": "47",
+                "device_id": "13",
                 "command": "3504",
                 "arg_number": "505",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Volume",
                 "description": "FRONT WPN Volume"
             },
@@ -1665,7 +1676,7 @@
                 "device_id": "11",
                 "command": "3505",
                 "arg_number": "506",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Volume",
                 "description": "FRONT ILS Volume"
             },
@@ -1675,7 +1686,7 @@
                 "device_id": "10",
                 "command": "3506",
                 "arg_number": "507",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Volume",
                 "description": "FRONT TACAN Volume"
             }
@@ -1684,7 +1695,7 @@
             "F_MIC_CRYPT": {
                 "type": "3PosTumb",
                 "msg": "F_MIC_CRYPT",
-                "device_id": "13",
+                "device_id": "68",
                 "command": "3508",
                 "arg_number": "508",
                 "category": "Front MICS",
@@ -1742,7 +1753,7 @@
             "F_R_CYP_TXT": {
                 "type": "ToggleSwitch",
                 "msg": "F_R_CYP_TXT",
-                "device_id": "17",
+                "device_id": "68",
                 "command": "3514",
                 "arg_number": "514",
                 "category": "Front Radio",
@@ -1753,7 +1764,7 @@
             "F_IFF_MODE": {
                 "type": "3PosTumb",
                 "msg": "F_IFF_MODE",
-                "device_id": "17",
+                "device_id": "68",
                 "command": "3515",
                 "arg_number": "515",
                 "category": "Front IFF",
@@ -1762,7 +1773,7 @@
             "F_IFF_REPLY": {
                 "type": "MultipositionSwitch",
                 "msg": "F_IFF_REPLY",
-                "device_id": "17",
+                "device_id": "68",
                 "device_command": "3516",
                 "arg_number": "516",
                 "num_positions": "3",
@@ -1773,7 +1784,7 @@
             "F_IFF_MASTER": {
                 "type": "3PosTumb",
                 "msg": "F_IFF_MASTER",
-                "device_id": "17",
+                "device_id": "68",
                 "command": "3517",
                 "arg_number": "517",
                 "category": "Front IFF",
@@ -1884,7 +1895,7 @@
                 "device_id": "50",
                 "command": "3473",
                 "arg_number": "473",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Sensor",
                 "description": "FRONT Nav FLIR Gain"
             },
@@ -1894,7 +1905,7 @@
                 "device_id": "50",
                 "command": "3474",
                 "arg_number": "474",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Sensor",
                 "description": "FRONT Nav FLIR Level"
             },
@@ -2035,11 +2046,38 @@
             "F_BH_IFF_ANT": {
                 "type": "3PosTumb",
                 "msg": "F_BH_IFF_ANT",
-                "device_id": "17",
+                "device_id": "68",
                 "command": "3520",
                 "arg_number": "520",
                 "category": "Front Left Bulkhead Panel",
                 "description": "FRONT IFF Antenna Select Switch"
+            },
+            "F_BH_FLYUP_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "F_BH_FLYUP_CVR",
+                "device_id": "65",
+                "command": "3522",
+                "arg_number": "522",
+                "category": "Front Left Bulkhead Panel",
+                "description": "FRONT Flyup Enable Switch Cover"
+            },
+            "F_BH_FLYUP": {
+                "type": "ToggleSwitch",
+                "msg": "F_BH_FLYUP",
+                "device_id": "65",
+                "command": "3523",
+                "arg_number": "523",
+                "category": "Front Left Bulkhead Panel",
+                "description": "FRONT Flyup Enable Switch"
+            },
+            "F_BH_NCTR": {
+                "type": "ToggleSwitch",
+                "msg": "F_BH_NCTR",
+                "device_id": "3",
+                "command": "3524",
+                "arg_number": "524",
+                "category": "Front Left Bulkhead Panel",
+                "description": "FRONT NCTR AUTO EID Enable Switch"
             },
             "F_BH_SEAT_ADJ": {
                 "type": "3PosTumb",
@@ -2049,33 +2087,6 @@
                 "arg_number": "521",
                 "category": "Front Left Bulkhead Panel",
                 "description": "FRONT Seat Adjust Switch"
-            },
-            "F_BH_FLYUP_CVR": {
-                "type": "ToggleSwitch",
-                "msg": "F_BH_FLYUP_CVR",
-                "device_id": "17",
-                "command": "3522",
-                "arg_number": "522",
-                "category": "Front Left Bulkhead Panel",
-                "description": "FRONT Flyup Enable Switch Cover"
-            },
-            "F_BH_FLYUP": {
-                "type": "ToggleSwitch",
-                "msg": "F_BH_FLYUP",
-                "device_id": "17",
-                "command": "3523",
-                "arg_number": "523",
-                "category": "Front Left Bulkhead Panel",
-                "description": "FRONT Flyup Enable Switch"
-            },
-            "F_BH_NCTR": {
-                "type": "ToggleSwitch",
-                "msg": "F_BH_NCTR",
-                "device_id": "17",
-                "command": "3524",
-                "arg_number": "524",
-                "category": "Front Left Bulkhead Panel",
-                "description": "FRONT NCTR Enable Switch"
             },
             "F_BH_VMAX_CVR": {
                 "type": "ToggleSwitch",
@@ -2321,7 +2332,7 @@
                 "device_id": "26",
                 "command": "3564",
                 "arg_number": "564",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Air Condition",
                 "description": "FRONT Air Condition Cold/Hot"
             },
@@ -2344,7 +2355,7 @@
                 "device_id": "23",
                 "command": "3566",
                 "arg_number": "566",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Console Lights"
             },
@@ -2354,7 +2365,7 @@
                 "device_id": "23",
                 "command": "3567",
                 "arg_number": "567",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Instruments Panel Lights"
             },
@@ -2364,7 +2375,7 @@
                 "device_id": "23",
                 "command": "3568",
                 "arg_number": "568",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Gauges/UFC Backlights"
             },
@@ -2401,7 +2412,7 @@
                 "device_id": "23",
                 "command": "3572",
                 "arg_number": "572",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Charts Spot Light"
             },
@@ -2411,7 +2422,7 @@
                 "device_id": "23",
                 "command": "3573",
                 "arg_number": "573",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Warning/Caution Lights"
             },
@@ -2430,7 +2441,7 @@
                 "device_id": "23",
                 "command": "3574",
                 "arg_number": "574",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Storm FLood Lights"
             },
@@ -2440,7 +2451,7 @@
                 "device_id": "23",
                 "command": "3575",
                 "arg_number": "186",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Front Internal Lights Panel",
                 "description": "FRONT Chart Spot Lamp"
             }
@@ -2453,7 +2464,7 @@
                 "command": "3599",
                 "arg_number": "599",
                 "step": "0.5",
-                "limits": "{-0.5, 1}",
+                "limits": "{ -0.5, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Canopy",
@@ -2466,7 +2477,7 @@
                 "command": "3600",
                 "arg_number": "1479",
                 "step": "0.5",
-                "limits": "{-0.5, 1}",
+                "limits": "{ -0.5, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "Canopy",
@@ -2518,7 +2529,7 @@
                 "device_id": "17",
                 "command": "3402",
                 "arg_number": "1355",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Flight Instruments",
                 "description": "REAR Backup ADI Cage/Pitch Adjust Knob"
             },
@@ -2537,7 +2548,7 @@
                 "device_id": "17",
                 "command": "3403",
                 "arg_number": "1364",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Flight Instruments",
                 "description": "REAR Altitude adjust"
             },
@@ -2547,7 +2558,7 @@
                 "device_id": "17",
                 "command": "3404",
                 "arg_number": "1382",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Flight Instruments",
                 "description": "REAR Clock adjust"
             },
@@ -2557,7 +2568,7 @@
                 "device_id": "17",
                 "command": "3405",
                 "arg_number": "1383",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Flight Instruments",
                 "description": "REAR Timer Stop"
             }
@@ -2695,7 +2706,7 @@
                 "device_id": "57",
                 "command": "3013",
                 "arg_number": "1307",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear UFC",
                 "description": "REAR UHF Radio 1 Volume"
             },
@@ -2705,7 +2716,7 @@
                 "device_id": "57",
                 "command": "3014",
                 "arg_number": "1308",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear UFC",
                 "description": "REAR UHF Radio 2 Volume"
             },
@@ -2715,7 +2726,7 @@
                 "device_id": "57",
                 "command": "3015",
                 "arg_number": "1309",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear UFC",
                 "description": "REAR UHF Radio 3 Volume"
             },
@@ -2725,7 +2736,7 @@
                 "device_id": "57",
                 "command": "3016",
                 "arg_number": "1310",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear UFC",
                 "description": "REAR UHF Radio 4 Volume"
             },
@@ -2735,7 +2746,7 @@
                 "device_id": "57",
                 "command": "3017",
                 "arg_number": "1311",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear UFC",
                 "description": "REAR UFC LCD Brightness"
             },
@@ -2847,9 +2858,9 @@
                 "category": "Rear UFC",
                 "description": "REAR Decimal Point Key"
             },
-            "R_UFC_KEY__7": {
+            "R_UFC_KEY_7": {
                 "type": "PushButton",
-                "msg": "R_UFC_KEY__7",
+                "msg": "R_UFC_KEY_7",
                 "device_id": "57",
                 "command": "3030",
                 "arg_number": "1324",
@@ -2901,9 +2912,9 @@
                 "category": "Rear UFC",
                 "description": "REAR Clear Key"
             },
-            "R_UFC_KEY__0": {
+            "R_UFC_KEY_0": {
                 "type": "PushButton",
-                "msg": "R_UFC_KEY__0",
+                "msg": "R_UFC_KEY_0",
                 "device_id": "57",
                 "command": "3036",
                 "arg_number": "1330",
@@ -3817,8 +3828,17 @@
         },
         "Rear NUC": {
             "R_NUC_N_CONS_CVR": {
-                "type": "3PosTumb",
+                "type": "ToggleSwitch",
                 "msg": "R_NUC_N_CONS_CVR",
+                "device_id": "17",
+                "command": "3452",
+                "arg_number": "1401",
+                "category": "Rear NUC",
+                "description": "REAR Nuclear Consent Switch Cover"
+            },
+            "R_NUC_N_CONS_SWITCH": {
+                "type": "3PosTumb",
+                "msg": "R_NUC_N_CONS_SWITCH",
                 "device_id": "17",
                 "command": "3453",
                 "arg_number": "1402",
@@ -3844,7 +3864,7 @@
                 "device_id": "54",
                 "command": "3414",
                 "arg_number": "1414",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear TPOD Panel",
                 "description": "REAR TGP FLIR Gain"
             },
@@ -3854,7 +3874,7 @@
                 "device_id": "54",
                 "command": "3415",
                 "arg_number": "1415",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear TPOD Panel",
                 "description": "REAR TGP FLIR Level"
             },
@@ -3924,7 +3944,7 @@
                 "device_id": "59",
                 "command": "3601",
                 "arg_number": "1420",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Volume",
                 "description": "REAR Caution Volume"
             },
@@ -3934,27 +3954,27 @@
                 "device_id": "59",
                 "command": "3602",
                 "arg_number": "1421",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Volume",
                 "description": "REAR Launch Volume"
             },
             "R_VOL_ICS": {
                 "type": "Potentiometer",
                 "msg": "R_VOL_ICS",
-                "device_id": "61",
+                "device_id": "13",
                 "command": "3603",
                 "arg_number": "1422",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Volume",
                 "description": "REAR ICS Volume"
             },
             "R_VOL_WPN": {
                 "type": "Potentiometer",
                 "msg": "R_VOL_WPN",
-                "device_id": "47",
+                "device_id": "13",
                 "command": "3604",
                 "arg_number": "1423",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Volume",
                 "description": "REAR WPN Volume"
             },
@@ -3964,7 +3984,7 @@
                 "device_id": "11",
                 "command": "3605",
                 "arg_number": "1424",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Volume",
                 "description": "REAR ILS Volume"
             },
@@ -3974,7 +3994,7 @@
                 "device_id": "10",
                 "command": "3606",
                 "arg_number": "1425",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Volume",
                 "description": "REAR TACAN Volume"
             }
@@ -4097,7 +4117,7 @@
                 "device_id": "23",
                 "command": "3456",
                 "arg_number": "1456",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Console Lights"
             },
@@ -4107,7 +4127,7 @@
                 "device_id": "23",
                 "command": "3457",
                 "arg_number": "1457",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Instruments Panel Lights"
             },
@@ -4117,7 +4137,7 @@
                 "device_id": "23",
                 "command": "3458",
                 "arg_number": "1458",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Gauges/UFC Backlights"
             },
@@ -4154,7 +4174,7 @@
                 "device_id": "23",
                 "command": "3462",
                 "arg_number": "1462",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Charts Spot Light"
             },
@@ -4164,7 +4184,7 @@
                 "device_id": "23",
                 "command": "3463",
                 "arg_number": "1463",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Warning/Caution Lights"
             },
@@ -4183,7 +4203,7 @@
                 "device_id": "23",
                 "command": "3464",
                 "arg_number": "1464",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Storm FLood Lights"
             },
@@ -4193,7 +4213,7 @@
                 "device_id": "23",
                 "command": "3188",
                 "arg_number": "188",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Rear Internal Lights Panel",
                 "description": "REAR Chart Spot Lamp"
             }
@@ -4303,7 +4323,7 @@
                 "device_id": "24",
                 "command": "3910",
                 "arg_number": "10",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Misc Controls",
                 "description": "Mirror Center Adjust Angle"
             },
@@ -4322,7 +4342,7 @@
                 "device_id": "24",
                 "command": "3911",
                 "arg_number": "11",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Misc Controls",
                 "description": "Mirror Left Adjust Angle"
             },
@@ -4341,7 +4361,7 @@
                 "device_id": "24",
                 "command": "3912",
                 "arg_number": "12",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "Misc Controls",
                 "description": "Mirror Right Adjust Angle"
             },
@@ -4393,7 +4413,7 @@
     },
     "id": {
         "aircraft": "F-15E",
-        "date": "Nov 21 2023, 10:53 AM -0800",
-        "version": "v0.7.49"
+        "date": "Jul 13 2024, 12:51 PM -0700",
+        "version": "v0.8.0"
     }
 }

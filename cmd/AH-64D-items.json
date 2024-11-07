@@ -286,7 +286,7 @@
                 "device_id": "42",
                 "command": "3032",
                 "arg_number": "18",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT MPD Left",
                 "description": "Pilot Left MPD Brightness Control Knob"
             },
@@ -296,7 +296,7 @@
                 "device_id": "42",
                 "command": "3033",
                 "arg_number": "19",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT MPD Left",
                 "description": "Pilot Left MPD Video Control Knob"
             },
@@ -307,7 +307,7 @@
                 "command": "3034",
                 "arg_number": "26",
                 "step": "0.5",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "PLT MPD Left",
@@ -600,7 +600,7 @@
                 "device_id": "44",
                 "command": "3032",
                 "arg_number": "86",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG MPD Left",
                 "description": "Gunner Left MPD Brightness Control Knob"
             },
@@ -610,7 +610,7 @@
                 "device_id": "44",
                 "command": "3033",
                 "arg_number": "87",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG MPD Left",
                 "description": "Gunner Left MPD Video Control Knob"
             },
@@ -621,7 +621,7 @@
                 "command": "3034",
                 "arg_number": "94",
                 "step": "0.5",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "CPG MPD Left",
@@ -914,7 +914,7 @@
                 "device_id": "43",
                 "command": "3032",
                 "arg_number": "52",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT MPD Right",
                 "description": "Pilot Right MPD Brightness Control Knob"
             },
@@ -924,7 +924,7 @@
                 "device_id": "43",
                 "command": "3033",
                 "arg_number": "53",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT MPD Right",
                 "description": "Pilot Right MPD Video Control Knob"
             },
@@ -935,24 +935,11 @@
                 "command": "3034",
                 "arg_number": "60",
                 "step": "0.5",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "PLT MPD Right",
                 "description": "Pilot Right MPD Mode Knob, DAY/NIGHT/MONO"
-            },
-            "PLT_WIPER_SW": {
-                "type": "Tumb",
-                "msg": "PLT_WIPER_SW",
-                "device_id": "9",
-                "command": "3002",
-                "arg_number": "357",
-                "step": "0.1",
-                "limits": "{0, 0.3}",
-                "output_map": "nil",
-                "cycle": "False",
-                "category": "PLT MPD Right",
-                "description": "Pilot Wiper Control Switch, PARK/OFF/LO/HI"
             }
         },
         "CPG MPD Right": {
@@ -1241,7 +1228,7 @@
                 "device_id": "45",
                 "command": "3032",
                 "arg_number": "120",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG MPD Right",
                 "description": "Gunner Right MPD Brightness Control Knob"
             },
@@ -1251,7 +1238,7 @@
                 "device_id": "45",
                 "command": "3033",
                 "arg_number": "121",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG MPD Right",
                 "description": "Gunner Right MPD Video Control Knob"
             },
@@ -1262,24 +1249,11 @@
                 "command": "3034",
                 "arg_number": "128",
                 "step": "0.5",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "CPG MPD Right",
                 "description": "Gunner Right MPD Mode Knob, DAY/NIGHT/MONO"
-            },
-            "CPG_WIPER_SW": {
-                "type": "Tumb",
-                "msg": "CPG_WIPER_SW",
-                "device_id": "9",
-                "command": "3004",
-                "arg_number": "395",
-                "step": "0.1",
-                "limits": "{0, 0.3}",
-                "output_map": "nil",
-                "cycle": "False",
-                "category": "CPG MPD Right",
-                "description": "Gunner Wiper Control Switch, PARK/OFF/LO/HI"
             }
         },
         "PLT External Light System": {
@@ -1298,7 +1272,7 @@
                 "device_id": "10",
                 "command": "3001",
                 "arg_number": "329",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT External Light System",
                 "description": "Pilot Formation Lights Control Knob"
             },
@@ -1346,7 +1320,7 @@
                 "device_id": "11",
                 "command": "3006",
                 "arg_number": "327",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Internal Light System",
                 "description": "Pilot Signal Lights Control Knob"
             },
@@ -1356,7 +1330,7 @@
                 "device_id": "11",
                 "command": "3007",
                 "arg_number": "328",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Internal Light System",
                 "description": "Pilot Primary Lights Control Knob"
             },
@@ -1366,7 +1340,7 @@
                 "device_id": "11",
                 "command": "3008",
                 "arg_number": "330",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Internal Light System",
                 "description": "Pilot Flood Lights Control Knob"
             },
@@ -1376,7 +1350,7 @@
                 "device_id": "11",
                 "command": "3009",
                 "arg_number": "331",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Internal Light System",
                 "description": "Pilot Standby Instrument Lights Control Knob"
             }
@@ -1415,7 +1389,7 @@
                 "device_id": "11",
                 "command": "3012",
                 "arg_number": "364",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Internal Light System",
                 "description": "Gunner Signal Lights Control Knob"
             },
@@ -1425,7 +1399,7 @@
                 "device_id": "11",
                 "command": "3013",
                 "arg_number": "365",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Internal Light System",
                 "description": "Gunner Primary Lights Control Knob"
             },
@@ -1435,7 +1409,7 @@
                 "device_id": "11",
                 "command": "3014",
                 "arg_number": "366",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Internal Light System",
                 "description": "Gunner Flood Lights Control Knob"
             }
@@ -1454,7 +1428,7 @@
                 "type": "Rotary",
                 "msg": "PLT_SAI_PITCH_TRIM",
                 "device_id": "13",
-                "command": "3002",
+                "command": "3004",
                 "arg_number": "619",
                 "category": "PLT SAI",
                 "description": "Pilot SAI Cage Knob, (MW) Adjust aircraft reference symbol"
@@ -1478,7 +1452,7 @@
                 "device_id": "63",
                 "command": "3001",
                 "arg_number": "334",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot VHF Volume Control Knob"
             },
@@ -1497,7 +1471,7 @@
                 "device_id": "63",
                 "command": "3002",
                 "arg_number": "335",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot UHF Volume Control Knob"
             },
@@ -1516,7 +1490,7 @@
                 "device_id": "63",
                 "command": "3003",
                 "arg_number": "336",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot FM1 Volume Control Knob"
             },
@@ -1535,7 +1509,7 @@
                 "device_id": "63",
                 "command": "3004",
                 "arg_number": "337",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot FM2 Volume Control Knob"
             },
@@ -1554,7 +1528,7 @@
                 "device_id": "63",
                 "command": "3005",
                 "arg_number": "338",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot HF Volume Control Knob"
             },
@@ -1573,7 +1547,7 @@
                 "device_id": "63",
                 "command": "3006",
                 "arg_number": "348",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot IFF Volume Control Knob"
             },
@@ -1583,7 +1557,7 @@
                 "device_id": "63",
                 "command": "3007",
                 "arg_number": "349",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot RLWR Volume Control Knob"
             },
@@ -1593,7 +1567,7 @@
                 "device_id": "63",
                 "command": "3008",
                 "arg_number": "350",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot ATA Volume Control Knob"
             },
@@ -1603,7 +1577,7 @@
                 "device_id": "63",
                 "command": "3009",
                 "arg_number": "351",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot VCR Volume Control Knob"
             },
@@ -1622,7 +1596,7 @@
                 "device_id": "63",
                 "command": "3010",
                 "arg_number": "352",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot ADF Volume Control Knob"
             },
@@ -1641,7 +1615,7 @@
                 "device_id": "63",
                 "command": "3011",
                 "arg_number": "344",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot MASTER Volume Control Knob"
             },
@@ -1651,7 +1625,7 @@
                 "device_id": "63",
                 "command": "3012",
                 "arg_number": "345",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT COMM Panel",
                 "description": "Pilot SENS Control Knob"
             },
@@ -1731,7 +1705,7 @@
                 "device_id": "62",
                 "command": "3001",
                 "arg_number": "375",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner VHF Volume Control Knob"
             },
@@ -1750,7 +1724,7 @@
                 "device_id": "62",
                 "command": "3002",
                 "arg_number": "376",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner UHF Volume Control Knob"
             },
@@ -1769,7 +1743,7 @@
                 "device_id": "62",
                 "command": "3003",
                 "arg_number": "377",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner FM1 Volume Control Knob"
             },
@@ -1788,7 +1762,7 @@
                 "device_id": "62",
                 "command": "3004",
                 "arg_number": "378",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner FM2 Volume Control Knob"
             },
@@ -1807,7 +1781,7 @@
                 "device_id": "62",
                 "command": "3005",
                 "arg_number": "379",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner HF Volume Control Knob"
             },
@@ -1826,7 +1800,7 @@
                 "device_id": "62",
                 "command": "3006",
                 "arg_number": "389",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner IFF Volume Control Knob"
             },
@@ -1836,7 +1810,7 @@
                 "device_id": "62",
                 "command": "3007",
                 "arg_number": "390",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner RLWR Volume Control Knob"
             },
@@ -1846,7 +1820,7 @@
                 "device_id": "62",
                 "command": "3008",
                 "arg_number": "391",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner ATA Volume Control Knob"
             },
@@ -1856,7 +1830,7 @@
                 "device_id": "62",
                 "command": "3009",
                 "arg_number": "392",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner VCR Volume Control Knob"
             },
@@ -1875,7 +1849,7 @@
                 "device_id": "62",
                 "command": "3010",
                 "arg_number": "393",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner ADF Volume Control Knob"
             },
@@ -1894,7 +1868,7 @@
                 "device_id": "62",
                 "command": "3011",
                 "arg_number": "385",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner MASTER Volume Control Knob"
             },
@@ -1904,7 +1878,7 @@
                 "device_id": "62",
                 "command": "3012",
                 "arg_number": "386",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG COMM Panel",
                 "description": "Gunner SENS Control Knob"
             },
@@ -2519,7 +2493,7 @@
                 "device_id": "29",
                 "command": "3050",
                 "arg_number": "316",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Keyboard Unit",
                 "description": "Pilot Scratchpad Keyboard Brightness Knob"
             }
@@ -2972,7 +2946,7 @@
                 "device_id": "30",
                 "command": "3050",
                 "arg_number": "621",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Keyboard Unit",
                 "description": "Gunner Scratchpad Keyboard Brightness Knob"
             }
@@ -3014,7 +2988,7 @@
                 "device_id": "48",
                 "command": "3011",
                 "arg_number": "273",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Up-Front Display",
                 "description": "Pilot Up-Front Display Brightness Knob"
             },
@@ -3092,7 +3066,7 @@
                 "device_id": "49",
                 "command": "3011",
                 "arg_number": "265",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Up-Front Display",
                 "description": "Gunner Up-Front Display Brightness Knob"
             },
@@ -3281,7 +3255,7 @@
                 "device_id": "51",
                 "command": "3002",
                 "arg_number": "148",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG TEDAC Display",
                 "description": "Gunner TEDAC Display FLIR GAIN Control Knob"
             },
@@ -3291,7 +3265,7 @@
                 "device_id": "51",
                 "command": "3003",
                 "arg_number": "149",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG TEDAC Display",
                 "description": "Gunner TEDAC Display FLIR LEV Control Knob"
             },
@@ -3302,7 +3276,7 @@
                 "command": "3001",
                 "arg_number": "154",
                 "step": "0.5",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "CPG TEDAC Display",
@@ -3617,7 +3591,7 @@
                 "device_id": "3",
                 "command": "3011",
                 "arg_number": "278",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Video Control Panel",
                 "description": "Pilot IHADSS BRT Control Knob"
             },
@@ -3627,7 +3601,7 @@
                 "device_id": "3",
                 "command": "3010",
                 "arg_number": "279",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Video Control Panel",
                 "description": "Pilot IHADSS CON Control Knob"
             },
@@ -3637,7 +3611,7 @@
                 "device_id": "3",
                 "command": "3012",
                 "arg_number": "280",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Video Control Panel",
                 "description": "Pilot SYM BRT Control Knob"
             },
@@ -3647,7 +3621,7 @@
                 "device_id": "3",
                 "command": "3008",
                 "arg_number": "282",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Video Control Panel",
                 "description": "Pilot FLIR LVL Control Knob"
             },
@@ -3657,7 +3631,7 @@
                 "device_id": "3",
                 "command": "3007",
                 "arg_number": "283",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Video Control Panel",
                 "description": "Pilot FLIR GAIN Control Knob"
             },
@@ -3880,7 +3854,7 @@
                 "device_id": "2",
                 "command": "3001",
                 "arg_number": "633",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Left Console",
                 "description": "Pilot Power Lever Friction Adjustment Lever"
             },
@@ -4202,13 +4176,26 @@
                 "category": "PLT Cockpit",
                 "description": "Pilot Defog Button"
             },
+            "PLT_WIPER_SW": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_SW",
+                "device_id": "9",
+                "command": "3002",
+                "arg_number": "357",
+                "step": "0.1",
+                "limits": "{ -0.1, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PLT Cockpit",
+                "description": "Pilot Wiper Control Switch, PARK/OFF/LO/HI"
+            },
             "PLT_ENG_L_PW_LVR": {
                 "type": "Potentiometer",
                 "msg": "PLT_ENG_L_PW_LVR",
                 "device_id": "6",
                 "command": "3031",
                 "arg_number": "398",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Cockpit",
                 "description": "Pilot Power Lever Smoothly (Left)"
             },
@@ -4218,7 +4205,7 @@
                 "device_id": "6",
                 "command": "3032",
                 "arg_number": "399",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT Cockpit",
                 "description": "Pilot Power Lever Smoothly (Right)"
             },
@@ -4229,7 +4216,7 @@
                 "command": "3003",
                 "arg_number": "315",
                 "step": "0.5",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "output_map": "nil",
                 "cycle": "False",
                 "category": "PLT Cockpit",
@@ -4291,13 +4278,26 @@
                 "category": "CPG Cockpit",
                 "description": "Gunner Defog Button"
             },
+            "CPG_WIPER_SW": {
+                "type": "Tumb",
+                "msg": "CPG_WIPER_SW",
+                "device_id": "9",
+                "command": "3004",
+                "arg_number": "395",
+                "step": "0.1",
+                "limits": "{ -0.1, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CPG Cockpit",
+                "description": "Gunner Wiper Control Switch, PARK/OFF/LO/HI"
+            },
             "CPG_ENG_L_PW_LVR": {
                 "type": "Potentiometer",
                 "msg": "CPG_ENG_L_PW_LVR",
                 "device_id": "6",
                 "command": "3031",
                 "arg_number": "398",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Cockpit",
                 "description": "Gunner Power Lever Smoothly (Left)"
             },
@@ -4307,7 +4307,7 @@
                 "device_id": "6",
                 "command": "3032",
                 "arg_number": "399",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "CPG Cockpit",
                 "description": "Gunner Power Lever Smoothly (Right)"
             },
@@ -4331,19 +4331,6 @@
             }
         },
         "PLT CMWS": {
-            "PLT_CMWS_PW": {
-                "type": "Tumb",
-                "msg": "PLT_CMWS_PW",
-                "device_id": "80",
-                "command": "3001",
-                "arg_number": "610",
-                "step": "1.0",
-                "limits": "{-1, 0}",
-                "output_map": "nil",
-                "cycle": "False",
-                "category": "PLT CMWS",
-                "description": "Pilot CMWS PWR Switch, OFF/ON"
-            },
             "PLT_CMWS_PW_TEST": {
                 "type": "PushButton",
                 "msg": "PLT_CMWS_PW_TEST",
@@ -4359,7 +4346,7 @@
                 "device_id": "80",
                 "command": "3003",
                 "arg_number": "611",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT CMWS",
                 "description": "Pilot CMWS Audio Volume Knob"
             },
@@ -4369,7 +4356,7 @@
                 "device_id": "80",
                 "command": "3004",
                 "arg_number": "612",
-                "limits": "{0, 1}",
+                "limits": "{ 0, 1 }",
                 "category": "PLT CMWS",
                 "description": "Pilot CMWS Lamp Knob"
             },
@@ -4417,12 +4404,22 @@
                 "arg_number": "618",
                 "category": "PLT CMWS",
                 "description": "Pilot CMWS Flare Jettison Switch"
+            },
+            "PLT_CMWS_PW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CMWS_PW",
+                "device_id": "80",
+                "downSwitch": "3001",
+                "upSwitch": "3002",
+                "arg_number": "610",
+                "category": "PLT CMWS",
+                "description": "Pilot CMWS PWR Switch, OFF/ON/TEST"
             }
         }
     },
     "id": {
         "aircraft": "AH-64D",
-        "date": "Nov 21 2023, 10:53 AM -0800",
-        "version": "v0.7.49"
+        "date": "Jul 13 2024, 12:51 PM -0700",
+        "version": "v0.8.0"
     }
 }

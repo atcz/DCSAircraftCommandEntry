@@ -29,240 +29,252 @@
 				"description": "Pause (0-25) Seconds"
 			}
 		},
-		"NS430": {
-			"NS430_PWR_VOL_PUSH_SQ_POW": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_PWR_VOL_PUSH_SQ_POW",
-				"device_id": "257",
-				"start_command": "3001",
-				"stop_command": "3030",
-				"arg_number": "1",
-				"category": "NS430",
-				"description": "PWR-VOL PUSH-SQ COM Power"
-			},
-			"NS430_VOL_PUSH_ID_PUSH": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_VOL_PUSH_ID_PUSH",
-				"device_id": "257",
-				"start_command": "3004",
-				"stop_command": "3031",
-				"arg_number": "3",
-				"category": "NS430",
-				"description": "VOL_PUSH-ID VLOC Push"
-			},
-			"NS430_SMALL_LEFT_BTN_PUSH": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_SMALL_LEFT_BTN_PUSH",
-				"device_id": "257",
-				"start_command": "3009",
-				"stop_command": "3032",
-				"arg_number": "5",
-				"category": "NS430",
-				"description": "SMALL_LEFT_BTN Push"
-			},
-			"NS430_COM_FLIP_FLOP": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_COM_FLIP_FLOP",
-				"device_id": "257",
-				"start_command": "3012",
-				"stop_command": "3033",
-				"arg_number": "7",
-				"category": "NS430",
-				"description": "COM flip-flop"
-			},
-			"NS430_VLOC_FLIP_FLOP": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_VLOC_FLIP_FLOP",
-				"device_id": "257",
-				"start_command": "3013",
-				"stop_command": "3034",
-				"arg_number": "8",
-				"category": "NS430",
-				"description": "VLOC flip-flop"
-			},
-			"NS430_CDI": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_CDI",
-				"device_id": "257",
-				"start_command": "3014",
-				"stop_command": "3035",
-				"arg_number": "9",
-				"category": "NS430",
-				"description": "CDI"
-			},
-			"NS430_OBS": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_OBS",
-				"device_id": "257",
-				"start_command": "3015",
-				"stop_command": "3036",
-				"arg_number": "10",
-				"category": "NS430",
-				"description": "OBS"
-			},
-			"NS430_OBS1": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_OBS1",
-				"device_id": "257",
-				"start_command": "3015",
-				"stop_command": "3036",
-				"arg_number": "10",
-				"category": "NS430",
-				"description": "OBS1"
-			},
-			"NS430_MSG": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_MSG",
-				"device_id": "257",
-				"start_command": "3016",
-				"stop_command": "3037",
-				"arg_number": "11",
-				"category": "NS430",
-				"description": "MSG"
-			},
-			"NS430_FPL": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_FPL",
-				"device_id": "257",
-				"start_command": "3017",
-				"stop_command": "3038",
-				"arg_number": "12",
-				"category": "NS430",
-				"description": "FPL"
-			},
-			"NS430_PROC": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_PROC",
-				"device_id": "257",
-				"start_command": "3018",
-				"stop_command": "3039",
-				"arg_number": "13",
-				"category": "NS430",
-				"description": "PROC"
-			},
-			"NS430_DIRECT_TO": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_DIRECT_TO",
-				"device_id": "257",
-				"start_command": "3021",
-				"stop_command": "3042",
-				"arg_number": "15",
-				"category": "NS430",
-				"description": "DIRECT-TO"
-			},
-			"NS430_MENU": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_MENU",
-				"device_id": "257",
-				"start_command": "3022",
-				"stop_command": "3043",
-				"arg_number": "16",
-				"category": "NS430",
-				"description": "MENU"
-			},
-			"NS430_CLR": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_CLR",
-				"device_id": "257",
-				"start_command": "3023",
-				"stop_command": "3044",
-				"arg_number": "17",
-				"category": "NS430",
-				"description": "CLR"
-			},
-			"NS430_ENT": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_ENT",
-				"device_id": "257",
-				"start_command": "3024",
-				"stop_command": "3045",
-				"arg_number": "18",
-				"category": "NS430",
-				"description": "ENT"
-			},
-			"NS430_SMALL_RIGHT_BTN_PUSH": {
-				"type": "DoubleCommandButton",
-				"msg": "NS430_SMALL_RIGHT_BTN_PUSH",
-				"device_id": "257",
-				"start_command": "3027",
-				"stop_command": "3046",
-				"arg_number": "20",
-				"category": "NS430",
-				"description": "SMALL_RIGHT_BTN Push"
-			},
-			"NS430_PWR_VOL_PUSH_SQ_VOL": {
-				"type": "Potentiometer",
-				"msg": "NS430_PWR_VOL_PUSH_SQ_VOL",
-				"device_id": "257",
-				"command": "3002",
-				"arg_number": "0",
-				"limits": "{0, 1}",
-				"category": "NS430",
-				"description": "PWR-VOL_PUSH-SQ COM Volume"
-			},
-			"NS430_VOL_PUSH_ID_VOL": {
-				"type": "Potentiometer",
-				"msg": "NS430_VOL_PUSH_ID_VOL",
-				"device_id": "257",
-				"command": "3005",
-				"arg_number": "2",
-				"limits": "{0, 1}",
-				"category": "NS430",
-				"description": "VOL_PUSH-ID VLOC Volume"
-			},
-			"NS430_BIG_LEFT_BTN": {
-				"type": "Rotary",
-				"msg": "NS430_BIG_LEFT_BTN",
-				"device_id": "257",
-				"command": "3007",
-				"arg_number": "4",
-				"category": "NS430",
-				"description": "BIG_LEFT_BTN"
-			},
-			"NS430_SMALL_LEFT_BTN_ROT": {
-				"type": "Rotary",
-				"msg": "NS430_SMALL_LEFT_BTN_ROT",
-				"device_id": "257",
-				"command": "3010",
-				"arg_number": "6",
-				"category": "NS430",
-				"description": "SMALL_LEFT_BTN rotate"
-			},
-			"NS430_BIG_RIGHT_BTN": {
-				"type": "Rotary",
-				"msg": "NS430_BIG_RIGHT_BTN",
-				"device_id": "257",
-				"command": "3025",
-				"arg_number": "19",
-				"category": "NS430",
-				"description": "BIG_RIGHT_BTN"
-			},
-			"NS430_SMALL_RIGHT_BTN_ROT": {
-				"type": "Rotary",
-				"msg": "NS430_SMALL_RIGHT_BTN_ROT",
-				"device_id": "257",
-				"command": "3028",
-				"arg_number": "21",
-				"category": "NS430",
-				"description": "SMALL_RIGHT_BTN rotate"
-			},
-			"NS430_RNG_RKR": {
-				"type": "MomentaryRockerSwitch",
-				"msg": "NS430_RNG_RKR",
-				"device_id": "257",
-				"pos_command": "3020",
-				"pos_stop_command": "3041",
-				"neg_command": "3019",
-				"neg_stop_command": "3040",
-				"arg_number": "14",
-				"category": "NS430",
-				"description": "RNG Rocker"
-			}
-		}
-	},
-	"id": {
-		"aircraft": "All",
-		"date": "Jul 05 2023, 12:15 PM -0700",
-		"version": null
-	}
+        "NS430": {
+            "NS430_LEFT_COM_PWR_VOL_PUSH": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_LEFT_COM_PWR_VOL_PUSH",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3001",
+                "stop_command": "3030",
+                "arg_number": "1",
+                "category": "NS430",
+                "description": "COM Power/Volume Push"
+            },
+            "NS430_LEFT_COM_PWR_VOL_ROTATE": {
+                "type": "Potentiometer2",
+                "msg": "NS430_LEFT_COM_PWR_VOL_ROTATE",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "command": "3002",
+                "arg_number": "0",
+                "limits": "{ 0, 1 }",
+                "category": "NS430",
+                "description": "COM Power/Volume Rotate"
+            },
+            "NS430_LEFT_VLOC_VOL_PUSH": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_LEFT_VLOC_VOL_PUSH",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3004",
+                "stop_command": "3031",
+                "arg_number": "3",
+                "category": "NS430",
+                "description": "VOR/Localizer receiver Volume Push"
+            },
+            "NS430_LEFT_VLOC_VOLUME": {
+                "type": "Potentiometer2",
+                "msg": "NS430_LEFT_VLOC_VOLUME",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "command": "3005",
+                "arg_number": "2",
+                "limits": "{ 0, 1 }",
+                "category": "NS430",
+                "description": "VOR/Localizer receiver Volume Rotate"
+            },
+            "NS430_LEFT_SMALL_BTN_PUSH": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_LEFT_SMALL_BTN_PUSH",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3009",
+                "stop_command": "3032",
+                "arg_number": "5",
+                "category": "NS430",
+                "description": "Small Left Button Push"
+            },
+            "NS430_LEFT_SMALL_BTN_ROT": {
+                "type": "Rotary2",
+                "msg": "NS430_LEFT_SMALL_BTN_ROT",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "command": "3010",
+                "arg_number": "6",
+                "category": "NS430",
+                "description": "Small Left Button Rotate"
+            },
+            "NS430_LEFT_BIG_BTN_ROTATE": {
+                "type": "Rotary2",
+                "msg": "NS430_LEFT_BIG_BTN_ROTATE",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "command": "3007",
+                "arg_number": "4",
+                "category": "NS430",
+                "description": "Big Left Button Rotate"
+            },
+            "NS430_LEFT_COM_FLIP_FLOP": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_LEFT_COM_FLIP_FLOP",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3012",
+                "stop_command": "3012",
+                "arg_number": "7",
+                "category": "NS430",
+                "description": "COM flip-flop"
+            },
+            "NS430_LEFT_VLOC_FLIP_FLOP": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_LEFT_VLOC_FLIP_FLOP",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3013",
+                "stop_command": "3013",
+                "arg_number": "8",
+                "category": "NS430",
+                "description": "VOR/Localizer flip-flop"
+            },
+            "NS430_BTM_CDI": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_BTM_CDI",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3014",
+                "stop_command": "3014",
+                "arg_number": "9",
+                "category": "NS430",
+                "description": "[CDI] Course Deviation Indicator"
+            },
+            "NS430_BTM_OBS": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_BTM_OBS",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3015",
+                "stop_command": "3015",
+                "arg_number": "10",
+                "category": "NS430",
+                "description": "[OBS] Activate Suspend Mode"
+            },
+            "NS430_BTM_MSG": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_BTM_MSG",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3016",
+                "stop_command": "3016",
+                "arg_number": "11",
+                "category": "NS430",
+                "description": "[MSG] Message Button"
+            },
+            "NS430_BTM_FPL": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_BTM_FPL",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3017",
+                "stop_command": "3017",
+                "arg_number": "12",
+                "category": "NS430",
+                "description": "[FPL] Create / Edit Flight plans"
+            },
+            "NS430_BTM_PROC": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_BTM_PROC",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3018",
+                "stop_command": "3018",
+                "arg_number": "13",
+                "category": "NS430",
+                "description": "[PROC] Select Airport Procedure"
+            },
+            "NS430_RIGHT_RNG_ROCKER": {
+                "type": "MomentaryRockerSwitch",
+                "msg": "NS430_RIGHT_RNG_ROCKER",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "action_left_command": "3020",
+                "ui_left_command": "3041",
+                "action_right_command": "3019",
+                "ui_right_command": "3040",
+                "arg_number": "14",
+                "category": "NS430",
+                "description": "Range / Zoom Rocker Switch"
+            },
+            "NS430_RIGHT_DIRECT_TO": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_RIGHT_DIRECT_TO",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3021",
+                "stop_command": "3042",
+                "arg_number": "15",
+                "category": "NS430",
+                "description": "DIRECT-TO Button"
+            },
+            "NS430_RIGHT_MENU": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_RIGHT_MENU",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3022",
+                "stop_command": "3043",
+                "arg_number": "16",
+                "category": "NS430",
+                "description": "MENU Button"
+            },
+            "NS430_RIGHT_CLR": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_RIGHT_CLR",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3023",
+                "stop_command": "3044",
+                "arg_number": "17",
+                "category": "NS430",
+                "description": "CLR Button"
+            },
+            "NS430_RIGHT_ENT": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_RIGHT_ENT",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3024",
+                "stop_command": "3045",
+                "arg_number": "18",
+                "category": "NS430",
+                "description": "ENT Button"
+            },
+            "NS430_RIGHT_SMALL_BTN_PUSH": {
+                "type": "DoubleCommandButton",
+                "msg": "NS430_RIGHT_SMALL_BTN_PUSH",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "start_command": "3027",
+                "stop_command": "3046",
+                "arg_number": "20",
+                "category": "NS430",
+                "description": "Small Right Button Push"
+            },
+            "NS430_RIGHT_SMALL_BTN_ROT": {
+                "type": "Rotary2",
+                "msg": "NS430_RIGHT_SMALL_BTN_ROT",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "command": "3028",
+                "arg_number": "21",
+                "category": "NS430",
+                "description": "Small Right Button Rotate"
+            },
+            "NS430_RIGHT_BIG_BTN_ROTATE": {
+                "type": "Rotary2",
+                "msg": "NS430_RIGHT_BIG_BTN_ROTATE",
+                "ns430_device_id": "256",
+                "device_id": "257",
+                "command": "3025",
+                "arg_number": "19",
+                "category": "NS430",
+                "description": "Big Right Button Rotate"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "All",
+        "date": "Jul 26 2024, 08:18 AM -0700",
+        "version": "v0.8.0"
+    }
 }
