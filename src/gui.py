@@ -170,7 +170,7 @@ class GUI:
              sg.InputText(size=(5, 1), key="setValue", pad=((9,5),3), readonly=False),
              sg.Text("Range:", pad=((5,5),3)),
              sg.Combo(values=list(), readonly=True, enable_events=True, key='rangeSelector',
-                      size=(5,1), pad=((9,5),3))]
+                      size=(5,1), pad=((9,5),3), auto_size_text=False)]
         ]
 
         framedatalayout = [
@@ -181,7 +181,7 @@ class GUI:
         framegrouplayout = [
             [sg.Text("Select group:")],
             [sg.Combo(values=[""] + sorted(self.editor.default_cmds), readonly=False,
-                        enable_events=True, key='groupSelector', size=(28,1)),
+                        enable_events=True, key='groupSelector', size=(28,1), auto_size_text=False),
              sg.Button(button_text="F", key="groupFilter")]
         ]
 
@@ -230,7 +230,7 @@ class GUI:
         col0 = [
             [sg.Text("Select profile:")],
             [sg.Combo(values=[""] + sorted(self.get_profile_names()), readonly=False,
-                         enable_events=True, key='profileSelector', size=(29, 1)),
+                         enable_events=True, key='profileSelector', size=(29, 1), auto_size_text=False),
              sg.Button(button_text="F", key="profileFilter")],
             [sg.Listbox(values=list(), size=(33, 17),
                            enable_events=True, key='activesList')],
