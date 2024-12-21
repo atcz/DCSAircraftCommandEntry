@@ -1170,11 +1170,15 @@
                 "description": "Accelerometer Reset Button - Push to reset"
             },
             "A4_SIGHT_FIL_SEL": {
-                "type": "ToggleSwitch",
+                "type": "Tumb",
                 "msg": "A4_SIGHT_FIL_SEL",
                 "device_id": "22",
                 "command": "3015",
                 "arg_number": "642",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
                 "category": "Cockpit",
                 "description": "A-4 Sight Filament Selector Switch, SECONDARY/PRIMARY"
             },
@@ -1756,7 +1760,7 @@
     },
     "id": {
         "aircraft": "F-86F",
-        "date": "Jul 13 2024, 12:51 PM -0700",
-        "version": "v0.8.0"
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
     }
 }

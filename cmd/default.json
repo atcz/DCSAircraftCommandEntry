@@ -1,34 +1,34 @@
 {
-	"commands": {
-		"Pause": {
-			"PROGRAM_PAUSE_5": {
-				"type": "Pause",
-				"msg": "PROGRAM_PAUSE_5",
-				"device_id": "0",
-				"command": "0",
-				"limits": "{0, 5}",
-				"category": "Pause",
-				"description": "Pause (0-5) Seconds"
-			},
-			"PROGRAM_PAUSE_10": {
-				"type": "Pause",
-				"msg": "PROGRAM_PAUSE_10",
-				"device_id": "0",
-				"command": "0",
-				"limits": "{0, 10}",
-				"category": "Pause",
-				"description": "Pause (0-10) Seconds"
-			},
-			"PROGRAM_PAUSE_25": {
-				"type": "Pause",
-				"msg": "PROGRAM_PAUSE_25",
-				"device_id": "0",
-				"command": "0",
-				"limits": "{0, 25}",
-				"category": "Pause",
-				"description": "Pause (0-25) Seconds"
-			}
-		},
+    "commands": {
+        "Pause": {
+            "PROGRAM_PAUSE_5": {
+                "type": "Pause",
+                "msg": "PROGRAM_PAUSE_5",
+                "device_id": "0",
+                "command": "0",
+                "limits": "{0, 5}",
+                "category": "Pause",
+                "description": "Pause (0-5) Seconds"
+            },
+            "PROGRAM_PAUSE_10": {
+                "type": "Pause",
+                "msg": "PROGRAM_PAUSE_10",
+                "device_id": "0",
+                "command": "0",
+                "limits": "{0, 10}",
+                "category": "Pause",
+                "description": "Pause (0-10) Seconds"
+            },
+            "PROGRAM_PAUSE_25": {
+                "type": "Pause",
+                "msg": "PROGRAM_PAUSE_25",
+                "device_id": "0",
+                "command": "0",
+                "limits": "{0, 25}",
+                "category": "Pause",
+                "description": "Pause (0-25) Seconds"
+            }
+        },
         "NS430": {
             "NS430_LEFT_COM_PWR_VOL_PUSH": {
                 "type": "DoubleCommandButton",
@@ -274,7 +274,7 @@
     },
     "id": {
         "aircraft": "All",
-        "date": "Jul 26 2024, 08:18 AM -0700",
-        "version": "v0.8.0"
+        "date": "Dec 20 2024, 18:53 PM -0800",
+        "version": "v0.8.3"
     }
 }

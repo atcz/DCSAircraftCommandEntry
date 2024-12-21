@@ -1378,7 +1378,7 @@
                 "type": "PushButton",
                 "msg": "CPG_INTL_TEST_BTN",
                 "device_id": "11",
-                "command": "3011",
+                "command": "3012",
                 "arg_number": "367",
                 "category": "CPG Internal Light System",
                 "description": "Gunner Light Test Button"
@@ -1387,7 +1387,7 @@
                 "type": "Potentiometer",
                 "msg": "CPG_INTL_SIGNAL_L_KNB",
                 "device_id": "11",
-                "command": "3012",
+                "command": "3013",
                 "arg_number": "364",
                 "limits": "{ 0, 1 }",
                 "category": "CPG Internal Light System",
@@ -1397,7 +1397,7 @@
                 "type": "Potentiometer",
                 "msg": "CPG_INTL_PRIMARY_L_KNB",
                 "device_id": "11",
-                "command": "3013",
+                "command": "3014",
                 "arg_number": "365",
                 "limits": "{ 0, 1 }",
                 "category": "CPG Internal Light System",
@@ -1407,7 +1407,7 @@
                 "type": "Potentiometer",
                 "msg": "CPG_INTL_FLOOD_L_KNB",
                 "device_id": "11",
-                "command": "3014",
+                "command": "3015",
                 "arg_number": "366",
                 "limits": "{ 0, 1 }",
                 "category": "CPG Internal Light System",
@@ -3565,11 +3565,13 @@
                 "description": "Gunner Sight Manual Tracker Controller, Up/Down"
             },
             "CPG_RHG_MAN_TRK_L_R": {
-                "type": "Springloaded_3PosTumb",
+                "type": "RockerSwitch",
                 "msg": "CPG_RHG_MAN_TRK_L_R",
                 "device_id": "51",
-                "downSwitch": "3086",
-                "upSwitch": "3085",
+                "pos_command": "3086",
+                "pos_stop_command": "3086",
+                "neg_command": "3085",
+                "neg_stop_command": "3085",
                 "arg_number": "516",
                 "category": "CPG TEDAC Right Handgrip",
                 "description": "Gunner Sight Manual Tracker Controller, Left/Right"
@@ -3672,8 +3674,8 @@
                 "type": "Springloaded_3PosTumb",
                 "msg": "PLT_GEN_RESET",
                 "device_id": "3",
-                "downSwitch": "3002",
-                "upSwitch": "3001",
+                "downSwitch": "3017",
+                "upSwitch": "3018",
                 "arg_number": "355",
                 "category": "PLT Generator Panel",
                 "description": "Pilot Generator Reset Switch, GEN 1/GEN 2"
@@ -3844,7 +3846,7 @@
                 "msg": "PLT_APU_BTN_CVR",
                 "device_id": "6",
                 "command": "3002",
-                "arg_number": "4001",
+                "arg_number": "401",
                 "category": "PLT Left Console",
                 "description": "Pilot APU Pushbutton Cover, OPEN/CLOSE"
             },
@@ -4331,15 +4333,6 @@
             }
         },
         "PLT CMWS": {
-            "PLT_CMWS_PW_TEST": {
-                "type": "PushButton",
-                "msg": "PLT_CMWS_PW_TEST",
-                "device_id": "80",
-                "command": "3002",
-                "arg_number": "610",
-                "category": "PLT CMWS",
-                "description": "Pilot CMWS PWR Switch, TEST"
-            },
             "PLT_CMWS_VOL": {
                 "type": "Potentiometer",
                 "msg": "PLT_CMWS_VOL",
@@ -4415,11 +4408,823 @@
                 "category": "PLT CMWS",
                 "description": "Pilot CMWS PWR Switch, OFF/ON/TEST"
             }
+        },
+        "PLT Collective (Mission Grip)": {
+            "PLT_COLLECTIVE_FCR_SCAN_SIZE_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_FCR_SCAN_SIZE_UD",
+                "device_id": "25",
+                "downSwitch": "3025",
+                "upSwitch": "3024",
+                "arg_number": "535",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "FCR Scan Size Switch U/D (0=M/Down, 2=Z/Up)"
+            },
+            "PLT_COLLECTIVE_FCR_SCAN_SIZE_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_FCR_SCAN_SIZE_LR",
+                "device_id": "25",
+                "downSwitch": "3026",
+                "upSwitch": "3027",
+                "arg_number": "536",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "FCR Scan Size Switch L/R (0=N/Left, 2=W/Right)"
+            },
+            "PLT_COLLECTIVE_SIGHT_SELECT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SIGHT_SELECT_UD",
+                "device_id": "25",
+                "downSwitch": "3029",
+                "upSwitch": "3028",
+                "arg_number": "537",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Sight Select Switch U/D (0=LINK/Down, 2=HMD/Up)"
+            },
+            "PLT_COLLECTIVE_SIGHT_SELECT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SIGHT_SELECT_LR",
+                "device_id": "25",
+                "downSwitch": "3030",
+                "upSwitch": "3031",
+                "arg_number": "538",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Sight Select Switch L/R (0=FCR/Left, 2=TADS/Right)"
+            },
+            "PLT_COLLECTIVE_FCR_MODE_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_FCR_MODE_UD",
+                "device_id": "25",
+                "downSwitch": "3033",
+                "upSwitch": "3032",
+                "arg_number": "539",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "FCR Mode Switch U/D (0=ATM/Down, 2=GTM/Up)"
+            },
+            "PLT_COLLECTIVE_FCR_MODE_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_FCR_MODE_LR",
+                "device_id": "25",
+                "downSwitch": "3034",
+                "upSwitch": "3035",
+                "arg_number": "540",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "FCR Mode Switch L/R (0=TPM/Left, 2=RMAP/Right)"
+            },
+            "PLT_COLLECTIVE_CURSOR_UD": {
+                "type": "Potentiometer",
+                "msg": "PLT_COLLECTIVE_CURSOR_UD",
+                "device_id": "25",
+                "command": "3043",
+                "arg_number": "541",
+                "limits": "{ -1, 1 }",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Cursor Controller U/D"
+            },
+            "PLT_COLLECTIVE_CURSOR_LR": {
+                "type": "Potentiometer",
+                "msg": "PLT_COLLECTIVE_CURSOR_LR",
+                "device_id": "25",
+                "command": "3042",
+                "arg_number": "542",
+                "limits": "{ -1, 1 }",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Cursor Controller L/R"
+            },
+            "PLT_COLLECTIVE_CURSOR_ENTER": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_CURSOR_ENTER",
+                "device_id": "25",
+                "command": "3040",
+                "arg_number": "543",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Cursor Enter"
+            },
+            "PLT_COLLECTIVE_ALT_CURSOR_ENTER": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_ALT_CURSOR_ENTER",
+                "device_id": "25",
+                "command": "3041",
+                "arg_number": "544",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Alternate Cursor Enter"
+            },
+            "PLT_COLLECTIVE_CURSOR_DISPLAY": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_CURSOR_DISPLAY",
+                "device_id": "25",
+                "command": "3044",
+                "arg_number": "545",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Cursor Display Select Button"
+            },
+            "PLT_COLLECTIVE_FCR_SCAN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_FCR_SCAN",
+                "device_id": "25",
+                "downSwitch": "3046",
+                "upSwitch": "3045",
+                "arg_number": "546",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "FCR Scan Switch (0=Continuous, 2=Single)"
+            },
+            "PLT_COLLECTIVE_CUED_SEARCH": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_CUED_SEARCH",
+                "device_id": "25",
+                "command": "3047",
+                "arg_number": "547",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "CUED Search Switch"
+            },
+            "PLT_COLLECTIVE_MISSILE_ADVANCE": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_MISSILE_ADVANCE",
+                "device_id": "25",
+                "command": "3048",
+                "arg_number": "548",
+                "category": "PLT Collective (Mission Grip)",
+                "description": "Missile Advance Switch"
+            }
+        },
+        "PLT Collective (Flight Grip)": {
+            "PLT_COLLECTIVE_JETTISON_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COLLECTIVE_JETTISON_COVER",
+                "device_id": "25",
+                "command": "3049",
+                "arg_number": "549",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Emergency Jettison Guard"
+            },
+            "PLT_COLLECTIVE_JETTISON": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_JETTISON",
+                "device_id": "25",
+                "command": "3050",
+                "arg_number": "550",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Emergency Jettison Switch"
+            },
+            "PLT_COLLECTIVE_NVS_SELECT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_NVS_SELECT",
+                "device_id": "25",
+                "downSwitch": "3052",
+                "upSwitch": "3051",
+                "arg_number": "551",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "NVS Select Switch (0=PNVS, 2=TADS)"
+            },
+            "PLT_COLLECTIVE_BS_PLRT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_BS_PLRT",
+                "device_id": "25",
+                "downSwitch": "3053",
+                "upSwitch": "3054",
+                "arg_number": "552",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Boresight/Polarity Switch (0=B/S, 2=PLRT)"
+            },
+            "PLT_COLLECTIVE_STAB_CONTROL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_STAB_CONTROL",
+                "device_id": "25",
+                "downSwitch": "3055",
+                "upSwitch": "3056",
+                "arg_number": "553",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Stabilator Control Switch (0=NU, 2=ND)"
+            },
+            "PLT_COLLECTIVE_STAB_RESET": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_STAB_RESET",
+                "device_id": "25",
+                "command": "3057",
+                "arg_number": "554",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Stabilator Control Switch - Reset"
+            },
+            "PLT_COLLECTIVE_SEARCHLIGHT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SEARCHLIGHT",
+                "device_id": "25",
+                "downSwitch": "3059",
+                "upSwitch": "3058",
+                "arg_number": "555",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Searchlight (0=STOW, 1=OFF, 2=ON)"
+            },
+            "PLT_COLLECTIVE_SEARCHLIGHT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SEARCHLIGHT_UD",
+                "device_id": "25",
+                "downSwitch": "3061",
+                "upSwitch": "3060",
+                "arg_number": "556",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Searchlight Position U/D (0=RET/Down, 2=EXT/Up)"
+            },
+            "PLT_COLLECTIVE_SEARCHLIGHT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SEARCHLIGHT_LR",
+                "device_id": "25",
+                "downSwitch": "3062",
+                "upSwitch": "3063",
+                "arg_number": "557",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Searchlight Position L/R (0=L/Left, 2=R/Right)"
+            },
+            "PLT_COLLECTIVE_CHOP_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COLLECTIVE_CHOP_COVER",
+                "device_id": "25",
+                "command": "3064",
+                "arg_number": "558",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "CHOP Button Guard"
+            },
+            "PLT_COLLECTIVE_CHOP": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_CHOP",
+                "device_id": "25",
+                "command": "3065",
+                "arg_number": "559",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "CHOP Button"
+            },
+            "PLT_COLLECTIVE_TAIL_WHEEL": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_TAIL_WHEEL",
+                "device_id": "25",
+                "command": "3066",
+                "arg_number": "560",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "Tail Wheel Lock/Unlock"
+            },
+            "PLT_COLLECTIVE_BUCS_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COLLECTIVE_BUCS_COVER",
+                "device_id": "25",
+                "command": "3067",
+                "arg_number": "561",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "BUCS Trigger Guard"
+            },
+            "PLT_COLLECTIVE_BUCS": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_BUCS",
+                "device_id": "25",
+                "command": "3068",
+                "arg_number": "562",
+                "category": "PLT Collective (Flight Grip)",
+                "description": "BUCS Trigger"
+            }
+        },
+        "CPG Collective (Mission Grip)": {
+            "CPG_COLLECTIVE_FCR_SCAN_SIZE_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_FCR_SCAN_SIZE_UD",
+                "device_id": "25",
+                "downSwitch": "3025",
+                "upSwitch": "3024",
+                "arg_number": "577",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "FCR Scan Size Switch U/D (0=M/Down, 2=Z/Up)"
+            },
+            "CPG_COLLECTIVE_FCR_SCAN_SIZE_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_FCR_SCAN_SIZE_LR",
+                "device_id": "25",
+                "downSwitch": "3026",
+                "upSwitch": "3027",
+                "arg_number": "578",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "FCR Scan Size Switch L/R (0=N/Left, 2=W/Right)"
+            },
+            "CPG_COLLECTIVE_SIGHT_SELECT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_SIGHT_SELECT_UD",
+                "device_id": "25",
+                "downSwitch": "3029",
+                "upSwitch": "3028",
+                "arg_number": "579",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Sight Select Switch U/D (0=LINK/Down, 2=HMD/Up)"
+            },
+            "CPG_COLLECTIVE_SIGHT_SELECT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_SIGHT_SELECT_LR",
+                "device_id": "25",
+                "downSwitch": "3030",
+                "upSwitch": "3031",
+                "arg_number": "580",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Sight Select Switch L/R (0=FCR/Left, 2=TADS/Right)"
+            },
+            "CPG_COLLECTIVE_FCR_MODE_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_FCR_MODE_UD",
+                "device_id": "25",
+                "downSwitch": "3033",
+                "upSwitch": "3032",
+                "arg_number": "581",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "FCR Mode Switch U/D (0=ATM/Down, 2=GTM/Up)"
+            },
+            "CPG_COLLECTIVE_FCR_MODE_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_FCR_MODE_LR",
+                "device_id": "25",
+                "downSwitch": "3034",
+                "upSwitch": "3035",
+                "arg_number": "582",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "FCR Mode Switch L/R (0=TPM/Left, 2=RMAP/Right)"
+            },
+            "CPG_COLLECTIVE_CURSOR_UD": {
+                "type": "Potentiometer",
+                "msg": "CPG_COLLECTIVE_CURSOR_UD",
+                "device_id": "25",
+                "command": "3043",
+                "arg_number": "583",
+                "limits": "{ -1, 1 }",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Cursor Controller U/D"
+            },
+            "CPG_COLLECTIVE_CURSOR_LR": {
+                "type": "Potentiometer",
+                "msg": "CPG_COLLECTIVE_CURSOR_LR",
+                "device_id": "25",
+                "command": "3042",
+                "arg_number": "584",
+                "limits": "{ -1, 1 }",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Cursor Controller L/R"
+            },
+            "CPG_COLLECTIVE_CURSOR_ENTER": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_CURSOR_ENTER",
+                "device_id": "25",
+                "command": "3040",
+                "arg_number": "585",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Cursor Enter"
+            },
+            "CPG_COLLECTIVE_ALT_CURSOR_ENTER": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_ALT_CURSOR_ENTER",
+                "device_id": "25",
+                "command": "3041",
+                "arg_number": "586",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Alternate Cursor Enter"
+            },
+            "CPG_COLLECTIVE_CURSOR_DISPLAY": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_CURSOR_DISPLAY",
+                "device_id": "25",
+                "command": "3044",
+                "arg_number": "587",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Cursor Display Select Button"
+            },
+            "CPG_COLLECTIVE_FCR_SCAN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_FCR_SCAN",
+                "device_id": "25",
+                "downSwitch": "3046",
+                "upSwitch": "3045",
+                "arg_number": "588",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "FCR Scan Switch (0=Continuous, 2=Single)"
+            },
+            "CPG_COLLECTIVE_CUED_SEARCH": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_CUED_SEARCH",
+                "device_id": "25",
+                "command": "3047",
+                "arg_number": "589",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "CUED Search Switch"
+            },
+            "CPG_COLLECTIVE_MISSILE_ADVANCE": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_MISSILE_ADVANCE",
+                "device_id": "25",
+                "command": "3048",
+                "arg_number": "590",
+                "category": "CPG Collective (Mission Grip)",
+                "description": "Missile Advance Switch"
+            }
+        },
+        "CPG Collective (Flight Grip)": {
+            "CPG_COLLECTIVE_JETTISON_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COLLECTIVE_JETTISON_COVER",
+                "device_id": "25",
+                "command": "3049",
+                "arg_number": "591",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Emergency Jettison Guard"
+            },
+            "CPG_COLLECTIVE_JETTISON": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_JETTISON",
+                "device_id": "25",
+                "command": "3050",
+                "arg_number": "592",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Emergency Jettison Switch"
+            },
+            "CPG_COLLECTIVE_NVS_SELECT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_NVS_SELECT",
+                "device_id": "25",
+                "downSwitch": "3052",
+                "upSwitch": "3051",
+                "arg_number": "593",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "NVS Select Switch (0=PNVS, 2=TADS)"
+            },
+            "CPG_COLLECTIVE_BS_PLRT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_BS_PLRT",
+                "device_id": "25",
+                "downSwitch": "3053",
+                "upSwitch": "3054",
+                "arg_number": "594",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Boresight/Polarity Switch (0=B/S, 2=PLRT)"
+            },
+            "CPG_COLLECTIVE_STAB_CONTROL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_STAB_CONTROL",
+                "device_id": "25",
+                "downSwitch": "3055",
+                "upSwitch": "3056",
+                "arg_number": "595",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Stabilator Control Switch (0=NU, 2=ND)"
+            },
+            "CPG_COLLECTIVE_STAB_RESET": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_STAB_RESET",
+                "device_id": "25",
+                "command": "3057",
+                "arg_number": "596",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Stabilator Control Switch - Reset"
+            },
+            "CPG_COLLECTIVE_SEARCHLIGHT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_SEARCHLIGHT",
+                "device_id": "25",
+                "downSwitch": "3059",
+                "upSwitch": "3058",
+                "arg_number": "597",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Searchlight (0=STOW, 1=OFF, 2=ON)"
+            },
+            "CPG_COLLECTIVE_SEARCHLIGHT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_SEARCHLIGHT_UD",
+                "device_id": "25",
+                "downSwitch": "3061",
+                "upSwitch": "3060",
+                "arg_number": "598",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Searchlight Position U/D (0=RET/Down, 2=EXT/Up)"
+            },
+            "CPG_COLLECTIVE_SEARCHLIGHT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_COLLECTIVE_SEARCHLIGHT_LR",
+                "device_id": "25",
+                "downSwitch": "3062",
+                "upSwitch": "3063",
+                "arg_number": "599",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Searchlight Position L/R (0=L/Left, 2=R/Right)"
+            },
+            "CPG_COLLECTIVE_CHOP_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COLLECTIVE_CHOP_COVER",
+                "device_id": "25",
+                "command": "3064",
+                "arg_number": "600",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "CHOP Button Guard"
+            },
+            "CPG_COLLECTIVE_CHOP": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_CHOP",
+                "device_id": "25",
+                "command": "3065",
+                "arg_number": "601",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "CHOP Button"
+            },
+            "CPG_COLLECTIVE_TAIL_WHEEL": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_TAIL_WHEEL",
+                "device_id": "25",
+                "command": "3066",
+                "arg_number": "602",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "Tail Wheel Lock/Unlock"
+            },
+            "CPG_COLLECTIVE_BUCS_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_COLLECTIVE_BUCS_COVER",
+                "device_id": "25",
+                "command": "3067",
+                "arg_number": "603",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "BUCS Trigger Guard"
+            },
+            "CPG_COLLECTIVE_BUCS": {
+                "type": "PushButton",
+                "msg": "CPG_COLLECTIVE_BUCS",
+                "device_id": "25",
+                "command": "3068",
+                "arg_number": "604",
+                "category": "CPG Collective (Flight Grip)",
+                "description": "BUCS Trigger"
+            }
+        },
+        "PLT Cyclic": {
+            "PLT_CYCLIC_TRIGGER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CYCLIC_TRIGGER_COVER",
+                "device_id": "25",
+                "command": "3001",
+                "arg_number": "522",
+                "category": "PLT Cyclic",
+                "description": "Weapons Trigger Guard"
+            },
+            "PLT_CYCLIC_TRIGGER": {
+                "type": "Springloaded_3PosTumbWithRange",
+                "msg": "PLT_CYCLIC_TRIGGER",
+                "device_id": "25",
+                "down_switch": "3002",
+                "up_switch": "3003",
+                "arg_number": "523",
+                "limits": "{ 0, 1 }",
+                "category": "PLT Cyclic",
+                "description": "Weapons Trigger"
+            },
+            "PLT_CYCLIC_TRIM_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_TRIM_UD",
+                "device_id": "25",
+                "downSwitch": "3005",
+                "upSwitch": "3004",
+                "arg_number": "524",
+                "category": "PLT Cyclic",
+                "description": "Force Trim/Hold Mode Switch U/D (0=D/Down, 2=R/Up)"
+            },
+            "PLT_CYCLIC_TRIM_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_TRIM_LR",
+                "device_id": "25",
+                "downSwitch": "3006",
+                "upSwitch": "3007",
+                "arg_number": "525",
+                "category": "PLT Cyclic",
+                "description": "Force Trim/Hold Mode Switch L/R (0=AT/Left, 2=A/Right)"
+            },
+            "PLT_CYCLIC_WEAPON_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_WEAPON_UD",
+                "device_id": "25",
+                "downSwitch": "3009",
+                "upSwitch": "3008",
+                "arg_number": "526",
+                "category": "PLT Cyclic",
+                "description": "Weapons Action Switch U/D (0=A/Down, 2=G/Up)"
+            },
+            "PLT_CYCLIC_WEAPON_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_WEAPON_LR",
+                "device_id": "25",
+                "downSwitch": "3010",
+                "upSwitch": "3011",
+                "arg_number": "527",
+                "category": "PLT Cyclic",
+                "description": "Weapons Action Switch L/R (0=M/Left, 2=R/Right)"
+            },
+            "PLT_CYCLIC_SYMBOLOGY": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_SYMBOLOGY",
+                "device_id": "25",
+                "downSwitch": "3013",
+                "upSwitch": "3012",
+                "arg_number": "528",
+                "category": "PLT Cyclic",
+                "description": "Symbology Select Switch (0=HB/Down, 2=CT/Up)"
+            },
+            "PLT_CYCLIC_SYMBOLOGY_PRESS": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_SYMBOLOGY_PRESS",
+                "device_id": "25",
+                "command": "3014",
+                "arg_number": "530",
+                "category": "PLT Cyclic",
+                "description": "Symbology Select Switch - Depress"
+            },
+            "PLT_CYCLIC_RTS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_RTS",
+                "device_id": "25",
+                "downSwitch": "3017",
+                "upSwitch": "3018",
+                "arg_number": "531",
+                "category": "PLT Cyclic",
+                "description": "PTT/RTS Switch - (0=RADIO/Left, 2=ICS/Right)"
+            },
+            "PLT_CYCLIC_RTS_PRESS": {
+                "type": "InputOnlyPushButton",
+                "msg": "PLT_CYCLIC_RTS_PRESS",
+                "device_id": "25",
+                "command": "3019",
+                "category": "PLT Cyclic",
+                "description": "PTT/RTS Switch - Depress"
+            },
+            "PLT_CYCLIC_FMC_RELEASE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_FMC_RELEASE",
+                "device_id": "25",
+                "command": "3020",
+                "arg_number": "534",
+                "category": "PLT Cyclic",
+                "description": "FMC Release Button"
+            },
+            "PLT_CYCLIC_CHAFF": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_CHAFF",
+                "device_id": "25",
+                "command": "3021",
+                "arg_number": "533",
+                "category": "PLT Cyclic",
+                "description": "Chaff Dispense"
+            },
+            "PLT_CYCLIC_FLARE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_FLARE",
+                "device_id": "25",
+                "command": "3022",
+                "arg_number": "529",
+                "category": "PLT Cyclic",
+                "description": "Flare Dispense"
+            },
+            "PLT_CYCLIC_ATA_CAGE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_ATA_CAGE",
+                "device_id": "25",
+                "command": "3023",
+                "arg_number": "532",
+                "category": "PLT Cyclic",
+                "description": "ATA Missile Cage/Uncage Button"
+            }
+        },
+        "CPG Cyclic": {
+            "CPG_CYCLIC_TRIGGER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "CPG_CYCLIC_TRIGGER_COVER",
+                "device_id": "25",
+                "command": "3001",
+                "arg_number": "563",
+                "category": "CPG Cyclic",
+                "description": "Weapons Trigger Guard"
+            },
+            "CPG_CYCLIC_TRIGGER": {
+                "type": "Springloaded_3PosTumbWithRange",
+                "msg": "CPG_CYCLIC_TRIGGER",
+                "device_id": "25",
+                "down_switch": "3002",
+                "up_switch": "3003",
+                "arg_number": "564",
+                "limits": "{ 0, 1 }",
+                "category": "CPG Cyclic",
+                "description": "Weapons Trigger"
+            },
+            "CPG_CYCLIC_TRIM_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_CYCLIC_TRIM_UD",
+                "device_id": "25",
+                "downSwitch": "3005",
+                "upSwitch": "3004",
+                "arg_number": "565",
+                "category": "CPG Cyclic",
+                "description": "Force Trim/Hold Mode Switch U/D (0=D/Down, 2=R/Up)"
+            },
+            "CPG_CYCLIC_TRIM_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_CYCLIC_TRIM_LR",
+                "device_id": "25",
+                "downSwitch": "3006",
+                "upSwitch": "3007",
+                "arg_number": "566",
+                "category": "CPG Cyclic",
+                "description": "Force Trim/Hold Mode Switch L/R (0=AT/Left, 2=A/Right)"
+            },
+            "CPG_CYCLIC_WEAPON_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_CYCLIC_WEAPON_UD",
+                "device_id": "25",
+                "downSwitch": "3009",
+                "upSwitch": "3008",
+                "arg_number": "567",
+                "category": "CPG Cyclic",
+                "description": "Weapons Action Switch U/D (0=A/Down, 2=G/Up)"
+            },
+            "CPG_CYCLIC_WEAPON_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_CYCLIC_WEAPON_LR",
+                "device_id": "25",
+                "downSwitch": "3010",
+                "upSwitch": "3011",
+                "arg_number": "568",
+                "category": "CPG Cyclic",
+                "description": "Weapons Action Switch L/R (0=M/Left, 2=R/Right)"
+            },
+            "CPG_CYCLIC_SYMBOLOGY": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_CYCLIC_SYMBOLOGY",
+                "device_id": "25",
+                "downSwitch": "3013",
+                "upSwitch": "3012",
+                "arg_number": "569",
+                "category": "CPG Cyclic",
+                "description": "Symbology Select Switch (0=HB/Down, 2=CT/Up)"
+            },
+            "CPG_CYCLIC_SYMBOLOGY_PRESS": {
+                "type": "PushButton",
+                "msg": "CPG_CYCLIC_SYMBOLOGY_PRESS",
+                "device_id": "25",
+                "command": "3014",
+                "arg_number": "570",
+                "category": "CPG Cyclic",
+                "description": "Symbology Select Switch - Depress"
+            },
+            "CPG_CYCLIC_RTS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CPG_CYCLIC_RTS",
+                "device_id": "25",
+                "downSwitch": "3017",
+                "upSwitch": "3018",
+                "arg_number": "573",
+                "category": "CPG Cyclic",
+                "description": "PTT/RTS Switch - (0=RADIO/Left, 2=ICS/Right)"
+            },
+            "CPG_CYCLIC_RTS_PRESS": {
+                "type": "InputOnlyPushButton",
+                "msg": "CPG_CYCLIC_RTS_PRESS",
+                "device_id": "25",
+                "command": "3019",
+                "category": "CPG Cyclic",
+                "description": "PTT/RTS Switch - Depress"
+            },
+            "CPG_CYCLIC_FMC_RELEASE": {
+                "type": "PushButton",
+                "msg": "CPG_CYCLIC_FMC_RELEASE",
+                "device_id": "25",
+                "command": "3020",
+                "arg_number": "574",
+                "category": "CPG Cyclic",
+                "description": "FMC Release Button"
+            },
+            "CPG_CYCLIC_CHAFF": {
+                "type": "PushButton",
+                "msg": "CPG_CYCLIC_CHAFF",
+                "device_id": "25",
+                "command": "3021",
+                "arg_number": "575",
+                "category": "CPG Cyclic",
+                "description": "Chaff Dispense"
+            },
+            "CPG_CYCLIC_FLARE": {
+                "type": "PushButton",
+                "msg": "CPG_CYCLIC_FLARE",
+                "device_id": "25",
+                "command": "3022",
+                "arg_number": "572",
+                "category": "CPG Cyclic",
+                "description": "Flare Dispense"
+            },
+            "CPG_CYCLIC_ATA_CAGE": {
+                "type": "PushButton",
+                "msg": "CPG_CYCLIC_ATA_CAGE",
+                "device_id": "25",
+                "command": "3023",
+                "arg_number": "576",
+                "category": "CPG Cyclic",
+                "description": "ATA Missile Cage/Uncage Button"
+            }
         }
     },
     "id": {
         "aircraft": "AH-64D",
-        "date": "Jul 13 2024, 12:51 PM -0700",
-        "version": "v0.8.0"
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
     }
 }

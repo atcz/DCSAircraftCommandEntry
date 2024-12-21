@@ -506,16 +506,6 @@
                 "category": "Gear System",
                 "description": "BRAKES Channel Switch, CHAN 1/CHAN 2"
             },
-            "ANTI_SKID_SW": {
-                "type": "Springloaded_3PosTumb",
-                "msg": "ANTI_SKID_SW",
-                "device_id": "7",
-                "downSwitch": "3004",
-                "upSwitch": "3003",
-                "arg_number": "357",
-                "category": "Gear System",
-                "description": "ANTI-SKID Switch, PARKING BRAKE/ANTI-SKID/OFF"
-            },
             "GEAR_ALT_HANDLE": {
                 "type": "ToggleSwitch",
                 "msg": "GEAR_ALT_HANDLE",
@@ -2751,8 +2741,8 @@
         }
     },
     "id": {
-        "aircraft": "F-16C",
-        "date": "Jul 13 2024, 12:51 PM -0700",
-        "version": "v0.8.0"
+        "aircraft": "F-16C_50",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
     }
 }
