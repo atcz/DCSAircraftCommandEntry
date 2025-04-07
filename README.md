@@ -2,18 +2,6 @@
 
 Simple configurable script to input a sequence of commands to DCS aircraft. 
 
-Currently supported aircraft:
-
-* A-10C
-* AH-64D
-* F-15E
-* F-16C
-* F-86F
-* F/A-18C
-* Ka-50
-* Mi-8MT
-* UH-1H
-
 ## Installation
 
 1. Unzip the contents of the DCS-ACE zip to a folder
@@ -28,9 +16,11 @@ to the aircraft.
 Supported control types:
 - 3PosMossi
 - 3PosTumb
+- 3PosTumb0To1
 - 3PosTumb1
-- 3Pos2CommandSwitchF5
+- 3PosTumbA10
 - 3Pos2CommandSwitchA10
+- 3Pos2CommandSwitchF5
 - CMSPSwitch
 - DoubleCommandButton
 - EjectionHandleSwitch
@@ -38,19 +28,26 @@ Supported control types:
 - EmergencyParkingBrake
 - FixedStepInput
 - FixedStepTumb
+- InputOnlyPushButton
 - LedPushButton
 - MissionComputerSwitch
 - MomentaryRockerSwitch
+- MultipositionRollerLimited
 - MultipositionSwitch
+- MultipositionSwitch0To1
 - Potentiometer
+- Potentiometer2
 - PushButton
 - RadioWheel
 - RockerSwitch
+- RockerSwitchMossi
 - Rotary
 - RotaryPlus
 - SetCommandTumb
 - Springloaded_2PosTumb
 - Springloaded_3PosTumb
+- Springloaded_3PosTumbWithRange
+- Springloaded3PosTumb
 - ToggleSwitch
 - ToggleSwitchToggleOnly
 - ToggleSwitchToggleOnly2
