@@ -2,7 +2,7 @@
 *
 * drivers.py: DCS Aircraft Command Entry - DCS-BIOS Interface Module        *
 *                                                                           *
-* Copyright (C) 2023 Atcz                                                   *
+* Copyright (C) 2024 Atcz                                                   *
 *                                                                           *
 * This program is free software: you can redistribute it and/or modify it   *
 * under the terms of the GNU General Public License as published by the     *
@@ -176,36 +176,44 @@ class DCSBIOSDriver(Driver):
         sleep(val)
 
     def enter_commands(self, wps):
- 
+
     # TODO list
-    #    'AV8BCommSelector': ,
 
         Devices = {
                     '3PosMossi': self._3PosTumb,
                     '3PosTumb': self._3PosTumb,
                     '3PosTumb1': self._3PosTumb,
+                    '3PosTumbA10': self._3PosTumb,
+                    '3PosTumb0To1': self.MultipositionSwitch,
                     '3Pos2CommandSwitchA10': self._3Pos2CommandSwitchA10,
                     '3Pos2CommandSwitchF5': self._3PosTumb,
                     'CMSPSwitch': self.ToggleSwitch,
-                    'DoubleCommandButton': self.ToggleSwitch,
+                    'DoubleCommandButton': self.FixedStepTumb,
                     'EjectionHandleSwitch': self.ToggleSwitch,
                     'ElectricallyHeldSwitch': self.ToggleSwitch,
                     'EmergencyParkingBrake': self.EmergencyParkingBrake,
                     'FixedStepInput': self.FixedStepTumb,
                     'FixedStepTumb': self.FixedStepTumb,
                     'LedPushButton': self.PushButton,
+                    'InputOnlyPushButton': self.PushButton,
                     'MissionComputerSwitch': self._3PosTumb,
                     'MomentaryRockerSwitch': self.Springloaded_3PosTumb,
                     'MultipositionSwitch': self.MultipositionSwitch,
+                    'MultipositionSwitch0To1': self.MultipositionSwitch,
+                    'MultipositionRollerLimited': self.Tumb,
                     'Potentiometer': self.Potentiometer,
+                    'Potentiometer2': self.Potentiometer,
                     'PushButton': self.PushButton,
                     'RadioWheel': self.FixedStepTumb,
                     'RockerSwitch': self.Springloaded_3PosTumb,
+                    'RockerSwitchMossi': self.Springloaded_3PosTumb,
                     'Rotary': self.Rotary,
                     'RotaryPlus': self.Rotary,
                     'SetCommandTumb': self.Tumb,
                     'Springloaded_2PosTumb': self.Springloaded_3PosTumb,
                     'Springloaded_3PosTumb': self.Springloaded_3PosTumb,
+                    'Springloaded_3PosTumbWithRange': self.Springloaded_3PosTumb,
+                    'Springloaded3PosTumb': self.Springloaded_3PosTumb,
                     'ToggleSwitch': self.ToggleSwitch,
                     'ToggleSwitchToggleOnly': self.ToggleSwitch,
                     'ToggleSwitchToggleOnly2': self.ToggleSwitch,

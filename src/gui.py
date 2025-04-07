@@ -286,16 +286,20 @@ class GUI:
 
             #set val_min, val_max
             if dev_type in ("EjectionSeatHandle", "ToggleSwitch", "ToggleSwitchToggleOnly", "ToggleSwitchToggleOnly2",
-                            "ElectricallyHeldSwitch", "CMSPSwitch", "PushButton", "LedPushButton", "DoubleCommandButton",
+                            "ElectricallyHeldSwitch", "CMSPSwitch", "PushButton", "LedPushButton", "InputOnlyPushButton",
                             "Springloaded_2PosTumb"):
                 (val_min, val_max) = (0, 1)
             elif dev_type in ("3PosTumb", "3PosTumb1", "3Pos2CommandSwitchA10", "Springloaded_3PosTumb", "3PosMossi",
                             "EmergencyParkingBrake", "MissionComputerSwitch", "RockerSwitch", "MomentaryRockerSwitch",
-                            "3Pos2CommandSwitchF5"):
+                            "RockerSwitchMossi", "3Pos2CommandSwitchF5", "3PosTumbA10", "Springloaded3PosTumb",
+                            "Springloaded_3PosTumbWithRange"):
                 (val_min, val_max) = (0, 2)
-            elif dev_type == 'MultipositionSwitch':
-                val_max = item['num_positions']
-                val_min = 1
+            elif dev_type in ("MultipositionSwitch", "MultipositionSwitch0To1"):
+                (val_min, val_max) = (1, item['num_positions'])
+            elif dev_type == "3PosTumb0To1":
+                (val_min, val_max) = (1, 3)
+            elif dev_type == "DoubleCommandButton":
+                (val_min, val_max) = (-1, 1)
             elif dev_type in ("FixedStepInput", "FixedStepTumb"):
                 #get rel_args
                 self.logger.info(f"Getting rel_args {item['rel_args']}")
