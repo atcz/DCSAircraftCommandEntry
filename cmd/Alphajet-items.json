@@ -1,0 +1,443 @@
+{
+    "commands": {
+        "Accelerometer": {
+            "GMETER_SET": {
+                "type": "PushButton",
+                "msg": "GMETER_SET",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "74",
+                "category": "Accelerometer",
+                "description": "Push to set G-Meter"
+            }
+        },
+        "Avionics": {
+            "FLAPS_UP": {
+                "type": "PushButton",
+                "msg": "FLAPS_UP",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "200",
+                "category": "Avionics",
+                "description": "Flaps Up"
+            },
+            "FLAPS_MID": {
+                "type": "PushButton",
+                "msg": "FLAPS_MID",
+                "device_id": "8",
+                "command": "3002",
+                "arg_number": "201",
+                "category": "Avionics",
+                "description": "Flaps Mid"
+            },
+            "FLAPS_DN": {
+                "type": "PushButton",
+                "msg": "FLAPS_DN",
+                "device_id": "8",
+                "command": "3003",
+                "arg_number": "203",
+                "category": "Avionics",
+                "description": "Flaps Full Down"
+            },
+            "GEAR_DN": {
+                "type": "PushButton",
+                "msg": "GEAR_DN",
+                "device_id": "8",
+                "command": "3004",
+                "arg_number": "219",
+                "category": "Avionics",
+                "description": "Gear Down"
+            },
+            "GEAR_UP": {
+                "type": "PushButton",
+                "msg": "GEAR_UP",
+                "device_id": "8",
+                "command": "3005",
+                "arg_number": "220",
+                "category": "Avionics",
+                "description": "Gear UP"
+            }
+        },
+        "Altimeter": {
+            "ALT_RESET": {
+                "type": "PushButton",
+                "msg": "ALT_RESET",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "73",
+                "category": "Altimeter",
+                "description": "Altimeter Reset 10000ft"
+            },
+            "ALT_PRESS_SET": {
+                "type": "Rotary",
+                "msg": "ALT_PRESS_SET",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "300",
+                "category": "Altimeter",
+                "description": "Altimeter Pressure Setting"
+            },
+            "IAS_SET": {
+                "type": "Rotary",
+                "msg": "IAS_SET",
+                "device_id": "6",
+                "command": "3003",
+                "arg_number": "301",
+                "category": "Altimeter",
+                "description": "IAS Index Setting"
+            },
+            "HDG_SET": {
+                "type": "Rotary",
+                "msg": "HDG_SET",
+                "device_id": "6",
+                "command": "3004",
+                "arg_number": "304",
+                "category": "Altimeter",
+                "description": "Set Heading Bug"
+            },
+            "HRZ_STBY_SET": {
+                "type": "Rotary",
+                "msg": "HRZ_STBY_SET",
+                "device_id": "6",
+                "command": "3005",
+                "arg_number": "305",
+                "category": "Altimeter",
+                "description": "Reset Standby Horizon"
+            },
+            "HRZ_SET": {
+                "type": "Rotary",
+                "msg": "HRZ_SET",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "306",
+                "category": "Altimeter",
+                "description": "Horizon Plane Set"
+            },
+            "HRZ_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "HRZ_CAGE",
+                "device_id": "14",
+                "command": "3003",
+                "arg_number": "314",
+                "category": "Altimeter",
+                "description": "Cache Horizon Hide/Show"
+            }
+        },
+        "Radio": {
+            "UHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "UHF_VOL",
+                "device_id": "6",
+                "command": "3007",
+                "arg_number": "302",
+                "limits": "{ 0, 1 }",
+                "category": "Radio",
+                "description": "UHF Volume"
+            },
+            "VHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "VHF_VOL",
+                "device_id": "6",
+                "command": "3008",
+                "arg_number": "303",
+                "limits": "{ 0, 1 }",
+                "category": "Radio",
+                "description": "VHF Volume"
+            }
+        },
+        "Light System": {
+            "LIGHTS_NAV": {
+                "type": "3PosTumb",
+                "msg": "LIGHTS_NAV",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "280",
+                "category": "Light System",
+                "description": "Navigation Lights, FLASH/OFF/STEADY"
+            },
+            "LIGHTS_FORMATION": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHTS_FORMATION",
+                "device_id": "12",
+                "command": "3002",
+                "arg_number": "281",
+                "category": "Light System",
+                "description": "Formation Lights, ON/OFF"
+            },
+            "LIGHTS_ITENT": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHTS_ITENT",
+                "device_id": "12",
+                "command": "3003",
+                "arg_number": "282",
+                "category": "Light System",
+                "description": "Intensity, STRONG/LOWVIS"
+            },
+            "LIGHTS_ANTICOL": {
+                "type": "ToggleSwitch",
+                "msg": "LIGHTS_ANTICOL",
+                "device_id": "12",
+                "command": "3004",
+                "arg_number": "283",
+                "category": "Light System",
+                "description": "Anticollision Lights, ON/OFF"
+            },
+            "LIGHTS_LAND": {
+                "type": "3PosTumb",
+                "msg": "LIGHTS_LAND",
+                "device_id": "12",
+                "command": "3006",
+                "arg_number": "311",
+                "category": "Light System",
+                "description": "Lights, OFF/TAXI/LANDING"
+            },
+            "LIGHTS_A_ALARM": {
+                "type": "3PosTumb",
+                "msg": "LIGHTS_A_ALARM",
+                "device_id": "12",
+                "command": "3005",
+                "arg_number": "295",
+                "category": "Light System",
+                "description": "High Alpha Alarm, HIDRAG/OFF/LOWDRAG"
+            }
+        },
+        "Control Panel": {
+            "ALARM_SONORE": {
+                "type": "ToggleSwitch",
+                "msg": "ALARM_SONORE",
+                "device_id": "12",
+                "command": "3007",
+                "arg_number": "284",
+                "category": "Control Panel",
+                "description": "Alarme Sonore, ON/OFF"
+            },
+            "PITOT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_HEAT",
+                "device_id": "12",
+                "command": "3008",
+                "arg_number": "285",
+                "category": "Control Panel",
+                "description": "Pitot Heat, ON/OFF"
+            },
+            "CENT_GYRO": {
+                "type": "ToggleSwitch",
+                "msg": "CENT_GYRO",
+                "device_id": "14",
+                "command": "3001",
+                "arg_number": "286",
+                "category": "Control Panel",
+                "description": "Centrale Gyroscopique, ON/OFF"
+            },
+            "HRZ_SECOURS": {
+                "type": "ToggleSwitch",
+                "msg": "HRZ_SECOURS",
+                "device_id": "14",
+                "command": "3002",
+                "arg_number": "287",
+                "category": "Control Panel",
+                "description": "Horizon Secours, ON/OFF"
+            },
+            "ELC_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "ELC_PUMP",
+                "device_id": "9",
+                "command": "3010",
+                "arg_number": "288",
+                "category": "Control Panel",
+                "description": "Electropompe, ON/OFF"
+            },
+            "SMOKE_SIDE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "SMOKE_SIDE_SW",
+                "device_id": "11",
+                "command": "3001",
+                "arg_number": "317",
+                "category": "Control Panel",
+                "description": "Side Smoke System Right/Left"
+            },
+            "CANOPY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_SW",
+                "device_id": "19",
+                "command": "3001",
+                "arg_number": "318",
+                "category": "Control Panel",
+                "description": "Cockpit Lever Open/Close"
+            }
+        },
+        "Electric System": {
+            "MASTER_BAT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_BAT_SW",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "289",
+                "category": "Electric System",
+                "description": "Master Battery Switch"
+            },
+            "GEN_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GEN_L_SW",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "290",
+                "category": "Electric System",
+                "description": "Left Generator Switch"
+            },
+            "GEN_R_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GEN_R_SW",
+                "device_id": "3",
+                "command": "3013",
+                "arg_number": "291",
+                "category": "Electric System",
+                "description": "Right Generator Switch"
+            },
+            "INVERT_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INVERT_L_SW",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "292",
+                "category": "Electric System",
+                "description": "Left Inverter Switch"
+            },
+            "INVERT_R_SW": {
+                "type": "ToggleSwitch",
+                "msg": "INVERT_R_SW",
+                "device_id": "3",
+                "command": "3015",
+                "arg_number": "293",
+                "category": "Electric System",
+                "description": "Right Inverter Switch"
+            },
+            "CRASH_BAR": {
+                "type": "ToggleSwitch",
+                "msg": "CRASH_BAR",
+                "device_id": "3",
+                "command": "3016",
+                "arg_number": "315",
+                "category": "Electric System",
+                "description": "Crash Bar Switch"
+            },
+            "WARN_L_TEST": {
+                "type": "PushButton",
+                "msg": "WARN_L_TEST",
+                "device_id": "3",
+                "command": "3017",
+                "arg_number": "294",
+                "category": "Electric System",
+                "description": "Warning Light Test"
+            },
+            "DELESTAGE": {
+                "type": "ToggleSwitch",
+                "msg": "DELESTAGE",
+                "device_id": "3",
+                "command": "3018",
+                "arg_number": "316",
+                "category": "Electric System",
+                "description": "Delestage"
+            }
+        },
+        "Engine Panel": {
+            "ENG_START_L": {
+                "type": "3PosTumb",
+                "msg": "ENG_START_L",
+                "device_id": "15",
+                "command": "3020",
+                "arg_number": "296",
+                "category": "Engine Panel",
+                "description": "Left Engine Start, START/VENT/OFF"
+            },
+            "ENG_START_R": {
+                "type": "3PosTumb",
+                "msg": "ENG_START_R",
+                "device_id": "15",
+                "command": "3021",
+                "arg_number": "297",
+                "category": "Engine Panel",
+                "description": "Right Engine Start, START/VENT/OFF"
+            },
+            "LOW_PRESS_PUMP_BPG": {
+                "type": "ToggleSwitch",
+                "msg": "LOW_PRESS_PUMP_BPG",
+                "device_id": "15",
+                "command": "3022",
+                "arg_number": "298",
+                "category": "Engine Panel",
+                "description": "Low Pressure Pump, BPG"
+            },
+            "LOW_PRESS_PUMP_BPD": {
+                "type": "ToggleSwitch",
+                "msg": "LOW_PRESS_PUMP_BPD",
+                "device_id": "15",
+                "command": "3023",
+                "arg_number": "299",
+                "category": "Engine Panel",
+                "description": "Low Pressure Pump, BPD"
+            },
+            "PROTECT_COVER_BPG": {
+                "type": "ToggleSwitch",
+                "msg": "PROTECT_COVER_BPG",
+                "device_id": "15",
+                "command": "3024",
+                "arg_number": "307",
+                "category": "Engine Panel",
+                "description": "Protective Cover, BPG"
+            },
+            "PROTECT_COVER_BPD": {
+                "type": "ToggleSwitch",
+                "msg": "PROTECT_COVER_BPD",
+                "device_id": "15",
+                "command": "3025",
+                "arg_number": "308",
+                "category": "Engine Panel",
+                "description": "Protective Cover, BPD"
+            },
+            "FUEL_CUT_L": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_CUT_L",
+                "device_id": "15",
+                "command": "3026",
+                "arg_number": "309",
+                "category": "Engine Panel",
+                "description": "Fuel Cutoff Left"
+            },
+            "FUEL_CUT_R": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_CUT_R",
+                "device_id": "15",
+                "command": "3027",
+                "arg_number": "310",
+                "category": "Engine Panel",
+                "description": "Fuel Cutoff Right"
+            }
+        },
+        "Oxygen System": {
+            "QXY_NORM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "QXY_NORM_SW",
+                "device_id": "12",
+                "command": "3011",
+                "arg_number": "312",
+                "category": "Oxygen System",
+                "description": "Oxygen Switch Normal/100%"
+            },
+            "QXY_ON_SW": {
+                "type": "ToggleSwitch",
+                "msg": "QXY_ON_SW",
+                "device_id": "12",
+                "command": "3012",
+                "arg_number": "313",
+                "category": "Oxygen System",
+                "description": "Oxygen Switch Open/Close"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Alphajet",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

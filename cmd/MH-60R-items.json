@@ -1,0 +1,1259 @@
+{
+    "commands": {
+        "Electric System": {
+            "BATT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BATT_SW",
+                "device_id": "27",
+                "command": "3013",
+                "arg_number": "17",
+                "category": "Electric System",
+                "description": "Battery Switch OFF/ON"
+            },
+            "EXT_PWR_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "EXT_PWR_SW",
+                "device_id": "27",
+                "downSwitch": "3014",
+                "upSwitch": "3021",
+                "arg_number": "18",
+                "category": "Electric System",
+                "description": "External Power Switch RESET/OFF/ON"
+            },
+            "APU_GEN_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "APU_GEN_SW",
+                "device_id": "27",
+                "downSwitch": "3015",
+                "upSwitch": "3018",
+                "arg_number": "19",
+                "category": "Electric System",
+                "description": "APU GEN Switch TEST/OFF/ON"
+            },
+            "GEN1_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "GEN1_SW",
+                "device_id": "27",
+                "downSwitch": "3016",
+                "upSwitch": "3019",
+                "arg_number": "20",
+                "category": "Electric System",
+                "description": "GEN 1 Switch TEST/OFF/ON"
+            },
+            "GEN2_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "GEN2_SW",
+                "device_id": "27",
+                "downSwitch": "3017",
+                "upSwitch": "3020",
+                "arg_number": "21",
+                "category": "Electric System",
+                "description": "GEN 2 Switch TEST/OFF/ON"
+            }
+        },
+        "Fuel and Engines": {
+            "FUEL_PMP_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FUEL_PMP_SW",
+                "device_id": "27",
+                "downSwitch": "3022",
+                "upSwitch": "3022",
+                "arg_number": "22",
+                "category": "Fuel and Engines",
+                "description": "FUEL PRIME/OFF/APU BOOST"
+            },
+            "AIR_SRC_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AIR_SRC_SW",
+                "device_id": "27",
+                "downSwitch": "3023",
+                "upSwitch": "3023",
+                "arg_number": "23",
+                "category": "Fuel and Engines",
+                "description": "Air Source APU/OFF/ENG"
+            },
+            "APU_CTRL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "APU_CTRL_SW",
+                "device_id": "27",
+                "command": "3024",
+                "arg_number": "24",
+                "category": "Fuel and Engines",
+                "description": "APU CONTROL OFF/ON"
+            },
+            "FUEL1_BST_PMP": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL1_BST_PMP",
+                "device_id": "27",
+                "command": "3044",
+                "arg_number": "40",
+                "category": "Fuel and Engines",
+                "description": "Boost Pump 1 OFF/ON"
+            }
+        },
+        "APU Extinguish": {
+            "ENG1_CTRL": {
+                "type": "Potentiometer",
+                "msg": "ENG1_CTRL",
+                "device_id": "16",
+                "command": "3206",
+                "arg_number": "26",
+                "limits": "{ 0, 1 }",
+                "category": "APU Extinguish",
+                "description": "Engine 1 Control"
+            },
+            "ENG2_CTRL": {
+                "type": "Potentiometer",
+                "msg": "ENG2_CTRL",
+                "device_id": "16",
+                "command": "3207",
+                "arg_number": "27",
+                "limits": "{ 0, 1 }",
+                "category": "APU Extinguish",
+                "description": "Engine 2 Control"
+            },
+            "ENG1_FSS": {
+                "type": "MultipositionSwitch",
+                "msg": "ENG1_FSS",
+                "device_id": "16",
+                "device_command": "3208",
+                "arg_number": "28",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "APU Extinguish",
+                "description": "Engine 1 FSS OFF/DIR/XFD"
+            },
+            "ENG2_FSS": {
+                "type": "MultipositionSwitch",
+                "msg": "ENG2_FSS",
+                "device_id": "16",
+                "device_command": "3209",
+                "arg_number": "29",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "APU Extinguish",
+                "description": "Engine 2 FSS OFF/DIR/XFD"
+            },
+            "ENG1_START": {
+                "type": "ToggleSwitch",
+                "msg": "ENG1_START",
+                "device_id": "16",
+                "command": "3210",
+                "arg_number": "30",
+                "category": "APU Extinguish",
+                "description": "Engine 1 Starter"
+            },
+            "ENG2_START": {
+                "type": "ToggleSwitch",
+                "msg": "ENG2_START",
+                "device_id": "16",
+                "command": "3211",
+                "arg_number": "31",
+                "category": "APU Extinguish",
+                "description": "Engine 2 Starter"
+            }
+        },
+        "ECQ": {
+            "ENG1_CTR_LVL": {
+                "type": "Tumb",
+                "msg": "ENG1_CTR_LVL",
+                "device_id": "16",
+                "command": "3204",
+                "arg_number": "42",
+                "step": "1.0",
+                "limits": "{ -1, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ECQ",
+                "description": "Engine 1 Control Level OFF/IDLE"
+            },
+            "ENG2_CTR_LVL": {
+                "type": "Tumb",
+                "msg": "ENG2_CTR_LVL",
+                "device_id": "16",
+                "command": "3205",
+                "arg_number": "43",
+                "step": "1.0",
+                "limits": "{ -1, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ECQ",
+                "description": "Engine 2 Control Level OFF/IDLE"
+            }
+        },
+        "STAB Panel": {
+            "STAB_MAN_SLW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "STAB_MAN_SLW",
+                "device_id": "17",
+                "downSwitch": "3228",
+                "upSwitch": "3229",
+                "arg_number": "32",
+                "category": "STAB Panel",
+                "description": "Manual Slew UP"
+            },
+            "STAB_AUTO": {
+                "type": "PushButton",
+                "msg": "STAB_AUTO",
+                "device_id": "17",
+                "command": "3222",
+                "arg_number": "33",
+                "category": "STAB Panel",
+                "description": "STAB OFF/ON"
+            },
+            "SAS1": {
+                "type": "PushButton",
+                "msg": "SAS1",
+                "device_id": "17",
+                "command": "3223",
+                "arg_number": "34",
+                "category": "STAB Panel",
+                "description": "SAS 1 OFF/ON"
+            },
+            "SAS2": {
+                "type": "PushButton",
+                "msg": "SAS2",
+                "device_id": "17",
+                "command": "3224",
+                "arg_number": "35",
+                "category": "STAB Panel",
+                "description": "SAS 2 OFF/ON"
+            },
+            "TRIM": {
+                "type": "PushButton",
+                "msg": "TRIM",
+                "device_id": "17",
+                "command": "3225",
+                "arg_number": "36",
+                "category": "STAB Panel",
+                "description": "Trim OFF/ON"
+            },
+            "FPS": {
+                "type": "PushButton",
+                "msg": "FPS",
+                "device_id": "17",
+                "command": "3226",
+                "arg_number": "37",
+                "category": "STAB Panel",
+                "description": "FPS OFF/ON"
+            },
+            "SAS_BST": {
+                "type": "PushButton",
+                "msg": "SAS_BST",
+                "device_id": "17",
+                "command": "3227",
+                "arg_number": "38",
+                "category": "STAB Panel",
+                "description": "SAS Boost OFF/ON"
+            }
+        },
+        "General": {
+            "PRK_BRK": {
+                "type": "ToggleSwitch",
+                "msg": "PRK_BRK",
+                "device_id": "27",
+                "command": "3402",
+                "arg_number": "80",
+                "category": "General",
+                "description": "Parking Brake"
+            }
+        },
+        "Misc": {
+            "TAIL_WHL_LCK": {
+                "type": "ToggleSwitch",
+                "msg": "TAIL_WHL_LCK",
+                "device_id": "46",
+                "command": "3410",
+                "arg_number": "291",
+                "category": "Misc",
+                "description": "Tail Wheel LOCK/UNLOCK"
+            },
+            "CPLT_DOOR": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_DOOR",
+                "device_id": "46",
+                "command": "3403",
+                "arg_number": "470",
+                "category": "Misc",
+                "description": "Copilot Door OPEN/CLOSE"
+            },
+            "PLT_DOOR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DOOR",
+                "device_id": "46",
+                "command": "3404",
+                "arg_number": "471",
+                "category": "Misc",
+                "description": "Pilot Door OPEN/CLOSE"
+            },
+            "LFT_GUN_WIN": {
+                "type": "ToggleSwitch",
+                "msg": "LFT_GUN_WIN",
+                "device_id": "46",
+                "command": "3405",
+                "arg_number": "472",
+                "category": "Misc",
+                "description": "Left Gunner Door OPEN/CLOSE"
+            },
+            "RGT_GUN_WIN": {
+                "type": "ToggleSwitch",
+                "msg": "RGT_GUN_WIN",
+                "device_id": "46",
+                "command": "3406",
+                "arg_number": "473",
+                "category": "Misc",
+                "description": "Right Gunner Door OPEN/CLOSE"
+            },
+            "LFT_CRG_DOOR": {
+                "type": "ToggleSwitch",
+                "msg": "LFT_CRG_DOOR",
+                "device_id": "46",
+                "command": "3407",
+                "arg_number": "474",
+                "category": "Misc",
+                "description": "Left Cargo Door OPEN/CLOSE"
+            },
+            "RGT_CRG_DOOR": {
+                "type": "ToggleSwitch",
+                "msg": "RGT_CRG_DOOR",
+                "device_id": "46",
+                "command": "3408",
+                "arg_number": "475",
+                "category": "Misc",
+                "description": "Right Cargo Door OPEN/CLOSE"
+            },
+            "WPRS": {
+                "type": "Tumb",
+                "msg": "WPRS",
+                "device_id": "46",
+                "command": "3288",
+                "arg_number": "631",
+                "step": "0.5",
+                "limits": "{ -0.5, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Misc",
+                "description": "Wipers PARK/OFF/LOW/HI"
+            }
+        },
+        "Vids": {
+            "CDU_TST": {
+                "type": "PushButton",
+                "msg": "CDU_TST",
+                "device_id": "25",
+                "command": "3230",
+                "arg_number": "301",
+                "category": "Vids",
+                "description": "CDU Lamp Test"
+            },
+            "PDU1_TST": {
+                "type": "PushButton",
+                "msg": "PDU1_TST",
+                "device_id": "25",
+                "command": "3231",
+                "arg_number": "302",
+                "category": "Vids",
+                "description": "PDU Test Pilot"
+            }
+        },
+        "Caution Display Panel": {
+            "CAP_TST": {
+                "type": "Tumb",
+                "msg": "CAP_TST",
+                "device_id": "24",
+                "command": "3219",
+                "arg_number": "304",
+                "step": "1.0",
+                "limits": "{ -1, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Caution Display Panel",
+                "description": "CAP Lamp TEST"
+            },
+            "CAP_BRGT": {
+                "type": "ToggleSwitch",
+                "msg": "CAP_BRGT",
+                "device_id": "24",
+                "command": "3220",
+                "arg_number": "304",
+                "category": "Caution Display Panel",
+                "description": "CAP Lamp BRIGHTNESS"
+            },
+            "MST_CAUT_RST": {
+                "type": "PushButton",
+                "msg": "MST_CAUT_RST",
+                "device_id": "24",
+                "command": "3221",
+                "arg_number": "305",
+                "category": "Caution Display Panel",
+                "description": "Master Caution Reset"
+            }
+        },
+        "AN/ASN-128B": {
+            "128B_DISPLAY": {
+                "type": "MultipositionSwitch",
+                "msg": "128B_DISPLAY",
+                "device_id": "23",
+                "device_command": "3236",
+                "arg_number": "500",
+                "num_positions": "7",
+                "increment": "0.01",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Display"
+            },
+            "128B_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "128B_MODE",
+                "device_id": "23",
+                "device_command": "3235",
+                "arg_number": "501",
+                "num_positions": "6",
+                "increment": "0.01",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Mode"
+            },
+            "128B_KYBD": {
+                "type": "PushButton",
+                "msg": "128B_KYBD",
+                "device_id": "23",
+                "command": "3237",
+                "arg_number": "502",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button KYBD"
+            },
+            "128B_LTR_LFT": {
+                "type": "PushButton",
+                "msg": "128B_LTR_LFT",
+                "device_id": "23",
+                "command": "3238",
+                "arg_number": "503",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button LTR Left"
+            },
+            "128B_LTR_MID": {
+                "type": "PushButton",
+                "msg": "128B_LTR_MID",
+                "device_id": "23",
+                "command": "3239",
+                "arg_number": "504",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button LTR Mid"
+            },
+            "128B_LTR_RGHT": {
+                "type": "PushButton",
+                "msg": "128B_LTR_RGHT",
+                "device_id": "23",
+                "command": "3240",
+                "arg_number": "505",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button LTR Right"
+            },
+            "128B_F1": {
+                "type": "PushButton",
+                "msg": "128B_F1",
+                "device_id": "23",
+                "command": "3241",
+                "arg_number": "506",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button F1"
+            },
+            "128B_1": {
+                "type": "PushButton",
+                "msg": "128B_1",
+                "device_id": "23",
+                "command": "3242",
+                "arg_number": "507",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 1"
+            },
+            "128B_2": {
+                "type": "PushButton",
+                "msg": "128B_2",
+                "device_id": "23",
+                "command": "3243",
+                "arg_number": "508",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 2"
+            },
+            "128B_3": {
+                "type": "PushButton",
+                "msg": "128B_3",
+                "device_id": "23",
+                "command": "3244",
+                "arg_number": "509",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 3"
+            },
+            "128B_TGT_STR": {
+                "type": "PushButton",
+                "msg": "128B_TGT_STR",
+                "device_id": "23",
+                "command": "3245",
+                "arg_number": "510",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button TGT STR"
+            },
+            "128B_4": {
+                "type": "PushButton",
+                "msg": "128B_4",
+                "device_id": "23",
+                "command": "3246",
+                "arg_number": "511",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 4"
+            },
+            "128B_5": {
+                "type": "PushButton",
+                "msg": "128B_5",
+                "device_id": "23",
+                "command": "3247",
+                "arg_number": "512",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 5"
+            },
+            "128B_6": {
+                "type": "PushButton",
+                "msg": "128B_6",
+                "device_id": "23",
+                "command": "3248",
+                "arg_number": "513",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 6"
+            },
+            "128B_INC": {
+                "type": "PushButton",
+                "msg": "128B_INC",
+                "device_id": "23",
+                "command": "3249",
+                "arg_number": "514",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button INC"
+            },
+            "128B_7": {
+                "type": "PushButton",
+                "msg": "128B_7",
+                "device_id": "23",
+                "command": "3250",
+                "arg_number": "515",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 7"
+            },
+            "128B_8": {
+                "type": "PushButton",
+                "msg": "128B_8",
+                "device_id": "23",
+                "command": "3251",
+                "arg_number": "516",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 8"
+            },
+            "128B_9": {
+                "type": "PushButton",
+                "msg": "128B_9",
+                "device_id": "23",
+                "command": "3252",
+                "arg_number": "517",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 9"
+            },
+            "128B_DEC": {
+                "type": "PushButton",
+                "msg": "128B_DEC",
+                "device_id": "23",
+                "command": "3253",
+                "arg_number": "518",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button DEC"
+            },
+            "128B_CLR": {
+                "type": "PushButton",
+                "msg": "128B_CLR",
+                "device_id": "23",
+                "command": "3254",
+                "arg_number": "519",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button CLR"
+            },
+            "128B_0": {
+                "type": "PushButton",
+                "msg": "128B_0",
+                "device_id": "23",
+                "command": "3255",
+                "arg_number": "520",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button 0"
+            },
+            "128B_ENT": {
+                "type": "PushButton",
+                "msg": "128B_ENT",
+                "device_id": "23",
+                "command": "3256",
+                "arg_number": "521",
+                "category": "AN/ASN-128B",
+                "description": "AN/ASN-128B Select Button ENT"
+            }
+        },
+        "CISP": {
+            "CIS_HDG": {
+                "type": "PushButton",
+                "msg": "CIS_HDG",
+                "device_id": "39",
+                "command": "3369",
+                "arg_number": "930",
+                "category": "CISP",
+                "description": "CISP Pilot HDG OFF/ON"
+            },
+            "CIS_NAV": {
+                "type": "PushButton",
+                "msg": "CIS_NAV",
+                "device_id": "39",
+                "command": "3370",
+                "arg_number": "931",
+                "category": "CISP",
+                "description": "CISP Pilot NAV OFF/ON"
+            },
+            "CIS_ALT": {
+                "type": "PushButton",
+                "msg": "CIS_ALT",
+                "device_id": "39",
+                "command": "3371",
+                "arg_number": "932",
+                "category": "CISP",
+                "description": "CISP Pilot ALT OFF/ON"
+            },
+            "NAV_DPLR": {
+                "type": "PushButton",
+                "msg": "NAV_DPLR",
+                "device_id": "37",
+                "command": "3372",
+                "arg_number": "933",
+                "category": "CISP",
+                "description": "CISP Pilot DLPR GPS OFF/ON"
+            },
+            "NAV_VOR": {
+                "type": "PushButton",
+                "msg": "NAV_VOR",
+                "device_id": "37",
+                "command": "3373",
+                "arg_number": "934",
+                "category": "CISP",
+                "description": "CISP Pilot VOR ILS OFF/ON"
+            },
+            "NAV_BACK": {
+                "type": "PushButton",
+                "msg": "NAV_BACK",
+                "device_id": "37",
+                "command": "3374",
+                "arg_number": "935",
+                "category": "CISP",
+                "description": "CISP Pilot BACK CRS OFF/ON"
+            },
+            "NAV_FM": {
+                "type": "PushButton",
+                "msg": "NAV_FM",
+                "device_id": "37",
+                "command": "3375",
+                "arg_number": "936",
+                "category": "CISP",
+                "description": "CISP Pilot FM HOME OFF/ON"
+            },
+            "TRN_RATE": {
+                "type": "PushButton",
+                "msg": "TRN_RATE",
+                "device_id": "37",
+                "command": "3376",
+                "arg_number": "937",
+                "category": "CISP",
+                "description": "CISP Pilot TURN RATE NORM/ALTR"
+            },
+            "CRS_HDG": {
+                "type": "PushButton",
+                "msg": "CRS_HDG",
+                "device_id": "37",
+                "command": "3377",
+                "arg_number": "938",
+                "category": "CISP",
+                "description": "CISP Pilot CRS HDG - PLT/CPLT"
+            },
+            "VRT_GYRO": {
+                "type": "PushButton",
+                "msg": "VRT_GYRO",
+                "device_id": "37",
+                "command": "3378",
+                "arg_number": "939",
+                "category": "CISP",
+                "description": "CISP Pilot VERT GYRO NORM/ALTR"
+            },
+            "BRG2": {
+                "type": "PushButton",
+                "msg": "BRG2",
+                "device_id": "37",
+                "command": "3379",
+                "arg_number": "940",
+                "category": "CISP",
+                "description": "CISP Pilot BRG2 ADF/VOR"
+            }
+        },
+        "AN/AVS-7 HUD": {
+            "AVS_ON": {
+                "type": "Tumb",
+                "msg": "AVS_ON",
+                "device_id": "30",
+                "command": "3257",
+                "arg_number": "1100",
+                "step": "1.0",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "AN/AVS-7 HUD",
+                "description": "AN/AVS-7 OFF/ON/ADJ"
+            },
+            "AVS_DIM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AVS_DIM",
+                "device_id": "30",
+                "downSwitch": "3259",
+                "upSwitch": "3258",
+                "arg_number": "1106",
+                "category": "AN/AVS-7 HUD",
+                "description": "AN/AVS-7 DIM/BRIGHT"
+            }
+        },
+        "Lights": {
+            "GLR_SHLD": {
+                "type": "Potentiometer",
+                "msg": "GLR_SHLD",
+                "device_id": "20",
+                "command": "3272",
+                "arg_number": "251",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Glareshield Lights OFF/BRT"
+            },
+            "POS_LGHT_DIM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "POS_LGHT_DIM",
+                "device_id": "20",
+                "downSwitch": "3281",
+                "upSwitch": "3281",
+                "arg_number": "252",
+                "category": "Lights",
+                "description": "Position Lights DIM/OFF/BRT"
+            },
+            "POS_LGTH_MOD": {
+                "type": "Tumb",
+                "msg": "POS_LGTH_MOD",
+                "device_id": "20",
+                "command": "3282",
+                "arg_number": "253",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights",
+                "description": "Position Lights STEADY/FLASH"
+            },
+            "ANTI_LGHT_UP": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "ANTI_LGHT_UP",
+                "device_id": "20",
+                "downSwitch": "3283",
+                "upSwitch": "3283",
+                "arg_number": "254",
+                "category": "Lights",
+                "description": "Anticollision Lights UPPER/BOTH/LOWER"
+            },
+            "ANTI_LGHT_DAY": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "ANTI_LGHT_DAY",
+                "device_id": "20",
+                "downSwitch": "3284",
+                "upSwitch": "3284",
+                "arg_number": "255",
+                "category": "Lights",
+                "description": "Anticollision Lights DAY/OFF/NIGHT"
+            },
+            "NAV_LGTH_MOD": {
+                "type": "Tumb",
+                "msg": "NAV_LGTH_MOD",
+                "device_id": "20",
+                "command": "3285",
+                "arg_number": "256",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights",
+                "description": "Nav Lights NORM/IR"
+            },
+            "POS_LGHT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "POS_LGHT",
+                "device_id": "20",
+                "downSwitch": "3286",
+                "upSwitch": "3286",
+                "arg_number": "257",
+                "category": "Lights",
+                "description": "Cabin Lights BLUE/OFF/WHITE"
+            },
+            "LGHT_SWTCH": {
+                "type": "Potentiometer",
+                "msg": "LGHT_SWTCH",
+                "device_id": "20",
+                "command": "3274",
+                "arg_number": "260",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Lighted Switches OFF/BRT"
+            },
+            "FORM_LGHT": {
+                "type": "MultipositionSwitch",
+                "msg": "FORM_LGHT",
+                "device_id": "20",
+                "device_command": "3275",
+                "arg_number": "261",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "Lights",
+                "description": "Formation Lights OFF/1/2/3/4/5"
+            },
+            "UPP_BRT": {
+                "type": "Potentiometer",
+                "msg": "UPP_BRT",
+                "device_id": "20",
+                "command": "3276",
+                "arg_number": "262",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Upper Console Lights OFF/BRT"
+            },
+            "LWR_BRT": {
+                "type": "Potentiometer",
+                "msg": "LWR_BRT",
+                "device_id": "20",
+                "command": "3277",
+                "arg_number": "263",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Lower Console Lights OFF/BRT"
+            },
+            "PLT_INST_BRT": {
+                "type": "Potentiometer",
+                "msg": "PLT_INST_BRT",
+                "device_id": "20",
+                "command": "3278",
+                "arg_number": "264",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Pilot Flight Instrument Lights OFF/BRT"
+            },
+            "CPLT_INST_BRT": {
+                "type": "Potentiometer",
+                "msg": "CPLT_INST_BRT",
+                "device_id": "20",
+                "command": "3273",
+                "arg_number": "259",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "CoPilot Flight Instrument Lights OFF/BRT"
+            },
+            "LGHT_BRT": {
+                "type": "Potentiometer",
+                "msg": "LGHT_BRT",
+                "device_id": "20",
+                "command": "3279",
+                "arg_number": "265",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Non Flight Instrument Lights OFF/BRT"
+            },
+            "RDR_DIM": {
+                "type": "Potentiometer",
+                "msg": "RDR_DIM",
+                "device_id": "20",
+                "command": "3289",
+                "arg_number": "266",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Radar Altimeter DIM"
+            },
+            "CMP_LGTH_MOD": {
+                "type": "Tumb",
+                "msg": "CMP_LGTH_MOD",
+                "device_id": "20",
+                "command": "3280",
+                "arg_number": "268",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights",
+                "description": "Magnetic Compass Light OFF/ON"
+            },
+            "CKPT_LGHT_DAY": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CKPT_LGHT_DAY",
+                "device_id": "20",
+                "downSwitch": "3287",
+                "upSwitch": "3287",
+                "arg_number": "269",
+                "category": "Lights",
+                "description": "Cockpit Lights BLUE/OFF/WHITE"
+            }
+        },
+        "M130 CM": {
+            "FLR_DSP_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "FLR_DSP_CVR",
+                "device_id": "32",
+                "command": "3308",
+                "arg_number": "550",
+                "category": "M130 CM",
+                "description": "Flare Dispenser Mode Cover OPEN/CLOSE"
+            },
+            "FLR_DSP_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FLR_DSP_SW",
+                "device_id": "32",
+                "command": "3421",
+                "arg_number": "551",
+                "category": "M130 CM",
+                "description": "Flare Dispenser Switch OFF/ON"
+            },
+            "CM_ARM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CM_ARM_SW",
+                "device_id": "32",
+                "command": "3311",
+                "arg_number": "559",
+                "category": "M130 CM",
+                "description": "Countermeasures Arming Switch OFF/ON"
+            },
+            "CHAFF_MOD_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "CHAFF_MOD_SEL",
+                "device_id": "32",
+                "device_command": "3313",
+                "arg_number": "560",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "M130 CM",
+                "description": "Chaff Mode Selector"
+            },
+            "CHAF_DISP": {
+                "type": "PushButton",
+                "msg": "CHAF_DISP",
+                "device_id": "32",
+                "command": "3314",
+                "arg_number": "561",
+                "category": "M130 CM",
+                "description": "Chaff Dispense"
+            }
+        },
+        "Aux System Panel": {
+            "MST_SNR_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "MST_SNR_CVR",
+                "device_id": "49",
+                "command": "3534",
+                "arg_number": "1998",
+                "category": "Aux System Panel",
+                "description": "Master Sonar Cover OPEN/CLOSE"
+            },
+            "MST_ARM_SNR": {
+                "type": "ToggleSwitch",
+                "msg": "MST_ARM_SNR",
+                "device_id": "49",
+                "command": "3535",
+                "arg_number": "1999",
+                "category": "Aux System Panel",
+                "description": "Master Arm Sonar OFF/ON"
+            },
+            "MST_ARM_SON": {
+                "type": "ToggleSwitch",
+                "msg": "MST_ARM_SON",
+                "device_id": "49",
+                "command": "3532",
+                "arg_number": "2000",
+                "category": "Aux System Panel",
+                "description": "Master Arm Sonobuoys OFF/ON"
+            },
+            "SONO_DISP": {
+                "type": "ToggleSwitch",
+                "msg": "SONO_DISP",
+                "device_id": "49",
+                "command": "3533",
+                "arg_number": "2001",
+                "category": "Aux System Panel",
+                "description": "Sonobuoy Dispense OFF/ON"
+            },
+            "SNR_WNCH": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "SNR_WNCH",
+                "device_id": "49",
+                "downSwitch": "3536",
+                "upSwitch": "3536",
+                "arg_number": "2002",
+                "category": "Aux System Panel",
+                "description": "Winch Sonar DOWN/STOP/UP"
+            },
+            "MST_SON_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "MST_SON_CVR",
+                "device_id": "49",
+                "command": "3531",
+                "arg_number": "2003",
+                "category": "Aux System Panel",
+                "description": "Master Sonobuoys Cover OPEN/CLOSE"
+            }
+        },
+        "Weapons System Panel": {
+            "MST_ARM_WPN": {
+                "type": "ToggleSwitch",
+                "msg": "MST_ARM_WPN",
+                "device_id": "49",
+                "command": "3423",
+                "arg_number": "2004",
+                "category": "Weapons System Panel",
+                "description": "Master Arm Weapons OFF/ON"
+            },
+            "SLV_SELC": {
+                "type": "MultipositionSwitch",
+                "msg": "SLV_SELC",
+                "device_id": "49",
+                "device_command": "3424",
+                "arg_number": "2005",
+                "num_positions": "7",
+                "increment": "0.1",
+                "category": "Weapons System Panel",
+                "description": "Select SALVE"
+            },
+            "MST_ARM_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "MST_ARM_CVR",
+                "device_id": "49",
+                "command": "3425",
+                "arg_number": "2006",
+                "category": "Weapons System Panel",
+                "description": "Master Arm Cover OPEN/CLOSE"
+            },
+            "STA_LFT_PYL": {
+                "type": "ToggleSwitch",
+                "msg": "STA_LFT_PYL",
+                "device_id": "49",
+                "command": "3426",
+                "arg_number": "2007",
+                "category": "Weapons System Panel",
+                "description": "Stat. Left Pyl. OFF/ON"
+            },
+            "STA_LFT_SID": {
+                "type": "ToggleSwitch",
+                "msg": "STA_LFT_SID",
+                "device_id": "49",
+                "command": "3427",
+                "arg_number": "2008",
+                "category": "Weapons System Panel",
+                "description": "Stat. Left Side OFF/ON"
+            },
+            "STA_RGT_SID": {
+                "type": "ToggleSwitch",
+                "msg": "STA_RGT_SID",
+                "device_id": "49",
+                "command": "3428",
+                "arg_number": "2009",
+                "category": "Weapons System Panel",
+                "description": "Stat. Right Side OFF/ON"
+            },
+            "STA_RGT_PYL": {
+                "type": "ToggleSwitch",
+                "msg": "STA_RGT_PYL",
+                "device_id": "49",
+                "command": "3429",
+                "arg_number": "2010",
+                "category": "Weapons System Panel",
+                "description": "Stat. Right Pyl. OFF/ON"
+            }
+        },
+        "Jettison Panel": {
+            "JET_SLC_SW": {
+                "type": "ToggleSwitch",
+                "msg": "JET_SLC_SW",
+                "device_id": "49",
+                "command": "3437",
+                "arg_number": "2011",
+                "category": "Jettison Panel",
+                "description": "Select Jett. Switch OFF/ON"
+            },
+            "JET_SLC_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "JET_SLC_CVR",
+                "device_id": "49",
+                "command": "3435",
+                "arg_number": "2012",
+                "category": "Jettison Panel",
+                "description": "Select Jett. Cover OPEN/CLOSE"
+            },
+            "JET_ALL_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "JET_ALL_CVR",
+                "device_id": "49",
+                "command": "3434",
+                "arg_number": "2013",
+                "category": "Jettison Panel",
+                "description": "All Jett. Cover OPEN/CLOSE"
+            },
+            "JET_ALL": {
+                "type": "ToggleSwitch",
+                "msg": "JET_ALL",
+                "device_id": "49",
+                "command": "3436",
+                "arg_number": "2014",
+                "category": "Jettison Panel",
+                "description": "All Jett. Switch OFF/ON"
+            },
+            "JET_SELC": {
+                "type": "MultipositionSwitch",
+                "msg": "JET_SELC",
+                "device_id": "49",
+                "device_command": "3433",
+                "arg_number": "2016",
+                "num_positions": "8",
+                "increment": "0.1",
+                "category": "Jettison Panel",
+                "description": "Select STATIONS"
+            }
+        },
+        "GunSight": {
+            "GUN_COLR": {
+                "type": "MultipositionSwitch",
+                "msg": "GUN_COLR",
+                "device_id": "50",
+                "device_command": "3550",
+                "arg_number": "2025",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "GunSight",
+                "description": "GunSight COLOR"
+            },
+            "GUN_MOVE": {
+                "type": "Potentiometer",
+                "msg": "GUN_MOVE",
+                "device_id": "50",
+                "command": "3551",
+                "arg_number": "2026",
+                "limits": "{ -1, 1 }",
+                "category": "GunSight",
+                "description": "GunSight Move UP/DOWN"
+            }
+        },
+        "Radar": {
+            "RANGE_RDR": {
+                "type": "Potentiometer",
+                "msg": "RANGE_RDR",
+                "device_id": "49",
+                "command": "3539",
+                "arg_number": "2023",
+                "limits": "{ -1, 1 }",
+                "category": "Radar",
+                "description": "Range -/+"
+            },
+            "SECT_RDR": {
+                "type": "Potentiometer",
+                "msg": "SECT_RDR",
+                "device_id": "49",
+                "command": "3540",
+                "arg_number": "2020",
+                "limits": "{ -0.8, 0.9 }",
+                "category": "Radar",
+                "description": "Sector -/+"
+            },
+            "MODE_RDR": {
+                "type": "MultipositionSwitch",
+                "msg": "MODE_RDR",
+                "device_id": "49",
+                "device_command": "3541",
+                "arg_number": "2027",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Radar",
+                "description": "Mode OFF/ON/INT./SOL."
+            },
+            "SON_SELC": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "SON_SELC",
+                "device_id": "49",
+                "downSwitch": "3542",
+                "upSwitch": "3542",
+                "arg_number": "2028",
+                "category": "Radar",
+                "description": "Sonobuoys SURFACE/OFF/IMMERSION"
+            },
+            "COAL_SELC": {
+                "type": "MultipositionSwitch",
+                "msg": "COAL_SELC",
+                "device_id": "49",
+                "device_command": "3543",
+                "arg_number": "2029",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Radar",
+                "description": "Coalition Select ALL/NEUTRAL/FRIENDLY/ENEMY"
+            },
+            "FAC_RANGE": {
+                "type": "MultipositionSwitch",
+                "msg": "FAC_RANGE",
+                "device_id": "49",
+                "device_command": "3545",
+                "arg_number": "2030",
+                "num_positions": "2",
+                "increment": "0.66",
+                "category": "Radar",
+                "description": "Range FACTOR"
+            },
+            "CAT_SELC": {
+                "type": "MultipositionSwitch",
+                "msg": "CAT_SELC",
+                "device_id": "49",
+                "device_command": "3544",
+                "arg_number": "2031",
+                "num_positions": "2",
+                "increment": "0.66",
+                "category": "Radar",
+                "description": "Category Select SEA/GROUND"
+            },
+            "OFFSET_RDR": {
+                "type": "Potentiometer",
+                "msg": "OFFSET_RDR",
+                "device_id": "49",
+                "command": "3546",
+                "arg_number": "2032",
+                "limits": "{ -0.9, 0.9 }",
+                "category": "Radar",
+                "description": "Rotation Sector <-/->"
+            },
+            "LCK_TGT": {
+                "type": "ToggleSwitch",
+                "msg": "LCK_TGT",
+                "device_id": "49",
+                "command": "3548",
+                "arg_number": "2037",
+                "category": "Radar",
+                "description": "Lock Target OFF/ON"
+            },
+            "RST_ROT": {
+                "type": "PushButton",
+                "msg": "RST_ROT",
+                "device_id": "49",
+                "command": "3547",
+                "arg_number": "2039",
+                "category": "Radar",
+                "description": "Rotation Radar RESET"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "MH-60R",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

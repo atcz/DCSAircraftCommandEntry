@@ -1,0 +1,376 @@
+{
+    "commands": {
+        "General": {
+            "ACCEL_RESET": {
+                "type": "PushButton",
+                "msg": "ACCEL_RESET",
+                "device_id": "1",
+                "command": "3031",
+                "arg_number": "307",
+                "category": "General",
+                "description": "Accelerometer Reset Button"
+            },
+            "SMOKE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "SMOKE_SW",
+                "device_id": "1",
+                "command": "3034",
+                "arg_number": "352",
+                "category": "General",
+                "description": "Smoke Switch"
+            },
+            "AIRCOND_LEVER": {
+                "type": "Potentiometer",
+                "msg": "AIRCOND_LEVER",
+                "device_id": "1",
+                "command": "3010",
+                "arg_number": "369",
+                "limits": "{ 0, 1 }",
+                "category": "General",
+                "description": "Air Conditioning"
+            },
+            "TRIM_LEVER": {
+                "type": "Potentiometer",
+                "msg": "TRIM_LEVER",
+                "device_id": "1",
+                "command": "3017",
+                "arg_number": "370",
+                "limits": "{ -1, 1 }",
+                "category": "General",
+                "description": "Trim Lever"
+            }
+        },
+        "Instruments": {
+            "ALT_PRESS": {
+                "type": "Potentiometer",
+                "msg": "ALT_PRESS",
+                "device_id": "8",
+                "command": "3039",
+                "arg_number": "371",
+                "limits": "{ -1, 1 }",
+                "category": "Instruments",
+                "description": "Barometric Pressure"
+            }
+        },
+        "Radio": {
+            "RADIO_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_PWR",
+                "device_id": "5",
+                "command": "3021",
+                "arg_number": "353",
+                "category": "Radio",
+                "description": "Radio ON-OFF"
+            },
+            "RADIO_FREQU_MHZ": {
+                "type": "Rotary",
+                "msg": "RADIO_FREQU_MHZ",
+                "device_id": "5",
+                "command": "3064",
+                "arg_number": "374",
+                "category": "Radio",
+                "description": "Radio Frequency MHz"
+            },
+            "RADIO_FREQU_TRANS": {
+                "type": "PushButton",
+                "msg": "RADIO_FREQU_TRANS",
+                "device_id": "5",
+                "command": "3063",
+                "arg_number": "368",
+                "category": "Radio",
+                "description": "Radio Frequency Transfer"
+            },
+            "RADIO_CHAN": {
+                "type": "PushButton",
+                "msg": "RADIO_CHAN",
+                "device_id": "5",
+                "command": "3067",
+                "arg_number": "375",
+                "category": "Radio",
+                "description": "Radio Channel"
+            },
+            "RADIO_FREQU_50KHZ": {
+                "type": "Rotary",
+                "msg": "RADIO_FREQU_50KHZ",
+                "device_id": "5",
+                "command": "3065",
+                "arg_number": "366",
+                "category": "Radio",
+                "description": "Radio Frequency 50KHz"
+            },
+            "RADIO_FREQU_25KHZ": {
+                "type": "PushButton",
+                "msg": "RADIO_FREQU_25KHZ",
+                "device_id": "5",
+                "command": "3066",
+                "arg_number": "367",
+                "category": "Radio",
+                "description": "Radio Frequency 25KHz (Pull)"
+            },
+            "RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "RADIO_VOL",
+                "device_id": "5",
+                "command": "3061",
+                "arg_number": "364",
+                "limits": "{ 0, 1 }",
+                "category": "Radio",
+                "description": "Radio Volume"
+            },
+            "RADIO_TEST": {
+                "type": "PushButton",
+                "msg": "RADIO_TEST",
+                "device_id": "5",
+                "command": "3062",
+                "arg_number": "365",
+                "category": "Radio",
+                "description": "Radio Test (Pull)"
+            }
+        },
+        "Engine": {
+            "MAGNETS": {
+                "type": "Tumb",
+                "msg": "MAGNETS",
+                "device_id": "6",
+                "command": "3100",
+                "arg_number": "350",
+                "step": "0.25",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Engine",
+                "description": "Magnets, OFF/RIGHT/LEFT/BOTH/START"
+            },
+            "FUEL_VAL": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_VAL",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "349",
+                "category": "Engine",
+                "description": "Fuel Valve"
+            },
+            "FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PUMP",
+                "device_id": "6",
+                "command": "3038",
+                "arg_number": "356",
+                "category": "Engine",
+                "description": "Fuel Pump"
+            },
+            "MIXTURE": {
+                "type": "Rotary",
+                "msg": "MIXTURE",
+                "device_id": "6",
+                "command": "3058",
+                "arg_number": "357",
+                "category": "Engine",
+                "description": "Mixture"
+            },
+            "PROP_PITCH": {
+                "type": "Rotary",
+                "msg": "PROP_PITCH",
+                "device_id": "6",
+                "command": "3057",
+                "arg_number": "358",
+                "category": "Engine",
+                "description": "Propeller"
+            }
+        },
+        "Electric": {
+            "BATTERY": {
+                "type": "ToggleSwitch",
+                "msg": "BATTERY",
+                "device_id": "7",
+                "command": "3033",
+                "arg_number": "351",
+                "category": "Electric",
+                "description": "Battery Switch"
+            },
+            "ALTERNATOR": {
+                "type": "ToggleSwitch",
+                "msg": "ALTERNATOR",
+                "device_id": "7",
+                "command": "3037",
+                "arg_number": "354",
+                "category": "Electric",
+                "description": "Alternator Switch"
+            },
+            "ALTER_FUSE": {
+                "type": "ToggleSwitch",
+                "msg": "ALTER_FUSE",
+                "device_id": "7",
+                "command": "3073",
+                "arg_number": "355",
+                "category": "Electric",
+                "description": "Alternator Fuse"
+            },
+            "V_A_METER": {
+                "type": "PushButton",
+                "msg": "V_A_METER",
+                "device_id": "7",
+                "command": "3043",
+                "arg_number": "377",
+                "category": "Electric",
+                "description": "Volt/Ampere Meter mode (Voltage / Amperage)"
+            }
+        },
+        "Lights": {
+            "NAV_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "NAV_LIGHTS",
+                "device_id": "13",
+                "command": "3051",
+                "arg_number": "459",
+                "category": "Lights",
+                "description": "Nav Lights"
+            },
+            "LAND_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "LAND_LIGHTS",
+                "device_id": "13",
+                "command": "3054",
+                "arg_number": "360",
+                "category": "Lights",
+                "description": "Landing Lights"
+            },
+            "COCKPIT_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "COCKPIT_LIGHTS",
+                "device_id": "13",
+                "command": "3053",
+                "arg_number": "361",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Cockpit Lights"
+            },
+            "COCKPIT_LIGHTS_RED": {
+                "type": "ToggleSwitch",
+                "msg": "COCKPIT_LIGHTS_RED",
+                "device_id": "13",
+                "command": "3055",
+                "arg_number": "397",
+                "category": "Lights",
+                "description": "Red Cockpit Lights"
+            },
+            "COCKPIT_LIGHTS_YEL": {
+                "type": "ToggleSwitch",
+                "msg": "COCKPIT_LIGHTS_YEL",
+                "device_id": "13",
+                "command": "3056",
+                "arg_number": "399",
+                "category": "Lights",
+                "description": "Yellow Cockpit Lights"
+            }
+        },
+        "Fuel Gauge": {
+            "FUEL_IND_FRONT": {
+                "type": "PushButton",
+                "msg": "FUEL_IND_FRONT",
+                "device_id": "14",
+                "command": "3071",
+                "arg_number": "378",
+                "category": "Fuel Gauge",
+                "description": "Fuel Indicator mode (F / U"
+            },
+            "FUEL_IND_REAR": {
+                "type": "PushButton",
+                "msg": "FUEL_IND_REAR",
+                "device_id": "14",
+                "command": "3072",
+                "arg_number": "384",
+                "category": "Fuel Gauge",
+                "description": "Fuel Indicator mode Rear cockpit (F / U"
+            }
+        },
+        "Canopy": {
+            "CANOPY_OPEN_REAR": {
+                "type": "PushButton",
+                "msg": "CANOPY_OPEN_REAR",
+                "device_id": "15",
+                "command": "3083",
+                "arg_number": "900",
+                "category": "Canopy",
+                "description": "Canopy Lever Open (Rear)"
+            },
+            "CANOPY_CLOSE_REAR": {
+                "type": "PushButton",
+                "msg": "CANOPY_CLOSE_REAR",
+                "device_id": "15",
+                "command": "3081",
+                "arg_number": "403",
+                "category": "Canopy",
+                "description": "Canopy Lever Close (Rear)"
+            },
+            "CANOPY_OPEN_FRONT": {
+                "type": "PushButton",
+                "msg": "CANOPY_OPEN_FRONT",
+                "device_id": "15",
+                "command": "3088",
+                "arg_number": "400",
+                "category": "Canopy",
+                "description": "Canopy Lever Open (Front)"
+            },
+            "CANOPY_CLOSE_FRONT": {
+                "type": "PushButton",
+                "msg": "CANOPY_CLOSE_FRONT",
+                "device_id": "15",
+                "command": "3089",
+                "arg_number": "403",
+                "category": "Canopy",
+                "description": "Canopy Lever Close (Front)"
+            },
+            "CANOPY_LOCK_REAR": {
+                "type": "PushButton",
+                "msg": "CANOPY_LOCK_REAR",
+                "device_id": "15",
+                "command": "3084",
+                "arg_number": "401",
+                "category": "Canopy",
+                "description": "Canopy Lock (Rear)"
+            },
+            "CANOPY_UNLOCK_REAR": {
+                "type": "PushButton",
+                "msg": "CANOPY_UNLOCK_REAR",
+                "device_id": "15",
+                "command": "3085",
+                "arg_number": "401",
+                "category": "Canopy",
+                "description": "Canopy Unlock (Rear)"
+            },
+            "CANOPY_LOCK_FRONT": {
+                "type": "PushButton",
+                "msg": "CANOPY_LOCK_FRONT",
+                "device_id": "15",
+                "command": "3086",
+                "arg_number": "401",
+                "category": "Canopy",
+                "description": "Canopy Lock (Front)"
+            },
+            "CANOPY_UNLOCK_FRONT": {
+                "type": "PushButton",
+                "msg": "CANOPY_UNLOCK_FRONT",
+                "device_id": "15",
+                "command": "3087",
+                "arg_number": "401",
+                "category": "Canopy",
+                "description": "Canopy Unlock (Front)"
+            },
+            "CANOPY_JETT": {
+                "type": "PushButton",
+                "msg": "CANOPY_JETT",
+                "device_id": "15",
+                "command": "3090",
+                "arg_number": "402",
+                "category": "Canopy",
+                "description": "Canopy Jettison (Rear)"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Christen Eagle II",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

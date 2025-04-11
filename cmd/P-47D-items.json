@@ -1,0 +1,1298 @@
+{
+    "commands": {
+        "Weapons": {
+            "STICK_MG_TRIGGER": {
+                "type": "PushButton",
+                "msg": "STICK_MG_TRIGGER",
+                "device_id": "14",
+                "command": "3001",
+                "arg_number": "53",
+                "category": "Weapons",
+                "description": "Stick MG Trigger"
+            },
+            "STICK_SEC_TRIGGER": {
+                "type": "PushButton",
+                "msg": "STICK_SEC_TRIGGER",
+                "device_id": "14",
+                "command": "3002",
+                "arg_number": "52",
+                "category": "Weapons",
+                "description": "Stick Secondary & Drop Ordnance Trigger"
+            }
+        },
+        "Canopy Controls": {
+            "CANOPY_SW": {
+                "type": "3PosTumb",
+                "msg": "CANOPY_SW",
+                "device_id": "2",
+                "command": "3013",
+                "arg_number": "39",
+                "category": "Canopy Controls",
+                "description": "Canopy Switch, OPEN/OFF/CLOSE"
+            },
+            "CANOPY_JETT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_JETT_SW",
+                "device_id": "2",
+                "command": "3020",
+                "arg_number": "157",
+                "category": "Canopy Controls",
+                "description": "Cockpit Jettison Pull Handle"
+            },
+            "HATCH_KNB": {
+                "type": "PushButton",
+                "msg": "HATCH_KNB",
+                "device_id": "2",
+                "command": "3016",
+                "arg_number": "154",
+                "category": "Canopy Controls",
+                "description": "Canopy Hatch Knobs"
+            }
+        },
+        "Main Panel": {
+            "CLK_PINION_PULL": {
+                "type": "PushButton",
+                "msg": "CLK_PINION_PULL",
+                "device_id": "5",
+                "command": "3006",
+                "arg_number": "8",
+                "category": "Main Panel",
+                "description": "Clock Pullout"
+            },
+            "CLK_PINION": {
+                "type": "Rotary",
+                "msg": "CLK_PINION",
+                "device_id": "5",
+                "command": "3004",
+                "arg_number": "7",
+                "category": "Main Panel",
+                "description": "Clock Winding/Adjustment"
+            },
+            "STARTER_SW": {
+                "type": "3PosTumb",
+                "msg": "STARTER_SW",
+                "device_id": "3",
+                "command": "3021",
+                "arg_number": "63",
+                "category": "Main Panel",
+                "description": "Starter Switch"
+            },
+            "PRIMER_TURN": {
+                "type": "Potentiometer",
+                "msg": "PRIMER_TURN",
+                "device_id": "3",
+                "command": "3022",
+                "arg_number": "65",
+                "limits": "{ 0, 1 }",
+                "category": "Main Panel",
+                "description": "Primer Pump Turn"
+            },
+            "PRIMER_PULL": {
+                "type": "PushButton",
+                "msg": "PRIMER_PULL",
+                "device_id": "3",
+                "command": "3025",
+                "arg_number": "64",
+                "category": "Main Panel",
+                "description": "Primer Pump Pull"
+            },
+            "COWL_FLAP_SW": {
+                "type": "ToggleSwitch",
+                "msg": "COWL_FLAP_SW",
+                "device_id": "3",
+                "command": "3032",
+                "arg_number": "112",
+                "category": "Main Panel",
+                "description": "Cowl Flaps Button"
+            },
+            "DEFROSTER_KNB": {
+                "type": "ToggleSwitch",
+                "msg": "DEFROSTER_KNB",
+                "device_id": "2",
+                "command": "3046",
+                "arg_number": "149",
+                "category": "Main Panel",
+                "description": "Defroster Knob"
+            },
+            "COCKPIT_VENT_KNB": {
+                "type": "ToggleSwitch",
+                "msg": "COCKPIT_VENT_KNB",
+                "device_id": "2",
+                "command": "3049",
+                "arg_number": "129",
+                "category": "Main Panel",
+                "description": "Cockpit Ventilation Knob"
+            },
+            "MAGNETO_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "MAGNETO_SEL",
+                "device_id": "3",
+                "device_command": "3028",
+                "arg_number": "66",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Main Panel",
+                "description": "Magneto Selector"
+            },
+            "DI": {
+                "type": "Rotary",
+                "msg": "DI",
+                "device_id": "2",
+                "command": "3053",
+                "arg_number": "13",
+                "category": "Main Panel",
+                "description": "Directional Gyro Adjust"
+            },
+            "AH_PITCH_ADJUST": {
+                "type": "Potentiometer",
+                "msg": "AH_PITCH_ADJUST",
+                "device_id": "10",
+                "command": "3002",
+                "arg_number": "17",
+                "limits": "{ 0, 1 }",
+                "category": "Main Panel",
+                "description": "Artificial Horizon Pitch Adjustment"
+            },
+            "AH_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "AH_CAGE",
+                "device_id": "10",
+                "command": "3007",
+                "arg_number": "18",
+                "category": "Main Panel",
+                "description": "Artificial Horizon Cage Switch"
+            },
+            "ALT_SET_PRESS": {
+                "type": "Rotary",
+                "msg": "ALT_SET_PRESS",
+                "device_id": "2",
+                "command": "3010",
+                "arg_number": "22",
+                "category": "Main Panel",
+                "description": "Altimeter Set Pressure"
+            },
+            "ACCEL_RESET": {
+                "type": "PushButton",
+                "msg": "ACCEL_RESET",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "176",
+                "category": "Main Panel",
+                "description": "Accelerometer Reset"
+            },
+            "TURB_OVER_SP_T_BTN": {
+                "type": "PushButton",
+                "msg": "TURB_OVER_SP_T_BTN",
+                "device_id": "2",
+                "command": "3021",
+                "arg_number": "60",
+                "category": "Main Panel",
+                "description": "Turbine Overspeed Lamp Test Button"
+            },
+            "LAND_WARN_GN_T_BTN": {
+                "type": "PushButton",
+                "msg": "LAND_WARN_GN_T_BTN",
+                "device_id": "2",
+                "command": "3022",
+                "arg_number": "81",
+                "category": "Main Panel",
+                "description": "Landing Warning Green Lamp Test Button"
+            },
+            "LAND_WARN_RD_T_BTN": {
+                "type": "PushButton",
+                "msg": "LAND_WARN_RD_T_BTN",
+                "device_id": "2",
+                "command": "3023",
+                "arg_number": "83",
+                "category": "Main Panel",
+                "description": "Landing Warning Red Lamp Test Button"
+            },
+            "FUEL_PRESS_T_BTN": {
+                "type": "PushButton",
+                "msg": "FUEL_PRESS_T_BTN",
+                "device_id": "2",
+                "command": "3024",
+                "arg_number": "70",
+                "category": "Main Panel",
+                "description": "Fuel Pressure Lamp Test Button"
+            },
+            "BATTERY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BATTERY_SW",
+                "device_id": "8",
+                "command": "3032",
+                "arg_number": "79",
+                "category": "Main Panel",
+                "description": "Battery Switch"
+            },
+            "PARK_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "PARK_BRAKE",
+                "device_id": "2",
+                "command": "3028",
+                "arg_number": "84",
+                "category": "Main Panel",
+                "description": "Parking Brake Handle"
+            }
+        },
+        "Arming Panel": {
+            "JETT_STORES_L": {
+                "type": "PushButton",
+                "msg": "JETT_STORES_L",
+                "device_id": "14",
+                "command": "3008",
+                "arg_number": "126",
+                "category": "Arming Panel",
+                "description": "Jettison Left Stores Pull Handle"
+            },
+            "JETT_STORES_R": {
+                "type": "PushButton",
+                "msg": "JETT_STORES_R",
+                "device_id": "14",
+                "command": "3009",
+                "arg_number": "127",
+                "category": "Arming Panel",
+                "description": "Jettison Right Stores Pull Handle"
+            },
+            "JETT_STORES_B": {
+                "type": "PushButton",
+                "msg": "JETT_STORES_B",
+                "device_id": "14",
+                "command": "3010",
+                "arg_number": "128",
+                "category": "Arming Panel",
+                "description": "Jettison Belly Pull Handle"
+            },
+            "L_WING_BOMB_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "L_WING_BOMB_SW_C",
+                "device_id": "14",
+                "command": "3011",
+                "arg_number": "139",
+                "category": "Arming Panel",
+                "description": "Left Wing Bomb Switch Cover"
+            },
+            "L_WING_BOMB_SW": {
+                "type": "ToggleSwitch",
+                "msg": "L_WING_BOMB_SW",
+                "device_id": "14",
+                "command": "3013",
+                "arg_number": "140",
+                "category": "Arming Panel",
+                "description": "Left Wing Bomb Switch"
+            },
+            "R_WING_BOMB_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "R_WING_BOMB_SW_C",
+                "device_id": "14",
+                "command": "3015",
+                "arg_number": "141",
+                "category": "Arming Panel",
+                "description": "Right Wing Bomb Switch Cover"
+            },
+            "R_WING_BOMB_SW": {
+                "type": "ToggleSwitch",
+                "msg": "R_WING_BOMB_SW",
+                "device_id": "14",
+                "command": "3017",
+                "arg_number": "142",
+                "category": "Arming Panel",
+                "description": "Right Wing Bomb Switch"
+            },
+            "B_WING_BOMB_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "B_WING_BOMB_SW_C",
+                "device_id": "14",
+                "command": "3019",
+                "arg_number": "143",
+                "category": "Arming Panel",
+                "description": "Belly Bomb Switch Cover"
+            },
+            "B_WING_BOMB_SW": {
+                "type": "ToggleSwitch",
+                "msg": "B_WING_BOMB_SW",
+                "device_id": "14",
+                "command": "3021",
+                "arg_number": "144",
+                "category": "Arming Panel",
+                "description": "Belly Bomb Switch"
+            },
+            "L_CHEM_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "L_CHEM_SW_C",
+                "device_id": "14",
+                "command": "3023",
+                "arg_number": "145",
+                "category": "Arming Panel",
+                "description": "Left Chemical Switch Cover"
+            },
+            "L_CHEM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "L_CHEM_SW",
+                "device_id": "14",
+                "command": "3025",
+                "arg_number": "146",
+                "category": "Arming Panel",
+                "description": "Left Chemical Switch"
+            },
+            "R_CHEM_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "R_CHEM_SW_C",
+                "device_id": "14",
+                "command": "3027",
+                "arg_number": "147",
+                "category": "Arming Panel",
+                "description": "Right Chemical Switch Cover"
+            },
+            "R_CHEM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "R_CHEM_SW",
+                "device_id": "14",
+                "command": "3029",
+                "arg_number": "148",
+                "category": "Arming Panel",
+                "description": "Right Chemical Switch"
+            }
+        },
+        "Drop Ordinance Panel": {
+            "OAP_READY_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "OAP_READY_SW_C",
+                "device_id": "14",
+                "command": "3037",
+                "arg_number": "139",
+                "category": "Drop Ordinance Panel",
+                "description": "OAP Ready Switch Cover"
+            },
+            "OAP_READY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "OAP_READY_SW",
+                "device_id": "14",
+                "command": "3039",
+                "arg_number": "141",
+                "category": "Drop Ordinance Panel",
+                "description": "OAP Ready Switch"
+            },
+            "OAP_SEL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "OAP_SEL_SW",
+                "device_id": "14",
+                "command": "3041",
+                "arg_number": "143",
+                "category": "Drop Ordinance Panel",
+                "description": "OAP Selector Switch"
+            },
+            "ARM_B_HAND": {
+                "type": "ToggleSwitch",
+                "msg": "ARM_B_HAND",
+                "device_id": "14",
+                "command": "3035",
+                "arg_number": "228",
+                "category": "Drop Ordinance Panel",
+                "description": "Arming Handle Belly"
+            },
+            "ARM_L_HAND": {
+                "type": "ToggleSwitch",
+                "msg": "ARM_L_HAND",
+                "device_id": "14",
+                "command": "3031",
+                "arg_number": "229",
+                "category": "Drop Ordinance Panel",
+                "description": "Arming Handle Left"
+            },
+            "ARM_R_HAND": {
+                "type": "ToggleSwitch",
+                "msg": "ARM_R_HAND",
+                "device_id": "14",
+                "command": "3033",
+                "arg_number": "230",
+                "category": "Drop Ordinance Panel",
+                "description": "Arming Handle Right"
+            }
+        },
+        "Rockets Control Panel": {
+            "RKT_REL_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RKT_REL_MODE",
+                "device_id": "22",
+                "device_command": "3001",
+                "arg_number": "221",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Rockets Control Panel",
+                "description": "Rockets Release Mode"
+            },
+            "RKT_DELAY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RKT_DELAY_SW",
+                "device_id": "22",
+                "command": "3004",
+                "arg_number": "222",
+                "category": "Rockets Control Panel",
+                "description": "Rockets Delay Switch"
+            },
+            "RKT_COUNT_CONTR": {
+                "type": "3PosTumb",
+                "msg": "RKT_COUNT_CONTR",
+                "device_id": "22",
+                "command": "3006",
+                "arg_number": "226",
+                "category": "Rockets Control Panel",
+                "description": "Rockets Counter Control"
+            },
+            "RKT_SALVO_SIZE_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "RKT_SALVO_SIZE_SEL",
+                "device_id": "22",
+                "command": "3007",
+                "arg_number": "227",
+                "category": "Rockets Control Panel",
+                "description": "Rockets Salvo Size Selector"
+            }
+        },
+        "Port Wall": {
+            "RECOV_FLAP_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "RECOV_FLAP_SW_C",
+                "device_id": "2",
+                "command": "3036",
+                "arg_number": "75",
+                "category": "Port Wall",
+                "description": "Recovery Flaps Switch Cover"
+            },
+            "RECOV_FLAP_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RECOV_FLAP_SW",
+                "device_id": "2",
+                "command": "3039",
+                "arg_number": "76",
+                "category": "Port Wall",
+                "description": "Recovery Flaps Switch"
+            },
+            "INTCOOL_FLP_SW": {
+                "type": "3PosTumb",
+                "msg": "INTCOOL_FLP_SW",
+                "device_id": "3",
+                "command": "3041",
+                "arg_number": "87",
+                "category": "Port Wall",
+                "description": "Intercooler Flap Switch"
+            },
+            "OILCOOL_FLP_SW": {
+                "type": "3PosTumb",
+                "msg": "OILCOOL_FLP_SW",
+                "device_id": "3",
+                "command": "3044",
+                "arg_number": "88",
+                "category": "Port Wall",
+                "description": "Oil Cooler Flap Switch"
+            },
+            "GUNS_SW_C": {
+                "type": "ToggleSwitch",
+                "msg": "GUNS_SW_C",
+                "device_id": "14",
+                "command": "3003",
+                "arg_number": "67",
+                "category": "Port Wall",
+                "description": "Guns Switch Cover"
+            },
+            "GUNS_SW": {
+                "type": "3PosTumb",
+                "msg": "GUNS_SW",
+                "device_id": "14",
+                "command": "3005",
+                "arg_number": "68",
+                "category": "Port Wall",
+                "description": "Guns Switch"
+            },
+            "FLAPS_LVR": {
+                "type": "Tumb",
+                "msg": "FLAPS_LVR",
+                "device_id": "2",
+                "command": "3029",
+                "arg_number": "94",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Port Wall",
+                "description": "Landing Flaps Lever"
+            },
+            "LH_C5_CAP": {
+                "type": "Potentiometer",
+                "msg": "LH_C5_CAP",
+                "device_id": "18",
+                "command": "3004",
+                "arg_number": "166",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "LH C5 Assy. Cover"
+            },
+            "GEAR_LVR": {
+                "type": "Tumb",
+                "msg": "GEAR_LVR",
+                "device_id": "2",
+                "command": "3034",
+                "arg_number": "153",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Port Wall",
+                "description": "Gear Lever"
+            }
+        },
+        "Throttle Quadrant": {
+            "VHF_PTT_BTN": {
+                "type": "PushButton",
+                "msg": "VHF_PTT_BTN",
+                "device_id": "23",
+                "command": "3099",
+                "arg_number": "44",
+                "category": "Throttle Quadrant",
+                "description": "Radio PTT Button"
+            },
+            "NOS_LOCK_SW": {
+                "type": "ToggleSwitch",
+                "msg": "NOS_LOCK_SW",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "41",
+                "category": "Throttle Quadrant",
+                "description": "NOS Lock Switch"
+            },
+            "PROP_RPM_LVR": {
+                "type": "Potentiometer",
+                "msg": "PROP_RPM_LVR",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "46",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Propeller RPM Lever"
+            },
+            "PROP_LOCK": {
+                "type": "PushButton",
+                "msg": "PROP_LOCK",
+                "device_id": "3",
+                "command": "3037",
+                "arg_number": "45",
+                "category": "Throttle Quadrant",
+                "description": "Propeller RPM Lever Lock"
+            },
+            "BOOST_LVR": {
+                "type": "Potentiometer",
+                "msg": "BOOST_LVR",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "58",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Boost Lever"
+            },
+            "BOOST_LOCK": {
+                "type": "PushButton",
+                "msg": "BOOST_LOCK",
+                "device_id": "3",
+                "command": "3039",
+                "arg_number": "49",
+                "category": "Throttle Quadrant",
+                "description": "Boost Lever Lock"
+            },
+            "MIX_LVR": {
+                "type": "Potentiometer",
+                "msg": "MIX_LVR",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "48",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Mixture Lever"
+            },
+            "THROTTLE_FRIC": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_FRIC",
+                "device_id": "3",
+                "command": "3018",
+                "arg_number": "57",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Throttle Frictioner"
+            },
+            "NOS_BTN": {
+                "type": "PushButton",
+                "msg": "NOS_BTN",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "40",
+                "category": "Throttle Quadrant",
+                "description": "NOS Button"
+            }
+        },
+        "Propellor Control": {
+            "PROP_CONTR_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "PROP_CONTR_SW",
+                "device_id": "3",
+                "device_command": "3029",
+                "arg_number": "72",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Propellor Control",
+                "description": "Propellor Control Switch"
+            }
+        },
+        "Trim Control": {
+            "TRIM_WH_AILERON": {
+                "type": "Potentiometer",
+                "msg": "TRIM_WH_AILERON",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "91",
+                "limits": "{ -1, 1 }",
+                "category": "Trim Control",
+                "description": "Aileron Trim Wheel"
+            },
+            "TRIM_WH_ELEVATOR": {
+                "type": "Potentiometer",
+                "msg": "TRIM_WH_ELEVATOR",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "92",
+                "limits": "{ -1, 1 }",
+                "category": "Trim Control",
+                "description": "Elevator Trim Wheel"
+            },
+            "TRIM_WH_RUDDER": {
+                "type": "Potentiometer",
+                "msg": "TRIM_WH_RUDDER",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "93",
+                "limits": "{ -1, 1 }",
+                "category": "Trim Control",
+                "description": "Rudder Trim Wheel"
+            }
+        },
+        "Circuit Brakers": {
+            "PROP_CB": {
+                "type": "PushButton",
+                "msg": "PROP_CB",
+                "device_id": "8",
+                "command": "3085",
+                "arg_number": "73",
+                "category": "Circuit Brakers",
+                "description": "Propellor Control CB"
+            },
+            "MSB_CB_GUN_LI": {
+                "type": "PushButton",
+                "msg": "MSB_CB_GUN_LI",
+                "device_id": "8",
+                "command": "3051",
+                "arg_number": "204",
+                "category": "Circuit Brakers",
+                "description": "LH Inboard Guns CB"
+            },
+            "MSB_CB_GUN_LO": {
+                "type": "PushButton",
+                "msg": "MSB_CB_GUN_LO",
+                "device_id": "8",
+                "command": "3053",
+                "arg_number": "205",
+                "category": "Circuit Brakers",
+                "description": "LH Outboard Guns CB"
+            },
+            "MSB_CB_GUN_RI": {
+                "type": "PushButton",
+                "msg": "MSB_CB_GUN_RI",
+                "device_id": "8",
+                "command": "3055",
+                "arg_number": "206",
+                "category": "Circuit Brakers",
+                "description": "LH Inboard Guns CB"
+            },
+            "MSB_CB_GUN_RO": {
+                "type": "PushButton",
+                "msg": "MSB_CB_GUN_RO",
+                "device_id": "8",
+                "command": "3057",
+                "arg_number": "207",
+                "category": "Circuit Brakers",
+                "description": "LH Outboard Guns CB"
+            },
+            "MSB_CB_FPUMP": {
+                "type": "PushButton",
+                "msg": "MSB_CB_FPUMP",
+                "device_id": "8",
+                "command": "3059",
+                "arg_number": "208",
+                "category": "Circuit Brakers",
+                "description": "Fuel Pumps CB"
+            },
+            "MSB_CB_OILCLR": {
+                "type": "PushButton",
+                "msg": "MSB_CB_OILCLR",
+                "device_id": "8",
+                "command": "3061",
+                "arg_number": "209",
+                "category": "Circuit Brakers",
+                "description": "Oil Cooler CB"
+            },
+            "MSB_CB_INTRCLR": {
+                "type": "PushButton",
+                "msg": "MSB_CB_INTRCLR",
+                "device_id": "8",
+                "command": "3063",
+                "arg_number": "210",
+                "category": "Circuit Brakers",
+                "description": "Intercooler CB"
+            },
+            "MSB_CB_GUNRELAY": {
+                "type": "PushButton",
+                "msg": "MSB_CB_GUNRELAY",
+                "device_id": "8",
+                "command": "3065",
+                "arg_number": "211",
+                "category": "Circuit Brakers",
+                "description": "Gun Relay and Gun Camera Guns CB"
+            },
+            "MSB_CB_GUNSIGHT": {
+                "type": "PushButton",
+                "msg": "MSB_CB_GUNSIGHT",
+                "device_id": "8",
+                "command": "3067",
+                "arg_number": "212",
+                "category": "Circuit Brakers",
+                "description": "Gun Sight, Camera Heat & Water Injection CB"
+            },
+            "MSB_CB_CANOPY": {
+                "type": "PushButton",
+                "msg": "MSB_CB_CANOPY",
+                "device_id": "8",
+                "command": "3069",
+                "arg_number": "213",
+                "category": "Circuit Brakers",
+                "description": "Canopy Motor CB"
+            },
+            "MSB_CB_LLIGHT": {
+                "type": "PushButton",
+                "msg": "MSB_CB_LLIGHT",
+                "device_id": "8",
+                "command": "3071",
+                "arg_number": "214",
+                "category": "Circuit Brakers",
+                "description": "Landing Light CB"
+            },
+            "MSB_CB_WARN": {
+                "type": "PushButton",
+                "msg": "MSB_CB_WARN",
+                "device_id": "8",
+                "command": "3073",
+                "arg_number": "215",
+                "category": "Circuit Brakers",
+                "description": "Warn. Instruments CB"
+            },
+            "MSB_CB_CLIGHT": {
+                "type": "PushButton",
+                "msg": "MSB_CB_CLIGHT",
+                "device_id": "8",
+                "command": "3075",
+                "arg_number": "216",
+                "category": "Circuit Brakers",
+                "description": "Internal Lighting CB"
+            },
+            "MSB_CB_PITOT": {
+                "type": "PushButton",
+                "msg": "MSB_CB_PITOT",
+                "device_id": "8",
+                "command": "3077",
+                "arg_number": "217",
+                "category": "Circuit Brakers",
+                "description": "Pitot & Starter CB"
+            },
+            "MSB_CB_NLIGHT": {
+                "type": "PushButton",
+                "msg": "MSB_CB_NLIGHT",
+                "device_id": "8",
+                "command": "3079",
+                "arg_number": "218",
+                "category": "Circuit Brakers",
+                "description": "Position Lights CB"
+            },
+            "MSB_CB_RLIGHT": {
+                "type": "PushButton",
+                "msg": "MSB_CB_RLIGHT",
+                "device_id": "8",
+                "command": "3081",
+                "arg_number": "219",
+                "category": "Circuit Brakers",
+                "description": "Recognition Lights CB"
+            },
+            "MSB_CB_RADIO": {
+                "type": "PushButton",
+                "msg": "MSB_CB_RADIO",
+                "device_id": "8",
+                "command": "3083",
+                "arg_number": "220",
+                "category": "Circuit Brakers",
+                "description": "Radio CB"
+            },
+            "MSB_CB_BOMBS": {
+                "type": "PushButton",
+                "msg": "MSB_CB_BOMBS",
+                "device_id": "8",
+                "command": "3087",
+                "arg_number": "158",
+                "category": "Circuit Brakers",
+                "description": "Drop Ordinance CB"
+            },
+            "MSB_CB_CRFLAPS": {
+                "type": "PushButton",
+                "msg": "MSB_CB_CRFLAPS",
+                "device_id": "8",
+                "command": "3089",
+                "arg_number": "159",
+                "category": "Circuit Brakers",
+                "description": "Recovery Flaps CB"
+            }
+        },
+        "Main Switch Box": {
+            "MSB_GUNSIGHT": {
+                "type": "Potentiometer",
+                "msg": "MSB_GUNSIGHT",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "194",
+                "limits": "{ 0, 1 }",
+                "category": "Main Switch Box",
+                "description": "Gun Sight Rheostat"
+            },
+            "MSB_COMPASS": {
+                "type": "Potentiometer",
+                "msg": "MSB_COMPASS",
+                "device_id": "8",
+                "command": "3004",
+                "arg_number": "195",
+                "limits": "{ 0, 1 }",
+                "category": "Main Switch Box",
+                "description": "Compass Light Rheostat"
+            },
+            "MSB_UV": {
+                "type": "Potentiometer",
+                "msg": "MSB_UV",
+                "device_id": "18",
+                "command": "3001",
+                "arg_number": "170",
+                "limits": "{ 0, 1 }",
+                "category": "Main Switch Box",
+                "description": "UV Instruments Light Rheostat"
+            },
+            "MSB_BOOSTERPUMP": {
+                "type": "Potentiometer",
+                "msg": "MSB_BOOSTERPUMP",
+                "device_id": "8",
+                "command": "3010",
+                "arg_number": "61",
+                "limits": "{ 0, 1 }",
+                "category": "Main Switch Box",
+                "description": "Booster Pumps Control Rheostat"
+            },
+            "MSB_NAV1": {
+                "type": "3PosTumb",
+                "msg": "MSB_NAV1",
+                "device_id": "8",
+                "command": "3013",
+                "arg_number": "197",
+                "category": "Main Switch Box",
+                "description": "Wing Tips Nav. Lights Switch"
+            },
+            "MSB_NAV2": {
+                "type": "3PosTumb",
+                "msg": "MSB_NAV2",
+                "device_id": "8",
+                "command": "3016",
+                "arg_number": "198",
+                "category": "Main Switch Box",
+                "description": "Tail Nav. Lights Switch"
+            },
+            "MSB_LANDING": {
+                "type": "3PosTumb",
+                "msg": "MSB_LANDING",
+                "device_id": "8",
+                "command": "3019",
+                "arg_number": "199",
+                "category": "Main Switch Box",
+                "description": "Landing Lights Switch"
+            },
+            "MSB_CPT_LIGHT": {
+                "type": "3PosTumb",
+                "msg": "MSB_CPT_LIGHT",
+                "device_id": "8",
+                "command": "3022",
+                "arg_number": "71",
+                "category": "Main Switch Box",
+                "description": "Cockpit Light Switch"
+            },
+            "MSB_GENERATOR": {
+                "type": "ToggleSwitch",
+                "msg": "MSB_GENERATOR",
+                "device_id": "8",
+                "command": "3024",
+                "arg_number": "200",
+                "category": "Main Switch Box",
+                "description": "Generator Switch"
+            },
+            "MSB_PITOT": {
+                "type": "ToggleSwitch",
+                "msg": "MSB_PITOT",
+                "device_id": "8",
+                "command": "3026",
+                "arg_number": "201",
+                "category": "Main Switch Box",
+                "description": "Pitot Heater Switch"
+            },
+            "MSB_DILUTE": {
+                "type": "ToggleSwitch",
+                "msg": "MSB_DILUTE",
+                "device_id": "8",
+                "command": "3028",
+                "arg_number": "62",
+                "category": "Main Switch Box",
+                "description": "Oil Dilution Switch"
+            },
+            "MSB_TEST1": {
+                "type": "3PosTumb",
+                "msg": "MSB_TEST1",
+                "device_id": "8",
+                "command": "3030",
+                "arg_number": "202",
+                "category": "Main Switch Box",
+                "description": "LG/FL Test Switch"
+            },
+            "MSB_TEST2": {
+                "type": "3PosTumb",
+                "msg": "MSB_TEST2",
+                "device_id": "8",
+                "command": "3031",
+                "arg_number": "203",
+                "category": "Main Switch Box",
+                "description": "OXY/TRB Test Switch"
+            }
+        },
+        "Starboard Wall": {
+            "IFF_DESTR_1": {
+                "type": "PushButton",
+                "msg": "IFF_DESTR_1",
+                "device_id": "15",
+                "command": "3087",
+                "arg_number": "185",
+                "category": "Starboard Wall",
+                "description": "Secret Radio Destruction Box 1"
+            },
+            "IFF_DESTR_2": {
+                "type": "PushButton",
+                "msg": "IFF_DESTR_2",
+                "device_id": "15",
+                "command": "3089",
+                "arg_number": "186",
+                "category": "Starboard Wall",
+                "description": "Secret Radio Destruction Box 2"
+            },
+            "RH_C5_CAP": {
+                "type": "Potentiometer",
+                "msg": "RH_C5_CAP",
+                "device_id": "19",
+                "command": "3004",
+                "arg_number": "168",
+                "limits": "{ 0, 1 }",
+                "category": "Starboard Wall",
+                "description": "RH C5 Assy. Cover"
+            },
+            "TAIL_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "TAIL_LOCK",
+                "device_id": "2",
+                "command": "3042",
+                "arg_number": "101",
+                "category": "Starboard Wall",
+                "description": "Tail Wheel Lock Lever"
+            }
+        },
+        "Oxygen": {
+            "OXY_BYPASS": {
+                "type": "Potentiometer",
+                "msg": "OXY_BYPASS",
+                "device_id": "4",
+                "command": "3005",
+                "arg_number": "130",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen",
+                "description": "Oxygen Emergency By-pass"
+            },
+            "OXY_AUTOMIX": {
+                "type": "ToggleSwitch",
+                "msg": "OXY_AUTOMIX",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "131",
+                "category": "Oxygen",
+                "description": "Oxygen Auto-Mix On-Off"
+            }
+        },
+        "Recognition Lights": {
+            "RLB_KEY": {
+                "type": "PushButton",
+                "msg": "RLB_KEY",
+                "device_id": "8",
+                "command": "3035",
+                "arg_number": "96",
+                "category": "Recognition Lights",
+                "description": "Recognition Lights KEY Button"
+            },
+            "RLB_WHITE": {
+                "type": "3PosTumb",
+                "msg": "RLB_WHITE",
+                "device_id": "8",
+                "command": "3036",
+                "arg_number": "97",
+                "category": "Recognition Lights",
+                "description": "Recognition Lights Switch White"
+            },
+            "RLB_RED": {
+                "type": "3PosTumb",
+                "msg": "RLB_RED",
+                "device_id": "8",
+                "command": "3039",
+                "arg_number": "98",
+                "category": "Recognition Lights",
+                "description": "Recognition Lights Switch Red"
+            },
+            "RLB_GREEN": {
+                "type": "3PosTumb",
+                "msg": "RLB_GREEN",
+                "device_id": "8",
+                "command": "3042",
+                "arg_number": "99",
+                "category": "Recognition Lights",
+                "description": "Recognition Lights Switch Green"
+            },
+            "RLB_YELLOW": {
+                "type": "3PosTumb",
+                "msg": "RLB_YELLOW",
+                "device_id": "8",
+                "command": "3045",
+                "arg_number": "100",
+                "category": "Recognition Lights",
+                "description": "Recognition Lights Switch Yellow"
+            }
+        },
+        "Radio": {
+            "RCTRL_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_OFF",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "115",
+                "category": "Radio",
+                "description": "Radio Power OFF"
+            },
+            "RCTRL_A": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_A",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "116",
+                "category": "Radio",
+                "description": "Radio Channel A"
+            },
+            "RCTRL_B": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_B",
+                "device_id": "23",
+                "command": "3003",
+                "arg_number": "117",
+                "category": "Radio",
+                "description": "Radio Channel B"
+            },
+            "RCTRL_C": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_C",
+                "device_id": "23",
+                "command": "3004",
+                "arg_number": "118",
+                "category": "Radio",
+                "description": "Radio Channel C"
+            },
+            "RCTRL_D": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_D",
+                "device_id": "23",
+                "command": "3005",
+                "arg_number": "119",
+                "category": "Radio",
+                "description": "Radio Channel D"
+            },
+            "RCTRL_DIM": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_DIM",
+                "device_id": "23",
+                "command": "3006",
+                "arg_number": "125",
+                "category": "Radio",
+                "description": "Radio Channel Dimmer"
+            },
+            "RCTRL_TLOCK": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_TLOCK",
+                "device_id": "23",
+                "command": "3017",
+                "arg_number": "155",
+                "category": "Radio",
+                "description": "Switch Locking Lever"
+            },
+            "RCTRL_T_MODE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "RCTRL_T_MODE",
+                "device_id": "23",
+                "downSwitch": "3008",
+                "upSwitch": "3007",
+                "arg_number": "156",
+                "category": "Radio",
+                "description": "Radio Mode Switch"
+            },
+            "RCTRL_VOL": {
+                "type": "Potentiometer",
+                "msg": "RCTRL_VOL",
+                "device_id": "23",
+                "command": "3015",
+                "arg_number": "77",
+                "limits": "{ 0, 1 }",
+                "category": "Radio",
+                "description": "Radio Volume"
+            }
+        },
+        "Detrola Receiver": {
+            "DETROLA_FREQU_SEL": {
+                "type": "Potentiometer",
+                "msg": "DETROLA_FREQU_SEL",
+                "device_id": "24",
+                "command": "3004",
+                "arg_number": "137",
+                "limits": "{ 0, 1 }",
+                "category": "Detrola Receiver",
+                "description": "Detrola Frequency Selector"
+            },
+            "DETROLA_VOL": {
+                "type": "Potentiometer",
+                "msg": "DETROLA_VOL",
+                "device_id": "24",
+                "command": "3001",
+                "arg_number": "138",
+                "limits": "{ 0, 1 }",
+                "category": "Detrola Receiver",
+                "description": "Detrola Volume"
+            }
+        },
+        "Deck": {
+            "MAIN_FUEL_SEL": {
+                "type": "Tumb",
+                "msg": "MAIN_FUEL_SEL",
+                "device_id": "3",
+                "command": "3047",
+                "arg_number": "85",
+                "step": "0.25",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "Deck",
+                "description": "Main Fuel Tank Selector"
+            },
+            "DROP_TANK_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "DROP_TANK_SEL",
+                "device_id": "3",
+                "device_command": "3050",
+                "arg_number": "86",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Deck",
+                "description": "Droptank Selector"
+            },
+            "AIRFILTER": {
+                "type": "ToggleSwitch",
+                "msg": "AIRFILTER",
+                "device_id": "3",
+                "command": "3033",
+                "arg_number": "114",
+                "category": "Deck",
+                "description": "Air Filter By-Pass Lever"
+            },
+            "HYDR_HP": {
+                "type": "ToggleSwitch",
+                "msg": "HYDR_HP",
+                "device_id": "2",
+                "command": "3052",
+                "arg_number": "160",
+                "category": "Deck",
+                "description": "Hydraulic System Hand Pump"
+            },
+            "CARBAIR": {
+                "type": "Potentiometer",
+                "msg": "CARBAIR",
+                "device_id": "3",
+                "command": "3054",
+                "arg_number": "161",
+                "limits": "{ 0, 1 }",
+                "category": "Deck",
+                "description": "Carburettor Heater Lever"
+            }
+        },
+        "Gun Sight": {
+            "WING_SPAN_SEL": {
+                "type": "Potentiometer",
+                "msg": "WING_SPAN_SEL",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "35",
+                "limits": "{ 0, 1 }",
+                "category": "Gun Sight",
+                "description": "Wing Span Selector"
+            },
+            "TARGET_RANGE_SEL": {
+                "type": "Potentiometer",
+                "msg": "TARGET_RANGE_SEL",
+                "device_id": "6",
+                "command": "3020",
+                "arg_number": "36",
+                "limits": "{ 0, 1 }",
+                "category": "Gun Sight",
+                "description": "Target Range Selector"
+            },
+            "RET_MASK_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "RET_MASK_LVR",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "37",
+                "category": "Gun Sight",
+                "description": "Fixed Reticle Mask Lever"
+            }
+        },
+        "Cockpit": {
+            "STICK_HIDE": {
+                "type": "ToggleSwitch",
+                "msg": "STICK_HIDE",
+                "device_id": "2",
+                "command": "3059",
+                "arg_number": "232",
+                "category": "Cockpit",
+                "description": "Hide Stick Toggle"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "P-47D",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

@@ -1,0 +1,712 @@
+{
+    "commands": {
+        "Cockpit": {
+            "OXY_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "OXY_VALVE",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "13",
+                "category": "Cockpit",
+                "description": "Oxygen Valve"
+            },
+            "ALT_MBAR": {
+                "type": "Rotary",
+                "msg": "ALT_MBAR",
+                "device_id": "1",
+                "command": "3037",
+                "arg_number": "30",
+                "category": "Cockpit",
+                "description": "Altimeter Pressure Set"
+            },
+            "DI": {
+                "type": "Rotary",
+                "msg": "DI",
+                "device_id": "1",
+                "command": "3041",
+                "arg_number": "32",
+                "category": "Cockpit",
+                "description": "Directional Gyro Adjust"
+            },
+            "FUEL_GAUGE": {
+                "type": "PushButton",
+                "msg": "FUEL_GAUGE",
+                "device_id": "1",
+                "command": "3005",
+                "arg_number": "44",
+                "category": "Cockpit",
+                "description": "Show Fuel Contents"
+            },
+            "FLAPS": {
+                "type": "ToggleSwitch",
+                "msg": "FLAPS",
+                "device_id": "1",
+                "command": "3009",
+                "arg_number": "47",
+                "category": "Cockpit",
+                "description": "Landing Flaps Up/Down"
+            },
+            "UC_BLIND": {
+                "type": "ToggleSwitch",
+                "msg": "UC_BLIND",
+                "device_id": "1",
+                "command": "3011",
+                "arg_number": "50",
+                "category": "Cockpit",
+                "description": "U/C Indicator Blind Up/Down"
+            },
+            "CLK_PINION_PULL": {
+                "type": "PushButton",
+                "msg": "CLK_PINION_PULL",
+                "device_id": "17",
+                "command": "3006",
+                "arg_number": "54",
+                "category": "Cockpit",
+                "description": "Winding/Adjustment Clock Pull out."
+            },
+            "CLK_PINION": {
+                "type": "Rotary",
+                "msg": "CLK_PINION",
+                "device_id": "17",
+                "command": "3004",
+                "arg_number": "55",
+                "category": "Cockpit",
+                "description": "Winding/Adjustment Clock"
+            },
+            "COMPASS_RING": {
+                "type": "FixedStepTumb",
+                "msg": "COMPASS_RING",
+                "device_id": "1",
+                "command": "3017",
+                "arg_number": "74",
+                "step": "0.00333",
+                "limits": "{ 0, 1 }",
+                "rel_args": "{ -0.00333, 0.00333 }",
+                "output_map": "nil",
+                "category": "Cockpit",
+                "description": "Compass Course Setter Ring"
+            },
+            "DEICER": {
+                "type": "ToggleSwitch",
+                "msg": "DEICER",
+                "device_id": "1",
+                "command": "3021",
+                "arg_number": "87",
+                "category": "Cockpit",
+                "description": "Windscreen De-Ice On/Off"
+            },
+            "HATCH": {
+                "type": "ToggleSwitch",
+                "msg": "HATCH",
+                "device_id": "1",
+                "command": "3051",
+                "arg_number": "149",
+                "category": "Cockpit",
+                "description": "Canopy Open/Close Control"
+            },
+            "HATCH_JETTISON": {
+                "type": "ToggleSwitch",
+                "msg": "HATCH_JETTISON",
+                "device_id": "1",
+                "command": "3057",
+                "arg_number": "140",
+                "category": "Cockpit",
+                "description": "Jettison Canopy Pull Ball"
+            },
+            "SIDE_DOOR": {
+                "type": "ToggleSwitch",
+                "msg": "SIDE_DOOR",
+                "device_id": "1",
+                "command": "3059",
+                "arg_number": "147",
+                "category": "Cockpit",
+                "description": "Side Door Open/Close Control"
+            }
+        },
+        "Weapons": {
+            "SAFETY": {
+                "type": "ToggleSwitch",
+                "msg": "SAFETY",
+                "device_id": "5",
+                "command": "3001",
+                "arg_number": "3",
+                "category": "Weapons",
+                "description": "Safety Lever"
+            },
+            "BUTTON_MG": {
+                "type": "PushButton",
+                "msg": "BUTTON_MG",
+                "device_id": "5",
+                "command": "3003",
+                "arg_number": "4",
+                "category": "Weapons",
+                "description": "MG Trigger"
+            },
+            "BUTTON_CAN": {
+                "type": "PushButton",
+                "msg": "BUTTON_CAN",
+                "device_id": "5",
+                "command": "3004",
+                "arg_number": "5",
+                "category": "Weapons",
+                "description": "Cannons Trigger"
+            },
+            "BUTTON_LINKED": {
+                "type": "PushButton",
+                "msg": "BUTTON_LINKED",
+                "device_id": "5",
+                "command": "3005",
+                "arg_number": "6",
+                "category": "Weapons",
+                "description": "MG+Cannons Trigger"
+            },
+            "GUNSIGHT_RANGE": {
+                "type": "Potentiometer",
+                "msg": "GUNSIGHT_RANGE",
+                "device_id": "5",
+                "command": "3007",
+                "arg_number": "77",
+                "limits": "{ 0, 1 }",
+                "category": "Weapons",
+                "description": "Gunsight Range"
+            },
+            "GUNSIGHT_BASE": {
+                "type": "Potentiometer",
+                "msg": "GUNSIGHT_BASE",
+                "device_id": "5",
+                "command": "3010",
+                "arg_number": "78",
+                "limits": "{ 0, 1 }",
+                "category": "Weapons",
+                "description": "Gunsight Base"
+            },
+            "GUNSIGHT_TINT": {
+                "type": "ToggleSwitch",
+                "msg": "GUNSIGHT_TINT",
+                "device_id": "5",
+                "command": "3016",
+                "arg_number": "79",
+                "category": "Weapons",
+                "description": "Gunsight Tint Screen Up/Down"
+            },
+            "GUNSIGHT_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "GUNSIGHT_SWITCH",
+                "device_id": "5",
+                "command": "3018",
+                "arg_number": "80",
+                "category": "Weapons",
+                "description": "Gunsight Master On/Off"
+            },
+            "GUNSIGHT_DIMMER": {
+                "type": "Potentiometer",
+                "msg": "GUNSIGHT_DIMMER",
+                "device_id": "5",
+                "command": "3020",
+                "arg_number": "81",
+                "limits": "{ 0, 1 }",
+                "category": "Weapons",
+                "description": "Gun Sight Light"
+            },
+            "BUTTON_BOMB": {
+                "type": "PushButton",
+                "msg": "BUTTON_BOMB",
+                "device_id": "5",
+                "command": "3015",
+                "arg_number": "128",
+                "category": "Weapons",
+                "description": "Drop Bombs"
+            }
+        },
+        "Undercarriage": {
+            "WHEEL_BRAKES": {
+                "type": "Potentiometer",
+                "msg": "WHEEL_BRAKES",
+                "device_id": "1",
+                "command": "3002",
+                "arg_number": "9",
+                "limits": "{ 0, 1 }",
+                "category": "Undercarriage",
+                "description": "Wheel Brakes Lever"
+            },
+            "UC_DOWN_C": {
+                "type": "ToggleSwitch",
+                "msg": "UC_DOWN_C",
+                "device_id": "2",
+                "command": "3099",
+                "arg_number": "131",
+                "category": "Undercarriage",
+                "description": "U/C Indicator Cut-Off On/Off"
+            },
+            "UC_EMER": {
+                "type": "ToggleSwitch",
+                "msg": "UC_EMER",
+                "device_id": "1",
+                "command": "3023",
+                "arg_number": "88",
+                "category": "Undercarriage",
+                "description": "Undercarriage Emergency Release"
+            },
+            "UC": {
+                "type": "ToggleSwitch",
+                "msg": "UC",
+                "device_id": "1",
+                "command": "3025",
+                "arg_number": "148",
+                "category": "Undercarriage",
+                "description": "Undercarriage Raise/Lower"
+            }
+        },
+        "Lights": {
+            "NAV_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "NAV_LIGHTS",
+                "device_id": "1",
+                "command": "3007",
+                "arg_number": "46",
+                "category": "Lights",
+                "description": "Nav. Lights On/Off"
+            },
+            "PITLITE_LH": {
+                "type": "Potentiometer",
+                "msg": "PITLITE_LH",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "60",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Port Flood Lamp Brightness"
+            },
+            "PITLITE_RH": {
+                "type": "Potentiometer",
+                "msg": "PITLITE_RH",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "61",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Stbd. Flood Lamp Brightness"
+            },
+            "MORSE_UP_MODE": {
+                "type": "Tumb",
+                "msg": "MORSE_UP_MODE",
+                "device_id": "4",
+                "command": "3007",
+                "arg_number": "92",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights",
+                "description": "Upward Lamp Mode"
+            },
+            "MORSE_DN_MODE": {
+                "type": "Tumb",
+                "msg": "MORSE_DN_MODE",
+                "device_id": "4",
+                "command": "3011",
+                "arg_number": "93",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights",
+                "description": "Downward Lamp Mode"
+            },
+            "MORSE_KEY": {
+                "type": "PushButton",
+                "msg": "MORSE_KEY",
+                "device_id": "4",
+                "command": "3015",
+                "arg_number": "94",
+                "category": "Lights",
+                "description": "Morse Key"
+            }
+        },
+        "Engine": {
+            "MAGNETO0": {
+                "type": "ToggleSwitch",
+                "msg": "MAGNETO0",
+                "device_id": "2",
+                "command": "3015",
+                "arg_number": "56",
+                "category": "Engine",
+                "description": "No. 1 Magneto On/Off"
+            },
+            "MAGNETO1": {
+                "type": "ToggleSwitch",
+                "msg": "MAGNETO1",
+                "device_id": "2",
+                "command": "3017",
+                "arg_number": "57",
+                "category": "Engine",
+                "description": "No. 2 Magneto On/Off"
+            },
+            "BLOWER": {
+                "type": "ToggleSwitch",
+                "msg": "BLOWER",
+                "device_id": "2",
+                "command": "3019",
+                "arg_number": "58",
+                "category": "Engine",
+                "description": "Supercharger Mode Auto/M.S."
+            },
+            "STARTER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "STARTER_COVER",
+                "device_id": "2",
+                "command": "3021",
+                "arg_number": "64",
+                "category": "Engine",
+                "description": "Starter Button Cover"
+            },
+            "STARTER": {
+                "type": "PushButton",
+                "msg": "STARTER",
+                "device_id": "2",
+                "command": "3023",
+                "arg_number": "65",
+                "category": "Engine",
+                "description": "Starter"
+            },
+            "BOOSTER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BOOSTER_COVER",
+                "device_id": "2",
+                "command": "3025",
+                "arg_number": "66",
+                "category": "Engine",
+                "description": "Booster Coil Button Cover"
+            },
+            "BOOSTER": {
+                "type": "PushButton",
+                "msg": "BOOSTER",
+                "device_id": "2",
+                "command": "3027",
+                "arg_number": "67",
+                "category": "Engine",
+                "description": "Booster Coil"
+            },
+            "PRIMER_TURN": {
+                "type": "Potentiometer",
+                "msg": "PRIMER_TURN",
+                "device_id": "2",
+                "command": "3029",
+                "arg_number": "68",
+                "limits": "{ 0, 1 }",
+                "category": "Engine",
+                "description": "Primer Pump Turn"
+            },
+            "PRIMER_PULL": {
+                "type": "PushButton",
+                "msg": "PRIMER_PULL",
+                "device_id": "2",
+                "command": "3030",
+                "arg_number": "69",
+                "category": "Engine",
+                "description": "Primer Pump Pull"
+            },
+            "TANK_PRS": {
+                "type": "ToggleSwitch",
+                "msg": "TANK_PRS",
+                "device_id": "2",
+                "command": "3033",
+                "arg_number": "70",
+                "category": "Engine",
+                "description": "Fuel Tank Pressure On/Off"
+            },
+            "PROP": {
+                "type": "Potentiometer",
+                "msg": "PROP",
+                "device_id": "2",
+                "command": "3006",
+                "arg_number": "129",
+                "limits": "{ -1, 1 }",
+                "category": "Engine",
+                "description": "Propeller RPM"
+            },
+            "MIX": {
+                "type": "ToggleSwitch",
+                "msg": "MIX",
+                "device_id": "2",
+                "command": "3009",
+                "arg_number": "130",
+                "category": "Engine",
+                "description": "Mixture Control Select IDLE CUT OFF/RUN"
+            },
+            "RADIATOR": {
+                "type": "ToggleSwitch",
+                "msg": "RADIATOR",
+                "device_id": "1",
+                "command": "3033",
+                "arg_number": "133",
+                "category": "Engine",
+                "description": "Radiator Flap Open/Auto"
+            },
+            "PITOT": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT",
+                "device_id": "1",
+                "command": "3035",
+                "arg_number": "134",
+                "category": "Engine",
+                "description": "Pitot Heating On/Off"
+            },
+            "FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PUMP",
+                "device_id": "2",
+                "command": "3043",
+                "arg_number": "135",
+                "category": "Engine",
+                "description": "Fuel Pump On/Off"
+            },
+            "CARB_AIR": {
+                "type": "ToggleSwitch",
+                "msg": "CARB_AIR",
+                "device_id": "2",
+                "command": "3045",
+                "arg_number": "137",
+                "category": "Engine",
+                "description": "Carburettor Air Control"
+            },
+            "DILUTER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "DILUTER_COVER",
+                "device_id": "2",
+                "command": "3051",
+                "arg_number": "157",
+                "category": "Engine",
+                "description": "Oil Dilution Button Cover"
+            },
+            "DILUTER": {
+                "type": "PushButton",
+                "msg": "DILUTER",
+                "device_id": "2",
+                "command": "3053",
+                "arg_number": "158",
+                "category": "Engine",
+                "description": "Oil Dilution"
+            },
+            "MS_TEST_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "MS_TEST_COVER",
+                "device_id": "2",
+                "command": "3055",
+                "arg_number": "159",
+                "category": "Engine",
+                "description": "Supercharger Test Button Cover"
+            },
+            "MS_TEST": {
+                "type": "PushButton",
+                "msg": "MS_TEST",
+                "device_id": "2",
+                "command": "3057",
+                "arg_number": "160",
+                "category": "Engine",
+                "description": "Supercharger Test"
+            },
+            "RAD_TEST_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "RAD_TEST_COVER",
+                "device_id": "2",
+                "command": "3059",
+                "arg_number": "161",
+                "category": "Engine",
+                "description": "Radiator Test Button Cover"
+            },
+            "RAD_TEST": {
+                "type": "PushButton",
+                "msg": "RAD_TEST",
+                "device_id": "2",
+                "command": "3061",
+                "arg_number": "162",
+                "category": "Engine",
+                "description": "Radiator Test"
+            },
+            "WOBBLE_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "WOBBLE_PUMP",
+                "device_id": "2",
+                "command": "3035",
+                "arg_number": "90",
+                "category": "Engine",
+                "description": "Wobble Type Fuel Pump"
+            },
+            "FUEL_COCK": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_COCK",
+                "device_id": "2",
+                "command": "3037",
+                "arg_number": "100",
+                "category": "Engine",
+                "description": "Main Tank On/Off"
+            },
+            "DROPTANK_COCK": {
+                "type": "ToggleSwitch",
+                "msg": "DROPTANK_COCK",
+                "device_id": "2",
+                "command": "3041",
+                "arg_number": "98",
+                "category": "Engine",
+                "description": "Drop Tank On/Off"
+            },
+            "DROPTANK_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "DROPTANK_JETT",
+                "device_id": "5",
+                "command": "3013",
+                "arg_number": "99",
+                "category": "Engine",
+                "description": "Drop Tank Release Handle"
+            }
+        },
+        "Controls": {
+            "TRIM_WHEEL": {
+                "type": "Potentiometer",
+                "msg": "TRIM_WHEEL",
+                "device_id": "1",
+                "command": "3029",
+                "arg_number": "145",
+                "limits": "{ -1, 1 }",
+                "category": "Controls",
+                "description": "Elevator Trim"
+            },
+            "RTRIM_WHEEL": {
+                "type": "Potentiometer",
+                "msg": "RTRIM_WHEEL",
+                "device_id": "1",
+                "command": "3044",
+                "arg_number": "146",
+                "limits": "{ -1, 1 }",
+                "category": "Controls",
+                "description": "Rudder Trim"
+            }
+        },
+        "Radio": {
+            "RCTRL_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_OFF",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "115",
+                "category": "Radio",
+                "description": "Radio Power OFF"
+            },
+            "RCTRL_A": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_A",
+                "device_id": "15",
+                "command": "3002",
+                "arg_number": "116",
+                "category": "Radio",
+                "description": "Radio Channel A"
+            },
+            "RCTRL_B": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_B",
+                "device_id": "15",
+                "command": "3003",
+                "arg_number": "117",
+                "category": "Radio",
+                "description": "Radio Channel B"
+            },
+            "RCTRL_C": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_C",
+                "device_id": "15",
+                "command": "3004",
+                "arg_number": "118",
+                "category": "Radio",
+                "description": "Radio Channel C"
+            },
+            "RCTRL_D": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_D",
+                "device_id": "15",
+                "command": "3005",
+                "arg_number": "119",
+                "category": "Radio",
+                "description": "Radio Channel D"
+            },
+            "RCTRL_DIM": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_DIM",
+                "device_id": "15",
+                "command": "3006",
+                "arg_number": "125",
+                "category": "Radio",
+                "description": "Radio Channel Dimmer"
+            },
+            "RCTRL_TLOCK": {
+                "type": "ToggleSwitch",
+                "msg": "RCTRL_TLOCK",
+                "device_id": "15",
+                "command": "3017",
+                "arg_number": "155",
+                "category": "Radio",
+                "description": "Switch Locking Lever"
+            },
+            "RCTRL_T_MODE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "RCTRL_T_MODE",
+                "device_id": "15",
+                "downSwitch": "3008",
+                "upSwitch": "3007",
+                "arg_number": "156",
+                "category": "Radio",
+                "description": "Radio Mode Switch"
+            },
+            "IFF_B": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_B",
+                "device_id": "4",
+                "command": "3017",
+                "arg_number": "106",
+                "category": "Radio",
+                "description": "I.F.F. Circuit B"
+            },
+            "IFF_D": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_D",
+                "device_id": "4",
+                "command": "3019",
+                "arg_number": "107",
+                "category": "Radio",
+                "description": "I.F.F. Circuit D"
+            },
+            "IFF_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_COVER",
+                "device_id": "4",
+                "command": "3021",
+                "arg_number": "108",
+                "category": "Radio",
+                "description": "I.F.F. Cover Open/Close"
+            },
+            "IFF_0": {
+                "type": "PushButton",
+                "msg": "IFF_0",
+                "device_id": "4",
+                "command": "3023",
+                "arg_number": "109",
+                "category": "Radio",
+                "description": "I.F.F. Detonate Button 1"
+            },
+            "IFF_1": {
+                "type": "PushButton",
+                "msg": "IFF_1",
+                "device_id": "4",
+                "command": "3025",
+                "arg_number": "110",
+                "category": "Radio",
+                "description": "I.F.F. Detonate Button 2"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Spitfire",
+        "date": "Dec 21 2024, 11:31 AM -0800",
+        "version": "v0.8.3"
+    }
+}

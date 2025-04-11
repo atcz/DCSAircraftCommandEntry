@@ -1,0 +1,815 @@
+{
+    "commands": {
+        "Cockpit": {
+            "RAD_FLAP_CTRL": {
+                "type": "Rotary",
+                "msg": "RAD_FLAP_CTRL",
+                "device_id": "8",
+                "command": "3013",
+                "arg_number": "159",
+                "category": "Cockpit",
+                "description": "Radiator Flaps Control"
+            },
+            "STARTER_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "STARTER_CVR",
+                "device_id": "2",
+                "command": "3006",
+                "arg_number": "104",
+                "category": "Cockpit",
+                "description": "Starter Switch Cover"
+            },
+            "MW50_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "MW50_SWITCH",
+                "device_id": "2",
+                "command": "3015",
+                "arg_number": "85",
+                "category": "Cockpit",
+                "description": "MW-50 Switch"
+            },
+            "EL_KILL": {
+                "type": "ToggleSwitch",
+                "msg": "EL_KILL",
+                "device_id": "1",
+                "command": "3031",
+                "arg_number": "79",
+                "category": "Cockpit",
+                "description": "Electric Kill-switch"
+            },
+            "EMG_EQ_DEST": {
+                "type": "ToggleSwitch",
+                "msg": "EMG_EQ_DEST",
+                "device_id": "1",
+                "command": "3032",
+                "arg_number": "163",
+                "category": "Cockpit",
+                "description": "Emergency Equipment Destruction"
+            },
+            "CIRC_BR_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "CIRC_BR_CVR",
+                "device_id": "1",
+                "command": "3001",
+                "arg_number": "138",
+                "category": "Cockpit",
+                "description": "Circuit Breakers Cover"
+            },
+            "CANOPY_EMG_REL": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_EMG_REL",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "115",
+                "category": "Cockpit",
+                "description": "Canopy Emergency Release Handle"
+            },
+            "CANOPY_HAND_CRK": {
+                "type": "Rotary",
+                "msg": "CANOPY_HAND_CRK",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "114",
+                "category": "Cockpit",
+                "description": "Canopy Hand Crank"
+            },
+            "THR_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "THR_LOCK",
+                "device_id": "2",
+                "command": "3011",
+                "arg_number": "200",
+                "category": "Cockpit",
+                "description": "Throttle Lock"
+            },
+            "ALT_PRESS_SET": {
+                "type": "Rotary",
+                "msg": "ALT_PRESS_SET",
+                "device_id": "10",
+                "command": "3001",
+                "arg_number": "34",
+                "category": "Cockpit",
+                "description": "Altimeter Pressure Set"
+            },
+            "FLAPS_UP_TOGGLE": {
+                "type": "ToggleSwitch",
+                "msg": "FLAPS_UP_TOGGLE",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "62",
+                "category": "Cockpit",
+                "description": "Flaps Up"
+            },
+            "FLAPS_TO": {
+                "type": "ToggleSwitch",
+                "msg": "FLAPS_TO",
+                "device_id": "8",
+                "command": "3002",
+                "arg_number": "63",
+                "category": "Cockpit",
+                "description": "Flaps Take Off"
+            },
+            "FLAPS_LAND": {
+                "type": "ToggleSwitch",
+                "msg": "FLAPS_LAND",
+                "device_id": "8",
+                "command": "3003",
+                "arg_number": "64",
+                "category": "Cockpit",
+                "description": "Flaps Landing"
+            },
+            "LG_RET": {
+                "type": "ToggleSwitch",
+                "msg": "LG_RET",
+                "device_id": "8",
+                "command": "3005",
+                "arg_number": "65",
+                "category": "Cockpit",
+                "description": "Landing Gears Retraction"
+            },
+            "LG_RET_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "LG_RET_CVR",
+                "device_id": "8",
+                "command": "3006",
+                "arg_number": "66",
+                "category": "Cockpit",
+                "description": "Landing Gears Retraction Cover"
+            },
+            "LG_EXT": {
+                "type": "ToggleSwitch",
+                "msg": "LG_EXT",
+                "device_id": "8",
+                "command": "3007",
+                "arg_number": "67",
+                "category": "Cockpit",
+                "description": "Landing Gears Extending"
+            },
+            "TURN_BEZ": {
+                "type": "Rotary",
+                "msg": "TURN_BEZ",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "24",
+                "category": "Cockpit",
+                "description": "Turnable Bezel"
+            },
+            "WND_SET": {
+                "type": "Rotary",
+                "msg": "WND_SET",
+                "device_id": "13",
+                "command": "3004",
+                "arg_number": "25",
+                "category": "Cockpit",
+                "description": "Wind/Set Knob"
+            },
+            "START_STOP": {
+                "type": "PushButton",
+                "msg": "START_STOP",
+                "device_id": "13",
+                "command": "3006",
+                "arg_number": "26",
+                "category": "Cockpit",
+                "description": "Start - Stop Button"
+            },
+            "STOPWATCH": {
+                "type": "PushButton",
+                "msg": "STOPWATCH",
+                "device_id": "13",
+                "command": "3008",
+                "arg_number": "28",
+                "category": "Cockpit",
+                "description": "Stopwatch Button"
+            },
+            "JETT_FUS_STORES": {
+                "type": "PushButton",
+                "msg": "JETT_FUS_STORES",
+                "device_id": "20",
+                "command": "3012",
+                "arg_number": "92",
+                "category": "Cockpit",
+                "description": "Jettison Fuselage Stores"
+            },
+            "INSTR_LGHT_CTRL": {
+                "type": "Rotary",
+                "msg": "INSTR_LGHT_CTRL",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "78",
+                "category": "Cockpit",
+                "description": "Instrument Lights Brightness"
+            },
+            "OXY_EMG_KNOB": {
+                "type": "ToggleSwitch",
+                "msg": "OXY_EMG_KNOB",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "190",
+                "category": "Cockpit",
+                "description": "Oxygen Emergency Knob"
+            },
+            "HOR_CAGE": {
+                "type": "Potentiometer",
+                "msg": "HOR_CAGE",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "39",
+                "limits": "{ 0.5, 1.0 }",
+                "category": "Cockpit",
+                "description": "Horizon Cage"
+            },
+            "OXY_FLOW_VALVE": {
+                "type": "Potentiometer",
+                "msg": "OXY_FLOW_VALVE",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "110",
+                "limits": "{ 0, 0.5 }",
+                "category": "Cockpit",
+                "description": "Oxygen Flow Valve"
+            },
+            "MAGNETO": {
+                "type": "Tumb",
+                "msg": "MAGNETO",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "75",
+                "step": "0.3",
+                "limits": "{ 0, 0.9 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Cockpit",
+                "description": "Magneto Switch"
+            },
+            "STARTER_SWITCH": {
+                "type": "Tumb",
+                "msg": "STARTER_SWITCH",
+                "device_id": "2",
+                "command": "3008",
+                "arg_number": "105",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Cockpit",
+                "description": "Starter Switch. Starter Power"
+            },
+            "MBG_EMG_HNDL": {
+                "type": "ToggleSwitch",
+                "msg": "MBG_EMG_HNDL",
+                "device_id": "2",
+                "command": "3013",
+                "arg_number": "91",
+                "category": "Cockpit",
+                "description": "MBG Emergency Mode Handle"
+            },
+            "FUEL_TNK_SEL": {
+                "type": "Tumb",
+                "msg": "FUEL_TNK_SEL",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "90",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Cockpit",
+                "description": "Fuel Tank Selector Valve (CLOSE/FORWARD/AFT/BOTH)"
+            },
+            "FUEL_GAUGE_SEL": {
+                "type": "Tumb",
+                "msg": "FUEL_GAUGE_SEL",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "99",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Cockpit",
+                "description": "Fuel Gauge Selector (FORWARD/NONE/AFT)"
+            },
+            "FUEL_MWB4_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_MWB4_SEL",
+                "device_id": "6",
+                "command": "3003",
+                "arg_number": "161",
+                "category": "Cockpit",
+                "description": "MW-B4 Selector (Not Functional)"
+            },
+            "FUEL_PRIM_PMPL": {
+                "type": "PushButton",
+                "msg": "FUEL_PRIM_PMPL",
+                "device_id": "6",
+                "command": "3009",
+                "arg_number": "162",
+                "category": "Cockpit",
+                "description": "Primer Pump"
+            },
+            "HOR_STAB_TRIM": {
+                "type": "3PosTumb",
+                "msg": "HOR_STAB_TRIM",
+                "device_id": "8",
+                "command": "3012",
+                "arg_number": "77",
+                "category": "Cockpit",
+                "description": "Stabilizer Trimmer Up/Down"
+            },
+            "EMG_LG_REL": {
+                "type": "ToggleSwitch",
+                "msg": "EMG_LG_REL",
+                "device_id": "8",
+                "command": "3008",
+                "arg_number": "89",
+                "category": "Cockpit",
+                "description": "Landing Gear Emergency Release Handle"
+            },
+            "STARTER_SWITCH2": {
+                "type": "Tumb",
+                "msg": "STARTER_SWITCH2",
+                "device_id": "2",
+                "command": "3009",
+                "arg_number": "105",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Cockpit",
+                "description": "Starter Switch. Magnetic Clutch"
+            },
+            "FUEL_COLD_START": {
+                "type": "3PosTumb",
+                "msg": "FUEL_COLD_START",
+                "device_id": "6",
+                "command": "3007",
+                "arg_number": "160",
+                "category": "Cockpit",
+                "description": "Cold Start/Wind Screen Washer"
+            }
+        },
+        "Weapon Control": {
+            "MASTER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_ARM",
+                "device_id": "20",
+                "command": "3003",
+                "arg_number": "48",
+                "category": "Weapon Control",
+                "description": "Master Arm"
+            },
+            "GUN1_AMM_C": {
+                "type": "Rotary",
+                "msg": "GUN1_AMM_C",
+                "device_id": "20",
+                "command": "3004",
+                "arg_number": "51",
+                "category": "Weapon Control",
+                "description": "Set Gun 1 Ammunition Count"
+            },
+            "GUN2_AMM_C": {
+                "type": "Rotary",
+                "msg": "GUN2_AMM_C",
+                "device_id": "20",
+                "command": "3005",
+                "arg_number": "54",
+                "category": "Weapon Control",
+                "description": "Set Gun 2 Ammunition Count"
+            },
+            "GUN3_AMM_C": {
+                "type": "Rotary",
+                "msg": "GUN3_AMM_C",
+                "device_id": "20",
+                "command": "3006",
+                "arg_number": "57",
+                "category": "Weapon Control",
+                "description": "Set Gun 3 Ammunition Count"
+            },
+            "GUN4_AMM_C": {
+                "type": "Rotary",
+                "msg": "GUN4_AMM_C",
+                "device_id": "20",
+                "command": "3007",
+                "arg_number": "60",
+                "category": "Weapon Control",
+                "description": "Set Gun 4 Ammunition Count"
+            },
+            "MAIN_RKT": {
+                "type": "ToggleSwitch",
+                "msg": "MAIN_RKT",
+                "device_id": "20",
+                "command": "3008",
+                "arg_number": "107",
+                "category": "Weapon Control",
+                "description": "Main Rocket Switch"
+            },
+            "RKT_EMG_REL_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "RKT_EMG_REL_CVR",
+                "device_id": "20",
+                "command": "3009",
+                "arg_number": "137",
+                "category": "Weapon Control",
+                "description": "Rocket Emergency Release Cover"
+            },
+            "RKT_EMG_REL": {
+                "type": "ToggleSwitch",
+                "msg": "RKT_EMG_REL",
+                "device_id": "20",
+                "command": "3010",
+                "arg_number": "108",
+                "category": "Weapon Control",
+                "description": "Rocket Emergency Release"
+            },
+            "BMB_FUSE_SEL": {
+                "type": "Tumb",
+                "msg": "BMB_FUSE_SEL",
+                "device_id": "20",
+                "command": "3011",
+                "arg_number": "109",
+                "step": "0.1",
+                "limits": "{ 0, 0.4 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Weapon Control",
+                "description": "Bomb Fusing Selector"
+            }
+        },
+        "Gun Sight": {
+            "SIGHT_GYRO": {
+                "type": "ToggleSwitch",
+                "msg": "SIGHT_GYRO",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "132",
+                "category": "Gun Sight",
+                "description": "EZ42 Gunsight Gyro Power Switch, ON/OFF"
+            },
+            "SIGHT_WING_SPAN": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_WING_SPAN",
+                "device_id": "21",
+                "command": "3002",
+                "arg_number": "131",
+                "limits": "{ 0, 1 }",
+                "category": "Gun Sight",
+                "description": "EZ42 Gunsight Target Wingspan Knob"
+            },
+            "SIGHT_NIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "SIGHT_NIGHT",
+                "device_id": "21",
+                "command": "3011",
+                "arg_number": "134",
+                "category": "Gun Sight",
+                "description": "EZ42 Gunsight Night Lens Filter, ON/OFF"
+            },
+            "SIGHT_DISC_CTRL": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_DISC_CTRL",
+                "device_id": "21",
+                "command": "3003",
+                "arg_number": "4",
+                "limits": "{ 0, 1 }",
+                "category": "Gun Sight",
+                "description": "EZ42 Gunsight Target Distance Control"
+            },
+            "SIGHT_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_BRIGHT",
+                "device_id": "21",
+                "command": "3004",
+                "arg_number": "135",
+                "limits": "{ 0, 1 }",
+                "category": "Gun Sight",
+                "description": "EZ42 Gunsight Brightness Control"
+            },
+            "SIGHT_ALT_KNOB": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_ALT_KNOB",
+                "device_id": "21",
+                "command": "3012",
+                "arg_number": "191",
+                "limits": "{ 0, 1 }",
+                "category": "Gun Sight",
+                "description": "EZ42 Gunsight Altitude Aiming Correction Adjusting Knob I"
+            }
+        },
+        "Radio": {
+            "FUG16_VOLUME": {
+                "type": "Rotary",
+                "msg": "FUG16_VOLUME",
+                "device_id": "15",
+                "command": "3003",
+                "arg_number": "83",
+                "category": "Radio",
+                "description": "Radio Volume"
+            },
+            "FT_ZF_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "FT_ZF_SWITCH",
+                "device_id": "15",
+                "command": "3006",
+                "arg_number": "84",
+                "category": "Radio",
+                "description": "FT FT / Y ZF Mode Switch"
+            },
+            "FUG25_TEST": {
+                "type": "PushButton",
+                "msg": "FUG25_TEST",
+                "device_id": "16",
+                "command": "3003",
+                "arg_number": "88",
+                "category": "Radio",
+                "description": "IFF Check"
+            },
+            "RADIO_MODE": {
+                "type": "Tumb",
+                "msg": "RADIO_MODE",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "81",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio",
+                "description": "FuG 16ZY Radio Channel Selector"
+            },
+            "FUG25_MODE": {
+                "type": "3PosTumb",
+                "msg": "FUG25_MODE",
+                "device_id": "16",
+                "command": "3001",
+                "arg_number": "86",
+                "category": "Radio",
+                "description": "FuG 25A IFF Channel Selector"
+            },
+            "FUG16_TUNING": {
+                "type": "FixedStepTumb",
+                "msg": "FUG16_TUNING",
+                "device_id": "15",
+                "command": "3008",
+                "arg_number": "82",
+                "step": "0.01",
+                "limits": "{ -1, 1 }",
+                "rel_args": "{ -0.01, 0.01 }",
+                "output_map": "nil",
+                "category": "Radio",
+                "description": "Radio Tuning (+/-30 kHz)"
+            }
+        },
+        "Circuit Breakers": {
+            "FL_TR_HOR_PWR_ON": {
+                "type": "ToggleSwitch",
+                "msg": "FL_TR_HOR_PWR_ON",
+                "device_id": "1",
+                "command": "3005",
+                "arg_number": "141",
+                "category": "Circuit Breakers",
+                "description": "Flaps, Trimmer, Artificial Horizon Power CB On"
+            },
+            "FL_TR_HOR_PWR_OFF": {
+                "type": "PushButton",
+                "msg": "FL_TR_HOR_PWR_OFF",
+                "device_id": "1",
+                "command": "3018",
+                "arg_number": "142",
+                "category": "Circuit Breakers",
+                "description": "Flaps, Trimmer, Artificial Horizon Power CB Off"
+            },
+            "LG_PWF_ON": {
+                "type": "ToggleSwitch",
+                "msg": "LG_PWF_ON",
+                "device_id": "1",
+                "command": "3006",
+                "arg_number": "143",
+                "category": "Circuit Breakers",
+                "description": "Landing Gear Power CB On"
+            },
+            "LG_PWF_OFF": {
+                "type": "PushButton",
+                "msg": "LG_PWF_OFF",
+                "device_id": "1",
+                "command": "3019",
+                "arg_number": "144",
+                "category": "Circuit Breakers",
+                "description": "Landing Gear Power CB Off"
+            },
+            "PIT_HEAT_ON": {
+                "type": "ToggleSwitch",
+                "msg": "PIT_HEAT_ON",
+                "device_id": "1",
+                "command": "3007",
+                "arg_number": "145",
+                "category": "Circuit Breakers",
+                "description": "Pitot and Heating Cover CB On"
+            },
+            "PIT_HEAT_OFF": {
+                "type": "PushButton",
+                "msg": "PIT_HEAT_OFF",
+                "device_id": "1",
+                "command": "3020",
+                "arg_number": "146",
+                "category": "Circuit Breakers",
+                "description": "Pitot and Heating Cover CB Off"
+            },
+            "FUG25A_ON": {
+                "type": "ToggleSwitch",
+                "msg": "FUG25A_ON",
+                "device_id": "1",
+                "command": "3008",
+                "arg_number": "147",
+                "category": "Circuit Breakers",
+                "description": "FuG25a CB On"
+            },
+            "FUG25A_OFF": {
+                "type": "PushButton",
+                "msg": "FUG25A_OFF",
+                "device_id": "1",
+                "command": "3021",
+                "arg_number": "148",
+                "category": "Circuit Breakers",
+                "description": "FuG25a CB Off"
+            },
+            "FUG16ZY_ON": {
+                "type": "ToggleSwitch",
+                "msg": "FUG16ZY_ON",
+                "device_id": "1",
+                "command": "3009",
+                "arg_number": "149",
+                "category": "Circuit Breakers",
+                "description": "FuG16ZY CB On"
+            },
+            "FUG16ZY_OFF": {
+                "type": "PushButton",
+                "msg": "FUG16ZY_OFF",
+                "device_id": "1",
+                "command": "3022",
+                "arg_number": "150",
+                "category": "Circuit Breakers",
+                "description": "FuG16ZY CB Off"
+            },
+            "INST_LGHTS_ON": {
+                "type": "ToggleSwitch",
+                "msg": "INST_LGHTS_ON",
+                "device_id": "1",
+                "command": "3010",
+                "arg_number": "151",
+                "category": "Circuit Breakers",
+                "description": "Instrument Lights, Gun-sight, Indicators, Compass, Starter CB On"
+            },
+            "INST_LGHTS_OFF": {
+                "type": "PushButton",
+                "msg": "INST_LGHTS_OFF",
+                "device_id": "1",
+                "command": "3023",
+                "arg_number": "152",
+                "category": "Circuit Breakers",
+                "description": "Instrument Lights, Gun-sight, Indicators, Compass, Starter CB Off"
+            },
+            "GEN_PWR_ON": {
+                "type": "ToggleSwitch",
+                "msg": "GEN_PWR_ON",
+                "device_id": "1",
+                "command": "3011",
+                "arg_number": "153",
+                "category": "Circuit Breakers",
+                "description": "Generator CB On"
+            },
+            "GEN_PWR_OFF": {
+                "type": "PushButton",
+                "msg": "GEN_PWR_OFF",
+                "device_id": "1",
+                "command": "3024",
+                "arg_number": "154",
+                "category": "Circuit Breakers",
+                "description": "Generator CB Off"
+            },
+            "BATT_ON": {
+                "type": "ToggleSwitch",
+                "msg": "BATT_ON",
+                "device_id": "1",
+                "command": "3012",
+                "arg_number": "155",
+                "category": "Circuit Breakers",
+                "description": "Battery CB On"
+            },
+            "BATT_OFF": {
+                "type": "PushButton",
+                "msg": "BATT_OFF",
+                "device_id": "1",
+                "command": "3025",
+                "arg_number": "156",
+                "category": "Circuit Breakers",
+                "description": "Battery CB Off"
+            },
+            "NAV_LGHTS_ON": {
+                "type": "ToggleSwitch",
+                "msg": "NAV_LGHTS_ON",
+                "device_id": "1",
+                "command": "3013",
+                "arg_number": "121",
+                "category": "Circuit Breakers",
+                "description": "Navigation Lights CB On"
+            },
+            "NAV_LGHTS_OFF": {
+                "type": "PushButton",
+                "msg": "NAV_LGHTS_OFF",
+                "device_id": "1",
+                "command": "3026",
+                "arg_number": "120",
+                "category": "Circuit Breakers",
+                "description": "Navigation Lights CB Off"
+            },
+            "FW_TNK_PMP_ON": {
+                "type": "ToggleSwitch",
+                "msg": "FW_TNK_PMP_ON",
+                "device_id": "1",
+                "command": "3014",
+                "arg_number": "123",
+                "category": "Circuit Breakers",
+                "description": "Forward Tank Pump CB On"
+            },
+            "FW_TNK_PMP_OFF": {
+                "type": "PushButton",
+                "msg": "FW_TNK_PMP_OFF",
+                "device_id": "1",
+                "command": "3027",
+                "arg_number": "122",
+                "category": "Circuit Breakers",
+                "description": "Forward Tank Pump CB Off"
+            },
+            "AFT_TNK_PMP_ON": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_TNK_PMP_ON",
+                "device_id": "1",
+                "command": "3015",
+                "arg_number": "125",
+                "category": "Circuit Breakers",
+                "description": "Aft Tank Pump CB On"
+            },
+            "AFT_TNK_PMP_OFF": {
+                "type": "PushButton",
+                "msg": "AFT_TNK_PMP_OFF",
+                "device_id": "1",
+                "command": "3028",
+                "arg_number": "124",
+                "category": "Circuit Breakers",
+                "description": "Aft Tank Pump CB Off"
+            },
+            "AUX_TNK_PMP_ON": {
+                "type": "ToggleSwitch",
+                "msg": "AUX_TNK_PMP_ON",
+                "device_id": "1",
+                "command": "3016",
+                "arg_number": "127",
+                "category": "Circuit Breakers",
+                "description": "Auxiliary Tank Pump CB On"
+            },
+            "AUX_TNK_PMP_OFF": {
+                "type": "PushButton",
+                "msg": "AUX_TNK_PMP_OFF",
+                "device_id": "1",
+                "command": "3029",
+                "arg_number": "126",
+                "category": "Circuit Breakers",
+                "description": "Auxiliary Tank Pump CB Off"
+            },
+            "MW50_ON": {
+                "type": "ToggleSwitch",
+                "msg": "MW50_ON",
+                "device_id": "1",
+                "command": "3017",
+                "arg_number": "129",
+                "category": "Circuit Breakers",
+                "description": "MW-50 CB On"
+            },
+            "MW50_OFF": {
+                "type": "PushButton",
+                "msg": "MW50_OFF",
+                "device_id": "1",
+                "command": "3030",
+                "arg_number": "128",
+                "category": "Circuit Breakers",
+                "description": "MW-50 CB Off"
+            }
+        },
+        "Compass": {
+            "CRS_SET": {
+                "type": "Rotary",
+                "msg": "CRS_SET",
+                "device_id": "14",
+                "command": "3001",
+                "arg_number": "43",
+                "category": "Compass",
+                "description": "Course Set"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "FW-190D9",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

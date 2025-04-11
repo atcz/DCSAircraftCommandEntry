@@ -1,0 +1,191 @@
+{
+    "commands": {
+        "Electric System": {
+            "PW_SEL_SW": {
+                "type": "3PosTumb",
+                "msg": "PW_SEL_SW",
+                "device_id": "11",
+                "command": "3013",
+                "arg_number": "17",
+                "category": "Electric System",
+                "description": "Power Selector Switch, BATT/OFF/EXT"
+            },
+            "GEN_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "GEN_SWITCH",
+                "device_id": "11",
+                "command": "3014",
+                "arg_number": "16",
+                "category": "Electric System",
+                "description": "Generator Switch, ON/OFF"
+            },
+            "INV_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "INV_SWITCH",
+                "device_id": "11",
+                "command": "3015",
+                "arg_number": "15",
+                "category": "Electric System",
+                "description": "Inverter Switch, ON/OFF"
+            }
+        },
+        "Engines": {
+            "THROTTLE_CUTOFF": {
+                "type": "ToggleSwitch",
+                "msg": "THROTTLE_CUTOFF",
+                "device_id": "11",
+                "command": "3011",
+                "arg_number": "5",
+                "category": "Engines",
+                "description": "Throttle Cutoff"
+            }
+        },
+        "Weapons Panel": {
+            "MASTER_ARM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_ARM_SW",
+                "device_id": "2",
+                "command": "3204",
+                "arg_number": "43",
+                "category": "Weapons Panel",
+                "description": "Master Arm Switch, ARM/SAFE"
+            },
+            "ROCKET_MODE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ROCKET_MODE_SW",
+                "device_id": "2",
+                "command": "3205",
+                "arg_number": "44",
+                "category": "Weapons Panel",
+                "description": "Rocket Single/Ripple Mode Switch, SINGLE/RIPPLE"
+            },
+            "PYLON_JETT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PYLON_JETT_SW",
+                "device_id": "2",
+                "command": "3206",
+                "arg_number": "45",
+                "category": "Weapons Panel",
+                "description": "Pylon Jettison Switch, SAFE/JETTISON"
+            },
+            "PYLON_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PYLON_JETT_COVER",
+                "device_id": "2",
+                "command": "3207",
+                "arg_number": "46",
+                "category": "Weapons Panel",
+                "description": "Pylon Jettison Switch Cover"
+            },
+            "ROCKET_STATION_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "ROCKET_STATION_SEL",
+                "device_id": "2",
+                "device_command": "3208",
+                "arg_number": "47",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Weapons Panel",
+                "description": "Rocket Station Selector, OFF/LEFT/BOTH/RIGHT"
+            },
+            "GUN_STATION_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "GUN_STATION_SEL",
+                "device_id": "2",
+                "device_command": "3209",
+                "arg_number": "48",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Weapons Panel",
+                "description": "Gun Station Selector, OFF/LEFT/BOTH/RIGHT"
+            }
+        },
+        "RWR": {
+            "RWR_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RWR_PW_SW",
+                "device_id": "3",
+                "command": "3214",
+                "arg_number": "25",
+                "category": "RWR",
+                "description": "RWR Power Switch, OFF/ON"
+            },
+            "RWR_DISP_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RWR_DISP_BRIGHT",
+                "device_id": "3",
+                "command": "3215",
+                "arg_number": "30",
+                "limits": "{ 0, 1 }",
+                "category": "RWR",
+                "description": "RWR Display Brightness Knob"
+            }
+        },
+        "External Lights": {
+            "POS_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "POS_L_SW",
+                "device_id": "4",
+                "command": "3210",
+                "arg_number": "11",
+                "category": "External Lights",
+                "description": "Position Light Switch"
+            },
+            "LAND_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "LAND_L_SW",
+                "device_id": "4",
+                "command": "3213",
+                "arg_number": "26",
+                "category": "External Lights",
+                "description": "Landing Light Switch, ON/OFF"
+            }
+        },
+        "Avionics": {
+            "ALT_SET_KNB": {
+                "type": "Rotary",
+                "msg": "ALT_SET_KNB",
+                "device_id": "8",
+                "command": "3216",
+                "arg_number": "28",
+                "category": "Avionics",
+                "description": "Altimeter Setting Knob"
+            },
+            "ADI_ADJ_KNB": {
+                "type": "Potentiometer",
+                "msg": "ADI_ADJ_KNB",
+                "device_id": "8",
+                "command": "3217",
+                "arg_number": "29",
+                "limits": "{ -1, 1 }",
+                "category": "Avionics",
+                "description": "ADI Adjustment Knob"
+            },
+            "ALT_LO_FLAG_KNB": {
+                "type": "Potentiometer",
+                "msg": "ALT_LO_FLAG_KNB",
+                "device_id": "8",
+                "command": "3218",
+                "arg_number": "31",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics",
+                "description": "Altimeter LO Flag Setting Knob"
+            },
+            "ALT_HI_FLAG_KNB": {
+                "type": "Potentiometer",
+                "msg": "ALT_HI_FLAG_KNB",
+                "device_id": "8",
+                "command": "3219",
+                "arg_number": "32",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics",
+                "description": "Altimeter HI Flag Setting Knob"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "AH-6J",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

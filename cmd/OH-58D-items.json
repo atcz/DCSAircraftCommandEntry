@@ -1,0 +1,3034 @@
+{
+    "commands": {
+        "Center Post Console": {
+            "POST_CONSOLE_SW_HF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_SW_HF",
+                "device_id": "7",
+                "command": "3008",
+                "arg_number": "268",
+                "category": "Center Post Console",
+                "description": "HF Circuit Breaker Switch"
+            },
+            "POST_CONSOLE_CB_FM": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_FM",
+                "device_id": "7",
+                "command": "3118",
+                "arg_number": "640",
+                "category": "Center Post Console",
+                "description": "FM AMP Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_FM2": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_FM2",
+                "device_id": "7",
+                "command": "3119",
+                "arg_number": "641",
+                "category": "Center Post Console",
+                "description": "FM2 Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_VHF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_VHF",
+                "device_id": "7",
+                "command": "3120",
+                "arg_number": "642",
+                "category": "Center Post Console",
+                "description": "VHF Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_UHF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_UHF",
+                "device_id": "7",
+                "command": "3121",
+                "arg_number": "643",
+                "category": "Center Post Console",
+                "description": "UHF Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_SATCOM_RT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_SATCOM_RT",
+                "device_id": "7",
+                "command": "3122",
+                "arg_number": "644",
+                "category": "Center Post Console",
+                "description": "SATCOM R/T Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_ENG_ANTI_ICE": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_ENG_ANTI_ICE",
+                "device_id": "7",
+                "command": "3113",
+                "arg_number": "635",
+                "category": "Center Post Console",
+                "description": "Engine Anti-ice Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_SCTY_HF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_SCTY_HF",
+                "device_id": "7",
+                "command": "3114",
+                "arg_number": "636",
+                "category": "Center Post Console",
+                "description": "SCTY HF Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_SCTY_UHF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_SCTY_UHF",
+                "device_id": "7",
+                "command": "3115",
+                "arg_number": "637",
+                "category": "Center Post Console",
+                "description": "SCTY UHF Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_SCTY_VHF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_SCTY_VHF",
+                "device_id": "7",
+                "command": "3116",
+                "arg_number": "638",
+                "category": "Center Post Console",
+                "description": "SCTY VHF Circuit Breaker"
+            },
+            "POST_CONSOLE_SW_IFF": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_SW_IFF",
+                "device_id": "7",
+                "command": "3007",
+                "arg_number": "269",
+                "category": "Center Post Console",
+                "description": "IFF Circuit Breaker Switch"
+            },
+            "POST_CONSOLE_CB_IFF_CMPTR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_IFF_CMPTR",
+                "device_id": "7",
+                "command": "3117",
+                "arg_number": "639",
+                "category": "Center Post Console",
+                "description": "IFF Computer Circuit Breaker"
+            },
+            "POST_CONSOLE_SW_RADAR_DETR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_SW_RADAR_DETR",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "270",
+                "category": "Center Post Console",
+                "description": "Radar Detector Circuit Breaker Switch"
+            },
+            "POST_CONSOLE_SW_RADAR_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_SW_RADAR_WARN",
+                "device_id": "7",
+                "command": "3006",
+                "arg_number": "271",
+                "category": "Center Post Console",
+                "description": "Radar Warning Circuit Breaker Switch"
+            },
+            "POST_CONSOLE_CB_RADAR_ALT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_RADAR_ALT",
+                "device_id": "7",
+                "command": "3110",
+                "arg_number": "632",
+                "category": "Center Post Console",
+                "description": "Radar Altimeter Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_BLOWER_COMPT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_BLOWER_COMPT",
+                "device_id": "7",
+                "command": "3111",
+                "arg_number": "633",
+                "category": "Center Post Console",
+                "description": "Blower Computer Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_CABIN_HTR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_CABIN_HTR",
+                "device_id": "7",
+                "command": "3112",
+                "arg_number": "634",
+                "category": "Center Post Console",
+                "description": "Cabin Heater Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_IDM": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_IDM",
+                "device_id": "7",
+                "command": "3105",
+                "arg_number": "627",
+                "category": "Center Post Console",
+                "description": "IDM Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_ARMT_CONTR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_ARMT_CONTR",
+                "device_id": "7",
+                "command": "3106",
+                "arg_number": "628",
+                "category": "Center Post Console",
+                "description": "Armament Control Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_PWR_SIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_PWR_SIGHT",
+                "device_id": "7",
+                "command": "3107",
+                "arg_number": "629",
+                "category": "Center Post Console",
+                "description": "Power Sight Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_PWR_LGUN": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_PWR_LGUN",
+                "device_id": "7",
+                "command": "3108",
+                "arg_number": "630",
+                "category": "Center Post Console",
+                "description": "Power Left Gun Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_PWR_RKT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_PWR_RKT",
+                "device_id": "7",
+                "command": "3109",
+                "arg_number": "631",
+                "category": "Center Post Console",
+                "description": "Power Rocket Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_HELLFIRE_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_HELLFIRE_ARM",
+                "device_id": "7",
+                "command": "3099",
+                "arg_number": "621",
+                "category": "Center Post Console",
+                "description": "Hellfire Arm Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_HELLFIRE_CONTR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_HELLFIRE_CONTR",
+                "device_id": "7",
+                "command": "3100",
+                "arg_number": "622",
+                "category": "Center Post Console",
+                "description": "Hellfire Control Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_HELLFIRE_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_HELLFIRE_PWR",
+                "device_id": "7",
+                "command": "3101",
+                "arg_number": "623",
+                "category": "Center Post Console",
+                "description": "Hellfire Power Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_HELLFIRE_AC": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_HELLFIRE_AC",
+                "device_id": "7",
+                "command": "3102",
+                "arg_number": "624",
+                "category": "Center Post Console",
+                "description": "Hellfire AC Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_TAMS": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_TAMS",
+                "device_id": "7",
+                "command": "3103",
+                "arg_number": "625",
+                "category": "Center Post Console",
+                "description": "TAMS Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_SATCOM_AMP": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_SATCOM_AMP",
+                "device_id": "7",
+                "command": "3104",
+                "arg_number": "626",
+                "category": "Center Post Console",
+                "description": "SATCOM AMP Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_HUMS_28_VDC": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_HUMS_28_VDC",
+                "device_id": "7",
+                "command": "3095",
+                "arg_number": "617",
+                "category": "Center Post Console",
+                "description": "HUMS 28 VDC Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_HDG_HOLD": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_HDG_HOLD",
+                "device_id": "7",
+                "command": "3096",
+                "arg_number": "618",
+                "category": "Center Post Console",
+                "description": "Heading Hold Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_EL_LT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_EL_LT",
+                "device_id": "7",
+                "command": "3097",
+                "arg_number": "619",
+                "category": "Center Post Console",
+                "description": "EL LT Circuit Breaker"
+            },
+            "POST_CONSOLE_SW_L2MUM": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_SW_L2MUM",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "272",
+                "category": "Center Post Console",
+                "description": "L2MUM Power Circuit Breaker Switch"
+            },
+            "POST_CONSOLE_CB_26_VAC": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_26_VAC",
+                "device_id": "7",
+                "command": "3098",
+                "arg_number": "620",
+                "category": "Center Post Console",
+                "description": "26 VAC Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_SCAS_28_VAC": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_SCAS_28_VAC",
+                "device_id": "7",
+                "command": "3092",
+                "arg_number": "614",
+                "category": "Center Post Console",
+                "description": "SCAS 28 VAC Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_STBY_ATT": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_STBY_ATT",
+                "device_id": "7",
+                "command": "3093",
+                "arg_number": "615",
+                "category": "Center Post Console",
+                "description": "Standby Attitude Indicator Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_MCPU_BLWR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_MCPU_BLWR",
+                "device_id": "7",
+                "command": "3094",
+                "arg_number": "616",
+                "category": "Center Post Console",
+                "description": "MCPU Blower Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_PART_SEP": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_PART_SEP",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "273",
+                "category": "Center Post Console",
+                "description": "Particle Separator Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_MMS_26_VAC": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_MMS_26_VAC",
+                "device_id": "7",
+                "command": "3088",
+                "arg_number": "610",
+                "category": "Center Post Console",
+                "description": "MMS 26 VAC Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_MMS_DC_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_MMS_DC_PWR",
+                "device_id": "7",
+                "command": "3089",
+                "arg_number": "611",
+                "category": "Center Post Console",
+                "description": "MMS DC Power Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_MMS_DC_CONTR": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_MMS_DC_CONTR",
+                "device_id": "7",
+                "command": "3090",
+                "arg_number": "612",
+                "category": "Center Post Console",
+                "description": "MMS DC Control Circuit Breaker"
+            },
+            "POST_CONSOLE_CB_MMS_AC": {
+                "type": "ToggleSwitch",
+                "msg": "POST_CONSOLE_CB_MMS_AC",
+                "device_id": "7",
+                "command": "3091",
+                "arg_number": "613",
+                "category": "Center Post Console",
+                "description": "MMS AC Circuit Breaker"
+            }
+        },
+        "Overhead Console (Pilot)": {
+            "PLT_OVERHEAD_IR_BEACON": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_OVERHEAD_IR_BEACON",
+                "device_id": "7",
+                "command": "3034",
+                "arg_number": "274",
+                "category": "Overhead Console (Pilot)",
+                "description": "IR Beacon Switch"
+            },
+            "PLT_OVERHEAD_FORMATION_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "PLT_OVERHEAD_FORMATION_LIGHTS",
+                "device_id": "7",
+                "command": "3029",
+                "arg_number": "275",
+                "limits": "{ 0, 1 }",
+                "category": "Overhead Console (Pilot)",
+                "description": "Formation Lights Brightness Dial"
+            },
+            "PLT_OVERHEAD_IR_JAMMER_BASE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_OVERHEAD_IR_JAMMER_BASE",
+                "device_id": "7",
+                "command": "3054",
+                "arg_number": "841",
+                "category": "Overhead Console (Pilot)",
+                "description": "IR Jammer Base Switch"
+            },
+            "PLT_OVERHEAD_SW_CMWS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_OVERHEAD_SW_CMWS",
+                "device_id": "7",
+                "command": "3033",
+                "arg_number": "276",
+                "category": "Overhead Console (Pilot)",
+                "description": "CMWS Circuit Breaker Switch"
+            },
+            "PLT_OVERHEAD_CB_FUZZ_BNR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_OVERHEAD_CB_FUZZ_BNR",
+                "device_id": "7",
+                "command": "3031",
+                "arg_number": "278",
+                "category": "Overhead Console (Pilot)",
+                "description": "Fuzz Burner Circuit Breaker Switch"
+            },
+            "PLT_OVERHEAD_SW_BATT_CHGR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_OVERHEAD_SW_BATT_CHGR",
+                "device_id": "7",
+                "command": "3032",
+                "arg_number": "277",
+                "category": "Overhead Console (Pilot)",
+                "description": "Battery Charger Circuit Breaker Switch"
+            }
+        },
+        "Overhead Console (Rear)": {
+            "REAR_OVERHEAD_CB_INST_VS": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_INST_VS",
+                "device_id": "7",
+                "command": "3153",
+                "arg_number": "675",
+                "category": "Overhead Console (Rear)",
+                "description": "INST VS Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ENG_XDCR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ENG_XDCR",
+                "device_id": "7",
+                "command": "3154",
+                "arg_number": "676",
+                "category": "Overhead Console (Rear)",
+                "description": "Engine XDCR Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_XMSN_XDCR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_XMSN_XDCR",
+                "device_id": "7",
+                "command": "3155",
+                "arg_number": "677",
+                "category": "Overhead Console (Rear)",
+                "description": "Transmission XDCR Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ROTOR_XDCR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ROTOR_XDCR",
+                "device_id": "7",
+                "command": "3156",
+                "arg_number": "678",
+                "category": "Overhead Console (Rear)",
+                "description": "Rotor XDCR Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_FUEL_QTY": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_FUEL_QTY",
+                "device_id": "7",
+                "command": "3157",
+                "arg_number": "679",
+                "category": "Overhead Console (Rear)",
+                "description": "Fuel Quantity Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_MCPU_R": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_MCPU_R",
+                "device_id": "7",
+                "command": "3158",
+                "arg_number": "680",
+                "category": "Overhead Console (Rear)",
+                "description": "MCPU R Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ICS_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ICS_PLT",
+                "device_id": "7",
+                "command": "3147",
+                "arg_number": "669",
+                "category": "Overhead Console (Rear)",
+                "description": "Pilot ICS Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ICS_CPO": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ICS_CPO",
+                "device_id": "7",
+                "command": "3148",
+                "arg_number": "670",
+                "category": "Overhead Console (Rear)",
+                "description": "Copilot ICS Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_FM_1": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_FM_1",
+                "device_id": "7",
+                "command": "3149",
+                "arg_number": "671",
+                "category": "Overhead Console (Rear)",
+                "description": "FM 1 Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ADU": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ADU",
+                "device_id": "7",
+                "command": "3150",
+                "arg_number": "672",
+                "category": "Overhead Console (Rear)",
+                "description": "ADU Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_RFD": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_RFD",
+                "device_id": "7",
+                "command": "3151",
+                "arg_number": "673",
+                "category": "Overhead Console (Rear)",
+                "description": "RFD Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_MFD_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_MFD_PLT",
+                "device_id": "7",
+                "command": "3152",
+                "arg_number": "674",
+                "category": "Overhead Console (Rear)",
+                "description": "Pilot MFD Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_INV": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_INV",
+                "device_id": "7",
+                "command": "3141",
+                "arg_number": "663",
+                "category": "Overhead Console (Rear)",
+                "description": "Inverter Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_RECT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_RECT",
+                "device_id": "7",
+                "command": "3142",
+                "arg_number": "664",
+                "category": "Overhead Console (Rear)",
+                "description": "Rectifier Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_DC_GEN_FIELD": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_DC_GEN_FIELD",
+                "device_id": "7",
+                "command": "3143",
+                "arg_number": "665",
+                "category": "Overhead Console (Rear)",
+                "description": "DC Generator Field Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_DC_GEN_RESET": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_DC_GEN_RESET",
+                "device_id": "7",
+                "command": "3144",
+                "arg_number": "666",
+                "category": "Overhead Console (Rear)",
+                "description": "DC Generator Reset Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ENG_OIL_BYPASS": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ENG_OIL_BYPASS",
+                "device_id": "7",
+                "command": "3145",
+                "arg_number": "667",
+                "category": "Overhead Console (Rear)",
+                "description": "Engine Oil Bypass Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_PITOT_HTR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_PITOT_HTR",
+                "device_id": "7",
+                "command": "3146",
+                "arg_number": "668",
+                "category": "Overhead Console (Rear)",
+                "description": "Pitot Heater Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_STBY_ATT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_STBY_ATT",
+                "device_id": "7",
+                "command": "3135",
+                "arg_number": "657",
+                "category": "Overhead Console (Rear)",
+                "description": "Standby Attitude Indicator Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_NVG_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_NVG_PWR",
+                "device_id": "7",
+                "command": "3136",
+                "arg_number": "658",
+                "category": "Overhead Console (Rear)",
+                "description": "NVG Power Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_CKPT_LT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_CKPT_LT",
+                "device_id": "7",
+                "command": "3137",
+                "arg_number": "659",
+                "category": "Overhead Console (Rear)",
+                "description": "Cockpit Lights Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_POS_LT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_POS_LT",
+                "device_id": "7",
+                "command": "3138",
+                "arg_number": "660",
+                "category": "Overhead Console (Rear)",
+                "description": "Position Lights Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_SRCH_LT_CONTR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_SRCH_LT_CONTR",
+                "device_id": "7",
+                "command": "3139",
+                "arg_number": "661",
+                "category": "Overhead Console (Rear)",
+                "description": "Search Light Control Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_SRCH_LT_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_SRCH_LT_PWR",
+                "device_id": "7",
+                "command": "3140",
+                "arg_number": "662",
+                "category": "Overhead Console (Rear)",
+                "description": "Search Light Power Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_HYD_SYS": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_HYD_SYS",
+                "device_id": "7",
+                "command": "3129",
+                "arg_number": "651",
+                "category": "Overhead Console (Rear)",
+                "description": "Hydraulic System Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_DATA_XFER": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_DATA_XFER",
+                "device_id": "7",
+                "command": "3130",
+                "arg_number": "652",
+                "category": "Overhead Console (Rear)",
+                "description": "Data Transfer Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_JETT",
+                "device_id": "7",
+                "command": "3131",
+                "arg_number": "653",
+                "category": "Overhead Console (Rear)",
+                "description": "Jettison Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_FORCE_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_FORCE_TRIM",
+                "device_id": "7",
+                "command": "3132",
+                "arg_number": "654",
+                "category": "Overhead Console (Rear)",
+                "description": "Force Trim Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_ANTI_COLL_LT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_ANTI_COLL_LT",
+                "device_id": "7",
+                "command": "3133",
+                "arg_number": "655",
+                "category": "Overhead Console (Rear)",
+                "description": "Anti-collision Light Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_BUS_INTCON": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_BUS_INTCON",
+                "device_id": "7",
+                "command": "3134",
+                "arg_number": "656",
+                "category": "Overhead Console (Rear)",
+                "description": "Bus Interconnect Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_SCAS_DC": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_SCAS_DC",
+                "device_id": "7",
+                "command": "3123",
+                "arg_number": "645",
+                "category": "Overhead Console (Rear)",
+                "description": "SCAS DC Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_AIR_DATA": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_AIR_DATA",
+                "device_id": "7",
+                "command": "3124",
+                "arg_number": "646",
+                "category": "Overhead Console (Rear)",
+                "description": "Air Data Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_MAST_TRQ": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_MAST_TRQ",
+                "device_id": "7",
+                "command": "3125",
+                "arg_number": "647",
+                "category": "Overhead Console (Rear)",
+                "description": "Mast Torque Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_AIRBAG": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_AIRBAG",
+                "device_id": "7",
+                "command": "3126",
+                "arg_number": "648",
+                "category": "Overhead Console (Rear)",
+                "description": "Airbag Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_EGI": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_EGI",
+                "device_id": "7",
+                "command": "3127",
+                "arg_number": "649",
+                "category": "Overhead Console (Rear)",
+                "description": "EGI Circuit Breaker"
+            },
+            "REAR_OVERHEAD_CB_MFD_CPO": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_OVERHEAD_CB_MFD_CPO",
+                "device_id": "7",
+                "command": "3128",
+                "arg_number": "650",
+                "category": "Overhead Console (Rear)",
+                "description": "Copilot MFD Circuit Breaker"
+            }
+        },
+        "Overhead Console (Front)": {
+            "FRONT_OVERHEAD_CB_MCPU_L": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_CB_MCPU_L",
+                "device_id": "7",
+                "command": "3159",
+                "arg_number": "681",
+                "category": "Overhead Console (Front)",
+                "description": "MCPU L Circuit Breaker"
+            },
+            "FRONT_OVERHEAD_SW_FADEC": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_SW_FADEC",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "247",
+                "category": "Overhead Console (Front)",
+                "description": "FADEC Circuit Breaker Switch"
+            },
+            "FRONT_OVERHEAD_CB_FUEL_BOOST": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_CB_FUEL_BOOST",
+                "device_id": "7",
+                "command": "3160",
+                "arg_number": "682",
+                "category": "Overhead Console (Front)",
+                "description": "Fuel Boost Circuit Breaker"
+            },
+            "FRONT_OVERHEAD_CB_START": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_CB_START",
+                "device_id": "7",
+                "command": "3161",
+                "arg_number": "683",
+                "category": "Overhead Console (Front)",
+                "description": "Start Circuit Breaker"
+            },
+            "FRONT_OVERHEAD_SW_IGN": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_SW_IGN",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "250",
+                "category": "Overhead Console (Front)",
+                "description": "Ignition Circuit Breaker Switch"
+            },
+            "FRONT_OVERHEAD_CONSOLE_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "FRONT_OVERHEAD_CONSOLE_BRIGHTNESS",
+                "device_id": "7",
+                "command": "3011",
+                "arg_number": "251",
+                "limits": "{ 0, 0.8 }",
+                "category": "Overhead Console (Front)",
+                "description": "Console Lighting Brightness Dial"
+            },
+            "FRONT_OVERHEAD_INSTRUMENT_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "FRONT_OVERHEAD_INSTRUMENT_BRIGHTNESS",
+                "device_id": "7",
+                "command": "3012",
+                "arg_number": "252",
+                "limits": "{ 0, 0.8 }",
+                "category": "Overhead Console (Front)",
+                "description": "Instrument Lighting Brightness Dial"
+            },
+            "FRONT_OVERHEAD_FLOOD_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "FRONT_OVERHEAD_FLOOD_BRIGHTNESS",
+                "device_id": "7",
+                "command": "3013",
+                "arg_number": "253",
+                "limits": "{ 0, 1 }",
+                "category": "Overhead Console (Front)",
+                "description": "Flood Light Brightness Dial"
+            },
+            "FRONT_OVERHEAD_FLOOD_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "FRONT_OVERHEAD_FLOOD_LIGHTS",
+                "device_id": "7",
+                "command": "3014",
+                "arg_number": "279",
+                "category": "Overhead Console (Front)",
+                "description": "Flood Light Switch"
+            },
+            "FRONT_OVERHEAD_POSITION_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "FRONT_OVERHEAD_POSITION_LIGHTS",
+                "device_id": "7",
+                "command": "3010",
+                "arg_number": "280",
+                "category": "Overhead Console (Front)",
+                "description": "Position Lights Switch"
+            },
+            "FRONT_OVERHEAD_ANTI_COLL_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_ANTI_COLL_LIGHTS",
+                "device_id": "7",
+                "command": "3009",
+                "arg_number": "281",
+                "category": "Overhead Console (Front)",
+                "description": "Anti-Collision Lights Switch"
+            },
+            "FRONT_OVERHEAD_PITOT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_PITOT_HEAT",
+                "device_id": "7",
+                "command": "3015",
+                "arg_number": "254",
+                "category": "Overhead Console (Front)",
+                "description": "Pitot Heater Switch"
+            },
+            "FRONT_OVERHEAD_HEATER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_HEATER",
+                "device_id": "7",
+                "command": "3016",
+                "arg_number": "255",
+                "category": "Overhead Console (Front)",
+                "description": "Heater Switch"
+            },
+            "FRONT_OVERHEAD_DEFOG_L": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_DEFOG_L",
+                "device_id": "7",
+                "command": "3017",
+                "arg_number": "256",
+                "category": "Overhead Console (Front)",
+                "description": "Left Defog Blower Switch"
+            },
+            "FRONT_OVERHEAD_DEFOG_R": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_DEFOG_R",
+                "device_id": "7",
+                "command": "3018",
+                "arg_number": "257",
+                "category": "Overhead Console (Front)",
+                "description": "Right Defog Blower Switch"
+            },
+            "FRONT_OVERHEAD_COMPARTMENT_BLOWER": {
+                "type": "3PosTumb",
+                "msg": "FRONT_OVERHEAD_COMPARTMENT_BLOWER",
+                "device_id": "7",
+                "command": "3019",
+                "arg_number": "258",
+                "category": "Overhead Console (Front)",
+                "description": "Compartment Blower Switch"
+            },
+            "FRONT_OVERHEAD_IR_JAMMER_XMTR": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_IR_JAMMER_XMTR",
+                "device_id": "7",
+                "command": "3086",
+                "arg_number": "842",
+                "category": "Overhead Console (Front)",
+                "description": "IR Jammer Xmit Switch"
+            },
+            "FRONT_OVERHEAD_FUEL_BOOST": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_FUEL_BOOST",
+                "device_id": "7",
+                "command": "3020",
+                "arg_number": "259",
+                "category": "Overhead Console (Front)",
+                "description": "Fuel Boost Switch"
+            },
+            "FRONT_OVERHEAD_ANTI_ICE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_ANTI_ICE",
+                "device_id": "7",
+                "command": "3021",
+                "arg_number": "260",
+                "category": "Overhead Console (Front)",
+                "description": "Engine Anti Ice Switch"
+            },
+            "FRONT_OVERHEAD_OIL_BYPASS": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_OIL_BYPASS",
+                "device_id": "7",
+                "command": "3022",
+                "arg_number": "261",
+                "category": "Overhead Console (Front)",
+                "description": "Engine Oil Bypass Switch"
+            },
+            "FRONT_OVERHEAD_ESSENTIAL_BUS": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_ESSENTIAL_BUS",
+                "device_id": "7",
+                "command": "3023",
+                "arg_number": "262",
+                "category": "Overhead Console (Front)",
+                "description": "Essential Bus Run/Start Switch"
+            },
+            "FRONT_OVERHEAD_AC_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OVERHEAD_AC_GEN",
+                "device_id": "7",
+                "command": "3024",
+                "arg_number": "263",
+                "category": "Overhead Console (Front)",
+                "description": "AC Generator Switch"
+            },
+            "FRONT_OVERHEAD_DC_GEN": {
+                "type": "3PosTumb",
+                "msg": "FRONT_OVERHEAD_DC_GEN",
+                "device_id": "7",
+                "command": "3025",
+                "arg_number": "264",
+                "category": "Overhead Console (Front)",
+                "description": "DC Generator Switch"
+            },
+            "FRONT_OVERHEAD_BATT_2": {
+                "type": "3PosTumb",
+                "msg": "FRONT_OVERHEAD_BATT_2",
+                "device_id": "7",
+                "command": "3026",
+                "arg_number": "249",
+                "category": "Overhead Console (Front)",
+                "description": "Battery 2 Switch"
+            },
+            "FRONT_OVERHEAD_BATT_1": {
+                "type": "3PosTumb",
+                "msg": "FRONT_OVERHEAD_BATT_1",
+                "device_id": "7",
+                "command": "3027",
+                "arg_number": "248",
+                "category": "Overhead Console (Front)",
+                "description": "Battery 1 Switch"
+            },
+            "FRONT_OVERHEAD_FUEL_SHUTOFF": {
+                "type": "Potentiometer",
+                "msg": "FRONT_OVERHEAD_FUEL_SHUTOFF",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "245",
+                "limits": "{ 0, 1 }",
+                "category": "Overhead Console (Front)",
+                "description": "Fuel Shutoff Lever"
+            }
+        },
+        "Cyclic (Pilot)": {
+            "PLT_CYCLIC_FORCE_TRIM_INTERRUPT": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_FORCE_TRIM_INTERRUPT",
+                "device_id": "42",
+                "command": "3101",
+                "arg_number": "27",
+                "category": "Cyclic (Pilot)",
+                "description": "Force Trim - Interrupt"
+            },
+            "PLT_CYCLIC_SCAS_RELEASE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_SCAS_RELEASE",
+                "device_id": "42",
+                "command": "3102",
+                "arg_number": "29",
+                "category": "Cyclic (Pilot)",
+                "description": "SCAS Release"
+            },
+            "PLT_CYCLIC_MISSILE_ACTIVATE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_MISSILE_ACTIVATE",
+                "device_id": "42",
+                "command": "3109",
+                "arg_number": "30",
+                "category": "Cyclic (Pilot)",
+                "description": "Missile Activate (ATAS Only)"
+            },
+            "PLT_CYCLIC_ODA": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_ODA",
+                "device_id": "42",
+                "command": "3110",
+                "arg_number": "34",
+                "category": "Cyclic (Pilot)",
+                "description": "ODA Button"
+            },
+            "PLT_CYCLIC_FLARE_DISPENSE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_FLARE_DISPENSE",
+                "device_id": "36",
+                "command": "3007",
+                "arg_number": "41",
+                "category": "Cyclic (Pilot)",
+                "description": "Flare Dispenser Button"
+            },
+            "PLT_CYCLIC_MISSILE_STEP": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_MISSILE_STEP",
+                "device_id": "21",
+                "command": "3013",
+                "arg_number": "42",
+                "category": "Cyclic (Pilot)",
+                "description": "Missile Step Button"
+            },
+            "PLT_CYCLIC_HOVER_WAYPOINT": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_HOVER_WAYPOINT",
+                "device_id": "42",
+                "command": "3111",
+                "arg_number": "51",
+                "category": "Cyclic (Pilot)",
+                "description": "Hover Bob-Up/Wpt Drop Button"
+            },
+            "PLT_CYCLIC_WEAPON_FIRE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CYCLIC_WEAPON_FIRE_COVER",
+                "device_id": "21",
+                "command": "3014",
+                "arg_number": "52",
+                "category": "Cyclic (Pilot)",
+                "description": "Weapon Fire Cover"
+            },
+            "PLT_CYCLIC_WEAPON_FIRE": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_WEAPON_FIRE",
+                "device_id": "21",
+                "command": "3015",
+                "arg_number": "70",
+                "category": "Cyclic (Pilot)",
+                "description": "Weapon Fire Button"
+            },
+            "PLT_CYCLIC_ICS": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_ICS",
+                "device_id": "42",
+                "command": "3095",
+                "arg_number": "71",
+                "category": "Cyclic (Pilot)",
+                "description": "ICS Radio Button"
+            },
+            "PLT_CYCLIC_WEAPON_SELECT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_WEAPON_SELECT_UD",
+                "device_id": "11",
+                "downSwitch": "3030",
+                "upSwitch": "3031",
+                "arg_number": "90",
+                "category": "Cyclic (Pilot)",
+                "description": "Weapon Select Switch Up/Down"
+            },
+            "PLT_CYCLIC_WEAPON_SELECT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_WEAPON_SELECT_LR",
+                "device_id": "11",
+                "downSwitch": "3032",
+                "upSwitch": "3033",
+                "arg_number": "91",
+                "category": "Cyclic (Pilot)",
+                "description": "Weapon Select Switch Left/Right"
+            },
+            "PLT_CYCLIC_DISPLAY_SELECT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_DISPLAY_SELECT_UD",
+                "device_id": "11",
+                "downSwitch": "3034",
+                "upSwitch": "3035",
+                "arg_number": "92",
+                "category": "Cyclic (Pilot)",
+                "description": "Display Select Switch Up/Down"
+            },
+            "PLT_CYCLIC_DISPLAY_SELECT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_CYCLIC_DISPLAY_SELECT_LR",
+                "device_id": "11",
+                "downSwitch": "3036",
+                "upSwitch": "3037",
+                "arg_number": "93",
+                "category": "Cyclic (Pilot)",
+                "description": "Display Select Switch Left/Right"
+            }
+        },
+        "Cyclic (Copilot)": {
+            "CPLT_CYCLIC_LASER": {
+                "type": "PushButton",
+                "msg": "CPLT_CYCLIC_LASER",
+                "device_id": "22",
+                "command": "3024",
+                "arg_number": "35",
+                "category": "Cyclic (Copilot)",
+                "description": "Fire Laser"
+            },
+            "CPLT_CYCLIC_POINT_TRACK": {
+                "type": "PushButton",
+                "msg": "CPLT_CYCLIC_POINT_TRACK",
+                "device_id": "22",
+                "command": "3021",
+                "arg_number": "48",
+                "category": "Cyclic (Copilot)",
+                "description": "Point Track"
+            }
+        },
+        "Collective (Pilot)": {
+            "PLT_COLLECTIVE_START": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_START",
+                "device_id": "7",
+                "command": "3028",
+                "arg_number": "7",
+                "category": "Collective (Pilot)",
+                "description": "Start Switch"
+            },
+            "PLT_COLLECTIVE_THROTTLE_IDLE_RELEASE": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_THROTTLE_IDLE_RELEASE",
+                "device_id": "2",
+                "command": "3009",
+                "arg_number": "9",
+                "category": "Collective (Pilot)",
+                "description": "Throttle Idle Release Switch"
+            },
+            "PLT_COLLECTIVE_ENGINE_RPM_TRIM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_ENGINE_RPM_TRIM",
+                "device_id": "5",
+                "downSwitch": "3001",
+                "upSwitch": "3002",
+                "arg_number": "15",
+                "category": "Collective (Pilot)",
+                "description": "Engine Rpm Trim"
+            },
+            "PLT_COLLECTIVE_CHANNEL_SEL_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_CHANNEL_SEL_UD",
+                "device_id": "42",
+                "downSwitch": "3070",
+                "upSwitch": "3069",
+                "arg_number": "12",
+                "category": "Collective (Pilot)",
+                "description": "Channel Select Switch Up/Down"
+            },
+            "PLT_COLLECTIVE_CHANNEL_SEL_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                "device_id": "42",
+                "downSwitch": "3071",
+                "upSwitch": "3072",
+                "arg_number": "13",
+                "category": "Collective (Pilot)",
+                "description": "Channel Select Switch Left/Right"
+            },
+            "PLT_COLLECTIVE_RADIO_SEL_13": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_RADIO_SEL_13",
+                "device_id": "42",
+                "downSwitch": "3075",
+                "upSwitch": "3073",
+                "arg_number": "14",
+                "category": "Collective (Pilot)",
+                "description": "Radio Select Switch 1/3"
+            },
+            "PLT_COLLECTIVE_RADIO_SEL_24": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_RADIO_SEL_24",
+                "device_id": "42",
+                "downSwitch": "3074",
+                "upSwitch": "3074",
+                "arg_number": "16",
+                "category": "Collective (Pilot)",
+                "description": "Radio Select Switch 2/4"
+            },
+            "PLT_COLLECTIVE_RADIO_SEL_5": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_RADIO_SEL_5",
+                "device_id": "42",
+                "downSwitch": "3076",
+                "upSwitch": "3076",
+                "arg_number": "17",
+                "category": "Collective (Pilot)",
+                "description": "Radio Select Switch 5"
+            },
+            "PLT_COLLECTIVE_EMERGENCY_JETTISON_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COLLECTIVE_EMERGENCY_JETTISON_COVER",
+                "device_id": "36",
+                "command": "3010",
+                "arg_number": "46",
+                "category": "Collective (Pilot)",
+                "description": "Emergency Jettison Cover"
+            },
+            "PLT_COLLECTIVE_EMERGENCY_JETTISON": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_EMERGENCY_JETTISON",
+                "device_id": "36",
+                "command": "3011",
+                "arg_number": "47",
+                "category": "Collective (Pilot)",
+                "description": "Emergency Jettison (Launch All)"
+            },
+            "PLT_COLLECTIVE_SEARCHLIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_COLLECTIVE_SEARCHLIGHT",
+                "device_id": "7",
+                "command": "3036",
+                "arg_number": "98",
+                "category": "Collective (Pilot)",
+                "description": "Searchlight Switch"
+            },
+            "PLT_COLLECTIVE_SEARCHLIGHT_UD": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SEARCHLIGHT_UD",
+                "device_id": "7",
+                "downSwitch": "3037",
+                "upSwitch": "3038",
+                "arg_number": "94",
+                "category": "Collective (Pilot)",
+                "description": "Searchlight Control Switch Extend/Retract"
+            },
+            "PLT_COLLECTIVE_SEARCHLIGHT_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SEARCHLIGHT_LR",
+                "device_id": "7",
+                "downSwitch": "3039",
+                "upSwitch": "3040",
+                "arg_number": "95",
+                "category": "Collective (Pilot)",
+                "description": "Searchlight Control Switch Left/Right"
+            },
+            "PLT_COLLECTIVE_SCAS_ENGAGE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SCAS_ENGAGE",
+                "device_id": "12",
+                "downSwitch": "3007",
+                "upSwitch": "3008",
+                "arg_number": "96",
+                "category": "Collective (Pilot)",
+                "description": "SCAS Heading Hold Switch Engage/Disengage"
+            },
+            "PLT_COLLECTIVE_SCAS_TRIM_LR": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_COLLECTIVE_SCAS_TRIM_LR",
+                "device_id": "12",
+                "downSwitch": "3009",
+                "upSwitch": "3010",
+                "arg_number": "97",
+                "category": "Collective (Pilot)",
+                "description": "SCAS Heading Hold Switch Trim Left/Trim Right"
+            },
+            "PLT_COLLECTIVE_IZLID": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_IZLID",
+                "device_id": "42",
+                "command": "3046",
+                "arg_number": "49",
+                "category": "Collective (Pilot)",
+                "description": "IZLID (Gun Laser)"
+            }
+        },
+        "Ignition Panel": {
+            "IGNITION_KEY": {
+                "type": "ToggleSwitch",
+                "msg": "IGNITION_KEY",
+                "device_id": "7",
+                "command": "3035",
+                "arg_number": "50",
+                "category": "Ignition Panel",
+                "description": "Ignition Keylock Switch"
+            }
+        },
+        "CMWS Panel": {
+            "CMWS_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "CMWS_ARM",
+                "device_id": "36",
+                "command": "3005",
+                "arg_number": "44",
+                "category": "CMWS Panel",
+                "description": "Arm/Safe Switch"
+            },
+            "CMWS_BYPASS": {
+                "type": "ToggleSwitch",
+                "msg": "CMWS_BYPASS",
+                "device_id": "36",
+                "command": "3006",
+                "arg_number": "45",
+                "category": "CMWS Panel",
+                "description": "Auto/Bypass Switch"
+            }
+        },
+        "CSC (Pilot)": {
+            "PLT_CSC_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "PLT_CSC_VOLUME",
+                "device_id": "42",
+                "command": "3051",
+                "arg_number": "173",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Pilot)",
+                "description": "Volume Control Knob"
+            },
+            "PLT_CSC_RADIO_1_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CSC_RADIO_1_INHIBIT",
+                "device_id": "42",
+                "command": "3052",
+                "arg_number": "174",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor 1 [FM1] Inhibit On/Off"
+            },
+            "PLT_CSC_RADIO_2_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CSC_RADIO_2_INHIBIT",
+                "device_id": "42",
+                "command": "3054",
+                "arg_number": "176",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor 2 [UHF] Inhibit On/Off"
+            },
+            "PLT_CSC_RADIO_3_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CSC_RADIO_3_INHIBIT",
+                "device_id": "42",
+                "command": "3056",
+                "arg_number": "178",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor 3 [VHF] Inhibit On/Off"
+            },
+            "PLT_CSC_RADIO_4_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CSC_RADIO_4_INHIBIT",
+                "device_id": "42",
+                "command": "3058",
+                "arg_number": "180",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor 4 [N/A] Inhibit On/Off"
+            },
+            "PLT_CSC_RADIO_5_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CSC_RADIO_5_INHIBIT",
+                "device_id": "42",
+                "command": "3060",
+                "arg_number": "182",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor 5 [FM2] Inhibit On/Off"
+            },
+            "PLT_CSC_NAV_A_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "PLT_CSC_NAV_A_VOLUME",
+                "device_id": "42",
+                "command": "3062",
+                "arg_number": "184",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor NAV A Audio Ouput"
+            },
+            "PLT_CSC_NAV_B_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "PLT_CSC_NAV_B_VOLUME",
+                "device_id": "42",
+                "command": "3063",
+                "arg_number": "185",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Pilot)",
+                "description": "Radio Monitor NAV B Audio Ouput"
+            },
+            "PLT_CSC_ICS_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_CSC_ICS_MODE",
+                "device_id": "42",
+                "device_command": "3064",
+                "arg_number": "186",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "CSC (Pilot)",
+                "description": "ICS Rotary Switch"
+            },
+            "PLT_CSC_VOX": {
+                "type": "Potentiometer",
+                "msg": "PLT_CSC_VOX",
+                "device_id": "42",
+                "command": "3065",
+                "arg_number": "187",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Pilot)",
+                "description": "Vox Control"
+            },
+            "PLT_CSC_TRANSMIT_SELECTOR": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_CSC_TRANSMIT_SELECTOR",
+                "device_id": "42",
+                "device_command": "3066",
+                "arg_number": "188",
+                "num_positions": "8",
+                "increment": "0.1",
+                "category": "CSC (Pilot)",
+                "description": "Transmit Selector Switch"
+            },
+            "PLT_CSC_MIC": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CSC_MIC",
+                "device_id": "42",
+                "command": "3067",
+                "arg_number": "189",
+                "category": "CSC (Pilot)",
+                "description": "MIC Switch"
+            }
+        },
+        "CSC (Copilot)": {
+            "CPLT_CSC_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "CPLT_CSC_VOLUME",
+                "device_id": "42",
+                "command": "3121",
+                "arg_number": "812",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Copilot)",
+                "description": "Volume Control Knob"
+            },
+            "CPLT_CSC_RADIO_1_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_CSC_RADIO_1_INHIBIT",
+                "device_id": "42",
+                "command": "3122",
+                "arg_number": "813",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor 1 [FM1] Inhibit On/Off"
+            },
+            "CPLT_CSC_RADIO_2_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_CSC_RADIO_2_INHIBIT",
+                "device_id": "42",
+                "command": "3124",
+                "arg_number": "816",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor 2 [UHF] Inhibit On/Off"
+            },
+            "CPLT_CSC_RADIO_3_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_CSC_RADIO_3_INHIBIT",
+                "device_id": "42",
+                "command": "3126",
+                "arg_number": "818",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor 3 [VHF] Inhibit On/Off"
+            },
+            "CPLT_CSC_RADIO_4_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_CSC_RADIO_4_INHIBIT",
+                "device_id": "42",
+                "command": "3128",
+                "arg_number": "820",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor 4 [N/A] Inhibit On/Off"
+            },
+            "CPLT_CSC_RADIO_5_INHIBIT": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_CSC_RADIO_5_INHIBIT",
+                "device_id": "42",
+                "command": "3130",
+                "arg_number": "822",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor 5 [FM2] Inhibit On/Off"
+            },
+            "CPLT_CSC_NAV_A_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "CPLT_CSC_NAV_A_VOLUME",
+                "device_id": "42",
+                "command": "3132",
+                "arg_number": "825",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor NAV A Audio Ouput"
+            },
+            "CPLT_CSC_NAV_B_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "CPLT_CSC_NAV_B_VOLUME",
+                "device_id": "42",
+                "command": "3133",
+                "arg_number": "827",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Copilot)",
+                "description": "Radio Monitor NAV B Audio Ouput"
+            },
+            "CPLT_CSC_ICS_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "CPLT_CSC_ICS_MODE",
+                "device_id": "42",
+                "device_command": "3134",
+                "arg_number": "828",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "CSC (Copilot)",
+                "description": "ICS Rotary Switch"
+            },
+            "CPLT_CSC_VOX": {
+                "type": "Potentiometer",
+                "msg": "CPLT_CSC_VOX",
+                "device_id": "42",
+                "command": "3135",
+                "arg_number": "830",
+                "limits": "{ 0, 0.8 }",
+                "category": "CSC (Copilot)",
+                "description": "Vox Control"
+            },
+            "CPLT_CSC_TRANSMIT_SELECTOR": {
+                "type": "MultipositionSwitch",
+                "msg": "CPLT_CSC_TRANSMIT_SELECTOR",
+                "device_id": "42",
+                "device_command": "3136",
+                "arg_number": "831",
+                "num_positions": "8",
+                "increment": "0.1",
+                "category": "CSC (Copilot)",
+                "description": "Transmit Selector Switch"
+            },
+            "CPLT_CSC_MIC": {
+                "type": "ToggleSwitch",
+                "msg": "CPLT_CSC_MIC",
+                "device_id": "42",
+                "command": "3137",
+                "arg_number": "832",
+                "category": "CSC (Copilot)",
+                "description": "MIC Switch"
+            }
+        },
+        "Remote ICS Panel": {
+            "REMOTE_ICS": {
+                "type": "3PosTumb",
+                "msg": "REMOTE_ICS",
+                "device_id": "42",
+                "command": "3068",
+                "arg_number": "190",
+                "category": "Remote ICS Panel",
+                "description": "Remote ICS Switch"
+            }
+        },
+        "Armament Control Panel": {
+            "ARMAMENT_JETTISON_COVER_L": {
+                "type": "ToggleSwitch",
+                "msg": "ARMAMENT_JETTISON_COVER_L",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "167",
+                "category": "Armament Control Panel",
+                "description": "Left Pylon Jettison Switch Guard"
+            },
+            "ARMAMENT_JETTISON_COVER_R": {
+                "type": "ToggleSwitch",
+                "msg": "ARMAMENT_JETTISON_COVER_R",
+                "device_id": "21",
+                "command": "3002",
+                "arg_number": "168",
+                "category": "Armament Control Panel",
+                "description": "Right Pylon Jettison Switch Guard"
+            },
+            "ARMAMENT_JETTISON_L": {
+                "type": "ToggleSwitch",
+                "msg": "ARMAMENT_JETTISON_L",
+                "device_id": "21",
+                "command": "3003",
+                "arg_number": "169",
+                "category": "Armament Control Panel",
+                "description": "Left Pylon Jettison Switch"
+            },
+            "ARMAMENT_JETTISON_R": {
+                "type": "ToggleSwitch",
+                "msg": "ARMAMENT_JETTISON_R",
+                "device_id": "21",
+                "command": "3004",
+                "arg_number": "170",
+                "category": "Armament Control Panel",
+                "description": "Right Pylon Jettison Switch"
+            },
+            "ARMAMENT_MASTER_ARM": {
+                "type": "3PosTumb",
+                "msg": "ARMAMENT_MASTER_ARM",
+                "device_id": "21",
+                "command": "3005",
+                "arg_number": "171",
+                "category": "Armament Control Panel",
+                "description": "Master Switch"
+            },
+            "ARMAMENT_GUN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "ARMAMENT_GUN",
+                "device_id": "21",
+                "downSwitch": "3006",
+                "upSwitch": "3012",
+                "arg_number": "172",
+                "category": "Armament Control Panel",
+                "description": "Gun Switch"
+            }
+        },
+        "Multifunction Keyboard": {
+            "MFK_ACKNOWLEDGE_RECALL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFK_ACKNOWLEDGE_RECALL",
+                "device_id": "14",
+                "downSwitch": "3001",
+                "upSwitch": "3096",
+                "arg_number": "192",
+                "category": "Multifunction Keyboard",
+                "description": "Acknowledge/Recall Switch"
+            },
+            "MFK_ZEROIZE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "MFK_ZEROIZE_COVER",
+                "device_id": "14",
+                "command": "3002",
+                "arg_number": "193",
+                "category": "Multifunction Keyboard",
+                "description": "Zeroize Switch Guard"
+            },
+            "MFK_EMERGENCY_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "MFK_EMERGENCY_COVER",
+                "device_id": "14",
+                "command": "3003",
+                "arg_number": "194",
+                "category": "Multifunction Keyboard",
+                "description": "Emergency Switch Guard"
+            },
+            "MFK_ZEROIZE": {
+                "type": "ToggleSwitch",
+                "msg": "MFK_ZEROIZE",
+                "device_id": "14",
+                "command": "3004",
+                "arg_number": "195",
+                "category": "Multifunction Keyboard",
+                "description": "Zeroize Switch"
+            },
+            "MFK_EMERGENCY": {
+                "type": "ToggleSwitch",
+                "msg": "MFK_EMERGENCY",
+                "device_id": "14",
+                "command": "3005",
+                "arg_number": "196",
+                "category": "Multifunction Keyboard",
+                "description": "Emergency Switch"
+            },
+            "MFK_1": {
+                "type": "PushButton",
+                "msg": "MFK_1",
+                "device_id": "14",
+                "command": "3006",
+                "arg_number": "197",
+                "category": "Multifunction Keyboard",
+                "description": "Num 1"
+            },
+            "MFK_2": {
+                "type": "PushButton",
+                "msg": "MFK_2",
+                "device_id": "14",
+                "command": "3007",
+                "arg_number": "198",
+                "category": "Multifunction Keyboard",
+                "description": "Num 2"
+            },
+            "MFK_3": {
+                "type": "PushButton",
+                "msg": "MFK_3",
+                "device_id": "14",
+                "command": "3008",
+                "arg_number": "199",
+                "category": "Multifunction Keyboard",
+                "description": "Num 3"
+            },
+            "MFK_4": {
+                "type": "PushButton",
+                "msg": "MFK_4",
+                "device_id": "14",
+                "command": "3009",
+                "arg_number": "200",
+                "category": "Multifunction Keyboard",
+                "description": "Num 4"
+            },
+            "MFK_5": {
+                "type": "PushButton",
+                "msg": "MFK_5",
+                "device_id": "14",
+                "command": "3010",
+                "arg_number": "201",
+                "category": "Multifunction Keyboard",
+                "description": "Num 5"
+            },
+            "MFK_6": {
+                "type": "PushButton",
+                "msg": "MFK_6",
+                "device_id": "14",
+                "command": "3011",
+                "arg_number": "202",
+                "category": "Multifunction Keyboard",
+                "description": "Num 6"
+            },
+            "MFK_7": {
+                "type": "PushButton",
+                "msg": "MFK_7",
+                "device_id": "14",
+                "command": "3012",
+                "arg_number": "203",
+                "category": "Multifunction Keyboard",
+                "description": "Num 7"
+            },
+            "MFK_8": {
+                "type": "PushButton",
+                "msg": "MFK_8",
+                "device_id": "14",
+                "command": "3013",
+                "arg_number": "204",
+                "category": "Multifunction Keyboard",
+                "description": "Num 8"
+            },
+            "MFK_9": {
+                "type": "PushButton",
+                "msg": "MFK_9",
+                "device_id": "14",
+                "command": "3014",
+                "arg_number": "205",
+                "category": "Multifunction Keyboard",
+                "description": "Num 9"
+            },
+            "MFK_0": {
+                "type": "PushButton",
+                "msg": "MFK_0",
+                "device_id": "14",
+                "command": "3015",
+                "arg_number": "206",
+                "category": "Multifunction Keyboard",
+                "description": "Num 0"
+            },
+            "MFK_DOT": {
+                "type": "PushButton",
+                "msg": "MFK_DOT",
+                "device_id": "14",
+                "command": "3016",
+                "arg_number": "207",
+                "category": "Multifunction Keyboard",
+                "description": "Num Decimal"
+            },
+            "MFK_CLR": {
+                "type": "PushButton",
+                "msg": "MFK_CLR",
+                "device_id": "14",
+                "command": "3017",
+                "arg_number": "208",
+                "category": "Multifunction Keyboard",
+                "description": "Line Clear"
+            },
+            "MFK_IFF": {
+                "type": "PushButton",
+                "msg": "MFK_IFF",
+                "device_id": "14",
+                "command": "3018",
+                "arg_number": "209",
+                "category": "Multifunction Keyboard",
+                "description": "IFF"
+            },
+            "MFK_TUNE": {
+                "type": "PushButton",
+                "msg": "MFK_TUNE",
+                "device_id": "14",
+                "command": "3019",
+                "arg_number": "210",
+                "category": "Multifunction Keyboard",
+                "description": "Tune"
+            },
+            "MFK_SCAN": {
+                "type": "PushButton",
+                "msg": "MFK_SCAN",
+                "device_id": "14",
+                "command": "3020",
+                "arg_number": "211",
+                "category": "Multifunction Keyboard",
+                "description": "Scan"
+            },
+            "MFK_BLANK": {
+                "type": "PushButton",
+                "msg": "MFK_BLANK",
+                "device_id": "14",
+                "command": "3021",
+                "arg_number": "212",
+                "category": "Multifunction Keyboard",
+                "description": "Space"
+            },
+            "MFK_IDNT": {
+                "type": "PushButton",
+                "msg": "MFK_IDNT",
+                "device_id": "14",
+                "command": "3022",
+                "arg_number": "213",
+                "category": "Multifunction Keyboard",
+                "description": "Ident"
+            },
+            "MFK_ENTER": {
+                "type": "PushButton",
+                "msg": "MFK_ENTER",
+                "device_id": "14",
+                "command": "3023",
+                "arg_number": "214",
+                "category": "Multifunction Keyboard",
+                "description": "Enter"
+            },
+            "MFK_MINUS": {
+                "type": "PushButton",
+                "msg": "MFK_MINUS",
+                "device_id": "14",
+                "command": "3024",
+                "arg_number": "215",
+                "category": "Multifunction Keyboard",
+                "description": "Minus/Hyphen"
+            },
+            "MFK_A": {
+                "type": "PushButton",
+                "msg": "MFK_A",
+                "device_id": "14",
+                "command": "3025",
+                "arg_number": "216",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha A"
+            },
+            "MFK_B": {
+                "type": "PushButton",
+                "msg": "MFK_B",
+                "device_id": "14",
+                "command": "3026",
+                "arg_number": "217",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha B"
+            },
+            "MFK_C": {
+                "type": "PushButton",
+                "msg": "MFK_C",
+                "device_id": "14",
+                "command": "3027",
+                "arg_number": "218",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha C"
+            },
+            "MFK_D": {
+                "type": "PushButton",
+                "msg": "MFK_D",
+                "device_id": "14",
+                "command": "3028",
+                "arg_number": "219",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha D"
+            },
+            "MFK_E": {
+                "type": "PushButton",
+                "msg": "MFK_E",
+                "device_id": "14",
+                "command": "3029",
+                "arg_number": "220",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha E"
+            },
+            "MFK_F": {
+                "type": "PushButton",
+                "msg": "MFK_F",
+                "device_id": "14",
+                "command": "3030",
+                "arg_number": "221",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha F"
+            },
+            "MFK_G": {
+                "type": "PushButton",
+                "msg": "MFK_G",
+                "device_id": "14",
+                "command": "3031",
+                "arg_number": "222",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha G"
+            },
+            "MFK_H": {
+                "type": "PushButton",
+                "msg": "MFK_H",
+                "device_id": "14",
+                "command": "3032",
+                "arg_number": "223",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha H"
+            },
+            "MFK_I": {
+                "type": "PushButton",
+                "msg": "MFK_I",
+                "device_id": "14",
+                "command": "3033",
+                "arg_number": "224",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha I"
+            },
+            "MFK_J": {
+                "type": "PushButton",
+                "msg": "MFK_J",
+                "device_id": "14",
+                "command": "3034",
+                "arg_number": "225",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha J"
+            },
+            "MFK_K": {
+                "type": "PushButton",
+                "msg": "MFK_K",
+                "device_id": "14",
+                "command": "3035",
+                "arg_number": "226",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha K"
+            },
+            "MFK_L": {
+                "type": "PushButton",
+                "msg": "MFK_L",
+                "device_id": "14",
+                "command": "3036",
+                "arg_number": "227",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha L"
+            },
+            "MFK_M": {
+                "type": "PushButton",
+                "msg": "MFK_M",
+                "device_id": "14",
+                "command": "3037",
+                "arg_number": "228",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha M"
+            },
+            "MFK_N": {
+                "type": "PushButton",
+                "msg": "MFK_N",
+                "device_id": "14",
+                "command": "3038",
+                "arg_number": "229",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha N"
+            },
+            "MFK_O": {
+                "type": "PushButton",
+                "msg": "MFK_O",
+                "device_id": "14",
+                "command": "3039",
+                "arg_number": "230",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha O"
+            },
+            "MFK_P": {
+                "type": "PushButton",
+                "msg": "MFK_P",
+                "device_id": "14",
+                "command": "3040",
+                "arg_number": "231",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha P"
+            },
+            "MFK_Q": {
+                "type": "PushButton",
+                "msg": "MFK_Q",
+                "device_id": "14",
+                "command": "3041",
+                "arg_number": "232",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha Q"
+            },
+            "MFK_R": {
+                "type": "PushButton",
+                "msg": "MFK_R",
+                "device_id": "14",
+                "command": "3042",
+                "arg_number": "233",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha R"
+            },
+            "MFK_S": {
+                "type": "PushButton",
+                "msg": "MFK_S",
+                "device_id": "14",
+                "command": "3043",
+                "arg_number": "234",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha S"
+            },
+            "MFK_T": {
+                "type": "PushButton",
+                "msg": "MFK_T",
+                "device_id": "14",
+                "command": "3044",
+                "arg_number": "235",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha T"
+            },
+            "MFK_U": {
+                "type": "PushButton",
+                "msg": "MFK_U",
+                "device_id": "14",
+                "command": "3045",
+                "arg_number": "236",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha U"
+            },
+            "MFK_V": {
+                "type": "PushButton",
+                "msg": "MFK_V",
+                "device_id": "14",
+                "command": "3046",
+                "arg_number": "237",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha V"
+            },
+            "MFK_W": {
+                "type": "PushButton",
+                "msg": "MFK_W",
+                "device_id": "14",
+                "command": "3047",
+                "arg_number": "238",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha W"
+            },
+            "MFK_X": {
+                "type": "PushButton",
+                "msg": "MFK_X",
+                "device_id": "14",
+                "command": "3048",
+                "arg_number": "239",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha X"
+            },
+            "MFK_Y": {
+                "type": "PushButton",
+                "msg": "MFK_Y",
+                "device_id": "14",
+                "command": "3049",
+                "arg_number": "240",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha Y"
+            },
+            "MFK_Z": {
+                "type": "PushButton",
+                "msg": "MFK_Z",
+                "device_id": "14",
+                "command": "3050",
+                "arg_number": "241",
+                "category": "Multifunction Keyboard",
+                "description": "Alpha Z"
+            },
+            "MFK_ARROW_LEFT": {
+                "type": "PushButton",
+                "msg": "MFK_ARROW_LEFT",
+                "device_id": "14",
+                "command": "3051",
+                "arg_number": "242",
+                "category": "Multifunction Keyboard",
+                "description": "Arrow Left (Backspace)"
+            },
+            "MFK_ARROW_RIGHT": {
+                "type": "PushButton",
+                "msg": "MFK_ARROW_RIGHT",
+                "device_id": "14",
+                "command": "3052",
+                "arg_number": "243",
+                "category": "Multifunction Keyboard",
+                "description": "Arrow Right (Space)"
+            }
+        },
+        "SCAS Control Panel": {
+            "SCAS_FORCE_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "SCAS_FORCE_TRIM",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "161",
+                "category": "SCAS Control Panel",
+                "description": "Force Trim Switch"
+            },
+            "SCAS_HYDRAULIC_SYSTEM": {
+                "type": "ToggleSwitch",
+                "msg": "SCAS_HYDRAULIC_SYSTEM",
+                "device_id": "12",
+                "command": "3002",
+                "arg_number": "162",
+                "category": "SCAS Control Panel",
+                "description": "Hydraulic System Switch"
+            },
+            "SCAS_PITCH_ROLL": {
+                "type": "ToggleSwitch",
+                "msg": "SCAS_PITCH_ROLL",
+                "device_id": "12",
+                "command": "3003",
+                "arg_number": "163",
+                "category": "SCAS Control Panel",
+                "description": "Pitch/Roll Engage Switch"
+            },
+            "SCAS_YAW": {
+                "type": "ToggleSwitch",
+                "msg": "SCAS_YAW",
+                "device_id": "12",
+                "command": "3004",
+                "arg_number": "164",
+                "category": "SCAS Control Panel",
+                "description": "Yaw Engage Switch"
+            },
+            "SCAS_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "SCAS_POWER",
+                "device_id": "12",
+                "command": "3005",
+                "arg_number": "165",
+                "category": "SCAS Control Panel",
+                "description": "Power Switch"
+            },
+            "SCAS_TEST": {
+                "type": "PushButton",
+                "msg": "SCAS_TEST",
+                "device_id": "12",
+                "command": "3006",
+                "arg_number": "166",
+                "category": "SCAS Control Panel",
+                "description": "Test Button"
+            }
+        },
+        "MPD": {
+            "MPD_MFD_BACKUP": {
+                "type": "PushButton",
+                "msg": "MPD_MFD_BACKUP",
+                "device_id": "10",
+                "command": "3001",
+                "arg_number": "121",
+                "category": "MPD",
+                "description": "Multifunction Display Backup Button"
+            },
+            "MPD_BIT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MPD_BIT",
+                "device_id": "10",
+                "downSwitch": "3002",
+                "upSwitch": "3006",
+                "arg_number": "118",
+                "category": "MPD",
+                "description": "BIT/Reset Switch"
+            },
+            "MPD_TEST": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MPD_TEST",
+                "device_id": "10",
+                "downSwitch": "3003",
+                "upSwitch": "3003",
+                "arg_number": "119",
+                "category": "MPD",
+                "description": "Test/Digit Switch"
+            },
+            "MPD_SELECT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MPD_SELECT",
+                "device_id": "10",
+                "downSwitch": "3004",
+                "upSwitch": "3004",
+                "arg_number": "120",
+                "category": "MPD",
+                "description": "Select Switch"
+            },
+            "MPD_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "MPD_BRIGHTNESS",
+                "device_id": "10",
+                "command": "3005",
+                "arg_number": "122",
+                "limits": "{ 0, 1 }",
+                "category": "MPD",
+                "description": "Brightness Dial"
+            }
+        },
+        "Air Vent Control": {
+            "AIR_VENT_PLT": {
+                "type": "Potentiometer",
+                "msg": "AIR_VENT_PLT",
+                "device_id": "42",
+                "command": "3149",
+                "arg_number": "860",
+                "limits": "{ 0, 1 }",
+                "category": "Air Vent Control",
+                "description": "Pilot Air Vent Pull"
+            },
+            "AIR_VENT_CPLT": {
+                "type": "Potentiometer",
+                "msg": "AIR_VENT_CPLT",
+                "device_id": "42",
+                "command": "3150",
+                "arg_number": "861",
+                "limits": "{ 0, 1 }",
+                "category": "Air Vent Control",
+                "description": "Copilot Air Vent Pull"
+            }
+        },
+        "Standby Attitude Indicator": {
+            "SAI_CAGE": {
+                "type": "PushButton",
+                "msg": "SAI_CAGE",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "58",
+                "category": "Standby Attitude Indicator",
+                "description": "Adjustment Knob (Uncage)"
+            },
+            "SAI_TRIM_KNOB": {
+                "type": "Rotary",
+                "msg": "SAI_TRIM_KNOB",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "59",
+                "category": "Standby Attitude Indicator",
+                "description": "Adjustment Knob (Rotate)"
+            }
+        },
+        "MFD (Pilot)": {
+            "MFD_PLT_L1": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_L1",
+                "device_id": "11",
+                "command": "3001",
+                "arg_number": "73",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key L1"
+            },
+            "MFD_PLT_L2": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_L2",
+                "device_id": "11",
+                "command": "3002",
+                "arg_number": "74",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key L2"
+            },
+            "MFD_PLT_L3": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_L3",
+                "device_id": "11",
+                "command": "3003",
+                "arg_number": "75",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key L3"
+            },
+            "MFD_PLT_L4": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_L4",
+                "device_id": "11",
+                "command": "3004",
+                "arg_number": "76",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key L4"
+            },
+            "MFD_PLT_L5": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_L5",
+                "device_id": "11",
+                "command": "3005",
+                "arg_number": "77",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key L5"
+            },
+            "MFD_PLT_PRIMARY_BACKUP": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_PLT_PRIMARY_BACKUP",
+                "device_id": "11",
+                "command": "3006",
+                "arg_number": "72",
+                "category": "MFD (Pilot)",
+                "description": "Display Mode Primary/Backup"
+            },
+            "MFD_PLT_B1": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_B1",
+                "device_id": "11",
+                "command": "3008",
+                "arg_number": "83",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key B1"
+            },
+            "MFD_PLT_B2": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_B2",
+                "device_id": "11",
+                "command": "3009",
+                "arg_number": "84",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key B2"
+            },
+            "MFD_PLT_B3": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_B3",
+                "device_id": "11",
+                "command": "3010",
+                "arg_number": "85",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key B3"
+            },
+            "MFD_PLT_B4": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_B4",
+                "device_id": "11",
+                "command": "3011",
+                "arg_number": "86",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key B4"
+            },
+            "MFD_PLT_MANUAL_NVG": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_PLT_MANUAL_NVG",
+                "device_id": "11",
+                "command": "3012",
+                "arg_number": "69",
+                "category": "MFD (Pilot)",
+                "description": "Display Mode Manual/NVG"
+            },
+            "MFD_PLT_R1": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_R1",
+                "device_id": "11",
+                "command": "3013",
+                "arg_number": "78",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key R1"
+            },
+            "MFD_PLT_R2": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_R2",
+                "device_id": "11",
+                "command": "3014",
+                "arg_number": "79",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key R2"
+            },
+            "MFD_PLT_R3": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_R3",
+                "device_id": "11",
+                "command": "3015",
+                "arg_number": "80",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key R3"
+            },
+            "MFD_PLT_R4": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_R4",
+                "device_id": "11",
+                "command": "3016",
+                "arg_number": "81",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key R4"
+            },
+            "MFD_PLT_R5": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_R5",
+                "device_id": "11",
+                "command": "3017",
+                "arg_number": "82",
+                "category": "MFD (Pilot)",
+                "description": "Line Address Key R5"
+            },
+            "MFD_PLT_INIT": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_INIT",
+                "device_id": "11",
+                "command": "3019",
+                "arg_number": "87",
+                "category": "MFD (Pilot)",
+                "description": "INIT"
+            },
+            "MFD_PLT_BRIGHTNESS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFD_PLT_BRIGHTNESS",
+                "device_id": "11",
+                "downSwitch": "3021",
+                "upSwitch": "3020",
+                "arg_number": "88",
+                "category": "MFD (Pilot)",
+                "description": "Brightness"
+            },
+            "MFD_PLT_CONTRAST": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFD_PLT_CONTRAST",
+                "device_id": "11",
+                "downSwitch": "3023",
+                "upSwitch": "3022",
+                "arg_number": "89",
+                "category": "MFD (Pilot)",
+                "description": "Contrast"
+            }
+        },
+        "MFD (Copilot)": {
+            "MFD_CPLT_L1": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_L1",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "286",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key L1"
+            },
+            "MFD_CPLT_L2": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_L2",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "287",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key L2"
+            },
+            "MFD_CPLT_L3": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_L3",
+                "device_id": "23",
+                "command": "3003",
+                "arg_number": "288",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key L3"
+            },
+            "MFD_CPLT_L4": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_L4",
+                "device_id": "23",
+                "command": "3004",
+                "arg_number": "289",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key L4"
+            },
+            "MFD_CPLT_L5": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_L5",
+                "device_id": "23",
+                "command": "3005",
+                "arg_number": "290",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key L5"
+            },
+            "MFD_CPLT_PRIMARY_BACKUP": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_CPLT_PRIMARY_BACKUP",
+                "device_id": "23",
+                "command": "3006",
+                "arg_number": "285",
+                "category": "MFD (Copilot)",
+                "description": "Display Mode Primary/Backup"
+            },
+            "MFD_CPLT_B1": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_B1",
+                "device_id": "23",
+                "command": "3008",
+                "arg_number": "296",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key B1"
+            },
+            "MFD_CPLT_B2": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_B2",
+                "device_id": "23",
+                "command": "3009",
+                "arg_number": "297",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key B2"
+            },
+            "MFD_CPLT_B3": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_B3",
+                "device_id": "23",
+                "command": "3010",
+                "arg_number": "298",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key B3"
+            },
+            "MFD_CPLT_B4": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_B4",
+                "device_id": "23",
+                "command": "3011",
+                "arg_number": "299",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key B4"
+            },
+            "MFD_CPLT_MANUAL_NVG": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_CPLT_MANUAL_NVG",
+                "device_id": "23",
+                "command": "3012",
+                "arg_number": "284",
+                "category": "MFD (Copilot)",
+                "description": "Display Mode Manual/NVG"
+            },
+            "MFD_CPLT_R1": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_R1",
+                "device_id": "23",
+                "command": "3013",
+                "arg_number": "291",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key R1"
+            },
+            "MFD_CPLT_R2": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_R2",
+                "device_id": "23",
+                "command": "3014",
+                "arg_number": "292",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key R2"
+            },
+            "MFD_CPLT_R3": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_R3",
+                "device_id": "23",
+                "command": "3015",
+                "arg_number": "293",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key R3"
+            },
+            "MFD_CPLT_R4": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_R4",
+                "device_id": "23",
+                "command": "3016",
+                "arg_number": "294",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key R4"
+            },
+            "MFD_CPLT_R5": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_R5",
+                "device_id": "23",
+                "command": "3017",
+                "arg_number": "295",
+                "category": "MFD (Copilot)",
+                "description": "Line Address Key R5"
+            },
+            "MFD_CPLT_INIT": {
+                "type": "PushButton",
+                "msg": "MFD_CPLT_INIT",
+                "device_id": "23",
+                "command": "3019",
+                "arg_number": "300",
+                "category": "MFD (Copilot)",
+                "description": "INIT [L2MUM/CDS Cycle]"
+            },
+            "MFD_CPLT_BRIGHTNESS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFD_CPLT_BRIGHTNESS",
+                "device_id": "23",
+                "downSwitch": "3021",
+                "upSwitch": "3020",
+                "arg_number": "301",
+                "category": "MFD (Copilot)",
+                "description": "Brightness"
+            },
+            "MFD_CPLT_CONTRAST": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFD_CPLT_CONTRAST",
+                "device_id": "23",
+                "downSwitch": "3023",
+                "upSwitch": "3022",
+                "arg_number": "302",
+                "category": "MFD (Copilot)",
+                "description": "Contrast"
+            }
+        },
+        "MFD Auxiliary Panel (Pilot)": {
+            "MFD_PLT_AUX_INIT": {
+                "type": "PushButton",
+                "msg": "MFD_PLT_AUX_INIT",
+                "device_id": "11",
+                "command": "3018",
+                "arg_number": "109",
+                "category": "MFD Auxiliary Panel (Pilot)",
+                "description": "INIT [Initial Page]"
+            }
+        },
+        "MFD Auxiliary Panel (Copilot)": {
+            "MFD_CPLT_AUX_ALFGL": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_CPLT_AUX_ALFGL",
+                "device_id": "23",
+                "command": "3038",
+                "arg_number": "111",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "ALFGL Switch"
+            },
+            "MFD_CPLT_AUX_WPN_ASE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFD_CPLT_AUX_WPN_ASE",
+                "device_id": "23",
+                "downSwitch": "3040",
+                "upSwitch": "3039",
+                "arg_number": "112",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "WPN/ASE Switch"
+            },
+            "MFD_CPLT_AUX_IDM_INIT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MFD_CPLT_AUX_IDM_INIT",
+                "device_id": "23",
+                "downSwitch": "3042",
+                "upSwitch": "3041",
+                "arg_number": "113",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "IDM/INIT Switch"
+            },
+            "MFD_CPLT_AUX_L2MUM": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_CPLT_AUX_L2MUM",
+                "device_id": "23",
+                "command": "3043",
+                "arg_number": "114",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "L2MUM Switch"
+            },
+            "MFD_CPLT_AUX_TIS": {
+                "type": "3PosTumb",
+                "msg": "MFD_CPLT_AUX_TIS",
+                "device_id": "23",
+                "command": "3044",
+                "arg_number": "115",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "TIS Switch"
+            },
+            "MFD_CPLT_AUX_LMC": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_CPLT_AUX_LMC",
+                "device_id": "23",
+                "command": "3045",
+                "arg_number": "116",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "LMC Switch"
+            },
+            "MFD_CPLT_AUX_ALE": {
+                "type": "ToggleSwitch",
+                "msg": "MFD_CPLT_AUX_ALE",
+                "device_id": "23",
+                "command": "3046",
+                "arg_number": "117",
+                "category": "MFD Auxiliary Panel (Copilot)",
+                "description": "ALE Switch"
+            }
+        },
+        "Clock": {
+            "CLOCK_RESET": {
+                "type": "PushButton",
+                "msg": "CLOCK_RESET",
+                "device_id": "16",
+                "command": "3001",
+                "arg_number": "130",
+                "category": "Clock",
+                "description": "Reset/Set Button"
+            },
+            "CLOCK_START_STOP": {
+                "type": "PushButton",
+                "msg": "CLOCK_START_STOP",
+                "device_id": "16",
+                "command": "3002",
+                "arg_number": "132",
+                "category": "Clock",
+                "description": "Start/Stop/Advance Button"
+            },
+            "CLOCK_MODE": {
+                "type": "PushButton",
+                "msg": "CLOCK_MODE",
+                "device_id": "16",
+                "command": "3003",
+                "arg_number": "131",
+                "category": "Clock",
+                "description": "Mode Button"
+            }
+        },
+        "AN/APR-39 Radar Indicator": {
+            "RWR_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "RWR_BRIGHTNESS",
+                "device_id": "42",
+                "command": "3001",
+                "arg_number": "36",
+                "limits": "{ 0, 0.8 }",
+                "category": "AN/APR-39 Radar Indicator",
+                "description": "Brightness Dial"
+            },
+            "RWR_DAY_NIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "RWR_DAY_NIGHT",
+                "device_id": "42",
+                "command": "3002",
+                "arg_number": "37",
+                "category": "AN/APR-39 Radar Indicator",
+                "description": "Day/Night Switch"
+            }
+        },
+        "Standby Altimeter": {
+            "ALTIMETER_KNOB": {
+                "type": "Rotary",
+                "msg": "ALTIMETER_KNOB",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "62",
+                "category": "Standby Altimeter",
+                "description": "Barometric Knob"
+            }
+        },
+        "Remote Frequency Indicator": {
+            "RFI_CIPHER_L": {
+                "type": "PushButton",
+                "msg": "RFI_CIPHER_L",
+                "device_id": "27",
+                "command": "3001",
+                "arg_number": "123",
+                "category": "Remote Frequency Indicator",
+                "description": "Left Cipher Button"
+            },
+            "RFI_CIPHER_R": {
+                "type": "PushButton",
+                "msg": "RFI_CIPHER_R",
+                "device_id": "27",
+                "command": "3002",
+                "arg_number": "124",
+                "category": "Remote Frequency Indicator",
+                "description": "Right Cipher Button"
+            },
+            "RFI_TEST": {
+                "type": "PushButton",
+                "msg": "RFI_TEST",
+                "device_id": "27",
+                "command": "3005",
+                "arg_number": "125",
+                "category": "Remote Frequency Indicator",
+                "description": "Test Button"
+            },
+            "RFI_BRIGHTNESS_KNOB": {
+                "type": "Potentiometer",
+                "msg": "RFI_BRIGHTNESS_KNOB",
+                "device_id": "27",
+                "command": "3006",
+                "arg_number": "126",
+                "limits": "{ 0, 0.8 }",
+                "category": "Remote Frequency Indicator",
+                "description": "Brightness Dial"
+            }
+        },
+        "Dashboard Buttons": {
+            "DASH_FADEC": {
+                "type": "PushButton",
+                "msg": "DASH_FADEC",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "282",
+                "category": "Dashboard Buttons",
+                "description": "FADEC Auto/Manual Switch"
+            },
+            "DASH_EBF_FILTER": {
+                "type": "PushButton",
+                "msg": "DASH_EBF_FILTER",
+                "device_id": "7",
+                "command": "3030",
+                "arg_number": "10",
+                "category": "Dashboard Buttons",
+                "description": "EBF Filter Bypass Button"
+            }
+        },
+        "Channel Select Switch": {
+            "CHANNEL_SELECT_UP_DOWN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CHANNEL_SELECT_UP_DOWN",
+                "device_id": "42",
+                "downSwitch": "3144",
+                "upSwitch": "3145",
+                "arg_number": "837",
+                "category": "Channel Select Switch",
+                "description": "Channel Select Switch Up/Down"
+            },
+            "CHANNEL_SELECT_LEFT_RIGHT": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CHANNEL_SELECT_LEFT_RIGHT",
+                "device_id": "42",
+                "downSwitch": "3146",
+                "upSwitch": "3147",
+                "arg_number": "838",
+                "category": "Channel Select Switch",
+                "description": "Channel Select Switch Left/Right"
+            }
+        },
+        "MMS Control Panel": {
+            "MMS_CODE_LIST": {
+                "type": "PushButton",
+                "msg": "MMS_CODE_LIST",
+                "device_id": "42",
+                "command": "3011",
+                "arg_number": "135",
+                "category": "MMS Control Panel",
+                "description": "MMS Code List Button"
+            },
+            "MMS_FIRST_LAST": {
+                "type": "ToggleSwitch",
+                "msg": "MMS_FIRST_LAST",
+                "device_id": "42",
+                "command": "3012",
+                "arg_number": "136",
+                "category": "MMS Control Panel",
+                "description": "MMS First/Last Switch"
+            },
+            "MMS_LASER_POWER": {
+                "type": "3PosTumb",
+                "msg": "MMS_LASER_POWER",
+                "device_id": "42",
+                "command": "3013",
+                "arg_number": "137",
+                "category": "MMS Control Panel",
+                "description": "MMS Laser Power Switch"
+            },
+            "MMS_MFD_SYMBOLOGY_INTENSITY": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MMS_MFD_SYMBOLOGY_INTENSITY",
+                "device_id": "22",
+                "downSwitch": "3035",
+                "upSwitch": "3036",
+                "arg_number": "138",
+                "category": "MMS Control Panel",
+                "description": "MFD Symbology Intensity Switch"
+            },
+            "MMS_SYMBOLOGY_INTENSITY": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MMS_SYMBOLOGY_INTENSITY",
+                "device_id": "22",
+                "downSwitch": "3037",
+                "upSwitch": "3038",
+                "arg_number": "139",
+                "category": "MMS Control Panel",
+                "description": "MMS Symbology Intensity Switch"
+            },
+            "MMS_VIDEO_GAIN": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MMS_VIDEO_GAIN",
+                "device_id": "22",
+                "downSwitch": "3029",
+                "upSwitch": "3030",
+                "arg_number": "140",
+                "category": "MMS Control Panel",
+                "description": "Video Gain Switch"
+            },
+            "MMS_VIDEO_FOCUS": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MMS_VIDEO_FOCUS",
+                "device_id": "22",
+                "downSwitch": "3031",
+                "upSwitch": "3032",
+                "arg_number": "141",
+                "category": "MMS Control Panel",
+                "description": "Video Level Switch"
+            },
+            "MMS_VIDEO_LEVEL": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "MMS_VIDEO_LEVEL",
+                "device_id": "22",
+                "downSwitch": "3033",
+                "upSwitch": "3034",
+                "arg_number": "142",
+                "category": "MMS Control Panel",
+                "description": "Video Focus Switch"
+            },
+            "MMS_SYMBOLOGY_INTENSITY_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "MMS_SYMBOLOGY_INTENSITY_AUTO",
+                "device_id": "22",
+                "command": "3009",
+                "arg_number": "143",
+                "category": "MMS Control Panel",
+                "description": "MMS Symbology Intensity Switch Manual/Auto"
+            },
+            "MMS_VIDEO_GAIN_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "MMS_VIDEO_GAIN_AUTO",
+                "device_id": "22",
+                "command": "3010",
+                "arg_number": "144",
+                "category": "MMS Control Panel",
+                "description": "Video Gain Switch Manual/Auto"
+            },
+            "MMS_VIDEO_FOCUS_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "MMS_VIDEO_FOCUS_AUTO",
+                "device_id": "22",
+                "command": "3011",
+                "arg_number": "145",
+                "category": "MMS Control Panel",
+                "description": "Video Level Switch Manual/Auto"
+            },
+            "MMS_VIDEO_LEVEL_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "MMS_VIDEO_LEVEL_AUTO",
+                "device_id": "22",
+                "command": "3012",
+                "arg_number": "146",
+                "category": "MMS Control Panel",
+                "description": "Video Focus Switch Manual/Auto"
+            },
+            "MMS_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "MMS_MODE",
+                "device_id": "22",
+                "device_command": "3013",
+                "arg_number": "147",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "MMS Control Panel",
+                "description": "MMS Mode Selector"
+            }
+        },
+        "Pilot Display Unit": {
+            "PDU_BIT": {
+                "type": "PushButton",
+                "msg": "PDU_BIT",
+                "device_id": "48",
+                "command": "3001",
+                "arg_number": "310",
+                "category": "Pilot Display Unit",
+                "description": "BIT Switch"
+            },
+            "PDU_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "PDU_BRIGHTNESS",
+                "device_id": "48",
+                "command": "3002",
+                "arg_number": "311",
+                "limits": "{ 0, 0.8 }",
+                "category": "Pilot Display Unit",
+                "description": "Brightness Dial"
+            }
+        },
+        "CMWS": {
+            "CMWS_ON_OFF_TEST": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "CMWS_ON_OFF_TEST",
+                "device_id": "36",
+                "downSwitch": "3004",
+                "upSwitch": "3001",
+                "arg_number": "38",
+                "category": "CMWS",
+                "description": "On/Off/Test Knob"
+            },
+            "CMWS_AUDIO": {
+                "type": "Potentiometer",
+                "msg": "CMWS_AUDIO",
+                "device_id": "36",
+                "command": "3002",
+                "arg_number": "39",
+                "limits": "{ 0, 0.75 }",
+                "category": "CMWS",
+                "description": "Audio Dial"
+            },
+            "CMWS_LAMP": {
+                "type": "Potentiometer",
+                "msg": "CMWS_LAMP",
+                "device_id": "36",
+                "command": "3003",
+                "arg_number": "40",
+                "limits": "{ 0, 0.75 }",
+                "category": "CMWS",
+                "description": "Lamp Dial"
+            }
+        },
+        "M4 (Copilot)": {
+            "M4_CPLT_FIRE": {
+                "type": "PushButton",
+                "msg": "M4_CPLT_FIRE",
+                "device_id": "39",
+                "command": "3007",
+                "arg_number": "0",
+                "category": "M4 (Copilot)",
+                "description": "Fire (must decrement to fire again)"
+            },
+            "M4_CPLT_DEPLOY": {
+                "type": "InputOnlyPushButton",
+                "msg": "M4_CPLT_DEPLOY",
+                "device_id": "42",
+                "command": "3047",
+                "category": "M4 (Copilot)",
+                "description": "Deploy/Stow M4"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "OH-58D",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

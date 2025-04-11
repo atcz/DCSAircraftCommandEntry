@@ -1,0 +1,1097 @@
+{
+    "commands": {
+        "Fore Main Panel": {
+            "FRONT_WBRAKES_LOCK": {
+                "type": "PushButton",
+                "msg": "FRONT_WBRAKES_LOCK",
+                "device_id": "2",
+                "command": "3028",
+                "arg_number": "4",
+                "category": "Fore Main Panel",
+                "description": "Fore Wheel Brakes Lock"
+            },
+            "FRONT_SMOKE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_SMOKE",
+                "device_id": "6",
+                "command": "3039",
+                "arg_number": "190",
+                "category": "Fore Main Panel",
+                "description": "Fore Smoke Apparat"
+            },
+            "FRONT_STARTER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_STARTER_COVER",
+                "device_id": "3",
+                "command": "3035",
+                "arg_number": "13",
+                "category": "Fore Main Panel",
+                "description": "Fore Starter Button Cover"
+            },
+            "FRONT_STARTER": {
+                "type": "PushButton",
+                "msg": "FRONT_STARTER",
+                "device_id": "3",
+                "command": "3039",
+                "arg_number": "14",
+                "category": "Fore Main Panel",
+                "description": "Fore Starter Button"
+            },
+            "FRONT_MAGNET_SEL": {
+                "type": "Tumb",
+                "msg": "FRONT_MAGNET_SEL",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "10",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Fore Main Panel",
+                "description": "Fore Magnet Selector"
+            },
+            "FRONT_LAMP_TEST": {
+                "type": "PushButton",
+                "msg": "FRONT_LAMP_TEST",
+                "device_id": "4",
+                "command": "3049",
+                "arg_number": "8",
+                "category": "Fore Main Panel",
+                "description": "Fore Lamp Test Button"
+            },
+            "FRONT_STALL_TEST": {
+                "type": "PushButton",
+                "msg": "FRONT_STALL_TEST",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "41",
+                "category": "Fore Main Panel",
+                "description": "Fore Stall Warning Test Button"
+            },
+            "FRONT_ACCEL_BTN": {
+                "type": "PushButton",
+                "msg": "FRONT_ACCEL_BTN",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "45",
+                "category": "Fore Main Panel",
+                "description": "Fore Accelerometer Button"
+            },
+            "FRONT_ALT_KNOB": {
+                "type": "Rotary",
+                "msg": "FRONT_ALT_KNOB",
+                "device_id": "6",
+                "command": "3004",
+                "arg_number": "114",
+                "category": "Fore Main Panel",
+                "description": "Fore Altimeter Knob"
+            },
+            "FRONT_AHORIZON_ZERO": {
+                "type": "Rotary",
+                "msg": "FRONT_AHORIZON_ZERO",
+                "device_id": "6",
+                "command": "3012",
+                "arg_number": "143",
+                "category": "Fore Main Panel",
+                "description": "Fore Artificial Horizon Zeroing"
+            },
+            "FRONT_AHORIZON_LOCK": {
+                "type": "PushButton",
+                "msg": "FRONT_AHORIZON_LOCK",
+                "device_id": "6",
+                "command": "3020",
+                "arg_number": "145",
+                "category": "Fore Main Panel",
+                "description": "Fore Artificial Horizon LOCK Button"
+            },
+            "FRONT_UCE_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_UCE_LOCK",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "33",
+                "category": "Fore Main Panel",
+                "description": "Fore Undercarriage Extension Lock"
+            },
+            "FRONT_HSI_KNOB": {
+                "type": "Rotary",
+                "msg": "FRONT_HSI_KNOB",
+                "device_id": "22",
+                "command": "3001",
+                "arg_number": "155",
+                "category": "Fore Main Panel",
+                "description": "Fore HSI Knob"
+            },
+            "FRONT_VOLTAMP_BTN": {
+                "type": "PushButton",
+                "msg": "FRONT_VOLTAMP_BTN",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "176",
+                "category": "Fore Main Panel",
+                "description": "Fore Voltamperemeter Button"
+            },
+            "FRONT_FUEL_GAUGE_TEST": {
+                "type": "PushButton",
+                "msg": "FRONT_FUEL_GAUGE_TEST",
+                "device_id": "16",
+                "command": "3001",
+                "arg_number": "177",
+                "category": "Fore Main Panel",
+                "description": "Fore Fuel Gauge Test Button"
+            },
+            "FRONT_FUEL_GAUGE_DIM": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FUEL_GAUGE_DIM",
+                "device_id": "16",
+                "command": "3002",
+                "arg_number": "178",
+                "category": "Fore Main Panel",
+                "description": "Fore Fuel Gauge Dimmer"
+            },
+            "FRONT_PRIMER_PUMP": {
+                "type": "Tumb",
+                "msg": "FRONT_PRIMER_PUMP",
+                "device_id": "3",
+                "command": "3044",
+                "arg_number": "76",
+                "step": "1.0",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Fore Main Panel",
+                "description": "Fore Primer Pump Selector OFF/Trunk/Cylinders"
+            },
+            "FRONT_CLOCK_PUSH_L": {
+                "type": "PushButton",
+                "msg": "FRONT_CLOCK_PUSH_L",
+                "device_id": "6",
+                "command": "3023",
+                "arg_number": "119",
+                "category": "Fore Main Panel",
+                "description": "Fore Clock Left Push Button"
+            },
+            "FRONT_CLOCK_ROTATE_L": {
+                "type": "Rotary",
+                "msg": "FRONT_CLOCK_ROTATE_L",
+                "device_id": "22",
+                "command": "3024",
+                "arg_number": "120",
+                "category": "Fore Main Panel",
+                "description": "Fore Clock Left Rotate Knob"
+            },
+            "FRONT_CLOCK_PUSH_R": {
+                "type": "PushButton",
+                "msg": "FRONT_CLOCK_PUSH_R",
+                "device_id": "6",
+                "command": "3025",
+                "arg_number": "121",
+                "category": "Fore Main Panel",
+                "description": "Fore Clock Right Push Button"
+            },
+            "FRONT_CLOCK_ROTATE_R": {
+                "type": "Rotary",
+                "msg": "FRONT_CLOCK_ROTATE_R",
+                "device_id": "22",
+                "command": "3026",
+                "arg_number": "122",
+                "category": "Fore Main Panel",
+                "description": "Fore Clock Right Rotate Knob"
+            }
+        },
+        "SPU9": {
+            "FRONT_ICOM_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_ICOM_VOL",
+                "device_id": "28",
+                "command": "3001",
+                "arg_number": "80",
+                "limits": "{ 0, 1 }",
+                "category": "SPU9",
+                "description": "Fore Intercom Volume Knob"
+            },
+            "FRONT_RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RADIO_VOL",
+                "device_id": "28",
+                "command": "3004",
+                "arg_number": "81",
+                "limits": "{ 0, 1 }",
+                "category": "SPU9",
+                "description": "Fore Radio Volume Knob"
+            },
+            "FRONT_ICOM_STBY_DISTR_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_ICOM_STBY_DISTR_SW",
+                "device_id": "28",
+                "command": "3007",
+                "arg_number": "82",
+                "category": "SPU9",
+                "description": "Fore Intercom STBY Distributive Switch"
+            },
+            "FRONT_ICOM_RDF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_ICOM_RDF_SW",
+                "device_id": "28",
+                "command": "3009",
+                "arg_number": "83",
+                "category": "SPU9",
+                "description": "Fore Intercom RDF Switch"
+            },
+            "REAR_ICOM_VOL": {
+                "type": "Potentiometer",
+                "msg": "REAR_ICOM_VOL",
+                "device_id": "28",
+                "command": "3011",
+                "arg_number": "84",
+                "limits": "{ 0, 1 }",
+                "category": "SPU9",
+                "description": "Rear Intercom Volume Knob"
+            },
+            "REAR_RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "REAR_RADIO_VOL",
+                "device_id": "28",
+                "command": "3014",
+                "arg_number": "85",
+                "limits": "{ 0, 1 }",
+                "category": "SPU9",
+                "description": "Rear Radio Volume Knob"
+            },
+            "REAR_ICOM_STBY_DISTR_SW": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_ICOM_STBY_DISTR_SW",
+                "device_id": "28",
+                "command": "3017",
+                "arg_number": "86",
+                "category": "SPU9",
+                "description": "Rear Intercom STBY Distributive Switch"
+            },
+            "REAR_ICOM_RDF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_ICOM_RDF_SW",
+                "device_id": "28",
+                "command": "3019",
+                "arg_number": "87",
+                "category": "SPU9",
+                "description": "Rear Intercom RDF Switch"
+            }
+        },
+        "BAKLAN-5": {
+            "FRONT_VHF_RADIO_VOL": {
+                "type": "Rotary",
+                "msg": "FRONT_VHF_RADIO_VOL",
+                "device_id": "27",
+                "command": "3002",
+                "arg_number": "90",
+                "category": "BAKLAN-5",
+                "description": "Fore VHF Radio Volume Knob"
+            },
+            "FRONT_VHF_RADIO_MHZ": {
+                "type": "Rotary",
+                "msg": "FRONT_VHF_RADIO_MHZ",
+                "device_id": "27",
+                "command": "3011",
+                "arg_number": "88",
+                "category": "BAKLAN-5",
+                "description": "Fore VHF Radio Tune mhz"
+            },
+            "FRONT_VHF_RADIO_KHZ": {
+                "type": "Rotary",
+                "msg": "FRONT_VHF_RADIO_KHZ",
+                "device_id": "27",
+                "command": "3008",
+                "arg_number": "89",
+                "category": "BAKLAN-5",
+                "description": "Fore VHF Radio Tune khz"
+            },
+            "FRONT_VHF_RADIO_SQ": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_VHF_RADIO_SQ",
+                "device_id": "27",
+                "command": "3020",
+                "arg_number": "91",
+                "category": "BAKLAN-5",
+                "description": "Fore VHF Radio Squelch"
+            }
+        },
+        "Circuit Breakers": {
+            "FRONT_CB_BATTERY": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_BATTERY",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "96",
+                "category": "Circuit Breakers",
+                "description": "Fore Battery Selector"
+            },
+            "FRONT_CB_GENERATOR": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_GENERATOR",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "97",
+                "category": "Circuit Breakers",
+                "description": "Fore Generator CB"
+            },
+            "FRONT_CB_IGNITION": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_IGNITION",
+                "device_id": "4",
+                "command": "3007",
+                "arg_number": "98",
+                "category": "Circuit Breakers",
+                "description": "Fore Ignition CB"
+            },
+            "FRONT_CB_PITOT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_PITOT",
+                "device_id": "4",
+                "command": "3010",
+                "arg_number": "99",
+                "category": "Circuit Breakers",
+                "description": "Fore Pitot Heater CB"
+            },
+            "FRONT_CB_OILDIL": {
+                "type": "PushButton",
+                "msg": "FRONT_CB_OILDIL",
+                "device_id": "4",
+                "command": "3016",
+                "arg_number": "232",
+                "category": "Circuit Breakers",
+                "description": "Fore Oil Dilution Button"
+            },
+            "FRONT_CB_E_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_E_HEAT",
+                "device_id": "4",
+                "command": "3018",
+                "arg_number": "233",
+                "category": "Circuit Breakers",
+                "description": "Fore SSKUA-1 Heater CB"
+            },
+            "FRONT_CB_STALL": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_STALL",
+                "device_id": "4",
+                "command": "3021",
+                "arg_number": "234",
+                "category": "Circuit Breakers",
+                "description": "Fore SSKUA-1 CB"
+            },
+            "FRONT_CB_RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_RADIO",
+                "device_id": "4",
+                "command": "3024",
+                "arg_number": "226",
+                "category": "Circuit Breakers",
+                "description": "Fore Radio CB"
+            },
+            "FRONT_CB_INTERCOM": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_INTERCOM",
+                "device_id": "4",
+                "command": "3027",
+                "arg_number": "225",
+                "category": "Circuit Breakers",
+                "description": "Fore Intercom CB"
+            },
+            "FRONT_CB_UMFORMER2": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_UMFORMER2",
+                "device_id": "4",
+                "command": "3030",
+                "arg_number": "224",
+                "category": "Circuit Breakers",
+                "description": "Fore PAG-1 CB"
+            },
+            "FRONT_CB_UC": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_UC",
+                "device_id": "4",
+                "command": "3033",
+                "arg_number": "223",
+                "category": "Circuit Breakers",
+                "description": "Fore U/C CB"
+            },
+            "FRONT_CB_UMFORMER1": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_UMFORMER1",
+                "device_id": "4",
+                "command": "3036",
+                "arg_number": "222",
+                "category": "Circuit Breakers",
+                "description": "Fore PT-200 CB"
+            },
+            "FRONT_CB_E_INSTR": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_E_INSTR",
+                "device_id": "4",
+                "command": "3013",
+                "arg_number": "221",
+                "category": "Circuit Breakers",
+                "description": "Fore Engine Instrumentation CB"
+            },
+            "FRONT_CB_RDF": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_RDF",
+                "device_id": "4",
+                "command": "3039",
+                "arg_number": "220",
+                "category": "Circuit Breakers",
+                "description": "Fore RDF CB"
+            },
+            "FRONT_CB_SDG": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_SDG",
+                "device_id": "4",
+                "command": "3042",
+                "arg_number": "219",
+                "category": "Circuit Breakers",
+                "description": "Fore SDG CB"
+            },
+            "REAR_CB_TPANEL_MASTER": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_CB_TPANEL_MASTER",
+                "device_id": "4",
+                "command": "3051",
+                "arg_number": "100",
+                "category": "Circuit Breakers",
+                "description": "Rear Trainer Master CB"
+            },
+            "REAR_CB_TPANEL_SPEED": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_CB_TPANEL_SPEED",
+                "device_id": "4",
+                "command": "3057",
+                "arg_number": "101",
+                "category": "Circuit Breakers",
+                "description": "Rear Trainer Speedo CB"
+            },
+            "REAR_CB_TPANEL_AH": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_CB_TPANEL_AH",
+                "device_id": "4",
+                "command": "3054",
+                "arg_number": "102",
+                "category": "Circuit Breakers",
+                "description": "Rear Trainer AH CB"
+            },
+            "REAR_CB_TPANEL_STAT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_CB_TPANEL_STAT",
+                "device_id": "4",
+                "command": "3060",
+                "arg_number": "103",
+                "category": "Circuit Breakers",
+                "description": "Rear Trainer Statistics CB"
+            },
+            "REAR_CB_BRAKES_CUT": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_CB_BRAKES_CUT",
+                "device_id": "2",
+                "command": "3040",
+                "arg_number": "293",
+                "category": "Circuit Breakers",
+                "description": "Rear Wheel Brakes Purge CB"
+            }
+        },
+        "Throttle Quadrant": {
+            "FRONT_RADIO_TX": {
+                "type": "PushButton",
+                "msg": "FRONT_RADIO_TX",
+                "device_id": "27",
+                "command": "3001",
+                "arg_number": "192",
+                "category": "Throttle Quadrant",
+                "description": "Fore Radio Button"
+            },
+            "FRONT_INTERCOM_TX": {
+                "type": "PushButton",
+                "msg": "FRONT_INTERCOM_TX",
+                "device_id": "27",
+                "command": "3023",
+                "arg_number": "194",
+                "category": "Throttle Quadrant",
+                "description": "Fore Intercom Button"
+            },
+            "FRONT_PROP_LEVER": {
+                "type": "Potentiometer",
+                "msg": "FRONT_PROP_LEVER",
+                "device_id": "3",
+                "command": "3019",
+                "arg_number": "198",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Fore Airscrew Lever"
+            },
+            "FRONT_FRIC_LEVER": {
+                "type": "Potentiometer",
+                "msg": "FRONT_FRIC_LEVER",
+                "device_id": "3",
+                "command": "3027",
+                "arg_number": "210",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Fore Left Frictioner Lever"
+            },
+            "REAR_RADIO_TX": {
+                "type": "PushButton",
+                "msg": "REAR_RADIO_TX",
+                "device_id": "27",
+                "command": "3051",
+                "arg_number": "196",
+                "category": "Throttle Quadrant",
+                "description": "Rear Radio Button"
+            },
+            "REAR_INTERCOM_TX": {
+                "type": "PushButton",
+                "msg": "REAR_INTERCOM_TX",
+                "device_id": "27",
+                "command": "3052",
+                "arg_number": "197",
+                "category": "Throttle Quadrant",
+                "description": "Rear Intercom Button"
+            },
+            "REAR_PROP_LEVER": {
+                "type": "Potentiometer",
+                "msg": "REAR_PROP_LEVER",
+                "device_id": "3",
+                "command": "3022",
+                "arg_number": "199",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Rear Airscrew Lever"
+            },
+            "REAR_FRIC_LEVER": {
+                "type": "Potentiometer",
+                "msg": "REAR_FRIC_LEVER",
+                "device_id": "3",
+                "command": "3030",
+                "arg_number": "211",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Rear Left Frictioner Lever"
+            }
+        },
+        "Port Wall": {
+            "FRONT_TRIM_WHEEL": {
+                "type": "Rotary",
+                "msg": "FRONT_TRIM_WHEEL",
+                "device_id": "2",
+                "command": "3032",
+                "arg_number": "228",
+                "category": "Port Wall",
+                "description": "Fore Elevator Trim Wheel"
+            },
+            "FRONT_FUEL_COCK": {
+                "type": "PushButton",
+                "msg": "FRONT_FUEL_COCK",
+                "device_id": "3",
+                "command": "3047",
+                "arg_number": "286",
+                "category": "Port Wall",
+                "description": "Fore Fuel Cock"
+            },
+            "FRONT_PNEM_VALVE": {
+                "type": "Rotary",
+                "msg": "FRONT_PNEM_VALVE",
+                "device_id": "6",
+                "command": "3041",
+                "arg_number": "230",
+                "category": "Port Wall",
+                "description": "Fore Pneumatic System Master Valve"
+            },
+            "REAR_TRIM_WHEEL": {
+                "type": "Rotary",
+                "msg": "REAR_TRIM_WHEEL",
+                "device_id": "2",
+                "command": "3035",
+                "arg_number": "229",
+                "category": "Port Wall",
+                "description": "Rear Elevator Trim Wheel"
+            },
+            "REAR_FUEL_COCK": {
+                "type": "PushButton",
+                "msg": "REAR_FUEL_COCK",
+                "device_id": "3",
+                "command": "3048",
+                "arg_number": "287",
+                "category": "Port Wall",
+                "description": "Rear Fuel Cock"
+            }
+        },
+        "Louvers Quadrant": {
+            "FRONT_WRADIATOR": {
+                "type": "Potentiometer",
+                "msg": "FRONT_WRADIATOR",
+                "device_id": "3",
+                "command": "3051",
+                "arg_number": "235",
+                "limits": "{ 0, 1 }",
+                "category": "Louvers Quadrant",
+                "description": "Fore Cooling Flaps Lever"
+            },
+            "FRONT_ORADIATOR": {
+                "type": "Potentiometer",
+                "msg": "FRONT_ORADIATOR",
+                "device_id": "3",
+                "command": "3054",
+                "arg_number": "236",
+                "limits": "{ 0, 1 }",
+                "category": "Louvers Quadrant",
+                "description": "Fore Oil Radiator Lever"
+            },
+            "FRONT_FRIC_R_LEVER": {
+                "type": "Potentiometer",
+                "msg": "FRONT_FRIC_R_LEVER",
+                "device_id": "3",
+                "command": "3057",
+                "arg_number": "237",
+                "limits": "{ 0, 1 }",
+                "category": "Louvers Quadrant",
+                "description": "Fore Right Frictioner Lever"
+            }
+        },
+        "Starboard Wall": {
+            "FRONT_MIXHEAT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_MIXHEAT",
+                "device_id": "3",
+                "command": "3060",
+                "arg_number": "238",
+                "category": "Starboard Wall",
+                "description": "Fore Carburettor Heater Lever"
+            },
+            "FRONT_EMER_VALVE": {
+                "type": "Rotary",
+                "msg": "FRONT_EMER_VALVE",
+                "device_id": "6",
+                "command": "3044",
+                "arg_number": "239",
+                "category": "Starboard Wall",
+                "description": "Fore Pneumatic Emergency Valve 1"
+            },
+            "REAR_EMER_VALVE": {
+                "type": "Rotary",
+                "msg": "REAR_EMER_VALVE",
+                "device_id": "6",
+                "command": "3047",
+                "arg_number": "241",
+                "category": "Starboard Wall",
+                "description": "Rear Pneumatic Emergency Valve 2"
+            }
+        },
+        "GMK-1A": {
+            "FRONT_SDG_HEMI": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_SDG_HEMI",
+                "device_id": "20",
+                "command": "3001",
+                "arg_number": "258",
+                "category": "GMK-1A",
+                "description": "Fore Gyro Hemisphere Selector"
+            },
+            "FRONT_SDG_MODE": {
+                "type": "Tumb",
+                "msg": "FRONT_SDG_MODE",
+                "device_id": "20",
+                "command": "3003",
+                "arg_number": "259",
+                "step": "1.0",
+                "limits": "{ -1, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "GMK-1A",
+                "description": "Fore Gyro Mode MC/GC"
+            },
+            "FRONT_SDG_CONTROL": {
+                "type": "3PosTumb",
+                "msg": "FRONT_SDG_CONTROL",
+                "device_id": "20",
+                "command": "3005",
+                "arg_number": "260",
+                "category": "GMK-1A",
+                "description": "Fore Gyro Test Switch, 0 deg/OFF/300deg"
+            },
+            "FRONT_SDG_COURSE": {
+                "type": "3PosTumb",
+                "msg": "FRONT_SDG_COURSE",
+                "device_id": "20",
+                "command": "3007",
+                "arg_number": "261",
+                "category": "GMK-1A",
+                "description": "Fore Gyro Heading Selector, Counter-Clockwise/OFF/Clockwise"
+            },
+            "FRONT_SDG_LAT": {
+                "type": "Potentiometer",
+                "msg": "FRONT_SDG_LAT",
+                "device_id": "20",
+                "command": "3009",
+                "arg_number": "262",
+                "limits": "{ 0, 1 }",
+                "category": "GMK-1A",
+                "description": "Fore Gyro Latitude Selector"
+            }
+        },
+        "ARK 15M": {
+            "FRONT_RDF_CHANNEL": {
+                "type": "Tumb",
+                "msg": "FRONT_RDF_CHANNEL",
+                "device_id": "21",
+                "command": "3022",
+                "arg_number": "244",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ARK 15M",
+                "description": "Fore RDF Channel Selector"
+            },
+            "FRONT_RDF_LISTEN": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RDF_LISTEN",
+                "device_id": "21",
+                "command": "3007",
+                "arg_number": "245",
+                "category": "ARK 15M",
+                "description": "Fore RDF Listen Mode"
+            },
+            "FRONT_RDF_MODE12": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RDF_MODE12",
+                "device_id": "21",
+                "command": "3019",
+                "arg_number": "246",
+                "category": "ARK 15M",
+                "description": "Fore RDF Mode"
+            },
+            "FRONT_RDF_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RDF_VOLUME",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "247",
+                "limits": "{ 0, 1 }",
+                "category": "ARK 15M",
+                "description": "Fore RDF Volume"
+            },
+            "FRONT_RDF_MODE3": {
+                "type": "PushButton",
+                "msg": "FRONT_RDF_MODE3",
+                "device_id": "21",
+                "command": "3004",
+                "arg_number": "248",
+                "category": "ARK 15M",
+                "description": "Fore RDF Loop"
+            },
+            "FRONT_RDF_CSWITCH": {
+                "type": "PushButton",
+                "msg": "FRONT_RDF_CSWITCH",
+                "device_id": "21",
+                "command": "3010",
+                "arg_number": "249",
+                "category": "ARK 15M",
+                "description": "Fore RDF Control"
+            },
+            "FRONT_CB_ADF": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CB_ADF",
+                "device_id": "21",
+                "command": "3025",
+                "arg_number": "104",
+                "category": "ARK 15M",
+                "description": "Fore ADF Marker"
+            },
+            "REAR_RDF_CHANNEL": {
+                "type": "Tumb",
+                "msg": "REAR_RDF_CHANNEL",
+                "device_id": "21",
+                "command": "3072",
+                "arg_number": "251",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ARK 15M",
+                "description": "Rear RDF Channel Selector"
+            },
+            "REAR_RDF_LISTEN": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_RDF_LISTEN",
+                "device_id": "21",
+                "command": "3057",
+                "arg_number": "252",
+                "category": "ARK 15M",
+                "description": "Rear RDF Listen Mode"
+            },
+            "REAR_RDF_MODE12": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_RDF_MODE12",
+                "device_id": "21",
+                "command": "3069",
+                "arg_number": "253",
+                "category": "ARK 15M",
+                "description": "Rear RDF Mode"
+            },
+            "REAR_RDF_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "REAR_RDF_VOLUME",
+                "device_id": "21",
+                "command": "3051",
+                "arg_number": "254",
+                "limits": "{ 0, 1 }",
+                "category": "ARK 15M",
+                "description": "Rear RDF Volume"
+            },
+            "REAR_RDF_MODE3": {
+                "type": "PushButton",
+                "msg": "REAR_RDF_MODE3",
+                "device_id": "21",
+                "command": "3054",
+                "arg_number": "255",
+                "category": "ARK 15M",
+                "description": "Rear RDF Loop"
+            },
+            "REAR_RDF_CSWITCH": {
+                "type": "PushButton",
+                "msg": "REAR_RDF_CSWITCH",
+                "device_id": "21",
+                "command": "3060",
+                "arg_number": "256",
+                "category": "ARK 15M",
+                "description": "Rear RDF Control"
+            },
+            "REAR_CB_ADF": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_CB_ADF",
+                "device_id": "21",
+                "command": "3075",
+                "arg_number": "105",
+                "category": "ARK 15M",
+                "description": "Rear ADF Marker"
+            }
+        },
+        "Canopy": {
+            "FRONT_HATCH_L": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_HATCH_L",
+                "device_id": "2",
+                "command": "3051",
+                "arg_number": "267",
+                "category": "Canopy",
+                "description": "Fore Left Canopy Lever"
+            },
+            "FRONT_HATCH_R": {
+                "type": "PushButton",
+                "msg": "FRONT_HATCH_R",
+                "device_id": "2",
+                "command": "3062",
+                "arg_number": "288",
+                "category": "Canopy",
+                "description": "Fore Right Canopy Lever"
+            },
+            "FRONT_HATCH_JET": {
+                "type": "PushButton",
+                "msg": "FRONT_HATCH_JET",
+                "device_id": "2",
+                "command": "3059",
+                "arg_number": "266",
+                "category": "Canopy",
+                "description": "Fore Canopy Jettison"
+            },
+            "REAR_HATCH_L": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_HATCH_L",
+                "device_id": "2",
+                "command": "3054",
+                "arg_number": "271",
+                "category": "Canopy",
+                "description": "Rear Left Canopy Lever"
+            },
+            "REAR_HATCH_R": {
+                "type": "PushButton",
+                "msg": "REAR_HATCH_R",
+                "device_id": "2",
+                "command": "3063",
+                "arg_number": "289",
+                "category": "Canopy",
+                "description": "Rear Right Canopy Lever"
+            },
+            "REAR_HATCH_JET": {
+                "type": "PushButton",
+                "msg": "REAR_HATCH_JET",
+                "device_id": "2",
+                "command": "3060",
+                "arg_number": "270",
+                "category": "Canopy",
+                "description": "Rear Canopy Jettison"
+            }
+        },
+        "Rear Main Panel": {
+            "REAR_WBRAKES_LOCK": {
+                "type": "PushButton",
+                "msg": "REAR_WBRAKES_LOCK",
+                "device_id": "2",
+                "command": "3029",
+                "arg_number": "6",
+                "category": "Rear Main Panel",
+                "description": "Rear Wheel Brakes Lock"
+            },
+            "REAR_BRAKES_CUT": {
+                "type": "PushButton",
+                "msg": "REAR_BRAKES_CUT",
+                "device_id": "2",
+                "command": "3031",
+                "arg_number": "212",
+                "category": "Rear Main Panel",
+                "description": "Rear Wheel Brakes Purge"
+            },
+            "REAR_IGNITION": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_IGNITION",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "12",
+                "category": "Rear Main Panel",
+                "description": "Rear Ignition Source Switch"
+            },
+            "REAR_MAGNET_SEL": {
+                "type": "Tumb",
+                "msg": "REAR_MAGNET_SEL",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "11",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Rear Main Panel",
+                "description": "Rear Magnet Selector"
+            },
+            "REAR_STARTER_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_STARTER_COVER",
+                "device_id": "3",
+                "command": "3036",
+                "arg_number": "15",
+                "category": "Rear Main Panel",
+                "description": "Rear Starter Button Cover"
+            },
+            "REAR_STARTER": {
+                "type": "PushButton",
+                "msg": "REAR_STARTER",
+                "device_id": "3",
+                "command": "3040",
+                "arg_number": "16",
+                "category": "Rear Main Panel",
+                "description": "Rear Starter Button"
+            },
+            "REAR_UCE_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "REAR_UCE_LOCK",
+                "device_id": "2",
+                "command": "3005",
+                "arg_number": "35",
+                "category": "Rear Main Panel",
+                "description": "Rear Undercarriage Extension Lock"
+            },
+            "REAR_LAMP_TEST": {
+                "type": "PushButton",
+                "msg": "REAR_LAMP_TEST",
+                "device_id": "4",
+                "command": "3099",
+                "arg_number": "9",
+                "category": "Rear Main Panel",
+                "description": "Rear Lamp Test Button"
+            },
+            "REAR_ACCEL_BTN": {
+                "type": "PushButton",
+                "msg": "REAR_ACCEL_BTN",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "49",
+                "category": "Rear Main Panel",
+                "description": "Rear Accelerometer Button"
+            },
+            "REAR_ALT_KNOB": {
+                "type": "Rotary",
+                "msg": "REAR_ALT_KNOB",
+                "device_id": "6",
+                "command": "3007",
+                "arg_number": "118",
+                "category": "Rear Main Panel",
+                "description": "Rear Altimeter Knob"
+            },
+            "REAR_AHORIZON_ZERO": {
+                "type": "Rotary",
+                "msg": "REAR_AHORIZON_ZERO",
+                "device_id": "6",
+                "command": "3015",
+                "arg_number": "149",
+                "category": "Rear Main Panel",
+                "description": "Rear Artificial Horizon Zeroing"
+            },
+            "REAR_AHORIZON_LOCK": {
+                "type": "PushButton",
+                "msg": "REAR_AHORIZON_LOCK",
+                "device_id": "6",
+                "command": "3021",
+                "arg_number": "151",
+                "category": "Rear Main Panel",
+                "description": "Rear Artificial Horizon LOCK Button"
+            },
+            "REAR_HSI_KNOB": {
+                "type": "Rotary",
+                "msg": "REAR_HSI_KNOB",
+                "device_id": "22",
+                "command": "3001",
+                "arg_number": "279",
+                "category": "Rear Main Panel",
+                "description": "Rear HSI Knob"
+            },
+            "REAR_CLOCK_PUSH_L": {
+                "type": "PushButton",
+                "msg": "REAR_CLOCK_PUSH_L",
+                "device_id": "6",
+                "command": "3027",
+                "arg_number": "131",
+                "category": "Rear Main Panel",
+                "description": "Rear Clock Left Push Button"
+            },
+            "REAR_CLOCK_ROTATE_L": {
+                "type": "Rotary",
+                "msg": "REAR_CLOCK_ROTATE_L",
+                "device_id": "22",
+                "command": "3028",
+                "arg_number": "132",
+                "category": "Rear Main Panel",
+                "description": "Rear Clock Left Rotate Knob"
+            },
+            "REAR_CLOCK_PUSH_R": {
+                "type": "PushButton",
+                "msg": "REAR_CLOCK_PUSH_R",
+                "device_id": "6",
+                "command": "3029",
+                "arg_number": "133",
+                "category": "Rear Main Panel",
+                "description": "Rear Clock Right Push Button"
+            },
+            "REAR_CLOCK_ROTATE_R": {
+                "type": "Rotary",
+                "msg": "REAR_CLOCK_ROTATE_R",
+                "device_id": "22",
+                "command": "3030",
+                "arg_number": "134",
+                "category": "Rear Main Panel",
+                "description": "Rear Clock Right Rotate Knob"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Yak-52",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

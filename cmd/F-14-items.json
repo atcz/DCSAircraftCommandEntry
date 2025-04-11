@@ -1,0 +1,4390 @@
+{
+    "commands": {
+        "Hydraulics": {
+            "PLT_HYD_TRANS_PUMPLT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HYD_TRANS_PUMPLT_SW",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "629",
+                "category": "Hydraulics",
+                "description": "PILOT Hydraulic Transfer Pump Switch"
+            },
+            "PLT_HYD_TRANS_PUMPLT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HYD_TRANS_PUMPLT_COVER",
+                "device_id": "13",
+                "command": "3002",
+                "arg_number": "630",
+                "category": "Hydraulics",
+                "description": "PILOT Hydraulic Transfer Pump Switch Cover"
+            },
+            "PLT_HYD_ISOL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HYD_ISOL_SW",
+                "device_id": "13",
+                "command": "3005",
+                "arg_number": "631",
+                "category": "Hydraulics",
+                "description": "PILOT Hydraulic Isolation Switch"
+            },
+            "PLT_HYD_EMERG_FCONTR_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_HYD_EMERG_FCONTR_SW",
+                "device_id": "13",
+                "command": "3003",
+                "arg_number": "928",
+                "category": "Hydraulics",
+                "description": "PILOT Hydraulic Emergency Flight Control Switch"
+            },
+            "PLT_HYD_EMERG_FCONTR_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HYD_EMERG_FCONTR_COVER",
+                "device_id": "13",
+                "command": "3004",
+                "arg_number": "615",
+                "category": "Hydraulics",
+                "description": "PILOT Hydraulic Emergency Flight Control Switch Cover"
+            },
+            "PLT_HYD_HAND_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HYD_HAND_PUMP",
+                "device_id": "13",
+                "command": "3006",
+                "arg_number": "13133",
+                "category": "Hydraulics",
+                "description": "PILOT Hydraulic Hand Pump"
+            }
+        },
+        "Master Reset": {
+            "PLT_MASTER_RESET": {
+                "type": "PushButton",
+                "msg": "PLT_MASTER_RESET",
+                "device_id": "23",
+                "command": "3058",
+                "arg_number": "1071",
+                "category": "Master Reset",
+                "description": "PILOT MASTER RESET"
+            }
+        },
+        "AICS": {
+            "PLT_INLET_RAMPS_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_INLET_RAMPS_L",
+                "device_id": "14",
+                "command": "3007",
+                "arg_number": "2100",
+                "category": "AICS",
+                "description": "PILOT Stow Inlet Ramps Left Switch"
+            },
+            "PLT_INLET_RAMPS_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_INLET_RAMPS_R",
+                "device_id": "14",
+                "command": "3008",
+                "arg_number": "2101",
+                "category": "AICS",
+                "description": "PILOT Stow Inlet Ramps Right Switch"
+            }
+        },
+        "Wing Sweep": {
+            "PLT_EMERG_WING_SWEEPLT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EMERG_WING_SWEEPLT_COVER",
+                "device_id": "17",
+                "command": "3029",
+                "arg_number": "317",
+                "category": "Wing Sweep",
+                "description": "PILOT Emergency Wing Sweep Handle Cover"
+            },
+            "PLT_EMERG_WING_SWEEPLT_LEVER": {
+                "type": "Potentiometer",
+                "msg": "PLT_EMERG_WING_SWEEPLT_LEVER",
+                "device_id": "17",
+                "command": "3031",
+                "arg_number": "384",
+                "limits": "{ 0, 1 }",
+                "category": "Wing Sweep",
+                "description": "PILOT Emergency Wing Sweep Handle"
+            },
+            "PLT_EMERG_WING_SWEEPLT_POP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EMERG_WING_SWEEPLT_POP",
+                "device_id": "17",
+                "command": "3030",
+                "arg_number": "15096",
+                "category": "Wing Sweep",
+                "description": "PILOT Emergency Wing Sweep Handle Pop out"
+            }
+        },
+        "Radar Altimeter": {
+            "PLT_RADAR_ALT_BIT": {
+                "type": "PushButton",
+                "msg": "PLT_RADAR_ALT_BIT",
+                "device_id": "30",
+                "command": "3485",
+                "arg_number": "16020",
+                "category": "Radar Altimeter",
+                "description": "PILOT Radar Altimeter BIT Test Button"
+            },
+            "PLT_RADAR_ALT_KNOB": {
+                "type": "Rotary",
+                "msg": "PLT_RADAR_ALT_KNOB",
+                "device_id": "30",
+                "command": "3484",
+                "arg_number": "308",
+                "category": "Radar Altimeter",
+                "description": "PILOT Radar Altimeter Control Knob"
+            }
+        },
+        "Airspeed Indicator": {
+            "PLT_AIRSPD_KNOB_PUSH": {
+                "type": "PushButton",
+                "msg": "PLT_AIRSPD_KNOB_PUSH",
+                "device_id": "28",
+                "command": "3492",
+                "arg_number": "2127",
+                "category": "Airspeed Indicator",
+                "description": "PILOT Airspeed Indicator Bug Push Knob"
+            },
+            "PLT_AIRSPD_KNOB": {
+                "type": "Rotary",
+                "msg": "PLT_AIRSPD_KNOB",
+                "device_id": "28",
+                "command": "3491",
+                "arg_number": "310",
+                "category": "Airspeed Indicator",
+                "description": "PILOT Airspeed Indicator Bug Knob"
+            },
+            "RIO_AIRSPD_KNOB_PUSH": {
+                "type": "PushButton",
+                "msg": "RIO_AIRSPD_KNOB_PUSH",
+                "device_id": "28",
+                "command": "3651",
+                "arg_number": "255",
+                "category": "Airspeed Indicator",
+                "description": "RIO Airspeed Indicator Bug Push Knob"
+            },
+            "RIO_AIRSPD_KNOB": {
+                "type": "Rotary",
+                "msg": "RIO_AIRSPD_KNOB",
+                "device_id": "28",
+                "command": "3652",
+                "arg_number": "254",
+                "category": "Airspeed Indicator",
+                "description": "RIO Airspeed Indicator Bug Knob"
+            }
+        },
+        "Altimeter": {
+            "PLT_ALTIMETER_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_ALTIMETER_MODE",
+                "device_id": "29",
+                "command": "3487",
+                "arg_number": "307",
+                "category": "Altimeter",
+                "description": "PILOT Altimeter Mode Switch"
+            },
+            "PLT_ALTIMETER_KNOB": {
+                "type": "Rotary",
+                "msg": "PLT_ALTIMETER_KNOB",
+                "device_id": "29",
+                "command": "3486",
+                "arg_number": "306",
+                "category": "Altimeter",
+                "description": "PILOT Altimeter Pressure Setting"
+            },
+            "RIO_ALTIMETER_MODE": {
+                "type": "3PosTumb",
+                "msg": "RIO_ALTIMETER_MODE",
+                "device_id": "29",
+                "command": "3490",
+                "arg_number": "20307",
+                "category": "Altimeter",
+                "description": "RIO Altimeter Mode Switch"
+            },
+            "RIO_ALTIMETER_KNOB": {
+                "type": "Rotary",
+                "msg": "RIO_ALTIMETER_KNOB",
+                "device_id": "29",
+                "command": "3489",
+                "arg_number": "20306",
+                "category": "Altimeter",
+                "description": "RIO Altimeter Pressure Setting"
+            }
+        },
+        "Gear": {
+            "PLT_GEAR_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_LEVER",
+                "device_id": "18",
+                "command": "3016",
+                "arg_number": "326",
+                "category": "Gear",
+                "description": "PILOT Landing Gear Lever"
+            },
+            "PLT_GEAR_LEVER_EMERG": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_LEVER_EMERG",
+                "device_id": "18",
+                "command": "3646",
+                "arg_number": "16015",
+                "category": "Gear",
+                "description": "PILOT Landing Gear Lever RB emergency extend"
+            },
+            "PLT_LAUNCHBAR_ABORT": {
+                "type": "PushButton",
+                "msg": "PLT_LAUNCHBAR_ABORT",
+                "device_id": "18",
+                "command": "3672",
+                "arg_number": "497",
+                "category": "Gear",
+                "description": "PILOT Launch Bar Abort"
+            },
+            "PLT_LAUNCHBAR_ABORT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_LAUNCHBAR_ABORT_COVER",
+                "device_id": "18",
+                "command": "3673",
+                "arg_number": "496",
+                "category": "Gear",
+                "description": "PILOT Launch Bar Abort Switch Cover"
+            },
+            "PLT_NOSE_STRUT_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_NOSE_STRUT_SW",
+                "device_id": "18",
+                "command": "3019",
+                "arg_number": "1075",
+                "category": "Gear",
+                "description": "PILOT Nose Strut Compression Switch"
+            },
+            "PLT_HOOK_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HOOK_LEVER",
+                "device_id": "18",
+                "command": "3021",
+                "arg_number": "238",
+                "category": "Gear",
+                "description": "PILOT Hook Extension Handle"
+            },
+            "PLT_HOOK_LEVER_EMERG": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HOOK_LEVER_EMERG",
+                "device_id": "18",
+                "command": "3022",
+                "arg_number": "15078",
+                "category": "Gear",
+                "description": "PILOT Hook Extension Handle RB cycle emergency mode"
+            },
+            "PLT_GEAR_DN_LK_OVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_DN_LK_OVER",
+                "device_id": "18",
+                "command": "3017",
+                "arg_number": "633",
+                "category": "Gear",
+                "description": "PILOT Gear Down Lock Override"
+            }
+        },
+        "Brakes": {
+            "PLT_ANTI_SKID_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_ANTI_SKID_SW",
+                "device_id": "18",
+                "command": "3014",
+                "arg_number": "1072",
+                "category": "Brakes",
+                "description": "Anti-Skid Spoiler BK Switch"
+            },
+            "PLT_PARK_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PARK_BRAKE",
+                "device_id": "18",
+                "command": "3013",
+                "arg_number": "237",
+                "category": "Brakes",
+                "description": "PILOT Parking Brake Handle"
+            }
+        },
+        "SAS": {
+            "PLT_AFCS_PITCH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AFCS_PITCH",
+                "device_id": "22",
+                "command": "3034",
+                "arg_number": "2106",
+                "category": "SAS",
+                "description": "PILOT AFCS Stability Augmentation - Pitch"
+            },
+            "PLT_AFCS_ROLL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AFCS_ROLL",
+                "device_id": "22",
+                "command": "3035",
+                "arg_number": "2107",
+                "category": "SAS",
+                "description": "PILOT AFCS Stability Augmentation - Roll"
+            },
+            "PLT_AFCS_YAW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AFCS_YAW",
+                "device_id": "22",
+                "command": "3036",
+                "arg_number": "2108",
+                "category": "SAS",
+                "description": "PILOT AFCS Stability Augmentation - Yaw"
+            }
+        },
+        "Autopilot": {
+            "PLT_AUTOPLT_VECTOR_CARRIER": {
+                "type": "3PosTumb",
+                "msg": "PLT_AUTOPLT_VECTOR_CARRIER",
+                "device_id": "22",
+                "command": "3037",
+                "arg_number": "2109",
+                "category": "Autopilot",
+                "description": "PILOT Autopilot - Vector / Automatic Carrier Landing"
+            },
+            "PLT_AUTOPLT_ALT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AUTOPLT_ALT",
+                "device_id": "22",
+                "command": "3038",
+                "arg_number": "2110",
+                "category": "Autopilot",
+                "description": "PILOT Autopilot - Altitude Hold"
+            },
+            "PLT_AUTOPLT_HDG": {
+                "type": "3PosTumb",
+                "msg": "PLT_AUTOPLT_HDG",
+                "device_id": "22",
+                "command": "3039",
+                "arg_number": "2111",
+                "category": "Autopilot",
+                "description": "PILOT Autopilot - Heading / Ground Track"
+            },
+            "PLT_AUTOPLT_ENGAGE": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_AUTOPLT_ENGAGE",
+                "device_id": "22",
+                "command": "3040",
+                "arg_number": "2112",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "rel_args": "{ -1, 1 }",
+                "output_map": "nil",
+                "category": "Autopilot",
+                "description": "PILOT Autopilot - Engage"
+            }
+        },
+        "Flaps": {
+            "PLT_FLAPS_LEVER": {
+                "type": "Potentiometer",
+                "msg": "PLT_FLAPS_LEVER",
+                "device_id": "19",
+                "command": "3044",
+                "arg_number": "225",
+                "limits": "{ 0, 1 }",
+                "category": "Flaps",
+                "description": "PILOT Flaps Lever"
+            }
+        },
+        "Engine": {
+            "PLT_ENGINE_FUEL_CUT_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENGINE_FUEL_CUT_L",
+                "device_id": "20",
+                "command": "3128",
+                "arg_number": "12300",
+                "category": "Engine",
+                "description": "PILOT Left Engine Fuel Cutoff"
+            },
+            "PLT_ENGINE_FUEL_CUT_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENGINE_FUEL_CUT_R",
+                "device_id": "20",
+                "command": "3129",
+                "arg_number": "12301",
+                "category": "Engine",
+                "description": "PILOT Right Engine Fuel Cutoff"
+            },
+            "PLT_THROTTLE_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_THROTTLE_MODE",
+                "device_id": "20",
+                "command": "3045",
+                "arg_number": "2104",
+                "category": "Engine",
+                "description": "PILOT Throttle Mode"
+            },
+            "PLT_THROTTLE_TEMP": {
+                "type": "3PosTumb",
+                "msg": "PLT_THROTTLE_TEMP",
+                "device_id": "20",
+                "command": "3047",
+                "arg_number": "2103",
+                "category": "Engine",
+                "description": "PILOT Throttle Temp"
+            },
+            "PLT_ANTI_ICE": {
+                "type": "3PosTumb",
+                "msg": "PLT_ANTI_ICE",
+                "device_id": "20",
+                "command": "3049",
+                "arg_number": "941",
+                "category": "Engine",
+                "description": "PILOT Engine/Probe Anti-Ice"
+            },
+            "PLT_ENGINE_AIRSTART": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENGINE_AIRSTART",
+                "device_id": "20",
+                "command": "3050",
+                "arg_number": "2105",
+                "category": "Engine",
+                "description": "PILOT Engine Airstart"
+            },
+            "PLT_ENGINE_CRANK": {
+                "type": "3PosTumb",
+                "msg": "PLT_ENGINE_CRANK",
+                "device_id": "20",
+                "command": "3051",
+                "arg_number": "2102",
+                "category": "Engine",
+                "description": "PILOT Engine Crank"
+            },
+            "PLT_ENGINE_MODE_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENGINE_MODE_L",
+                "device_id": "20",
+                "command": "3052",
+                "arg_number": "16007",
+                "category": "Engine",
+                "description": "PILOT Left Engine Mode"
+            },
+            "PLT_ENGINE_MODE_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENGINE_MODE_R",
+                "device_id": "20",
+                "command": "3053",
+                "arg_number": "16008",
+                "category": "Engine",
+                "description": "PILOT Right Engine Mode"
+            },
+            "PLT_ASY_THRUST_LIMIT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASY_THRUST_LIMIT_COVER",
+                "device_id": "20",
+                "command": "3055",
+                "arg_number": "16005",
+                "category": "Engine",
+                "description": "PILOT Asymmetric Thrust Limiter Cover"
+            },
+            "PLT_ASY_THRUST_LIMIT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASY_THRUST_LIMIT",
+                "device_id": "20",
+                "command": "3054",
+                "arg_number": "16006",
+                "category": "Engine",
+                "description": "PILOT Asymmetric Thrust Limiter"
+            }
+        },
+        "Fuel System": {
+            "PLT_FUEL_SHUTOFF_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FUEL_SHUTOFF_R",
+                "device_id": "21",
+                "command": "3061",
+                "arg_number": "1044",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Shutoff - Right"
+            },
+            "PLT_FUEL_SHUTOFF_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FUEL_SHUTOFF_L",
+                "device_id": "21",
+                "command": "3062",
+                "arg_number": "15081",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Shutoff - Left"
+            },
+            "PLT_FUEL_FEED_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FUEL_FEED_COVER",
+                "device_id": "21",
+                "command": "3064",
+                "arg_number": "1094",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Feed Cover"
+            },
+            "PLT_FUEL_FEED": {
+                "type": "3PosTumb",
+                "msg": "PLT_FUEL_FEED",
+                "device_id": "21",
+                "command": "3065",
+                "arg_number": "1095",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Feed"
+            },
+            "PLT_FUEL_WING_EXT_TRANS": {
+                "type": "3PosTumb",
+                "msg": "PLT_FUEL_WING_EXT_TRANS",
+                "device_id": "21",
+                "command": "3066",
+                "arg_number": "1001",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Wing/Ext Trans"
+            },
+            "PLT_FUEL_DUMP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FUEL_DUMP",
+                "device_id": "21",
+                "command": "3067",
+                "arg_number": "1074",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Dump"
+            },
+            "PLT_REFUEL_PROBE": {
+                "type": "3PosTumb",
+                "msg": "PLT_REFUEL_PROBE",
+                "device_id": "21",
+                "command": "3068",
+                "arg_number": "1073",
+                "category": "Fuel System",
+                "description": "PILOT Refuel Probe"
+            },
+            "PLT_FUEL_QUANT_SEL": {
+                "type": "3PosTumb",
+                "msg": "PLT_FUEL_QUANT_SEL",
+                "device_id": "21",
+                "command": "3063",
+                "arg_number": "1076",
+                "category": "Fuel System",
+                "description": "PILOT Fuel Quantity Selector"
+            },
+            "PLT_BINGO_FUEL_KNOB": {
+                "type": "Rotary",
+                "msg": "PLT_BINGO_FUEL_KNOB",
+                "device_id": "21",
+                "command": "3069",
+                "arg_number": "1050",
+                "category": "Fuel System",
+                "description": "PILOT BINGO Fuel Level Knob"
+            }
+        },
+        "Electrics": {
+            "PLT_L_GEN_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_L_GEN_SW",
+                "device_id": "15",
+                "command": "3009",
+                "arg_number": "937",
+                "category": "Electrics",
+                "description": "PILOT Left Generator Switch"
+            },
+            "PLT_R_GEN_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_R_GEN_SW",
+                "device_id": "15",
+                "command": "3010",
+                "arg_number": "936",
+                "category": "Electrics",
+                "description": "PILOT Right Generator Switch"
+            },
+            "PLT_EMERG_GEN_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EMERG_GEN_COVER",
+                "device_id": "15",
+                "command": "3011",
+                "arg_number": "927",
+                "category": "Electrics",
+                "description": "PILOT Emergency Generator Switch Cover"
+            },
+            "PLT_EMERG_GEN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EMERG_GEN_SW",
+                "device_id": "15",
+                "command": "3012",
+                "arg_number": "926",
+                "category": "Electrics",
+                "description": "PILOT Emergency Generator Switch"
+            }
+        },
+        "Cockpit Mechanics": {
+            "PLT_CANOPY_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CANOPY_JETT",
+                "device_id": "12",
+                "command": "3184",
+                "arg_number": "224",
+                "category": "Cockpit Mechanics",
+                "description": "PILOT Canopy Jettison"
+            },
+            "RIO_CANOPY_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_CANOPY_JETT",
+                "device_id": "12",
+                "command": "3760",
+                "arg_number": "2051",
+                "category": "Cockpit Mechanics",
+                "description": "RIO Canopy Jettison"
+            },
+            "RIO_EJECT_CMD": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_EJECT_CMD",
+                "device_id": "12",
+                "command": "3185",
+                "arg_number": "2049",
+                "category": "Cockpit Mechanics",
+                "description": "RIO Ejection CMD Lever"
+            },
+            "PLT_EJECT_SEAT_SAFE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EJECT_SEAT_SAFE",
+                "device_id": "12",
+                "command": "3186",
+                "arg_number": "404",
+                "category": "Cockpit Mechanics",
+                "description": "PILOT Ejection Seat Safety"
+            },
+            "RIO_EJECT_SEAT_SAFE": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_EJECT_SEAT_SAFE",
+                "device_id": "12",
+                "command": "3187",
+                "arg_number": "498",
+                "category": "Cockpit Mechanics",
+                "description": "RIO Ejection Seat Safety"
+            },
+            "RIO_STORAGE_BOX": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_STORAGE_BOX",
+                "device_id": "12",
+                "command": "3612",
+                "arg_number": "122",
+                "category": "Cockpit Mechanics",
+                "description": "RIO Storage Box"
+            },
+            "PLT_HUDCAM": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HUDCAM",
+                "device_id": "12",
+                "command": "3756",
+                "arg_number": "3490",
+                "category": "Cockpit Mechanics",
+                "description": "PILOT Hide Guncam"
+            },
+            "PLT_MIRROR_TOP": {
+                "type": "Potentiometer",
+                "msg": "PLT_MIRROR_TOP",
+                "device_id": "12",
+                "command": "3858",
+                "arg_number": "258",
+                "limits": "{ 0, 1 }",
+                "category": "Cockpit Mechanics",
+                "description": "PILOT Adjust Top Mirror"
+            },
+            "PLT_MIRROR_L": {
+                "type": "Potentiometer",
+                "msg": "PLT_MIRROR_L",
+                "device_id": "12",
+                "command": "3859",
+                "arg_number": "256",
+                "limits": "{ 0, 1 }",
+                "category": "Cockpit Mechanics",
+                "description": "PILOT Adjust Left Mirror"
+            },
+            "PLT_MIRROR_R": {
+                "type": "Potentiometer",
+                "msg": "PLT_MIRROR_R",
+                "device_id": "12",
+                "command": "3860",
+                "arg_number": "257",
+                "limits": "{ 0, 1 }",
+                "category": "Cockpit Mechanics",
+                "description": "PILOT Adjust Right Mirror"
+            },
+            "RIO_MIRROR_TOP": {
+                "type": "Potentiometer",
+                "msg": "RIO_MIRROR_TOP",
+                "device_id": "12",
+                "command": "3857",
+                "arg_number": "46",
+                "limits": "{ 0, 1 }",
+                "category": "Cockpit Mechanics",
+                "description": "RIO Adjust Top Mirror"
+            }
+        },
+        "Enivornment Control": {
+            "PLT_OXY_ON": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_OXY_ON",
+                "device_id": "12",
+                "command": "3190",
+                "arg_number": "8114",
+                "category": "Enivornment Control",
+                "description": "PILOT Oxygen On"
+            },
+            "RIO_OXY_ON": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_OXY_ON",
+                "device_id": "12",
+                "command": "3191",
+                "arg_number": "119",
+                "category": "Enivornment Control",
+                "description": "RIO Oxygen On"
+            },
+            "PLT_CABIN_PRESS_DUMP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CABIN_PRESS_DUMP",
+                "device_id": "12",
+                "command": "3192",
+                "arg_number": "939",
+                "category": "Enivornment Control",
+                "description": "PILOT Cabin Pressure Dump"
+            },
+            "PLT_AIR_SOURCE_RAM": {
+                "type": "PushButton",
+                "msg": "PLT_AIR_SOURCE_RAM",
+                "device_id": "12",
+                "command": "3193",
+                "arg_number": "929",
+                "category": "Enivornment Control",
+                "description": "PILOT Air Source Ram"
+            },
+            "PLT_AIR_SOURCE_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_AIR_SOURCE_OFF",
+                "device_id": "12",
+                "command": "3194",
+                "arg_number": "933",
+                "category": "Enivornment Control",
+                "description": "PILOT Air Source Off"
+            },
+            "PLT_AIR_SOURCE_L": {
+                "type": "PushButton",
+                "msg": "PLT_AIR_SOURCE_L",
+                "device_id": "12",
+                "command": "3195",
+                "arg_number": "930",
+                "category": "Enivornment Control",
+                "description": "PILOT Air Left Engine"
+            },
+            "PLT_AIR_SOURCE_R": {
+                "type": "PushButton",
+                "msg": "PLT_AIR_SOURCE_R",
+                "device_id": "12",
+                "command": "3196",
+                "arg_number": "931",
+                "category": "Enivornment Control",
+                "description": "PILOT Air Right Engine"
+            },
+            "PLT_AIR_SOURCE_BOTH": {
+                "type": "PushButton",
+                "msg": "PLT_AIR_SOURCE_BOTH",
+                "device_id": "12",
+                "command": "3197",
+                "arg_number": "932",
+                "category": "Enivornment Control",
+                "description": "PILOT Air Both Engines"
+            },
+            "PLT_WINDSHIELD_AIR": {
+                "type": "3PosTumb",
+                "msg": "PLT_WINDSHIELD_AIR",
+                "device_id": "12",
+                "command": "3647",
+                "arg_number": "942",
+                "category": "Enivornment Control",
+                "description": "PILOT Wind Shield Air"
+            },
+            "PLT_TEMP": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_TEMP",
+                "device_id": "12",
+                "device_command": "3648",
+                "arg_number": "950",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Enivornment Control",
+                "description": "PILOT Cabin Temperature Switch"
+            },
+            "PLT_TEMP_AUTO_MAN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_TEMP_AUTO_MAN",
+                "device_id": "12",
+                "command": "3649",
+                "arg_number": "940",
+                "category": "Enivornment Control",
+                "description": "PILOT Temperature Auto/Man"
+            },
+            "PLT_RAM_AIR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_RAM_AIR",
+                "device_id": "12",
+                "command": "3650",
+                "arg_number": "938",
+                "category": "Enivornment Control",
+                "description": "PILOT Ram Air"
+            }
+        },
+        "BIT Panel": {
+            "PLT_BIT_SWITCH": {
+                "type": "Tumb",
+                "msg": "PLT_BIT_SWITCH",
+                "device_id": "11",
+                "command": "3076",
+                "arg_number": "934",
+                "step": "0.0909",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "BIT Panel",
+                "description": "PILOT Master Test Selector (LB to rotate)"
+            },
+            "PLT_BIT_SWITCH_PUSH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_BIT_SWITCH_PUSH",
+                "device_id": "11",
+                "command": "3077",
+                "arg_number": "15098",
+                "category": "BIT Panel",
+                "description": "PILOT Master Test Selector (RB to pull/push)"
+            }
+        },
+        "Light Panel": {
+            "PLT_HOOK_BYPASS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HOOK_BYPASS",
+                "device_id": "26",
+                "command": "3211",
+                "arg_number": "915",
+                "category": "Light Panel",
+                "description": "PILOT Hook Bypass"
+            },
+            "PLT_TAXI_LIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_TAXI_LIGHT",
+                "device_id": "12",
+                "command": "3171",
+                "arg_number": "918",
+                "category": "Light Panel",
+                "description": "PILOT Taxi Light"
+            },
+            "PLT_FLOOD_LIGHT_RED": {
+                "type": "3PosTumb",
+                "msg": "PLT_FLOOD_LIGHT_RED",
+                "device_id": "12",
+                "command": "3172",
+                "arg_number": "924",
+                "category": "Light Panel",
+                "description": "PILOT Red Flood Light"
+            },
+            "PLT_FLOOD_LIGHT_WH": {
+                "type": "3PosTumb",
+                "msg": "PLT_FLOOD_LIGHT_WH",
+                "device_id": "12",
+                "command": "3173",
+                "arg_number": "921",
+                "category": "Light Panel",
+                "description": "PILOT White Flood Light"
+            },
+            "PLT_POS_LIGHT_WING": {
+                "type": "3PosTumb",
+                "msg": "PLT_POS_LIGHT_WING",
+                "device_id": "12",
+                "command": "3174",
+                "arg_number": "913",
+                "category": "Light Panel",
+                "description": "PILOT Position Lights Wings"
+            },
+            "PLT_POS_LIGHT_TAIL": {
+                "type": "3PosTumb",
+                "msg": "PLT_POS_LIGHT_TAIL",
+                "device_id": "12",
+                "command": "3175",
+                "arg_number": "916",
+                "category": "Light Panel",
+                "description": "PILOT Position Lights Tail"
+            },
+            "PLT_POS_LIGHT_FLASH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_POS_LIGHT_FLASH",
+                "device_id": "12",
+                "command": "3176",
+                "arg_number": "919",
+                "category": "Light Panel",
+                "description": "PILOT Position Lights Flash"
+            },
+            "PLT_ANTICOL_LIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ANTICOL_LIGHT",
+                "device_id": "12",
+                "command": "3177",
+                "arg_number": "923",
+                "category": "Light Panel",
+                "description": "PILOT Anti-Collision Lights"
+            },
+            "PLT_LIGHT_INTENT_ACM": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_LIGHT_INTENT_ACM",
+                "device_id": "12",
+                "device_command": "3178",
+                "arg_number": "15005",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "PILOT ACM Panel Light Intensity"
+            },
+            "PLT_LIGHT_INTENT_INDEXER": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_LIGHT_INTENT_INDEXER",
+                "device_id": "26",
+                "device_command": "3212",
+                "arg_number": "15006",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "PILOT AoA Indexer Light Intensity"
+            },
+            "PLT_LIGHT_INTENT_INSTRUMENT": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_LIGHT_INTENT_INSTRUMENT",
+                "device_id": "12",
+                "device_command": "3179",
+                "arg_number": "15007",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "PILOT Instrument Light Intensity"
+            },
+            "PLT_LIGHT_INTENT_CONSOLE": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_LIGHT_INTENT_CONSOLE",
+                "device_id": "12",
+                "device_command": "3180",
+                "arg_number": "15008",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "PILOT Console Light Intensity"
+            },
+            "PLT_LIGHT_INTENT_FORMATION": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_LIGHT_INTENT_FORMATION",
+                "device_id": "12",
+                "device_command": "3181",
+                "arg_number": "15009",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "PILOT Formation Light Intensity"
+            },
+            "RIO_FLOOD_LIGHT_RED": {
+                "type": "3PosTumb",
+                "msg": "RIO_FLOOD_LIGHT_RED",
+                "device_id": "12",
+                "command": "3706",
+                "arg_number": "194",
+                "category": "Light Panel",
+                "description": "RIO Red Flood Light"
+            },
+            "RIO_FLOOD_LIGHT_WH": {
+                "type": "3PosTumb",
+                "msg": "RIO_FLOOD_LIGHT_WH",
+                "device_id": "12",
+                "command": "3707",
+                "arg_number": "159",
+                "category": "Light Panel",
+                "description": "RIO White Flood Light"
+            },
+            "RIO_LIGHT_INTENT_INSTRUMENT": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_LIGHT_INTENT_INSTRUMENT",
+                "device_id": "12",
+                "device_command": "3708",
+                "arg_number": "193",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "RIO Instrument Light Intensity"
+            },
+            "RIO_LIGHT_INTENT_CONSOLE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_LIGHT_INTENT_CONSOLE",
+                "device_id": "12",
+                "device_command": "3709",
+                "arg_number": "192",
+                "num_positions": "9",
+                "increment": "0.125",
+                "category": "Light Panel",
+                "description": "RIO Console Light Intensity"
+            }
+        },
+        "Display": {
+            "PLT_VDI_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_VDI_PW_SW",
+                "device_id": "42",
+                "command": "3214",
+                "arg_number": "1010",
+                "category": "Display",
+                "description": "PILOT VDI Power On/Off"
+            },
+            "PLT_HUD_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HUD_PW_SW",
+                "device_id": "40",
+                "command": "3213",
+                "arg_number": "1009",
+                "category": "Display",
+                "description": "PILOT HUD Power On/Off"
+            },
+            "PLT_HSD_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HSD_PW_SW",
+                "device_id": "41",
+                "command": "3215",
+                "arg_number": "1008",
+                "category": "Display",
+                "description": "PILOT HSD/ECMD Power On/Off"
+            },
+            "PLT_NAV_STEER_TACAN": {
+                "type": "PushButton",
+                "msg": "PLT_NAV_STEER_TACAN",
+                "device_id": "46",
+                "command": "3314",
+                "arg_number": "1002",
+                "category": "Display",
+                "description": "PILOT Navigation Steer Commands: TACAN"
+            },
+            "PLT_NAV_STEER_DEST": {
+                "type": "PushButton",
+                "msg": "PLT_NAV_STEER_DEST",
+                "device_id": "46",
+                "command": "3315",
+                "arg_number": "1003",
+                "category": "Display",
+                "description": "PILOT Navigation Steer Commands: Destination"
+            },
+            "PLT_NAV_STEER_AWL": {
+                "type": "PushButton",
+                "msg": "PLT_NAV_STEER_AWL",
+                "device_id": "46",
+                "command": "3318",
+                "arg_number": "1004",
+                "category": "Display",
+                "description": "PILOT Navigation Steer Commands: AWL PCD"
+            },
+            "PLT_NAV_STEER_VECTOR": {
+                "type": "PushButton",
+                "msg": "PLT_NAV_STEER_VECTOR",
+                "device_id": "46",
+                "command": "3316",
+                "arg_number": "1005",
+                "category": "Display",
+                "description": "PILOT Navigation Steer Commands: Vector"
+            },
+            "PLT_NAV_STEER_MAN": {
+                "type": "PushButton",
+                "msg": "PLT_NAV_STEER_MAN",
+                "device_id": "46",
+                "command": "3317",
+                "arg_number": "1006",
+                "category": "Display",
+                "description": "PILOT Navigation Steer Commands: Manual"
+            },
+            "PLT_HSD_DIS_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_HSD_DIS_MODE",
+                "device_id": "41",
+                "command": "3235",
+                "arg_number": "1016",
+                "category": "Display",
+                "description": "PILOT HSD Display Mode"
+            },
+            "PLT_HSD_ECM_OVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HSD_ECM_OVER",
+                "device_id": "41",
+                "command": "3239",
+                "arg_number": "1017",
+                "category": "Display",
+                "description": "PILOT HSD ECM Override"
+            },
+            "PLT_HUD_PITCH_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "PLT_HUD_PITCH_BRIGHT",
+                "device_id": "40",
+                "command": "3223",
+                "arg_number": "1007",
+                "limits": "{ 0, 1 }",
+                "category": "Display",
+                "description": "PILOT HUD Pitch Ladder Brightness"
+            },
+            "PLT_VDI_MODE_DISP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_VDI_MODE_DISP",
+                "device_id": "42",
+                "command": "3224",
+                "arg_number": "1019",
+                "category": "Display",
+                "description": "PILOT VDI Display Mode"
+            },
+            "PLT_VDI_MODE_LAND": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_VDI_MODE_LAND",
+                "device_id": "42",
+                "command": "3225",
+                "arg_number": "1018",
+                "category": "Display",
+                "description": "PILOT VDI Landing Mode"
+            },
+            "PLT_HUD_DECLUTTER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HUD_DECLUTTER",
+                "device_id": "40",
+                "command": "3226",
+                "arg_number": "1021",
+                "category": "Display",
+                "description": "PILOT HUD De-clutter On/Off"
+            },
+            "PLT_HUD_MODE_AWL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HUD_MODE_AWL",
+                "device_id": "40",
+                "command": "3227",
+                "arg_number": "1020",
+                "category": "Display",
+                "description": "PILOT HUD AWL Mode"
+            },
+            "PLT_HUD_MODE_TAKEOFF": {
+                "type": "PushButton",
+                "msg": "PLT_HUD_MODE_TAKEOFF",
+                "device_id": "40",
+                "command": "3216",
+                "arg_number": "1015",
+                "category": "Display",
+                "description": "PILOT HUD Take-Off Mode"
+            },
+            "PLT_HUD_MODE_CRUISE": {
+                "type": "PushButton",
+                "msg": "PLT_HUD_MODE_CRUISE",
+                "device_id": "40",
+                "command": "3217",
+                "arg_number": "1014",
+                "category": "Display",
+                "description": "PILOT HUD Cruise Mode"
+            },
+            "PLT_HUD_MODE_A2A": {
+                "type": "PushButton",
+                "msg": "PLT_HUD_MODE_A2A",
+                "device_id": "40",
+                "command": "3218",
+                "arg_number": "1013",
+                "category": "Display",
+                "description": "PILOT HUD Air-to-Air Mode"
+            },
+            "PLT_HUD_MODE_A2G": {
+                "type": "PushButton",
+                "msg": "PLT_HUD_MODE_A2G",
+                "device_id": "40",
+                "command": "3219",
+                "arg_number": "1012",
+                "category": "Display",
+                "description": "PILOT HUD Air-to-Ground Mode"
+            },
+            "PLT_HUD_MODE_LAND": {
+                "type": "PushButton",
+                "msg": "PLT_HUD_MODE_LAND",
+                "device_id": "40",
+                "command": "3220",
+                "arg_number": "1011",
+                "category": "Display",
+                "description": "PILOT HUD Landing Mode"
+            },
+            "PLT_ACCEL_RESET": {
+                "type": "PushButton",
+                "msg": "PLT_ACCEL_RESET",
+                "device_id": "25",
+                "command": "3488",
+                "arg_number": "228",
+                "category": "Display",
+                "description": "PILOT Accelerometer Reset"
+            }
+        },
+        "HSD": {
+            "PLT_HSD_KNOB_HDG": {
+                "type": "Rotary",
+                "msg": "PLT_HSD_KNOB_HDG",
+                "device_id": "41",
+                "command": "3241",
+                "arg_number": "1039",
+                "category": "HSD",
+                "description": "PILOT HSD Selected Heading"
+            },
+            "PLT_HSD_KNOB_CRS": {
+                "type": "Rotary",
+                "msg": "PLT_HSD_KNOB_CRS",
+                "device_id": "41",
+                "command": "3242",
+                "arg_number": "1040",
+                "category": "HSD",
+                "description": "PILOT HSD Selected Course"
+            },
+            "PLT_HSD_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "PLT_HSD_BRIGHT",
+                "device_id": "41",
+                "command": "3240",
+                "arg_number": "1043",
+                "limits": "{ 0, 1 }",
+                "category": "HSD",
+                "description": "PILOT HSD Brightness"
+            },
+            "PLT_HSD_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_HSD_TEST",
+                "device_id": "41",
+                "command": "3243",
+                "arg_number": "1041",
+                "category": "HSD",
+                "description": "PILOT HSD Test"
+            }
+        },
+        "ECMD": {
+            "RIO_ECMD_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RIO_ECMD_BRIGHT",
+                "device_id": "45",
+                "command": "3245",
+                "arg_number": "2023",
+                "limits": "{ 0, 1 }",
+                "category": "ECMD",
+                "description": "RIO ECMD Brightness"
+            },
+            "RIO_ECMD_TEST": {
+                "type": "PushButton",
+                "msg": "RIO_ECMD_TEST",
+                "device_id": "45",
+                "command": "3246",
+                "arg_number": "2024",
+                "category": "ECMD",
+                "description": "RIO ECMD Test"
+            },
+            "RIO_ECM_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_ECM_MODE",
+                "device_id": "45",
+                "command": "3247",
+                "arg_number": "189",
+                "category": "ECMD",
+                "description": "RIO ECM Display Mode"
+            },
+            "RIO_ECM_OVERRIDE": {
+                "type": "3PosTumb",
+                "msg": "RIO_ECM_OVERRIDE",
+                "device_id": "45",
+                "command": "3248",
+                "arg_number": "156",
+                "category": "ECMD",
+                "description": "RIO ECM Display Override"
+            },
+            "RIO_ECM_CORR": {
+                "type": "3PosTumb",
+                "msg": "RIO_ECM_CORR",
+                "device_id": "45",
+                "command": "3249",
+                "arg_number": "168",
+                "category": "ECMD",
+                "description": "RIO ECM Display Corr"
+            },
+            "RIO_ECM_ADF": {
+                "type": "3PosTumb",
+                "msg": "RIO_ECM_ADF",
+                "device_id": "45",
+                "command": "3250",
+                "arg_number": "190",
+                "category": "ECMD",
+                "description": "RIO ECM Display Data/ADF"
+            }
+        },
+        "Volume Panel": {
+            "PLT_TACAN_CMD_BUTTON": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_TACAN_CMD_BUTTON",
+                "device_id": "47",
+                "command": "3324",
+                "arg_number": "292",
+                "category": "Volume Panel",
+                "description": "PILOT TACAN CMD Button"
+            },
+            "PLT_ALR67_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_ALR67_VOL",
+                "device_id": "2",
+                "command": "3395",
+                "arg_number": "2040",
+                "limits": "{ 0, 1 }",
+                "category": "Volume Panel",
+                "description": "PILOT ALR-67 Volume"
+            },
+            "PLT_AIM9_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_AIM9_VOL",
+                "device_id": "2",
+                "command": "3397",
+                "arg_number": "2039",
+                "limits": "{ 0, 1 }",
+                "category": "Volume Panel",
+                "description": "PILOT Sidewinder Volume"
+            },
+            "PLT_VUHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_VUHF_VOL",
+                "device_id": "4",
+                "command": "3403",
+                "arg_number": "2038",
+                "limits": "{ 0, 1 }",
+                "category": "Volume Panel",
+                "description": "PILOT VUHF ARC-182 Volume"
+            }
+        },
+        "TACAN RIO": {
+            "RIO_TACAN_CMD_BUTTON": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_TACAN_CMD_BUTTON",
+                "device_id": "47",
+                "command": "3325",
+                "arg_number": "135",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN CMD Button"
+            },
+            "RIO_TACAN_MODE": {
+                "type": "Tumb",
+                "msg": "RIO_TACAN_MODE",
+                "device_id": "47",
+                "command": "3338",
+                "arg_number": "374",
+                "step": "0.25",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Mode"
+            },
+            "RIO_TACAN_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "RIO_TACAN_VOLUME",
+                "device_id": "47",
+                "command": "3340",
+                "arg_number": "375",
+                "limits": "{ 0, 1 }",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Volume"
+            },
+            "RIO_TACAN_MODE_NORMAL_INV": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_TACAN_MODE_NORMAL_INV",
+                "device_id": "47",
+                "command": "3347",
+                "arg_number": "373",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Mode Normal/Inverse"
+            },
+            "RIO_TACAN_CHANNEL": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_TACAN_CHANNEL",
+                "device_id": "47",
+                "command": "3348",
+                "arg_number": "372",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Channel XY"
+            },
+            "RIO_TACAN_BIT": {
+                "type": "PushButton",
+                "msg": "RIO_TACAN_BIT",
+                "device_id": "47",
+                "command": "3346",
+                "arg_number": "371",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Bit"
+            },
+            "RIO_TACAN_DIAL_TENS": {
+                "type": "Tumb",
+                "msg": "RIO_TACAN_DIAL_TENS",
+                "device_id": "47",
+                "command": "3342",
+                "arg_number": "8891",
+                "step": "0.0833",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Channel Wheel (Tens)"
+            },
+            "RIO_TACAN_DIAL_ONES": {
+                "type": "Tumb",
+                "msg": "RIO_TACAN_DIAL_ONES",
+                "device_id": "47",
+                "command": "3344",
+                "arg_number": "8890",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TACAN RIO",
+                "description": "RIO TACAN Channel Lever (Ones)"
+            }
+        },
+        "TACAN PILOT": {
+            "PLT_TACAN_MODE": {
+                "type": "Tumb",
+                "msg": "PLT_TACAN_MODE",
+                "device_id": "47",
+                "command": "3326",
+                "arg_number": "2041",
+                "step": "0.25",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Mode"
+            },
+            "PLT_TACAN_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "PLT_TACAN_VOLUME",
+                "device_id": "47",
+                "command": "3328",
+                "arg_number": "2036",
+                "limits": "{ 0, 1 }",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Volume"
+            },
+            "PLT_TACAN_MODE_NORMAL_INV": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_TACAN_MODE_NORMAL_INV",
+                "device_id": "47",
+                "command": "3335",
+                "arg_number": "2042",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "rel_args": "{ -1, 1 }",
+                "output_map": "nil",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Mode Normal/Inverse"
+            },
+            "PLT_TACAN_CHANNEL": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_TACAN_CHANNEL",
+                "device_id": "47",
+                "command": "3336",
+                "arg_number": "2043",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "rel_args": "{ -1, 1 }",
+                "output_map": "nil",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Channel XY"
+            },
+            "PLT_TACAN_BIT": {
+                "type": "PushButton",
+                "msg": "PLT_TACAN_BIT",
+                "device_id": "47",
+                "command": "3334",
+                "arg_number": "2115",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Bit"
+            },
+            "PLT_TACAN_DIAL_TENS": {
+                "type": "Tumb",
+                "msg": "PLT_TACAN_DIAL_TENS",
+                "device_id": "47",
+                "command": "3330",
+                "arg_number": "8888",
+                "step": "0.0833",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Channel Wheel (Tens)"
+            },
+            "PLT_TACAN_DIAL_ONES": {
+                "type": "Tumb",
+                "msg": "PLT_TACAN_DIAL_ONES",
+                "device_id": "47",
+                "command": "3332",
+                "arg_number": "8889",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TACAN PILOT",
+                "description": "PILOT TACAN Channel Lever (Ones)"
+            }
+        },
+        "ANARA63 Panel": {
+            "PLT_ARA63_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ARA63_PW",
+                "device_id": "48",
+                "command": "3319",
+                "arg_number": "910",
+                "category": "ANARA63 Panel",
+                "description": "PILOT AN/ARA-63 Power"
+            },
+            "PLT_ARA63_BIT": {
+                "type": "PushButton",
+                "msg": "PLT_ARA63_BIT",
+                "device_id": "48",
+                "command": "3321",
+                "arg_number": "911",
+                "category": "ANARA63 Panel",
+                "description": "PILOT AN/ARA-63 BIT Button"
+            },
+            "PLT_ARA63_CHAN": {
+                "type": "Tumb",
+                "msg": "PLT_ARA63_CHAN",
+                "device_id": "48",
+                "command": "3322",
+                "arg_number": "912",
+                "step": "0.0526",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "ANARA63 Panel",
+                "description": "PILOT AN/ARA-63 Channel Knob"
+            }
+        },
+        "ICS": {
+            "PLT_ICS_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_ICS_VOL",
+                "device_id": "2",
+                "command": "3380",
+                "arg_number": "2048",
+                "limits": "{ 0, 1 }",
+                "category": "ICS",
+                "description": "PILOT ICS Volume"
+            },
+            "PLT_ICS_AMP_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ICS_AMP_SEL",
+                "device_id": "2",
+                "device_command": "3382",
+                "arg_number": "2045",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ICS",
+                "description": "PILOT ICS Amplifier Selector"
+            },
+            "PLT_ICS_FUNC_SEL": {
+                "type": "3PosTumb",
+                "msg": "PLT_ICS_FUNC_SEL",
+                "device_id": "2",
+                "command": "3383",
+                "arg_number": "2044",
+                "category": "ICS",
+                "description": "PILOT ICS Function Selector"
+            },
+            "RIO_ICS_VOL": {
+                "type": "Potentiometer",
+                "msg": "RIO_ICS_VOL",
+                "device_id": "2",
+                "command": "3387",
+                "arg_number": "400",
+                "limits": "{ 0, 1 }",
+                "category": "ICS",
+                "description": "RIO ICS Volume"
+            },
+            "RIO_ICS_AMP_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_ICS_AMP_SEL",
+                "device_id": "2",
+                "device_command": "3389",
+                "arg_number": "401",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ICS",
+                "description": "RIO ICS Amplifier Selector"
+            },
+            "RIO_ICS_FUNC_SEL": {
+                "type": "3PosTumb",
+                "msg": "RIO_ICS_FUNC_SEL",
+                "device_id": "2",
+                "command": "3390",
+                "arg_number": "402",
+                "category": "ICS",
+                "description": "RIO ICS Function Selector"
+            },
+            "RIO_ICS_XMTR_SEL": {
+                "type": "3PosTumb",
+                "msg": "RIO_ICS_XMTR_SEL",
+                "device_id": "2",
+                "command": "3399",
+                "arg_number": "381",
+                "category": "ICS",
+                "description": "RIO XMTR SEL Switch"
+            },
+            "RIO_ICS_UHF_LWR": {
+                "type": "3PosTumb",
+                "msg": "RIO_ICS_UHF_LWR",
+                "device_id": "2",
+                "command": "3598",
+                "arg_number": "380",
+                "category": "ICS",
+                "description": "RIO V/UHF 2 ANT Switch"
+            },
+            "RIO_ICS_KY_MODE": {
+                "type": "3PosTumb",
+                "msg": "RIO_ICS_KY_MODE",
+                "device_id": "2",
+                "command": "3597",
+                "arg_number": "382",
+                "category": "ICS",
+                "description": "RIO KY MODE Switch"
+            }
+        },
+        "UHF 1": {
+            "PLT_UHF1_FREQ_MODE": {
+                "type": "Tumb",
+                "msg": "PLT_UHF1_FREQ_MODE",
+                "device_id": "3",
+                "command": "3375",
+                "arg_number": "2033",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Freq Mode GUARD/MANUAL/PRESET"
+            },
+            "PLT_UHF1_FUNCTION": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_UHF1_FUNCTION",
+                "device_id": "3",
+                "device_command": "3371",
+                "arg_number": "2034",
+                "num_positions": "4",
+                "increment": "0.333333",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Function ADF/BOTH/MAIN/OFF"
+            },
+            "PLT_UHF1_PRESETS": {
+                "type": "Tumb",
+                "msg": "PLT_UHF1_PRESETS",
+                "device_id": "3",
+                "command": "3373",
+                "arg_number": "2032",
+                "step": "0.0833333333",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Preset Channel Selector"
+            },
+            "PLT_UHF1_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_UHF1_SQUELCH",
+                "device_id": "3",
+                "command": "3365",
+                "arg_number": "2035",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Squelch Switch"
+            },
+            "PLT_UHF1_110_DIAL": {
+                "type": "3PosTumb",
+                "msg": "PLT_UHF1_110_DIAL",
+                "device_id": "3",
+                "command": "3367",
+                "arg_number": "2030",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 100MHz & 10MHz Dial"
+            },
+            "PLT_UHF1_1_DIAL": {
+                "type": "3PosTumb",
+                "msg": "PLT_UHF1_1_DIAL",
+                "device_id": "3",
+                "command": "3368",
+                "arg_number": "2029",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 1MHz Dial"
+            },
+            "PLT_UHF1_01_DIAL": {
+                "type": "3PosTumb",
+                "msg": "PLT_UHF1_01_DIAL",
+                "device_id": "3",
+                "command": "3369",
+                "arg_number": "2028",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 0.1MHz Dial"
+            },
+            "PLT_UHF1_025_DIAL": {
+                "type": "3PosTumb",
+                "msg": "PLT_UHF1_025_DIAL",
+                "device_id": "3",
+                "command": "3370",
+                "arg_number": "2026",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 0.025MHz Dial"
+            },
+            "PLT_UHF1_SHOW_PRESET_FREQ": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_UHF1_SHOW_PRESET_FREQ",
+                "device_id": "3",
+                "command": "3377",
+                "arg_number": "8115",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Show Preset Frequency"
+            },
+            "PLT_UHF1_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_UHF1_VOL",
+                "device_id": "3",
+                "command": "3359",
+                "arg_number": "2031",
+                "limits": "{ 0, 1 }",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Volume"
+            },
+            "RIO_UHF1_VOL": {
+                "type": "Potentiometer",
+                "msg": "RIO_UHF1_VOL",
+                "device_id": "3",
+                "command": "3361",
+                "arg_number": "383",
+                "limits": "{ 0, 1 }",
+                "category": "UHF 1",
+                "description": "RIO UHF ARC-159 Volume"
+            },
+            "PLT_UHF1_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "PLT_UHF1_BRIGHTNESS",
+                "device_id": "3",
+                "command": "3363",
+                "arg_number": "2027",
+                "limits": "{ 0, 1 }",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Display Brightness"
+            },
+            "PLT_UHF1_LOAD": {
+                "type": "PushButton",
+                "msg": "PLT_UHF1_LOAD",
+                "device_id": "3",
+                "command": "3378",
+                "arg_number": "16009",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Load"
+            },
+            "PLT_UHF1_TONE": {
+                "type": "PushButton",
+                "msg": "PLT_UHF1_TONE",
+                "device_id": "3",
+                "command": "3379",
+                "arg_number": "16010",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Tone"
+            },
+            "PLT_UHF_REMOTE_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "PLT_UHF_REMOTE_BRIGHTNESS",
+                "device_id": "3",
+                "command": "3350",
+                "arg_number": "1031",
+                "limits": "{ 0, 1 }",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Remote Display Brightness"
+            },
+            "RIO_UHF_REMOTE_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "RIO_UHF_REMOTE_BRIGHTNESS",
+                "device_id": "3",
+                "command": "3353",
+                "arg_number": "406",
+                "limits": "{ 0, 1 }",
+                "category": "UHF 1",
+                "description": "RIO UHF ARC-159 Remote Display Brightness"
+            },
+            "PLT_UHF_DISPLAY_TEST": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_UHF_DISPLAY_TEST",
+                "device_id": "2",
+                "command": "3352",
+                "arg_number": "15004",
+                "category": "UHF 1",
+                "description": "PILOT UHF ARC-159 Radio Remote Display Test"
+            },
+            "RIO_UHF_DISPLAY_TEST": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_UHF_DISPLAY_TEST",
+                "device_id": "3",
+                "command": "3355",
+                "arg_number": "405",
+                "category": "UHF 1",
+                "description": "RIO UHF ARC-159 Radio Remote Display Test"
+            }
+        },
+        "VUHF": {
+            "RIO_VUHF_FREQ_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_VUHF_FREQ_MODE",
+                "device_id": "4",
+                "device_command": "3417",
+                "arg_number": "353",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "VUHF",
+                "description": "RIO VHF/UHF ARC-182 Frequency Mode 243 MAN G PRESET READ LOAD"
+            },
+            "RIO_VUHF_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_VUHF_MODE",
+                "device_id": "4",
+                "device_command": "3413",
+                "arg_number": "358",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "VUHF",
+                "description": "RIO VHF/UHF ARC-182 MODE OFF T/R T/R&G DF TEST"
+            },
+            "RIO_VUHF_PRESETS": {
+                "type": "Tumb",
+                "msg": "RIO_VUHF_PRESETS",
+                "device_id": "4",
+                "command": "3415",
+                "arg_number": "352",
+                "step": "0.0833333333",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "VUHF",
+                "description": "RIO VHF/UHF ARC-182 Preset Channel Selector"
+            },
+            "RIO_VUHF_FM_AM": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_VUHF_FM_AM",
+                "device_id": "4",
+                "command": "3419",
+                "arg_number": "359",
+                "category": "VUHF",
+                "description": "RIO VHF/UHF ARC-182 FM/AM Switch"
+            },
+            "RIO_VUHF_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_VUHF_SQUELCH",
+                "device_id": "4",
+                "command": "3407",
+                "arg_number": "351",
+                "category": "VUHF",
+                "description": "RIO VHF/UHF ARC-182 Squelch Switch"
+            },
+            "RIO_VUHF_110_DIAL": {
+                "type": "3PosTumb",
+                "msg": "RIO_VUHF_110_DIAL",
+                "device_id": "4",
+                "command": "3409",
+                "arg_number": "354",
+                "category": "VUHF",
+                "description": "RIO VUHF ARC-182 100MHz & 10MHz Dial"
+            },
+            "RIO_VUHF_1_DIAL": {
+                "type": "3PosTumb",
+                "msg": "RIO_VUHF_1_DIAL",
+                "device_id": "4",
+                "command": "3410",
+                "arg_number": "355",
+                "category": "VUHF",
+                "description": "RIO VUHF ARC-182 1MHz Dial"
+            },
+            "RIO_VUHF_01_DIAL": {
+                "type": "3PosTumb",
+                "msg": "RIO_VUHF_01_DIAL",
+                "device_id": "4",
+                "command": "3411",
+                "arg_number": "356",
+                "category": "VUHF",
+                "description": "RIO VUHF ARC-182 0.1MHz Dial"
+            },
+            "RIO_VUHF_025_DIAL": {
+                "type": "3PosTumb",
+                "msg": "RIO_VUHF_025_DIAL",
+                "device_id": "4",
+                "command": "3412",
+                "arg_number": "357",
+                "category": "VUHF",
+                "description": "RIO VUHF ARC-182 0.025MHz Dial"
+            },
+            "RIO_VUHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "RIO_VUHF_VOL",
+                "device_id": "4",
+                "command": "3401",
+                "arg_number": "350",
+                "limits": "{ 0, 1 }",
+                "category": "VUHF",
+                "description": "RIO VUHF ARC-182 Volume"
+            },
+            "RIO_VUHF_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "RIO_VUHF_BRIGHTNESS",
+                "device_id": "4",
+                "command": "3405",
+                "arg_number": "360",
+                "limits": "{ 0, 1 }",
+                "category": "VUHF",
+                "description": "RIO VUHF ARC-182 Display Brightness"
+            },
+            "PLT_VUHF_REMOTE_BRIGHTNESS": {
+                "type": "Potentiometer",
+                "msg": "PLT_VUHF_REMOTE_BRIGHTNESS",
+                "device_id": "4",
+                "command": "3356",
+                "arg_number": "1030",
+                "limits": "{ 0, 1 }",
+                "category": "VUHF",
+                "description": "PILOT VHF/UHF Radio Remote Display Brightness"
+            },
+            "PLT_VUHF_DISPLAY_TEST": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_VUHF_DISPLAY_TEST",
+                "device_id": "3",
+                "command": "3355",
+                "arg_number": "15003",
+                "category": "VUHF",
+                "description": "PILOT VHF/UHF ARC-182 Radio Remote Display Test"
+            }
+        },
+        "KY-28": {
+            "RIO_KY28_POWER": {
+                "type": "Tumb",
+                "msg": "RIO_KY28_POWER",
+                "device_id": "2",
+                "command": "3423",
+                "arg_number": "116",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "KY-28",
+                "description": "RIO KY-28 Power Mode"
+            },
+            "RIO_KY28_RADIO_SELECTOR": {
+                "type": "Tumb",
+                "msg": "RIO_KY28_RADIO_SELECTOR",
+                "device_id": "2",
+                "command": "3425",
+                "arg_number": "115",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "KY-28",
+                "description": "RIO KY-28 Radio Selector"
+            },
+            "RIO_KY28_FLIPCOVER": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_KY28_FLIPCOVER",
+                "device_id": "2",
+                "command": "3608",
+                "arg_number": "150",
+                "category": "KY-28",
+                "description": "RIO KY-28 ZEROIZE Cover"
+            },
+            "RIO_KY28_ZEROIZE": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_KY28_ZEROIZE",
+                "device_id": "2",
+                "command": "3427",
+                "arg_number": "361",
+                "category": "KY-28",
+                "description": "RIO KY-28 ZEROIZE"
+            }
+        },
+        "DECM Panel": {
+            "RIO_DECM_PW_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_DECM_PW_MODE",
+                "device_id": "53",
+                "device_command": "3252",
+                "arg_number": "151",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "DECM Panel",
+                "description": "RIO DECM ALQ-100 Power/Mode"
+            },
+            "RIO_DECM_VOL": {
+                "type": "Potentiometer",
+                "msg": "RIO_DECM_VOL",
+                "device_id": "53",
+                "command": "3253",
+                "arg_number": "9950",
+                "limits": "{ 0, 1 }",
+                "category": "DECM Panel",
+                "description": "RIO DECM ALQ-100 Volume"
+            },
+            "RIO_RWR_DIS_TYP": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_RWR_DIS_TYP",
+                "device_id": "54",
+                "device_command": "3257",
+                "arg_number": "2136",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "DECM Panel",
+                "description": "RIO AN/ALR-67 Display Type"
+            },
+            "RIO_RWR_MODE": {
+                "type": "3PosTumb",
+                "msg": "RIO_RWR_MODE",
+                "device_id": "54",
+                "command": "3256",
+                "arg_number": "2137",
+                "category": "DECM Panel",
+                "description": "RIO AN/ALR-67 Mode"
+            },
+            "RIO_RWR_TEST": {
+                "type": "3PosTumb",
+                "msg": "RIO_RWR_TEST",
+                "device_id": "54",
+                "command": "3261",
+                "arg_number": "2140",
+                "category": "DECM Panel",
+                "description": "RIO AN/ALR-67 Mode"
+            },
+            "RIO_RWR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_RWR_PW",
+                "device_id": "54",
+                "command": "3259",
+                "arg_number": "2139",
+                "category": "DECM Panel",
+                "description": "RIO AN/ALR-67 Power"
+            },
+            "RIO_RWR_VOL": {
+                "type": "Potentiometer",
+                "msg": "RIO_RWR_VOL",
+                "device_id": "54",
+                "command": "3254",
+                "arg_number": "2138",
+                "limits": "{ 0, 1 }",
+                "category": "DECM Panel",
+                "description": "RIO AN/ALR-67 Volume"
+            }
+        },
+        "RWR Control Panel": {
+            "PLT_RWR_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "PLT_RWR_BRIGHT",
+                "device_id": "54",
+                "command": "3262",
+                "arg_number": "16011",
+                "limits": "{ 0, 1 }",
+                "category": "RWR Control Panel",
+                "description": "PILOT AN/ALR-67 Display Brightness"
+            },
+            "RIO_RWR_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RIO_RWR_BRIGHT",
+                "device_id": "54",
+                "command": "3263",
+                "arg_number": "376",
+                "limits": "{ 0, 1 }",
+                "category": "RWR Control Panel",
+                "description": "RIO AN/ALR-67 Display Brightness"
+            }
+        },
+        "CMDS": {
+            "RIO_CMDS_PW": {
+                "type": "3PosTumb",
+                "msg": "RIO_CMDS_PW",
+                "device_id": "5",
+                "command": "3267",
+                "arg_number": "390",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Power/Mode"
+            },
+            "RIO_CMDS_DISP_CHAFF": {
+                "type": "3PosTumb",
+                "msg": "RIO_CMDS_DISP_CHAFF",
+                "device_id": "5",
+                "command": "3269",
+                "arg_number": "389",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Chaff Dispense"
+            },
+            "RIO_CMDS_DISP_FLAR": {
+                "type": "3PosTumb",
+                "msg": "RIO_CMDS_DISP_FLAR",
+                "device_id": "5",
+                "command": "3270",
+                "arg_number": "388",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Flare Dispense"
+            },
+            "RIO_CMDS_DISP_JAMMER": {
+                "type": "3PosTumb",
+                "msg": "RIO_CMDS_DISP_JAMMER",
+                "device_id": "5",
+                "command": "3271",
+                "arg_number": "387",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Jammer Dispense"
+            },
+            "RIO_CMDS_FLAREMODE": {
+                "type": "3PosTumb",
+                "msg": "RIO_CMDS_FLAREMODE",
+                "device_id": "5",
+                "command": "3272",
+                "arg_number": "398",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Flare Mode"
+            },
+            "RIO_CMDS_FLARE_SALVO": {
+                "type": "PushButton",
+                "msg": "RIO_CMDS_FLARE_SALVO",
+                "device_id": "5",
+                "command": "3272",
+                "arg_number": "391",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Flare Salvo"
+            },
+            "RIO_CMDS_COUNT_CHAFF": {
+                "type": "Potentiometer",
+                "msg": "RIO_CMDS_COUNT_CHAFF",
+                "device_id": "5",
+                "command": "3275",
+                "arg_number": "386",
+                "limits": "{ 0, 1 }",
+                "category": "CMDS",
+                "description": "AN/ALE-37 Chaff Counter"
+            },
+            "RIO_CMDS_COUNT_FLARE": {
+                "type": "Potentiometer",
+                "msg": "RIO_CMDS_COUNT_FLARE",
+                "device_id": "5",
+                "command": "3277",
+                "arg_number": "385",
+                "limits": "{ 0, 1 }",
+                "category": "CMDS",
+                "description": "AN/ALE-37 Flare Counter"
+            },
+            "RIO_CMDS_COUNT_JAMMER": {
+                "type": "Potentiometer",
+                "msg": "RIO_CMDS_COUNT_JAMMER",
+                "device_id": "5",
+                "command": "3279",
+                "arg_number": "399",
+                "limits": "{ 0, 1 }",
+                "category": "CMDS",
+                "description": "AN/ALE-37 Jammer Counter"
+            },
+            "RIO_CMDS_PROG_RESET": {
+                "type": "PushButton",
+                "msg": "RIO_CMDS_PROG_RESET",
+                "device_id": "5",
+                "command": "3297",
+                "arg_number": "216",
+                "category": "CMDS",
+                "description": "RIO AN/ALE-37 Programmer Reset"
+            }
+        },
+        "CMDS Program": {
+            "RIO_CMDS_LOAD_TYP_L10": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_LOAD_TYP_L10",
+                "device_id": "5",
+                "command": "3281",
+                "arg_number": "206",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO AN/ALE-37 L10 Load Type"
+            },
+            "RIO_CMDS_LOAD_TYP_L20": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_LOAD_TYP_L20",
+                "device_id": "5",
+                "command": "3283",
+                "arg_number": "207",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO AN/ALE-37 L20 Load Type"
+            },
+            "RIO_CMDS_LOAD_TYP_R10": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_LOAD_TYP_R10",
+                "device_id": "5",
+                "command": "3285",
+                "arg_number": "209",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO AN/ALE-37 R10 Load Type"
+            },
+            "RIO_CMDS_LOAD_TYP_R20": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_LOAD_TYP_R20",
+                "device_id": "5",
+                "command": "3287",
+                "arg_number": "208",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO AN/ALE-37 R20 Load Type"
+            },
+            "RIO_CMDS_CHAFF_BURST_QUAN": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_CHAFF_BURST_QUAN",
+                "device_id": "5",
+                "command": "3298",
+                "arg_number": "214",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Chaff Burst Quantity"
+            },
+            "RIO_CMDS_CHAFF_BURST_INTER": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_CHAFF_BURST_INTER",
+                "device_id": "5",
+                "command": "3300",
+                "arg_number": "215",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Chaff Burst Interval"
+            },
+            "RIO_CMDS_CHAFF_SALVO_QUAN": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_CHAFF_SALVO_QUAN",
+                "device_id": "5",
+                "command": "3302",
+                "arg_number": "203",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Chaff Salvo Quantity"
+            },
+            "RIO_CMDS_CHAFF_SALVO_INTER": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_CHAFF_SALVO_INTER",
+                "device_id": "5",
+                "command": "3304",
+                "arg_number": "202",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Chaff Salvo Interval"
+            },
+            "RIO_CMDS_FLARE_QUAN": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_FLARE_QUAN",
+                "device_id": "5",
+                "command": "3306",
+                "arg_number": "205",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Flare Quantity"
+            },
+            "RIO_CMDS_FLARE_INTER": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_FLARE_INTER",
+                "device_id": "5",
+                "command": "3308",
+                "arg_number": "210",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Flare Interval"
+            },
+            "RIO_CMDS_JAMM_QUAN": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_JAMM_QUAN",
+                "device_id": "5",
+                "command": "3295",
+                "arg_number": "204",
+                "step": "0.333",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO AN/ALE-37 Jammer Quantity"
+            },
+            "RIO_CMDS_JAMM_INTER_UNIT": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_JAMM_INTER_UNIT",
+                "device_id": "5",
+                "command": "3289",
+                "arg_number": "211",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Jammer Interval Units"
+            },
+            "RIO_CMDS_JAMM_INTER_10": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_JAMM_INTER_10",
+                "device_id": "5",
+                "command": "3291",
+                "arg_number": "212",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Jammer Interval Tens"
+            },
+            "RIO_CMDS_JAMM_INTER_100": {
+                "type": "Tumb",
+                "msg": "RIO_CMDS_JAMM_INTER_100",
+                "device_id": "5",
+                "command": "3293",
+                "arg_number": "213",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "CMDS Program",
+                "description": "RIO Jammer Interval Hundreds"
+            }
+        },
+        "INS": {
+            "RIO_TID_MODE_NAV": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_TID_MODE_NAV",
+                "device_id": "50",
+                "device_command": "3106",
+                "arg_number": "50",
+                "num_positions": "7",
+                "increment": "0.1666667",
+                "category": "INS",
+                "description": "RIO TID Navigation Mode"
+            },
+            "RIO_TID_MODE_DEST": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_TID_MODE_DEST",
+                "device_id": "46",
+                "device_command": "3109",
+                "arg_number": "51",
+                "num_positions": "8",
+                "increment": "0.142857",
+                "category": "INS",
+                "description": "RIO TID Destination Mode"
+            }
+        },
+        "AHRS": {
+            "PLT_AHRS_HDG_KNOB": {
+                "type": "Potentiometer",
+                "msg": "PLT_AHRS_HDG_KNOB",
+                "device_id": "51",
+                "command": "3433",
+                "arg_number": "904",
+                "limits": "{ -1, 1 }",
+                "category": "AHRS",
+                "description": "PILOT Compass HDG Slave Knob"
+            },
+            "PLT_AHRS_HDG_PUSH": {
+                "type": "PushButton",
+                "msg": "PLT_AHRS_HDG_PUSH",
+                "device_id": "51",
+                "command": "3432",
+                "arg_number": "16014",
+                "category": "AHRS",
+                "description": "PILOT Compass HDG Slave Push"
+            },
+            "PLT_AHRS_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_AHRS_MODE",
+                "device_id": "51",
+                "command": "3434",
+                "arg_number": "905",
+                "category": "AHRS",
+                "description": "PILOT Compass Mode"
+            },
+            "PLT_AHRS_HEMISPHERE": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_AHRS_HEMISPHERE",
+                "device_id": "51",
+                "command": "3436",
+                "arg_number": "906",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "rel_args": "{ -1, 1 }",
+                "output_map": "nil",
+                "category": "AHRS",
+                "description": "PILOT Compass N-S Hemisphere"
+            },
+            "PLT_AHRS_LAT": {
+                "type": "Potentiometer",
+                "msg": "PLT_AHRS_LAT",
+                "device_id": "51",
+                "command": "3438",
+                "arg_number": "909",
+                "limits": "{ 0, 1 }",
+                "category": "AHRS",
+                "description": "PILOT Compass LAT Correction"
+            }
+        },
+        "Spoiler": {
+            "PLT_SPOIL_OVER_COVER_INBOARD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPOIL_OVER_COVER_INBOARD",
+                "device_id": "15",
+                "command": "3428",
+                "arg_number": "902",
+                "category": "Spoiler",
+                "description": "PILOT Inboard Spoiler Override Cover"
+            },
+            "PLT_SPOIL_OVER_COVER_OUTBOARD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPOIL_OVER_COVER_OUTBOARD",
+                "device_id": "15",
+                "command": "3429",
+                "arg_number": "903",
+                "category": "Spoiler",
+                "description": "PILOT Outboard Spoiler Override Cover"
+            },
+            "PLT_SPOIL_OVER_INBOARD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPOIL_OVER_INBOARD",
+                "device_id": "15",
+                "command": "3430",
+                "arg_number": "908",
+                "category": "Spoiler",
+                "description": "PILOT Inboard Spoiler Override"
+            },
+            "PLT_SPOIL_OVER_OUTBOARD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPOIL_OVER_OUTBOARD",
+                "device_id": "15",
+                "command": "3431",
+                "arg_number": "907",
+                "category": "Spoiler",
+                "description": "PILOT Outboard Spoiler Override"
+            }
+        },
+        "Gun": {
+            "PLT_GUN_ELEV_ADJUST": {
+                "type": "Rotary",
+                "msg": "PLT_GUN_ELEV_ADJUST",
+                "device_id": "55",
+                "command": "3131",
+                "arg_number": "1000",
+                "category": "Gun",
+                "description": "PILOT Gun Elevation Lead Adjustment"
+            },
+            "PLT_GUN_AMMU_COUNT_ADJUST": {
+                "type": "Rotary",
+                "msg": "PLT_GUN_AMMU_COUNT_ADJUST",
+                "device_id": "55",
+                "command": "3132",
+                "arg_number": "1022",
+                "category": "Gun",
+                "description": "PILOT Gun Ammunition Counter Adjustment"
+            }
+        },
+        "Standby ADI": {
+            "PLT_STDBYAI_UNCAGE": {
+                "type": "PushButton",
+                "msg": "PLT_STDBYAI_UNCAGE",
+                "device_id": "31",
+                "command": "3545",
+                "arg_number": "1032",
+                "category": "Standby ADI",
+                "description": "PILOT Standby ADI Push to uncage"
+            },
+            "PLT_STDBYAI_TRIM": {
+                "type": "Rotary",
+                "msg": "PLT_STDBYAI_TRIM",
+                "device_id": "31",
+                "command": "3546",
+                "arg_number": "1042",
+                "category": "Standby ADI",
+                "description": "PILOT Standby ADI Knob"
+            },
+            "RIO_STDBYAI_UNCAGE": {
+                "type": "PushButton",
+                "msg": "RIO_STDBYAI_UNCAGE",
+                "device_id": "31",
+                "command": "3547",
+                "arg_number": "6155",
+                "category": "Standby ADI",
+                "description": "RIO Standby ADI Push to uncage"
+            },
+            "RIO_STDBYAI_TRIM": {
+                "type": "Rotary",
+                "msg": "RIO_STDBYAI_TRIM",
+                "device_id": "31",
+                "command": "3548",
+                "arg_number": "6156",
+                "category": "Standby ADI",
+                "description": "RIO Standby ADI Knob"
+            }
+        },
+        "HUD": {
+            "PLT_HUD_FILTER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HUD_FILTER",
+                "device_id": "40",
+                "command": "3228",
+                "arg_number": "1033",
+                "category": "HUD",
+                "description": "PILOT HUD Filter"
+            },
+            "PLT_HUD_TRIM": {
+                "type": "Potentiometer",
+                "msg": "PLT_HUD_TRIM",
+                "device_id": "40",
+                "command": "3229",
+                "arg_number": "1034",
+                "limits": "{ 0, 1 }",
+                "category": "HUD",
+                "description": "PILOT HUD TRIM"
+            },
+            "PLT_VSDI_TRIM": {
+                "type": "Potentiometer",
+                "msg": "PLT_VSDI_TRIM",
+                "device_id": "42",
+                "command": "3230",
+                "arg_number": "1035",
+                "limits": "{ 0, 1 }",
+                "category": "HUD",
+                "description": "PILOT VDI Trim"
+            },
+            "PLT_VDI_CONTRAST": {
+                "type": "Potentiometer",
+                "msg": "PLT_VDI_CONTRAST",
+                "device_id": "42",
+                "command": "3231",
+                "arg_number": "1038",
+                "limits": "{ 0, 1 }",
+                "category": "HUD",
+                "description": "PILOT VDI Screen Contrast"
+            },
+            "PLT_VSDI_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "PLT_VSDI_BRIGHT",
+                "device_id": "42",
+                "command": "3232",
+                "arg_number": "1036",
+                "limits": "{ 0, 1 }",
+                "category": "HUD",
+                "description": "PILOT VDI Screen Brightness"
+            },
+            "PLT_HUD_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "PLT_HUD_BRIGHT",
+                "device_id": "40",
+                "command": "3233",
+                "arg_number": "1037",
+                "limits": "{ 0, 1 }",
+                "category": "HUD",
+                "description": "PILOT HUD Brightness"
+            },
+            "PLT_VDI_FILTER": {
+                "type": "PushButton",
+                "msg": "PLT_VDI_FILTER",
+                "device_id": "42",
+                "command": "3234",
+                "arg_number": "0",
+                "category": "HUD",
+                "description": "PILOT VDI Filter"
+            }
+        },
+        "Weapons Panel": {
+            "PLT_MASTER_ARM_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MASTER_ARM_COVER",
+                "device_id": "55",
+                "command": "3135",
+                "arg_number": "1046",
+                "category": "Weapons Panel",
+                "description": "PILOT Master Arm Cover"
+            },
+            "PLT_MASTER_ARM_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_MASTER_ARM_SW",
+                "device_id": "55",
+                "command": "3136",
+                "arg_number": "1047",
+                "category": "Weapons Panel",
+                "description": "PILOT Master Arm Switch"
+            },
+            "PLT_ACM_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ACM_COVER",
+                "device_id": "55",
+                "command": "3133",
+                "arg_number": "1049",
+                "category": "Weapons Panel",
+                "description": "PILOT ACM Cover"
+            },
+            "PLT_ACM_JETT": {
+                "type": "PushButton",
+                "msg": "PLT_ACM_JETT",
+                "device_id": "55",
+                "command": "3138",
+                "arg_number": "1048",
+                "category": "Weapons Panel",
+                "description": "PILOT ACM Jettison"
+            },
+            "PLT_MASTER_CAUTION_RESET": {
+                "type": "PushButton",
+                "msg": "PLT_MASTER_CAUTION_RESET",
+                "device_id": "35",
+                "command": "3056",
+                "arg_number": "9199",
+                "category": "Weapons Panel",
+                "description": "PILOT Master Caution Reset"
+            },
+            "PLT_GUN_RATE": {
+                "type": "PushButton",
+                "msg": "PLT_GUN_RATE",
+                "device_id": "55",
+                "command": "3130",
+                "arg_number": "16000",
+                "category": "Weapons Panel",
+                "description": "PILOT Gun Rate"
+            },
+            "PLT_SIDEWINDER_COOL": {
+                "type": "PushButton",
+                "msg": "PLT_SIDEWINDER_COOL",
+                "device_id": "55",
+                "command": "3139",
+                "arg_number": "16001",
+                "category": "Weapons Panel",
+                "description": "PILOT Sidewinder Cool"
+            },
+            "PLT_MISSLE_PREP": {
+                "type": "PushButton",
+                "msg": "PLT_MISSLE_PREP",
+                "device_id": "55",
+                "command": "3140",
+                "arg_number": "16002",
+                "category": "Weapons Panel",
+                "description": "PILOT Missile Prepare"
+            },
+            "PLT_MISSLE_MODE": {
+                "type": "PushButton",
+                "msg": "PLT_MISSLE_MODE",
+                "device_id": "55",
+                "command": "3141",
+                "arg_number": "16003",
+                "category": "Weapons Panel",
+                "description": "PILOT Missile Mode"
+            },
+            "PLT_EMERG_STORE_JETT": {
+                "type": "PushButton",
+                "msg": "PLT_EMERG_STORE_JETT",
+                "device_id": "55",
+                "command": "3142",
+                "arg_number": "239",
+                "category": "Weapons Panel",
+                "description": "PILOT Emergency Stores Jettison"
+            },
+            "PLT_CLOCK_WIND": {
+                "type": "Rotary",
+                "msg": "PLT_CLOCK_WIND",
+                "device_id": "27",
+                "command": "3042",
+                "arg_number": "1051",
+                "category": "Weapons Panel",
+                "description": "PILOT Clock Wind"
+            },
+            "PLT_CLOCK_TIMER": {
+                "type": "PushButton",
+                "msg": "PLT_CLOCK_TIMER",
+                "device_id": "27",
+                "command": "3043",
+                "arg_number": "1000",
+                "category": "Weapons Panel",
+                "description": "PILOT Clock Timer Start/Stop/Reset"
+            },
+            "RIO_CLOCK_WIND": {
+                "type": "Rotary",
+                "msg": "RIO_CLOCK_WIND",
+                "device_id": "27",
+                "command": "3710",
+                "arg_number": "1052",
+                "category": "Weapons Panel",
+                "description": "RIO Clock Wind"
+            },
+            "RIO_CLOCK_TIMER": {
+                "type": "PushButton",
+                "msg": "RIO_CLOCK_TIMER",
+                "device_id": "27",
+                "command": "3711",
+                "arg_number": "1053",
+                "category": "Weapons Panel",
+                "description": "RIO Clock Timer Start/Stop/Reset"
+            },
+            "RIO_MASTER_CAUTION_RESET": {
+                "type": "PushButton",
+                "msg": "RIO_MASTER_CAUTION_RESET",
+                "device_id": "35",
+                "command": "3057",
+                "arg_number": "9229",
+                "category": "Weapons Panel",
+                "description": "RIO Master Caution Reset"
+            }
+        },
+        "TID": {
+            "RIO_TID_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_TID_MODE",
+                "device_id": "43",
+                "device_command": "3112",
+                "arg_number": "2005",
+                "num_positions": "4",
+                "increment": "0.33333",
+                "category": "TID",
+                "description": "RIO TID Mode"
+            },
+            "RIO_TID_RANGE": {
+                "type": "Tumb",
+                "msg": "RIO_TID_RANGE",
+                "device_id": "43",
+                "command": "3113",
+                "arg_number": "2006",
+                "step": "0.5",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "TID",
+                "description": "RIO TID Range"
+            },
+            "RIO_TID_NON_ATTK": {
+                "type": "PushButton",
+                "msg": "RIO_TID_NON_ATTK",
+                "device_id": "43",
+                "command": "3114",
+                "arg_number": "226",
+                "category": "TID",
+                "description": "RIO TID Non Attack"
+            },
+            "RIO_TID_JAM_STROBE": {
+                "type": "PushButton",
+                "msg": "RIO_TID_JAM_STROBE",
+                "device_id": "43",
+                "command": "3115",
+                "arg_number": "1118",
+                "category": "TID",
+                "description": "RIO TID Jam Strobe"
+            },
+            "RIO_TID_DATA_LINK": {
+                "type": "PushButton",
+                "msg": "RIO_TID_DATA_LINK",
+                "device_id": "43",
+                "command": "3116",
+                "arg_number": "1117",
+                "category": "TID",
+                "description": "RIO TID Data Link"
+            },
+            "RIO_TID_SYM_ELEM": {
+                "type": "PushButton",
+                "msg": "RIO_TID_SYM_ELEM",
+                "device_id": "43",
+                "command": "3117",
+                "arg_number": "1116",
+                "category": "TID",
+                "description": "RIO TID Sym Elem"
+            },
+            "RIO_TID_ALT_NUM": {
+                "type": "PushButton",
+                "msg": "RIO_TID_ALT_NUM",
+                "device_id": "43",
+                "command": "3118",
+                "arg_number": "1115",
+                "category": "TID",
+                "description": "RIO TID Alt Num"
+            },
+            "RIO_TID_RID_DSBL": {
+                "type": "PushButton",
+                "msg": "RIO_TID_RID_DSBL",
+                "device_id": "43",
+                "command": "3119",
+                "arg_number": "2004",
+                "category": "TID",
+                "description": "RIO TID Reject Image Device disable"
+            },
+            "RIO_TID_LAUNCH_ZONE": {
+                "type": "PushButton",
+                "msg": "RIO_TID_LAUNCH_ZONE",
+                "device_id": "43",
+                "command": "3120",
+                "arg_number": "2113",
+                "category": "TID",
+                "description": "RIO TID Launch Zone"
+            },
+            "RIO_TID_VEL_VECTOR": {
+                "type": "PushButton",
+                "msg": "RIO_TID_VEL_VECTOR",
+                "device_id": "43",
+                "command": "3121",
+                "arg_number": "2114",
+                "category": "TID",
+                "description": "RIO TID Velocity Vector"
+            },
+            "RIO_TID_CLSN": {
+                "type": "PushButton",
+                "msg": "RIO_TID_CLSN",
+                "device_id": "43",
+                "command": "3122",
+                "arg_number": "52",
+                "category": "TID",
+                "description": "RIO TID Collision Steering"
+            },
+            "RIO_TID_TRACKHOLD": {
+                "type": "PushButton",
+                "msg": "RIO_TID_TRACKHOLD",
+                "device_id": "43",
+                "command": "3123",
+                "arg_number": "53",
+                "category": "TID",
+                "description": "RIO TID Track Hold"
+            },
+            "RIO_TID_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RIO_TID_BRIGHT",
+                "device_id": "43",
+                "command": "3124",
+                "arg_number": "48",
+                "limits": "{ 0, 1 }",
+                "category": "TID",
+                "description": "RIO TID Brightness"
+            },
+            "RIO_TID_CONTRAST": {
+                "type": "Potentiometer",
+                "msg": "RIO_TID_CONTRAST",
+                "device_id": "43",
+                "command": "3125",
+                "arg_number": "49",
+                "limits": "{ 0, 1 }",
+                "category": "TID",
+                "description": "RIO TID Contrast"
+            }
+        },
+        "HCU": {
+            "RIO_HCU_TCS": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_HCU_TCS",
+                "device_id": "58",
+                "command": "3096",
+                "arg_number": "2007",
+                "category": "HCU",
+                "description": "RIO HCU TCS Mode"
+            },
+            "RIO_HCU_RADAR": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_HCU_RADAR",
+                "device_id": "58",
+                "command": "3097",
+                "arg_number": "2008",
+                "category": "HCU",
+                "description": "RIO HCU Radar Mode"
+            },
+            "RIO_HCU_DDD": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_HCU_DDD",
+                "device_id": "58",
+                "command": "3098",
+                "arg_number": "2009",
+                "category": "HCU",
+                "description": "RIO HCU DDD Mode"
+            },
+            "RIO_HCU_TID": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_HCU_TID",
+                "device_id": "58",
+                "command": "3099",
+                "arg_number": "2010",
+                "category": "HCU",
+                "description": "RIO HCU TID Mode"
+            },
+            "RIO_HCU_TVIR_SW": {
+                "type": "3PosTumb",
+                "msg": "RIO_HCU_TVIR_SW",
+                "device_id": "37",
+                "command": "3100",
+                "arg_number": "2011",
+                "category": "HCU",
+                "description": "RIO HCU TV/IR Switch"
+            },
+            "RIO_HCU_WCS": {
+                "type": "3PosTumb",
+                "msg": "RIO_HCU_WCS",
+                "device_id": "39",
+                "command": "3101",
+                "arg_number": "2012",
+                "category": "HCU",
+                "description": "RIO HCU WCS Switch"
+            },
+            "RIO_HCU_PW_RESET": {
+                "type": "PushButton",
+                "msg": "RIO_HCU_PW_RESET",
+                "device_id": "39",
+                "command": "3644",
+                "arg_number": "2013",
+                "category": "HCU",
+                "description": "RIO HCU Power Reset"
+            },
+            "RIO_HCU_LIGHT_TEST": {
+                "type": "PushButton",
+                "msg": "RIO_HCU_LIGHT_TEST",
+                "device_id": "39",
+                "command": "3645",
+                "arg_number": "2014",
+                "category": "HCU",
+                "description": "RIO HCU Light Test"
+            }
+        },
+        "DDD": {
+            "RIO_RADAR_5": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_5",
+                "device_id": "39",
+                "command": "3450",
+                "arg_number": "40",
+                "category": "DDD",
+                "description": "RIO Radar 5 NM"
+            },
+            "RIO_RADAR_10": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_10",
+                "device_id": "39",
+                "command": "3451",
+                "arg_number": "41",
+                "category": "DDD",
+                "description": "RIO Radar 10 NM"
+            },
+            "RIO_RADAR_20": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_20",
+                "device_id": "39",
+                "command": "3452",
+                "arg_number": "42",
+                "category": "DDD",
+                "description": "RIO Radar 20 NM"
+            },
+            "RIO_RADAR_50": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_50",
+                "device_id": "39",
+                "command": "3453",
+                "arg_number": "43",
+                "category": "DDD",
+                "description": "RIO Radar 50 NM"
+            },
+            "RIO_RADAR_100": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_100",
+                "device_id": "39",
+                "command": "3454",
+                "arg_number": "44",
+                "category": "DDD",
+                "description": "RIO Radar 100 NM"
+            },
+            "RIO_RADAR_200": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_200",
+                "device_id": "39",
+                "command": "3455",
+                "arg_number": "45",
+                "category": "DDD",
+                "description": "RIO Radar 200 NM"
+            },
+            "RIO_RADAR_PULSE": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_PULSE",
+                "device_id": "39",
+                "command": "3457",
+                "arg_number": "10",
+                "category": "DDD",
+                "description": "RIO Radar Pulse Search"
+            },
+            "RIO_RADAR_TWSMAN": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_TWSMAN",
+                "device_id": "39",
+                "command": "3458",
+                "arg_number": "11",
+                "category": "DDD",
+                "description": "RIO Track While Scan Manual"
+            },
+            "RIO_RADAR_TWSAUTO": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_TWSAUTO",
+                "device_id": "39",
+                "command": "3459",
+                "arg_number": "12",
+                "category": "DDD",
+                "description": "RIO Track While Scan Auto"
+            },
+            "RIO_RADAR_RWS": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_RWS",
+                "device_id": "39",
+                "command": "3460",
+                "arg_number": "13",
+                "category": "DDD",
+                "description": "RIO Track While Scan"
+            },
+            "RIO_RADAR_PDSRCH": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_PDSRCH",
+                "device_id": "39",
+                "command": "3461",
+                "arg_number": "14",
+                "category": "DDD",
+                "description": "RIO Radar Pulse Doppler Search"
+            },
+            "RIO_RADAR_PSTT": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_PSTT",
+                "device_id": "39",
+                "command": "3462",
+                "arg_number": "15",
+                "category": "DDD",
+                "description": "RIO Radar Pulse Single Target Track"
+            },
+            "RIO_RADAR_PDSTT": {
+                "type": "PushButton",
+                "msg": "RIO_RADAR_PDSTT",
+                "device_id": "39",
+                "command": "3463",
+                "arg_number": "9916",
+                "category": "DDD",
+                "description": "RIO Radar Pulse Doppler Target Track"
+            },
+            "RIO_DDD_IFF": {
+                "type": "PushButton",
+                "msg": "RIO_DDD_IFF",
+                "device_id": "39",
+                "command": "3464",
+                "arg_number": "17",
+                "category": "DDD",
+                "description": "RIO DDD Interrogate Friend or Foe"
+            },
+            "RIO_DDD_IR": {
+                "type": "PushButton",
+                "msg": "RIO_DDD_IR",
+                "device_id": "39",
+                "command": "3465",
+                "arg_number": "18",
+                "category": "DDD",
+                "description": "RIO DDD Infrared"
+            },
+            "RIO_DDD_RADAR": {
+                "type": "PushButton",
+                "msg": "RIO_DDD_RADAR",
+                "device_id": "39",
+                "command": "3466",
+                "arg_number": "19",
+                "category": "DDD",
+                "description": "RIO DDD Radar"
+            },
+            "RIO_CCM_SPL": {
+                "type": "PushButton",
+                "msg": "RIO_CCM_SPL",
+                "device_id": "39",
+                "command": "3686",
+                "arg_number": "1812",
+                "category": "DDD",
+                "description": "RIO CCM SPL"
+            },
+            "RIO_CCM_ALT_DIFF": {
+                "type": "PushButton",
+                "msg": "RIO_CCM_ALT_DIFF",
+                "device_id": "39",
+                "command": "3687",
+                "arg_number": "1813",
+                "category": "DDD",
+                "description": "RIO CCM ALT DIFF"
+            },
+            "RIO_CCM_VGS": {
+                "type": "PushButton",
+                "msg": "RIO_CCM_VGS",
+                "device_id": "39",
+                "command": "3688",
+                "arg_number": "1814",
+                "category": "DDD",
+                "description": "RIO CCM VGS"
+            },
+            "RIO_RADAR_IR_GAIN": {
+                "type": "Potentiometer",
+                "msg": "RIO_RADAR_IR_GAIN",
+                "device_id": "39",
+                "command": "3473",
+                "arg_number": "20",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO Radar IR Gain"
+            },
+            "RIO_RADAR_IR_VOL": {
+                "type": "Potentiometer",
+                "msg": "RIO_RADAR_IR_VOL",
+                "device_id": "39",
+                "command": "3474",
+                "arg_number": "21",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO Radar IR Volume"
+            },
+            "RIO_RADAR_IR_THERESHOLD": {
+                "type": "Potentiometer",
+                "msg": "RIO_RADAR_IR_THERESHOLD",
+                "device_id": "39",
+                "command": "3475",
+                "arg_number": "22",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO Radar IR Threshold"
+            },
+            "RIO_DDD_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RIO_DDD_BRIGHT",
+                "device_id": "39",
+                "command": "3476",
+                "arg_number": "23",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO DDD Brightness"
+            },
+            "RIO_DDD_PULSE_VID": {
+                "type": "Potentiometer",
+                "msg": "RIO_DDD_PULSE_VID",
+                "device_id": "39",
+                "command": "3477",
+                "arg_number": "24",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO DDD Pulse Video"
+            },
+            "RIO_DDD_ERASE": {
+                "type": "Potentiometer",
+                "msg": "RIO_DDD_ERASE",
+                "device_id": "39",
+                "command": "3478",
+                "arg_number": "25",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO DDD Erase"
+            },
+            "RIO_DDD_PULSE_GAIN": {
+                "type": "Potentiometer",
+                "msg": "RIO_DDD_PULSE_GAIN",
+                "device_id": "39",
+                "command": "3479",
+                "arg_number": "26",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO Pulse Gain"
+            },
+            "RIO_ACM_THERESHOLD": {
+                "type": "Potentiometer",
+                "msg": "RIO_ACM_THERESHOLD",
+                "device_id": "39",
+                "command": "3480",
+                "arg_number": "27",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO ACM Threshold"
+            },
+            "RIO_RADAR_JAMJET": {
+                "type": "Potentiometer",
+                "msg": "RIO_RADAR_JAMJET",
+                "device_id": "39",
+                "command": "3481",
+                "arg_number": "28",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO JAM/JET"
+            },
+            "RIO_PD_THERESHOLD_CLUTTER": {
+                "type": "Potentiometer",
+                "msg": "RIO_PD_THERESHOLD_CLUTTER",
+                "device_id": "39",
+                "command": "3482",
+                "arg_number": "29",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO PD Threshold Clutter"
+            },
+            "RIO_PD_THERESHOLD_CLEAR": {
+                "type": "Potentiometer",
+                "msg": "RIO_PD_THERESHOLD_CLEAR",
+                "device_id": "39",
+                "command": "3483",
+                "arg_number": "30",
+                "limits": "{ 0, 1 }",
+                "category": "DDD",
+                "description": "RIO PD Threshold Clear"
+            },
+            "RIO_DDD_ASPECT": {
+                "type": "3PosTumb",
+                "msg": "RIO_DDD_ASPECT",
+                "device_id": "39",
+                "command": "3467",
+                "arg_number": "34",
+                "category": "DDD",
+                "description": "RIO DDD Aspect"
+            },
+            "RIO_DDD_VC_SCALE": {
+                "type": "3PosTumb",
+                "msg": "RIO_DDD_VC_SCALE",
+                "device_id": "39",
+                "command": "3468",
+                "arg_number": "35",
+                "category": "DDD",
+                "description": "RIO DDD Closing Velocity Scale"
+            },
+            "RIO_DDD_TGTS": {
+                "type": "3PosTumb",
+                "msg": "RIO_DDD_TGTS",
+                "device_id": "39",
+                "command": "3469",
+                "arg_number": "36",
+                "category": "DDD",
+                "description": "RIO DDD Target Size"
+            },
+            "RIO_DDD_MLC": {
+                "type": "3PosTumb",
+                "msg": "RIO_DDD_MLC",
+                "device_id": "39",
+                "command": "3470",
+                "arg_number": "37",
+                "category": "DDD",
+                "description": "RIO DDD Main Lobe Clutter Filter"
+            },
+            "RIO_DDD_AGC": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_DDD_AGC",
+                "device_id": "39",
+                "command": "3471",
+                "arg_number": "38",
+                "category": "DDD",
+                "description": "RIO DDD Automatic Gain Control"
+            },
+            "RIO_DDD_PARA_AMP": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_DDD_PARA_AMP",
+                "device_id": "39",
+                "command": "3472",
+                "arg_number": "3900",
+                "category": "DDD",
+                "description": "RIO DDD Parametric Amplifier"
+            },
+            "RIO_DDD_FILTER": {
+                "type": "PushButton",
+                "msg": "RIO_DDD_FILTER",
+                "device_id": "39",
+                "command": "3456",
+                "arg_number": "0",
+                "category": "DDD",
+                "description": "RIO DDD Filter"
+            }
+        },
+        "Radar": {
+            "RIO_RADAR_ELE_BARS": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_RADAR_ELE_BARS",
+                "device_id": "39",
+                "device_command": "3442",
+                "arg_number": "79",
+                "num_positions": "4",
+                "increment": "0.33333",
+                "category": "Radar",
+                "description": "RIO Radar Elevation Scan"
+            },
+            "RIO_RADAR_AZI_SCAN": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_RADAR_AZI_SCAN",
+                "device_id": "39",
+                "device_command": "3443",
+                "arg_number": "80",
+                "num_positions": "4",
+                "increment": "0.33333",
+                "category": "Radar",
+                "description": "RIO Radar Azimuth Scan"
+            },
+            "RIO_RADAR_ELE_CENTER": {
+                "type": "Potentiometer",
+                "msg": "RIO_RADAR_ELE_CENTER",
+                "device_id": "39",
+                "command": "3446",
+                "arg_number": "81",
+                "limits": "{ -1, 1 }",
+                "category": "Radar",
+                "description": "RIO Radar Elevation Center"
+            },
+            "RIO_RADAR_AZI_CENTER": {
+                "type": "Potentiometer",
+                "msg": "RIO_RADAR_AZI_CENTER",
+                "device_id": "39",
+                "command": "3447",
+                "arg_number": "82",
+                "limits": "{ -1, 1 }",
+                "category": "Radar",
+                "description": "RIO Radar Azimuth Center"
+            },
+            "RIO_RADAR_STABI": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_RADAR_STABI",
+                "device_id": "39",
+                "command": "3449",
+                "arg_number": "83",
+                "category": "Radar",
+                "description": "RIO Radar Stabilize"
+            },
+            "RIO_RADAR_VSL": {
+                "type": "3PosTumb",
+                "msg": "RIO_RADAR_VSL",
+                "device_id": "39",
+                "command": "3448",
+                "arg_number": "84",
+                "category": "Radar",
+                "description": "RIO Radar VSL Switch"
+            },
+            "RIO_RECORD_RESET": {
+                "type": "Potentiometer",
+                "msg": "RIO_RECORD_RESET",
+                "device_id": "38",
+                "command": "3622",
+                "arg_number": "16016",
+                "limits": "{ 0, 1 }",
+                "category": "Radar",
+                "description": "RIO Record Reset"
+            }
+        },
+        "TCS": {
+            "RIO_TCS_ACQ": {
+                "type": "3PosTumb",
+                "msg": "RIO_TCS_ACQ",
+                "device_id": "38",
+                "command": "3495",
+                "arg_number": "87",
+                "category": "TCS",
+                "description": "RIO TCS Acquisition"
+            },
+            "RIO_TCS_FOV": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_TCS_FOV",
+                "device_id": "38",
+                "command": "3494",
+                "arg_number": "88",
+                "category": "TCS",
+                "description": "RIO TCS FOV"
+            },
+            "RIO_TCS_SLAVE": {
+                "type": "3PosTumb",
+                "msg": "RIO_TCS_SLAVE",
+                "device_id": "38",
+                "command": "3496",
+                "arg_number": "89",
+                "category": "TCS",
+                "description": "RIO TCS Slave"
+            },
+            "RIO_RECORD_PW": {
+                "type": "3PosTumb",
+                "msg": "RIO_RECORD_PW",
+                "device_id": "38",
+                "command": "3617",
+                "arg_number": "90",
+                "category": "TCS",
+                "description": "RIO Record Power"
+            },
+            "RIO_RECORD_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_RECORD_MODE",
+                "device_id": "38",
+                "device_command": "3618",
+                "arg_number": "91",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "TCS",
+                "description": "RIO Record Mode"
+            },
+            "RIO_TCS_TRIM_AZI": {
+                "type": "Potentiometer",
+                "msg": "RIO_TCS_TRIM_AZI",
+                "device_id": "38",
+                "command": "3750",
+                "arg_number": "85",
+                "limits": "{ 0, 1 }",
+                "category": "TCS",
+                "description": "RIO TCS Trim Azimuth"
+            },
+            "RIO_TCS_TRIM_ELE": {
+                "type": "Potentiometer",
+                "msg": "RIO_TCS_TRIM_ELE",
+                "device_id": "38",
+                "command": "3751",
+                "arg_number": "86",
+                "limits": "{ 0, 1 }",
+                "category": "TCS",
+                "description": "RIO TCS Trim Elevation"
+            }
+        },
+        "Armament Panel": {
+            "RIO_WEAPON_TYPE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_WEAPON_TYPE",
+                "device_id": "55",
+                "device_command": "3146",
+                "arg_number": "59",
+                "num_positions": "44",
+                "increment": "0.0233",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Type Wheel"
+            },
+            "RIO_WEAPON_INTER_10": {
+                "type": "Tumb",
+                "msg": "RIO_WEAPON_INTER_10",
+                "device_id": "55",
+                "command": "3148",
+                "arg_number": "9960",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Interval x10ms"
+            },
+            "RIO_WEAPON_INTER_100": {
+                "type": "Tumb",
+                "msg": "RIO_WEAPON_INTER_100",
+                "device_id": "55",
+                "command": "3147",
+                "arg_number": "9961",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Interval x100ms"
+            },
+            "RIO_WEAPON_QUANT_10": {
+                "type": "Tumb",
+                "msg": "RIO_WEAPON_QUANT_10",
+                "device_id": "55",
+                "command": "3149",
+                "arg_number": "9962",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Quantity 10s"
+            },
+            "RIO_WEAPON_QUANTR_1": {
+                "type": "Tumb",
+                "msg": "RIO_WEAPON_QUANTR_1",
+                "device_id": "55",
+                "command": "3150",
+                "arg_number": "9963",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Quantity 1s"
+            },
+            "RIO_WEAPON_ATTK_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_WEAPON_ATTK_MODE",
+                "device_id": "55",
+                "device_command": "3151",
+                "arg_number": "2022",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Attack Mode"
+            },
+            "RIO_WEAPON_ELEC_FUSE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_WEAPON_ELEC_FUSE",
+                "device_id": "55",
+                "device_command": "3152",
+                "arg_number": "58",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Elec Fuse"
+            },
+            "RIO_WEAPON_MSL_SPD": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_WEAPON_MSL_SPD",
+                "device_id": "55",
+                "device_command": "3153",
+                "arg_number": "72",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Missile Speed Gate"
+            },
+            "RIO_WEAPON_SEL_JETT": {
+                "type": "3PosTumb",
+                "msg": "RIO_WEAPON_SEL_JETT",
+                "device_id": "55",
+                "command": "3154",
+                "arg_number": "78",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Selective Jettison"
+            },
+            "RIO_WEAPON_SEL_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_SEL_JETT_COVER",
+                "device_id": "55",
+                "command": "3668",
+                "arg_number": "1069",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Selective Jettison Aux Guard"
+            },
+            "RIO_WEAPON_MECH_FUSE": {
+                "type": "3PosTumb",
+                "msg": "RIO_WEAPON_MECH_FUSE",
+                "device_id": "55",
+                "command": "3155",
+                "arg_number": "63",
+                "category": "Armament Panel",
+                "description": "RIO RIO Weapon Mech Fuse"
+            },
+            "RIO_WEAPON_MSL_OPT": {
+                "type": "3PosTumb",
+                "msg": "RIO_WEAPON_MSL_OPT",
+                "device_id": "55",
+                "command": "3156",
+                "arg_number": "75",
+                "category": "Armament Panel",
+                "description": "RIO RIO Weapon Missile Option"
+            },
+            "RIO_WEAPON_BOMB_SINGLE": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_BOMB_SINGLE",
+                "device_id": "55",
+                "command": "3157",
+                "arg_number": "60",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Bomb Single/Pairs"
+            },
+            "RIO_WEAPON_BOMB_STEP": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_BOMB_STEP",
+                "device_id": "55",
+                "command": "3158",
+                "arg_number": "61",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Bomb Step/Ripple"
+            },
+            "RIO_WEAPON_AG_GUN": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_AG_GUN",
+                "device_id": "55",
+                "command": "3159",
+                "arg_number": "62",
+                "category": "Armament Panel",
+                "description": "RIO Weapon A/G Gun Mode"
+            },
+            "RIO_WEAPON_JETT_RACK": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_RACK",
+                "device_id": "55",
+                "command": "3160",
+                "arg_number": "66",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Racks/Weapons"
+            },
+            "RIO_WEAPON_JETT_TANK_L": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_TANK_L",
+                "device_id": "55",
+                "command": "3164",
+                "arg_number": "73",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Left Tank"
+            },
+            "RIO_WEAPON_JETT_TANK_R": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_TANK_R",
+                "device_id": "55",
+                "command": "3169",
+                "arg_number": "67",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Right Tank"
+            },
+            "RIO_WEAPON_JETT_STAT_1": {
+                "type": "3PosTumb",
+                "msg": "RIO_WEAPON_JETT_STAT_1",
+                "device_id": "55",
+                "command": "3163",
+                "arg_number": "68",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Station 1"
+            },
+            "RIO_WEAPON_JETT_STAT_3": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_STAT_3",
+                "device_id": "55",
+                "command": "3165",
+                "arg_number": "65",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Station 3"
+            },
+            "RIO_WEAPON_JETT_STAT_4": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_STAT_4",
+                "device_id": "55",
+                "command": "3166",
+                "arg_number": "69",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Station 4"
+            },
+            "RIO_WEAPON_JETT_STAT_5": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_STAT_5",
+                "device_id": "55",
+                "command": "3167",
+                "arg_number": "70",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Station 5"
+            },
+            "RIO_WEAPON_JETT_STAT_6": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_WEAPON_JETT_STAT_6",
+                "device_id": "55",
+                "command": "3168",
+                "arg_number": "64",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Station 6"
+            },
+            "RIO_WEAPON_JETT_STAT_8": {
+                "type": "3PosTumb",
+                "msg": "RIO_WEAPON_JETT_STAT_8",
+                "device_id": "55",
+                "command": "3170",
+                "arg_number": "71",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Jettison Station 8"
+            },
+            "RIO_WEAPON_AA_LAUNCH": {
+                "type": "PushButton",
+                "msg": "RIO_WEAPON_AA_LAUNCH",
+                "device_id": "55",
+                "command": "3161",
+                "arg_number": "74",
+                "category": "Armament Panel",
+                "description": "RIO Weapon A/A Launch"
+            },
+            "RIO_WEAPON_NEXT_LAUNCH": {
+                "type": "PushButton",
+                "msg": "RIO_WEAPON_NEXT_LAUNCH",
+                "device_id": "43",
+                "command": "3162",
+                "arg_number": "9964",
+                "category": "Armament Panel",
+                "description": "RIO Weapon Next Launch"
+            }
+        },
+        "CAP": {
+            "RIO_CAP_CATRGORY": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_CAP_CATRGORY",
+                "device_id": "24",
+                "device_command": "3530",
+                "arg_number": "98",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "CAP",
+                "description": "RIO CAP Category"
+            },
+            "RIO_CAP_BTN_4": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_4",
+                "device_id": "24",
+                "command": "3521",
+                "arg_number": "124",
+                "category": "CAP",
+                "description": "RIO CAP Button 4"
+            },
+            "RIO_CAP_BTN_5": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_5",
+                "device_id": "24",
+                "command": "3522",
+                "arg_number": "123",
+                "category": "CAP",
+                "description": "RIO CAP Button 5"
+            },
+            "RIO_CAP_BTN_3": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_3",
+                "device_id": "24",
+                "command": "3520",
+                "arg_number": "125",
+                "category": "CAP",
+                "description": "RIO CAP Button 3"
+            },
+            "RIO_CAP_BTN_2": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_2",
+                "device_id": "24",
+                "command": "3519",
+                "arg_number": "126",
+                "category": "CAP",
+                "description": "RIO CAP Button 2"
+            },
+            "RIO_CAP_BTN_1": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_1",
+                "device_id": "24",
+                "command": "3518",
+                "arg_number": "127",
+                "category": "CAP",
+                "description": "RIO CAP Button 1"
+            },
+            "RIO_CAP_BTN_TNG": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_TNG",
+                "device_id": "24",
+                "command": "3528",
+                "arg_number": "128",
+                "category": "CAP",
+                "description": "RIO CAP Button TNG NBR"
+            },
+            "RIO_CAP_BTN_10": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_10",
+                "device_id": "24",
+                "command": "3527",
+                "arg_number": "129",
+                "category": "CAP",
+                "description": "RIO CAP Button 10"
+            },
+            "RIO_CAP_BTN_9": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_9",
+                "device_id": "24",
+                "command": "3526",
+                "arg_number": "130",
+                "category": "CAP",
+                "description": "RIO CAP Button 9"
+            },
+            "RIO_CAP_BTN_8": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_8",
+                "device_id": "24",
+                "command": "3525",
+                "arg_number": "131",
+                "category": "CAP",
+                "description": "RIO CAP Button 8"
+            },
+            "RIO_CAP_BTN_7": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_7",
+                "device_id": "24",
+                "command": "3524",
+                "arg_number": "132",
+                "category": "CAP",
+                "description": "RIO CAP Button 7"
+            },
+            "RIO_CAP_BTN_6": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_6",
+                "device_id": "24",
+                "command": "3523",
+                "arg_number": "133",
+                "category": "CAP",
+                "description": "RIO CAP Button 6"
+            },
+            "RIO_CAP_BTN_PGM_RESTRT": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BTN_PGM_RESTRT",
+                "device_id": "24",
+                "command": "3529",
+                "arg_number": "134",
+                "category": "CAP",
+                "description": "RIO CAP Button PGM RSTRT"
+            },
+            "RIO_CAP_LONG_6": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_LONG_6",
+                "device_id": "24",
+                "command": "3541",
+                "arg_number": "136",
+                "category": "CAP",
+                "description": "RIO CAP LONG 6"
+            },
+            "RIO_CAP_LAT_1": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_LAT_1",
+                "device_id": "24",
+                "command": "3536",
+                "arg_number": "137",
+                "category": "CAP",
+                "description": "RIO CAP LAT 1"
+            },
+            "RIO_CAP_NBR_2": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_NBR_2",
+                "device_id": "24",
+                "command": "3537",
+                "arg_number": "138",
+                "category": "CAP",
+                "description": "RIO CAP NBR 2"
+            },
+            "RIO_CAP_7": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_7",
+                "device_id": "24",
+                "command": "3542",
+                "arg_number": "139",
+                "category": "CAP",
+                "description": "RIO CAP 7"
+            },
+            "RIO_CAP_HDG_8": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_HDG_8",
+                "device_id": "24",
+                "command": "3543",
+                "arg_number": "140",
+                "category": "CAP",
+                "description": "RIO CAP HDG 8"
+            },
+            "RIO_CAP_SPD_3": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_SPD_3",
+                "device_id": "24",
+                "command": "3538",
+                "arg_number": "141",
+                "category": "CAP",
+                "description": "RIO CAP SPD 3"
+            },
+            "RIO_CAP_ALT_4": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_ALT_4",
+                "device_id": "24",
+                "command": "3539",
+                "arg_number": "143",
+                "category": "CAP",
+                "description": "RIO CAP ALT 4"
+            },
+            "RIO_CAP_9": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_9",
+                "device_id": "24",
+                "command": "3544",
+                "arg_number": "142",
+                "category": "CAP",
+                "description": "RIO CAP 9"
+            },
+            "RIO_CAP_BRG_0": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_BRG_0",
+                "device_id": "24",
+                "command": "3535",
+                "arg_number": "144",
+                "category": "CAP",
+                "description": "RIO CAP BRG 0"
+            },
+            "RIO_CAP_RNG_5": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_RNG_5",
+                "device_id": "24",
+                "command": "3540",
+                "arg_number": "145",
+                "category": "CAP",
+                "description": "RIO CAP RNG 5"
+            },
+            "RIO_CAP_NE": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_NE",
+                "device_id": "24",
+                "command": "3533",
+                "arg_number": "146",
+                "category": "CAP",
+                "description": "RIO CAP N+E"
+            },
+            "RIO_CAP_SW": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_SW",
+                "device_id": "24",
+                "command": "3532",
+                "arg_number": "147",
+                "category": "CAP",
+                "description": "RIO CAP S-W"
+            },
+            "RIO_CAP_CLEAR": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_CLEAR",
+                "device_id": "24",
+                "command": "3531",
+                "arg_number": "148",
+                "category": "CAP",
+                "description": "RIO CAP Clear"
+            },
+            "RIO_CAP_ENTER": {
+                "type": "PushButton",
+                "msg": "RIO_CAP_ENTER",
+                "device_id": "24",
+                "command": "3534",
+                "arg_number": "149",
+                "category": "CAP",
+                "description": "RIO CAP Enter"
+            }
+        },
+        "Datalink": {
+            "RIO_DATALINK_PW": {
+                "type": "3PosTumb",
+                "msg": "RIO_DATALINK_PW",
+                "device_id": "52",
+                "command": "3602",
+                "arg_number": "413",
+                "category": "Datalink",
+                "description": "RIO Datalink Power"
+            },
+            "RIO_DATALINK_ANT": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_DATALINK_ANT",
+                "device_id": "52",
+                "command": "3603",
+                "arg_number": "175",
+                "category": "Datalink",
+                "description": "RIO Datalink Antenna"
+            },
+            "RIO_DATALINK_REPLY": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_DATALINK_REPLY",
+                "device_id": "52",
+                "command": "3604",
+                "arg_number": "176",
+                "category": "Datalink",
+                "description": "RIO Datalink Reply"
+            },
+            "RIO_DATALINK_CAINS": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_DATALINK_CAINS",
+                "device_id": "52",
+                "command": "3605",
+                "arg_number": "177",
+                "category": "Datalink",
+                "description": "RIO Datalink CAINS/TAC"
+            },
+            "RIO_DATALINK_ANTIJAM": {
+                "type": "3PosTumb",
+                "msg": "RIO_DATALINK_ANTIJAM",
+                "device_id": "52",
+                "command": "3598",
+                "arg_number": "191",
+                "category": "Datalink",
+                "description": "RIO Datalink Antijam"
+            },
+            "RIO_DATALINK_FREQ_10": {
+                "type": "Tumb",
+                "msg": "RIO_DATALINK_FREQ_10",
+                "device_id": "52",
+                "command": "3599",
+                "arg_number": "196",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink",
+                "description": "RIO Datalink Freq 10MHz"
+            },
+            "RIO_DATALINK_FREQ_1": {
+                "type": "Tumb",
+                "msg": "RIO_DATALINK_FREQ_1",
+                "device_id": "52",
+                "command": "3600",
+                "arg_number": "195",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink",
+                "description": "RIO Datalink Freq 1MHz"
+            },
+            "RIO_DATALINK_FREQ_100": {
+                "type": "Tumb",
+                "msg": "RIO_DATALINK_FREQ_100",
+                "device_id": "52",
+                "command": "3601",
+                "arg_number": "197",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink",
+                "description": "RIO Datalink Freq 100kHz"
+            },
+            "RIO_DATALINK_ADDR_HI": {
+                "type": "Tumb",
+                "msg": "RIO_DATALINK_ADDR_HI",
+                "device_id": "52",
+                "command": "3606",
+                "arg_number": "222",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink",
+                "description": "RIO Datalink Address High"
+            },
+            "RIO_DATALINK_ADDR_LO": {
+                "type": "Tumb",
+                "msg": "RIO_DATALINK_ADDR_LO",
+                "device_id": "52",
+                "command": "3607",
+                "arg_number": "223",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Datalink",
+                "description": "RIO Datalink Address Low"
+            },
+            "RIO_BEACON_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_BEACON_MODE",
+                "device_id": "52",
+                "device_command": "3693",
+                "arg_number": "118",
+                "num_positions": "7",
+                "increment": "0.1666667",
+                "category": "Datalink",
+                "description": "RIO Beacon Mode"
+            },
+            "RIO_BEACON_ACLS": {
+                "type": "PushButton",
+                "msg": "RIO_BEACON_ACLS",
+                "device_id": "52",
+                "command": "3692",
+                "arg_number": "117",
+                "category": "Datalink",
+                "description": "RIO Beacon ACLS Test"
+            },
+            "RIO_BEACON_PW": {
+                "type": "3PosTumb",
+                "msg": "RIO_BEACON_PW",
+                "device_id": "52",
+                "command": "3691",
+                "arg_number": "96",
+                "category": "Datalink",
+                "description": "RIO Beacon Power"
+            }
+        },
+        "IFF": {
+            "RIO_IFF_AUDIOLIGHT": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_AUDIOLIGHT",
+                "device_id": "64",
+                "command": "3626",
+                "arg_number": "161",
+                "category": "IFF",
+                "description": "RIO IFF Audio/Light"
+            },
+            "RIO_IFF_M1": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_M1",
+                "device_id": "64",
+                "command": "3627",
+                "arg_number": "162",
+                "category": "IFF",
+                "description": "RIO IFF M1"
+            },
+            "RIO_IFF_M2": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_M2",
+                "device_id": "64",
+                "command": "3628",
+                "arg_number": "163",
+                "category": "IFF",
+                "description": "RIO IFF M2"
+            },
+            "RIO_IFF_M3A": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_M3A",
+                "device_id": "64",
+                "command": "3629",
+                "arg_number": "164",
+                "category": "IFF",
+                "description": "RIO IFF M3/A"
+            },
+            "RIO_IFF_MC": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_MC",
+                "device_id": "64",
+                "command": "3630",
+                "arg_number": "165",
+                "category": "IFF",
+                "description": "RIO IFF MC"
+            },
+            "RIO_IFF_RAD": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_RAD",
+                "device_id": "64",
+                "command": "3631",
+                "arg_number": "166",
+                "category": "IFF",
+                "description": "RIO IFF RAD"
+            },
+            "RIO_IFF_IDENT": {
+                "type": "3PosTumb",
+                "msg": "RIO_IFF_IDENT",
+                "device_id": "64",
+                "command": "3632",
+                "arg_number": "167",
+                "category": "IFF",
+                "description": "RIO IFF Ident"
+            },
+            "RIO_IFF_M4": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_IFF_M4",
+                "device_id": "64",
+                "command": "3633",
+                "arg_number": "181",
+                "category": "IFF",
+                "description": "RIO IFF M4"
+            },
+            "RIO_IFF_CODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_IFF_CODE",
+                "device_id": "64",
+                "device_command": "3634",
+                "arg_number": "183",
+                "num_positions": "4",
+                "increment": "0.333",
+                "category": "IFF",
+                "description": "RIO IFF Code"
+            },
+            "RIO_IFF_MASTER": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_IFF_MASTER",
+                "device_id": "64",
+                "device_command": "3635",
+                "arg_number": "184",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "IFF",
+                "description": "RIO IFF Master"
+            },
+            "RIO_IFF_TEST": {
+                "type": "PushButton",
+                "msg": "RIO_IFF_TEST",
+                "device_id": "64",
+                "command": "3636",
+                "arg_number": "185",
+                "category": "IFF",
+                "description": "RIO IFF Test"
+            },
+            "RIO_IFF_REPLY": {
+                "type": "PushButton",
+                "msg": "RIO_IFF_REPLY",
+                "device_id": "64",
+                "command": "3637",
+                "arg_number": "186",
+                "category": "IFF",
+                "description": "RIO IFF Reply"
+            },
+            "RIO_IFF_M3_1": {
+                "type": "Tumb",
+                "msg": "RIO_IFF_M3_1",
+                "device_id": "64",
+                "command": "3638",
+                "arg_number": "2262",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "IFF",
+                "description": "RIO IFF M3 Code 1s"
+            },
+            "RIO_IFF_M3_10": {
+                "type": "Tumb",
+                "msg": "RIO_IFF_M3_10",
+                "device_id": "64",
+                "command": "3639",
+                "arg_number": "2261",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "IFF",
+                "description": "RIO IFF M3 Code 10s"
+            },
+            "RIO_IFF_M3_100": {
+                "type": "Tumb",
+                "msg": "RIO_IFF_M3_100",
+                "device_id": "64",
+                "command": "3640",
+                "arg_number": "198",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "IFF",
+                "description": "RIO IFF M3 Code 100s"
+            },
+            "RIO_IFF_M3_1000": {
+                "type": "Tumb",
+                "msg": "RIO_IFF_M3_1000",
+                "device_id": "64",
+                "command": "3641",
+                "arg_number": "199",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "IFF",
+                "description": "RIO IFF M3 Code 1000s"
+            },
+            "RIO_IFF_M1_1": {
+                "type": "Tumb",
+                "msg": "RIO_IFF_M1_1",
+                "device_id": "64",
+                "command": "3642",
+                "arg_number": "200",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "IFF",
+                "description": "RIO IFF M1 Code 1s"
+            },
+            "RIO_IFF_M1_10": {
+                "type": "Tumb",
+                "msg": "RIO_IFF_M1_10",
+                "device_id": "64",
+                "command": "3643",
+                "arg_number": "201",
+                "step": "0.111",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "IFF",
+                "description": "RIO IFF M1 Code 10s"
+            }
+        },
+        "Radar Panel": {
+            "RIO_LIQUD_COOL": {
+                "type": "3PosTumb",
+                "msg": "RIO_LIQUD_COOL",
+                "device_id": "39",
+                "command": "3694",
+                "arg_number": "95",
+                "category": "Radar Panel",
+                "description": "RIO Liquid Cooling Switch"
+            }
+        },
+        "LANTIRN": {
+            "RIO_LANTIRN_PW": {
+                "type": "MultipositionSwitch",
+                "msg": "RIO_LANTIRN_PW",
+                "device_id": "7",
+                "device_command": "3689",
+                "arg_number": "667",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "LANTIRN",
+                "description": "RIO LANTIRN Power"
+            },
+            "RIO_LANTIRN_LASER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_LANTIRN_LASER_ARM",
+                "device_id": "7",
+                "command": "3516",
+                "arg_number": "668",
+                "category": "LANTIRN",
+                "description": "RIO LANTIRN Laser Arm Switch"
+            },
+            "RIO_LANTIRN_UNSTOW": {
+                "type": "PushButton",
+                "msg": "RIO_LANTIRN_UNSTOW",
+                "device_id": "7",
+                "command": "3704",
+                "arg_number": "669",
+                "category": "LANTIRN",
+                "description": "RIO LANTIRN Operate Mode (Unstow)"
+            },
+            "RIO_LANTIRN_TCS_SEL": {
+                "type": "PushButton",
+                "msg": "RIO_LANTIRN_TCS_SEL",
+                "device_id": "7",
+                "command": "3498",
+                "arg_number": "670",
+                "category": "LANTIRN",
+                "description": "RIO Video Output Toggle (TCS/LANTIRN)"
+            },
+            "RIO_LANTIRN_IBIT": {
+                "type": "PushButton",
+                "msg": "RIO_LANTIRN_IBIT",
+                "device_id": "7",
+                "command": "3690",
+                "arg_number": "671",
+                "category": "LANTIRN",
+                "description": "RIO LANTIRN IBIT"
+            }
+        },
+        "Fire System": {
+            "PLT_FIRE_EX_BOTTLE_L": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_BOTTLE_L",
+                "device_id": "67",
+                "command": "3059",
+                "arg_number": "15083",
+                "category": "Fire System",
+                "description": "PILOT Fire Ext Bottle - Left"
+            },
+            "PLT_FIRE_EX_BOTTLE_R": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_BOTTLE_R",
+                "device_id": "67",
+                "command": "3060",
+                "arg_number": "15082",
+                "category": "Fire System",
+                "description": "PILOT Fire Ext Bottle - Right"
+            }
+        },
+        "F-14A Engine": {
+            "RIO_MCOMP_BYPASS": {
+                "type": "ToggleSwitch",
+                "msg": "RIO_MCOMP_BYPASS",
+                "device_id": "20",
+                "command": "3761",
+                "arg_number": "13132",
+                "category": "F-14A Engine",
+                "description": "RIO Mid Compression Bypass Test (F-14A)"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "F-14",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

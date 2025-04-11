@@ -1,0 +1,1134 @@
+{
+    "commands": {
+        "Cockpit Mech": {
+            "EMERG_CANOPY_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_CANOPY_JETT",
+                "device_id": "15",
+                "command": "3006",
+                "arg_number": "221",
+                "category": "Cockpit Mech",
+                "description": "Emergency Canopy Jettison"
+            },
+            "L_CANOPY_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "L_CANOPY_LEVER",
+                "device_id": "15",
+                "command": "3003",
+                "arg_number": "223",
+                "category": "Cockpit Mech",
+                "description": "Left Canopy Lever"
+            },
+            "R_CANOPY_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "R_CANOPY_LEVER",
+                "device_id": "15",
+                "command": "3004",
+                "arg_number": "222",
+                "category": "Cockpit Mech",
+                "description": "Right Canopy Lever"
+            },
+            "AFT_CANOPY_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_CANOPY_LEVER",
+                "device_id": "15",
+                "command": "3005",
+                "arg_number": "224",
+                "category": "Cockpit Mech",
+                "description": "Aft Canopy Lever"
+            }
+        },
+        "Control System": {
+            "ELEVATOR_TRIM": {
+                "type": "3PosTumb",
+                "msg": "ELEVATOR_TRIM",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "114",
+                "category": "Control System",
+                "description": "Elevator Trimmer Switch"
+            },
+            "AILERON_TRIM": {
+                "type": "3PosTumb",
+                "msg": "AILERON_TRIM",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "142",
+                "category": "Control System",
+                "description": "Aileron Trimmer Switch"
+            },
+            "FLAPS_HANDLE": {
+                "type": "Tumb",
+                "msg": "FLAPS_HANDLE",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "207",
+                "step": "0.5",
+                "limits": "{ -1, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Control System",
+                "description": "Wing Flaps Handle"
+            },
+            "AIRBRAKE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AIRBRAKE_SW",
+                "device_id": "3",
+                "command": "3005",
+                "arg_number": "125",
+                "category": "Control System",
+                "description": "Airbrake Switch"
+            },
+            "HYDRO_BOOST": {
+                "type": "ToggleSwitch",
+                "msg": "HYDRO_BOOST",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "203",
+                "category": "Control System",
+                "description": "Hydro Booster Lever"
+            },
+            "AIRBRAKE_BT": {
+                "type": "PushButton",
+                "msg": "AIRBRAKE_BT",
+                "device_id": "3",
+                "command": "3004",
+                "arg_number": "198",
+                "category": "Control System",
+                "description": "Airbrake Button"
+            },
+            "THROTTLE_FRICTION": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_FRICTION",
+                "device_id": "3",
+                "command": "3008",
+                "arg_number": "204",
+                "limits": "{ 0, 1 }",
+                "category": "Control System",
+                "description": "Throttle Friction Lever"
+            }
+        },
+        "Electric System": {
+            "V_A_METER": {
+                "type": "PushButton",
+                "msg": "V_A_METER",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "84",
+                "category": "Electric System",
+                "description": "Ampere- & Voltmeter"
+            },
+            "AIR_START": {
+                "type": "ToggleSwitch",
+                "msg": "AIR_START",
+                "device_id": "2",
+                "command": "3005",
+                "arg_number": "149",
+                "category": "Electric System",
+                "description": "Air Start Switch"
+            },
+            "PITOT_CLOCK_HEATER": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_CLOCK_HEATER",
+                "device_id": "2",
+                "command": "3011",
+                "arg_number": "81",
+                "category": "Electric System",
+                "description": "Pitot and Clock Heater Switch"
+            },
+            "ENGINE_START": {
+                "type": "PushButton",
+                "msg": "ENGINE_START",
+                "device_id": "2",
+                "command": "3003",
+                "arg_number": "200",
+                "category": "Electric System",
+                "description": "Engine Start Button"
+            },
+            "ENGINE_START_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ENGINE_START_COVER",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "214",
+                "category": "Electric System",
+                "description": "Engine Start Button Cover"
+            }
+        },
+        "Circuit Breakers": {
+            "TRANSFER_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "TRANSFER_PUMP",
+                "device_id": "2",
+                "command": "3017",
+                "arg_number": "117",
+                "category": "Circuit Breakers",
+                "description": "Transfer Pump Switch"
+            },
+            "BOOSTER_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "BOOSTER_PUMP",
+                "device_id": "2",
+                "command": "3018",
+                "arg_number": "115",
+                "category": "Circuit Breakers",
+                "description": "Booster Pump Switch"
+            },
+            "IGNITION": {
+                "type": "ToggleSwitch",
+                "msg": "IGNITION",
+                "device_id": "2",
+                "command": "3019",
+                "arg_number": "120",
+                "category": "Circuit Breakers",
+                "description": "Ignition Switch"
+            },
+            "INSTR_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "INSTR_LIGHTS",
+                "device_id": "2",
+                "command": "3022",
+                "arg_number": "116",
+                "category": "Circuit Breakers",
+                "description": "Instruments and Lights Switch"
+            }
+        },
+        "Right Panel": {
+            "BATTERY": {
+                "type": "ToggleSwitch",
+                "msg": "BATTERY",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "152",
+                "category": "Right Panel",
+                "description": "Accumulator Switch"
+            },
+            "GENERATOR": {
+                "type": "ToggleSwitch",
+                "msg": "GENERATOR",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "153",
+                "category": "Right Panel",
+                "description": "Generator Switch"
+            },
+            "NOSE_LIGHT_MASTER": {
+                "type": "ToggleSwitch",
+                "msg": "NOSE_LIGHT_MASTER",
+                "device_id": "2",
+                "command": "3013",
+                "arg_number": "151",
+                "category": "Right Panel",
+                "description": "Nose Light Master Switch"
+            },
+            "TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "TRIM",
+                "device_id": "2",
+                "command": "3012",
+                "arg_number": "154",
+                "category": "Right Panel",
+                "description": "Trim Master Switch"
+            },
+            "AGK_DGMK": {
+                "type": "ToggleSwitch",
+                "msg": "AGK_DGMK",
+                "device_id": "2",
+                "command": "3006",
+                "arg_number": "155",
+                "category": "Right Panel",
+                "description": "AGK-47B Artificial Horizon + DGMK-3 Switch"
+            },
+            "RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO",
+                "device_id": "2",
+                "command": "3014",
+                "arg_number": "158",
+                "category": "Right Panel",
+                "description": "Radio Switch"
+            },
+            "BOMBS": {
+                "type": "ToggleSwitch",
+                "msg": "BOMBS",
+                "device_id": "2",
+                "command": "3010",
+                "arg_number": "157",
+                "category": "Right Panel",
+                "description": "Bombs Switch"
+            },
+            "EMERG_DROP": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_DROP",
+                "device_id": "2",
+                "command": "3021",
+                "arg_number": "156",
+                "category": "Right Panel",
+                "description": "Emergency Drop Switch"
+            },
+            "ARC": {
+                "type": "ToggleSwitch",
+                "msg": "ARC",
+                "device_id": "2",
+                "command": "3015",
+                "arg_number": "159",
+                "category": "Right Panel",
+                "description": "ARC Switch"
+            },
+            "RV_RADIO_ALT": {
+                "type": "ToggleSwitch",
+                "msg": "RV_RADIO_ALT",
+                "device_id": "2",
+                "command": "3016",
+                "arg_number": "160",
+                "category": "Right Panel",
+                "description": "RV-2 Radio Altimeter Switch"
+            },
+            "NR23_CANNON": {
+                "type": "ToggleSwitch",
+                "msg": "NR23_CANNON",
+                "device_id": "2",
+                "command": "3008",
+                "arg_number": "161",
+                "category": "Right Panel",
+                "description": "NR-23 Cannon Switch"
+            },
+            "N37D_CANNON": {
+                "type": "ToggleSwitch",
+                "msg": "N37D_CANNON",
+                "device_id": "2",
+                "command": "3009",
+                "arg_number": "162",
+                "category": "Right Panel",
+                "description": "N-37D Cannon Switch"
+            },
+            "GUN_SIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_SIGHT",
+                "device_id": "2",
+                "command": "3020",
+                "arg_number": "163",
+                "category": "Right Panel",
+                "description": "ASP-3N Gunsight Switch"
+            },
+            "GUN_CAM": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_CAM",
+                "device_id": "2",
+                "command": "3023",
+                "arg_number": "164",
+                "category": "Right Panel",
+                "description": "S-13 Gun Camera Switch"
+            }
+        },
+        "Hydro System": {
+            "EMERG_FLAPS_VALVE": {
+                "type": "Potentiometer",
+                "msg": "EMERG_FLAPS_VALVE",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "171",
+                "limits": "{ 0, 1 }",
+                "category": "Hydro System",
+                "description": "Emergency Flaps Valve"
+            },
+            "EMERG_GEARS_VALVE": {
+                "type": "Potentiometer",
+                "msg": "EMERG_GEARS_VALVE",
+                "device_id": "12",
+                "command": "3002",
+                "arg_number": "167",
+                "limits": "{ 0, 1 }",
+                "category": "Hydro System",
+                "description": "Emergency Gears Valve"
+            },
+            "EMERG_FLAPS_VALVE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_FLAPS_VALVE_COVER",
+                "device_id": "12",
+                "command": "3003",
+                "arg_number": "170",
+                "category": "Hydro System",
+                "description": "Emergency Flaps Valve Cover"
+            },
+            "EMERG_GEARS_VALVE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_GEARS_VALVE_COVER",
+                "device_id": "12",
+                "command": "3004",
+                "arg_number": "166",
+                "category": "Hydro System",
+                "description": "Emergency Gears Valve Cover"
+            },
+            "EMERG_SYS_FILL": {
+                "type": "Potentiometer",
+                "msg": "EMERG_SYS_FILL",
+                "device_id": "12",
+                "command": "3006",
+                "arg_number": "186",
+                "limits": "{ 0, 1 }",
+                "category": "Hydro System",
+                "description": "Emergency System Filling Valve"
+            },
+            "AIR_NET": {
+                "type": "Potentiometer",
+                "msg": "AIR_NET",
+                "device_id": "12",
+                "command": "3007",
+                "arg_number": "242",
+                "limits": "{ 0, 1 }",
+                "category": "Hydro System",
+                "description": "Air Net Valve"
+            },
+            "COCKPIT_FILL": {
+                "type": "Potentiometer",
+                "msg": "COCKPIT_FILL",
+                "device_id": "12",
+                "command": "3008",
+                "arg_number": "241",
+                "limits": "{ 0, 1 }",
+                "category": "Hydro System",
+                "description": "Cockpit Filling Valve"
+            }
+        },
+        "Gear System": {
+            "LANDING_GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "LANDING_GEAR",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "71",
+                "category": "Gear System",
+                "description": "Landing Gear Handle"
+            },
+            "GEAR_LAMP_TEST": {
+                "type": "PushButton",
+                "msg": "GEAR_LAMP_TEST",
+                "device_id": "13",
+                "command": "3003",
+                "arg_number": "72",
+                "category": "Gear System",
+                "description": "Gear Lamps Test Button"
+            },
+            "R_EMERG_GEAR": {
+                "type": "PushButton",
+                "msg": "R_EMERG_GEAR",
+                "device_id": "13",
+                "command": "3005",
+                "arg_number": "210",
+                "category": "Gear System",
+                "description": "Right Emergency Gear Release Handle"
+            },
+            "L_EMERG_GEAR": {
+                "type": "PushButton",
+                "msg": "L_EMERG_GEAR",
+                "device_id": "13",
+                "command": "3004",
+                "arg_number": "209",
+                "category": "Gear System",
+                "description": "Left Emergency Gear Release Handle"
+            },
+            "LANDING_GEAR_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "LANDING_GEAR_COVER",
+                "device_id": "13",
+                "command": "3002",
+                "arg_number": "85",
+                "category": "Gear System",
+                "description": "Landing Gear Handle Lock"
+            }
+        },
+        "Fuel System": {
+            "DROP_TANK_SIGNAL": {
+                "type": "ToggleSwitch",
+                "msg": "DROP_TANK_SIGNAL",
+                "device_id": "10",
+                "command": "3001",
+                "arg_number": "82",
+                "category": "Fuel System",
+                "description": "Drop Tank Signal Switch"
+            }
+        },
+        "Oxygen System": {
+            "O2_SUPPLY": {
+                "type": "Potentiometer",
+                "msg": "O2_SUPPLY",
+                "device_id": "9",
+                "command": "3001",
+                "arg_number": "141",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen System",
+                "description": "Oxygen Supply Valve"
+            },
+            "AIR_DILUTER": {
+                "type": "Potentiometer",
+                "msg": "AIR_DILUTER",
+                "device_id": "9",
+                "command": "3003",
+                "arg_number": "143",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen System",
+                "description": "Air Diluter Valve"
+            },
+            "O2_EMERG": {
+                "type": "Potentiometer",
+                "msg": "O2_EMERG",
+                "device_id": "9",
+                "command": "3002",
+                "arg_number": "243",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen System",
+                "description": "Oxygen Emergency Valve"
+            }
+        },
+        "Conditioning and Heating System": {
+            "COCKPIT_AIT": {
+                "type": "Potentiometer",
+                "msg": "COCKPIT_AIT",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "187",
+                "limits": "{ 0, 1 }",
+                "category": "Conditioning and Heating System",
+                "description": "Cockpit Air Valve"
+            },
+            "VENTILATION": {
+                "type": "Potentiometer",
+                "msg": "VENTILATION",
+                "device_id": "8",
+                "command": "3002",
+                "arg_number": "86",
+                "limits": "{ -1, 0 }",
+                "category": "Conditioning and Heating System",
+                "description": "Ventilation Valve"
+            }
+        },
+        "Internal Lights System": {
+            "L_UV_LIGHT": {
+                "type": "Potentiometer",
+                "msg": "L_UV_LIGHT",
+                "device_id": "22",
+                "command": "3001",
+                "arg_number": "184",
+                "limits": "{ 0.23, 0.82 }",
+                "category": "Internal Lights System",
+                "description": "Left UV Light Rheostat"
+            },
+            "R_UV_LIGHT": {
+                "type": "Potentiometer",
+                "msg": "R_UV_LIGHT",
+                "device_id": "22",
+                "command": "3002",
+                "arg_number": "185",
+                "limits": "{ 0.23, 0.82 }",
+                "category": "Internal Lights System",
+                "description": "Right UV Light Rheostat"
+            },
+            "PANELS_LIGHT": {
+                "type": "Potentiometer",
+                "msg": "PANELS_LIGHT",
+                "device_id": "22",
+                "command": "3003",
+                "arg_number": "220",
+                "limits": "{ 0.1, 0.9 }",
+                "category": "Internal Lights System",
+                "description": "Panels Light Rheostat"
+            }
+        },
+        "Nav Lights System": {
+            "EXT_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "EXT_LIGHTS",
+                "device_id": "14",
+                "command": "3001",
+                "arg_number": "111",
+                "category": "Nav Lights System",
+                "description": "External Lights Switch"
+            },
+            "NOSE_LIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "NOSE_LIGHT",
+                "device_id": "14",
+                "command": "3002",
+                "arg_number": "80",
+                "category": "Nav Lights System",
+                "description": "Nose Light Switch"
+            }
+        },
+        "Power Plant": {
+            "ENGINE_STOP": {
+                "type": "Potentiometer",
+                "msg": "ENGINE_STOP",
+                "device_id": "11",
+                "command": "3001",
+                "arg_number": "208",
+                "limits": "{ 0, 1 }",
+                "category": "Power Plant",
+                "description": "Engine Stop Lever"
+            },
+            "ISO_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "ISO_VALVE",
+                "device_id": "11",
+                "command": "3002",
+                "arg_number": "118",
+                "category": "Power Plant",
+                "description": "Isolating Valve Switch"
+            }
+        },
+        "Fire Extinguisher System": {
+            "FIRE_EX_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FIRE_EX_COVER",
+                "device_id": "17",
+                "command": "3002",
+                "arg_number": "136",
+                "category": "Fire Extinguisher System",
+                "description": "Engine Fire Extinguisher Button Cover"
+            },
+            "FIRE_EX": {
+                "type": "PushButton",
+                "msg": "FIRE_EX",
+                "device_id": "17",
+                "command": "3003",
+                "arg_number": "137",
+                "category": "Fire Extinguisher System",
+                "description": "Engine Fire Extinguisher Button"
+            },
+            "FIRE_EX_TEST": {
+                "type": "PushButton",
+                "msg": "FIRE_EX_TEST",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "138",
+                "category": "Fire Extinguisher System",
+                "description": "Engine Fire Warning Light Test Button"
+            }
+        },
+        "Signal Flares": {
+            "SIGNAL_FLARE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "SIGNAL_FLARE_SW",
+                "device_id": "28",
+                "command": "3001",
+                "arg_number": "129",
+                "category": "Signal Flares",
+                "description": "Signal Flare Switch"
+            },
+            "SIGNAL_FLARE_YEL": {
+                "type": "ToggleSwitch",
+                "msg": "SIGNAL_FLARE_YEL",
+                "device_id": "28",
+                "command": "3005",
+                "arg_number": "130",
+                "category": "Signal Flares",
+                "description": "Signal Flare Yellow Button"
+            },
+            "SIGNAL_FLARE_GRE": {
+                "type": "ToggleSwitch",
+                "msg": "SIGNAL_FLARE_GRE",
+                "device_id": "28",
+                "command": "3002",
+                "arg_number": "131",
+                "category": "Signal Flares",
+                "description": "Signal Flare Green Button"
+            },
+            "SIGNAL_FLARE_RED": {
+                "type": "ToggleSwitch",
+                "msg": "SIGNAL_FLARE_RED",
+                "device_id": "28",
+                "command": "3008",
+                "arg_number": "132",
+                "category": "Signal Flares",
+                "description": "Signal Flare Red Button"
+            },
+            "SIGNAL_FLARE_WHI": {
+                "type": "ToggleSwitch",
+                "msg": "SIGNAL_FLARE_WHI",
+                "device_id": "28",
+                "command": "3004",
+                "arg_number": "133",
+                "category": "Signal Flares",
+                "description": "Signal Flare White Button"
+            }
+        },
+        "AGK47B": {
+            "AGK_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "AGK_CAGE",
+                "device_id": "25",
+                "command": "3002",
+                "arg_number": "12",
+                "category": "AGK47B",
+                "description": "AGK-47B Artificial Horizon Cage"
+            },
+            "AGK_TRIM": {
+                "type": "Potentiometer",
+                "msg": "AGK_TRIM",
+                "device_id": "25",
+                "command": "3003",
+                "arg_number": "13",
+                "limits": "{ 0, 1 }",
+                "category": "AGK47B",
+                "description": "AGK-47B Artificial Horizon Zero Pitch Trim Knob"
+            }
+        },
+        "VD15": {
+            "BARO_PRESS": {
+                "type": "Potentiometer",
+                "msg": "BARO_PRESS",
+                "device_id": "19",
+                "command": "3001",
+                "arg_number": "30",
+                "limits": "{ 0, 1 }",
+                "category": "VD15",
+                "description": "Barometric Pressure QFE Knob"
+            }
+        },
+        "PRV46": {
+            "RPV46_RANGE": {
+                "type": "ToggleSwitch",
+                "msg": "RPV46_RANGE",
+                "device_id": "16",
+                "command": "3004",
+                "arg_number": "36",
+                "category": "PRV46",
+                "description": "PRV-46 Radar Altimeter Indicator Range Switch"
+            },
+            "RPV46_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "RPV46_POWER",
+                "device_id": "16",
+                "command": "3003",
+                "arg_number": "37",
+                "category": "PRV46",
+                "description": "PRV-46 Radar Altimeter Indicator Power Switch"
+            }
+        },
+        "PDK45": {
+            "PDK45_HEADING": {
+                "type": "Potentiometer",
+                "msg": "PDK45_HEADING",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "34",
+                "limits": "{ 0, 1 }",
+                "category": "PDK45",
+                "description": "Heading Knob"
+            },
+            "PDK45_FAST_SLAVE": {
+                "type": "PushButton",
+                "msg": "PDK45_FAST_SLAVE",
+                "device_id": "21",
+                "command": "3003",
+                "arg_number": "61",
+                "category": "PDK45",
+                "description": "Fast Slave Button"
+            }
+        },
+        "Clock": {
+            "CLOCK_LEFT_LVR1": {
+                "type": "Tumb",
+                "msg": "CLOCK_LEFT_LVR1",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "23",
+                "step": "1.0",
+                "limits": "{ -1, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Clock",
+                "description": "AChS-1 Cockpit Chronograph Left Push/Pull (Stage 1)"
+            },
+            "CLOCK_LEFT_LVR2": {
+                "type": "PushButton",
+                "msg": "CLOCK_LEFT_LVR2",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "23",
+                "category": "Clock",
+                "description": "AChS-1 Cockpit Chronograph Left Push/Pull (Stage 2)"
+            },
+            "CLOCK_LEFT_ROT": {
+                "type": "Rotary",
+                "msg": "CLOCK_LEFT_ROT",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "24",
+                "category": "Clock",
+                "description": "AChS-1 Cockpit Chronograph Left  Rotate"
+            },
+            "CLOCK_RIGHT_LVR": {
+                "type": "PushButton",
+                "msg": "CLOCK_RIGHT_LVR",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "25",
+                "category": "Clock",
+                "description": "AChS-1 Cockpit Chronograph Right Push"
+            },
+            "CLOCK_RIGHT_ROT": {
+                "type": "Rotary",
+                "msg": "CLOCK_RIGHT_ROT",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "26",
+                "category": "Clock",
+                "description": "AChS-1 Cockpit Chronograph Right Rotate"
+            }
+        },
+        "Weapon System": {
+            "N37_RELOAD": {
+                "type": "PushButton",
+                "msg": "N37_RELOAD",
+                "device_id": "4",
+                "command": "3005",
+                "arg_number": "92",
+                "category": "Weapon System",
+                "description": "N-37D Cannon Reload Button"
+            },
+            "NR23_RELOAD_TOP": {
+                "type": "PushButton",
+                "msg": "NR23_RELOAD_TOP",
+                "device_id": "4",
+                "command": "3006",
+                "arg_number": "90",
+                "category": "Weapon System",
+                "description": "NR-23 (Top) Cannon Reload Button"
+            },
+            "NR23_RELOAD_BOTTOM": {
+                "type": "PushButton",
+                "msg": "NR23_RELOAD_BOTTOM",
+                "device_id": "4",
+                "command": "3007",
+                "arg_number": "91",
+                "category": "Weapon System",
+                "description": "NR-23 (Bottom) Cannon Reload Button"
+            },
+            "TACTIC_RELEASE": {
+                "type": "ToggleSwitch",
+                "msg": "TACTIC_RELEASE",
+                "device_id": "4",
+                "command": "3008",
+                "arg_number": "96",
+                "category": "Weapon System",
+                "description": "Tactical Release Switch"
+            },
+            "EMERG_RELEASE": {
+                "type": "PushButton",
+                "msg": "EMERG_RELEASE",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "97",
+                "category": "Weapon System",
+                "description": "Emergency Release Button"
+            },
+            "EMERG_RELEASE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_RELEASE_COVER",
+                "device_id": "4",
+                "command": "3009",
+                "arg_number": "104",
+                "category": "Weapon System",
+                "description": "Emergency Release Button Cover"
+            }
+        },
+        "Stick Buttons": {
+            "N37_FIRE": {
+                "type": "PushButton",
+                "msg": "N37_FIRE",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "193",
+                "category": "Stick Buttons",
+                "description": "N-37D Cannon Fire Button"
+            },
+            "WEAPON_RELEASE": {
+                "type": "PushButton",
+                "msg": "WEAPON_RELEASE",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "195",
+                "category": "Stick Buttons",
+                "description": "Weapon Release Button"
+            },
+            "GUN_SAFE": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_SAFE",
+                "device_id": "4",
+                "command": "3010",
+                "arg_number": "196",
+                "category": "Stick Buttons",
+                "description": "Guns Safety Cover"
+            }
+        },
+        "ASP3N Gunsight": {
+            "ASP3_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ASP3_MODE",
+                "device_id": "26",
+                "command": "3003",
+                "arg_number": "101",
+                "category": "ASP3N Gunsight",
+                "description": "ASP-3N Gunsight Mode"
+            },
+            "ASP3_MASK_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "ASP3_MASK_LEVER",
+                "device_id": "26",
+                "command": "3011",
+                "arg_number": "106",
+                "category": "ASP3N Gunsight",
+                "description": "ASP-3N Gunsight Fixed Reticle Mask Lever"
+            },
+            "ASP3_WINGSPAN_ADJ": {
+                "type": "Potentiometer",
+                "msg": "ASP3_WINGSPAN_ADJ",
+                "device_id": "26",
+                "command": "3001",
+                "arg_number": "103",
+                "limits": "{ -0.5, 1 }",
+                "category": "ASP3N Gunsight",
+                "description": "ASP-3N Gunsight Target Wingspan Adjustment Dial"
+            },
+            "ASP3_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "ASP3_BRIGHT",
+                "device_id": "26",
+                "command": "3004",
+                "arg_number": "102",
+                "limits": "{ 0, 1 }",
+                "category": "ASP3N Gunsight",
+                "description": "ASP-3N Gunsight Brightness Knob"
+            },
+            "ASP3_DIST": {
+                "type": "Potentiometer",
+                "msg": "ASP3_DIST",
+                "device_id": "26",
+                "command": "3002",
+                "arg_number": "201",
+                "limits": "{ 0, 1 }",
+                "category": "ASP3N Gunsight",
+                "description": "ASP-3N Gunsight Target Distance Knob"
+            },
+            "ASP3_COLOR": {
+                "type": "ToggleSwitch",
+                "msg": "ASP3_COLOR",
+                "device_id": "26",
+                "command": "3012",
+                "arg_number": "105",
+                "category": "ASP3N Gunsight",
+                "description": "ASP-3N Gunsight Color Filter"
+            }
+        },
+        "ARC5": {
+            "ARC5_VOL": {
+                "type": "Potentiometer",
+                "msg": "ARC5_VOL",
+                "device_id": "29",
+                "command": "3001",
+                "arg_number": "180",
+                "limits": "{ 0, 1 }",
+                "category": "ARC5",
+                "description": "ARC-5 Audio Volume Knob"
+            },
+            "ARC5_BAND_SW": {
+                "type": "Tumb",
+                "msg": "ARC5_BAND_SW",
+                "device_id": "29",
+                "command": "3004",
+                "arg_number": "177",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ARC5",
+                "description": "ARC-5 Frequency Band Switch"
+            },
+            "ARC5_SELECT": {
+                "type": "Tumb",
+                "msg": "ARC5_SELECT",
+                "device_id": "29",
+                "command": "3003",
+                "arg_number": "174",
+                "step": "0.1",
+                "limits": "{ 0, 0.4 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ARC5",
+                "description": "ARC-5 Function Selector Switch"
+            },
+            "ARC5_LOOP": {
+                "type": "3PosTumb",
+                "msg": "ARC5_LOOP",
+                "device_id": "29",
+                "command": "3006",
+                "arg_number": "178",
+                "category": "ARC5",
+                "description": "ARC-5 LOOP L-R Switch"
+            },
+            "ARC5_TUNE_CRANK": {
+                "type": "Potentiometer",
+                "msg": "ARC5_TUNE_CRANK",
+                "device_id": "29",
+                "command": "3005",
+                "arg_number": "175",
+                "limits": "{ 0, 1 }",
+                "category": "ARC5",
+                "description": "ARC-5 Tuning Crank"
+            },
+            "ARC5_LIGHT": {
+                "type": "Potentiometer",
+                "msg": "ARC5_LIGHT",
+                "device_id": "29",
+                "command": "3007",
+                "arg_number": "181",
+                "limits": "{ 0, 1 }",
+                "category": "ARC5",
+                "description": "ARC-5 Scale Light Knob"
+            },
+            "ARC5_TGL_TFL": {
+                "type": "ToggleSwitch",
+                "msg": "ARC5_TGL_TFL",
+                "device_id": "29",
+                "command": "3002",
+                "arg_number": "173",
+                "category": "ARC5",
+                "description": "ARC-5 TLG-TLF Switch"
+            },
+            "ARC5_CONTROL": {
+                "type": "PushButton",
+                "msg": "ARC5_CONTROL",
+                "device_id": "29",
+                "command": "3008",
+                "arg_number": "182",
+                "category": "ARC5",
+                "description": "ARC-5 Take Control Button"
+            },
+            "ARC5_NEAR_FAR_NBD": {
+                "type": "ToggleSwitch",
+                "msg": "ARC5_NEAR_FAR_NBD",
+                "device_id": "29",
+                "command": "3009",
+                "arg_number": "123",
+                "category": "ARC5",
+                "description": "ARC-5 Near/Far NDB Switch"
+            },
+            "ARC5_NBD1": {
+                "type": "ToggleSwitch",
+                "msg": "ARC5_NBD1",
+                "device_id": "29",
+                "command": "3010",
+                "arg_number": "146",
+                "category": "ARC5",
+                "description": "ARC-5 NDB 1 Switch"
+            },
+            "ARC5_NBD2": {
+                "type": "ToggleSwitch",
+                "msg": "ARC5_NBD2",
+                "device_id": "29",
+                "command": "3011",
+                "arg_number": "147",
+                "category": "ARC5",
+                "description": "ARC-5 NDB 2 Switch"
+            },
+            "ARC5_NBD3": {
+                "type": "ToggleSwitch",
+                "msg": "ARC5_NBD3",
+                "device_id": "29",
+                "command": "3012",
+                "arg_number": "148",
+                "category": "ARC5",
+                "description": "ARC-5 NDB 3 Switch"
+            }
+        },
+        "RSI6K": {
+            "RSI6K_VOL": {
+                "type": "Rotary",
+                "msg": "RSI6K_VOL",
+                "device_id": "30",
+                "command": "3001",
+                "arg_number": "126",
+                "category": "RSI6K",
+                "description": "RSI-6K Audio Volume Knob"
+            },
+            "RSI6K_TRAS_FREQ": {
+                "type": "Rotary",
+                "msg": "RSI6K_TRAS_FREQ",
+                "device_id": "30",
+                "command": "3004",
+                "arg_number": "232",
+                "category": "RSI6K",
+                "description": "RSI-6K Wave Control Handle"
+            },
+            "RSI6K_ANT_FREQ": {
+                "type": "Rotary",
+                "msg": "RSI6K_ANT_FREQ",
+                "device_id": "30",
+                "command": "3006",
+                "arg_number": "230",
+                "category": "RSI6K",
+                "description": "RSI-6K Antenna Control Handle"
+            },
+            "RSI6K_TRAS_FREQ_FIX": {
+                "type": "Rotary",
+                "msg": "RSI6K_TRAS_FREQ_FIX",
+                "device_id": "30",
+                "command": "3006",
+                "arg_number": "233",
+                "category": "RSI6K",
+                "description": "RSI-6K Wave Control Handle"
+            },
+            "RSI6K_ANT_FREQ_FIX": {
+                "type": "Rotary",
+                "msg": "RSI6K_ANT_FREQ_FIX",
+                "device_id": "30",
+                "command": "3007",
+                "arg_number": "231",
+                "category": "RSI6K",
+                "description": "RSI-6K Antenna Control Handle"
+            },
+            "RSI6K_RECEIVE_FREQ": {
+                "type": "Rotary",
+                "msg": "RSI6K_RECEIVE_FREQ",
+                "device_id": "30",
+                "command": "3003",
+                "arg_number": "128",
+                "category": "RSI6K",
+                "description": "RSI-6K Receiver Tuning Knob"
+            },
+            "RSI6K_RECEIVE": {
+                "type": "ToggleSwitch",
+                "msg": "RSI6K_RECEIVE",
+                "device_id": "30",
+                "command": "3008",
+                "arg_number": "140",
+                "category": "RSI6K",
+                "description": "RSI-6K Receive/ARC Switch"
+            },
+            "RSI6K_FORCE": {
+                "type": "ToggleSwitch",
+                "msg": "RSI6K_FORCE",
+                "device_id": "30",
+                "command": "3009",
+                "arg_number": "240",
+                "category": "RSI6K",
+                "description": "RSI-6K Forced Mode Switch"
+            },
+            "RSI6K_MIC": {
+                "type": "PushButton",
+                "msg": "RSI6K_MIC",
+                "device_id": "30",
+                "command": "3002",
+                "arg_number": "202",
+                "category": "RSI6K",
+                "description": "Microphone Button"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "MiG-15bis",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

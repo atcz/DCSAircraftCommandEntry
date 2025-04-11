@@ -1,0 +1,2409 @@
+{
+    "commands": {
+        "Master Modes": {
+            "NAV_SEL": {
+                "type": "PushButton",
+                "msg": "NAV_SEL",
+                "device_id": "12",
+                "command": "3282",
+                "arg_number": "282",
+                "category": "Master Modes",
+                "description": "NAV Master Mode Selector"
+            },
+            "VSTOL_SEL": {
+                "type": "PushButton",
+                "msg": "VSTOL_SEL",
+                "device_id": "12",
+                "command": "3284",
+                "arg_number": "284",
+                "category": "Master Modes",
+                "description": "VSTOL Master Mode Selector"
+            },
+            "AG_SEL": {
+                "type": "PushButton",
+                "msg": "AG_SEL",
+                "device_id": "12",
+                "command": "3280",
+                "arg_number": "280",
+                "category": "Master Modes",
+                "description": "AG Master Mode Selector"
+            }
+        },
+        "Engine Display": {
+            "EDP_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "EDP_BRIGHT",
+                "device_id": "20",
+                "command": "3272",
+                "arg_number": "272",
+                "limits": "{ 0, 1 }",
+                "category": "Engine Display",
+                "description": "EDP Brightness Control"
+            },
+            "EDP_BIT": {
+                "type": "ToggleSwitch",
+                "msg": "EDP_BIT",
+                "device_id": "20",
+                "command": "3655",
+                "arg_number": "655",
+                "category": "Engine Display",
+                "description": "EDP BIT Button"
+            }
+        },
+        "HUD Control": {
+            "HUD_SYMBOL": {
+                "type": "MultipositionSwitch",
+                "msg": "HUD_SYMBOL",
+                "device_id": "22",
+                "device_command": "3288",
+                "arg_number": "288",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "HUD Control",
+                "description": "HUD Symbology Reject Switch NORM/REJ1/REJ2"
+            },
+            "HUD_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "HUD_BRIGHT",
+                "device_id": "22",
+                "command": "3289",
+                "arg_number": "289",
+                "limits": "{ 0, 1 }",
+                "category": "HUD Control",
+                "description": "HUD Off/Brightness Control"
+            },
+            "HUD_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "HUD_MODE",
+                "device_id": "22",
+                "device_command": "3290",
+                "arg_number": "290",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "HUD Control",
+                "description": "HUD Display Mode Switch DAY/AUTO/NIGHT"
+            },
+            "HUD_VIDEO_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "HUD_VIDEO_BRIGHT",
+                "device_id": "22",
+                "command": "3291",
+                "arg_number": "291",
+                "limits": "{ 0, 1 }",
+                "category": "HUD Control",
+                "description": "HUD Video Brightness Control"
+            },
+            "HUD_VIDEO_CONTR": {
+                "type": "Potentiometer",
+                "msg": "HUD_VIDEO_CONTR",
+                "device_id": "22",
+                "command": "3292",
+                "arg_number": "292",
+                "limits": "{ 0, 1 }",
+                "category": "HUD Control",
+                "description": "HUD Video Contrast Control"
+            },
+            "HUD_ALT": {
+                "type": "ToggleSwitch",
+                "msg": "HUD_ALT",
+                "device_id": "22",
+                "command": "3293",
+                "arg_number": "293",
+                "category": "HUD Control",
+                "description": "HUD Altitude Selector Switch"
+            }
+        },
+        "UFC": {
+            "UFC_B1": {
+                "type": "PushButton",
+                "msg": "UFC_B1",
+                "device_id": "23",
+                "command": "3302",
+                "arg_number": "302",
+                "category": "UFC",
+                "description": "UFC Button 1"
+            },
+            "UFC_B2": {
+                "type": "PushButton",
+                "msg": "UFC_B2",
+                "device_id": "23",
+                "command": "3303",
+                "arg_number": "303",
+                "category": "UFC",
+                "description": "UFC Button 2/N"
+            },
+            "UFC_B3": {
+                "type": "PushButton",
+                "msg": "UFC_B3",
+                "device_id": "23",
+                "command": "3304",
+                "arg_number": "304",
+                "category": "UFC",
+                "description": "UFC Button 3"
+            },
+            "UFC_B4": {
+                "type": "PushButton",
+                "msg": "UFC_B4",
+                "device_id": "23",
+                "command": "3306",
+                "arg_number": "306",
+                "category": "UFC",
+                "description": "UFC Button 4/W"
+            },
+            "UFC_B5": {
+                "type": "PushButton",
+                "msg": "UFC_B5",
+                "device_id": "23",
+                "command": "3307",
+                "arg_number": "307",
+                "category": "UFC",
+                "description": "UFC Button 5"
+            },
+            "UFC_B6": {
+                "type": "PushButton",
+                "msg": "UFC_B6",
+                "device_id": "23",
+                "command": "3308",
+                "arg_number": "308",
+                "category": "UFC",
+                "description": "UFC Button 6/E"
+            },
+            "UFC_B7": {
+                "type": "PushButton",
+                "msg": "UFC_B7",
+                "device_id": "23",
+                "command": "3310",
+                "arg_number": "310",
+                "category": "UFC",
+                "description": "UFC Button 7"
+            },
+            "UFC_B8": {
+                "type": "PushButton",
+                "msg": "UFC_B8",
+                "device_id": "23",
+                "command": "3311",
+                "arg_number": "311",
+                "category": "UFC",
+                "description": "UFC Button 8/S"
+            },
+            "UFC_B9": {
+                "type": "PushButton",
+                "msg": "UFC_B9",
+                "device_id": "23",
+                "command": "3312",
+                "arg_number": "312",
+                "category": "UFC",
+                "description": "UFC Button 9"
+            },
+            "UFC_B0": {
+                "type": "PushButton",
+                "msg": "UFC_B0",
+                "device_id": "23",
+                "command": "3315",
+                "arg_number": "315",
+                "category": "UFC",
+                "description": "UFC Button 0"
+            },
+            "UFC_DOT": {
+                "type": "PushButton",
+                "msg": "UFC_DOT",
+                "device_id": "23",
+                "command": "3316",
+                "arg_number": "316",
+                "category": "UFC",
+                "description": "UFC Button ."
+            },
+            "UFC_DASH": {
+                "type": "PushButton",
+                "msg": "UFC_DASH",
+                "device_id": "23",
+                "command": "3313",
+                "arg_number": "313",
+                "category": "UFC",
+                "description": "UFC Button -"
+            },
+            "UFC_ENTER": {
+                "type": "PushButton",
+                "msg": "UFC_ENTER",
+                "device_id": "23",
+                "command": "3314",
+                "arg_number": "314",
+                "category": "UFC",
+                "description": "UFC ENTER Data Button"
+            },
+            "UFC_CLEAR": {
+                "type": "PushButton",
+                "msg": "UFC_CLEAR",
+                "device_id": "23",
+                "command": "3305",
+                "arg_number": "305",
+                "category": "UFC",
+                "description": "Clear Entry Button"
+            },
+            "UFC_TIMER": {
+                "type": "PushButton",
+                "msg": "UFC_TIMER",
+                "device_id": "23",
+                "command": "3294",
+                "arg_number": "294",
+                "category": "UFC",
+                "description": "UFC Timer Function Selector"
+            },
+            "UFC_ALT": {
+                "type": "PushButton",
+                "msg": "UFC_ALT",
+                "device_id": "23",
+                "command": "3324",
+                "arg_number": "324",
+                "category": "UFC",
+                "description": "UFC Altitude Function Selector"
+            },
+            "UFC_IFF": {
+                "type": "PushButton",
+                "msg": "UFC_IFF",
+                "device_id": "23",
+                "command": "3318",
+                "arg_number": "318",
+                "category": "UFC",
+                "description": "UFC IFF Function Selector"
+            },
+            "UFC_TACAN": {
+                "type": "PushButton",
+                "msg": "UFC_TACAN",
+                "device_id": "23",
+                "command": "3319",
+                "arg_number": "319",
+                "category": "UFC",
+                "description": "UFC TACAN Function Selector"
+            },
+            "UFC_WEATHER": {
+                "type": "PushButton",
+                "msg": "UFC_WEATHER",
+                "device_id": "23",
+                "command": "3320",
+                "arg_number": "320",
+                "category": "UFC",
+                "description": "UFC All Weather Landing Function Selector"
+            },
+            "UFC_ONOFF": {
+                "type": "PushButton",
+                "msg": "UFC_ONOFF",
+                "device_id": "23",
+                "command": "3317",
+                "arg_number": "317",
+                "category": "UFC",
+                "description": "UFC Radalt/TACAN/AWL/IFF ON/OFF Toggle"
+            },
+            "UFC_EMCOM": {
+                "type": "PushButton",
+                "msg": "UFC_EMCOM",
+                "device_id": "23",
+                "command": "3325",
+                "arg_number": "325",
+                "category": "UFC",
+                "description": "UFC EMCON ON/OFF Toggle"
+            },
+            "UFC_TARGET": {
+                "type": "PushButton",
+                "msg": "UFC_TARGET",
+                "device_id": "23",
+                "command": "3296",
+                "arg_number": "296",
+                "category": "UFC",
+                "description": "UFC Target-Of-Opportunity Selector"
+            },
+            "UFC_WAY": {
+                "type": "PushButton",
+                "msg": "UFC_WAY",
+                "device_id": "23",
+                "command": "3322",
+                "arg_number": "322",
+                "category": "UFC",
+                "description": "UFC Waypoint Overfly INS Update Selector"
+            },
+            "UFC_WEAPON": {
+                "type": "PushButton",
+                "msg": "UFC_WEAPON",
+                "device_id": "23",
+                "command": "3321",
+                "arg_number": "321",
+                "category": "UFC",
+                "description": "UFC Weapons Function Selector"
+            },
+            "UFC_BEACON": {
+                "type": "PushButton",
+                "msg": "UFC_BEACON",
+                "device_id": "23",
+                "command": "3323",
+                "arg_number": "323",
+                "category": "UFC",
+                "description": "UFC Radar Beacon Function Selector"
+            },
+            "UFC_IP": {
+                "type": "PushButton",
+                "msg": "UFC_IP",
+                "device_id": "23",
+                "command": "3297",
+                "arg_number": "297",
+                "category": "UFC",
+                "description": "UFC I/P Button"
+            },
+            "UFC_SAVE": {
+                "type": "PushButton",
+                "msg": "UFC_SAVE",
+                "device_id": "23",
+                "command": "3309",
+                "arg_number": "309",
+                "category": "UFC",
+                "description": "UFC Save Data Button"
+            }
+        },
+        "UHF Radio": {
+            "UFC_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "UFC_BRIGHT",
+                "device_id": "23",
+                "command": "3295",
+                "arg_number": "295",
+                "limits": "{ 0, 1 }",
+                "category": "UHF Radio",
+                "description": "UFC Display Brightness Control"
+            },
+            "UFC_COM1_VOL": {
+                "type": "Potentiometer",
+                "msg": "UFC_COM1_VOL",
+                "device_id": "23",
+                "command": "3298",
+                "arg_number": "298",
+                "limits": "{ 0, 1 }",
+                "category": "UHF Radio",
+                "description": "UFC Comm 1 Volume Control"
+            },
+            "UFC_COM2_VOL": {
+                "type": "Potentiometer",
+                "msg": "UFC_COM2_VOL",
+                "device_id": "23",
+                "command": "3299",
+                "arg_number": "299",
+                "limits": "{ 0, 1 }",
+                "category": "UHF Radio",
+                "description": "UFC Comm 2 Volume Control"
+            },
+            "UFC_COM1_PULL": {
+                "type": "PushButton",
+                "msg": "UFC_COM1_PULL",
+                "device_id": "23",
+                "command": "3178",
+                "arg_number": "178",
+                "category": "UHF Radio",
+                "description": "UFC Comm 1 Channel Selector Pull"
+            },
+            "UFC_COM2_PULL": {
+                "type": "PushButton",
+                "msg": "UFC_COM2_PULL",
+                "device_id": "23",
+                "command": "3179",
+                "arg_number": "179",
+                "category": "UHF Radio",
+                "description": "UFC Comm 2 Channel Selector Pull"
+            },
+            "UFC_COM1_SEL": {
+                "type": "Rotary",
+                "msg": "UFC_COM1_SEL",
+                "device_id": "23",
+                "command": "3300",
+                "arg_number": "300",
+                "category": "UHF Radio",
+                "description": "UFC Comm 1 Channel Selector Turn"
+            },
+            "UFC_COM2_SEL": {
+                "type": "Rotary",
+                "msg": "UFC_COM2_SEL",
+                "device_id": "23",
+                "command": "3301",
+                "arg_number": "301",
+                "category": "UHF Radio",
+                "description": "UFC Comm 2 Channel Selector Turn"
+            },
+            "UHF_VOL": {
+                "type": "Potentiometer",
+                "msg": "UHF_VOL",
+                "device_id": "7",
+                "command": "3614",
+                "arg_number": "614",
+                "limits": "{ 0, 1 }",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC Volume Knob"
+            },
+            "UHF_FREQ": {
+                "type": "Rotary",
+                "msg": "UHF_FREQ",
+                "device_id": "7",
+                "command": "3615",
+                "arg_number": "615",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC Chan/Freq Knob"
+            },
+            "UHF_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "UHF_MODE",
+                "device_id": "7",
+                "device_command": "3616",
+                "arg_number": "616",
+                "num_positions": "7",
+                "increment": "0.2",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC Operational Mode Switch ZRO/OFF/TEST/TR+G/TR/ADF/CHNG PRST"
+            },
+            "UHF_ANC_POINT": {
+                "type": "PushButton",
+                "msg": "UHF_ANC_POINT",
+                "device_id": "7",
+                "command": "3617",
+                "arg_number": "617",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC Ancillary Mode Pointer"
+            },
+            "UHF_ANC_SW": {
+                "type": "PushButton",
+                "msg": "UHF_ANC_SW",
+                "device_id": "7",
+                "command": "3618",
+                "arg_number": "618",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC Ancillary Mode Switch"
+            },
+            "BOMBS_ARM_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "BOMBS_ARM_SW",
+                "device_id": "7",
+                "device_command": "3619",
+                "arg_number": "619",
+                "num_positions": "7",
+                "increment": "0.15",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC Frequency Mode Switch AJ-M/AJ/MAR/PRST/MAN/243/121"
+            },
+            "UHF_LOAD_SW": {
+                "type": "PushButton",
+                "msg": "UHF_LOAD_SW",
+                "device_id": "7",
+                "command": "3620",
+                "arg_number": "620",
+                "category": "UHF Radio",
+                "description": "V/UHF RSC LOAD/OFST Switch"
+            }
+        },
+        "ODU": {
+            "ODU_OPT1": {
+                "type": "PushButton",
+                "msg": "ODU_OPT1",
+                "device_id": "24",
+                "command": "3250",
+                "arg_number": "250",
+                "category": "ODU",
+                "description": "ODU Option 1"
+            },
+            "ODU_OPT2": {
+                "type": "PushButton",
+                "msg": "ODU_OPT2",
+                "device_id": "24",
+                "command": "3251",
+                "arg_number": "251",
+                "category": "ODU",
+                "description": "ODU Option 2"
+            },
+            "ODU_OPT3": {
+                "type": "PushButton",
+                "msg": "ODU_OPT3",
+                "device_id": "24",
+                "command": "3252",
+                "arg_number": "252",
+                "category": "ODU",
+                "description": "ODU Option 3"
+            },
+            "ODU_OPT4": {
+                "type": "PushButton",
+                "msg": "ODU_OPT4",
+                "device_id": "24",
+                "command": "3248",
+                "arg_number": "248",
+                "category": "ODU",
+                "description": "ODU Option 4"
+            },
+            "ODU_OPT5": {
+                "type": "PushButton",
+                "msg": "ODU_OPT5",
+                "device_id": "24",
+                "command": "3249",
+                "arg_number": "249",
+                "category": "ODU",
+                "description": "ODU Option 5"
+            }
+        },
+        "Master Warning Panel": {
+            "M_CAUTION": {
+                "type": "PushButton",
+                "msg": "M_CAUTION",
+                "device_id": "35",
+                "command": "3198",
+                "arg_number": "198",
+                "category": "Master Warning Panel",
+                "description": "Master Caution"
+            },
+            "M_WARNING": {
+                "type": "PushButton",
+                "msg": "M_WARNING",
+                "device_id": "35",
+                "command": "3199",
+                "arg_number": "199",
+                "category": "Master Warning Panel",
+                "description": "Master Warning"
+            }
+        },
+        "Fuel Panel": {
+            "FUEL_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "FUEL_SEL",
+                "device_id": "21",
+                "device_command": "3379",
+                "arg_number": "379",
+                "num_positions": "7",
+                "increment": "0.33",
+                "category": "Fuel Panel",
+                "description": "Fuel Totalizer Selector OUTBD/INBD/WING/INT/TOT/FEED/BIT"
+            },
+            "BINGO_SET": {
+                "type": "Rotary",
+                "msg": "BINGO_SET",
+                "device_id": "21",
+                "command": "3380",
+                "arg_number": "380",
+                "category": "Fuel Panel",
+                "description": "Bingo Fuel Set Knob"
+            },
+            "FUEL_PROP": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PROP",
+                "device_id": "9",
+                "command": "3504",
+                "arg_number": "504",
+                "category": "Fuel Panel",
+                "description": "Fuel Proportioner"
+            },
+            "FUEL_PUMP_L": {
+                "type": "MultipositionSwitch",
+                "msg": "FUEL_PUMP_L",
+                "device_id": "9",
+                "device_command": "3505",
+                "arg_number": "505",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Fuel Panel",
+                "description": "Fuel Pump L Switch DC OPEN/OFF/NORM"
+            },
+            "FUEL_PUMP_R": {
+                "type": "MultipositionSwitch",
+                "msg": "FUEL_PUMP_R",
+                "device_id": "9",
+                "device_command": "3506",
+                "arg_number": "506",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Fuel Panel",
+                "description": "Fuel Pump R Switch DC OPEN/OFF/NORM"
+            },
+            "PROBE": {
+                "type": "MultipositionSwitch",
+                "msg": "PROBE",
+                "device_id": "9",
+                "device_command": "3507",
+                "arg_number": "507",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Fuel Panel",
+                "description": "Air Refueling Probe Switch IN/OUT/PRESS"
+            },
+            "FUEL_DUMP_L": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_DUMP_L",
+                "device_id": "9",
+                "command": "3508",
+                "arg_number": "508",
+                "category": "Fuel Panel",
+                "description": "Fuel Dump L Switch"
+            },
+            "FUEL_DUMP_R": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_DUMP_R",
+                "device_id": "9",
+                "command": "3509",
+                "arg_number": "509",
+                "category": "Fuel Panel",
+                "description": "Fuel Dump R Switch"
+            }
+        },
+        "MPCD Left": {
+            "MPCD_L_1": {
+                "type": "PushButton",
+                "msg": "MPCD_L_1",
+                "device_id": "26",
+                "command": "3200",
+                "arg_number": "200",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 1"
+            },
+            "MPCD_L_2": {
+                "type": "PushButton",
+                "msg": "MPCD_L_2",
+                "device_id": "26",
+                "command": "3201",
+                "arg_number": "201",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 2"
+            },
+            "MPCD_L_3": {
+                "type": "PushButton",
+                "msg": "MPCD_L_3",
+                "device_id": "26",
+                "command": "3202",
+                "arg_number": "202",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 3"
+            },
+            "MPCD_L_4": {
+                "type": "PushButton",
+                "msg": "MPCD_L_4",
+                "device_id": "26",
+                "command": "3203",
+                "arg_number": "203",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 4"
+            },
+            "MPCD_L_5": {
+                "type": "PushButton",
+                "msg": "MPCD_L_5",
+                "device_id": "26",
+                "command": "3204",
+                "arg_number": "204",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 5"
+            },
+            "MPCD_L_6": {
+                "type": "PushButton",
+                "msg": "MPCD_L_6",
+                "device_id": "26",
+                "command": "3205",
+                "arg_number": "205",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 6"
+            },
+            "MPCD_L_7": {
+                "type": "PushButton",
+                "msg": "MPCD_L_7",
+                "device_id": "26",
+                "command": "3206",
+                "arg_number": "206",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 7"
+            },
+            "MPCD_L_8": {
+                "type": "PushButton",
+                "msg": "MPCD_L_8",
+                "device_id": "26",
+                "command": "3207",
+                "arg_number": "207",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 8"
+            },
+            "MPCD_L_9": {
+                "type": "PushButton",
+                "msg": "MPCD_L_9",
+                "device_id": "26",
+                "command": "3208",
+                "arg_number": "208",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 9"
+            },
+            "MPCD_L_10": {
+                "type": "PushButton",
+                "msg": "MPCD_L_10",
+                "device_id": "26",
+                "command": "3209",
+                "arg_number": "209",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 10"
+            },
+            "MPCD_L_11": {
+                "type": "PushButton",
+                "msg": "MPCD_L_11",
+                "device_id": "26",
+                "command": "3210",
+                "arg_number": "210",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 11"
+            },
+            "MPCD_L_12": {
+                "type": "PushButton",
+                "msg": "MPCD_L_12",
+                "device_id": "26",
+                "command": "3211",
+                "arg_number": "211",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 12"
+            },
+            "MPCD_L_13": {
+                "type": "PushButton",
+                "msg": "MPCD_L_13",
+                "device_id": "26",
+                "command": "3212",
+                "arg_number": "212",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 13"
+            },
+            "MPCD_L_14": {
+                "type": "PushButton",
+                "msg": "MPCD_L_14",
+                "device_id": "26",
+                "command": "3213",
+                "arg_number": "213",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 14"
+            },
+            "MPCD_L_15": {
+                "type": "PushButton",
+                "msg": "MPCD_L_15",
+                "device_id": "26",
+                "command": "3214",
+                "arg_number": "214",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 15"
+            },
+            "MPCD_L_16": {
+                "type": "PushButton",
+                "msg": "MPCD_L_16",
+                "device_id": "26",
+                "command": "3215",
+                "arg_number": "215",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 16"
+            },
+            "MPCD_L_17": {
+                "type": "PushButton",
+                "msg": "MPCD_L_17",
+                "device_id": "26",
+                "command": "3216",
+                "arg_number": "216",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 17"
+            },
+            "MPCD_L_18": {
+                "type": "PushButton",
+                "msg": "MPCD_L_18",
+                "device_id": "26",
+                "command": "3217",
+                "arg_number": "217",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 18"
+            },
+            "MPCD_L_19": {
+                "type": "PushButton",
+                "msg": "MPCD_L_19",
+                "device_id": "26",
+                "command": "3218",
+                "arg_number": "218",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 19"
+            },
+            "MPCD_L_20": {
+                "type": "PushButton",
+                "msg": "MPCD_L_20",
+                "device_id": "26",
+                "command": "3219",
+                "arg_number": "219",
+                "category": "MPCD Left",
+                "description": "MPCD Left Button 20"
+            },
+            "MPCD_L_DAY_NIGHT": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_L_DAY_NIGHT",
+                "device_id": "26",
+                "pos_command": "3007",
+                "pos_stop_command": "3007",
+                "neg_command": "3008",
+                "neg_stop_command": "3008",
+                "arg_number": "220",
+                "category": "MPCD Left",
+                "description": "MPCD Left Display DAY/NIGHT Mode"
+            },
+            "MPCD_L_SYMBOL": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_L_SYMBOL",
+                "device_id": "26",
+                "pos_command": "3001",
+                "pos_stop_command": "3001",
+                "neg_command": "3002",
+                "neg_stop_command": "3002",
+                "arg_number": "221",
+                "category": "MPCD Left",
+                "description": "MPCD Left Display Symbology"
+            },
+            "MPCD_L_GAIN": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_L_GAIN",
+                "device_id": "26",
+                "pos_command": "3003",
+                "pos_stop_command": "3003",
+                "neg_command": "3004",
+                "neg_stop_command": "3004",
+                "arg_number": "222",
+                "category": "MPCD Left",
+                "description": "MPCD Left Display Gain"
+            },
+            "MPCD_L_CONTRAST": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_L_CONTRAST",
+                "device_id": "26",
+                "pos_command": "3005",
+                "pos_stop_command": "3005",
+                "neg_command": "3006",
+                "neg_stop_command": "3006",
+                "arg_number": "223",
+                "category": "MPCD Left",
+                "description": "MPCD Left Display Contrast"
+            },
+            "MPCD_L_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "MPCD_L_BRIGHT",
+                "device_id": "26",
+                "command": "3194",
+                "arg_number": "194",
+                "limits": "{ 0, 1 }",
+                "category": "MPCD Left",
+                "description": "MPCD Left Off/Brightness Control"
+            }
+        },
+        "MPCD Right": {
+            "MPCD_R_1": {
+                "type": "PushButton",
+                "msg": "MPCD_R_1",
+                "device_id": "27",
+                "command": "3224",
+                "arg_number": "224",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 1"
+            },
+            "MPCD_R_2": {
+                "type": "PushButton",
+                "msg": "MPCD_R_2",
+                "device_id": "27",
+                "command": "3225",
+                "arg_number": "225",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 2"
+            },
+            "MPCD_R_3": {
+                "type": "PushButton",
+                "msg": "MPCD_R_3",
+                "device_id": "27",
+                "command": "3226",
+                "arg_number": "226",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 3"
+            },
+            "MPCD_R_4": {
+                "type": "PushButton",
+                "msg": "MPCD_R_4",
+                "device_id": "27",
+                "command": "3227",
+                "arg_number": "227",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 4"
+            },
+            "MPCD_R_5": {
+                "type": "PushButton",
+                "msg": "MPCD_R_5",
+                "device_id": "27",
+                "command": "3228",
+                "arg_number": "228",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 5"
+            },
+            "MPCD_R_6": {
+                "type": "PushButton",
+                "msg": "MPCD_R_6",
+                "device_id": "27",
+                "command": "3229",
+                "arg_number": "229",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 6"
+            },
+            "MPCD_R_7": {
+                "type": "PushButton",
+                "msg": "MPCD_R_7",
+                "device_id": "27",
+                "command": "3230",
+                "arg_number": "230",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 7"
+            },
+            "MPCD_R_8": {
+                "type": "PushButton",
+                "msg": "MPCD_R_8",
+                "device_id": "27",
+                "command": "3231",
+                "arg_number": "231",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 8"
+            },
+            "MPCD_R_9": {
+                "type": "PushButton",
+                "msg": "MPCD_R_9",
+                "device_id": "27",
+                "command": "3232",
+                "arg_number": "232",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 9"
+            },
+            "MPCD_R_10": {
+                "type": "PushButton",
+                "msg": "MPCD_R_10",
+                "device_id": "27",
+                "command": "3233",
+                "arg_number": "233",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 10"
+            },
+            "MPCD_R_11": {
+                "type": "PushButton",
+                "msg": "MPCD_R_11",
+                "device_id": "27",
+                "command": "3234",
+                "arg_number": "234",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 11"
+            },
+            "MPCD_R_12": {
+                "type": "PushButton",
+                "msg": "MPCD_R_12",
+                "device_id": "27",
+                "command": "3235",
+                "arg_number": "235",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 12"
+            },
+            "MPCD_R_13": {
+                "type": "PushButton",
+                "msg": "MPCD_R_13",
+                "device_id": "27",
+                "command": "3236",
+                "arg_number": "236",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 13"
+            },
+            "MPCD_R_14": {
+                "type": "PushButton",
+                "msg": "MPCD_R_14",
+                "device_id": "27",
+                "command": "3237",
+                "arg_number": "237",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 14"
+            },
+            "MPCD_R_15": {
+                "type": "PushButton",
+                "msg": "MPCD_R_15",
+                "device_id": "27",
+                "command": "3238",
+                "arg_number": "238",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 15"
+            },
+            "MPCD_R_16": {
+                "type": "PushButton",
+                "msg": "MPCD_R_16",
+                "device_id": "27",
+                "command": "3239",
+                "arg_number": "239",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 16"
+            },
+            "MPCD_R_17": {
+                "type": "PushButton",
+                "msg": "MPCD_R_17",
+                "device_id": "27",
+                "command": "3240",
+                "arg_number": "240",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 17"
+            },
+            "MPCD_R_18": {
+                "type": "PushButton",
+                "msg": "MPCD_R_18",
+                "device_id": "27",
+                "command": "3241",
+                "arg_number": "241",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 18"
+            },
+            "MPCD_R_19": {
+                "type": "PushButton",
+                "msg": "MPCD_R_19",
+                "device_id": "27",
+                "command": "3242",
+                "arg_number": "242",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 19"
+            },
+            "MPCD_R_20": {
+                "type": "PushButton",
+                "msg": "MPCD_R_20",
+                "device_id": "27",
+                "command": "3243",
+                "arg_number": "243",
+                "category": "MPCD Right",
+                "description": "MPCD Right Button 20"
+            },
+            "MPCD_R_DAY_NIGHT": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_R_DAY_NIGHT",
+                "device_id": "27",
+                "pos_command": "3017",
+                "pos_stop_command": "3017",
+                "neg_command": "3018",
+                "neg_stop_command": "3018",
+                "arg_number": "244",
+                "category": "MPCD Right",
+                "description": "MPCD Right Display DAY/NIGHT Mode"
+            },
+            "MPCD_R_SYMBOL": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_R_SYMBOL",
+                "device_id": "27",
+                "pos_command": "3011",
+                "pos_stop_command": "3011",
+                "neg_command": "3012",
+                "neg_stop_command": "3012",
+                "arg_number": "245",
+                "category": "MPCD Right",
+                "description": "MPCD Right Display Symbology"
+            },
+            "MPCD_R_GAIN": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_R_GAIN",
+                "device_id": "27",
+                "pos_command": "3013",
+                "pos_stop_command": "3013",
+                "neg_command": "3014",
+                "neg_stop_command": "3014",
+                "arg_number": "246",
+                "category": "MPCD Right",
+                "description": "MPCD Right Display Gain"
+            },
+            "MPCD_R_CONTRAST": {
+                "type": "RockerSwitch",
+                "msg": "MPCD_R_CONTRAST",
+                "device_id": "27",
+                "pos_command": "3015",
+                "pos_stop_command": "3015",
+                "neg_command": "3016",
+                "neg_stop_command": "3016",
+                "arg_number": "247",
+                "category": "MPCD Right",
+                "description": "MPCD Right Display Contrast"
+            },
+            "MPCD_R_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "MPCD_R_BRIGHT",
+                "device_id": "27",
+                "command": "3195",
+                "arg_number": "195",
+                "limits": "{ 0, 1 }",
+                "category": "MPCD Right",
+                "description": "MPCD Right Off/Brightness Control"
+            }
+        },
+        "ACP": {
+            "RELEASE_CONTROL": {
+                "type": "MultipositionSwitch",
+                "msg": "RELEASE_CONTROL",
+                "device_id": "29",
+                "device_command": "3395",
+                "arg_number": "395",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "ACP",
+                "description": "Manual Release Control Knob NORM/N+T/N/T"
+            },
+            "ARM_CONTROL": {
+                "type": "3PosTumb",
+                "msg": "ARM_CONTROL",
+                "device_id": "29",
+                "command": "3396",
+                "arg_number": "396",
+                "category": "ACP",
+                "description": "Armament Mode Control"
+            },
+            "FUZE_CONTROL": {
+                "type": "3PosTumb",
+                "msg": "FUZE_CONTROL",
+                "device_id": "29",
+                "command": "3397",
+                "arg_number": "397",
+                "category": "ACP",
+                "description": "Fuzing Control"
+            },
+            "QUANT_SEL_10": {
+                "type": "3PosTumb",
+                "msg": "QUANT_SEL_10",
+                "device_id": "29",
+                "command": "3398",
+                "arg_number": "398",
+                "category": "ACP",
+                "description": "Quantity Selector (Tens)"
+            },
+            "QUANT_SEL_01": {
+                "type": "3PosTumb",
+                "msg": "QUANT_SEL_01",
+                "device_id": "29",
+                "command": "3399",
+                "arg_number": "399",
+                "category": "ACP",
+                "description": "Quantity Selector (Units)"
+            },
+            "MULTI_RELEASE_CONTROL": {
+                "type": "3PosTumb",
+                "msg": "MULTI_RELEASE_CONTROL",
+                "device_id": "29",
+                "command": "3400",
+                "arg_number": "400",
+                "category": "ACP",
+                "description": "Multiple Release Control"
+            },
+            "RELEASE_INT_100": {
+                "type": "3PosTumb",
+                "msg": "RELEASE_INT_100",
+                "device_id": "29",
+                "command": "3401",
+                "arg_number": "401",
+                "category": "ACP",
+                "description": "Release Interval Control (Hundreds)"
+            },
+            "RELEASE_INT_010": {
+                "type": "3PosTumb",
+                "msg": "RELEASE_INT_010",
+                "device_id": "29",
+                "command": "3402",
+                "arg_number": "402",
+                "category": "ACP",
+                "description": "Release Interval Control (Tens)"
+            },
+            "RELEASE_INT_001": {
+                "type": "3PosTumb",
+                "msg": "RELEASE_INT_001",
+                "device_id": "29",
+                "command": "3403",
+                "arg_number": "403",
+                "category": "ACP",
+                "description": "Release Interval Control (Units)"
+            },
+            "JETT_MODE": {
+                "type": "Tumb",
+                "msg": "JETT_MODE",
+                "device_id": "29",
+                "command": "3404",
+                "arg_number": "404",
+                "step": "0.5",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ACP",
+                "description": "Jettison Mode Selector STA/STOR/SAFE/CMBT/Fuel"
+            },
+            "JETT_STORES": {
+                "type": "PushButton",
+                "msg": "JETT_STORES",
+                "device_id": "29",
+                "command": "3405",
+                "arg_number": "405",
+                "category": "ACP",
+                "description": "Jettison Stores"
+            },
+            "JETT_STATION_1": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_1",
+                "device_id": "29",
+                "command": "3407",
+                "arg_number": "407",
+                "category": "ACP",
+                "description": "Select Station 1 Toggle"
+            },
+            "JETT_STATION_2": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_2",
+                "device_id": "29",
+                "command": "3409",
+                "arg_number": "409",
+                "category": "ACP",
+                "description": "Select Station 2 Toggle"
+            },
+            "JETT_STATION_3": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_3",
+                "device_id": "29",
+                "command": "3411",
+                "arg_number": "411",
+                "category": "ACP",
+                "description": "Select Station 3 Toggle"
+            },
+            "JETT_STATION_4": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_4",
+                "device_id": "29",
+                "command": "3413",
+                "arg_number": "413",
+                "category": "ACP",
+                "description": "Select Station 4 Toggle"
+            },
+            "JETT_STATION_5": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_5",
+                "device_id": "29",
+                "command": "3415",
+                "arg_number": "415",
+                "category": "ACP",
+                "description": "Select Station 5 Toggle"
+            },
+            "JETT_STATION_6": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_6",
+                "device_id": "29",
+                "command": "3417",
+                "arg_number": "417",
+                "category": "ACP",
+                "description": "Select Station 6 Toggle"
+            },
+            "JETT_STATION_7": {
+                "type": "PushButton",
+                "msg": "JETT_STATION_7",
+                "device_id": "29",
+                "command": "3419",
+                "arg_number": "419",
+                "category": "ACP",
+                "description": "Select Station 7 Toggle"
+            },
+            "GND_IR_COOL": {
+                "type": "ToggleSwitch",
+                "msg": "GND_IR_COOL",
+                "device_id": "29",
+                "command": "3420",
+                "arg_number": "420",
+                "category": "ACP",
+                "description": "Ground IR Cool Switch"
+            }
+        },
+        "Master Armament Panel": {
+            "LAUNCH_FLARE_SALVO": {
+                "type": "PushButton",
+                "msg": "LAUNCH_FLARE_SALVO",
+                "device_id": "30",
+                "command": "3286",
+                "arg_number": "286",
+                "category": "Master Armament Panel",
+                "description": "Launch Flare Salvo"
+            },
+            "MASTER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_ARM",
+                "device_id": "29",
+                "command": "3287",
+                "arg_number": "287",
+                "category": "Master Armament Panel",
+                "description": "Master Arm Switch"
+            }
+        },
+        "ECM": {
+            "RWR_VOL": {
+                "type": "Potentiometer",
+                "msg": "RWR_VOL",
+                "device_id": "18",
+                "command": "3273",
+                "arg_number": "273",
+                "limits": "{ 0, 1 }",
+                "category": "ECM",
+                "description": "RWR Power/Volume Button"
+            },
+            "DECOY_CONTROL": {
+                "type": "MultipositionSwitch",
+                "msg": "DECOY_CONTROL",
+                "device_id": "30",
+                "device_command": "3274",
+                "arg_number": "274",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "ECM",
+                "description": "Decoy Dispenser Control OFF/AUT/UP/DWN/RWR"
+            },
+            "JAMMER_CONTROL": {
+                "type": "MultipositionSwitch",
+                "msg": "JAMMER_CONTROL",
+                "device_id": "30",
+                "device_command": "3275",
+                "arg_number": "275",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "ECM",
+                "description": "Jammer Control OFF/STBY/BIT/RCV/RPT"
+            }
+        },
+        "Gear/Flaps Control Panel": {
+            "LG_EMERG_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "LG_EMERG_LEVER",
+                "device_id": "28",
+                "command": "3447",
+                "arg_number": "447",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Emergency Landing Gear Lever"
+            },
+            "LG_DOWN_LOCK": {
+                "type": "PushButton",
+                "msg": "LG_DOWN_LOCK",
+                "device_id": "28",
+                "command": "3448",
+                "arg_number": "448",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Gear Down Lock Override Button"
+            },
+            "FLAP_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "FLAP_MODE",
+                "device_id": "13",
+                "device_command": "3454",
+                "arg_number": "454",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Flaps Mode Switch CRUISE/AUTO/STOL"
+            },
+            "FLAP_POWER": {
+                "type": "MultipositionSwitch",
+                "msg": "FLAP_POWER",
+                "device_id": "13",
+                "device_command": "3457",
+                "arg_number": "457",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Flaps Power Switch RESET/ON/OFF"
+            },
+            "EMERG_JETT": {
+                "type": "PushButton",
+                "msg": "EMERG_JETT",
+                "device_id": "29",
+                "command": "3458",
+                "arg_number": "458",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Emergency Jettison Button"
+            },
+            "ANTI_SKID": {
+                "type": "MultipositionSwitch",
+                "msg": "ANTI_SKID",
+                "device_id": "28",
+                "device_command": "3459",
+                "arg_number": "459",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Anti-Skid Switch TEST/ON/NWS"
+            },
+            "FLAPS_BIT": {
+                "type": "PushButton",
+                "msg": "FLAPS_BIT",
+                "device_id": "13",
+                "command": "3460",
+                "arg_number": "460",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Flaps BIT Button"
+            },
+            "LG_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "LG_LEVER",
+                "device_id": "28",
+                "command": "3461",
+                "arg_number": "461",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Gear Lever"
+            },
+            "LG_EMERGBATT_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "LG_EMERGBATT_LEVER",
+                "device_id": "28",
+                "command": "3470",
+                "arg_number": "470",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Landing Gear Emergency Battery Lever"
+            },
+            "O2_SW": {
+                "type": "ToggleSwitch",
+                "msg": "O2_SW",
+                "device_id": "36",
+                "command": "3514",
+                "arg_number": "514",
+                "category": "Gear/Flaps Control Panel",
+                "description": "Oxygen Switch"
+            },
+            "H2O_DUMP": {
+                "type": "ToggleSwitch",
+                "msg": "H2O_DUMP",
+                "device_id": "9",
+                "command": "3515",
+                "arg_number": "515",
+                "category": "Gear/Flaps Control Panel",
+                "description": "H2O Dump Switch"
+            },
+            "LIDS_SW": {
+                "type": "ToggleSwitch",
+                "msg": "LIDS_SW",
+                "device_id": "13",
+                "command": "3516",
+                "arg_number": "516",
+                "category": "Gear/Flaps Control Panel",
+                "description": "LIDS Switch"
+            },
+            "RPM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RPM_SW",
+                "device_id": "9",
+                "command": "3517",
+                "arg_number": "517",
+                "category": "Gear/Flaps Control Panel",
+                "description": "ENG RPM Switch"
+            },
+            "EFC_SW": {
+                "type": "ToggleSwitch",
+                "msg": "EFC_SW",
+                "device_id": "9",
+                "command": "3518",
+                "arg_number": "518",
+                "category": "Gear/Flaps Control Panel",
+                "description": "EFC Switch"
+            }
+        },
+        "H2O": {
+            "CMBT": {
+                "type": "PushButton",
+                "msg": "CMBT",
+                "device_id": "9",
+                "command": "3450",
+                "arg_number": "450",
+                "category": "H2O",
+                "description": "CMBT Thrust Button"
+            },
+            "H2O_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "H2O_MODE",
+                "device_id": "9",
+                "device_command": "3449",
+                "arg_number": "449",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "H2O",
+                "description": "H2O Mode Switch  LDG/OFF/TO"
+            }
+        },
+        "Bulkhead": {
+            "MFS_EMERG_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "MFS_EMERG_LEVER",
+                "device_id": "28",
+                "command": "3501",
+                "arg_number": "501",
+                "category": "Bulkhead",
+                "description": "MFS Emergency Lever"
+            },
+            "STOPWATCH_START": {
+                "type": "PushButton",
+                "msg": "STOPWATCH_START",
+                "device_id": "12",
+                "command": "3051",
+                "arg_number": "1121",
+                "category": "Bulkhead",
+                "description": "Stopwatch Start/Stop"
+            },
+            "STOPWATCH_LAP": {
+                "type": "PushButton",
+                "msg": "STOPWATCH_LAP",
+                "device_id": "12",
+                "command": "3052",
+                "arg_number": "1122",
+                "category": "Bulkhead",
+                "description": "Stopwatch Lap/Reset"
+            }
+        },
+        "Seat": {
+            "SEAT_SAFE_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "SEAT_SAFE_LEVER",
+                "device_id": "12",
+                "command": "3800",
+                "arg_number": "800",
+                "category": "Seat",
+                "description": "Seat Ground Safety Lever"
+            }
+        },
+        "Flight Instruments": {
+            "NAV_CRS": {
+                "type": "3PosTumb",
+                "msg": "NAV_CRS",
+                "device_id": "11",
+                "command": "3364",
+                "arg_number": "364",
+                "category": "Flight Instruments",
+                "description": "NAV Course Setting"
+            },
+            "BARO_PRESSURE": {
+                "type": "Rotary",
+                "msg": "BARO_PRESSURE",
+                "device_id": "10",
+                "command": "3653",
+                "arg_number": "653",
+                "category": "Flight Instruments",
+                "description": "Barometric Pressure Calibration"
+            },
+            "BAK_ADI_CAGE_KNOB": {
+                "type": "Potentiometer",
+                "msg": "BAK_ADI_CAGE_KNOB",
+                "device_id": "19",
+                "command": "3351",
+                "arg_number": "351",
+                "limits": "{ 0, 1 }",
+                "category": "Flight Instruments",
+                "description": "Backup ADI Cage/Pitch Adjust Knob"
+            },
+            "BAK_ADI_CAGE_PULL": {
+                "type": "PushButton",
+                "msg": "BAK_ADI_CAGE_PULL",
+                "device_id": "19",
+                "command": "3350",
+                "arg_number": "350",
+                "category": "Flight Instruments",
+                "description": "Backup ADI Cage/Pitch Adjust Pull"
+            }
+        },
+        "Misc": {
+            "RECORD_SYS_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RECORD_SYS_MODE",
+                "device_id": "14",
+                "command": "3422",
+                "arg_number": "422",
+                "category": "Misc",
+                "description": "Video Recorder System Mode Switch"
+            },
+            "RECORD_SYS_DISPLAY": {
+                "type": "ToggleSwitch",
+                "msg": "RECORD_SYS_DISPLAY",
+                "device_id": "14",
+                "command": "3423",
+                "arg_number": "423",
+                "category": "Misc",
+                "description": "Video Recorder System Display Selector Switch"
+            },
+            "DMT": {
+                "type": "ToggleSwitch",
+                "msg": "DMT",
+                "device_id": "16",
+                "command": "3424",
+                "arg_number": "424",
+                "category": "Misc",
+                "description": "DMT Toggle On/Off"
+            },
+            "DUAL_CPU_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "DUAL_CPU_MODE",
+                "device_id": "12",
+                "device_command": "3425",
+                "arg_number": "425",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Misc",
+                "description": "Display Computer Mode Selector Switch PRIM/AUTO/ALTER"
+            },
+            "PROBE_HEAT_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "PROBE_HEAT_MODE",
+                "device_id": "19",
+                "command": "3426",
+                "arg_number": "426",
+                "category": "Misc",
+                "description": "Probe Heat Mode Switch"
+            },
+            "MISS_PC_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "MISS_PC_MODE",
+                "device_id": "12",
+                "device_command": "3427",
+                "arg_number": "427",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Misc",
+                "description": "Mission Computer Mode Switch OVRD/AUTO/OFF"
+            },
+            "FLIR": {
+                "type": "ToggleSwitch",
+                "msg": "FLIR",
+                "device_id": "14",
+                "command": "3429",
+                "arg_number": "429",
+                "category": "Misc",
+                "description": "FLIR Power Switch"
+            }
+        },
+        "INS": {
+            "INS_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "INS_MODE",
+                "device_id": "11",
+                "device_command": "3421",
+                "arg_number": "421",
+                "num_positions": "8",
+                "increment": "0.1",
+                "category": "INS",
+                "description": "INS Mode Knob OFF/SEA/GND/NAV/IFA/GYRO/GB/TEST"
+            }
+        },
+        "Trim": {
+            "YAW_TRIM_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "YAW_TRIM_SW",
+                "device_id": "28",
+                "device_command": "3471",
+                "arg_number": "471",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Trim",
+                "description": "RPS/YAW Trim Switch TEST/ON/OFF"
+            },
+            "TRIM_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "TRIM_MODE",
+                "device_id": "28",
+                "device_command": "3472",
+                "arg_number": "472",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Trim",
+                "description": "Trim Mode Switch APRCH/HVR/OFF"
+            }
+        },
+        "SAAHS": {
+            "ALT_HOLD_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ALT_HOLD_SW",
+                "device_id": "28",
+                "command": "3476",
+                "arg_number": "476",
+                "category": "SAAHS",
+                "description": "Alt Hold Switch"
+            },
+            "Q_FEEL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "Q_FEEL_SW",
+                "device_id": "28",
+                "command": "3475",
+                "arg_number": "475",
+                "category": "SAAHS",
+                "description": "Q Feel Switch"
+            },
+            "AFC_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "AFC_SW",
+                "device_id": "28",
+                "device_command": "3477",
+                "arg_number": "477",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "SAAHS",
+                "description": "AFC Switch ON/OFF/RESET"
+            },
+            "SAS_YAW": {
+                "type": "ToggleSwitch",
+                "msg": "SAS_YAW",
+                "device_id": "28",
+                "command": "3478",
+                "arg_number": "478",
+                "category": "SAAHS",
+                "description": "SAS Yaw Switch"
+            },
+            "SAS_ROLL": {
+                "type": "ToggleSwitch",
+                "msg": "SAS_ROLL",
+                "device_id": "28",
+                "command": "3479",
+                "arg_number": "479",
+                "category": "SAAHS",
+                "description": "SAS Roll Switch"
+            },
+            "SAS_PITCH": {
+                "type": "ToggleSwitch",
+                "msg": "SAS_PITCH",
+                "device_id": "28",
+                "command": "3480",
+                "arg_number": "480",
+                "category": "SAAHS",
+                "description": "SAS Pitch Switch"
+            }
+        },
+        "Throttle": {
+            "JPTL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "JPTL_SW",
+                "device_id": "9",
+                "command": "3481",
+                "arg_number": "481",
+                "category": "Throttle",
+                "description": "JPTL Switch"
+            },
+            "RUDDER_TRIM": {
+                "type": "3PosTumb",
+                "msg": "RUDDER_TRIM",
+                "device_id": "28",
+                "command": "3483",
+                "arg_number": "483",
+                "category": "Throttle",
+                "description": "Rudder Trim Switch L/R"
+            },
+            "EMS_B": {
+                "type": "PushButton",
+                "msg": "EMS_B",
+                "device_id": "9",
+                "command": "3482",
+                "arg_number": "482",
+                "category": "Throttle",
+                "description": "EMS Button"
+            },
+            "MAN_FUEL_SW": {
+                "type": "ToggleSwitch",
+                "msg": "MAN_FUEL_SW",
+                "device_id": "9",
+                "command": "3484",
+                "arg_number": "484",
+                "category": "Throttle",
+                "description": "Manual Fuel Switch"
+            },
+            "THROTTLE_FRICTION": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_FRICTION",
+                "device_id": "28",
+                "command": "3485",
+                "arg_number": "485",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle",
+                "description": "Throttle Lever Friction Knob"
+            },
+            "NOZZLE_FRICTION": {
+                "type": "Potentiometer",
+                "msg": "NOZZLE_FRICTION",
+                "device_id": "28",
+                "command": "3486",
+                "arg_number": "486",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle",
+                "description": "Nozzle Lever Friction Knob"
+            },
+            "THROTT_CUTOFF_LV": {
+                "type": "ToggleSwitch",
+                "msg": "THROTT_CUTOFF_LV",
+                "device_id": "9",
+                "command": "3490",
+                "arg_number": "490",
+                "category": "Throttle",
+                "description": "Throttle Cutoff Lever"
+            },
+            "PARK_BRAKE_LV": {
+                "type": "ToggleSwitch",
+                "msg": "PARK_BRAKE_LV",
+                "device_id": "28",
+                "command": "3489",
+                "arg_number": "489",
+                "category": "Throttle",
+                "description": "Parking Brake Lever"
+            },
+            "NOZZLE_LEVER": {
+                "type": "Potentiometer",
+                "msg": "NOZZLE_LEVER",
+                "device_id": "13",
+                "command": "3487",
+                "arg_number": "487",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle",
+                "description": "Nozzle Control Lever"
+            },
+            "STO_LEVER": {
+                "type": "Tumb",
+                "msg": "STO_LEVER",
+                "device_id": "13",
+                "command": "3488",
+                "arg_number": "488",
+                "step": "0.05",
+                "limits": "{ 0.35, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Throttle",
+                "description": "STO Stop Lever"
+            }
+        },
+        "External Lights": {
+            "LANDING_TAXI_LIGHTS": {
+                "type": "MultipositionSwitch",
+                "msg": "LANDING_TAXI_LIGHTS",
+                "device_id": "33",
+                "device_command": "3472",
+                "arg_number": "472",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "External Lights",
+                "description": "Landing/Taxi Lights Switch OFF/HVR/APRCH"
+            },
+            "EXT_LIGHTS": {
+                "type": "MultipositionSwitch",
+                "msg": "EXT_LIGHTS",
+                "device_id": "33",
+                "device_command": "3503",
+                "arg_number": "503",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "External Lights",
+                "description": "External Lights Mode Switch NORM/NVG/OFF"
+            },
+            "FORMATION_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "FORMATION_LIGHTS",
+                "device_id": "33",
+                "command": "3510",
+                "arg_number": "510",
+                "limits": "{ 0, 1 }",
+                "category": "External Lights",
+                "description": "Formation Lights Knob"
+            },
+            "POS_LIGHTS": {
+                "type": "MultipositionSwitch",
+                "msg": "POS_LIGHTS",
+                "device_id": "33",
+                "device_command": "3511",
+                "arg_number": "511",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "External Lights",
+                "description": "Position Lights Switch OFF/DIM/BRT"
+            },
+            "ANTI_COLL_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "ANTI_COLL_LIGHTS",
+                "device_id": "33",
+                "command": "3512",
+                "arg_number": "512",
+                "category": "External Lights",
+                "description": "Anti-Collision Lights Switch"
+            },
+            "EXT_AUX_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "EXT_AUX_LIGHTS",
+                "device_id": "33",
+                "command": "3513",
+                "arg_number": "513",
+                "category": "External Lights",
+                "description": "External Auxiliary Lights Switch"
+            }
+        },
+        "Bulkhead Left": {
+            "SEAT_ADJ": {
+                "type": "3PosTumb",
+                "msg": "SEAT_ADJ",
+                "device_id": "12",
+                "command": "3502",
+                "arg_number": "502",
+                "category": "Bulkhead Left",
+                "description": "Seat Adjustment Switch"
+            },
+            "FUEL_SHUTOFF": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_SHUTOFF",
+                "device_id": "9",
+                "command": "3519",
+                "arg_number": "519",
+                "category": "Bulkhead Left",
+                "description": "Fuel Shutoff Lever"
+            },
+            "DECS_SW": {
+                "type": "ToggleSwitch",
+                "msg": "DECS_SW",
+                "device_id": "9",
+                "command": "3520",
+                "arg_number": "520",
+                "category": "Bulkhead Left",
+                "description": "DECS Switch"
+            }
+        },
+        "Electric Panel": {
+            "DC_TEST_SW": {
+                "type": "ToggleSwitch",
+                "msg": "DC_TEST_SW",
+                "device_id": "1",
+                "command": "3609",
+                "arg_number": "609",
+                "category": "Electric Panel",
+                "description": "DC Test Switch"
+            },
+            "APU_GEN_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "APU_GEN_SW",
+                "device_id": "1",
+                "device_command": "3610",
+                "arg_number": "610",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Electric Panel",
+                "description": "APU Generator Switch OFF/ON/RESET"
+            },
+            "ENG_START_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_START_SW",
+                "device_id": "1",
+                "command": "3611",
+                "arg_number": "611",
+                "category": "Electric Panel",
+                "description": "Engine Start Switch"
+            },
+            "GEN_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "GEN_SW",
+                "device_id": "1",
+                "device_command": "3612",
+                "arg_number": "612",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Electric Panel",
+                "description": "Generator Switch  TEST/OFF/ON"
+            },
+            "BATT_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "BATT_SW",
+                "device_id": "1",
+                "device_command": "3613",
+                "arg_number": "613",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Electric Panel",
+                "description": "Battery Switch  ALERT/OFF/ON"
+            }
+        },
+        "ACNIP": {
+            "ACNIP_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ACNIP_MODE",
+                "device_id": "8",
+                "command": "3621",
+                "arg_number": "621",
+                "category": "ACNIP",
+                "description": "ACNIP Mode Switch"
+            },
+            "KY1_TYPE": {
+                "type": "ToggleSwitch",
+                "msg": "KY1_TYPE",
+                "device_id": "8",
+                "command": "3622",
+                "arg_number": "622",
+                "category": "ACNIP",
+                "description": "KY-1 Cipher Type Selector Switch"
+            },
+            "KY2_TYPE": {
+                "type": "ToggleSwitch",
+                "msg": "KY2_TYPE",
+                "device_id": "8",
+                "command": "3623",
+                "arg_number": "623",
+                "category": "ACNIP",
+                "description": "KY-2 Cipher Type Selector Switch"
+            },
+            "KY1_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "KY1_MODE",
+                "device_id": "8",
+                "command": "3624",
+                "arg_number": "624",
+                "category": "ACNIP",
+                "description": "KY-1 Code/Mode Switch"
+            },
+            "KY2_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "KY2_MODE",
+                "device_id": "8",
+                "command": "3625",
+                "arg_number": "625",
+                "category": "ACNIP",
+                "description": "KY-2 Code/Mode Switch"
+            },
+            "ACNIP_RADIO_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "ACNIP_RADIO_SEL",
+                "device_id": "8",
+                "command": "3626",
+                "arg_number": "626",
+                "category": "ACNIP",
+                "description": "ACNIP Radio Selector Switch"
+            },
+            "KY58_CODE_CLEAR": {
+                "type": "ToggleSwitch",
+                "msg": "KY58_CODE_CLEAR",
+                "device_id": "8",
+                "command": "3627",
+                "arg_number": "627",
+                "category": "ACNIP",
+                "description": "KY-58 Codes Clear Switch"
+            },
+            "KY58_CODE_LOAD": {
+                "type": "3PosTumb",
+                "msg": "KY58_CODE_LOAD",
+                "device_id": "8",
+                "command": "3628",
+                "arg_number": "628",
+                "category": "ACNIP",
+                "description": "KY-58 Remote Codes Load Switch  RV1/OPR/RV2"
+            }
+        },
+        "ICS": {
+            "ICS_AUX_VOL": {
+                "type": "Potentiometer",
+                "msg": "ICS_AUX_VOL",
+                "device_id": "4",
+                "command": "3630",
+                "arg_number": "630",
+                "limits": "{ 0, 1 }",
+                "category": "ICS",
+                "description": "ICS Aux Volume Knob"
+            },
+            "ICS_GND_VOL": {
+                "type": "Potentiometer",
+                "msg": "ICS_GND_VOL",
+                "device_id": "4",
+                "command": "3629",
+                "arg_number": "629",
+                "limits": "{ 0, 1 }",
+                "category": "ICS",
+                "description": "ICS Ground Volume Knob"
+            },
+            "ICS_MIC_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "ICS_MIC_MODE",
+                "device_id": "4",
+                "device_command": "3631",
+                "arg_number": "631",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ICS",
+                "description": "ICS Mic Operational Mode Switch  COLD/HOT/TEL"
+            }
+        },
+        "IFF": {
+            "IFF_OPER_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_OPER_MODE",
+                "device_id": "8",
+                "command": "3632",
+                "arg_number": "632",
+                "category": "IFF",
+                "description": "IFF Operational Mode Switch"
+            },
+            "IFF_CRYPT_MODE": {
+                "type": "3PosTumb",
+                "msg": "IFF_CRYPT_MODE",
+                "device_id": "8",
+                "command": "3633",
+                "arg_number": "633",
+                "category": "IFF",
+                "description": "IFF Crypto Mode Switch  ZERO/NORM/HOLD"
+            }
+        },
+        "Int Light": {
+            "COMP_LIGHT": {
+                "type": "3PosTumb",
+                "msg": "COMP_LIGHT",
+                "device_id": "34",
+                "command": "3634",
+                "arg_number": "634",
+                "category": "Int Light",
+                "description": "Compass Light/Test Lights  COPM/OFF/LTS TEST"
+            },
+            "INST_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "INST_LIGHTS",
+                "device_id": "34",
+                "command": "3635",
+                "arg_number": "635",
+                "limits": "{ 0, 1 }",
+                "category": "Int Light",
+                "description": "Instruments Lights"
+            },
+            "CONSOLE_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "CONSOLE_LIGHTS",
+                "device_id": "34",
+                "command": "3636",
+                "arg_number": "636",
+                "limits": "{ 0, 1 }",
+                "category": "Int Light",
+                "description": "Console Lights"
+            },
+            "FLOOD_LIGHTS_DIAL": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_LIGHTS_DIAL",
+                "device_id": "34",
+                "command": "3637",
+                "arg_number": "637",
+                "limits": "{ 0, 1 }",
+                "category": "Int Light",
+                "description": "Flood Lights"
+            },
+            "ANNUNCIATOR_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "ANNUNCIATOR_LIGHTS",
+                "device_id": "34",
+                "command": "3638",
+                "arg_number": "638",
+                "limits": "{ 0, 0.9 }",
+                "category": "Int Light",
+                "description": "Annunciator Lights"
+            }
+        },
+        "ECS": {
+            "TEMP_CONTROL": {
+                "type": "Potentiometer",
+                "msg": "TEMP_CONTROL",
+                "device_id": "36",
+                "command": "3639",
+                "arg_number": "639",
+                "limits": "{ 0, 1 }",
+                "category": "ECS",
+                "description": "Temperature Control Knob"
+            },
+            "ECS_FWD": {
+                "type": "ToggleSwitch",
+                "msg": "ECS_FWD",
+                "device_id": "36",
+                "command": "3640",
+                "arg_number": "640",
+                "category": "ECS",
+                "description": "Fwd Equipment Bay ECS Switch"
+            },
+            "CABIN_DEFOG": {
+                "type": "MultipositionSwitch",
+                "msg": "CABIN_DEFOG",
+                "device_id": "36",
+                "device_command": "3641",
+                "arg_number": "641",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ECS",
+                "description": "Cabin Defog Switch NORM/DFOG/MAX"
+            },
+            "ECS_AFT": {
+                "type": "MultipositionSwitch",
+                "msg": "ECS_AFT",
+                "device_id": "36",
+                "device_command": "3642",
+                "arg_number": "642",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ECS",
+                "description": "Aft Equipment Bay ECS Switch RESET/ON/OFF"
+            },
+            "CABIN_PRESS_SWITCH": {
+                "type": "MultipositionSwitch",
+                "msg": "CABIN_PRESS_SWITCH",
+                "device_id": "36",
+                "device_command": "3643",
+                "arg_number": "643",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ECS",
+                "description": "Cabin Pressure Switch NORM/DUMP/RAM"
+            }
+        },
+        "Flood Lamps": {
+            "FLOOD_R_CAN_T": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_R_CAN_T",
+                "device_id": "34",
+                "command": "3150",
+                "arg_number": "150",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Right Canopy Frame Top"
+            },
+            "FLOOD_R_CAN_B": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_R_CAN_B",
+                "device_id": "34",
+                "command": "3151",
+                "arg_number": "151",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Right Canopy Frame Btm"
+            },
+            "FLOOD_R_BH_FWD": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_R_BH_FWD",
+                "device_id": "34",
+                "command": "3152",
+                "arg_number": "152",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Right BH FWD"
+            },
+            "FLOOD_R_BH_AFT_F": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_R_BH_AFT_F",
+                "device_id": "34",
+                "command": "3153",
+                "arg_number": "153",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Right BH AFT Front"
+            },
+            "FLOOD_R_BH_AFT_B": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_R_BH_AFT_B",
+                "device_id": "34",
+                "command": "3154",
+                "arg_number": "154",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Right BH AFT Back"
+            },
+            "FLOOD_L_BH_AFT_B": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_L_BH_AFT_B",
+                "device_id": "34",
+                "command": "3155",
+                "arg_number": "155",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Left BH AFT Back"
+            },
+            "FLOOD_L_BH_AFT_F": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_L_BH_AFT_F",
+                "device_id": "34",
+                "command": "3156",
+                "arg_number": "156",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Left BH AFT Front"
+            },
+            "FLOOD_L_BH_FWD": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_L_BH_FWD",
+                "device_id": "34",
+                "command": "3157",
+                "arg_number": "157",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Left BH FWD"
+            },
+            "FLOOD_L_CAN_B": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_L_CAN_B",
+                "device_id": "34",
+                "command": "3158",
+                "arg_number": "158",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Left Canopy Frame Btm"
+            },
+            "FLOOD_L_CAN_T": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_L_CAN_T",
+                "device_id": "34",
+                "command": "3159",
+                "arg_number": "159",
+                "limits": "{ -1, 1 }",
+                "category": "Flood Lamps",
+                "description": "Flood Left Canopy Frame Top"
+            }
+        },
+        "Canopy": {
+            "CANOPY_HAND_L": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_HAND_L",
+                "device_id": "28",
+                "command": "3801",
+                "arg_number": "801",
+                "category": "Canopy",
+                "description": "Canopy Handle Left"
+            },
+            "CANOPY_HAND_R": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_HAND_R",
+                "device_id": "28",
+                "command": "3802",
+                "arg_number": "802",
+                "category": "Canopy",
+                "description": "Canopy Handle Right"
+            },
+            "CANOPY_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_LOCK",
+                "device_id": "28",
+                "command": "3803",
+                "arg_number": "803",
+                "category": "Canopy",
+                "description": "Canopy Locking Lever"
+            },
+            "MIRROR_TOGGLE_L": {
+                "type": "ToggleSwitch",
+                "msg": "MIRROR_TOGGLE_L",
+                "device_id": "19",
+                "command": "4124",
+                "arg_number": "1124",
+                "category": "Canopy",
+                "description": "Mirror Rendering Toggle Left"
+            },
+            "MIRROR_TOGGLE_C": {
+                "type": "ToggleSwitch",
+                "msg": "MIRROR_TOGGLE_C",
+                "device_id": "19",
+                "command": "4125",
+                "arg_number": "1125",
+                "category": "Canopy",
+                "description": "Mirror Rendering Toggle Center"
+            },
+            "MIRROR_TOGGLE_R": {
+                "type": "ToggleSwitch",
+                "msg": "MIRROR_TOGGLE_R",
+                "device_id": "19",
+                "command": "4126",
+                "arg_number": "1126",
+                "category": "Canopy",
+                "description": "Mirror Rendering Toggle Right"
+            }
+        },
+        "Cockpit": {
+            "HIDE_STICK": {
+                "type": "ToggleSwitch",
+                "msg": "HIDE_STICK",
+                "device_id": "28",
+                "command": "4999",
+                "arg_number": "999",
+                "category": "Cockpit",
+                "description": "Show/Hide Controls"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "AV-8B",
+        "date": "Dec 21 2024, 11:30 AM -0800",
+        "version": "v0.8.3"
+    }
+}

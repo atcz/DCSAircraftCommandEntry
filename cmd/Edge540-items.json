@@ -1,0 +1,299 @@
+{
+    "commands": {
+        "Main Panel": {
+            "ALT_SET": {
+                "type": "Rotary",
+                "msg": "ALT_SET",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "6",
+                "category": "Main Panel",
+                "description": "Altimeter Setting"
+            },
+            "MASTER_SW": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_SW",
+                "device_id": "4",
+                "command": "3051",
+                "arg_number": "18",
+                "category": "Main Panel",
+                "description": "Master Switch"
+            },
+            "BOOST_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BOOST_SW",
+                "device_id": "4",
+                "command": "3052",
+                "arg_number": "19",
+                "category": "Main Panel",
+                "description": "Electric Fuel Pump"
+            },
+            "CANOPY": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY",
+                "device_id": "6",
+                "command": "71",
+                "arg_number": "0",
+                "category": "Main Panel",
+                "description": "Canopy Open/Close"
+            },
+            "UAV_BTN": {
+                "type": "PushButton",
+                "msg": "UAV_BTN",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "0",
+                "category": "Main Panel",
+                "description": "UAV Mode"
+            },
+            "LED_BTN": {
+                "type": "PushButton",
+                "msg": "LED_BTN",
+                "device_id": "2",
+                "command": "3008",
+                "arg_number": "0",
+                "category": "Main Panel",
+                "description": "Racing LED Indicator Speed/G Toggle"
+            },
+            "STOPWATCH_BTN": {
+                "type": "PushButton",
+                "msg": "STOPWATCH_BTN",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "0",
+                "category": "Main Panel",
+                "description": "Stopwatch Start/Stop/Reset"
+            },
+            "PROP_MIX": {
+                "type": "Potentiometer",
+                "msg": "PROP_MIX",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "17",
+                "limits": "{ 0, 1 }",
+                "category": "Main Panel",
+                "description": "Mixture Lever"
+            },
+            "FUEL_SEL": {
+                "type": "Tumb",
+                "msg": "FUEL_SEL",
+                "device_id": "3",
+                "command": "3053",
+                "arg_number": "21",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Main Panel",
+                "description": "Fuel Selector"
+            },
+            "MAG": {
+                "type": "Tumb",
+                "msg": "MAG",
+                "device_id": "3",
+                "command": "3050",
+                "arg_number": "14",
+                "step": "0.25",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Main Panel",
+                "description": "Magnetos"
+            }
+        },
+        "Main Display": {
+            "PAGE_1BTN_NAV": {
+                "type": "PushButton",
+                "msg": "PAGE_1BTN_NAV",
+                "device_id": "8",
+                "command": "3015",
+                "arg_number": "34",
+                "category": "Main Display",
+                "description": "Display Button 1 NAV Page"
+            },
+            "PAGE_2BTN_SYS": {
+                "type": "PushButton",
+                "msg": "PAGE_2BTN_SYS",
+                "device_id": "8",
+                "command": "3017",
+                "arg_number": "32",
+                "category": "Main Display",
+                "description": "Display Button 2 System Page"
+            },
+            "PAGE_3BTN_MP3": {
+                "type": "PushButton",
+                "msg": "PAGE_3BTN_MP3",
+                "device_id": "8",
+                "command": "3018",
+                "arg_number": "31",
+                "category": "Main Display",
+                "description": "Display Button 3 Mp3 Page"
+            },
+            "PAGE_4BTN_CONF": {
+                "type": "PushButton",
+                "msg": "PAGE_4BTN_CONF",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "30",
+                "category": "Main Display",
+                "description": "Display Button 4 Configuration Page"
+            }
+        },
+        "System Page": {
+            "SYS_NAV_BTN": {
+                "type": "PushButton",
+                "msg": "SYS_NAV_BTN",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "61",
+                "category": "System Page",
+                "description": "System Page - Navigation Lights"
+            },
+            "SYS_FLOOD_BTN": {
+                "type": "PushButton",
+                "msg": "SYS_FLOOD_BTN",
+                "device_id": "4",
+                "command": "3012",
+                "arg_number": "63",
+                "category": "System Page",
+                "description": "System Page - Flood Lights"
+            },
+            "SYS_GAUGE_BTN": {
+                "type": "PushButton",
+                "msg": "SYS_GAUGE_BTN",
+                "device_id": "4",
+                "command": "3013",
+                "arg_number": "42",
+                "category": "System Page",
+                "description": "System Page - Gauge Lights"
+            },
+            "SYS_WALL_BTN": {
+                "type": "PushButton",
+                "msg": "SYS_WALL_BTN",
+                "device_id": "8",
+                "command": "3019",
+                "arg_number": "0",
+                "category": "System Page",
+                "description": "System Page - Wallpaper"
+            },
+            "SYS_FLOOD_L_COL": {
+                "type": "Tumb",
+                "msg": "SYS_FLOOD_L_COL",
+                "device_id": "8",
+                "command": "3023",
+                "arg_number": "0",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "System Page",
+                "description": "System Page - Flood Light Color"
+            }
+        },
+        "Mp3 Page": {
+            "MP3_PLAY": {
+                "type": "PushButton",
+                "msg": "MP3_PLAY",
+                "device_id": "9",
+                "command": "3030",
+                "arg_number": "0",
+                "category": "Mp3 Page",
+                "description": "Mp3 Play"
+            },
+            "MP3_NEXT": {
+                "type": "PushButton",
+                "msg": "MP3_NEXT",
+                "device_id": "9",
+                "command": "3031",
+                "arg_number": "0",
+                "category": "Mp3 Page",
+                "description": "Mp3 Next Track"
+            },
+            "MP3_PREV": {
+                "type": "PushButton",
+                "msg": "MP3_PREV",
+                "device_id": "9",
+                "command": "3032",
+                "arg_number": "0",
+                "category": "Mp3 Page",
+                "description": "Mp3 Previous Track"
+            }
+        },
+        "Config Page": {
+            "CONF_CUSTOM_1_BTN": {
+                "type": "ToggleSwitch",
+                "msg": "CONF_CUSTOM_1_BTN",
+                "device_id": "8",
+                "command": "3010",
+                "arg_number": "70",
+                "category": "Config Page",
+                "description": "Config Page - Attach/Remove Winglets"
+            },
+            "CONF_CUSTOM_2_BTN": {
+                "type": "ToggleSwitch",
+                "msg": "CONF_CUSTOM_2_BTN",
+                "device_id": "8",
+                "command": "3011",
+                "arg_number": "71",
+                "category": "Config Page",
+                "description": "Config Page - Attach/Remove Spades"
+            },
+            "CONF_CUSTOM_2_BTN_330": {
+                "type": "ToggleSwitch",
+                "msg": "CONF_CUSTOM_2_BTN_330",
+                "device_id": "8",
+                "command": "3011",
+                "arg_number": "73",
+                "category": "Config Page",
+                "description": "Config Page - Attach/Remove Spades Extra330SR"
+            },
+            "CONF_CUSTOM_3_BTN": {
+                "type": "ToggleSwitch",
+                "msg": "CONF_CUSTOM_3_BTN",
+                "device_id": "8",
+                "command": "3012",
+                "arg_number": "720",
+                "category": "Config Page",
+                "description": "Config Page - Attach/Remove Lights"
+            },
+            "CONF_PILOT_SEL": {
+                "type": "Tumb",
+                "msg": "CONF_PILOT_SEL",
+                "device_id": "8",
+                "command": "3013",
+                "arg_number": "6",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.6 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Config Page",
+                "description": "Config Page - Select Pilot"
+            },
+            "CONF_CUSTOM_5_BTN": {
+                "type": "PushButton",
+                "msg": "CONF_CUSTOM_5_BTN",
+                "device_id": "2",
+                "command": "3006",
+                "arg_number": "0",
+                "category": "Config Page",
+                "description": "Config Page - Hide Aersti Chart"
+            }
+        },
+        "Smoke": {
+            "SMK_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "SMK_ARM",
+                "device_id": "1",
+                "command": "3025",
+                "arg_number": "27",
+                "category": "Smoke",
+                "description": "Smoke Arm"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Edge540",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

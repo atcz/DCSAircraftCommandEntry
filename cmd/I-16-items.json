@@ -1,0 +1,517 @@
+{
+    "commands": {
+        "Electric": {
+            "CLOCK_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "CLOCK_HEAT",
+                "device_id": "5",
+                "command": "3023",
+                "arg_number": "23",
+                "category": "Electric",
+                "description": "Clock Heat"
+            },
+            "PITOT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_HEAT",
+                "device_id": "5",
+                "command": "3024",
+                "arg_number": "24",
+                "category": "Electric",
+                "description": "Pitot Heat"
+            },
+            "NAV_LIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "NAV_LIGHT",
+                "device_id": "5",
+                "command": "3025",
+                "arg_number": "25",
+                "category": "Electric",
+                "description": "Nav Light"
+            },
+            "ACCU": {
+                "type": "ToggleSwitch",
+                "msg": "ACCU",
+                "device_id": "5",
+                "command": "3026",
+                "arg_number": "26",
+                "category": "Electric",
+                "description": "Battery"
+            },
+            "SHUNT": {
+                "type": "ToggleSwitch",
+                "msg": "SHUNT",
+                "device_id": "5",
+                "command": "3027",
+                "arg_number": "27",
+                "category": "Electric",
+                "description": "Shunt"
+            },
+            "RADIO": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO",
+                "device_id": "5",
+                "command": "3028",
+                "arg_number": "28",
+                "category": "Electric",
+                "description": "Radio"
+            },
+            "FIRE_TORCH_L": {
+                "type": "PushButton",
+                "msg": "FIRE_TORCH_L",
+                "device_id": "5",
+                "command": "3030",
+                "arg_number": "30",
+                "category": "Electric",
+                "description": "Fire Left Torch"
+            },
+            "TORCH_JETT": {
+                "type": "PushButton",
+                "msg": "TORCH_JETT",
+                "device_id": "5",
+                "command": "3089",
+                "arg_number": "89",
+                "category": "Electric",
+                "description": "Torches Jettison"
+            },
+            "FIRE_TORCH_R": {
+                "type": "PushButton",
+                "msg": "FIRE_TORCH_R",
+                "device_id": "5",
+                "command": "3031",
+                "arg_number": "31",
+                "category": "Electric",
+                "description": "Fire Right Torch"
+            },
+            "NAV_LIGHT_TEST": {
+                "type": "PushButton",
+                "msg": "NAV_LIGHT_TEST",
+                "device_id": "5",
+                "command": "3032",
+                "arg_number": "32",
+                "category": "Electric",
+                "description": "Nav Light Test"
+            },
+            "SIGHT_DIM": {
+                "type": "Potentiometer",
+                "msg": "SIGHT_DIM",
+                "device_id": "5",
+                "command": "3034",
+                "arg_number": "34",
+                "limits": "{ 0, 1 }",
+                "category": "Electric",
+                "description": "Sight Dimmer Rheostat"
+            },
+            "CPT_LIGHT": {
+                "type": "Potentiometer",
+                "msg": "CPT_LIGHT",
+                "device_id": "5",
+                "command": "3035",
+                "arg_number": "35",
+                "limits": "{ 0, 1 }",
+                "category": "Electric",
+                "description": "Cockpit Light Rheostat"
+            },
+            "ROCK_BOMB_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "ROCK_BOMB_ARM",
+                "device_id": "7",
+                "command": "3088",
+                "arg_number": "88",
+                "category": "Electric",
+                "description": "Rockets/Bombs Master Arm"
+            }
+        },
+        "Gear": {
+            "GEAR_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_LOCK",
+                "device_id": "3",
+                "command": "3050",
+                "arg_number": "50",
+                "category": "Gear",
+                "description": "Gear Lock"
+            },
+            "GEAR_DIRCET": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_DIRCET",
+                "device_id": "3",
+                "command": "3051",
+                "arg_number": "51",
+                "category": "Gear",
+                "description": "Gear Direction"
+            },
+            "BRAKE_SPRING": {
+                "type": "ToggleSwitch",
+                "msg": "BRAKE_SPRING",
+                "device_id": "3",
+                "command": "3055",
+                "arg_number": "55",
+                "category": "Gear",
+                "description": "Brake Spring Handle"
+            },
+            "GEAR_HANDLE": {
+                "type": "Rotary",
+                "msg": "GEAR_HANDLE",
+                "device_id": "3",
+                "command": "3086",
+                "arg_number": "86",
+                "category": "Gear",
+                "description": "Gear Handle"
+            }
+        },
+        "Flaps": {
+            "FLAPS_HANDLE": {
+                "type": "Rotary",
+                "msg": "FLAPS_HANDLE",
+                "device_id": "4",
+                "command": "3063",
+                "arg_number": "63",
+                "category": "Flaps",
+                "description": "Flaps Handle"
+            }
+        },
+        "Motor": {
+            "MAGNETO": {
+                "type": "MultipositionSwitch",
+                "msg": "MAGNETO",
+                "device_id": "2",
+                "device_command": "3022",
+                "arg_number": "22",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Motor",
+                "description": "Magneto 0/1/2/1+2"
+            },
+            "MOTOR_OFF": {
+                "type": "PushButton",
+                "msg": "MOTOR_OFF",
+                "device_id": "2",
+                "command": "3029",
+                "arg_number": "29",
+                "category": "Motor",
+                "description": "Motor Shutdown"
+            },
+            "RATCHET": {
+                "type": "PushButton",
+                "msg": "RATCHET",
+                "device_id": "2",
+                "command": "3033",
+                "arg_number": "33",
+                "category": "Motor",
+                "description": "Ratchet Relay"
+            },
+            "STARTER_HANDLE": {
+                "type": "MultipositionSwitch",
+                "msg": "STARTER_HANDLE",
+                "device_id": "2",
+                "device_command": "3036",
+                "arg_number": "36",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Motor",
+                "description": "Starter Handle"
+            },
+            "PRI_FUEL_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "PRI_FUEL_SW",
+                "device_id": "2",
+                "device_command": "3037",
+                "arg_number": "37",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Motor",
+                "description": "Primary Fuel Switch"
+            },
+            "START_PUMP_TURN": {
+                "type": "Potentiometer",
+                "msg": "START_PUMP_TURN",
+                "device_id": "2",
+                "command": "3038",
+                "arg_number": "38",
+                "limits": "{ 0, 1 }",
+                "category": "Motor",
+                "description": "Start Pump (Turn)"
+            },
+            "START_PUMP_PULL": {
+                "type": "Potentiometer",
+                "msg": "START_PUMP_PULL",
+                "device_id": "2",
+                "command": "3039",
+                "arg_number": "39",
+                "limits": "{ 0, 1 }",
+                "category": "Motor",
+                "description": "Start Pump (Pull)"
+            },
+            "WEB": {
+                "type": "Rotary",
+                "msg": "WEB",
+                "device_id": "2",
+                "command": "3042",
+                "arg_number": "42",
+                "category": "Motor",
+                "description": "War Emergency Power (WEB)"
+            },
+            "RPM": {
+                "type": "Rotary",
+                "msg": "RPM",
+                "device_id": "2",
+                "command": "3043",
+                "arg_number": "43",
+                "category": "Motor",
+                "description": "RPM"
+            },
+            "MIX": {
+                "type": "Rotary",
+                "msg": "MIX",
+                "device_id": "2",
+                "command": "3044",
+                "arg_number": "44",
+                "category": "Motor",
+                "description": "Mixture"
+            },
+            "THROTTLE": {
+                "type": "Rotary",
+                "msg": "THROTTLE",
+                "device_id": "2",
+                "command": "3045",
+                "arg_number": "45",
+                "category": "Motor",
+                "description": "Throttle"
+            },
+            "SUPERCHARGER": {
+                "type": "MultipositionSwitch",
+                "msg": "SUPERCHARGER",
+                "device_id": "2",
+                "device_command": "3046",
+                "arg_number": "46",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "Motor",
+                "description": "Supercharge Speed 1/0/2"
+            },
+            "ENG_COWL_FLAPS": {
+                "type": "Rotary",
+                "msg": "ENG_COWL_FLAPS",
+                "device_id": "2",
+                "command": "3047",
+                "arg_number": "47",
+                "category": "Motor",
+                "description": "Motor Cowl Flaps"
+            },
+            "OIL_RAD": {
+                "type": "Rotary",
+                "msg": "OIL_RAD",
+                "device_id": "2",
+                "command": "3048",
+                "arg_number": "48",
+                "category": "Motor",
+                "description": "Oil Radiator"
+            },
+            "FUEL_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_VALVE",
+                "device_id": "2",
+                "command": "3062",
+                "arg_number": "62",
+                "category": "Motor",
+                "description": "Fuel Valve"
+            },
+            "MAN_RATCHET": {
+                "type": "PushButton",
+                "msg": "MAN_RATCHET",
+                "device_id": "2",
+                "command": "3064",
+                "arg_number": "64",
+                "category": "Motor",
+                "description": "Manual Ratchet Relay"
+            },
+            "EXT_FUEL_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "EXT_FUEL_VALVE",
+                "device_id": "2",
+                "command": "3102",
+                "arg_number": "102",
+                "category": "Motor",
+                "description": "External Fuel Tank Valve"
+            },
+            "MIX_PUSH": {
+                "type": "PushButton",
+                "msg": "MIX_PUSH",
+                "device_id": "2",
+                "command": "3101",
+                "arg_number": "101",
+                "category": "Motor",
+                "description": "Mixture Push"
+            }
+        },
+        "Weapons": {
+            "GUN_L_RECHARG_WING": {
+                "type": "PushButton",
+                "msg": "GUN_L_RECHARG_WING",
+                "device_id": "7",
+                "command": "3060",
+                "arg_number": "60",
+                "category": "Weapons",
+                "description": "Gun Wing Left Recharge"
+            },
+            "GUN_R_RECHARG_WING": {
+                "type": "PushButton",
+                "msg": "GUN_R_RECHARG_WING",
+                "device_id": "7",
+                "command": "3061",
+                "arg_number": "61",
+                "category": "Weapons",
+                "description": "Gun Wing Right Recharge"
+            },
+            "GUN_R_RECHARG_NOSE": {
+                "type": "PushButton",
+                "msg": "GUN_R_RECHARG_NOSE",
+                "device_id": "7",
+                "command": "3070",
+                "arg_number": "70",
+                "category": "Weapons",
+                "description": "Gun Nose Left Recharge"
+            },
+            "GUN_L_RECHARG_NOSE": {
+                "type": "PushButton",
+                "msg": "GUN_L_RECHARG_NOSE",
+                "device_id": "7",
+                "command": "3071",
+                "arg_number": "71",
+                "category": "Weapons",
+                "description": "Gun Nose Right Recharge"
+            },
+            "ROCK_BOMB_COUNT": {
+                "type": "MultipositionSwitch",
+                "msg": "ROCK_BOMB_COUNT",
+                "device_id": "7",
+                "device_command": "3087",
+                "arg_number": "87",
+                "num_positions": "18",
+                "increment": "0.055",
+                "category": "Weapons",
+                "description": "Rockets/Bombs Counter"
+            },
+            "JETT_FUEL_TANK": {
+                "type": "PushButton",
+                "msg": "JETT_FUEL_TANK",
+                "device_id": "7",
+                "command": "3103",
+                "arg_number": "103",
+                "category": "Weapons",
+                "description": "Jettison Fuel Tank"
+            }
+        },
+        "Common": {
+            "CRS_CAGE_KNOB": {
+                "type": "Rotary",
+                "msg": "CRS_CAGE_KNOB",
+                "device_id": "1",
+                "command": "3040",
+                "arg_number": "40",
+                "category": "Common",
+                "description": "Course Cage Knob"
+            },
+            "SEAT_HEIGHT": {
+                "type": "MultipositionSwitch",
+                "msg": "SEAT_HEIGHT",
+                "device_id": "1",
+                "device_command": "3065",
+                "arg_number": "65",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Common",
+                "description": "Seat Level"
+            },
+            "PRESS_SET": {
+                "type": "Potentiometer",
+                "msg": "PRESS_SET",
+                "device_id": "1",
+                "command": "3066",
+                "arg_number": "66",
+                "limits": "{ 0, 1 }",
+                "category": "Common",
+                "description": "Set Pressure"
+            },
+            "DOOR_L": {
+                "type": "ToggleSwitch",
+                "msg": "DOOR_L",
+                "device_id": "1",
+                "command": "3067",
+                "arg_number": "67",
+                "category": "Common",
+                "description": "Left Door"
+            },
+            "DOOR_R": {
+                "type": "ToggleSwitch",
+                "msg": "DOOR_R",
+                "device_id": "1",
+                "command": "3068",
+                "arg_number": "68",
+                "category": "Common",
+                "description": "Right Door"
+            },
+            "SIGHT_MECH": {
+                "type": "ToggleSwitch",
+                "msg": "SIGHT_MECH",
+                "device_id": "1",
+                "command": "3069",
+                "arg_number": "69",
+                "category": "Common",
+                "description": "Mech Sight"
+            },
+            "SIGHT_FILTER": {
+                "type": "ToggleSwitch",
+                "msg": "SIGHT_FILTER",
+                "device_id": "1",
+                "command": "3700",
+                "arg_number": "700",
+                "category": "Common",
+                "description": "Sight Filter"
+            },
+            "STICK_TOGGLE": {
+                "type": "ToggleSwitch",
+                "msg": "STICK_TOGGLE",
+                "device_id": "1",
+                "command": "3295",
+                "arg_number": "295",
+                "category": "Common",
+                "description": "Hide Stick Toggle"
+            }
+        },
+        "Oxygen": {
+            "OXY_ADJ_VALVE": {
+                "type": "Rotary",
+                "msg": "OXY_ADJ_VALVE",
+                "device_id": "6",
+                "command": "3074",
+                "arg_number": "74",
+                "category": "Oxygen",
+                "description": "Oxygen Adjusting Valve"
+            },
+            "OXY_EMERG_VALVE": {
+                "type": "Rotary",
+                "msg": "OXY_EMERG_VALVE",
+                "device_id": "6",
+                "command": "3075",
+                "arg_number": "75",
+                "category": "Oxygen",
+                "description": "Oxygen Emergency Valve"
+            },
+            "OXY_OFF_VALVE": {
+                "type": "Rotary",
+                "msg": "OXY_OFF_VALVE",
+                "device_id": "6",
+                "command": "3076",
+                "arg_number": "76",
+                "category": "Oxygen",
+                "description": "Oxygen Shutoff Valve"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "I-16",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

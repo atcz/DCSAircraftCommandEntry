@@ -1,0 +1,5033 @@
+{
+    "commands": {
+        "Engine": {
+            "PLT_ROTOR_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ROTOR_BRAKE",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "745",
+                "category": "Engine",
+                "description": "PILOT Rotor Brake"
+            },
+            "PLT_ENG_STOP_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENG_STOP_L",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "6",
+                "category": "Engine",
+                "description": "PILOT Left Engine Stop"
+            },
+            "PLT_ENG_STOP_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENG_STOP_R",
+                "device_id": "3",
+                "command": "3010",
+                "arg_number": "7",
+                "category": "Engine",
+                "description": "PILOT Right Engine Stop"
+            },
+            "PLT_ENG_THROTTLE_L": {
+                "type": "Rotary",
+                "msg": "PLT_ENG_THROTTLE_L",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "5",
+                "category": "Engine",
+                "description": "PILOT Left Engine Throttle"
+            },
+            "PLT_ENG_THROTTLE_R": {
+                "type": "Rotary",
+                "msg": "PLT_ENG_THROTTLE_R",
+                "device_id": "3",
+                "command": "3008",
+                "arg_number": "4",
+                "category": "Engine",
+                "description": "PILOT Right Engine Throttle"
+            },
+            "PLT_FREE_TURB_RPM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_FREE_TURB_RPM",
+                "device_id": "3",
+                "downSwitch": "3020",
+                "upSwitch": "3019",
+                "arg_number": "747",
+                "category": "Engine",
+                "description": "PILOT Readjust Free Turbine RPM, RIGHT/NEUTRAL/LEFT"
+            }
+        },
+        "Hydro Interface": {
+            "PLT_MAIN_AUXHYD_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MAIN_AUXHYD_CV",
+                "device_id": "4",
+                "command": "3002",
+                "arg_number": "216",
+                "category": "Hydro Interface",
+                "description": "PILOT Main/Auxiliary Hydraulic Switch Cover, UP/DOWN"
+            },
+            "PLT_MAIN_AUXHYD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MAIN_AUXHYD",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "217",
+                "category": "Hydro Interface",
+                "description": "PILOT Main/Auxiliary Hydraulic Switch, MAIN/AUXILIARY"
+            },
+            "PLT_MAIN_GEARHYD_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MAIN_GEARHYD_CV",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "218",
+                "category": "Hydro Interface",
+                "description": "PILOT Main/Reserve Gear Hydraulic Switch Cover, UP/DOWN"
+            },
+            "PLT_MAIN_GEARHYD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MAIN_GEARHYD",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "219",
+                "category": "Hydro Interface",
+                "description": "PILOT Main/Reserve Gear Hydraulic Switch, MAIN/RESERVE"
+            },
+            "PLT_AUX_DISABLE": {
+                "type": "PushButton",
+                "msg": "PLT_AUX_DISABLE",
+                "device_id": "4",
+                "command": "3005",
+                "arg_number": "213",
+                "category": "Hydro Interface",
+                "description": "PILOT Auxiliary Disable Button"
+            },
+            "PLT_AUX_DISABLE_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AUX_DISABLE_CV",
+                "device_id": "4",
+                "command": "3006",
+                "arg_number": "215",
+                "category": "Hydro Interface",
+                "description": "PILOT Auxiliary Disable Button Cover, UP/DOWN"
+            },
+            "PLT_CONTROL_ASSUMEND_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CONTROL_ASSUMEND_CV",
+                "device_id": "4",
+                "command": "3012",
+                "arg_number": "47",
+                "category": "Hydro Interface",
+                "description": "PILOT Control Assumed Switch Cover, UP/DOWN"
+            },
+            "PLT_CONTROL_ASSUMEND": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CONTROL_ASSUMEND",
+                "device_id": "4",
+                "command": "3011",
+                "arg_number": "48",
+                "category": "Hydro Interface",
+                "description": "PILOT Control Assumed Switch Cover, ON/OFF"
+            },
+            "PLT_PEDAL_DAMPER_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PEDAL_DAMPER_CV",
+                "device_id": "4",
+                "command": "3008",
+                "arg_number": "289",
+                "category": "Hydro Interface",
+                "description": "PILOT Pedal Damper Cover, UP/DOWN"
+            },
+            "PLT_PEDAL_DAMPER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PEDAL_DAMPER",
+                "device_id": "4",
+                "command": "3007",
+                "arg_number": "290",
+                "category": "Hydro Interface",
+                "description": "PILOT Pedal Damper, ON/OFF"
+            },
+            "OP_PEDAL_DAMPER_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_PEDAL_DAMPER_CV",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "666",
+                "category": "Hydro Interface",
+                "description": "OPERATOR Pedal Damper Cover, UP/DOWN"
+            },
+            "OP_PEDAL_DAMPER": {
+                "type": "ToggleSwitch",
+                "msg": "OP_PEDAL_DAMPER",
+                "device_id": "4",
+                "command": "3009",
+                "arg_number": "667",
+                "category": "Hydro Interface",
+                "description": "OPERATOR Pedal Damper, ON/OFF"
+            }
+        },
+        "Cockpit Mechanics PLT": {
+            "PLT_GEAR_IND_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_IND_L_SW",
+                "device_id": "11",
+                "command": "3003",
+                "arg_number": "224",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Gear Indication Lights, ON/OFF"
+            },
+            "PLT_GEAR_IND_L_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_IND_L_CV",
+                "device_id": "11",
+                "command": "3004",
+                "arg_number": "223",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Gear Indication Lights Cover, UP/DOWN"
+            },
+            "PLT_GEAR_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_LVR",
+                "device_id": "11",
+                "command": "3001",
+                "arg_number": "232",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Gear Lever, UP/DOWN"
+            },
+            "PLT_GEAR_LVR_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GEAR_LVR_LOCK",
+                "device_id": "11",
+                "command": "3002",
+                "arg_number": "228",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Gear Lever Lock, UP/DOWN"
+            },
+            "PLT_EMERG_GEAR_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EMERG_GEAR_LVR",
+                "device_id": "11",
+                "command": "3007",
+                "arg_number": "827",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Emergency Gear Lever"
+            },
+            "PLT_WIN_SPRAY": {
+                "type": "PushButton",
+                "msg": "PLT_WIN_SPRAY",
+                "device_id": "11",
+                "command": "3015",
+                "arg_number": "384",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Window Sprayer Button"
+            },
+            "PLT_COLLECTIVE_STOP": {
+                "type": "PushButton",
+                "msg": "PLT_COLLECTIVE_STOP",
+                "device_id": "11",
+                "command": "3028",
+                "arg_number": "753",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT friction clutch of the collective"
+            },
+            "PLT_FAN_FUN": {
+                "type": "PushButton",
+                "msg": "PLT_FAN_FUN",
+                "device_id": "11",
+                "command": "3029",
+                "arg_number": "0",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Cockpit Fan - Touch"
+            },
+            "PLT_BRAKE_WHEEL": {
+                "type": "PushButton",
+                "msg": "PLT_BRAKE_WHEEL",
+                "device_id": "11",
+                "command": "3026",
+                "arg_number": "737",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Wheel Brakes Handle"
+            },
+            "PLT_BRAKE_PARK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_BRAKE_PARK",
+                "device_id": "11",
+                "command": "3027",
+                "arg_number": "736",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Parking Brake Handle"
+            },
+            "PLT_FAN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FAN",
+                "device_id": "11",
+                "command": "3024",
+                "arg_number": "420",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Fan, ON/OFF"
+            },
+            "PLT_DOOR_LOCK_BTN": {
+                "type": "PushButton",
+                "msg": "PLT_DOOR_LOCK_BTN",
+                "device_id": "11",
+                "command": "3018",
+                "arg_number": "189",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Door Safety Lock Button"
+            },
+            "PLT_DOOR_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DOOR_LOCK",
+                "device_id": "11",
+                "command": "3017",
+                "arg_number": "8",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Door Safety Lock, OPEN/CLOSE"
+            },
+            "PLT_STATIC_VALVE": {
+                "type": "3PosTumb",
+                "msg": "PLT_STATIC_VALVE",
+                "device_id": "37",
+                "command": "3001",
+                "arg_number": "520",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Static valve sensor select LEFT/BOTH/RIGHT"
+            },
+            "PLT_HEAT_CLOCK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HEAT_CLOCK",
+                "device_id": "11",
+                "command": "3047",
+                "arg_number": "386",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Clock Heating Switch, ON/OFF"
+            },
+            "PLT_HEAT_L_PPD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HEAT_L_PPD",
+                "device_id": "11",
+                "command": "3043",
+                "arg_number": "387",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Heating PPD Left, ON/OFF"
+            },
+            "PLT_HEAT_R_PPD": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_HEAT_R_PPD",
+                "device_id": "11",
+                "command": "3045",
+                "arg_number": "389",
+                "category": "Cockpit Mechanics PLT",
+                "description": "PILOT Heating PPD Right, ON/OFF"
+            }
+        },
+        "Cockpit Mechanics OP": {
+            "OP_GEAR_SW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_GEAR_SW",
+                "device_id": "11",
+                "command": "3005",
+                "arg_number": "677",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Gear Switch, UP/DOWN"
+            },
+            "OP_GEAR_SW_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_GEAR_SW_CV",
+                "device_id": "11",
+                "command": "3006",
+                "arg_number": "676",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Gear Switch Cover UP/DOWN"
+            },
+            "OP_WIN_SPRAY": {
+                "type": "PushButton",
+                "msg": "OP_WIN_SPRAY",
+                "device_id": "11",
+                "command": "3016",
+                "arg_number": "680",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Window Sprayer Button"
+            },
+            "OP_CLOCK_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_CLOCK_HEAT",
+                "device_id": "11",
+                "command": "3048",
+                "arg_number": "672",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Clock Heating Switch, ON/OFF"
+            },
+            "OP_DUAS_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_DUAS_HEAT",
+                "device_id": "11",
+                "command": "3012",
+                "arg_number": "763",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Heating DUAS, ON/OFF"
+            },
+            "OP_FAN_FUN": {
+                "type": "PushButton",
+                "msg": "OP_FAN_FUN",
+                "device_id": "11",
+                "command": "3030",
+                "arg_number": "0",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Cockpit Fan - Touch"
+            },
+            "OP_FAN": {
+                "type": "ToggleSwitch",
+                "msg": "OP_FAN",
+                "device_id": "11",
+                "command": "3025",
+                "arg_number": "665",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Fan, ON/OFF"
+            },
+            "OP_DOOR_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "OP_DOOR_LOCK",
+                "device_id": "11",
+                "command": "3019",
+                "arg_number": "848",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Door Safety Lock, OPEN/CLOSE"
+            },
+            "OP_AP_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "OP_AP_TRIM",
+                "device_id": "11",
+                "command": "3040",
+                "arg_number": "671",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Autopilot Trimmer for yourself"
+            },
+            "OP_AP_TRIM_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_AP_TRIM_CV",
+                "device_id": "11",
+                "command": "3041",
+                "arg_number": "670",
+                "category": "Cockpit Mechanics OP",
+                "description": "OPERATOR Autopilot Trimmer for yourself Switch Cover, UP/DOWN"
+            }
+        },
+        "Cockpit Mechanics": {
+            "STICK_HIDE": {
+                "type": "ToggleSwitch",
+                "msg": "STICK_HIDE",
+                "device_id": "11",
+                "command": "3031",
+                "arg_number": "974",
+                "category": "Cockpit Mechanics",
+                "description": "Hide Stick toggle"
+            }
+        },
+        "Int Light System": {
+            "OP_CABIN_L_SW": {
+                "type": "3PosTumb",
+                "msg": "OP_CABIN_L_SW",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "682",
+                "category": "Int Light System",
+                "description": "OPERATOR Cabin Lighting Switch, WHITE/OFF/RED"
+            },
+            "PLT_CABIN_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_CABIN_L_SW",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "356",
+                "category": "Int Light System",
+                "description": "PILOT Cabin Lighting Switch, WHITE/OFF/RED"
+            },
+            "PLT_CARGO_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CARGO_L_SW",
+                "device_id": "23",
+                "command": "3003",
+                "arg_number": "354",
+                "category": "Int Light System",
+                "description": "PILOT Cargo Lighting Switch, ON/OFF"
+            },
+            "PLT_CARGO_L_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CARGO_L_CV",
+                "device_id": "23",
+                "command": "3004",
+                "arg_number": "353",
+                "category": "Int Light System",
+                "description": "PILOT Cargo Lighting Switch Cover, UP/DOWN"
+            },
+            "PLT_CARGO_COLOR_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_CARGO_COLOR_L_SW",
+                "device_id": "23",
+                "command": "3005",
+                "arg_number": "355",
+                "category": "Int Light System",
+                "description": "PILOT Cargo Lighting Switch, WHITE/OFF/BLUE"
+            },
+            "PLT_WARN_L_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_WARN_L_TEST",
+                "device_id": "23",
+                "command": "3008",
+                "arg_number": "363",
+                "category": "Int Light System",
+                "description": "PILOT Test Warning Lights Button"
+            },
+            "OP_WARN_L_TEST": {
+                "type": "PushButton",
+                "msg": "OP_WARN_L_TEST",
+                "device_id": "23",
+                "command": "3009",
+                "arg_number": "681",
+                "category": "Int Light System",
+                "description": "OPERATOR Test Warning Lights Button"
+            },
+            "PLT_DAY_NIGHT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DAY_NIGHT_SW",
+                "device_id": "23",
+                "command": "3010",
+                "arg_number": "362",
+                "category": "Int Light System",
+                "description": "PILOT Day-Night Switch, DAY/NIGHT"
+            },
+            "PLT_BLINK_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_BLINK_SW",
+                "device_id": "23",
+                "command": "3011",
+                "arg_number": "364",
+                "category": "Int Light System",
+                "description": "PILOT Blinker Switch, ON/OFF"
+            },
+            "PLT_TRANSFROM_1_R": {
+                "type": "Tumb",
+                "msg": "PLT_TRANSFROM_1_R",
+                "device_id": "23",
+                "command": "3012",
+                "arg_number": "148",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "PILOT Transformer 1 Group Of Red Lights Right And Pilot Panel, OFF/8V/9V/10V/11V/12V/13V/14V/16V/18V/20V"
+            },
+            "PLT_TRANSFROM_2_R": {
+                "type": "Tumb",
+                "msg": "PLT_TRANSFROM_2_R",
+                "device_id": "23",
+                "command": "3013",
+                "arg_number": "147",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "PILOT Transformer 2 Group Of Red Lights Right And Pilot Panel, OFF/8V/9V/10V/11V/12V/13V/14V/16V/18V/20V"
+            },
+            "PLT_ARM_RED_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ARM_RED_L_SW",
+                "device_id": "23",
+                "command": "3014",
+                "arg_number": "822",
+                "category": "Int Light System",
+                "description": "PILOT Armament Panel red Lights Switch, ON/OFF"
+            },
+            "PLT_TRANSFROM_1_L": {
+                "type": "Tumb",
+                "msg": "PLT_TRANSFROM_1_L",
+                "device_id": "23",
+                "command": "3015",
+                "arg_number": "820",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "PILOT Transformer 1 Group Of Red Lights Left And Pilot Panel, OFF/8V/9V/10V/11V/12V/13V/14V/16V/18V/20V"
+            },
+            "PLT_TRANSFROM_2_L": {
+                "type": "Tumb",
+                "msg": "PLT_TRANSFROM_2_L",
+                "device_id": "23",
+                "command": "3016",
+                "arg_number": "503",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "PILOT Transformer 2 Group Of Red Lights Left And Pilot Panel, OFF/8V/9V/10V/11V/12V/13V/14V/16V/18V/20V"
+            },
+            "OP_TRANSFROM_1_L": {
+                "type": "Tumb",
+                "msg": "OP_TRANSFROM_1_L",
+                "device_id": "23",
+                "command": "3017",
+                "arg_number": "1013",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "OPERATOR Transformer 1 Group Of Red Lights Left And Pilot Panel, OFF/8V/9V/10V/11V/12V/13V/14V/16V/18V/20V"
+            },
+            "OP_TRANSFROM_2_L": {
+                "type": "Tumb",
+                "msg": "OP_TRANSFROM_2_L",
+                "device_id": "23",
+                "command": "3018",
+                "arg_number": "1014",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "OPERATOR Transformer 2 Group Of Red Lights Left And Pilot Panel, OFF/8V/9V/10V/11V/12V/13V/14V/16V/18V/20V"
+            },
+            "PLT_TRANSFROM_BUILTIN": {
+                "type": "Tumb",
+                "msg": "PLT_TRANSFROM_BUILTIN",
+                "device_id": "23",
+                "command": "3020",
+                "arg_number": "149",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Int Light System",
+                "description": "PILOT Buildin Red Lights Transformer, OFF/0.6V/1.2V/1.8V/2.4V/3V/3.6V/4.2V/4.8V/5.4V/6V"
+            }
+        },
+        "Ext Light System": {
+            "PLT_LND_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_LND_L_SW",
+                "device_id": "15",
+                "command": "3008",
+                "arg_number": "208",
+                "category": "Ext Light System",
+                "description": "PILOT LND LT Control-Off-Retract Switch"
+            },
+            "PLT_TAXI_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_TAXI_L_SW",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "34",
+                "category": "Ext Light System",
+                "description": "PILOT Taxi LT Switch, ON/OFF"
+            },
+            "OP_TAXI_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_TAXI_L_SW",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "686",
+                "category": "Ext Light System",
+                "description": "OPERATOR Taxi LT Switch, ON/OFF"
+            },
+            "PLT_NAV_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_NAV_L_SW",
+                "device_id": "15",
+                "command": "3003",
+                "arg_number": "207",
+                "category": "Ext Light System",
+                "description": "PILOT Navigation Lights Switch, BRIGHT/OFF/DIM"
+            },
+            "PLT_NAV_L_CODE": {
+                "type": "PushButton",
+                "msg": "PLT_NAV_L_CODE",
+                "device_id": "15",
+                "command": "3004",
+                "arg_number": "35",
+                "category": "Ext Light System",
+                "description": "PILOT Navigation Lights Code Button"
+            },
+            "PLT_FORMATION_L_SW": {
+                "type": "3PosTumb",
+                "msg": "PLT_FORMATION_L_SW",
+                "device_id": "15",
+                "command": "3005",
+                "arg_number": "414",
+                "category": "Ext Light System",
+                "description": "PILOT Formation Lights Switch, BRIGHT/OFF/DIM"
+            },
+            "PLT_TIP_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_TIP_L_SW",
+                "device_id": "15",
+                "command": "3006",
+                "arg_number": "415",
+                "category": "Ext Light System",
+                "description": "PILOT Tip Lights Switch, ON/OFF"
+            },
+            "PLT_STROBE_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_STROBE_L_SW",
+                "device_id": "15",
+                "command": "3007",
+                "arg_number": "417",
+                "category": "Ext Light System",
+                "description": "PILOT Strobe Light Switch, ON/OFF"
+            },
+            "OP_LND_L_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_LND_L_CV",
+                "device_id": "15",
+                "command": "3012",
+                "arg_number": "668",
+                "category": "Ext Light System",
+                "description": "OPERATOR LND Light Assumed Switch Cover, OPEN/CLOSE"
+            },
+            "OP_LND_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_LND_L_SW",
+                "device_id": "15",
+                "command": "3011",
+                "arg_number": "669",
+                "category": "Ext Light System",
+                "description": "OPERATOR LND Light Assumed Switch, ON/OFF"
+            }
+        },
+        "EC System": {
+            "PLT_CABIN_UNSEAL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CABIN_UNSEAL",
+                "device_id": "29",
+                "command": "3001",
+                "arg_number": "133",
+                "category": "EC System",
+                "description": "PILOT Cabin Unseal Switch, ON/OFF"
+            },
+            "PLT_AC_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_AC_MODE",
+                "device_id": "29",
+                "command": "3002",
+                "arg_number": "134",
+                "category": "EC System",
+                "description": "PILOT Blowdown Conditioning Switch, CONDITIONING/OFF/BLOWDOWN"
+            },
+            "PLT_AC_FILTER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AC_FILTER",
+                "device_id": "29",
+                "command": "3003",
+                "arg_number": "143",
+                "category": "EC System",
+                "description": "PILOT Filter Switch, ON/OFF"
+            },
+            "PLT_AC_HEAT_MODE_1": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_AC_HEAT_MODE_1",
+                "device_id": "29",
+                "command": "3004",
+                "arg_number": "144",
+                "category": "EC System",
+                "description": "PILOT Heating Switch, HOT/NORMAL"
+            },
+            "PLT_AC_HEAT_MODE_2": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_AC_HEAT_MODE_2",
+                "device_id": "29",
+                "device_command": "3005",
+                "arg_number": "145",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "EC System",
+                "description": "PILOT Automatic Hot Cold Switch, OFF/COLD/HOT/AUTO"
+            },
+            "PLT_AC_TEMP": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_AC_TEMP",
+                "device_id": "29",
+                "device_command": "3006",
+                "arg_number": "146",
+                "num_positions": "11",
+                "increment": "0.111",
+                "category": "EC System",
+                "description": "PILOT Temperature Selector, 5/10/15/18/20/22/24/30/35/40/50"
+            },
+            "OP_SIGHT_FAN": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_FAN",
+                "device_id": "29",
+                "command": "3007",
+                "arg_number": "774",
+                "category": "EC System",
+                "description": "OPERATOR Sight Fan, ON/OFF"
+            },
+            "PLT_CABIN_PRESS": {
+                "type": "Potentiometer",
+                "msg": "PLT_CABIN_PRESS",
+                "device_id": "29",
+                "command": "3008",
+                "arg_number": "516",
+                "limits": "{ 0, 1 }",
+                "category": "EC System",
+                "description": "PILOT Sealing, OPEN/CLOSE"
+            }
+        },
+        "PKP72M": {
+            "PLT_GYRO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GYRO_SW",
+                "device_id": "34",
+                "command": "3001",
+                "arg_number": "12",
+                "category": "PKP72M",
+                "description": "PILOT Gyrovertical Switch, 1/2"
+            },
+            "OP_ADI_SW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_ADI_SW",
+                "device_id": "34",
+                "command": "3002",
+                "arg_number": "759",
+                "category": "PKP72M",
+                "description": "OPERTOR ADI Switch, ON/OFF"
+            },
+            "PLT_ADI_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_ADI_TEST",
+                "device_id": "32",
+                "command": "3002",
+                "arg_number": "946",
+                "category": "PKP72M",
+                "description": "PILOT Test ADI Button"
+            },
+            "PLT_ADI_PITCH_TRIM": {
+                "type": "Rotary",
+                "msg": "PLT_ADI_PITCH_TRIM",
+                "device_id": "32",
+                "command": "3001",
+                "arg_number": "941",
+                "category": "PKP72M",
+                "description": "PILOT ADI Pitch Trim Knob"
+            },
+            "OP_ADI_TEST": {
+                "type": "PushButton",
+                "msg": "OP_ADI_TEST",
+                "device_id": "33",
+                "command": "3002",
+                "arg_number": "787",
+                "category": "PKP72M",
+                "description": "OPERTOR Test ADI Button"
+            },
+            "OP_ADI_PITCH_TRIM": {
+                "type": "Rotary",
+                "msg": "OP_ADI_PITCH_TRIM",
+                "device_id": "33",
+                "command": "3001",
+                "arg_number": "782",
+                "category": "PKP72M",
+                "description": "OPERTOR ADI Pitch Trim Knob"
+            }
+        },
+        "MGV1SU": {
+            "PLT_GYRO_1_CAGE": {
+                "type": "PushButton",
+                "msg": "PLT_GYRO_1_CAGE",
+                "device_id": "25",
+                "command": "3001",
+                "arg_number": "10",
+                "category": "MGV1SU",
+                "description": "PILOT Cage Gyro 1"
+            },
+            "PLT_GYRO_2_CAGE": {
+                "type": "PushButton",
+                "msg": "PLT_GYRO_2_CAGE",
+                "device_id": "26",
+                "command": "3001",
+                "arg_number": "14",
+                "category": "MGV1SU",
+                "description": "PILOT Cage Gyro 2"
+            },
+            "PLT_GYRO_1_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GYRO_1_PWR",
+                "device_id": "25",
+                "command": "3004",
+                "arg_number": "369",
+                "category": "MGV1SU",
+                "description": "PILOT Gyro 1 Power, ON/OFF"
+            },
+            "PLT_GYRO_2_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GYRO_2_PWR",
+                "device_id": "26",
+                "command": "3004",
+                "arg_number": "368",
+                "category": "MGV1SU",
+                "description": "PILOT Gyro 2 Power, ON/OFF"
+            },
+            "OP_GYRO_2_CAGE": {
+                "type": "PushButton",
+                "msg": "OP_GYRO_2_CAGE",
+                "device_id": "26",
+                "command": "3003",
+                "arg_number": "701",
+                "category": "MGV1SU",
+                "description": "OPERATOR Cage Gyro 2"
+            }
+        },
+        "UKT-2": {
+            "PLT_UKT2_PITCH_TRIM": {
+                "type": "Rotary",
+                "msg": "PLT_UKT2_PITCH_TRIM",
+                "device_id": "18",
+                "command": "3001",
+                "arg_number": "951",
+                "category": "UKT-2",
+                "description": "PILOT UKT-2 Pitch Trim Knob"
+            }
+        },
+        "Barometric Altimeter": {
+            "PLT_ALT_PRESS": {
+                "type": "Potentiometer",
+                "msg": "PLT_ALT_PRESS",
+                "device_id": "41",
+                "command": "3001",
+                "arg_number": "18",
+                "limits": "{ 0, 1 }",
+                "category": "Barometric Altimeter",
+                "description": "PILOT Baro Pressure Knob"
+            },
+            "OP_ALT_PRESS": {
+                "type": "Potentiometer",
+                "msg": "OP_ALT_PRESS",
+                "device_id": "42",
+                "command": "3001",
+                "arg_number": "788",
+                "limits": "{ 0, 1 }",
+                "category": "Barometric Altimeter",
+                "description": "OPERATOR Baro Pressure Knob"
+            }
+        },
+        "RMI2": {
+            "PLT_RMI2_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_RMI2_MODE",
+                "device_id": "43",
+                "command": "3002",
+                "arg_number": "26",
+                "category": "RMI2",
+                "description": "PILOT RMI2 Mode Switch, ZK/ARKU2"
+            },
+            "OP_RMI2_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "OP_RMI2_MODE",
+                "device_id": "44",
+                "command": "3002",
+                "arg_number": "843",
+                "category": "RMI2",
+                "description": "OPERATOR RMI2 Mode Switch, ZK/ARKU2"
+            }
+        },
+        "Clock": {
+            "PLT_CLOCK_L_PUSH": {
+                "type": "PushButton",
+                "msg": "PLT_CLOCK_L_PUSH",
+                "device_id": "35",
+                "command": "3001",
+                "arg_number": "57",
+                "category": "Clock",
+                "description": "PILOT Clock Left Lever Push"
+            },
+            "PLT_CLOCK_L_TURN": {
+                "type": "Rotary",
+                "msg": "PLT_CLOCK_L_TURN",
+                "device_id": "35",
+                "command": "3003",
+                "arg_number": "58",
+                "category": "Clock",
+                "description": "PILOT Clock Left Lever Turn"
+            },
+            "PLT_CLOCK_R_PUSH": {
+                "type": "PushButton",
+                "msg": "PLT_CLOCK_R_PUSH",
+                "device_id": "35",
+                "command": "3004",
+                "arg_number": "59",
+                "category": "Clock",
+                "description": "PILOT Clock Right Lever Push"
+            },
+            "PLT_CLOCK_R_TURN": {
+                "type": "Rotary",
+                "msg": "PLT_CLOCK_R_TURN",
+                "device_id": "35",
+                "command": "3005",
+                "arg_number": "60",
+                "category": "Clock",
+                "description": "PILOT Clock Right Lever Turn"
+            },
+            "OP_CLOCK_L_PUSH": {
+                "type": "PushButton",
+                "msg": "OP_CLOCK_L_PUSH",
+                "device_id": "36",
+                "command": "3001",
+                "arg_number": "687",
+                "category": "Clock",
+                "description": "OPERATOR Clock Left Lever Push"
+            },
+            "OP_CLOCK_L_TURN": {
+                "type": "Rotary",
+                "msg": "OP_CLOCK_L_TURN",
+                "device_id": "36",
+                "command": "3003",
+                "arg_number": "688",
+                "category": "Clock",
+                "description": "OPERATOR Clock Left Lever Turn"
+            },
+            "OP_CLOCK_R_PUSH": {
+                "type": "PushButton",
+                "msg": "OP_CLOCK_R_PUSH",
+                "device_id": "36",
+                "command": "3004",
+                "arg_number": "693",
+                "category": "Clock",
+                "description": "OPERATOR Clock Right Lever Push"
+            },
+            "OP_CLOCK_R_TURN": {
+                "type": "Rotary",
+                "msg": "OP_CLOCK_R_TURN",
+                "device_id": "36",
+                "command": "3005",
+                "arg_number": "694",
+                "category": "Clock",
+                "description": "OPERATOR Clock Right Lever Turn"
+            }
+        },
+        "Electric Interface": {
+            "PLT_D_BATT_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_BATT_R",
+                "device_id": "1",
+                "command": "3037",
+                "arg_number": "61",
+                "category": "Electric Interface",
+                "description": "PILOT DC Right Battery switch, ON/OFF"
+            },
+            "PLT_D_BATT_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_BATT_L",
+                "device_id": "1",
+                "command": "3034",
+                "arg_number": "75",
+                "category": "Electric Interface",
+                "description": "PILOT DC Left Battery switch, ON/OFF"
+            },
+            "PLT_D_RECT_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_RECT_R",
+                "device_id": "1",
+                "command": "3043",
+                "arg_number": "65",
+                "category": "Electric Interface",
+                "description": "PILOT DC Right Rectifier switch, ON/OFF"
+            },
+            "PLT_D_RECT_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_RECT_L",
+                "device_id": "1",
+                "command": "3040",
+                "arg_number": "62",
+                "category": "Electric Interface",
+                "description": "PILOT DC Left Rectifier switch, ON/OFF"
+            },
+            "PLT_D_APU": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_APU",
+                "device_id": "1",
+                "command": "3046",
+                "arg_number": "66",
+                "category": "Electric Interface",
+                "description": "PILOT DC APU Generator switch, ON/OFF"
+            },
+            "PLT_D_VOLT_KNB": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_D_VOLT_KNB",
+                "device_id": "1",
+                "device_command": "3055",
+                "arg_number": "69",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "Electric Interface",
+                "description": "PILOT DC Voltmeter Knob"
+            },
+            "PLT_D_NET_BATT_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_NET_BATT_CV",
+                "device_id": "1",
+                "command": "3067",
+                "arg_number": "70",
+                "category": "Electric Interface",
+                "description": "PILOT DC Network to Batteries cover, UP/DOWN"
+            },
+            "PLT_D_NET_BATT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_NET_BATT",
+                "device_id": "1",
+                "command": "3052",
+                "arg_number": "71",
+                "category": "Electric Interface",
+                "description": "PILOT DC Network to Batteries, ON/OFF"
+            },
+            "PLT_D_GROUND_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_GROUND_PW",
+                "device_id": "1",
+                "command": "3031",
+                "arg_number": "73",
+                "category": "Electric Interface",
+                "description": "PILOT DC Ground Power, ON/OFF"
+            },
+            "PLT_D_BATT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_D_BATT_HEAT",
+                "device_id": "1",
+                "command": "3049",
+                "arg_number": "74",
+                "category": "Electric Interface",
+                "description": "PILOT DC Battery Heating, ON/OFF"
+            },
+            "PLT_A_GEN_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_GEN_R",
+                "device_id": "1",
+                "command": "3007",
+                "arg_number": "80",
+                "category": "Electric Interface",
+                "description": "PILOT AC Right Generator switch, ON/OFF"
+            },
+            "PLT_A_GEN_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_GEN_L",
+                "device_id": "1",
+                "command": "3004",
+                "arg_number": "101",
+                "category": "Electric Interface",
+                "description": "PILOT AC Left Generator switch, ON/OFF"
+            },
+            "PLT_A_TRANS_115": {
+                "type": "3PosTumb",
+                "msg": "PLT_A_TRANS_115",
+                "device_id": "1",
+                "command": "3010",
+                "arg_number": "83",
+                "category": "Electric Interface",
+                "description": "PILOT AC Transformer 115V, MAIN/AUTO/BACKUP"
+            },
+            "PLT_A_TRANS_36": {
+                "type": "3PosTumb",
+                "msg": "PLT_A_TRANS_36",
+                "device_id": "1",
+                "command": "3013",
+                "arg_number": "85",
+                "category": "Electric Interface",
+                "description": "PILOT AC Transformer 36V, MAIN/AUTO/BACKUP"
+            },
+            "PLT_A_GPW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_GPW",
+                "device_id": "1",
+                "command": "3001",
+                "arg_number": "87",
+                "category": "Electric Interface",
+                "description": "PILOT AC Ground Power, ON/OFF"
+            },
+            "PLT_A_GCHECK_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_GCHECK_CV",
+                "device_id": "1",
+                "command": "3058",
+                "arg_number": "88",
+                "category": "Electric Interface",
+                "description": "PILOT AC Ground Check Cover, UP/DOWN"
+            },
+            "PLT_A_GCHECK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_GCHECK",
+                "device_id": "1",
+                "command": "3016",
+                "arg_number": "89",
+                "category": "Electric Interface",
+                "description": "PILOT AC Ground Check, ON/OFF"
+            },
+            "PLT_A_VOLT_KNB": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_A_VOLT_KNB",
+                "device_id": "1",
+                "device_command": "3025",
+                "arg_number": "91",
+                "num_positions": "11",
+                "increment": "0.1",
+                "category": "Electric Interface",
+                "description": "PILOT AC Voltmeter Knob"
+            },
+            "PLT_A_INVERT_115_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_INVERT_115_CV",
+                "device_id": "1",
+                "command": "3061",
+                "arg_number": "97",
+                "category": "Electric Interface",
+                "description": "PILOT AC Inverter PO-750A Cover, UP/DOWN"
+            },
+            "PLT_A_INVERT_115": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_INVERT_115",
+                "device_id": "1",
+                "command": "3019",
+                "arg_number": "98",
+                "category": "Electric Interface",
+                "description": "PILOT AC Inverter PO-750A, ON/OFF"
+            },
+            "PLT_A_INVERT_36_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_INVERT_36_CV",
+                "device_id": "1",
+                "command": "3064",
+                "arg_number": "99",
+                "category": "Electric Interface",
+                "description": "PILOT AC Inverter PT-125Ts Cover, UP/DOWN"
+            },
+            "PLT_A_INVERT_36": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_INVERT_36",
+                "device_id": "1",
+                "command": "3022",
+                "arg_number": "100",
+                "category": "Electric Interface",
+                "description": "PILOT AC Inverter PT-125Ts, ON/OFF"
+            },
+            "PLT_A_TRANSFORM_36": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_A_TRANSFORM_36",
+                "device_id": "1",
+                "command": "3028",
+                "arg_number": "196",
+                "category": "Electric Interface",
+                "description": "PILOT AC DIM Transformer switch, MAIN/BACKUP"
+            }
+        },
+        "Electric Interface - CB-R": {
+            "PLT_CB_R_ALL": {
+                "type": "PushButton",
+                "msg": "PLT_CB_R_ALL",
+                "device_id": "1",
+                "command": "3072",
+                "arg_number": "632",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB All Right CBs ON"
+            },
+            "PLT_CB_R_CONTR_FORCE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_CONTR_FORCE",
+                "device_id": "1",
+                "command": "3074",
+                "arg_number": "602",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Control Force Grad, ON/OFF"
+            },
+            "PLT_CB_R_CONTR_CLUTCH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_CONTR_CLUTCH",
+                "device_id": "1",
+                "command": "3075",
+                "arg_number": "603",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Collective Lever Lock, ON/OFF"
+            },
+            "PLT_CB_R_TEMP_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_TEMP_L",
+                "device_id": "1",
+                "command": "3076",
+                "arg_number": "604",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Temperature Control Left Governor RPM, ON/OFF"
+            },
+            "PLT_CB_R_TEMP_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_TEMP_R",
+                "device_id": "1",
+                "command": "3077",
+                "arg_number": "605",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Temperature Control Right Governor RPM, ON/OFF"
+            },
+            "PLT_CB_R_ROTOR_RPM": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_ROTOR_RPM",
+                "device_id": "1",
+                "command": "3078",
+                "arg_number": "606",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Rotor RPM Adjust, ON/OFF"
+            },
+            "PLT_CB_R_SIGNAL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_SIGNAL",
+                "device_id": "1",
+                "command": "3079",
+                "arg_number": "607",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Signal, ON/OFF"
+            },
+            "PLT_CB_R_CAMERA": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_CAMERA",
+                "device_id": "1",
+                "command": "3080",
+                "arg_number": "608",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Camera, ON/OFF"
+            },
+            "PLT_CB_R_ARM_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_ARM_CONTROL",
+                "device_id": "1",
+                "command": "3081",
+                "arg_number": "609",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Armament Control, ON/OFF"
+            },
+            "PLT_CB_R_CANNON": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_CANNON",
+                "device_id": "1",
+                "command": "3082",
+                "arg_number": "610",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Cannon, ON/OFF"
+            },
+            "PLT_CB_R_FIRE_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FIRE_AUTO",
+                "device_id": "1",
+                "command": "3083",
+                "arg_number": "611",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Squib-2 Auto Fire Protection, ON/OFF"
+            },
+            "PLT_CB_R_FIRE_MAN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FIRE_MAN",
+                "device_id": "1",
+                "command": "3084",
+                "arg_number": "612",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Squib-2 Manual Fire Protection, ON/OFF"
+            },
+            "PLT_CB_R_STORE_TAC": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_STORE_TAC",
+                "device_id": "1",
+                "command": "3085",
+                "arg_number": "613",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB External Stores Tactical Release, ON/OFF"
+            },
+            "PLT_CB_R_STORE_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_STORE_LOCK",
+                "device_id": "1",
+                "command": "3086",
+                "arg_number": "614",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB External Stores Release Lock, ON/OFF"
+            },
+            "PLT_CB_R_GEAR_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_GEAR_VALVE",
+                "device_id": "1",
+                "command": "3087",
+                "arg_number": "615",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Landing Gear Valve, ON/OFF"
+            },
+            "PLT_CB_R_DETACH_RAILS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_DETACH_RAILS",
+                "device_id": "1",
+                "command": "3088",
+                "arg_number": "616",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Jettison Missile Rails, ON/OFF"
+            },
+            "PLT_CB_R_BOMB_REL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_BOMB_REL",
+                "device_id": "1",
+                "command": "3089",
+                "arg_number": "617",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Bombs Release, ON/OFF"
+            },
+            "PLT_CB_R_CONNECT_DISTR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_CONNECT_DISTR",
+                "device_id": "1",
+                "command": "3090",
+                "arg_number": "618",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Connection Distribution Device, ON/OFF"
+            },
+            "PLT_CB_R_PILOT_SIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_PILOT_SIGHT",
+                "device_id": "1",
+                "command": "3091",
+                "arg_number": "619",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB PILOT SIGHT Device, ON/OFF"
+            },
+            "PLT_CB_R_DUASV_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_DUASV_HEAT",
+                "device_id": "1",
+                "command": "3092",
+                "arg_number": "620",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Air Data Computer Heating, ON/OFF"
+            },
+            "PLT_CB_R_JETT_DOOR_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_JETT_DOOR_PLT",
+                "device_id": "1",
+                "command": "3093",
+                "arg_number": "621",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Jettison Pilot\u00b4s Door, ON/OFF"
+            },
+            "PLT_CB_R_JETT_DOOR_OP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_JETT_DOOR_OP",
+                "device_id": "1",
+                "command": "3094",
+                "arg_number": "622",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Jettison Gunner\u00b4s Door, ON/OFF"
+            },
+            "PLT_CB_R_AIR_CONT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_AIR_CONT",
+                "device_id": "1",
+                "command": "3095",
+                "arg_number": "623",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Air Conditioning, ON/OFF"
+            },
+            "PLT_CB_R_FUEL_IND": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FUEL_IND",
+                "device_id": "1",
+                "command": "3096",
+                "arg_number": "624",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Fuel Quantity Indication, ON/OFF"
+            },
+            "PLT_CB_R_FUEL_T2_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FUEL_T2_VALVE",
+                "device_id": "1",
+                "command": "3097",
+                "arg_number": "625",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Fuel Tank 2 Valve, ON/OFF"
+            },
+            "PLT_CB_R_FUEL_T2_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FUEL_T2_OFF",
+                "device_id": "1",
+                "command": "3098",
+                "arg_number": "626",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Fuel Tank 2 Shutoff Valve, ON/OFF"
+            },
+            "PLT_CB_R_FUEL_PUMP2": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FUEL_PUMP2",
+                "device_id": "1",
+                "command": "3099",
+                "arg_number": "627",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Fuel Pump 2, ON/OFF"
+            },
+            "PLT_CB_R_FUEL_PUMP4": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_FUEL_PUMP4",
+                "device_id": "1",
+                "command": "3100",
+                "arg_number": "628",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Fuel Pump 4, ON/OFF"
+            },
+            "PLT_CB_R_PILOT_SEAT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_PILOT_SEAT",
+                "device_id": "1",
+                "command": "3101",
+                "arg_number": "629",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Pilot Seat Adjustment, ON/OFF"
+            },
+            "PLT_CB_R_AICE_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_AICE_WARN",
+                "device_id": "1",
+                "command": "3102",
+                "arg_number": "630",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Anti-Ice System - Warning, ON/OFF"
+            },
+            "PLT_CB_R_AICE_CONTR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_R_AICE_CONTR",
+                "device_id": "1",
+                "command": "3103",
+                "arg_number": "631",
+                "category": "Electric Interface - CB-R",
+                "description": "PILOT CB Anti-Ice System - Control, ON/OFF"
+            }
+        },
+        "Electric Interface - CB-L": {
+            "PLT_CB_L_ALL": {
+                "type": "PushButton",
+                "msg": "PLT_CB_L_ALL",
+                "device_id": "1",
+                "command": "3070",
+                "arg_number": "601",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB All Left CBs ON"
+            },
+            "PLT_CB_L_MISSLE_PWR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_MISSLE_PWR",
+                "device_id": "1",
+                "command": "3104",
+                "arg_number": "572",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Missile Power - Control, ON/OFF"
+            },
+            "PLT_CB_L_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_EMERG_JETT",
+                "device_id": "1",
+                "command": "3105",
+                "arg_number": "573",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Emergency Jettison - Control, ON/OFF"
+            },
+            "PLT_CB_L_BOMBS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_BOMBS",
+                "device_id": "1",
+                "command": "3106",
+                "arg_number": "574",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Bombs, ON/OFF"
+            },
+            "PLT_CB_L_ROCKETS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_ROCKETS",
+                "device_id": "1",
+                "command": "3107",
+                "arg_number": "575",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Rockets, ON/OFF"
+            },
+            "PLT_CB_L_ADF": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_ADF",
+                "device_id": "1",
+                "command": "3108",
+                "arg_number": "576",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB ADF, ON/OFF"
+            },
+            "PLT_CB_L_FUEL_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_FUEL_OFF",
+                "device_id": "1",
+                "command": "3109",
+                "arg_number": "577",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Fuel Shutoff Valve, ON/OFF"
+            },
+            "PLT_CB_L_CROSS_FEED": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_CROSS_FEED",
+                "device_id": "1",
+                "command": "3110",
+                "arg_number": "578",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Cross Feed Valve, ON/OFF"
+            },
+            "PLT_CB_L_TANK1": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_TANK1",
+                "device_id": "1",
+                "command": "3111",
+                "arg_number": "579",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Tank 1 Valve, ON/OFF"
+            },
+            "PLT_CB_L_TANK_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_TANK_FIRE",
+                "device_id": "1",
+                "command": "3112",
+                "arg_number": "580",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Tank Fire Warning, ON/OFF"
+            },
+            "PLT_CB_L_VALVE_SEP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_VALVE_SEP",
+                "device_id": "1",
+                "command": "3113",
+                "arg_number": "581",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Left Valve Separation, ON/OFF"
+            },
+            "PLT_CB_L_WS_SPRAY": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_WS_SPRAY",
+                "device_id": "1",
+                "command": "3114",
+                "arg_number": "582",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Windshield Spray, ON/OFF"
+            },
+            "PLT_CB_L_WS_WIPER_OP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_WS_WIPER_OP",
+                "device_id": "1",
+                "command": "3115",
+                "arg_number": "583",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Windshield Wiper Gunner, ON/OFF"
+            },
+            "PLT_CB_L_WS_WIPER_PLT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_WS_WIPER_PLT",
+                "device_id": "1",
+                "command": "3116",
+                "arg_number": "584",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Windshield Wiper Pilot, ON/OFF"
+            },
+            "PLT_CB_L_WARN_SYS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_WARN_SYS",
+                "device_id": "1",
+                "command": "3117",
+                "arg_number": "585",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Audio Warning System, ON/OFF"
+            },
+            "PLT_CB_L_FLIGHT_REC": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_FLIGHT_REC",
+                "device_id": "1",
+                "command": "3118",
+                "arg_number": "586",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Flight Recorder, ON/OFF"
+            },
+            "PLT_CB_L_FIRE_SYS_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_FIRE_SYS_AUTO",
+                "device_id": "1",
+                "command": "3119",
+                "arg_number": "587",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Fire Protection System - Auto, ON/OFF"
+            },
+            "PLT_CB_L_FIRE_SYS_MAN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_FIRE_SYS_MAN",
+                "device_id": "1",
+                "command": "3120",
+                "arg_number": "588",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Fire Protection System - Manual, ON/OFF"
+            },
+            "PLT_CB_L_FIRE_SYS_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_FIRE_SYS_WARN",
+                "device_id": "1",
+                "command": "3121",
+                "arg_number": "589",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Fire Protection System Warning, ON/OFF"
+            },
+            "PLT_CB_L_CARGO_EXT_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_CARGO_EXT_JETT",
+                "device_id": "1",
+                "command": "3122",
+                "arg_number": "590",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB External Cargo Emergency Jettison, ON/OFF"
+            },
+            "PLT_CB_L_GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_GEAR",
+                "device_id": "1",
+                "command": "3123",
+                "arg_number": "591",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Landing Gear Extend / Retract, ON/OFF"
+            },
+            "PLT_CB_L_GEAR_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_GEAR_WARN",
+                "device_id": "1",
+                "command": "3124",
+                "arg_number": "592",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Landing Gear Warning, ON/OFF"
+            },
+            "PLT_CB_L_INVERTER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_INVERTER",
+                "device_id": "1",
+                "command": "3125",
+                "arg_number": "593",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Inverter, ON/OFF"
+            },
+            "PLT_CB_L_AIR_SPEED": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_AIR_SPEED",
+                "device_id": "1",
+                "command": "3126",
+                "arg_number": "594",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Air Speed Sensor, ON/OFF"
+            },
+            "PLT_CB_L_AFCS_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_AFCS_WARN",
+                "device_id": "1",
+                "command": "3127",
+                "arg_number": "595",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB AFCS Warn, ON/OFF"
+            },
+            "PLT_CB_L_AUTO_START": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_AUTO_START",
+                "device_id": "1",
+                "command": "3128",
+                "arg_number": "596",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Auto Start System, ON/OFF"
+            },
+            "PLT_CB_L_IGNITION": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_IGNITION",
+                "device_id": "1",
+                "command": "3129",
+                "arg_number": "597",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Igniter, ON/OFF"
+            },
+            "PLT_CB_L_BEACON_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_BEACON_L",
+                "device_id": "1",
+                "command": "3130",
+                "arg_number": "598",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Beacon Light, ON/OFF"
+            },
+            "PLT_CB_L_LAND_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_LAND_L",
+                "device_id": "1",
+                "command": "3131",
+                "arg_number": "599",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Landing Light Control, ON/OFF"
+            },
+            "PLT_CB_L_MAIN_ATT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CB_L_MAIN_ATT",
+                "device_id": "1",
+                "command": "3132",
+                "arg_number": "600",
+                "category": "Electric Interface - CB-L",
+                "description": "PILOT CB Main Attitude Indicator, ON/OFF"
+            }
+        },
+        "Fuel Interface": {
+            "PLT_FEED_TANK1": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FEED_TANK1",
+                "device_id": "2",
+                "command": "3031",
+                "arg_number": "392",
+                "category": "Fuel Interface",
+                "description": "PILOT Feed Tank 1 Valve Switch, OPEN/CLOSE"
+            },
+            "PLT_FEED_TANK2": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FEED_TANK2",
+                "device_id": "2",
+                "command": "3034",
+                "arg_number": "394",
+                "category": "Fuel Interface",
+                "description": "PILOT Feed Tank 2 Valve Switch, OPEN/CLOSE"
+            },
+            "PLT_FIRE_VALVE_L_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_VALVE_L_CV",
+                "device_id": "2",
+                "command": "3019",
+                "arg_number": "396",
+                "category": "Fuel Interface",
+                "description": "PILOT Left Engine Fire Valve Cover, UP/DOWN"
+            },
+            "PLT_FIRE_VALVE_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_VALVE_L",
+                "device_id": "2",
+                "command": "3016",
+                "arg_number": "397",
+                "category": "Fuel Interface",
+                "description": "PILOT Left Engine Fire Valve, OPEN/CLOSE"
+            },
+            "PLT_FIRE_VALVE_R_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_VALVE_R_CV",
+                "device_id": "2",
+                "command": "3025",
+                "arg_number": "399",
+                "category": "Fuel Interface",
+                "description": "PILOT Right Engine Fire Valve Cover, UP/DOWN"
+            },
+            "PLT_FIRE_VALVE_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_VALVE_R",
+                "device_id": "2",
+                "command": "3022",
+                "arg_number": "400",
+                "category": "Fuel Interface",
+                "description": "PILOT Right Engine Fire Valve, OPEN/CLOSE"
+            },
+            "PLT_FUEL_DELIM": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FUEL_DELIM",
+                "device_id": "2",
+                "command": "3028",
+                "arg_number": "402",
+                "category": "Fuel Interface",
+                "description": "PILOT Fuel Delimiter Valve, OPEN/CLOSE"
+            },
+            "PLT_EXT_TANKS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_EXT_TANKS",
+                "device_id": "2",
+                "command": "3013",
+                "arg_number": "411",
+                "category": "Fuel Interface",
+                "description": "PILOT External Tanks, OPEN/CLOSE"
+            },
+            "PLT_PUMP_TANK4": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUMP_TANK4",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "404",
+                "category": "Fuel Interface",
+                "description": "PILOT Tank 4 Pump, ON/OFF"
+            },
+            "PLT_PUMP_TANK5": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUMP_TANK5",
+                "device_id": "2",
+                "command": "3010",
+                "arg_number": "406",
+                "category": "Fuel Interface",
+                "description": "PILOT Tank 5 Pump, ON/OFF"
+            },
+            "PLT_PUMP_TANK1": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUMP_TANK1",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "408",
+                "category": "Fuel Interface",
+                "description": "PILOT Tank 1 Pump, ON/OFF"
+            },
+            "PLT_PUMP_TANK2": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUMP_TANK2",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "410",
+                "category": "Fuel Interface",
+                "description": "PILOT Tank 2 Pump, ON/OFF"
+            },
+            "PLT_FUEL_TEST_H": {
+                "type": "PushButton",
+                "msg": "PLT_FUEL_TEST_H",
+                "device_id": "2",
+                "command": "3040",
+                "arg_number": "524",
+                "category": "Fuel Interface",
+                "description": "PILOT Fuel meter test low"
+            },
+            "PLT_FUEL_TEST_P": {
+                "type": "PushButton",
+                "msg": "PLT_FUEL_TEST_P",
+                "device_id": "2",
+                "command": "3042",
+                "arg_number": "526",
+                "category": "Fuel Interface",
+                "description": "PILOT Fuel meter test high"
+            },
+            "PLT_FUEL_METER_KNB": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_FUEL_METER_KNB",
+                "device_id": "2",
+                "device_command": "3037",
+                "arg_number": "191",
+                "num_positions": "7",
+                "increment": "0.167",
+                "category": "Fuel Interface",
+                "description": "PILOT Select tank for fuel meter"
+            }
+        },
+        "Engine Interface": {
+            "PLT_APU_START": {
+                "type": "PushButton",
+                "msg": "PLT_APU_START",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "307",
+                "category": "Engine Interface",
+                "description": "PILOT APU Start"
+            },
+            "PLT_APU_STOP": {
+                "type": "PushButton",
+                "msg": "PLT_APU_STOP",
+                "device_id": "3",
+                "command": "3013",
+                "arg_number": "311",
+                "category": "Engine Interface",
+                "description": "PILOT APU Stop"
+            },
+            "PLT_APU_CRANK": {
+                "type": "3PosTumb",
+                "msg": "PLT_APU_CRANK",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "313",
+                "category": "Engine Interface",
+                "description": "PILOT APU Launch Method START/CRANK/FALSE"
+            },
+            "PLT_ENG_START": {
+                "type": "PushButton",
+                "msg": "PLT_ENG_START",
+                "device_id": "3",
+                "command": "3015",
+                "arg_number": "314",
+                "category": "Engine Interface",
+                "description": "PILOT Engine Start"
+            },
+            "PLT_ENG_ABORT": {
+                "type": "PushButton",
+                "msg": "PLT_ENG_ABORT",
+                "device_id": "3",
+                "command": "3017",
+                "arg_number": "318",
+                "category": "Engine Interface",
+                "description": "PILOT Engine Interrupt Start"
+            },
+            "PLT_ENG_SEL_LR": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENG_SEL_LR",
+                "device_id": "3",
+                "command": "3016",
+                "arg_number": "320",
+                "category": "Engine Interface",
+                "description": "PILOT Engine Select RIGHT/LEFT"
+            },
+            "PLT_ENG_SEL_LAUNCH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ENG_SEL_LAUNCH",
+                "device_id": "3",
+                "command": "3018",
+                "arg_number": "321",
+                "category": "Engine Interface",
+                "description": "PILOT Engine Select RIGHT/LEFT"
+            },
+            "PLT_DEDUST_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DEDUST_CV",
+                "device_id": "3",
+                "command": "3022",
+                "arg_number": "514",
+                "category": "Engine Interface",
+                "description": "PILOT Antidust ON Cover, UP/DOWN"
+            },
+            "PLT_DEDUST": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DEDUST",
+                "device_id": "3",
+                "command": "3021",
+                "arg_number": "796",
+                "category": "Engine Interface",
+                "description": "PILOT Antidust ON/OFF"
+            },
+            "PLT_ENG_TEMP_COLD": {
+                "type": "PushButton",
+                "msg": "PLT_ENG_TEMP_COLD",
+                "device_id": "3",
+                "command": "3023",
+                "arg_number": "194",
+                "category": "Engine Interface",
+                "description": "PILOT Engine Thermometer control COLD"
+            },
+            "PLT_ENG_TEMP_HOT": {
+                "type": "PushButton",
+                "msg": "PLT_ENG_TEMP_HOT",
+                "device_id": "3",
+                "command": "3024",
+                "arg_number": "195",
+                "category": "Engine Interface",
+                "description": "PILOT Engine Thermometer control HOT"
+            }
+        },
+        "AntiIce Interface": {
+            "PLT_DEICER_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DEICER_MODE",
+                "device_id": "60",
+                "command": "3001",
+                "arg_number": "109",
+                "category": "AntiIce Interface",
+                "description": "PILOT AntiIce AUTO/MANUAL"
+            },
+            "PLT_DEICER_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_DEICER_OFF",
+                "device_id": "60",
+                "command": "3002",
+                "arg_number": "110",
+                "category": "AntiIce Interface",
+                "description": "PILOT AntiIce OFF"
+            },
+            "PLT_DEICER_ENG_L": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DEICER_ENG_L",
+                "device_id": "60",
+                "command": "3003",
+                "arg_number": "113",
+                "category": "AntiIce Interface",
+                "description": "PILOT Left Engine AntiIce ON/OFF"
+            },
+            "PLT_DEICER_ENG_R": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DEICER_ENG_R",
+                "device_id": "60",
+                "command": "3004",
+                "arg_number": "112",
+                "category": "AntiIce Interface",
+                "description": "PILOT Right Engine AntiIce ON/OFF"
+            },
+            "PLT_DEICER_WSHIELD": {
+                "type": "3PosTumb",
+                "msg": "PLT_DEICER_WSHIELD",
+                "device_id": "60",
+                "command": "3005",
+                "arg_number": "111",
+                "category": "AntiIce Interface",
+                "description": "PILOT Windshield Antiice LOW/OFF/HIGH"
+            },
+            "OP_DEICER_WSHIELD": {
+                "type": "3PosTumb",
+                "msg": "OP_DEICER_WSHIELD",
+                "device_id": "60",
+                "command": "3006",
+                "arg_number": "675",
+                "category": "AntiIce Interface",
+                "description": "OPERATOR Windshield Antiice LOW/OFF/HIGH"
+            },
+            "PLT_DEICER_KNB": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_DEICER_KNB",
+                "device_id": "60",
+                "device_command": "3007",
+                "arg_number": "114",
+                "num_positions": "11",
+                "increment": "0.1",
+                "category": "AntiIce Interface",
+                "description": "PILOT AntiIce Knob"
+            }
+        },
+        "SAU": {
+            "PLT_SAU_BTN_BRIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SAU_BTN_BRIGHT",
+                "device_id": "10",
+                "command": "3070",
+                "arg_number": "267",
+                "category": "SAU",
+                "description": "PILOT SAU Button Brightness, BRIGHT/DIM"
+            },
+            "PLT_SAU_H_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_H_ON",
+                "device_id": "10",
+                "command": "3005",
+                "arg_number": "237",
+                "category": "SAU",
+                "description": "PILOT SAU H Channel ON"
+            },
+            "PLT_SAU_H_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_H_OFF",
+                "device_id": "10",
+                "command": "3007",
+                "arg_number": "236",
+                "category": "SAU",
+                "description": "PILOT SAU H Channel OFF"
+            },
+            "PLT_SAU_K_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_K_ON",
+                "device_id": "10",
+                "command": "3001",
+                "arg_number": "243",
+                "category": "SAU",
+                "description": "PILOT SAU K Channel ON"
+            },
+            "PLT_SAU_K_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_K_OFF",
+                "device_id": "10",
+                "command": "3003",
+                "arg_number": "242",
+                "category": "SAU",
+                "description": "PILOT SAU K Channel OFF"
+            },
+            "PLT_SAU_T_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_T_ON",
+                "device_id": "10",
+                "command": "3009",
+                "arg_number": "249",
+                "category": "SAU",
+                "description": "PILOT SAU T Channel ON"
+            },
+            "PLT_SAU_T_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_T_OFF",
+                "device_id": "10",
+                "command": "3011",
+                "arg_number": "248",
+                "category": "SAU",
+                "description": "PILOT SAU T Channel OFF"
+            },
+            "PLT_SAU_B_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_B_ON",
+                "device_id": "10",
+                "command": "3013",
+                "arg_number": "255",
+                "category": "SAU",
+                "description": "PILOT SAU B Channel ON"
+            },
+            "PLT_SAU_B_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_B_OFF",
+                "device_id": "10",
+                "command": "3015",
+                "arg_number": "254",
+                "category": "SAU",
+                "description": "PILOT SAU B Channel OFF"
+            },
+            "PLT_SAU_H_CORRECT": {
+                "type": "Rotary",
+                "msg": "PLT_SAU_H_CORRECT",
+                "device_id": "10",
+                "command": "3021",
+                "arg_number": "234",
+                "category": "SAU",
+                "description": "PILOT SAU H Channel Delta Correction"
+            },
+            "PLT_SAU_K_CORRECT": {
+                "type": "Rotary",
+                "msg": "PLT_SAU_K_CORRECT",
+                "device_id": "10",
+                "command": "3023",
+                "arg_number": "240",
+                "category": "SAU",
+                "description": "PILOT SAU K Channel Delta Correction"
+            },
+            "PLT_SAU_T_CORRECT": {
+                "type": "Rotary",
+                "msg": "PLT_SAU_T_CORRECT",
+                "device_id": "10",
+                "command": "3025",
+                "arg_number": "246",
+                "category": "SAU",
+                "description": "PILOT SAU T Channel Delta Correction"
+            },
+            "PLT_SAU_ALT_MODE_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_ALT_MODE_ON",
+                "device_id": "10",
+                "command": "3032",
+                "arg_number": "258",
+                "category": "SAU",
+                "description": "PILOT SAU Altitude Mode ON"
+            },
+            "PLT_SAU_ALT_MODE_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_ALT_MODE_OFF",
+                "device_id": "10",
+                "command": "3034",
+                "arg_number": "257",
+                "category": "SAU",
+                "description": "PILOT SAU Altitude Mode OFF"
+            },
+            "PLT_SAU_HOVER_MODE_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_HOVER_MODE_ON",
+                "device_id": "10",
+                "command": "3036",
+                "arg_number": "259",
+                "category": "SAU",
+                "description": "PILOT SAU Hover Mode ON"
+            },
+            "PLT_SAU_ROUTE_MODE_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_ROUTE_MODE_ON",
+                "device_id": "10",
+                "command": "3038",
+                "arg_number": "261",
+                "category": "SAU",
+                "description": "PILOT SAU Route Mode ON"
+            },
+            "PLT_SAU_HOVER_ROUTE_MODE_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_HOVER_ROUTE_MODE_OFF",
+                "device_id": "10",
+                "command": "3040",
+                "arg_number": "260",
+                "category": "SAU",
+                "description": "PILOT SAU Hover and Route Modes OFF"
+            },
+            "PLT_SAU_ROUTE_AZIMUTH": {
+                "type": "Rotary",
+                "msg": "PLT_SAU_ROUTE_AZIMUTH",
+                "device_id": "10",
+                "command": "3030",
+                "arg_number": "262",
+                "category": "SAU",
+                "description": "PILOT SAU Route Azimuth"
+            },
+            "PLT_SAU_SPEED_STAB_ON": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_SPEED_STAB_ON",
+                "device_id": "10",
+                "command": "3042",
+                "arg_number": "268",
+                "category": "SAU",
+                "description": "PILOT SAU Speed Stabilization ON"
+            },
+            "PLT_SAU_SPEED_STAB_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_SAU_SPEED_STAB_OFF",
+                "device_id": "10",
+                "command": "3044",
+                "arg_number": "269",
+                "category": "SAU",
+                "description": "PILOT SAU Speed Stabilization OFF"
+            },
+            "PLT_SAU_ALT_CONTROL": {
+                "type": "RockerSwitch",
+                "msg": "PLT_SAU_ALT_CONTROL",
+                "device_id": "10",
+                "pos_command": "3019",
+                "pos_stop_command": "3019",
+                "neg_command": "3017",
+                "neg_stop_command": "3017",
+                "arg_number": "253",
+                "category": "SAU",
+                "description": "PILOT SAU Altitude Control"
+            }
+        },
+        "Fire Extinguisher": {
+            "PLT_FIRE_EX_ENG_L1": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_ENG_L1",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "502",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish Left Engine 1"
+            },
+            "PLT_FIRE_EX_ENG_L2": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_ENG_L2",
+                "device_id": "13",
+                "command": "3002",
+                "arg_number": "504",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish Left Engine 2"
+            },
+            "PLT_FIRE_EX_ENG_R1": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_ENG_R1",
+                "device_id": "13",
+                "command": "3003",
+                "arg_number": "498",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish Right Engine 1"
+            },
+            "PLT_FIRE_EX_ENG_R2": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_ENG_R2",
+                "device_id": "13",
+                "command": "3004",
+                "arg_number": "500",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish Right Engine 2"
+            },
+            "PLT_FIRE_EX_APU1": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_APU1",
+                "device_id": "13",
+                "command": "3005",
+                "arg_number": "494",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish APU 1"
+            },
+            "PLT_FIRE_EX_APU2": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_APU2",
+                "device_id": "13",
+                "command": "3006",
+                "arg_number": "496",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish APU 2"
+            },
+            "PLT_FIRE_EX_GEAR1": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_GEAR1",
+                "device_id": "13",
+                "command": "3007",
+                "arg_number": "490",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish Gearbox 1"
+            },
+            "PLT_FIRE_EX_GEAR2": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_EX_GEAR2",
+                "device_id": "13",
+                "command": "3008",
+                "arg_number": "492",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguish Gearbox 2"
+            },
+            "PLT_FIRE_ALARM_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_FIRE_ALARM_OFF",
+                "device_id": "13",
+                "command": "3009",
+                "arg_number": "488",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Turn Off Fire Signal Button"
+            },
+            "PLT_FIRE_EX_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_EX_CONTROL",
+                "device_id": "13",
+                "command": "3010",
+                "arg_number": "482",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguisher Control Switch EXING/CNTRL"
+            },
+            "PLT_FIRE_EX_SENSOR_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_FIRE_EX_SENSOR_CHAN",
+                "device_id": "13",
+                "device_command": "3013",
+                "arg_number": "484",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Fire Extinguisher Sensor Channel OFF/1/2/3"
+            },
+            "PLT_FIRE_EX_SQUIB": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_FIRE_EX_SQUIB",
+                "device_id": "13",
+                "downSwitch": "3011",
+                "upSwitch": "3012",
+                "arg_number": "486",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguisher Squib Control"
+            },
+            "PLT_FIRE_EX_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FIRE_EX_PW",
+                "device_id": "13",
+                "command": "3014",
+                "arg_number": "487",
+                "category": "Fire Extinguisher",
+                "description": "PILOT Extinguisher Power ON/OFF"
+            }
+        },
+        "SPUU": {
+            "PLT_SPUU_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPUU_POWER",
+                "device_id": "19",
+                "command": "3010",
+                "arg_number": "270",
+                "category": "SPUU",
+                "description": "PILOT SPUU Power, ON/OFF"
+            },
+            "PLT_SPUU_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPUU_OFF",
+                "device_id": "19",
+                "command": "3001",
+                "arg_number": "275",
+                "category": "SPUU",
+                "description": "PILOT SPUU OFF"
+            },
+            "PLT_SPUU_CONTROL": {
+                "type": "RockerSwitch",
+                "msg": "PLT_SPUU_CONTROL",
+                "device_id": "19",
+                "pos_command": "3007",
+                "pos_stop_command": "3007",
+                "neg_command": "3006",
+                "neg_stop_command": "3006",
+                "arg_number": "277",
+                "category": "SPUU",
+                "description": "PILOT SPUU Control Switch, P/NONE/T"
+            },
+            "PLT_SPUU_ROUTE_AZIMUTH": {
+                "type": "Potentiometer",
+                "msg": "PLT_SPUU_ROUTE_AZIMUTH",
+                "device_id": "19",
+                "command": "3003",
+                "arg_number": "276",
+                "limits": "{ 0, 1 }",
+                "category": "SPUU",
+                "description": "PILOT SPUU Route Azimuth"
+            }
+        },
+        "Cyclic": {
+            "PLT_CYCLIC_AP_TRIM": {
+                "type": "PushButton",
+                "msg": "PLT_CYCLIC_AP_TRIM",
+                "device_id": "10",
+                "command": "3027",
+                "arg_number": "742",
+                "category": "Cyclic",
+                "description": "PILOT Cyclic Autopilot Trimmer"
+            },
+            "OP_CYCLIC_AP_TRIM": {
+                "type": "PushButton",
+                "msg": "OP_CYCLIC_AP_TRIM",
+                "device_id": "10",
+                "command": "3028",
+                "arg_number": "855",
+                "category": "Cyclic",
+                "description": "OPERATOR Cyclic Autopilot Trimmer"
+            }
+        },
+        "Weapon Systems": {
+            "OP_MAIN_WPN_SAVE": {
+                "type": "ToggleSwitch",
+                "msg": "OP_MAIN_WPN_SAVE",
+                "device_id": "6",
+                "command": "3020",
+                "arg_number": "673",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Main Weapon Safe Switch"
+            },
+            "OP_WPN_SEL": {
+                "type": "Tumb",
+                "msg": "OP_WPN_SEL",
+                "device_id": "6",
+                "command": "3027",
+                "arg_number": "709",
+                "step": "0.1",
+                "limits": "{ 0, 0.4 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Select Weapon"
+            },
+            "OP_EMERG_JETT_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_EMERG_JETT_CV",
+                "device_id": "6",
+                "command": "3042",
+                "arg_number": "141",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Emergency Jettison Cover, UP/DOWN"
+            },
+            "OP_EMERG_JETT": {
+                "type": "PushButton",
+                "msg": "OP_EMERG_JETT",
+                "device_id": "6",
+                "command": "3025",
+                "arg_number": "142",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Emergency Jettison"
+            },
+            "OP_BOMB_BLOCK_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_BOMB_BLOCK_CV",
+                "device_id": "6",
+                "command": "3043",
+                "arg_number": "699",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Bombs/Blocks Mode Cover, UP/DOWN"
+            },
+            "OP_BOMB_BLOCK": {
+                "type": "3PosTumb",
+                "msg": "OP_BOMB_BLOCK",
+                "device_id": "6",
+                "command": "3033",
+                "arg_number": "700",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Bombs/Blocks Mode"
+            },
+            "OP_EXPL_JETT_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_EXPL_JETT_CV",
+                "device_id": "6",
+                "command": "3041",
+                "arg_number": "714",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Explosion on Jettison Cover, UP/DOWN"
+            },
+            "OP_EXPL_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_EXPL_JETT",
+                "device_id": "6",
+                "command": "3024",
+                "arg_number": "715",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Explosion on Jettison"
+            },
+            "OP_WPN_CONTROL_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_WPN_CONTROL_CV",
+                "device_id": "6",
+                "command": "3040",
+                "arg_number": "712",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Weapon Control Cover, UP/DOWN"
+            },
+            "OP_WPN_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "OP_WPN_CONTROL",
+                "device_id": "6",
+                "command": "3023",
+                "arg_number": "713",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Weapon Control"
+            },
+            "OP_JETT_LAUNCHER_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_JETT_LAUNCHER_CV",
+                "device_id": "6",
+                "command": "3044",
+                "arg_number": "764",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Jettison Launcher Cover, UP/DOWN"
+            },
+            "OP_JETT_LAUNCHER": {
+                "type": "ToggleSwitch",
+                "msg": "OP_JETT_LAUNCHER",
+                "device_id": "6",
+                "command": "3032",
+                "arg_number": "765",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Jettison Launcher ON/OFF"
+            },
+            "OP_BURST_LENGTH": {
+                "type": "3PosTumb",
+                "msg": "OP_BURST_LENGTH",
+                "device_id": "6",
+                "command": "3026",
+                "arg_number": "770",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Burst Length SHORT/MED/LONG"
+            },
+            "OP_CAN_RATE": {
+                "type": "ToggleSwitch",
+                "msg": "OP_CAN_RATE",
+                "device_id": "6",
+                "command": "3037",
+                "arg_number": "772",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Cannon Fire Rate SLOW/FAST"
+            },
+            "OP_MISSL_PW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_MISSL_PW",
+                "device_id": "6",
+                "command": "3028",
+                "arg_number": "773",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Missiles Power"
+            },
+            "OP_JETT_TEST": {
+                "type": "PushButton",
+                "msg": "OP_JETT_TEST",
+                "device_id": "6",
+                "command": "3031",
+                "arg_number": "768",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Release Check PU"
+            },
+            "OP_CAN_RELOAD": {
+                "type": "PushButton",
+                "msg": "OP_CAN_RELOAD",
+                "device_id": "6",
+                "command": "3039",
+                "arg_number": "769",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Reload Cannon"
+            },
+            "OP_SCHO_PW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SCHO_PW",
+                "device_id": "6",
+                "command": "3030",
+                "arg_number": "955",
+                "category": "Weapon Systems",
+                "description": "OPERATOR SCHO Power"
+            },
+            "OP_SCHO_L_CHECK": {
+                "type": "PushButton",
+                "msg": "OP_SCHO_L_CHECK",
+                "device_id": "6",
+                "command": "3035",
+                "arg_number": "956",
+                "category": "Weapon Systems",
+                "description": "OPERATOR SCHO Lamps Check"
+            },
+            "OP_STATION_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_STATION_SEL",
+                "device_id": "6",
+                "device_command": "3038",
+                "arg_number": "963",
+                "num_positions": "9",
+                "increment": "0.1",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Select Station"
+            },
+            "OP_CONTAINER_START": {
+                "type": "PushButton",
+                "msg": "OP_CONTAINER_START",
+                "device_id": "6",
+                "command": "3045",
+                "arg_number": "711",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Start container"
+            },
+            "OP_CONTAINER_STOP": {
+                "type": "PushButton",
+                "msg": "OP_CONTAINER_STOP",
+                "device_id": "6",
+                "command": "3046",
+                "arg_number": "710",
+                "category": "Weapon Systems",
+                "description": "OPERATOR Stop container"
+            }
+        },
+        "Stick": {
+            "PLT_STICK_FIRE_WPNS_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_STICK_FIRE_WPNS_CV",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "740",
+                "category": "Stick",
+                "description": "PILOT Stick Fire Weapons Cover"
+            },
+            "PLT_STICK_FIRE_WPNS": {
+                "type": "PushButton",
+                "msg": "PLT_STICK_FIRE_WPNS",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "741",
+                "category": "Stick",
+                "description": "PILOT Stick Fire Weapons"
+            },
+            "OP_STICK_FIRE_WPNS_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_STICK_FIRE_WPNS_CV",
+                "device_id": "6",
+                "command": "3022",
+                "arg_number": "853",
+                "category": "Stick",
+                "description": "OPERATOR Stick Fire Weapons Cover"
+            },
+            "OP_STICK_FIRE_WPNS": {
+                "type": "PushButton",
+                "msg": "OP_STICK_FIRE_WPNS",
+                "device_id": "6",
+                "command": "3021",
+                "arg_number": "187",
+                "category": "Stick",
+                "description": "OPERATOR Stick Fire Weapons"
+            },
+            "OP_STICK_ENGAGE": {
+                "type": "PushButton",
+                "msg": "OP_STICK_ENGAGE",
+                "device_id": "30",
+                "command": "3011",
+                "arg_number": "865",
+                "category": "Stick",
+                "description": "OPERATOR Engage Stick"
+            },
+            "OP_STICK_DISENGAGE_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_STICK_DISENGAGE_CV",
+                "device_id": "30",
+                "command": "3013",
+                "arg_number": "857",
+                "category": "Stick",
+                "description": "OPERATOR Disengage Stick Cover"
+            },
+            "OP_STICK_DISENGAGE": {
+                "type": "PushButton",
+                "msg": "OP_STICK_DISENGAGE",
+                "device_id": "30",
+                "command": "3012",
+                "arg_number": "859",
+                "category": "Stick",
+                "description": "OPERATOR Disengage Stick"
+            }
+        },
+        "PUVL": {
+            "PLT_PUVL_SIGHT_DIST": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_SIGHT_DIST",
+                "device_id": "16",
+                "command": "3003",
+                "arg_number": "515",
+                "category": "PUVL",
+                "description": "PILOT Sight Distance, MANUAL/AUTO"
+            },
+            "PLT_PUVL_BURST_LENGTH": {
+                "type": "3PosTumb",
+                "msg": "PLT_PUVL_BURST_LENGTH",
+                "device_id": "6",
+                "command": "3003",
+                "arg_number": "521",
+                "category": "PUVL",
+                "description": "PILOT Burst Length, SHORT/LONG/MEDIUM"
+            },
+            "PLT_PUVL_REL_LEFT_GONDOLA": {
+                "type": "Tumb",
+                "msg": "PLT_PUVL_REL_LEFT_GONDOLA",
+                "device_id": "6",
+                "command": "3004",
+                "arg_number": "522",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PUVL",
+                "description": "PILOT Reload Left Gondola, OFF/1/2/3"
+            },
+            "PLT_PUVL_REL_RIGHT_GONDOLA": {
+                "type": "Tumb",
+                "msg": "PLT_PUVL_REL_RIGHT_GONDOLA",
+                "device_id": "6",
+                "command": "3005",
+                "arg_number": "527",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PUVL",
+                "description": "PILOT Reload Right Gondola, OFF/1/2/3"
+            },
+            "PLT_PUVL_WPN_SIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_WPN_SIGHT",
+                "device_id": "16",
+                "command": "3014",
+                "arg_number": "529",
+                "category": "PUVL",
+                "description": "PILOT Weapon Sight, ON/OFF"
+            },
+            "PLT_PUVL_WPN_CAM": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_WPN_CAM",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "530",
+                "category": "PUVL",
+                "description": "PILOT Weapon Camera, ON/OFF"
+            },
+            "PLT_PUVL_MAN_RANGE": {
+                "type": "Potentiometer",
+                "msg": "PLT_PUVL_MAN_RANGE",
+                "device_id": "16",
+                "command": "3004",
+                "arg_number": "552",
+                "limits": "{ 0, 1 }",
+                "category": "PUVL",
+                "description": "PILOT Manual Range Adjustment"
+            },
+            "PLT_PUVL_WPN_SEL": {
+                "type": "Tumb",
+                "msg": "PLT_PUVL_WPN_SEL",
+                "device_id": "6",
+                "command": "3007",
+                "arg_number": "523",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.8 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "PUVL",
+                "description": "PILOT Weapon Selector, 9-POS"
+            },
+            "PLT_PUVL_SIGHT_ZERO": {
+                "type": "PushButton",
+                "msg": "PLT_PUVL_SIGHT_ZERO",
+                "device_id": "16",
+                "command": "3007",
+                "arg_number": "528",
+                "category": "PUVL",
+                "description": "PILOT Sight Reset Crosshair"
+            },
+            "PLT_PUVL_ROCKET_SEL": {
+                "type": "3PosTumb",
+                "msg": "PLT_PUVL_ROCKET_SEL",
+                "device_id": "6",
+                "command": "3008",
+                "arg_number": "531",
+                "category": "PUVL",
+                "description": "PILOT Rocket Select, LEFT/BOTH/RIGHT"
+            },
+            "PLT_PUVL_FIRE_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_FIRE_CONTROL",
+                "device_id": "6",
+                "command": "3009",
+                "arg_number": "551",
+                "category": "PUVL",
+                "description": "PILOT Weapon Control, ON/OFF"
+            },
+            "PLT_PUVL_CANNON_FIRE_RATE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_CANNON_FIRE_RATE",
+                "device_id": "6",
+                "command": "3010",
+                "arg_number": "550",
+                "category": "PUVL",
+                "description": "PILOT Cannon Fire Rate, SLOW/FAST"
+            },
+            "PLT_PUVL_REL_CANNON": {
+                "type": "PushButton",
+                "msg": "PLT_PUVL_REL_CANNON",
+                "device_id": "6",
+                "command": "3011",
+                "arg_number": "549",
+                "category": "PUVL",
+                "description": "PILOT Reload Cannon"
+            },
+            "PLT_PUVL_STOP_CONTAINER": {
+                "type": "PushButton",
+                "msg": "PLT_PUVL_STOP_CONTAINER",
+                "device_id": "6",
+                "command": "3012",
+                "arg_number": "547",
+                "category": "PUVL",
+                "description": "PILOT Stop Container"
+            },
+            "PLT_PUVL_EXP_ON_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_EXP_ON_JETT",
+                "device_id": "6",
+                "command": "3013",
+                "arg_number": "546",
+                "category": "PUVL",
+                "description": "PILOT Explosion on Jettison, ON/OFF"
+            },
+            "PLT_PUVL_EXP_ON_JETT_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_EXP_ON_JETT_CV",
+                "device_id": "6",
+                "command": "3014",
+                "arg_number": "545",
+                "category": "PUVL",
+                "description": "PILOT Explosion on Jettison Cover, UP/DOWN"
+            },
+            "PLT_PUVL_JETT_PYLONS": {
+                "type": "PushButton",
+                "msg": "PLT_PUVL_JETT_PYLONS",
+                "device_id": "6",
+                "command": "3015",
+                "arg_number": "542",
+                "category": "PUVL",
+                "description": "PILOT Jettison Pylons"
+            },
+            "PLT_PUVL_JETT_PYLONS_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_JETT_PYLONS_CV",
+                "device_id": "6",
+                "command": "3016",
+                "arg_number": "541",
+                "category": "PUVL",
+                "description": "PILOT Jettison Pylons Cover, UP/DOWN"
+            },
+            "PLT_PUVL_JETT_LAUNCHER": {
+                "type": "PushButton",
+                "msg": "PLT_PUVL_JETT_LAUNCHER",
+                "device_id": "6",
+                "command": "3017",
+                "arg_number": "538",
+                "category": "PUVL",
+                "description": "PILOT Jettison Launcher"
+            },
+            "PLT_PUVL_JETT_LAUNCHER_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_PUVL_JETT_LAUNCHER_CV",
+                "device_id": "6",
+                "command": "3018",
+                "arg_number": "537",
+                "category": "PUVL",
+                "description": "PILOT Jettison Launcher Cover, UP/DOWN"
+            },
+            "PLT_PUVL_ARM_ROCKETS": {
+                "type": "PushButton",
+                "msg": "PLT_PUVL_ARM_ROCKETS",
+                "device_id": "6",
+                "command": "3019",
+                "arg_number": "536",
+                "category": "PUVL",
+                "description": "PILOT Arm Rockets"
+            },
+            "PLT_PUVL_USB_COUNT1": {
+                "type": "Rotary",
+                "msg": "PLT_PUVL_USB_COUNT1",
+                "device_id": "6",
+                "command": "3092",
+                "arg_number": "719",
+                "category": "PUVL",
+                "description": "PILOT Counter Adjustment 1"
+            },
+            "PLT_PUVL_USB_COUNT2": {
+                "type": "Rotary",
+                "msg": "PLT_PUVL_USB_COUNT2",
+                "device_id": "6",
+                "command": "3093",
+                "arg_number": "723",
+                "category": "PUVL",
+                "description": "PILOT Counter Adjustment 2"
+            },
+            "PLT_PUVL_USB_COUNT3": {
+                "type": "Rotary",
+                "msg": "PLT_PUVL_USB_COUNT3",
+                "device_id": "6",
+                "command": "3094",
+                "arg_number": "727",
+                "category": "PUVL",
+                "description": "PILOT Counter Adjustment 3"
+            },
+            "PLT_PUVL_USB_COUNT4": {
+                "type": "Rotary",
+                "msg": "PLT_PUVL_USB_COUNT4",
+                "device_id": "6",
+                "command": "3095",
+                "arg_number": "731",
+                "category": "PUVL",
+                "description": "PILOT Counter Adjustment 4"
+            },
+            "PLT_PUVL_USB_COUNT5": {
+                "type": "Rotary",
+                "msg": "PLT_PUVL_USB_COUNT5",
+                "device_id": "6",
+                "command": "3096",
+                "arg_number": "735",
+                "category": "PUVL",
+                "description": "PILOT Counter Adjustment 6"
+            }
+        },
+        "I9K113": {
+            "OP_SIGHT_PW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_PW",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "885",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Power Switch"
+            },
+            "OP_SIGHT_BACK_L": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_BACK_L",
+                "device_id": "7",
+                "command": "3062",
+                "arg_number": "884",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Backlight"
+            },
+            "OP_SIGHT_OBSERVE": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_OBSERVE",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "886",
+                "category": "I9K113",
+                "description": "OPERATOR Sight OBSERVE"
+            },
+            "OP_SIGHT_DIAFR": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_DIAFR",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "887",
+                "category": "I9K113",
+                "description": "OPERATOR Sight DIAFR Open"
+            },
+            "OP_SIGHT_LOCK_ARU": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_LOCK_ARU",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "912",
+                "category": "I9K113",
+                "description": "OPERATOR Sight LOCK ARU"
+            },
+            "OP_SIGHT_SSP": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_SSP",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "913",
+                "category": "I9K113",
+                "description": "OPERATOR Sight SSP On"
+            },
+            "OP_SIGHT_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_GEN",
+                "device_id": "7",
+                "command": "3006",
+                "arg_number": "910",
+                "category": "I9K113",
+                "description": "OPERATOR Sight GENERATOR-IMIT"
+            },
+            "OP_SIGHT_CHECK": {
+                "type": "3PosTumb",
+                "msg": "OP_SIGHT_CHECK",
+                "device_id": "7",
+                "command": "3007",
+                "arg_number": "905",
+                "category": "I9K113",
+                "description": "OPERATOR Sight CHECK2-NEUTR-CHECK1"
+            },
+            "OP_SIGHT_CHECK_BTN": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_CHECK_BTN",
+                "device_id": "7",
+                "command": "3008",
+                "arg_number": "903",
+                "category": "I9K113",
+                "description": "OPERATOR Sight WORK-CHECK"
+            },
+            "OP_SIGHT_PM_START": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_PM_START",
+                "device_id": "7",
+                "command": "3010",
+                "arg_number": "911",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Start PM"
+            },
+            "OP_BVK_SET": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_BVK_SET",
+                "device_id": "7",
+                "device_command": "3009",
+                "arg_number": "899",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "I9K113",
+                "description": "OPERATOR BVK Set"
+            },
+            "OP_SIGHT_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_HEAT",
+                "device_id": "7",
+                "command": "3064",
+                "arg_number": "890",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Heating"
+            },
+            "OP_SIGHT_ZOOM": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_ZOOM",
+                "device_id": "7",
+                "command": "3021",
+                "arg_number": "871",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Zoom In-Out"
+            },
+            "OP_SIGHT_FILTER_ORG": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_FILTER_ORG",
+                "device_id": "7",
+                "command": "3022",
+                "arg_number": "872",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Orange Filter"
+            },
+            "OP_SIGHT_FILTER_LASER": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_FILTER_LASER",
+                "device_id": "7",
+                "command": "3023",
+                "arg_number": "873",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Laser Filter"
+            },
+            "OP_SIGHT_MISL_HEAT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SIGHT_MISL_HEAT",
+                "device_id": "7",
+                "command": "3018",
+                "arg_number": "775",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Doors"
+            },
+            "OP_SIGHT_L_CHECK": {
+                "type": "3PosTumb",
+                "msg": "OP_SIGHT_L_CHECK",
+                "device_id": "7",
+                "command": "3011",
+                "arg_number": "870",
+                "category": "I9K113",
+                "description": "OPERATOR Sight Lamps Check"
+            },
+            "OP_SHTV_SW_0_04": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SHTV_SW_0_04",
+                "device_id": "7",
+                "command": "3014",
+                "arg_number": "933",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV Switcher 0 - 0.4"
+            },
+            "OP_SHTV_SW_IN_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SHTV_SW_IN_OUT",
+                "device_id": "7",
+                "command": "3012",
+                "arg_number": "934",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV Switcher IN-OUT"
+            },
+            "OP_SHTV_SW_CODE": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SHTV_SW_CODE",
+                "device_id": "7",
+                "command": "3013",
+                "arg_number": "935",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV Switcher CODE1-CODE2"
+            },
+            "OP_SHTV_CHECK": {
+                "type": "PushButton",
+                "msg": "OP_SHTV_CHECK",
+                "device_id": "7",
+                "command": "3015",
+                "arg_number": "931",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV Checking"
+            },
+            "OP_SHTV_HIGH_K": {
+                "type": "PushButton",
+                "msg": "OP_SHTV_HIGH_K",
+                "device_id": "7",
+                "command": "3016",
+                "arg_number": "875",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV High K"
+            },
+            "OP_SHTV_L_CHECK": {
+                "type": "PushButton",
+                "msg": "OP_SHTV_L_CHECK",
+                "device_id": "7",
+                "command": "3017",
+                "arg_number": "932",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV Display Lamps Check"
+            },
+            "OP_SHTV_RAD_RESET": {
+                "type": "PushButton",
+                "msg": "OP_SHTV_RAD_RESET",
+                "device_id": "7",
+                "command": "3029",
+                "arg_number": "882",
+                "category": "I9K113",
+                "description": "OPERATOR SHTV Radiation Reset"
+            }
+        },
+        "ASP17": {
+            "PLT_ASP17_MODE_MAN_AUTO": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASP17_MODE_MAN_AUTO",
+                "device_id": "16",
+                "command": "3001",
+                "arg_number": "553",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Mode, MANUAL/AUTO"
+            },
+            "PLT_ASP17_MODE_SYNC_ASYNC": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASP17_MODE_SYNC_ASYNC",
+                "device_id": "16",
+                "command": "3002",
+                "arg_number": "554",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Sync, SYNC/ASYNC"
+            },
+            "PLT_ASP17_VERTICAL_ADJ": {
+                "type": "Potentiometer",
+                "msg": "PLT_ASP17_VERTICAL_ADJ",
+                "device_id": "16",
+                "command": "3005",
+                "arg_number": "556",
+                "limits": "{ 0, 1 }",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Crosshair Vertical Adjustment"
+            },
+            "PLT_ASP17_BASE_ADJ": {
+                "type": "Potentiometer",
+                "msg": "PLT_ASP17_BASE_ADJ",
+                "device_id": "16",
+                "command": "3008",
+                "arg_number": "557",
+                "limits": "{ 0, 1 }",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Base and Range Adjustment"
+            },
+            "PLT_ASP17_CROSSHAIR_BRIGHT_ADJ": {
+                "type": "Potentiometer",
+                "msg": "PLT_ASP17_CROSSHAIR_BRIGHT_ADJ",
+                "device_id": "16",
+                "command": "3011",
+                "arg_number": "564",
+                "limits": "{ 0, 1 }",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Crosshair Brightness Adjustment"
+            },
+            "PLT_ASP17_HORIZONTAL_ADJ": {
+                "type": "Potentiometer",
+                "msg": "PLT_ASP17_HORIZONTAL_ADJ",
+                "device_id": "16",
+                "command": "3006",
+                "arg_number": "566",
+                "limits": "{ 0, 1 }",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Crosshair Horizontal Adjustment"
+            },
+            "PLT_ASP17_GRID_BRIGHT_ADJ": {
+                "type": "Potentiometer",
+                "msg": "PLT_ASP17_GRID_BRIGHT_ADJ",
+                "device_id": "16",
+                "command": "3010",
+                "arg_number": "567",
+                "limits": "{ 0, 1 }",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Grid Brightness Adjustment"
+            },
+            "PLT_ASP17_CROSSHAIR_LAMP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASP17_CROSSHAIR_LAMP",
+                "device_id": "16",
+                "command": "3013",
+                "arg_number": "568",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Crosshair Lamp, MAIN/BACKUP"
+            },
+            "PLT_ASP17_GRID_LAMP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASP17_GRID_LAMP",
+                "device_id": "16",
+                "command": "3012",
+                "arg_number": "569",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Grid Lamp, MAIN/BACKUP"
+            },
+            "PLT_ASP17_CONTROL": {
+                "type": "PushButton",
+                "msg": "PLT_ASP17_CONTROL",
+                "device_id": "16",
+                "command": "3009",
+                "arg_number": "570",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Check"
+            },
+            "OP_USR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_USR_PW",
+                "device_id": "16",
+                "command": "3015",
+                "arg_number": "761",
+                "category": "ASP17",
+                "description": "OPERATOR USR power"
+            },
+            "OP_USR_CHECK": {
+                "type": "ToggleSwitch",
+                "msg": "OP_USR_CHECK",
+                "device_id": "16",
+                "command": "3016",
+                "arg_number": "762",
+                "category": "ASP17",
+                "description": "OPERATOR USR check"
+            },
+            "PLT_ASP17_REFLECTOR_FIX": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ASP17_REFLECTOR_FIX",
+                "device_id": "16",
+                "command": "3045",
+                "arg_number": "1005",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Reflector Control Fix"
+            },
+            "PLT_ASP17_REFLECTOR_MOVE": {
+                "type": "Rotary",
+                "msg": "PLT_ASP17_REFLECTOR_MOVE",
+                "device_id": "16",
+                "command": "3046",
+                "arg_number": "1006",
+                "category": "ASP17",
+                "description": "PILOT ASP17 Sight Reflector Control Move"
+            }
+        },
+        "ASO-2V": {
+            "OP_ASO2V_COUNTERMEASURES": {
+                "type": "PushButton",
+                "msg": "OP_ASO2V_COUNTERMEASURES",
+                "device_id": "9",
+                "command": "3003",
+                "arg_number": "968",
+                "category": "ASO-2V",
+                "description": "OPERATOR Launch Countermeasures"
+            },
+            "OP_ASO2V_SET": {
+                "type": "Tumb",
+                "msg": "OP_ASO2V_SET",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "971",
+                "step": "0.1",
+                "limits": "{ 0, 0.3 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ASO-2V",
+                "description": "OPERATOR Set I/II/III"
+            },
+            "OP_ASO2V_INTERVAL": {
+                "type": "PushButton",
+                "msg": "OP_ASO2V_INTERVAL",
+                "device_id": "9",
+                "command": "3001",
+                "arg_number": "1008",
+                "category": "ASO-2V",
+                "description": "OPERATOR Interval"
+            },
+            "OP_ASO2V_SERIE": {
+                "type": "PushButton",
+                "msg": "OP_ASO2V_SERIE",
+                "device_id": "9",
+                "command": "3002",
+                "arg_number": "965",
+                "category": "ASO-2V",
+                "description": "OPERATOR Serie"
+            },
+            "OP_ASO2V_LEFT": {
+                "type": "PushButton",
+                "msg": "OP_ASO2V_LEFT",
+                "device_id": "9",
+                "command": "3004",
+                "arg_number": "969",
+                "category": "ASO-2V",
+                "description": "OPERATOR Left Side"
+            },
+            "OP_ASO2V_RIGHT": {
+                "type": "PushButton",
+                "msg": "OP_ASO2V_RIGHT",
+                "device_id": "9",
+                "command": "3005",
+                "arg_number": "970",
+                "category": "ASO-2V",
+                "description": "OPERATOR Right Side"
+            },
+            "OP_ASO2V_SNARS": {
+                "type": "PushButton",
+                "msg": "OP_ASO2V_SNARS",
+                "device_id": "9",
+                "command": "3007",
+                "arg_number": "847",
+                "category": "ASO-2V",
+                "description": "OPERATOR Launch Snars"
+            }
+        },
+        "SPO-10": {
+            "PLT_RWR_CHECK": {
+                "type": "PushButton",
+                "msg": "PLT_RWR_CHECK",
+                "device_id": "67",
+                "command": "3004",
+                "arg_number": "990",
+                "category": "SPO-10",
+                "description": "PILOT Check RWR"
+            },
+            "PLT_RWR_DAY_NIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_RWR_DAY_NIGHT",
+                "device_id": "67",
+                "command": "3003",
+                "arg_number": "989",
+                "category": "SPO-10",
+                "description": "PILOT RWR DAY/NIGHT"
+            },
+            "PLT_RWR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_RWR_PW",
+                "device_id": "67",
+                "command": "3001",
+                "arg_number": "366",
+                "category": "SPO-10",
+                "description": "PILOT RWR Power"
+            },
+            "PLT_RWR_SIGNAL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_RWR_SIGNAL",
+                "device_id": "67",
+                "command": "3002",
+                "arg_number": "365",
+                "category": "SPO-10",
+                "description": "PILOT RWR Signal"
+            }
+        },
+        "GREBEN": {
+            "PLT_GREB_CRS_SET": {
+                "type": "Rotary",
+                "msg": "PLT_GREB_CRS_SET",
+                "device_id": "27",
+                "command": "3015",
+                "arg_number": "858",
+                "category": "GREBEN",
+                "description": "PILOT Greben Course setter"
+            },
+            "PLT_GREB_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GREB_PW",
+                "device_id": "27",
+                "command": "3001",
+                "arg_number": "367",
+                "category": "GREBEN",
+                "description": "PILOT Greben ON/OFF"
+            },
+            "PLT_GREB_MATCH": {
+                "type": "PushButton",
+                "msg": "PLT_GREB_MATCH",
+                "device_id": "27",
+                "command": "3007",
+                "arg_number": "450",
+                "category": "GREBEN",
+                "description": "PILOT Greben Match"
+            },
+            "PLT_GREB_SETUP": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_GREB_SETUP",
+                "device_id": "27",
+                "command": "3012",
+                "arg_number": "451",
+                "category": "GREBEN",
+                "description": "PILOT Greben Mode SETUP/OPER"
+            },
+            "PLT_GREB_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_GREB_MODE",
+                "device_id": "27",
+                "command": "3009",
+                "arg_number": "449",
+                "category": "GREBEN",
+                "description": "PILOT Greben Mode ZK/GPK/MK"
+            },
+            "PLT_GREB_LAT_SET": {
+                "type": "Rotary",
+                "msg": "PLT_GREB_LAT_SET",
+                "device_id": "27",
+                "command": "3004",
+                "arg_number": "448",
+                "category": "GREBEN",
+                "description": "PILOT Greben Set Latitude"
+            }
+        },
+        "KM-2": {
+            "PLT_KM2_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_KM2_TEST",
+                "device_id": "68",
+                "command": "3002",
+                "arg_number": "645",
+                "category": "KM-2",
+                "description": "PILOT KM-2 Test button"
+            },
+            "PLT_KM2_MAG_DEC": {
+                "type": "Rotary",
+                "msg": "PLT_KM2_MAG_DEC",
+                "device_id": "68",
+                "command": "3001",
+                "arg_number": "647",
+                "category": "KM-2",
+                "description": "PILOT KM-2 set Magnetic Declination"
+            }
+        },
+        "DISS": {
+            "PLT_DISS_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DISS_PW",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "371",
+                "category": "DISS",
+                "description": "PILOT DISS-15D ON/OFF"
+            },
+            "PLT_DISS_DVS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DISS_DVS",
+                "device_id": "8",
+                "command": "3002",
+                "arg_number": "370",
+                "category": "DISS",
+                "description": "PILOT Airspeed to DISS-15 ON/OFF"
+            },
+            "PLT_DISS_COORD_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_COORD_OFF",
+                "device_id": "8",
+                "command": "3003",
+                "arg_number": "818",
+                "category": "DISS",
+                "description": "PILOT DISS-15 coordinates OFF"
+            },
+            "PLT_DISS_COORD_ON": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_COORD_ON",
+                "device_id": "8",
+                "command": "3004",
+                "arg_number": "819",
+                "category": "DISS",
+                "description": "PILOT DISS-15 coordinates ON"
+            },
+            "PLT_DISS_DEC_MAPANGLE": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_DEC_MAPANGLE",
+                "device_id": "8",
+                "command": "3005",
+                "arg_number": "815",
+                "category": "DISS",
+                "description": "PILOT DISS-15 decrease map angle"
+            },
+            "PLT_DISS_INC_MAPANGLE": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_INC_MAPANGLE",
+                "device_id": "8",
+                "command": "3006",
+                "arg_number": "816",
+                "category": "DISS",
+                "description": "PILOT DISS-15 increase map angle"
+            },
+            "PLT_DISS_DEC_PATH": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_DEC_PATH",
+                "device_id": "8",
+                "command": "3007",
+                "arg_number": "809",
+                "category": "DISS",
+                "description": "PILOT DISS-15 decrease path"
+            },
+            "PLT_DISS_INC_PATH": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_INC_PATH",
+                "device_id": "8",
+                "command": "3008",
+                "arg_number": "810",
+                "category": "DISS",
+                "description": "PILOT DISS-15 increase path"
+            },
+            "PLT_DISS_DEC_DEVIATION": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_DEC_DEVIATION",
+                "device_id": "8",
+                "command": "3009",
+                "arg_number": "803",
+                "category": "DISS",
+                "description": "PILOT DISS-15 decrease deviation"
+            },
+            "PLT_DISS_INC_DEVIATION": {
+                "type": "PushButton",
+                "msg": "PLT_DISS_INC_DEVIATION",
+                "device_id": "8",
+                "command": "3010",
+                "arg_number": "804",
+                "category": "DISS",
+                "description": "PILOT DISS-15 increase deviation"
+            },
+            "PLT_DISS_MODE_WORK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DISS_MODE_WORK",
+                "device_id": "8",
+                "command": "3011",
+                "arg_number": "797",
+                "category": "DISS",
+                "description": "PILOT DISS-15 Mode WORK/CHECK"
+            },
+            "PLT_DISS_MODE_LAND": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_DISS_MODE_LAND",
+                "device_id": "8",
+                "command": "3012",
+                "arg_number": "798",
+                "category": "DISS",
+                "description": "PILOT DISS-15 Mode LAND/SEA"
+            },
+            "PLT_DISS_SEL_KNB": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_DISS_SEL_KNB",
+                "device_id": "8",
+                "device_command": "3013",
+                "arg_number": "826",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "DISS",
+                "description": "PILOT DISS-15 select mode IDK/IDK/IDK/MEM/OPER"
+            }
+        },
+        "Radar Altimeter": {
+            "PLT_RV5_PW": {
+                "type": "PushButton",
+                "msg": "PLT_RV5_PW",
+                "device_id": "12",
+                "command": "3003",
+                "arg_number": "372",
+                "category": "Radar Altimeter",
+                "description": "PILOT RV-5 ON/OFF"
+            },
+            "PLT_RV5_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_RV5_TEST",
+                "device_id": "12",
+                "command": "3002",
+                "arg_number": "31",
+                "category": "Radar Altimeter",
+                "description": "PILOT RV-5 Test"
+            },
+            "PLT_RV5_ADJ": {
+                "type": "Rotary",
+                "msg": "PLT_RV5_ADJ",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "30",
+                "category": "Radar Altimeter",
+                "description": "PILOT RV-5 Adjust"
+            }
+        },
+        "MAP DISPLAY": {
+            "PLT_MAP_LIGHT": {
+                "type": "3PosTumb",
+                "msg": "PLT_MAP_LIGHT",
+                "device_id": "45",
+                "command": "3011",
+                "arg_number": "192",
+                "category": "MAP DISPLAY",
+                "description": "PILOT Map Highlight  BRIGHT/OFF/DIM"
+            },
+            "PLT_MAP_ADJ_HOR": {
+                "type": "Potentiometer",
+                "msg": "PLT_MAP_ADJ_HOR",
+                "device_id": "45",
+                "command": "3006",
+                "arg_number": "983",
+                "limits": "{ 0, 1 }",
+                "category": "MAP DISPLAY",
+                "description": "PILOT Set the horizontal position of the helicopter on the Map"
+            },
+            "PLT_MAP_ADJ_VERT": {
+                "type": "Potentiometer",
+                "msg": "PLT_MAP_ADJ_VERT",
+                "device_id": "45",
+                "command": "3004",
+                "arg_number": "291",
+                "limits": "{ 0, 1 }",
+                "category": "MAP DISPLAY",
+                "description": "PILOT Set the vertical position of the helicopter on the Map"
+            },
+            "PLT_MAP_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MAP_PW",
+                "device_id": "45",
+                "command": "3008",
+                "arg_number": "984",
+                "category": "MAP DISPLAY",
+                "description": "PILOT Map Power ON/OFF"
+            },
+            "PLT_MAP_SCALE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_MAP_SCALE",
+                "device_id": "45",
+                "command": "3001",
+                "arg_number": "985",
+                "category": "MAP DISPLAY",
+                "description": "PILOT Map Scale Selector"
+            }
+        },
+        "ARC-15 PLT": {
+            "PLT_ARC_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_ARC_VOL",
+                "device_id": "47",
+                "command": "3001",
+                "arg_number": "459",
+                "limits": "{ 0, 1 }",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Volume"
+            },
+            "PLT_ARC_MODUL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ARC_MODUL",
+                "device_id": "47",
+                "command": "3002",
+                "arg_number": "460",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 TLF/TLG"
+            },
+            "PLT_ARC_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_MODE",
+                "device_id": "47",
+                "device_command": "3003",
+                "arg_number": "463",
+                "num_positions": "4",
+                "increment": "0.115",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 mode OFF/COMPASS/ANT/FRAME"
+            },
+            "PLT_ARC_FREQ_L_100": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_FREQ_L_100",
+                "device_id": "47",
+                "device_command": "3004",
+                "arg_number": "467",
+                "num_positions": "18",
+                "increment": "0.0588",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Left Frequency 100KHz"
+            },
+            "PLT_ARC_FREQ_L_10": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_FREQ_L_10",
+                "device_id": "47",
+                "device_command": "3005",
+                "arg_number": "468",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Left Frequency 10KHz"
+            },
+            "PLT_ARC_FREQ_L_1": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_FREQ_L_1",
+                "device_id": "47",
+                "device_command": "3006",
+                "arg_number": "469",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Left Frequency 1KHz"
+            },
+            "PLT_ARC_FREQ_R_100": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_FREQ_R_100",
+                "device_id": "47",
+                "device_command": "3007",
+                "arg_number": "464",
+                "num_positions": "18",
+                "increment": "0.0588",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Right Frequency 100KHz"
+            },
+            "PLT_ARC_FREQ_R_10": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_FREQ_R_10",
+                "device_id": "47",
+                "device_command": "3008",
+                "arg_number": "465",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Right Frequency 10KHz"
+            },
+            "PLT_ARC_FREQ_R_1": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_ARC_FREQ_R_1",
+                "device_id": "47",
+                "device_command": "3009",
+                "arg_number": "466",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Right Frequency 1KHz"
+            },
+            "PLT_ARC_LOOP": {
+                "type": "PushButton",
+                "msg": "PLT_ARC_LOOP",
+                "device_id": "47",
+                "command": "3010",
+                "arg_number": "458",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Loop Button"
+            },
+            "PLT_ARC_CHAN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ARC_CHAN",
+                "device_id": "47",
+                "command": "3011",
+                "arg_number": "462",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 1/2"
+            },
+            "PLT_ARC_CONTROL": {
+                "type": "PushButton",
+                "msg": "PLT_ARC_CONTROL",
+                "device_id": "47",
+                "command": "3012",
+                "arg_number": "461",
+                "category": "ARC-15 PLT",
+                "description": "PILOT ARC-15 Control Button"
+            }
+        },
+        "ARC-15 OP": {
+            "OP_ARC_VOL": {
+                "type": "Potentiometer",
+                "msg": "OP_ARC_VOL",
+                "device_id": "48",
+                "command": "3001",
+                "arg_number": "634",
+                "limits": "{ 0, 1 }",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Volume"
+            },
+            "OP_ARC_MODUL": {
+                "type": "ToggleSwitch",
+                "msg": "OP_ARC_MODUL",
+                "device_id": "48",
+                "command": "3002",
+                "arg_number": "635",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 TLF/TLG"
+            },
+            "OP_ARC_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_MODE",
+                "device_id": "48",
+                "device_command": "3003",
+                "arg_number": "638",
+                "num_positions": "4",
+                "increment": "0.115",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 mode OFF/COMPASS/ANT/FRAME"
+            },
+            "OP_ARC_FREQ_L_100": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_FREQ_L_100",
+                "device_id": "48",
+                "device_command": "3004",
+                "arg_number": "639",
+                "num_positions": "18",
+                "increment": "0.0588",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Left Frequency 100KHz"
+            },
+            "OP_ARC_FREQ_L_10": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_FREQ_L_10",
+                "device_id": "48",
+                "device_command": "3005",
+                "arg_number": "640",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Left Frequency 10KHz"
+            },
+            "OP_ARC_FREQ_L_1": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_FREQ_L_1",
+                "device_id": "48",
+                "device_command": "3006",
+                "arg_number": "641",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Left Frequency 1KHz"
+            },
+            "OP_ARC_FREQ_R_100": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_FREQ_R_100",
+                "device_id": "48",
+                "device_command": "3007",
+                "arg_number": "642",
+                "num_positions": "18",
+                "increment": "0.0588",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Right Frequency 100KHz"
+            },
+            "OP_ARC_FREQ_R_10": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_FREQ_R_10",
+                "device_id": "48",
+                "device_command": "3008",
+                "arg_number": "643",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Right Frequency 10KHz"
+            },
+            "OP_ARC_FREQ_R_1": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_ARC_FREQ_R_1",
+                "device_id": "48",
+                "device_command": "3009",
+                "arg_number": "644",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Right Frequency 1KHz"
+            },
+            "OP_ARC_LOOP": {
+                "type": "PushButton",
+                "msg": "OP_ARC_LOOP",
+                "device_id": "48",
+                "command": "3010",
+                "arg_number": "633",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Loop Button"
+            },
+            "OP_ARC_CHAN": {
+                "type": "ToggleSwitch",
+                "msg": "OP_ARC_CHAN",
+                "device_id": "48",
+                "command": "3011",
+                "arg_number": "637",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 1/2"
+            },
+            "OP_ARC_CONTROL": {
+                "type": "PushButton",
+                "msg": "OP_ARC_CONTROL",
+                "device_id": "48",
+                "command": "3012",
+                "arg_number": "636",
+                "category": "ARC-15 OP",
+                "description": "OPERATOR ARC-15 Control Button"
+            }
+        },
+        "R-863": {
+            "PLT_R863_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R863_PW",
+                "device_id": "49",
+                "command": "3001",
+                "arg_number": "375",
+                "category": "R-863",
+                "description": "PILOT R-863 ON/OFF"
+            },
+            "PLT_R863_MODUL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R863_MODUL",
+                "device_id": "49",
+                "command": "3004",
+                "arg_number": "506",
+                "category": "R-863",
+                "description": "PILOT R-863 FM/AM"
+            },
+            "PLT_R863_EMERG_RCV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R863_EMERG_RCV",
+                "device_id": "49",
+                "command": "3015",
+                "arg_number": "507",
+                "category": "R-863",
+                "description": "PILOT R-863 Emergency Receiver ON/OFF"
+            },
+            "PLT_R863_ARC": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R863_ARC",
+                "device_id": "49",
+                "command": "3018",
+                "arg_number": "509",
+                "category": "R-863",
+                "description": "PILOT R-863 ARC-UD ON/OFF"
+            },
+            "PLT_R863_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R863_SQUELCH",
+                "device_id": "49",
+                "command": "3009",
+                "arg_number": "510",
+                "category": "R-863",
+                "description": "PILOT R-863 Squelch ON/OFF"
+            },
+            "PLT_R863_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_R863_VOL",
+                "device_id": "49",
+                "command": "3012",
+                "arg_number": "511",
+                "limits": "{ 0, 1 }",
+                "category": "R-863",
+                "description": "PILOT R-863 Volume"
+            },
+            "PLT_R863_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_R863_CHAN",
+                "device_id": "49",
+                "device_command": "3007",
+                "arg_number": "513",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "R-863",
+                "description": "PILOT R-863 Channel Select"
+            }
+        },
+        "Jadro-1I": {
+            "PLT_JADRO_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_JADRO_PW",
+                "device_id": "50",
+                "command": "3027",
+                "arg_number": "374",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I ON/OFF"
+            },
+            "PLT_JADRO_MODUL": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_JADRO_MODUL",
+                "device_id": "50",
+                "device_command": "3001",
+                "arg_number": "438",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Mode OFF/AM/OM"
+            },
+            "PLT_JADRO_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_JADRO_VOL",
+                "device_id": "50",
+                "command": "3019",
+                "arg_number": "426",
+                "limits": "{ 0, 1 }",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Volume"
+            },
+            "PLT_JADRO_SQUELCH": {
+                "type": "Potentiometer",
+                "msg": "PLT_JADRO_SQUELCH",
+                "device_id": "50",
+                "command": "3022",
+                "arg_number": "421",
+                "limits": "{ 0, 1 }",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Squelch"
+            },
+            "PLT_JADRO_TEST": {
+                "type": "PushButton",
+                "msg": "PLT_JADRO_TEST",
+                "device_id": "50",
+                "command": "3025",
+                "arg_number": "423",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Test"
+            },
+            "PLT_JADRO_1M": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_JADRO_1M",
+                "device_id": "50",
+                "command": "3004",
+                "arg_number": "437",
+                "step": "0.1",
+                "limits": "{ 0.2, 1.6 }",
+                "rel_args": "{ -0.1, 0.1 }",
+                "output_map": "nil",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Frequency 1MHz"
+            },
+            "PLT_JADRO_100K": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_JADRO_100K",
+                "device_id": "50",
+                "command": "3007",
+                "arg_number": "436",
+                "step": "0.1",
+                "limits": "{ 0, 0.9 }",
+                "rel_args": "{ -0.1, 0.1 }",
+                "output_map": "{ \"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\" }",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Frequency 100KHz"
+            },
+            "PLT_JADRO_10K": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_JADRO_10K",
+                "device_id": "50",
+                "command": "3010",
+                "arg_number": "429",
+                "step": "0.1",
+                "limits": "{ 0, 0.9 }",
+                "rel_args": "{ -0.1, 0.1 }",
+                "output_map": "{ \"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\" }",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Frequency 10KHz"
+            },
+            "PLT_JADRO_1K": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_JADRO_1K",
+                "device_id": "50",
+                "command": "3013",
+                "arg_number": "428",
+                "step": "0.1",
+                "limits": "{ 0, 0.9 }",
+                "rel_args": "{ -0.1, 0.1 }",
+                "output_map": "{ \"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\" }",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Frequency 1KHz"
+            },
+            "PLT_JADRO_100H": {
+                "type": "FixedStepTumb",
+                "msg": "PLT_JADRO_100H",
+                "device_id": "50",
+                "command": "3016",
+                "arg_number": "427",
+                "step": "0.1",
+                "limits": "{ 0, 0.9 }",
+                "rel_args": "{ -0.1, 0.1 }",
+                "output_map": "{ \"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\" }",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Frequency 100Hz"
+            },
+            "PLT_JADRO_SQUELCH_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_JADRO_SQUELCH_SW",
+                "device_id": "50",
+                "device_command": "3022",
+                "arg_number": "421",
+                "num_positions": "8",
+                "increment": "0.125",
+                "category": "Jadro-1I",
+                "description": "PILOT Jadro-1I Squelch (as Multipos)"
+            }
+        },
+        "Eucalypt-M24": {
+            "PLT_R828_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R828_PW",
+                "device_id": "51",
+                "command": "3005",
+                "arg_number": "373",
+                "category": "Eucalypt-M24",
+                "description": "PILOT R-828 ON/OFF"
+            },
+            "PLT_R828_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_R828_CHAN",
+                "device_id": "51",
+                "device_command": "3001",
+                "arg_number": "337",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "Eucalypt-M24",
+                "description": "PILOT R-828 Channel Select"
+            },
+            "PLT_R828_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_R828_VOL",
+                "device_id": "51",
+                "command": "3002",
+                "arg_number": "339",
+                "limits": "{ 0, 1 }",
+                "category": "Eucalypt-M24",
+                "description": "PILOT R-828 Volume Knob"
+            },
+            "PLT_R828_ASU": {
+                "type": "PushButton",
+                "msg": "PLT_R828_ASU",
+                "device_id": "51",
+                "command": "3003",
+                "arg_number": "340",
+                "category": "Eucalypt-M24",
+                "description": "PILOT R-828 ASU"
+            },
+            "PLT_R828_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R828_SQUELCH",
+                "device_id": "51",
+                "command": "3004",
+                "arg_number": "341",
+                "category": "Eucalypt-M24",
+                "description": "PILOT R-828 Squelch ON/OFF"
+            }
+        },
+        "R-852": {
+            "PLT_R852_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_R852_VOL",
+                "device_id": "52",
+                "command": "3004",
+                "arg_number": "517",
+                "limits": "{ 0, 1 }",
+                "category": "R-852",
+                "description": "PILOT R-852 Volume"
+            },
+            "PLT_R852_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_R852_CHAN",
+                "device_id": "52",
+                "device_command": "3001",
+                "arg_number": "518",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "R-852",
+                "description": "PILOT R-852 Channel Select"
+            }
+        },
+        "Accelerometer": {
+            "PLT_RESET_G": {
+                "type": "PushButton",
+                "msg": "PLT_RESET_G",
+                "device_id": "53",
+                "command": "3001",
+                "arg_number": "947",
+                "category": "Accelerometer",
+                "description": "PILOT Accelerometer Reset Button - Push to reset"
+            }
+        },
+        "Wiper": {
+            "PLT_WIPER_OFF": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_OFF",
+                "device_id": "11",
+                "command": "3020",
+                "arg_number": "418",
+                "step": "0.1",
+                "limits": "{ 0, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "PILOT Windscreen Wiper Control Switch, OFF"
+            },
+            "PLT_WIPER_ON": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_ON",
+                "device_id": "11",
+                "command": "3020",
+                "arg_number": "418",
+                "step": "0.05",
+                "limits": "{ 0, 0.05 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "PILOT Windscreen Wiper Control Switch, START"
+            },
+            "PLT_WIPER_RST": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_RST",
+                "device_id": "11",
+                "command": "3020",
+                "arg_number": "418",
+                "step": "0.35",
+                "limits": "{ 0, 0.35 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "PILOT Windscreen Wiper Control Switch, RESET"
+            },
+            "PLT_WIPER_SPD_1": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_SPD_1",
+                "device_id": "11",
+                "command": "3020",
+                "arg_number": "418",
+                "step": "0.15",
+                "limits": "{ 0, 0.15 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "PILOT Windscreen Wiper Control Switch, SPEED 1"
+            },
+            "PLT_WIPER_SPD_2": {
+                "type": "Tumb",
+                "msg": "PLT_WIPER_SPD_2",
+                "device_id": "11",
+                "command": "3020",
+                "arg_number": "418",
+                "step": "0.25",
+                "limits": "{ 0, 0.25 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "PILOT Windscreen Wiper Control Switch, SPEED 2"
+            },
+            "OP_WIPER_OFF": {
+                "type": "Tumb",
+                "msg": "OP_WIPER_OFF",
+                "device_id": "11",
+                "command": "3021",
+                "arg_number": "674",
+                "step": "0.1",
+                "limits": "{ 0, 0 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "OPERATOR Windscreen Wiper Control Switch, OFF"
+            },
+            "OP_WIPER_ON": {
+                "type": "Tumb",
+                "msg": "OP_WIPER_ON",
+                "device_id": "11",
+                "command": "3021",
+                "arg_number": "674",
+                "step": "0.05",
+                "limits": "{ 0, 0.05 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "OPERATOR Windscreen Wiper Control Switch, START"
+            },
+            "OP_WIPER_RST": {
+                "type": "Tumb",
+                "msg": "OP_WIPER_RST",
+                "device_id": "11",
+                "command": "3021",
+                "arg_number": "674",
+                "step": "0.35",
+                "limits": "{ 0, 0.35 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "OPERATOR Windscreen Wiper Control Switch, RESET"
+            },
+            "OP_WIPER_SPD_1": {
+                "type": "Tumb",
+                "msg": "OP_WIPER_SPD_1",
+                "device_id": "11",
+                "command": "3021",
+                "arg_number": "674",
+                "step": "0.15",
+                "limits": "{ 0, 0.15 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "OPERATOR Windscreen Wiper Control Switch, SPEED 1"
+            },
+            "OP_WIPER_SPD_2": {
+                "type": "Tumb",
+                "msg": "OP_WIPER_SPD_2",
+                "device_id": "11",
+                "command": "3021",
+                "arg_number": "674",
+                "step": "0.25",
+                "limits": "{ 0, 0.25 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Wiper",
+                "description": "OPERATOR Windscreen Wiper Control Switch, SPEED 2"
+            }
+        },
+        "ARC-U2 ": {
+            "PLT_ARCU2_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ARCU2_PW",
+                "device_id": "54",
+                "command": "3001",
+                "arg_number": "324",
+                "category": "ARC-U2 ",
+                "description": "PILOT ARC-U2 switcher ON/OFF"
+            },
+            "PLT_ARCU2_FRAME": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "PLT_ARCU2_FRAME",
+                "device_id": "54",
+                "downSwitch": "3002",
+                "upSwitch": "3003",
+                "arg_number": "325",
+                "category": "ARC-U2 ",
+                "description": "PILOT ARC-U2 switcher L\u2013RAMKA-P"
+            },
+            "PLT_ARCU2_SENS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_ARCU2_SENS",
+                "device_id": "54",
+                "command": "3004",
+                "arg_number": "326",
+                "category": "ARC-U2 ",
+                "description": "PILOT ARC-U2 switcher sensitivity B-M"
+            },
+            "PLT_ARCU2_COMPASS": {
+                "type": "3PosTumb",
+                "msg": "PLT_ARCU2_COMPASS",
+                "device_id": "54",
+                "command": "3005",
+                "arg_number": "327",
+                "category": "ARC-U2 ",
+                "description": "PILOT ARC-U2 switcher COMPASS R-852\u2013RADIOLINK\u2013COMPASS R-828"
+            }
+        },
+        "SPU-8 PLT": {
+            "PLT_SPU8_NET": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPU8_NET",
+                "device_id": "55",
+                "command": "3007",
+                "arg_number": "452",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Network 1/2 Switch (N/F)"
+            },
+            "PLT_SPU8_RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_SPU8_RADIO_VOL",
+                "device_id": "55",
+                "command": "3002",
+                "arg_number": "453",
+                "limits": "{ 0, 1 }",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Radio Volume Knob"
+            },
+            "PLT_SPU8_CIRC": {
+                "type": "PushButton",
+                "msg": "PLT_SPU8_CIRC",
+                "device_id": "55",
+                "command": "3008",
+                "arg_number": "454",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Circular Call Button (N/F)"
+            },
+            "PLT_SPU8_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_SPU8_MODE",
+                "device_id": "55",
+                "device_command": "3003",
+                "arg_number": "455",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Radio Source Selector Switch, R-863/NF/JADRO-1A/R-828(Eucalypt)/ARC-15/ARC-U2"
+            },
+            "PLT_SPU8_ICS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPU8_ICS",
+                "device_id": "55",
+                "command": "3004",
+                "arg_number": "456",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Radio/ICS Switch"
+            },
+            "PLT_SPU8_VOL": {
+                "type": "Potentiometer",
+                "msg": "PLT_SPU8_VOL",
+                "device_id": "55",
+                "command": "3001",
+                "arg_number": "457",
+                "limits": "{ 0, 1 }",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Volume Knob"
+            },
+            "PLT_SPU8_1_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPU8_1_PW",
+                "device_id": "55",
+                "command": "3017",
+                "arg_number": "376",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Switch NET-1 ON/OFF"
+            },
+            "PLT_SPU8_2_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPU8_2_PW",
+                "device_id": "55",
+                "command": "3018",
+                "arg_number": "377",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Switch NET-2 ON/OFF"
+            },
+            "PLT_SPU8_STICK_BTN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_SPU8_STICK_BTN",
+                "device_id": "55",
+                "command": "3024",
+                "arg_number": "738",
+                "category": "SPU-8 PLT",
+                "description": "PILOT SPU-8 Trigger Button, RADIO(LMB)/ICS(RMB)"
+            }
+        },
+        "SPU-8 OP": {
+            "OP_SPU8_NET": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SPU8_NET",
+                "device_id": "55",
+                "command": "3013",
+                "arg_number": "656",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Network 1/2 Switch (N/F)"
+            },
+            "OP_SPU8_RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "OP_SPU8_RADIO_VOL",
+                "device_id": "55",
+                "command": "3010",
+                "arg_number": "657",
+                "limits": "{ 0, 1 }",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Radio Volume Knob"
+            },
+            "OP_SPU8_CIRC": {
+                "type": "PushButton",
+                "msg": "OP_SPU8_CIRC",
+                "device_id": "55",
+                "command": "3014",
+                "arg_number": "658",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Circular Call Button (N/F)"
+            },
+            "OP_SPU8_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "OP_SPU8_MODE",
+                "device_id": "55",
+                "device_command": "3011",
+                "arg_number": "659",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Radio Source Selector Switch, R-863/NF/JADRO-1A/R-828(Eucalypt)/ARC-15/ARC-U2"
+            },
+            "OP_SPU8_ICS": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SPU8_ICS",
+                "device_id": "55",
+                "command": "3012",
+                "arg_number": "660",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Radio/ICS Switch"
+            },
+            "OP_SPU8_VOL": {
+                "type": "Potentiometer",
+                "msg": "OP_SPU8_VOL",
+                "device_id": "55",
+                "command": "3009",
+                "arg_number": "661",
+                "limits": "{ 0, 1 }",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Volume Knob"
+            },
+            "OP_SPU8_SPUU_PW": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SPU8_SPUU_PW",
+                "device_id": "55",
+                "command": "3015",
+                "arg_number": "664",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 SPUU Power ON/OFF"
+            },
+            "OP_SPU8_STICK_BTN": {
+                "type": "ToggleSwitch",
+                "msg": "OP_SPU8_STICK_BTN",
+                "device_id": "55",
+                "command": "3025",
+                "arg_number": "856",
+                "category": "SPU-8 OP",
+                "description": "OPERATOR SPU-8 Trigger Button, RADIO(LMB)/ICS(RMB)"
+            }
+        },
+        "IFF": {
+            "PLT_IFF_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_IFF_MODE",
+                "device_id": "57",
+                "device_command": "3001",
+                "arg_number": "334",
+                "num_positions": "4",
+                "increment": "0.333",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Mode Selector Switch, AUTO/KD/+-15/KP"
+            },
+            "PLT_IFF_DEVICE_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_IFF_DEVICE_SEL",
+                "device_id": "57",
+                "command": "3002",
+                "arg_number": "336",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Device Selector Switch, WORK/RESERVE"
+            },
+            "PLT_IFF_MODE_1_2": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_IFF_MODE_1_2",
+                "device_id": "57",
+                "command": "3003",
+                "arg_number": "332",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Device Mode Switch, 1/2"
+            },
+            "PLT_IFF_ERASE_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_IFF_ERASE_CV",
+                "device_id": "57",
+                "command": "3004",
+                "arg_number": "328",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Erase Button Cover, OPEN/CLOSE"
+            },
+            "PLT_IFF_ERASE": {
+                "type": "PushButton",
+                "msg": "PLT_IFF_ERASE",
+                "device_id": "57",
+                "command": "3005",
+                "arg_number": "329",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Erase Button - Push to erase"
+            },
+            "PLT_IFF_SOS_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_IFF_SOS_CV",
+                "device_id": "57",
+                "command": "3006",
+                "arg_number": "330",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Disaster Switch Cover, OPEN/CLOSE"
+            },
+            "PLT_IFF_SOS": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_IFF_SOS",
+                "device_id": "57",
+                "command": "3007",
+                "arg_number": "331",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Disaster Switch, ON/OFF"
+            },
+            "PLT_IFF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_IFF_PW",
+                "device_id": "57",
+                "command": "3008",
+                "arg_number": "383",
+                "category": "IFF",
+                "description": "PILOT IFF Transponder Power Switch, ON/OFF"
+            }
+        },
+        "Recorder MC 61": {
+            "PLT_REC_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_REC_PW",
+                "device_id": "58",
+                "command": "3001",
+                "arg_number": "378",
+                "category": "Recorder MC 61",
+                "description": "PILOT Recorder MC 61 Power Switch, ON/OFF"
+            },
+            "PLT_REC_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_REC_MODE",
+                "device_id": "58",
+                "command": "3002",
+                "arg_number": "1007",
+                "category": "Recorder MC 61",
+                "description": "PILOT Recorder MC 61 AUTO/WORK"
+            },
+            "PLT_REC_BRGHT": {
+                "type": "Potentiometer",
+                "msg": "PLT_REC_BRGHT",
+                "device_id": "58",
+                "command": "3003",
+                "arg_number": "381",
+                "limits": "{ 0, 1 }",
+                "category": "Recorder MC 61",
+                "description": "PILOT Recorder MC 61 Brightness Knob"
+            },
+            "PLT_REC_SOURCE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_REC_SOURCE",
+                "device_id": "58",
+                "command": "3004",
+                "arg_number": "1012",
+                "category": "Recorder MC 61",
+                "description": "PILOT Recorder MC 61 Laryngophone Switch, ON/OFF"
+            }
+        },
+        "RI-65": {
+            "PLT_RI65_OFF": {
+                "type": "PushButton",
+                "msg": "PLT_RI65_OFF",
+                "device_id": "59",
+                "command": "3001",
+                "arg_number": "359",
+                "category": "RI-65",
+                "description": "PILOT RI-65 OFF Button"
+            },
+            "PLT_RI65_CHECK": {
+                "type": "PushButton",
+                "msg": "PLT_RI65_CHECK",
+                "device_id": "59",
+                "command": "3002",
+                "arg_number": "360",
+                "category": "RI-65",
+                "description": "PILOT RI-65 Check Button"
+            },
+            "PLT_RI65_REPEAT": {
+                "type": "PushButton",
+                "msg": "PLT_RI65_REPEAT",
+                "device_id": "59",
+                "command": "3003",
+                "arg_number": "361",
+                "category": "RI-65",
+                "description": "PILOT RI-65 Repeat Button"
+            }
+        },
+        "External Cargo Equipment": {
+            "PLT_CARGO_TACT_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CARGO_TACT_CV",
+                "device_id": "61",
+                "command": "3002",
+                "arg_number": "751",
+                "category": "External Cargo Equipment",
+                "description": "PILOT Tactical Cargo Release Button Cover, OPEN/CLOSE"
+            },
+            "PLT_CARGO_TACT": {
+                "type": "PushButton",
+                "msg": "PLT_CARGO_TACT",
+                "device_id": "61",
+                "command": "3001",
+                "arg_number": "752",
+                "category": "External Cargo Equipment",
+                "description": "PILOT Tactical Cargo Release Button - Push to release"
+            },
+            "PLT_CARGO_EMERG_CV": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CARGO_EMERG_CV",
+                "device_id": "61",
+                "command": "3004",
+                "arg_number": "748",
+                "category": "External Cargo Equipment",
+                "description": "PILOT Emergency Cargo Release Button Cover, OPEN/CLOSE"
+            },
+            "PLT_CARGO_EMERG": {
+                "type": "PushButton",
+                "msg": "PLT_CARGO_EMERG",
+                "device_id": "61",
+                "command": "3003",
+                "arg_number": "749",
+                "category": "External Cargo Equipment",
+                "description": "PILOT Emergency Cargo Release Button - Push to release"
+            },
+            "PLT_CARGO_AUTOLOCK": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CARGO_AUTOLOCK",
+                "device_id": "61",
+                "command": "3007",
+                "arg_number": "199",
+                "category": "External Cargo Equipment",
+                "description": "PILOT External Cargo Automatic Dropping, ON/OFF"
+            },
+            "PLT_CARGO_REMOVE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_CARGO_REMOVE",
+                "device_id": "61",
+                "command": "3008",
+                "arg_number": "198",
+                "category": "External Cargo Equipment",
+                "description": "PILOT External Cargo Remove Release, ON/OFF"
+            },
+            "OP_CARGO_EMERG_CV": {
+                "type": "ToggleSwitch",
+                "msg": "OP_CARGO_EMERG_CV",
+                "device_id": "61",
+                "command": "3006",
+                "arg_number": "862",
+                "category": "External Cargo Equipment",
+                "description": "OPERATOR Emergency Cargo Release Button Cover, OPEN/CLOSE"
+            },
+            "OP_CARGO_EMERG": {
+                "type": "PushButton",
+                "msg": "OP_CARGO_EMERG",
+                "device_id": "61",
+                "command": "3005",
+                "arg_number": "863",
+                "category": "External Cargo Equipment",
+                "description": "OPERATOR Emergency Cargo Release Button - Push to release"
+            }
+        },
+        "Signal Flares": {
+            "PLT_FLARES_1_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_1_PW",
+                "device_id": "64",
+                "command": "3001",
+                "arg_number": "343",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 1 Power Switch, ON/OFF"
+            },
+            "PLT_FLARES_1_RED": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_1_RED",
+                "device_id": "64",
+                "command": "3003",
+                "arg_number": "344",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 1 Launch Red Button"
+            },
+            "PLT_FLARES_1_GRN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_1_GRN",
+                "device_id": "64",
+                "command": "3002",
+                "arg_number": "345",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 1 Launch Green Button"
+            },
+            "PLT_FLARES_1_YEL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_1_YEL",
+                "device_id": "64",
+                "command": "3005",
+                "arg_number": "346",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 1 Launch Yellow Button"
+            },
+            "PLT_FLARES_1_WHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_1_WHT",
+                "device_id": "64",
+                "command": "3004",
+                "arg_number": "347",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 1 Launch White Button"
+            },
+            "PLT_FLARES_2_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_2_PW",
+                "device_id": "64",
+                "command": "3006",
+                "arg_number": "352",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 2 Power Switch, ON/OFF"
+            },
+            "PLT_FLARES_2_RED": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_2_RED",
+                "device_id": "64",
+                "command": "3008",
+                "arg_number": "351",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 2 Launch Red Button"
+            },
+            "PLT_FLARES_2_GRN": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_2_GRN",
+                "device_id": "64",
+                "command": "3007",
+                "arg_number": "350",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 2 Launch Green Button"
+            },
+            "PLT_FLARES_2_YEL": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_2_YEL",
+                "device_id": "64",
+                "command": "3010",
+                "arg_number": "349",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 2 Launch Yellow Button"
+            },
+            "PLT_FLARES_2_WHT": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_FLARES_2_WHT",
+                "device_id": "64",
+                "command": "3009",
+                "arg_number": "348",
+                "category": "Signal Flares",
+                "description": "PILOT Signal Flares Cassette 2 Launch White Button"
+            }
+        },
+        "Timer": {
+            "OP_TIMER_L_UP": {
+                "type": "ToggleSwitch",
+                "msg": "OP_TIMER_L_UP",
+                "device_id": "70",
+                "command": "3003",
+                "arg_number": "1015",
+                "category": "Timer",
+                "description": "OPERATOR Left Timer Control Up/Down"
+            },
+            "OP_TIMER_L_ROT": {
+                "type": "Potentiometer",
+                "msg": "OP_TIMER_L_ROT",
+                "device_id": "70",
+                "command": "3004",
+                "arg_number": "1016",
+                "limits": "{ 0, 1 }",
+                "category": "Timer",
+                "description": "OPERATOR Left Timer Control Rotary"
+            },
+            "OP_TIMER_R_UP": {
+                "type": "ToggleSwitch",
+                "msg": "OP_TIMER_R_UP",
+                "device_id": "70",
+                "command": "3005",
+                "arg_number": "1019",
+                "category": "Timer",
+                "description": "OPERATOR Right Timer Control Up/Down"
+            },
+            "OP_TIMER_R_ROT": {
+                "type": "Potentiometer",
+                "msg": "OP_TIMER_R_ROT",
+                "device_id": "70",
+                "command": "3006",
+                "arg_number": "1020",
+                "limits": "{ 0, 1 }",
+                "category": "Timer",
+                "description": "OPERATOR Right Timer Control Rotary"
+            },
+            "OP_TIMER_SEL": {
+                "type": "Tumb",
+                "msg": "OP_TIMER_SEL",
+                "device_id": "70",
+                "command": "3002",
+                "arg_number": "1017",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Timer",
+                "description": "OPERATOR Active Timer Select"
+            },
+            "OP_TIMER_ON": {
+                "type": "ToggleSwitch",
+                "msg": "OP_TIMER_ON",
+                "device_id": "70",
+                "command": "3001",
+                "arg_number": "1018",
+                "category": "Timer",
+                "description": "OPERATOR Active Timer Start/Stop"
+            }
+        },
+        "PKI": {
+            "OP_PKI_CONTROL": {
+                "type": "Rotary",
+                "msg": "OP_PKI_CONTROL",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "846",
+                "category": "PKI",
+                "description": "OPERATOR PKI reflector control"
+            },
+            "OP_PKI_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "OP_PKI_BRIGHT",
+                "device_id": "17",
+                "command": "3004",
+                "arg_number": "136",
+                "limits": "{ 0, 1 }",
+                "category": "PKI",
+                "description": "OPERATOR PKI Brightness Adjustment"
+            },
+            "OP_PKI_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "OP_PKI_LOCK",
+                "device_id": "17",
+                "command": "3006",
+                "arg_number": "15",
+                "category": "PKI",
+                "description": "OPERATOR PKI Lock/Unlock"
+            }
+        },
+        "R60": {
+            "PLT_R60_PW": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R60_PW",
+                "device_id": "73",
+                "command": "3001",
+                "arg_number": "1033",
+                "category": "R60",
+                "description": "PILOT R60 Power"
+            },
+            "PLT_R60_FUSE": {
+                "type": "ToggleSwitch",
+                "msg": "PLT_R60_FUSE",
+                "device_id": "73",
+                "command": "3002",
+                "arg_number": "1034",
+                "category": "R60",
+                "description": "PILOT R60 Fuse Selector"
+            },
+            "PLT_R60_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "PLT_R60_CHAN",
+                "device_id": "73",
+                "device_command": "3003",
+                "arg_number": "1032",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "R60",
+                "description": "PILOT R60 Active missile selector"
+            }
+        },
+        "SARPP-12": {
+            "PLT_SARPP12_MODE": {
+                "type": "3PosTumb",
+                "msg": "PLT_SARPP12_MODE",
+                "device_id": "62",
+                "command": "3001",
+                "arg_number": "357",
+                "category": "SARPP-12",
+                "description": "PILOT SARPP-12 Mode Switch, MANUAL/AUTO"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Mi-24P",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

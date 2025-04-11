@@ -1,0 +1,1692 @@
+{
+    "commands": {
+        "Throttle": {
+            "ASP_TAAGET_DIS": {
+                "type": "Rotary",
+                "msg": "ASP_TAAGET_DIS",
+                "device_id": "11",
+                "command": "3314",
+                "arg_number": "314",
+                "category": "Throttle",
+                "description": "ASP-5 Target Distance Selector"
+            },
+            "RSIU_TRANS": {
+                "type": "PushButton",
+                "msg": "RSIU_TRANS",
+                "device_id": "17",
+                "command": "3315",
+                "arg_number": "315",
+                "category": "Throttle",
+                "description": "RSIU-4V Transmit Button - Push to Transmit"
+            },
+            "AIRBRAKE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AIRBRAKE_SW",
+                "device_id": "4",
+                "command": "3316",
+                "arg_number": "316",
+                "category": "Throttle",
+                "description": "Airbrake Switch"
+            },
+            "AFTERBURN_DIS": {
+                "type": "PushButton",
+                "msg": "AFTERBURN_DIS",
+                "device_id": "2",
+                "command": "3317",
+                "arg_number": "317",
+                "category": "Throttle",
+                "description": "Mil-power Limit/Afterburner Disable"
+            },
+            "AFTERBURN_EN": {
+                "type": "PushButton",
+                "msg": "AFTERBURN_EN",
+                "device_id": "2",
+                "command": "3318",
+                "arg_number": "318",
+                "category": "Throttle",
+                "description": "Afterburner Enable"
+            }
+        },
+        "Landing Gear Panel": {
+            "GEAR_LEVER": {
+                "type": "3PosTumb",
+                "msg": "GEAR_LEVER",
+                "device_id": "4",
+                "command": "3330",
+                "arg_number": "330",
+                "category": "Landing Gear Panel",
+                "description": "Landing Gear Lever, Down/Neutral/Up"
+            },
+            "GEAR_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_LOCK",
+                "device_id": "4",
+                "command": "3331",
+                "arg_number": "331",
+                "category": "Landing Gear Panel",
+                "description": "Landing Gear Lever Lock"
+            },
+            "GEAR_LIGHT_TEST": {
+                "type": "PushButton",
+                "msg": "GEAR_LIGHT_TEST",
+                "device_id": "10",
+                "command": "3333",
+                "arg_number": "333",
+                "category": "Landing Gear Panel",
+                "description": "PPS-2 Landing Gear Lights Test Button - Push to test"
+            },
+            "EMERG_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_BRAKE",
+                "device_id": "4",
+                "command": "3301",
+                "arg_number": "301",
+                "category": "Landing Gear Panel",
+                "description": "Emergency Brake"
+            },
+            "NOSE_GEAR_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "NOSE_GEAR_BRAKE",
+                "device_id": "4",
+                "command": "3302",
+                "arg_number": "302",
+                "category": "Landing Gear Panel",
+                "description": "Nose Gear Brake System On/Off"
+            },
+            "AGI1_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "AGI1_CAGE",
+                "device_id": "9",
+                "command": "3361",
+                "arg_number": "361",
+                "category": "Landing Gear Panel",
+                "description": "AGI-1 Artificial Horizon Cage Button - Push to cage"
+            },
+            "EMERG_GEAR_HND": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_GEAR_HND",
+                "device_id": "4",
+                "command": "3505",
+                "arg_number": "505",
+                "category": "Landing Gear Panel",
+                "description": "Landing Gear Emergency Handle"
+            }
+        },
+        "Exterior Lights Panel": {
+            "NAV_LIGHTS": {
+                "type": "MultipositionSwitch",
+                "msg": "NAV_LIGHTS",
+                "device_id": "5",
+                "device_command": "3261",
+                "arg_number": "261",
+                "num_positions": "6",
+                "increment": "0.2",
+                "category": "Exterior Lights Panel",
+                "description": "Navigation Lights"
+            },
+            "NOSE_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "NOSE_LIGHTS",
+                "device_id": "5",
+                "command": "3262",
+                "arg_number": "262",
+                "category": "Exterior Lights Panel",
+                "description": "Nose Lights Switch, LANDING/OFF/TAXI"
+            }
+        },
+        "Flight Instruments Panel": {
+            "GIK1_ALIGN": {
+                "type": "PushButton",
+                "msg": "GIK1_ALIGN",
+                "device_id": "9",
+                "command": "3224",
+                "arg_number": "224",
+                "category": "Flight Instruments Panel",
+                "description": "GIK-1 Needle Alignment"
+            },
+            "ARU2V_LAMP_TEST": {
+                "type": "PushButton",
+                "msg": "ARU2V_LAMP_TEST",
+                "device_id": "4",
+                "command": "3300",
+                "arg_number": "300",
+                "category": "Flight Instruments Panel",
+                "description": "ARU-2V Lamp Test Button"
+            },
+            "GIK1_CRS_SEL": {
+                "type": "Rotary",
+                "msg": "GIK1_CRS_SEL",
+                "device_id": "9",
+                "command": "3359",
+                "arg_number": "359",
+                "category": "Flight Instruments Panel",
+                "description": "GIK-1 Course Selector"
+            },
+            "AGI1_TRIM": {
+                "type": "Potentiometer",
+                "msg": "AGI1_TRIM",
+                "device_id": "9",
+                "command": "3360",
+                "arg_number": "360",
+                "limits": "{ -1, 1 }",
+                "category": "Flight Instruments Panel",
+                "description": "AGI-1 Artificial Horizon Pitch Trim Knob"
+            },
+            "BALT_PRESS_SEL": {
+                "type": "Rotary",
+                "msg": "BALT_PRESS_SEL",
+                "device_id": "9",
+                "command": "3362",
+                "arg_number": "362",
+                "category": "Flight Instruments Panel",
+                "description": "Barometric Altimeter Setting (bars)"
+            },
+            "INST_L_DAY_NIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "INST_L_DAY_NIGHT",
+                "device_id": "6",
+                "command": "3363",
+                "arg_number": "363",
+                "category": "Flight Instruments Panel",
+                "description": "Instruments Lamps Day/Night Mode Switch"
+            },
+            "CLOCK_R_KNOB_TURN": {
+                "type": "Rotary",
+                "msg": "CLOCK_R_KNOB_TURN",
+                "device_id": "9",
+                "command": "3364",
+                "arg_number": "364",
+                "category": "Flight Instruments Panel",
+                "description": "AChS-1 Chronograph Right Knob (Turn)"
+            },
+            "CLOCK_R_KNOB_PRESS": {
+                "type": "PushButton",
+                "msg": "CLOCK_R_KNOB_PRESS",
+                "device_id": "4",
+                "command": "3508",
+                "arg_number": "508",
+                "category": "Flight Instruments Panel",
+                "description": "AChS-1 Chronograph Right Knob (Press)"
+            },
+            "CLOCK_L_KNOB_TURN": {
+                "type": "Rotary",
+                "msg": "CLOCK_L_KNOB_TURN",
+                "device_id": "9",
+                "command": "3365",
+                "arg_number": "365",
+                "category": "Flight Instruments Panel",
+                "description": "AChS-1 Chronograph Left Knob (Turn)"
+            },
+            "CLOCK_L_KNOB_PRESS": {
+                "type": "3PosTumb",
+                "msg": "CLOCK_L_KNOB_PRESS",
+                "device_id": "9",
+                "command": "3366",
+                "arg_number": "366",
+                "category": "Flight Instruments Panel",
+                "description": "AChS-1 Chronograph Left Knob (PRESS)"
+            },
+            "GMETER_RESET": {
+                "type": "PushButton",
+                "msg": "GMETER_RESET",
+                "device_id": "9",
+                "command": "3515",
+                "arg_number": "515",
+                "category": "Flight Instruments Panel",
+                "description": "AM-10 Accelerometer Min/Max G Reset Button"
+            },
+            "RADAR_ANT_ELEVATION": {
+                "type": "Rotary",
+                "msg": "RADAR_ANT_ELEVATION",
+                "device_id": "14",
+                "command": "3342",
+                "arg_number": "342",
+                "category": "Flight Instruments Panel",
+                "description": "RP-5 Radar Electronic Horizon Elevation Adjustment Knob"
+            }
+        },
+        "Gunsights": {
+            "ASP5_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "ASP5_CAGE",
+                "device_id": "11",
+                "command": "3355",
+                "arg_number": "355",
+                "category": "Gunsights",
+                "description": "ASP-5 Sight Cage/Uncage"
+            },
+            "ASP5_WINGSPAN": {
+                "type": "Rotary",
+                "msg": "ASP5_WINGSPAN",
+                "device_id": "11",
+                "command": "3356",
+                "arg_number": "356",
+                "category": "Gunsights",
+                "description": "ASP-5 Target Wingspan Selector"
+            },
+            "ASP5_BOMB_MIL": {
+                "type": "Rotary",
+                "msg": "ASP5_BOMB_MIL",
+                "device_id": "11",
+                "command": "3357",
+                "arg_number": "357",
+                "category": "Gunsights",
+                "description": "ASP-5 Mil Depression Setting"
+            },
+            "ASP5_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "ASP5_BRIGHT",
+                "device_id": "11",
+                "command": "3358",
+                "arg_number": "358",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsights",
+                "description": "ASP-5 Brightness"
+            }
+        },
+        "Radar": {
+            "RP5_TELEMETRY": {
+                "type": "ToggleSwitch",
+                "msg": "RP5_TELEMETRY",
+                "device_id": "14",
+                "command": "3263",
+                "arg_number": "263",
+                "category": "Radar",
+                "description": "RP-5 Radar/Telemetry Selector"
+            }
+        },
+        "Sensors": {
+            "SPO2_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "SPO2_PW_SW",
+                "device_id": "16",
+                "command": "3495",
+                "arg_number": "495",
+                "category": "Sensors",
+                "description": "SPO-2 SIRENA RWR Power Switch"
+            }
+        },
+        "Center Console": {
+            "BOMB_ARM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BOMB_ARM_SW",
+                "device_id": "7",
+                "command": "3264",
+                "arg_number": "264",
+                "category": "Center Console",
+                "description": "Bombs Arm Switch"
+            },
+            "GUN_L_ROF": {
+                "type": "Rotary",
+                "msg": "GUN_L_ROF",
+                "device_id": "7",
+                "command": "3368",
+                "arg_number": "368",
+                "category": "Center Console",
+                "description": "Left Gun Ammo Counter Reset"
+            },
+            "GUN_R_ROF": {
+                "type": "Rotary",
+                "msg": "GUN_R_ROF",
+                "device_id": "7",
+                "command": "3369",
+                "arg_number": "369",
+                "category": "Center Console",
+                "description": "Right Gun Ammo Counter Reset"
+            }
+        },
+        "Bulkhead Panel 1": {
+            "TANK1_FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "TANK1_FUEL_PUMP",
+                "device_id": "2",
+                "command": "3242",
+                "arg_number": "242",
+                "category": "Bulkhead Panel 1",
+                "description": "Tank 1 Fuel Pump"
+            },
+            "TANK2_FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "TANK2_FUEL_PUMP",
+                "device_id": "2",
+                "command": "3243",
+                "arg_number": "243",
+                "category": "Bulkhead Panel 1",
+                "description": "Tank 2 Fuel Pump"
+            },
+            "TANK3_FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "TANK3_FUEL_PUMP",
+                "device_id": "2",
+                "command": "3244",
+                "arg_number": "244",
+                "category": "Bulkhead Panel 1",
+                "description": "Tank 3 Fuel Pump"
+            },
+            "TANK4_FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "TANK4_FUEL_PUMP",
+                "device_id": "2",
+                "command": "3245",
+                "arg_number": "245",
+                "category": "Bulkhead Panel 1",
+                "description": "Tank 4 Fuel Pump"
+            },
+            "CPT_HEATING": {
+                "type": "ToggleSwitch",
+                "msg": "CPT_HEATING",
+                "device_id": "8",
+                "command": "3246",
+                "arg_number": "246",
+                "category": "Bulkhead Panel 1",
+                "description": "Cockpit Heating"
+            },
+            "ANTI_SKID": {
+                "type": "ToggleSwitch",
+                "msg": "ANTI_SKID",
+                "device_id": "4",
+                "command": "3247",
+                "arg_number": "247",
+                "category": "Bulkhead Panel 1",
+                "description": "Anti-Skid Brake"
+            },
+            "RADIO_EMERG_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_EMERG_PW_SW",
+                "device_id": "3",
+                "command": "3200",
+                "arg_number": "200",
+                "category": "Bulkhead Panel 1",
+                "description": "Radios Emergency Power"
+            },
+            "AGI1_EMERG_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AGI1_EMERG_PW_SW",
+                "device_id": "3",
+                "command": "3201",
+                "arg_number": "201",
+                "category": "Bulkhead Panel 1",
+                "description": "AGI-1 Emergency Power"
+            },
+            "RADIO_ELECTR_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_ELECTR_PW_SW",
+                "device_id": "3",
+                "command": "3202",
+                "arg_number": "202",
+                "category": "Bulkhead Panel 1",
+                "description": "Radios Electric Power"
+            },
+            "BEACON_ELECTR_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BEACON_ELECTR_PW_SW",
+                "device_id": "3",
+                "command": "3203",
+                "arg_number": "203",
+                "category": "Bulkhead Panel 1",
+                "description": "Beacon and Radio Altimeter Electric Power"
+            },
+            "ELEVATOR_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ELEVATOR_PW_SW",
+                "device_id": "3",
+                "command": "3206",
+                "arg_number": "206",
+                "category": "Bulkhead Panel 1",
+                "description": "Elevator Control Electric Power"
+            },
+            "TRIM_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "TRIM_PW_SW",
+                "device_id": "3",
+                "command": "3207",
+                "arg_number": "207",
+                "category": "Bulkhead Panel 1",
+                "description": "Trim System Electric Power"
+            },
+            "RADIO_NAV_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_NAV_PW_SW",
+                "device_id": "3",
+                "command": "3208",
+                "arg_number": "208",
+                "category": "Bulkhead Panel 1",
+                "description": "Radio Navigation Electric Power"
+            },
+            "PITOT_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_PW_SW",
+                "device_id": "3",
+                "command": "3209",
+                "arg_number": "209",
+                "category": "Bulkhead Panel 1",
+                "description": "Pitot Heater Electric Power"
+            },
+            "PITOT_EMERG_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_EMERG_PW_SW",
+                "device_id": "3",
+                "command": "3210",
+                "arg_number": "210",
+                "category": "Bulkhead Panel 1",
+                "description": "Emergency Pitot Heater Electric Power"
+            },
+            "BATTERY_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BATTERY_PW_SW",
+                "device_id": "3",
+                "command": "3211",
+                "arg_number": "211",
+                "category": "Bulkhead Panel 1",
+                "description": "Battery Connect/Disconnect"
+            },
+            "L_GEN_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "L_GEN_PW_SW",
+                "device_id": "3",
+                "command": "3212",
+                "arg_number": "212",
+                "category": "Bulkhead Panel 1",
+                "description": "Left Generator Connect/Disconnect"
+            },
+            "R_GEN_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "R_GEN_PW_SW",
+                "device_id": "3",
+                "command": "3213",
+                "arg_number": "213",
+                "category": "Bulkhead Panel 1",
+                "description": "Right Generator Connect/Disconnect"
+            },
+            "ASP5_WARM_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ASP5_WARM_PW_SW",
+                "device_id": "3",
+                "command": "3214",
+                "arg_number": "214",
+                "category": "Bulkhead Panel 1",
+                "description": "ASP-5 Sight Heater"
+            },
+            "ASP5_SIGHT_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ASP5_SIGHT_PW_SW",
+                "device_id": "3",
+                "command": "3215",
+                "arg_number": "215",
+                "category": "Bulkhead Panel 1",
+                "description": "ASP-5 Sight On/Off"
+            },
+            "RP5_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RP5_PW_SW",
+                "device_id": "3",
+                "command": "3216",
+                "arg_number": "216",
+                "category": "Bulkhead Panel 1",
+                "description": "RP-5 Radar Electric Power"
+            },
+            "ORO57K_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "ORO57K_PW_SW",
+                "device_id": "3",
+                "command": "3217",
+                "arg_number": "217",
+                "category": "Bulkhead Panel 1",
+                "description": "ORO-57K Rocket Pods Electric Power"
+            },
+            "L_GUN_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "L_GUN_PW_SW",
+                "device_id": "3",
+                "command": "3218",
+                "arg_number": "218",
+                "category": "Bulkhead Panel 1",
+                "description": "Left Gun Electric Power"
+            },
+            "R_GUN_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "R_GUN_PW_SW",
+                "device_id": "3",
+                "command": "3219",
+                "arg_number": "219",
+                "category": "Bulkhead Panel 1",
+                "description": "Right Gun Electric Power"
+            },
+            "GUN_CAM_CPT_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_CAM_CPT_PW_SW",
+                "device_id": "3",
+                "command": "3220",
+                "arg_number": "220",
+                "category": "Bulkhead Panel 1",
+                "description": "Cockpit Gun Camera Power"
+            },
+            "GUN_CAM_NOSE_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_CAM_NOSE_PW_SW",
+                "device_id": "3",
+                "command": "3221",
+                "arg_number": "221",
+                "category": "Bulkhead Panel 1",
+                "description": "Nose Gun Camera Power"
+            }
+        },
+        "Bulkhead Panel 2": {
+            "ENG_START": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_START",
+                "device_id": "2",
+                "command": "3248",
+                "arg_number": "248",
+                "category": "Bulkhead Panel 2",
+                "description": "Engine Start Power Switch"
+            },
+            "FIRE_EX_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FIRE_EX_PW_SW",
+                "device_id": "2",
+                "command": "3248",
+                "arg_number": "249",
+                "category": "Bulkhead Panel 2",
+                "description": "Fire Extinguisher Power Switch"
+            },
+            "R_ENG_OIL_CUT": {
+                "type": "ToggleSwitch",
+                "msg": "R_ENG_OIL_CUT",
+                "device_id": "2",
+                "command": "3250",
+                "arg_number": "250",
+                "category": "Bulkhead Panel 2",
+                "description": "Right Engine Oil Cutoff"
+            },
+            "L_ENG_OIL_CUT": {
+                "type": "ToggleSwitch",
+                "msg": "L_ENG_OIL_CUT",
+                "device_id": "2",
+                "command": "3251",
+                "arg_number": "251",
+                "category": "Bulkhead Panel 2",
+                "description": "Left Engine Oil Cutoff"
+            },
+            "R_ENG_BURNER_CUT": {
+                "type": "ToggleSwitch",
+                "msg": "R_ENG_BURNER_CUT",
+                "device_id": "2",
+                "command": "3252",
+                "arg_number": "252",
+                "category": "Bulkhead Panel 2",
+                "description": "Right Engine Afterburner Cut"
+            },
+            "L_ENG_BURNER_CUT": {
+                "type": "ToggleSwitch",
+                "msg": "L_ENG_BURNER_CUT",
+                "device_id": "2",
+                "command": "3253",
+                "arg_number": "253",
+                "category": "Bulkhead Panel 2",
+                "description": "Left Engine Afterburner Cut"
+            },
+            "ARUFOSH_LAMP_L": {
+                "type": "Potentiometer",
+                "msg": "ARUFOSH_LAMP_L",
+                "device_id": "6",
+                "command": "3226",
+                "arg_number": "226",
+                "limits": "{ 0, 1 }",
+                "category": "Bulkhead Panel 2",
+                "description": "RUFO-45 Left Side ARUFOSH UV Lamp Intensity Control Knob"
+            },
+            "ARUFOSH_LAMP_R": {
+                "type": "Potentiometer",
+                "msg": "ARUFOSH_LAMP_R",
+                "device_id": "6",
+                "command": "3227",
+                "arg_number": "227",
+                "limits": "{ 0, 1 }",
+                "category": "Bulkhead Panel 2",
+                "description": "RUFO-45 Right Side ARUFOSH UV Lamp Intensity Control Knob"
+            },
+            "IFF_SELFDESTRUCT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_SELFDESTRUCT_COVER",
+                "device_id": "16",
+                "command": "3265",
+                "arg_number": "265",
+                "category": "Bulkhead Panel 2",
+                "description": "SRO-2 IFF Self-destruct Button Cover"
+            },
+            "IFF_SELFDESTRUCT": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_SELFDESTRUCT",
+                "device_id": "16",
+                "command": "3266",
+                "arg_number": "266",
+                "category": "Bulkhead Panel 2",
+                "description": "SRO-2 IFF Self-destruct Button - Press to activate self-destruction"
+            },
+            "IFF_PW_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_PW_COVER",
+                "device_id": "16",
+                "command": "3267",
+                "arg_number": "267",
+                "category": "Bulkhead Panel 2",
+                "description": "SRO-2 IFF Power Switch Cover"
+            },
+            "IFF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_PW",
+                "device_id": "16",
+                "command": "3268",
+                "arg_number": "268",
+                "category": "Bulkhead Panel 2",
+                "description": "SRO-2 IFF Power Switch, ON/OFF"
+            },
+            "FLOOD_LAMP_R": {
+                "type": "ToggleSwitch",
+                "msg": "FLOOD_LAMP_R",
+                "device_id": "6",
+                "command": "3522",
+                "arg_number": "522",
+                "category": "Bulkhead Panel 2",
+                "description": "Right Side Flood Lamp Switch, ON/OFF"
+            }
+        },
+        "Bulkhead Panel 3": {
+            "ARU2_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ARU2_MODE",
+                "device_id": "4",
+                "command": "3254",
+                "arg_number": "254",
+                "category": "Bulkhead Panel 3",
+                "description": "ARU-2 Operational Mode (Auto/Manual)"
+            },
+            "ARU2_MANUAL": {
+                "type": "3PosTumb",
+                "msg": "ARU2_MANUAL",
+                "device_id": "4",
+                "command": "3255",
+                "arg_number": "255",
+                "category": "Bulkhead Panel 3",
+                "description": "ARU-2 Manual Arm Selector"
+            },
+            "TP19_BRAKECUTE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "TP19_BRAKECUTE_COVER",
+                "device_id": "4",
+                "command": "3274",
+                "arg_number": "274",
+                "category": "Bulkhead Panel 3",
+                "description": "TP-19 Braking Parachute Jettison Button Cover"
+            },
+            "TP19_BRAKECUTE_JETT": {
+                "type": "PushButton",
+                "msg": "TP19_BRAKECUTE_JETT",
+                "device_id": "4",
+                "command": "3275",
+                "arg_number": "275",
+                "category": "Bulkhead Panel 3",
+                "description": "TP-19 Braking Parachute Jettison Button - Press to jettison drag chute"
+            },
+            "WARN_BTN": {
+                "type": "PushButton",
+                "msg": "WARN_BTN",
+                "device_id": "9",
+                "command": "3276",
+                "arg_number": "276",
+                "category": "Bulkhead Panel 3",
+                "description": "Warning Button"
+            }
+        },
+        "Bulkhead Panel 4": {
+            "FUEL_TANK_WARN_BTN": {
+                "type": "PushButton",
+                "msg": "FUEL_TANK_WARN_BTN",
+                "device_id": "2",
+                "command": "3279",
+                "arg_number": "279",
+                "category": "Bulkhead Panel 4",
+                "description": "Fuel Tanks 2,3,4 Warning Lamps Test Button"
+            },
+            "ENG_FIRE_TEST_BTN": {
+                "type": "PushButton",
+                "msg": "ENG_FIRE_TEST_BTN",
+                "device_id": "2",
+                "command": "3280",
+                "arg_number": "280",
+                "category": "Bulkhead Panel 4",
+                "description": "Engine Fire Lamp Test Button"
+            },
+            "L_ENG_FUELCUT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L_ENG_FUELCUT_COVER",
+                "device_id": "2",
+                "command": "3281",
+                "arg_number": "281",
+                "category": "Bulkhead Panel 4",
+                "description": "Left Engine Fuel Cutoff Cover"
+            },
+            "R_ENG_FUELCUT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "R_ENG_FUELCUT_COVER",
+                "device_id": "2",
+                "command": "3282",
+                "arg_number": "282",
+                "category": "Bulkhead Panel 4",
+                "description": "Right Engine Fuel Cutoff Cover"
+            },
+            "L_ENG_FUELCUT": {
+                "type": "PushButton",
+                "msg": "L_ENG_FUELCUT",
+                "device_id": "2",
+                "command": "3285",
+                "arg_number": "285",
+                "category": "Bulkhead Panel 4",
+                "description": "Left Engine Fuel Cutoff"
+            },
+            "R_ENG_FUELCUT": {
+                "type": "PushButton",
+                "msg": "R_ENG_FUELCUT",
+                "device_id": "2",
+                "command": "3286",
+                "arg_number": "286",
+                "category": "Bulkhead Panel 4",
+                "description": "Right Engine Fuel Cutoff"
+            },
+            "FIRE_EX_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FIRE_EX_COVER",
+                "device_id": "2",
+                "command": "3283",
+                "arg_number": "283",
+                "category": "Bulkhead Panel 4",
+                "description": "Fire Extinguisher Cover"
+            },
+            "FIRE_EX": {
+                "type": "PushButton",
+                "msg": "FIRE_EX",
+                "device_id": "2",
+                "command": "3284",
+                "arg_number": "284",
+                "category": "Bulkhead Panel 4",
+                "description": "Fire Extinguisher"
+            },
+            "L_ENG_START": {
+                "type": "PushButton",
+                "msg": "L_ENG_START",
+                "device_id": "2",
+                "command": "3272",
+                "arg_number": "272",
+                "category": "Bulkhead Panel 4",
+                "description": "Left Engine Start"
+            },
+            "R_ENG_START": {
+                "type": "PushButton",
+                "msg": "R_ENG_START",
+                "device_id": "2",
+                "command": "3273",
+                "arg_number": "273",
+                "category": "Bulkhead Panel 4",
+                "description": "Right Engine Start"
+            }
+        },
+        "Bulkhead Panel 5": {
+            "L_ENG_START_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L_ENG_START_COVER",
+                "device_id": "2",
+                "command": "3270",
+                "arg_number": "270",
+                "category": "Bulkhead Panel 5",
+                "description": "Left Engine Start Button Cover"
+            },
+            "R_ENG_START_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "R_ENG_START_COVER",
+                "device_id": "2",
+                "command": "3271",
+                "arg_number": "271",
+                "category": "Bulkhead Panel 5",
+                "description": "Right Engine Start Button Cover"
+            },
+            "L_ENG_AIR_START_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L_ENG_AIR_START_COVER",
+                "device_id": "2",
+                "command": "3277",
+                "arg_number": "277",
+                "category": "Bulkhead Panel 5",
+                "description": "Left Engine Air Start Button Cover"
+            },
+            "R_ENG_AIR_START_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "R_ENG_AIR_START_COVER",
+                "device_id": "2",
+                "command": "3278",
+                "arg_number": "278",
+                "category": "Bulkhead Panel 5",
+                "description": "Right Engine Air Start Button Cover"
+            },
+            "L_ENG_AIR_START": {
+                "type": "PushButton",
+                "msg": "L_ENG_AIR_START",
+                "device_id": "2",
+                "command": "3328",
+                "arg_number": "328",
+                "category": "Bulkhead Panel 5",
+                "description": "Left Air Engine Start"
+            },
+            "R_ENG_AIR_START": {
+                "type": "PushButton",
+                "msg": "R_ENG_AIR_START",
+                "device_id": "2",
+                "command": "3329",
+                "arg_number": "329",
+                "category": "Bulkhead Panel 5",
+                "description": "Right Air Engine Start"
+            }
+        },
+        "Armament Sight Panel": {
+            "ASP5_AIM_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "ASP5_AIM_MODE",
+                "device_id": "7",
+                "device_command": "3344",
+                "arg_number": "344",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "Armament Sight Panel",
+                "description": "ASP-5 Sight Aiming Mode"
+            },
+            "ASP5_OP_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ASP5_OP_MODE",
+                "device_id": "11",
+                "command": "3345",
+                "arg_number": "345",
+                "category": "Armament Sight Panel",
+                "description": "ASP-5 Sight Operational Mode (Radar/Optic)"
+            },
+            "BOMB_REL_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "BOMB_REL_MODE",
+                "device_id": "7",
+                "command": "3346",
+                "arg_number": "346",
+                "category": "Armament Sight Panel",
+                "description": "Bomb Release Mode (Single/Auto)"
+            }
+        },
+        "Rocket Pod Panel": {
+            "ROCKET_SLAVO_MODE": {
+                "type": "3PosTumb",
+                "msg": "ROCKET_SLAVO_MODE",
+                "device_id": "7",
+                "command": "3336",
+                "arg_number": "336",
+                "category": "Rocket Pod Panel",
+                "description": "Rockets Salvo Mode Selector"
+            },
+            "ROCKET_COUNTER_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ROCKET_COUNTER_MODE",
+                "device_id": "7",
+                "command": "3337",
+                "arg_number": "337",
+                "category": "Rocket Pod Panel",
+                "description": "Rockets Counter Mode (day/night)"
+            }
+        },
+        "Radar Control Panel": {
+            "RADAR_ECCM": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_ECCM",
+                "device_id": "14",
+                "command": "3338",
+                "arg_number": "338",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar ECCM Mode Switch, ON/OFF"
+            },
+            "RADAR_BIT_TEST": {
+                "type": "PushButton",
+                "msg": "RADAR_BIT_TEST",
+                "device_id": "14",
+                "command": "3339",
+                "arg_number": "339",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar Built-In Test (BIT) Button - Press 2 seconds to start test"
+            },
+            "RADAR_GAUGE_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_GAUGE_MODE",
+                "device_id": "14",
+                "command": "3340",
+                "arg_number": "340",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar Gauge Display Mode Switch, VOLTAGE/AIR PRESSURE"
+            },
+            "RADAR_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "RADAR_MODE",
+                "device_id": "14",
+                "device_command": "3341",
+                "arg_number": "341",
+                "num_positions": "4",
+                "increment": "0.5",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar Mode Control Switch, ON/STANDBY/OFF"
+            },
+            "RADAR_SCR_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_SCR_MODE",
+                "device_id": "14",
+                "command": "3343",
+                "arg_number": "343",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar Screen Mode Switch, DAY/NIGHT"
+            },
+            "RADAR_TGT_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_TGT_LOCK",
+                "device_id": "14",
+                "command": "3434",
+                "arg_number": "434",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar Target Lock Switch (AR-18-16 Tracking Antenna), ON/OFF"
+            },
+            "RADAR_SCR_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RADAR_SCR_BRIGHT",
+                "device_id": "14",
+                "command": "3486",
+                "arg_number": "486",
+                "limits": "{ 0, 1 }",
+                "category": "Radar Control Panel",
+                "description": "RP-5 Radar Screen Brightness Adjustment Knob"
+            }
+        },
+        "Flight Control": {
+            "ARU2V_OP_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ARU2V_OP_MODE",
+                "device_id": "4",
+                "command": "3254",
+                "arg_number": "254",
+                "category": "Flight Control",
+                "description": "Elevator Control (ARU-2V) Mode (Automatic/Manual)"
+            },
+            "ARU2V_MAN_SET": {
+                "type": "3PosTumb",
+                "msg": "ARU2V_MAN_SET",
+                "device_id": "4",
+                "command": "3255",
+                "arg_number": "255",
+                "category": "Flight Control",
+                "description": "Elevator Control Manual Mode Selector (Long/Short)"
+            },
+            "ELEVATOR_ACT_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "ELEVATOR_ACT_SEL",
+                "device_id": "4",
+                "command": "3256",
+                "arg_number": "256",
+                "category": "Flight Control",
+                "description": "Elevator Actuator Switch, HYDRAULIC(BU-14M BOOSTER)/ELECTRIC(MUS-2 SYSTEM)"
+            },
+            "AILERON_TRIM": {
+                "type": "3PosTumb",
+                "msg": "AILERON_TRIM",
+                "device_id": "4",
+                "command": "3257",
+                "arg_number": "257",
+                "category": "Flight Control",
+                "description": "Aileron Trimmer Switch, LEFT/RIGHT"
+            },
+            "AILERON_HYDRO": {
+                "type": "ToggleSwitch",
+                "msg": "AILERON_HYDRO",
+                "device_id": "4",
+                "command": "3258",
+                "arg_number": "258",
+                "category": "Flight Control",
+                "description": "BU-13M Aileron Hydraulic Booster Switch, ON/OFF"
+            },
+            "FLAPS_LAND": {
+                "type": "Tumb",
+                "msg": "FLAPS_LAND",
+                "device_id": "4",
+                "command": "3306",
+                "arg_number": "306",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Flight Control",
+                "description": "Flaps Landing"
+            },
+            "FLAPS_TAKEOFF": {
+                "type": "Tumb",
+                "msg": "FLAPS_TAKEOFF",
+                "device_id": "4",
+                "command": "3307",
+                "arg_number": "307",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Flight Control",
+                "description": "Flaps Take Off"
+            },
+            "FLAPS_OFF": {
+                "type": "Tumb",
+                "msg": "FLAPS_OFF",
+                "device_id": "4",
+                "command": "3308",
+                "arg_number": "308",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Flight Control",
+                "description": "Flaps Off"
+            },
+            "FLAPS_BTN_RESET": {
+                "type": "PushButton",
+                "msg": "FLAPS_BTN_RESET",
+                "device_id": "4",
+                "command": "3309",
+                "arg_number": "309",
+                "category": "Flight Control",
+                "description": "Flaps buttons reset"
+            }
+        },
+        "Flight Instruments": {
+            "RADAR_ALT_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "RADAR_ALT_SEL",
+                "device_id": "9",
+                "device_command": "3334",
+                "arg_number": "334",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "Flight Instruments",
+                "description": "RV-5 Radio Altimeter Minimum Altitude Selector"
+            },
+            "PITOT_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_SEL",
+                "device_id": "9",
+                "command": "3269",
+                "arg_number": "269",
+                "category": "Flight Instruments",
+                "description": "Pitot Tube Selector, MAIN(PVD-4)/EMERGENCY(TP-156)"
+            }
+        },
+        "Environment": {
+            "OXY_FLOW": {
+                "type": "Rotary",
+                "msg": "OXY_FLOW",
+                "device_id": "8",
+                "command": "3303",
+                "arg_number": "303",
+                "category": "Environment",
+                "description": "Oxygen shut-off valve"
+            },
+            "OXY_MODE": {
+                "type": "3PosTumb",
+                "msg": "OXY_MODE",
+                "device_id": "8",
+                "command": "3304",
+                "arg_number": "304",
+                "category": "Environment",
+                "description": "Suit Oxygen Supply Lever, AUTOMATIC TURN-OFF/N(EUTRAL)/SUIT TURN-ON"
+            },
+            "OXY_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "OXY_CONTROL",
+                "device_id": "8",
+                "command": "3305",
+                "arg_number": "305",
+                "category": "Environment",
+                "description": "Oxygen-Air Diluter Lever, MIXTURE/100% O2"
+            }
+        },
+        "Unknown": {
+            "ANTI_FREZZE": {
+                "type": "ToggleSwitch",
+                "msg": "ANTI_FREZZE",
+                "device_id": "8",
+                "command": "3291",
+                "arg_number": "291",
+                "category": "Unknown",
+                "description": "Canopy Front Anti Freeze"
+            }
+        },
+        "Signal Flares Panel": {
+            "FLARE_DISP": {
+                "type": "ToggleSwitch",
+                "msg": "FLARE_DISP",
+                "device_id": "7",
+                "command": "3259",
+                "arg_number": "259",
+                "category": "Signal Flares Panel",
+                "description": "EKSR-46 Signal Flare Dispenser Switch, OFF/ARMED"
+            },
+            "FLARE_YELLOW": {
+                "type": "PushButton",
+                "msg": "FLARE_YELLOW",
+                "device_id": "7",
+                "command": "3287",
+                "arg_number": "287",
+                "category": "Signal Flares Panel",
+                "description": "EKSR-46 Yellow Signal Flare Release Button"
+            },
+            "FLARE_GREEN": {
+                "type": "PushButton",
+                "msg": "FLARE_GREEN",
+                "device_id": "7",
+                "command": "3288",
+                "arg_number": "288",
+                "category": "Signal Flares Panel",
+                "description": "EKSR-46 Green Signal Flare Release Button"
+            },
+            "FLARE_RED": {
+                "type": "PushButton",
+                "msg": "FLARE_RED",
+                "device_id": "7",
+                "command": "3289",
+                "arg_number": "289",
+                "category": "Signal Flares Panel",
+                "description": "EKSR-46 Red Signal Flare Release Button"
+            },
+            "FLARE_WHITE": {
+                "type": "PushButton",
+                "msg": "FLARE_WHITE",
+                "device_id": "7",
+                "command": "3290",
+                "arg_number": "290",
+                "category": "Signal Flares Panel",
+                "description": "EKSR-46 White Signal Flare Release Button"
+            }
+        },
+        "Jettison Panel": {
+            "BEACON_SEL": {
+                "type": "Tumb",
+                "msg": "BEACON_SEL",
+                "device_id": "20",
+                "command": "3260",
+                "arg_number": "260",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Jettison Panel",
+                "description": "Near/Far Beacon"
+            },
+            "BRAKE_PARA_BTN_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BRAKE_PARA_BTN_COVER",
+                "device_id": "4",
+                "command": "3292",
+                "arg_number": "292",
+                "category": "Jettison Panel",
+                "description": "TP-19 Braking Parachute Deploy Button Cover"
+            },
+            "BRAKE_PARA_BTN": {
+                "type": "PushButton",
+                "msg": "BRAKE_PARA_BTN",
+                "device_id": "4",
+                "command": "3293",
+                "arg_number": "293",
+                "category": "Jettison Panel",
+                "description": "TP-19 Braking Parachute Deploy Button - Press to deploy drag chute"
+            },
+            "FUEL_BOMBS_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_BOMBS_JETT_COVER",
+                "device_id": "7",
+                "command": "3294",
+                "arg_number": "294",
+                "category": "Jettison Panel",
+                "description": "Fuel Tanks/Bombs Jettison Button Cover"
+            },
+            "FUEL_BOMBS_JETT": {
+                "type": "PushButton",
+                "msg": "FUEL_BOMBS_JETT",
+                "device_id": "7",
+                "command": "3295",
+                "arg_number": "295",
+                "category": "Jettison Panel",
+                "description": "Fuel Tanks/Bombs Jettison"
+            },
+            "L_GUN_ARM": {
+                "type": "PushButton",
+                "msg": "L_GUN_ARM",
+                "device_id": "7",
+                "command": "3296",
+                "arg_number": "296",
+                "category": "Jettison Panel",
+                "description": "Left Gun Arm"
+            },
+            "R_GUN_ARM": {
+                "type": "PushButton",
+                "msg": "R_GUN_ARM",
+                "device_id": "7",
+                "command": "3297",
+                "arg_number": "297",
+                "category": "Jettison Panel",
+                "description": "Right Gun Arm"
+            },
+            "ROCKET_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "ROCKET_JETT_COVER",
+                "device_id": "7",
+                "command": "3298",
+                "arg_number": "298",
+                "category": "Jettison Panel",
+                "description": "Rocket pods Jettison Button Cover"
+            },
+            "ROCKET_JETT": {
+                "type": "PushButton",
+                "msg": "ROCKET_JETT",
+                "device_id": "7",
+                "command": "3299",
+                "arg_number": "299",
+                "category": "Jettison Panel",
+                "description": "Rocket pods Jettison"
+            }
+        },
+        "Radio RSIU4V": {
+            "RADIO_PRE1": {
+                "type": "Tumb",
+                "msg": "RADIO_PRE1",
+                "device_id": "17",
+                "command": "3319",
+                "arg_number": "319",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Preset Radio Channel 1"
+            },
+            "RADIO_PRE2": {
+                "type": "Tumb",
+                "msg": "RADIO_PRE2",
+                "device_id": "17",
+                "command": "3320",
+                "arg_number": "320",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Preset Radio Channel 2"
+            },
+            "RADIO_PRE3": {
+                "type": "Tumb",
+                "msg": "RADIO_PRE3",
+                "device_id": "17",
+                "command": "3321",
+                "arg_number": "321",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Preset Radio Channel 3"
+            },
+            "RADIO_PRE4": {
+                "type": "Tumb",
+                "msg": "RADIO_PRE4",
+                "device_id": "17",
+                "command": "3322",
+                "arg_number": "322",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Preset Radio Channel 4"
+            },
+            "RADIO_PRE5": {
+                "type": "Tumb",
+                "msg": "RADIO_PRE5",
+                "device_id": "17",
+                "command": "3323",
+                "arg_number": "323",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Preset Radio Channel 5"
+            },
+            "RADIO_PRE6": {
+                "type": "Tumb",
+                "msg": "RADIO_PRE6",
+                "device_id": "17",
+                "command": "3324",
+                "arg_number": "324",
+                "step": "1.0",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Preset Radio Channel 6"
+            },
+            "RADIO_OPT_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_OPT_MODE",
+                "device_id": "17",
+                "command": "3325",
+                "arg_number": "325",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Audio Output: ADF/Radio"
+            },
+            "RADIO_ON_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_ON_OFF",
+                "device_id": "17",
+                "command": "3326",
+                "arg_number": "326",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Interference Suppression Switch, ON/OFF"
+            },
+            "RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "RADIO_VOL",
+                "device_id": "17",
+                "command": "3327",
+                "arg_number": "327",
+                "limits": "{ 0, 1 }",
+                "category": "Radio RSIU4V",
+                "description": "RSIU-4V Volume Control Knob"
+            }
+        },
+        "ARK5 Panel": {
+            "ARK5_CHAN_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "ARK5_CHAN_SEL",
+                "device_id": "20",
+                "device_command": "3335",
+                "arg_number": "335",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 NEAR Frequency Band Selector Switch"
+            },
+            "ARK5_RECV_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "ARK5_RECV_MODE",
+                "device_id": "20",
+                "command": "3347",
+                "arg_number": "347",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 Receiver Mode Switch, TLG(Telegraph)/TLF(Telephony)"
+            },
+            "ARK5_FREQ_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "ARK5_FREQ_SEL",
+                "device_id": "20",
+                "device_command": "3348",
+                "arg_number": "348",
+                "num_positions": "3",
+                "increment": "0.5",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 FAR/NDB Frequency Band Selector Switch"
+            },
+            "ARK5_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "ARK5_MODE",
+                "device_id": "20",
+                "device_command": "3349",
+                "arg_number": "349",
+                "num_positions": "4",
+                "increment": "0.1",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 Function Selector Switch, OFF/COMP/ANT./LOOP"
+            },
+            "ARK5_ANT_MOV": {
+                "type": "3PosTumb",
+                "msg": "ARK5_ANT_MOV",
+                "device_id": "20",
+                "command": "3350",
+                "arg_number": "350",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 Loop Antenna Rotation Switch, L(EFT)/R(IGHT)"
+            },
+            "ARK5_INST_LIGHT": {
+                "type": "Potentiometer",
+                "msg": "ARK5_INST_LIGHT",
+                "device_id": "20",
+                "command": "3351",
+                "arg_number": "351",
+                "limits": "{ 0, 1 }",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 Frequency Scale Backlight Knob"
+            },
+            "ARK5_VOL": {
+                "type": "Potentiometer",
+                "msg": "ARK5_VOL",
+                "device_id": "20",
+                "command": "3352",
+                "arg_number": "352",
+                "limits": "{ 0, 1 }",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 Audio Volume Knob"
+            },
+            "ARK5_FREQ_TUNE": {
+                "type": "Rotary",
+                "msg": "ARK5_FREQ_TUNE",
+                "device_id": "20",
+                "command": "3353",
+                "arg_number": "353",
+                "category": "ARK5 Panel",
+                "description": "ARK-5 Frequency Fine Tuning Handle"
+            }
+        },
+        "Right Console": {
+            "EMERG_GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_GEAR",
+                "device_id": "4",
+                "command": "3222",
+                "arg_number": "222",
+                "category": "Right Console",
+                "description": "Landing Gear Emergency Deployment"
+            },
+            "EMERG_FLAPS": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_FLAPS",
+                "device_id": "4",
+                "command": "3223",
+                "arg_number": "223",
+                "category": "Right Console",
+                "description": "Flaps Emergency Deployment"
+            },
+            "CPT_PRESS_LEVER": {
+                "type": "Potentiometer",
+                "msg": "CPT_PRESS_LEVER",
+                "device_id": "8",
+                "command": "3228",
+                "arg_number": "228",
+                "limits": "{ 0, 1 }",
+                "category": "Right Console",
+                "description": "Cockpit Pressurization Lever"
+            },
+            "CPT_TEMP": {
+                "type": "3PosTumb",
+                "msg": "CPT_TEMP",
+                "device_id": "8",
+                "command": "3241",
+                "arg_number": "241",
+                "category": "Right Console",
+                "description": "Cockpit Temperature Select"
+            },
+            "CPT_VENT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CPT_VENT_SW",
+                "device_id": "8",
+                "command": "3225",
+                "arg_number": "225",
+                "category": "Right Console",
+                "description": "Cockpit Ventilation Switch, OPEN/CLOSE"
+            }
+        },
+        "Circuit Breakers": {
+            "CB_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LOCK",
+                "device_id": "3",
+                "command": "3230",
+                "arg_number": "230",
+                "category": "Circuit Breakers",
+                "description": "Circuit Breakers Panel Lock"
+            },
+            "CB_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LIGHTS",
+                "device_id": "3",
+                "command": "3231",
+                "arg_number": "231",
+                "category": "Circuit Breakers",
+                "description": "Aircraft External Lights Circuit Breaker"
+            },
+            "CB_ARU2V": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ARU2V",
+                "device_id": "3",
+                "command": "3232",
+                "arg_number": "232",
+                "category": "Circuit Breakers",
+                "description": "ARU-2V Flight Control System Circuit Breaker"
+            },
+            "CB_BOMB_FUSE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_BOMB_FUSE",
+                "device_id": "3",
+                "command": "3233",
+                "arg_number": "233",
+                "category": "Circuit Breakers",
+                "description": "Bomb Fuzing System Circuit Breaker"
+            },
+            "CB_BOMB_RELEASE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_BOMB_RELEASE",
+                "device_id": "3",
+                "command": "3234",
+                "arg_number": "234",
+                "category": "Circuit Breakers",
+                "description": "Bomb Release System Circuit Breaker"
+            },
+            "CB_BOMB_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_BOMB_JETT",
+                "device_id": "3",
+                "command": "3235",
+                "arg_number": "235",
+                "category": "Circuit Breakers",
+                "description": "Bomb, Drop Tank and Rocket Emergency Jettison System Circuit Breaker"
+            },
+            "CB_ARK5": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ARK5",
+                "device_id": "3",
+                "command": "3236",
+                "arg_number": "236",
+                "category": "Circuit Breakers",
+                "description": "ARK-5 Radio Navigation System Circuit Breaker"
+            },
+            "CB_GFAB_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GFAB_LIGHTS",
+                "device_id": "3",
+                "command": "3237",
+                "arg_number": "237",
+                "category": "Circuit Breakers",
+                "description": "Landing Gear, Airbrake and Flaps Annunciator Lights Circuit Breaker"
+            },
+            "CB_GFAB": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GFAB",
+                "device_id": "3",
+                "command": "3238",
+                "arg_number": "238",
+                "category": "Circuit Breakers",
+                "description": "Landing Gear, Airbrake and Flaps Systems Circuit Breaker"
+            },
+            "CB_AILERON_ACT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AILERON_ACT",
+                "device_id": "3",
+                "command": "3239",
+                "arg_number": "239",
+                "category": "Circuit Breakers",
+                "description": "BU-13M Aileron and BU-14M Stabilizer Hydraulic Booster Circuit Breaker"
+            },
+            "CB_ROCKET_PODS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ROCKET_PODS",
+                "device_id": "3",
+                "command": "3240",
+                "arg_number": "240",
+                "category": "Circuit Breakers",
+                "description": "Rocket Pods Circuit Breaker"
+            }
+        },
+        "Canopy": {
+            "CANOPY_LOCK_L": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_LOCK_L",
+                "device_id": "4",
+                "command": "3436",
+                "arg_number": "429",
+                "category": "Canopy",
+                "description": "Canopy Lock Lever L"
+            },
+            "CANOPY_LOCK_R": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_LOCK_R",
+                "device_id": "4",
+                "command": "3429",
+                "arg_number": "429",
+                "category": "Canopy",
+                "description": "Canopy Lock Lever R"
+            },
+            "CANOPY_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_PRESS",
+                "device_id": "4",
+                "command": "3431",
+                "arg_number": "431",
+                "category": "Canopy",
+                "description": "Canopy Pressurization Switch"
+            },
+            "EMERG_CANOPY": {
+                "type": "ToggleSwitch",
+                "msg": "EMERG_CANOPY",
+                "device_id": "4",
+                "command": "3229",
+                "arg_number": "229",
+                "category": "Canopy",
+                "description": "Emergency Canopy Release Lever"
+            },
+            "CANOPY_OPEN": {
+                "type": "ToggleSwitch",
+                "msg": "CANOPY_OPEN",
+                "device_id": "4",
+                "command": "3204",
+                "arg_number": "204",
+                "category": "Canopy",
+                "description": "Canopy Open/Close Handle"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "MiG-19P",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

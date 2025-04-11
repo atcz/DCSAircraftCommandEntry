@@ -1,0 +1,1714 @@
+{
+    "commands": {
+        "Weapon System": {
+            "TRIGGER_SAFETY_BRACKET": {
+                "type": "ToggleSwitch",
+                "msg": "TRIGGER_SAFETY_BRACKET",
+                "device_id": "2",
+                "command": "3300",
+                "arg_number": "8",
+                "category": "Weapon System",
+                "description": "Trigger Safety Bracket"
+            },
+            "WEAPON_RELEASE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPON_RELEASE_COVER",
+                "device_id": "2",
+                "command": "3302",
+                "arg_number": "260",
+                "category": "Weapon System",
+                "description": "Weapon Emergency Release Cover"
+            },
+            "WEAPON_RELEASE": {
+                "type": "PushButton",
+                "msg": "WEAPON_RELEASE",
+                "device_id": "2",
+                "command": "3303",
+                "arg_number": "261",
+                "category": "Weapon System",
+                "description": "Weapon Emergency Release Button"
+            },
+            "TANK_RELEASE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "TANK_RELEASE_COVER",
+                "device_id": "2",
+                "command": "3402",
+                "arg_number": "262",
+                "category": "Weapon System",
+                "description": "External Tank Release Cover"
+            },
+            "TANK_RELEASE": {
+                "type": "PushButton",
+                "msg": "TANK_RELEASE",
+                "device_id": "2",
+                "command": "3320",
+                "arg_number": "263",
+                "category": "Weapon System",
+                "description": "External Tank Release Button"
+            },
+            "WEAPON_SELECT": {
+                "type": "Tumb",
+                "msg": "WEAPON_SELECT",
+                "device_id": "2",
+                "command": "3304",
+                "arg_number": "264",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Weapon System",
+                "description": "Weapon Selector Knob"
+            },
+            "WEAPON_INTERVAL": {
+                "type": "Tumb",
+                "msg": "WEAPON_INTERVAL",
+                "device_id": "2",
+                "command": "3305",
+                "arg_number": "265",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Weapon System",
+                "description": "Weapon Interval Selector Mode Knob"
+            },
+            "WEAPON_REL_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "WEAPON_REL_MODE",
+                "device_id": "2",
+                "command": "3306",
+                "arg_number": "266",
+                "category": "Weapon System",
+                "description": "Weapon Release Mode Switch"
+            },
+            "RB_BK_REL_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RB_BK_REL_MODE",
+                "device_id": "2",
+                "command": "3307",
+                "arg_number": "267",
+                "category": "Weapon System",
+                "description": "RB-04/RB-15/BK Release Mode Switch"
+            },
+            "EP13_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "EP13_BRIGHT",
+                "device_id": "2",
+                "command": "3318",
+                "arg_number": "6901",
+                "limits": "{ 0, 1 }",
+                "category": "Weapon System",
+                "description": "EP-13 Brightness"
+            },
+            "EP13_CONTR": {
+                "type": "Potentiometer",
+                "msg": "EP13_CONTR",
+                "device_id": "2",
+                "command": "3319",
+                "arg_number": "6902",
+                "limits": "{ 0, 1 }",
+                "category": "Weapon System",
+                "description": "EP-13 Contrast"
+            },
+            "BYPASS_FIRE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BYPASS_FIRE_COVER",
+                "device_id": "2",
+                "command": "3308",
+                "arg_number": "309",
+                "category": "Weapon System",
+                "description": "Bypass Firing Circuit Cover"
+            },
+            "BYPASS_FIRE_BTN": {
+                "type": "PushButton",
+                "msg": "BYPASS_FIRE_BTN",
+                "device_id": "2",
+                "command": "3309",
+                "arg_number": "397",
+                "category": "Weapon System",
+                "description": "Bypass Firing Circuit Button"
+            }
+        },
+        "Radar": {
+            "ANTI_JAM_MODE": {
+                "type": "Tumb",
+                "msg": "ANTI_JAM_MODE",
+                "device_id": "5",
+                "command": "3208",
+                "arg_number": "217",
+                "step": "0.1",
+                "limits": "{ 0, 0.7 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radar",
+                "description": "Anti Jamming Mode (AS) Selector"
+            },
+            "RADAR_GAIN_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_GAIN_MODE",
+                "device_id": "5",
+                "command": "3209",
+                "arg_number": "214",
+                "category": "Radar",
+                "description": "Lin/Log Radar Gain Switch"
+            },
+            "RADAR_PULSE_NORMAL_SHORT": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_PULSE_NORMAL_SHORT",
+                "device_id": "5",
+                "command": "3328",
+                "arg_number": "218",
+                "category": "Radar",
+                "description": "Pulse Normal/Short Switch"
+            },
+            "RADAR_RECCE_ON_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_RECCE_ON_OFF",
+                "device_id": "5",
+                "command": "3350",
+                "arg_number": "216",
+                "category": "Radar",
+                "description": "Passive Recce On/Off Switch"
+            },
+            "RADAR_MAINTENANCE_TEST": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_MAINTENANCE_TEST",
+                "device_id": "5",
+                "command": "3914",
+                "arg_number": "1006",
+                "category": "Radar",
+                "description": "Radar/EL Maintenance Test"
+            },
+            "RADAR_IGNITION_COILS": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_IGNITION_COILS",
+                "device_id": "18",
+                "command": "3918",
+                "arg_number": "395",
+                "category": "Radar",
+                "description": "Ignition Coils"
+            },
+            "RADAR_IFF_ID": {
+                "type": "PushButton",
+                "msg": "RADAR_IFF_ID",
+                "device_id": "5",
+                "command": "3922",
+                "arg_number": "1205",
+                "category": "Radar",
+                "description": "IFF Identification"
+            },
+            "IFF_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_POWER",
+                "device_id": "18",
+                "command": "3001",
+                "arg_number": "1203",
+                "category": "Radar",
+                "description": "IFF Power"
+            },
+            "IFF_CODE": {
+                "type": "Tumb",
+                "msg": "IFF_CODE",
+                "device_id": "18",
+                "command": "3000",
+                "arg_number": "308",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Radar",
+                "description": "IFF Code"
+            },
+            "RADAR_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "RADAR_BRIGHT",
+                "device_id": "5",
+                "command": "3923",
+                "arg_number": "391",
+                "limits": "{ 0, 1 }",
+                "category": "Radar",
+                "description": "Radar Brightness"
+            },
+            "CI_FILTER": {
+                "type": "Potentiometer",
+                "msg": "CI_FILTER",
+                "device_id": "5",
+                "command": "3801",
+                "arg_number": "6905",
+                "limits": "{ 0, 1 }",
+                "category": "Radar",
+                "description": "CI filter"
+            },
+            "SNABBRESNING": {
+                "type": "PushButton",
+                "msg": "SNABBRESNING",
+                "device_id": "22",
+                "command": "3091",
+                "arg_number": "0",
+                "category": "Radar",
+                "description": "Snabbresning"
+            },
+            "RADAR_GAIN": {
+                "type": "Potentiometer",
+                "msg": "RADAR_GAIN",
+                "device_id": "5",
+                "command": "3325",
+                "arg_number": "152",
+                "limits": "{ -1, 1 }",
+                "category": "Radar",
+                "description": "Radar Gain (MKR)"
+            },
+            "RADAR_MEMORY_MODE": {
+                "type": "PushButton",
+                "msg": "RADAR_MEMORY_MODE",
+                "device_id": "5",
+                "command": "3212",
+                "arg_number": "153",
+                "category": "Radar",
+                "description": "Radar Memory Mode"
+            },
+            "RADAR_MODE_SEL": {
+                "type": "3PosTumb",
+                "msg": "RADAR_MODE_SEL",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "215",
+                "category": "Radar",
+                "description": "Radar Mode Selector"
+            },
+            "RADAR_RANGE_SEL": {
+                "type": "3PosTumb",
+                "msg": "RADAR_RANGE_SEL",
+                "device_id": "5",
+                "command": "3323",
+                "arg_number": "156",
+                "category": "Radar",
+                "description": "Radar Range Selector"
+            },
+            "RADAR_ANT_ELEVATION": {
+                "type": "Potentiometer",
+                "msg": "RADAR_ANT_ELEVATION",
+                "device_id": "5",
+                "command": "3641",
+                "arg_number": "154",
+                "limits": "{ -1, 1 }",
+                "category": "Radar",
+                "description": "Radar Antenna Elevation"
+            },
+            "RADAR_TERRAIN_MODE": {
+                "type": "PushButton",
+                "msg": "RADAR_TERRAIN_MODE",
+                "device_id": "5",
+                "command": "3213",
+                "arg_number": "155",
+                "category": "Radar",
+                "description": "Radar Terrain Avoidance Mode"
+            }
+        },
+        "Thrust Reverser": {
+            "REVERSAL": {
+                "type": "ToggleSwitch",
+                "msg": "REVERSAL",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "20",
+                "category": "Thrust Reverser",
+                "description": "Thrust Reverser On/Off"
+            }
+        },
+        "Navigation": {
+            "DATAPANEL_KEY_0": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_0",
+                "device_id": "12",
+                "command": "3020",
+                "arg_number": "290",
+                "category": "Navigation",
+                "description": "Datapanel Key 0"
+            },
+            "DATAPANEL_KEY_1": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_1",
+                "device_id": "12",
+                "command": "3021",
+                "arg_number": "291",
+                "category": "Navigation",
+                "description": "Datapanel Key 1"
+            },
+            "DATAPANEL_KEY_2": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_2",
+                "device_id": "12",
+                "command": "3022",
+                "arg_number": "292",
+                "category": "Navigation",
+                "description": "Datapanel Key 2"
+            },
+            "DATAPANEL_KEY_3": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_3",
+                "device_id": "12",
+                "command": "3023",
+                "arg_number": "293",
+                "category": "Navigation",
+                "description": "Datapanel Key 3"
+            },
+            "DATAPANEL_KEY_4": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_4",
+                "device_id": "12",
+                "command": "3024",
+                "arg_number": "294",
+                "category": "Navigation",
+                "description": "Datapanel Key 4"
+            },
+            "DATAPANEL_KEY_5": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_5",
+                "device_id": "12",
+                "command": "3025",
+                "arg_number": "295",
+                "category": "Navigation",
+                "description": "Datapanel Key 5"
+            },
+            "DATAPANEL_KEY_6": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_6",
+                "device_id": "12",
+                "command": "3026",
+                "arg_number": "296",
+                "category": "Navigation",
+                "description": "Datapanel Key 6"
+            },
+            "DATAPANEL_KEY_7": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_7",
+                "device_id": "12",
+                "command": "3027",
+                "arg_number": "297",
+                "category": "Navigation",
+                "description": "Datapanel Key 7"
+            },
+            "DATAPANEL_KEY_8": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_8",
+                "device_id": "12",
+                "command": "3028",
+                "arg_number": "298",
+                "category": "Navigation",
+                "description": "Datapanel Key 8"
+            },
+            "DATAPANEL_KEY_9": {
+                "type": "PushButton",
+                "msg": "DATAPANEL_KEY_9",
+                "device_id": "12",
+                "command": "3029",
+                "arg_number": "299",
+                "category": "Navigation",
+                "description": "Datapanel Key 9"
+            },
+            "NAV_SELECT_BTN_B1": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B1",
+                "device_id": "12",
+                "command": "3011",
+                "arg_number": "271",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B1"
+            },
+            "NAV_SELECT_BTN_B2": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B2",
+                "device_id": "12",
+                "command": "3012",
+                "arg_number": "272",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B2"
+            },
+            "NAV_SELECT_BTN_B3": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B3",
+                "device_id": "12",
+                "command": "3013",
+                "arg_number": "273",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B3"
+            },
+            "NAV_SELECT_BTN_B4": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B4",
+                "device_id": "12",
+                "command": "3014",
+                "arg_number": "274",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B4"
+            },
+            "NAV_SELECT_BTN_B5": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B5",
+                "device_id": "12",
+                "command": "3015",
+                "arg_number": "275",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B5"
+            },
+            "NAV_SELECT_BTN_B6": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B6",
+                "device_id": "12",
+                "command": "3016",
+                "arg_number": "276",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B6"
+            },
+            "NAV_SELECT_BTN_B7": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B7",
+                "device_id": "12",
+                "command": "3017",
+                "arg_number": "277",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B7"
+            },
+            "NAV_SELECT_BTN_B8": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B8",
+                "device_id": "12",
+                "command": "3018",
+                "arg_number": "278",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B8"
+            },
+            "NAV_SELECT_BTN_B9": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_B9",
+                "device_id": "12",
+                "command": "3019",
+                "arg_number": "279",
+                "category": "Navigation",
+                "description": "Navigation Selector Button B9"
+            },
+            "NAV_SELECT_BTN_BX": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_BX",
+                "device_id": "12",
+                "command": "3010",
+                "arg_number": "280",
+                "category": "Navigation",
+                "description": "Navigation Selector Button BX"
+            },
+            "NAV_SELECT_BTN_LS": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_LS",
+                "device_id": "12",
+                "command": "3009",
+                "arg_number": "270",
+                "category": "Navigation",
+                "description": "Navigation Selector Button LS"
+            },
+            "NAV_SELECT_BTN_L_MAL": {
+                "type": "PushButton",
+                "msg": "NAV_SELECT_BTN_L_MAL",
+                "device_id": "12",
+                "command": "3008",
+                "arg_number": "281",
+                "category": "Navigation",
+                "description": "Navigation Selector Button L MAL"
+            }
+        },
+        "Lights": {
+            "ANTI_COLLISION_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "ANTI_COLLISION_LIGHTS",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "250",
+                "category": "Lights",
+                "description": "Anti Collision Lights"
+            },
+            "NAVIGATION_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "NAVIGATION_LIGHTS",
+                "device_id": "17",
+                "command": "3002",
+                "arg_number": "251",
+                "category": "Lights",
+                "description": "Navigation Lights"
+            },
+            "FORMATION_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "FORMATION_LIGHTS",
+                "device_id": "17",
+                "command": "3003",
+                "arg_number": "252",
+                "category": "Lights",
+                "description": "Formation Lights"
+            },
+            "POSITION_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "POSITION_LIGHTS",
+                "device_id": "17",
+                "command": "3004",
+                "arg_number": "253",
+                "category": "Lights",
+                "description": "Position Lights"
+            },
+            "TAXI_LANDING_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "TAXI_LANDING_LIGHTS",
+                "device_id": "17",
+                "command": "3009",
+                "arg_number": "3554",
+                "category": "Lights",
+                "description": "Taxi/Landing Lights"
+            },
+            "EMERGENCY_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "EMERGENCY_LIGHTS",
+                "device_id": "17",
+                "command": "3010",
+                "arg_number": "3555",
+                "category": "Lights",
+                "description": "Emergency Lights"
+            },
+            "FLOOD_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_LIGHTS",
+                "device_id": "17",
+                "command": "3007",
+                "arg_number": "393",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Flood Lights"
+            },
+            "PANEL_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "PANEL_LIGHTS",
+                "device_id": "17",
+                "command": "3006",
+                "arg_number": "392",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Panel Lights"
+            },
+            "POSITION_LIGHTS_BRIGHTNESS": {
+                "type": "Tumb",
+                "msg": "POSITION_LIGHTS_BRIGHTNESS",
+                "device_id": "17",
+                "command": "3005",
+                "arg_number": "254",
+                "step": "0.1",
+                "limits": "{ 0, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights",
+                "description": "Position Lights Brightness"
+            },
+            "INSTRUMENT_LIGHTS": {
+                "type": "Potentiometer",
+                "msg": "INSTRUMENT_LIGHTS",
+                "device_id": "17",
+                "command": "3008",
+                "arg_number": "394",
+                "limits": "{ 0, 1 }",
+                "category": "Lights",
+                "description": "Instrument Lights"
+            }
+        },
+        "Engine Panel": {
+            "START_SYSTEM": {
+                "type": "ToggleSwitch",
+                "msg": "START_SYSTEM",
+                "device_id": "18",
+                "command": "3001",
+                "arg_number": "206",
+                "category": "Engine Panel",
+                "description": "Start System"
+            },
+            "LOW_PRES_FUEL_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "LOW_PRES_FUEL_VALVE",
+                "device_id": "18",
+                "command": "3002",
+                "arg_number": "204",
+                "category": "Engine Panel",
+                "description": "Low Pressure Fuel Valve"
+            },
+            "HIGH_PRES_FUEL_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "HIGH_PRES_FUEL_VALVE",
+                "device_id": "18",
+                "command": "3004",
+                "arg_number": "202",
+                "category": "Engine Panel",
+                "description": "High Pressure Fuel Valve"
+            },
+            "ENGINE_DEICE": {
+                "type": "ToggleSwitch",
+                "msg": "ENGINE_DEICE",
+                "device_id": "18",
+                "command": "3099",
+                "arg_number": "310",
+                "category": "Engine Panel",
+                "description": "Engine De-Ice"
+            },
+            "MANUAL_FUEL_REG": {
+                "type": "ToggleSwitch",
+                "msg": "MANUAL_FUEL_REG",
+                "device_id": "18",
+                "command": "3007",
+                "arg_number": "316",
+                "category": "Engine Panel",
+                "description": "Manual Fuel Regulator"
+            },
+            "CB_AUTOPILOT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AUTOPILOT",
+                "device_id": "18",
+                "command": "3905",
+                "arg_number": "302",
+                "category": "Engine Panel",
+                "description": "CB Autopilot SA"
+            },
+            "CB_HIGH_ALPHA_WARN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HIGH_ALPHA_WARN",
+                "device_id": "18",
+                "command": "3906",
+                "arg_number": "303",
+                "category": "Engine Panel",
+                "description": "CB High Alpha Warning"
+            },
+            "CB_TRIM_SYSTEM": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TRIM_SYSTEM",
+                "device_id": "18",
+                "command": "3907",
+                "arg_number": "304",
+                "category": "Engine Panel",
+                "description": "CB Trim System"
+            },
+            "CB_CI_SI": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CI_SI",
+                "device_id": "18",
+                "command": "3908",
+                "arg_number": "305",
+                "category": "Engine Panel",
+                "description": "CB CI/SI"
+            },
+            "CB_EJECTION_SYSTEM": {
+                "type": "ToggleSwitch",
+                "msg": "CB_EJECTION_SYSTEM",
+                "device_id": "18",
+                "command": "3909",
+                "arg_number": "306",
+                "category": "Engine Panel",
+                "description": "CB Ejection System"
+            },
+            "CB_ENGINE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ENGINE",
+                "device_id": "18",
+                "command": "3910",
+                "arg_number": "307",
+                "category": "Engine Panel",
+                "description": "CB Engine"
+            },
+            "IFF_TRANSPONDER_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_TRANSPONDER_POWER",
+                "device_id": "18",
+                "command": "3920",
+                "arg_number": "1203",
+                "category": "Engine Panel",
+                "description": "IFF/Transponder Power"
+            },
+            "IFF_CHANNEL": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_CHANNEL",
+                "device_id": "18",
+                "command": "3921",
+                "arg_number": "1204",
+                "category": "Engine Panel",
+                "description": "IFF Channel Selector"
+            },
+            "DME_SELECTOR": {
+                "type": "ToggleSwitch",
+                "msg": "DME_SELECTOR",
+                "device_id": "18",
+                "command": "3919",
+                "arg_number": "1206",
+                "category": "Engine Panel",
+                "description": "DME Selector"
+            },
+            "IGNITION_SYSTEM": {
+                "type": "ToggleSwitch",
+                "msg": "IGNITION_SYSTEM",
+                "device_id": "18",
+                "command": "3003",
+                "arg_number": "205",
+                "category": "Engine Panel",
+                "description": "Ignition System"
+            },
+            "MAN_AFTERBURN_FUEL_REG": {
+                "type": "ToggleSwitch",
+                "msg": "MAN_AFTERBURN_FUEL_REG",
+                "device_id": "18",
+                "command": "3006",
+                "arg_number": "313",
+                "category": "Engine Panel",
+                "description": "Manual Afterburner Fuel Regulator"
+            },
+            "FLIGHT_RECORDER": {
+                "type": "Tumb",
+                "msg": "FLIGHT_RECORDER",
+                "device_id": "18",
+                "command": "3924",
+                "arg_number": "384",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Engine Panel",
+                "description": "Flight Recorder"
+            },
+            "RESTART": {
+                "type": "PushButton",
+                "msg": "RESTART",
+                "device_id": "18",
+                "command": "3401",
+                "arg_number": "208",
+                "category": "Engine Panel",
+                "description": "Restart"
+            },
+            "AFK_LEVER": {
+                "type": "Tumb",
+                "msg": "AFK_LEVER",
+                "device_id": "18",
+                "command": "3304",
+                "arg_number": "13",
+                "step": "1.138",
+                "limits": "{ 0, 1.138 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Engine Panel",
+                "description": "AFK Lever"
+            },
+            "DATA_CARTRIDGE": {
+                "type": "ToggleSwitch",
+                "msg": "DATA_CARTRIDGE",
+                "device_id": "18",
+                "command": "3925",
+                "arg_number": "4200",
+                "category": "Engine Panel",
+                "description": "Insert/Remove Data Cartridge"
+            },
+            "DE_ICE": {
+                "type": "Potentiometer",
+                "msg": "DE_ICE",
+                "device_id": "18",
+                "command": "3912",
+                "arg_number": "286",
+                "limits": "{ 0, 1 }",
+                "category": "Engine Panel",
+                "description": "Windscreen De-Ice"
+            },
+            "TEST_MODE": {
+                "type": "Rotary",
+                "msg": "TEST_MODE",
+                "device_id": "18",
+                "command": "3913",
+                "arg_number": "675",
+                "category": "Engine Panel",
+                "description": "Maintenance Testing Mode"
+            },
+            "DRYSUIT": {
+                "type": "Rotary",
+                "msg": "DRYSUIT",
+                "device_id": "18",
+                "command": "3917",
+                "arg_number": "396",
+                "category": "Engine Panel",
+                "description": "Drysuit Ventilation Adjustment"
+            },
+            "CABIN_AIR_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "CABIN_AIR_VALVE",
+                "device_id": "18",
+                "command": "3000",
+                "arg_number": "398",
+                "category": "Engine Panel",
+                "description": "Cabin Air Valve"
+            }
+        },
+        "Electric System": {
+            "GENERATOR": {
+                "type": "ToggleSwitch",
+                "msg": "GENERATOR",
+                "device_id": "19",
+                "command": "3002",
+                "arg_number": "207",
+                "category": "Electric System",
+                "description": "Generator"
+            },
+            "MAIN_ELECTRIC_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "MAIN_ELECTRIC_POWER",
+                "device_id": "19",
+                "command": "3001",
+                "arg_number": "203",
+                "category": "Electric System",
+                "description": "Main Electric Power"
+            },
+            "BACKUP_GENERATOR": {
+                "type": "ToggleSwitch",
+                "msg": "BACKUP_GENERATOR",
+                "device_id": "19",
+                "command": "3003",
+                "arg_number": "312",
+                "category": "Electric System",
+                "description": "Backup Generator"
+            }
+        },
+        "Radar Altimeter": {
+            "RADAR_ALTIMETER_POWER": {
+                "type": "ToggleSwitch",
+                "msg": "RADAR_ALTIMETER_POWER",
+                "device_id": "20",
+                "command": "3002",
+                "arg_number": "283",
+                "category": "Radar Altimeter",
+                "description": "Radar Altimeter Power"
+            }
+        },
+        "Doppler": {
+            "DOPPLER_LAND_SEA_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "DOPPLER_LAND_SEA_MODE",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "213",
+                "category": "Doppler",
+                "description": "Doppler Land/Sea Mode"
+            }
+        },
+        "Flight Data Unit": {
+            "GEAR_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR_HANDLE",
+                "device_id": "22",
+                "command": "3719",
+                "arg_number": "12",
+                "category": "Flight Data Unit",
+                "description": "Gear Handle"
+            },
+            "SPAK": {
+                "type": "PushButton",
+                "msg": "SPAK",
+                "device_id": "22",
+                "command": "3301",
+                "arg_number": "401",
+                "category": "Flight Data Unit",
+                "description": "SPAK"
+            },
+            "ATTITUDE_HOLD": {
+                "type": "PushButton",
+                "msg": "ATTITUDE_HOLD",
+                "device_id": "22",
+                "command": "3302",
+                "arg_number": "402",
+                "category": "Flight Data Unit",
+                "description": "Attitude Hold"
+            },
+            "ALTITUDE_HOLD": {
+                "type": "PushButton",
+                "msg": "ALTITUDE_HOLD",
+                "device_id": "22",
+                "command": "3303",
+                "arg_number": "403",
+                "category": "Flight Data Unit",
+                "description": "Altitude Hold"
+            },
+            "TILS_CHANNEL_SELECT": {
+                "type": "Tumb",
+                "msg": "TILS_CHANNEL_SELECT",
+                "device_id": "22",
+                "command": "3512",
+                "arg_number": "282",
+                "step": "0.1",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Flight Data Unit",
+                "description": "TILS Channel Selection"
+            },
+            "TILS_CHANNEL_LAYER": {
+                "type": "ToggleSwitch",
+                "msg": "TILS_CHANNEL_LAYER",
+                "device_id": "22",
+                "command": "3511",
+                "arg_number": "285",
+                "category": "Flight Data Unit",
+                "description": "TILS Channel Layer Selection"
+            },
+            "EJECTION_SEAT_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "EJECTION_SEAT_ARM",
+                "device_id": "22",
+                "command": "3405",
+                "arg_number": "21",
+                "category": "Flight Data Unit",
+                "description": "Ejection Seat Arm"
+            },
+            "SLAV_SI": {
+                "type": "ToggleSwitch",
+                "msg": "SLAV_SI",
+                "device_id": "22",
+                "command": "3201",
+                "arg_number": "323",
+                "category": "Flight Data Unit",
+                "description": "Slav SI"
+            },
+            "HOJD_CISI": {
+                "type": "ToggleSwitch",
+                "msg": "HOJD_CISI",
+                "device_id": "22",
+                "command": "3097",
+                "arg_number": "324",
+                "category": "Flight Data Unit",
+                "description": "HOJD CISI"
+            },
+            "BACKUP_ALT_SETTING": {
+                "type": "Rotary",
+                "msg": "BACKUP_ALT_SETTING",
+                "device_id": "22",
+                "command": "3721",
+                "arg_number": "126",
+                "category": "Flight Data Unit",
+                "description": "Backup Altimeter Setting"
+            },
+            "PITCH_GEAR_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "PITCH_GEAR_MODE",
+                "device_id": "22",
+                "command": "3210",
+                "arg_number": "311",
+                "category": "Flight Data Unit",
+                "description": "Pitch Gear Automatic/Landing"
+            },
+            "OXYGEN_LEVER": {
+                "type": "ToggleSwitch",
+                "msg": "OXYGEN_LEVER",
+                "device_id": "22",
+                "command": "3718",
+                "arg_number": "176",
+                "category": "Flight Data Unit",
+                "description": "Oxygen Lever"
+            },
+            "CANOPY_OPEN_CLOSE": {
+                "type": "3PosTumb",
+                "msg": "CANOPY_OPEN_CLOSE",
+                "device_id": "22",
+                "command": "3406",
+                "arg_number": "9",
+                "category": "Flight Data Unit",
+                "description": "Canopy Open/Close"
+            },
+            "CANOPY_JETTISON": {
+                "type": "PushButton",
+                "msg": "CANOPY_JETTISON",
+                "device_id": "22",
+                "command": "3407",
+                "arg_number": "210",
+                "category": "Flight Data Unit",
+                "description": "Canopy Jettison"
+            },
+            "COUNTERMEASURE_FAST_RELEASE": {
+                "type": "PushButton",
+                "msg": "COUNTERMEASURE_FAST_RELEASE",
+                "device_id": "22",
+                "command": "3001",
+                "arg_number": "184",
+                "category": "Flight Data Unit",
+                "description": "Countermeasure Fast Release"
+            },
+            "EMERGENCY_ROLL_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "EMERGENCY_ROLL_TRIM",
+                "device_id": "22",
+                "command": "3716",
+                "arg_number": "390",
+                "category": "Flight Data Unit",
+                "description": "Emergency Roll Trim"
+            },
+            "EMERGENCY_PITCH_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "EMERGENCY_PITCH_TRIM",
+                "device_id": "22",
+                "command": "3717",
+                "arg_number": "389",
+                "category": "Flight Data Unit",
+                "description": "Emergency Pitch Trim"
+            },
+            "EMERGENCY_YAW_TRIM": {
+                "type": "ToggleSwitch",
+                "msg": "EMERGENCY_YAW_TRIM",
+                "device_id": "22",
+                "command": "3918",
+                "arg_number": "388",
+                "category": "Flight Data Unit",
+                "description": "Emergency Yaw Trim"
+            },
+            "MAG_DEC_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "MAG_DEC_COVER",
+                "device_id": "22",
+                "command": "3742",
+                "arg_number": "1200",
+                "category": "Flight Data Unit",
+                "description": "Magnetic Declination Cover"
+            },
+            "AUTO_YAW_TRIM_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "AUTO_YAW_TRIM_COVER",
+                "device_id": "22",
+                "command": "3741",
+                "arg_number": "493",
+                "category": "Flight Data Unit",
+                "description": "Autopilot Yaw Trim Cover"
+            },
+            "PARKING_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "PARKING_BRAKE",
+                "device_id": "22",
+                "command": "3408",
+                "arg_number": "22",
+                "category": "Flight Data Unit",
+                "description": "Parking Brake"
+            },
+            "HUD_GLASS_POSITION": {
+                "type": "ToggleSwitchToggleOnly",
+                "msg": "HUD_GLASS_POSITION",
+                "device_id": "22",
+                "command": "3401",
+                "arg_number": "11",
+                "category": "Flight Data Unit",
+                "description": "HUD Reflector Glass Position"
+            },
+            "AFK_15_DEG_MODE": {
+                "type": "ToggleSwitchToggleOnly",
+                "msg": "AFK_15_DEG_MODE",
+                "device_id": "22",
+                "command": "3402",
+                "arg_number": "464",
+                "category": "Flight Data Unit",
+                "description": "AFK 15 Deg Mode"
+            },
+            "MASTER_MODE_SELECT": {
+                "type": "Tumb",
+                "msg": "MASTER_MODE_SELECT",
+                "device_id": "22",
+                "command": "3107",
+                "arg_number": "209",
+                "step": "0.16666667",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Flight Data Unit",
+                "description": "Master Mode Selector"
+            },
+            "MAX_G_RESET": {
+                "type": "PushButton",
+                "msg": "MAX_G_RESET",
+                "device_id": "22",
+                "command": "3722",
+                "arg_number": "175",
+                "category": "Flight Data Unit",
+                "description": "Max G Reset"
+            },
+            "BACK_ADI_CAGE": {
+                "type": "PushButton",
+                "msg": "BACK_ADI_CAGE",
+                "device_id": "22",
+                "command": "3720",
+                "arg_number": "3402",
+                "category": "Flight Data Unit",
+                "description": "Backup ADI Cage"
+            },
+            "ROLL_CENTER": {
+                "type": "PushButton",
+                "msg": "ROLL_CENTER",
+                "device_id": "22",
+                "command": "3305",
+                "arg_number": "2003",
+                "category": "Flight Data Unit",
+                "description": "Roll Trim Reset / Centre"
+            },
+            "ALT_SET_ROT": {
+                "type": "Rotary",
+                "msg": "ALT_SET_ROT",
+                "device_id": "22",
+                "command": "3306",
+                "arg_number": "2009",
+                "category": "Flight Data Unit",
+                "description": "Altimeter Setting (Rotary)"
+            },
+            "HUD_BRIGHT": {
+                "type": "Rotary",
+                "msg": "HUD_BRIGHT",
+                "device_id": "22",
+                "command": "3409",
+                "arg_number": "9999",
+                "category": "Flight Data Unit",
+                "description": "HUD Brightness Knob"
+            },
+            "MAG_CORRECTION": {
+                "type": "Rotary",
+                "msg": "MAG_CORRECTION",
+                "device_id": "22",
+                "command": "3724",
+                "arg_number": "1201",
+                "category": "Flight Data Unit",
+                "description": "Magnetic Declination Correction"
+            },
+            "AUTO_YAW_TRIM": {
+                "type": "Potentiometer",
+                "msg": "AUTO_YAW_TRIM",
+                "device_id": "22",
+                "command": "3732",
+                "arg_number": "211",
+                "limits": "{ -1, 1 }",
+                "category": "Flight Data Unit",
+                "description": "Autopilot Yaw Trim"
+            },
+            "CLOCK_SET": {
+                "type": "Rotary",
+                "msg": "CLOCK_SET",
+                "device_id": "22",
+                "command": "3801",
+                "arg_number": "135",
+                "category": "Flight Data Unit",
+                "description": "Clock Setting"
+            },
+            "STOPWATCH_START_STOP": {
+                "type": "PushButton",
+                "msg": "STOPWATCH_START_STOP",
+                "device_id": "25",
+                "command": "3802",
+                "arg_number": "134",
+                "category": "Flight Data Unit",
+                "description": "Stopwatch Start/Stop/Reset"
+            },
+            "SEAT_HEIGHT": {
+                "type": "3PosTumb",
+                "msg": "SEAT_HEIGHT",
+                "device_id": "22",
+                "command": "3404",
+                "arg_number": "212",
+                "category": "Flight Data Unit",
+                "description": "Seat Height Adjustment"
+            },
+            "AIRSPEED_INDEXER": {
+                "type": "Potentiometer",
+                "msg": "AIRSPEED_INDEXER",
+                "device_id": "22",
+                "command": "3410",
+                "arg_number": "104",
+                "limits": "{ 0, 1 }",
+                "category": "Flight Data Unit",
+                "description": "Airspeed Indexer"
+            },
+            "ALT_SET_PUSH": {
+                "type": "ToggleSwitch",
+                "msg": "ALT_SET_PUSH",
+                "device_id": "22",
+                "command": "3715",
+                "arg_number": "119",
+                "category": "Flight Data Unit",
+                "description": "Altimeter Setting (Push)"
+            },
+            "ALT_SET_TURN": {
+                "type": "Rotary",
+                "msg": "ALT_SET_TURN",
+                "device_id": "22",
+                "command": "3306",
+                "arg_number": "123",
+                "category": "Flight Data Unit",
+                "description": "Altimeter Setting (Turn)"
+            }
+        },
+        "Navigation Panel": {
+            "DATAPANEL_SELECTOR": {
+                "type": "Tumb",
+                "msg": "DATAPANEL_SELECTOR",
+                "device_id": "23",
+                "command": "3009",
+                "arg_number": "200",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.6 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Navigation Panel",
+                "description": "Datapanel Selector"
+            },
+            "DATA_IN_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "DATA_IN_OUT",
+                "device_id": "23",
+                "command": "3008",
+                "arg_number": "201",
+                "category": "Navigation Panel",
+                "description": "Data In/Out"
+            },
+            "RENSA_BUTTON_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "RENSA_BUTTON_COVER",
+                "device_id": "23",
+                "command": "3101",
+                "arg_number": "300",
+                "category": "Navigation Panel",
+                "description": "Rensa Button Cover"
+            },
+            "CK37_RENSA_CLEAR": {
+                "type": "PushButton",
+                "msg": "CK37_RENSA_CLEAR",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "301",
+                "category": "Navigation Panel",
+                "description": "CK37 Rensa Clear"
+            }
+        },
+        "RWR": {
+            "RADAR_WARN_SELECT": {
+                "type": "Tumb",
+                "msg": "RADAR_WARN_SELECT",
+                "device_id": "24",
+                "command": "3004",
+                "arg_number": "321",
+                "step": "0.1",
+                "limits": "{ 0, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RWR",
+                "description": "Radar Warning Indication Selector"
+            },
+            "MASTER_VOL": {
+                "type": "Potentiometer",
+                "msg": "MASTER_VOL",
+                "device_id": "24",
+                "command": "3006",
+                "arg_number": "399",
+                "limits": "{ 0, 1 }",
+                "category": "RWR",
+                "description": "Master Volume / Sidewinder Tone"
+            }
+        },
+        "Warning Panel": {
+            "WARNING_PANEL_TEST": {
+                "type": "PushButton",
+                "msg": "WARNING_PANEL_TEST",
+                "device_id": "26",
+                "command": "3002",
+                "arg_number": "344",
+                "category": "Warning Panel",
+                "description": "Warning Panel Light Test"
+            },
+            "INDICATOR_SYSTEM_TEST": {
+                "type": "PushButton",
+                "msg": "INDICATOR_SYSTEM_TEST",
+                "device_id": "26",
+                "command": "3004",
+                "arg_number": "315",
+                "category": "Warning Panel",
+                "description": "Indicator System Test"
+            },
+            "MASTER_CAUTION_RESET": {
+                "type": "PushButton",
+                "msg": "MASTER_CAUTION_RESET",
+                "device_id": "26",
+                "command": "3001",
+                "arg_number": "446",
+                "category": "Warning Panel",
+                "description": "Master Caution Reset"
+            }
+        },
+        "Countermeasures": {
+            "JAMMER_MODE_SELECTOR": {
+                "type": "Tumb",
+                "msg": "JAMMER_MODE_SELECTOR",
+                "device_id": "28",
+                "command": "3024",
+                "arg_number": "317",
+                "step": "0.1",
+                "limits": "{ 0, 0.4 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Countermeasures",
+                "description": "Jammer Mode Selector"
+            },
+            "JAMMER_BAND_SELECTOR": {
+                "type": "Tumb",
+                "msg": "JAMMER_BAND_SELECTOR",
+                "device_id": "28",
+                "command": "3025",
+                "arg_number": "318",
+                "step": "0.1",
+                "limits": "{ 0, 0.4 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Countermeasures",
+                "description": "Jammer Band Selector"
+            },
+            "COUNTERMEASURE_MODE_SELECTOR": {
+                "type": "Tumb",
+                "msg": "COUNTERMEASURE_MODE_SELECTOR",
+                "device_id": "28",
+                "command": "3026",
+                "arg_number": "319",
+                "step": "0.1",
+                "limits": "{ 0, 0.4 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Countermeasures",
+                "description": "Countermeasure Operation Mode Selector"
+            },
+            "COUNTERMEASURE_STREAK_MODE_SELECTOR": {
+                "type": "Tumb",
+                "msg": "COUNTERMEASURE_STREAK_MODE_SELECTOR",
+                "device_id": "28",
+                "command": "3027",
+                "arg_number": "320",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Countermeasures",
+                "description": "Countermeasure Streak Mode Selector"
+            },
+            "COUNTERMEASURE_CHAFF_FLARES_SELECTOR": {
+                "type": "Tumb",
+                "msg": "COUNTERMEASURE_CHAFF_FLARES_SELECTOR",
+                "device_id": "28",
+                "command": "3028",
+                "arg_number": "322",
+                "step": "0.1",
+                "limits": "{ 0, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Countermeasures",
+                "description": "Countermeasure Chaff/Flares Selector"
+            },
+            "COUNTERMEASURE_RELEASE_MODE": {
+                "type": "3PosTumb",
+                "msg": "COUNTERMEASURE_RELEASE_MODE",
+                "device_id": "22",
+                "command": "3001",
+                "arg_number": "184",
+                "category": "Countermeasures",
+                "description": "Countermeasure Release Mode"
+            }
+        },
+        "FR22 Radio": {
+            "FR22_INNER_LEFT_KNOB": {
+                "type": "Rotary",
+                "msg": "FR22_INNER_LEFT_KNOB",
+                "device_id": "30",
+                "command": "3003",
+                "arg_number": "172",
+                "category": "FR22 Radio",
+                "description": "Radio Frequency Knob Inner Left"
+            },
+            "FR22_OUTER_LEFT_KNOB": {
+                "type": "Rotary",
+                "msg": "FR22_OUTER_LEFT_KNOB",
+                "device_id": "30",
+                "command": "3004",
+                "arg_number": "171",
+                "category": "FR22 Radio",
+                "description": "Radio Frequency Knob Outer Left"
+            },
+            "FR22_INNER_RIGHT_KNOB": {
+                "type": "Rotary",
+                "msg": "FR22_INNER_RIGHT_KNOB",
+                "device_id": "30",
+                "command": "3005",
+                "arg_number": "174",
+                "category": "FR22 Radio",
+                "description": "Radio Frequency Knob Inner Right"
+            },
+            "FR22_OUTER_RIGHT_KNOB": {
+                "type": "Rotary",
+                "msg": "FR22_OUTER_RIGHT_KNOB",
+                "device_id": "30",
+                "command": "3006",
+                "arg_number": "173",
+                "category": "FR22 Radio",
+                "description": "Radio Frequency Knob Outer Right"
+            },
+            "FR22_SET_MODULATION": {
+                "type": "ToggleSwitch",
+                "msg": "FR22_SET_MODULATION",
+                "device_id": "30",
+                "command": "3014",
+                "arg_number": "170",
+                "category": "FR22 Radio",
+                "description": "Radio Manual Frequency Setting Modulation"
+            },
+            "FR22_FLIGHT_0": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_0",
+                "device_id": "30",
+                "command": "3210",
+                "arg_number": "372",
+                "category": "FR22 Radio",
+                "description": "Flight 0"
+            },
+            "FR22_FLIGHT_1": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_1",
+                "device_id": "30",
+                "command": "3211",
+                "arg_number": "373",
+                "category": "FR22 Radio",
+                "description": "Flight 1"
+            },
+            "FR22_FLIGHT_2": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_2",
+                "device_id": "30",
+                "command": "3212",
+                "arg_number": "374",
+                "category": "FR22 Radio",
+                "description": "Flight 2"
+            },
+            "FR22_FLIGHT_3": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_3",
+                "device_id": "30",
+                "command": "3213",
+                "arg_number": "375",
+                "category": "FR22 Radio",
+                "description": "Flight 3"
+            },
+            "FR22_FLIGHT_4": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_4",
+                "device_id": "30",
+                "command": "3214",
+                "arg_number": "376",
+                "category": "FR22 Radio",
+                "description": "Flight 4"
+            },
+            "FR22_FLIGHT_5": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_5",
+                "device_id": "30",
+                "command": "3215",
+                "arg_number": "377",
+                "category": "FR22 Radio",
+                "description": "Flight 5"
+            },
+            "FR22_FLIGHT_6": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_6",
+                "device_id": "30",
+                "command": "3216",
+                "arg_number": "378",
+                "category": "FR22 Radio",
+                "description": "Flight 6"
+            },
+            "FR22_FLIGHT_7": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_7",
+                "device_id": "30",
+                "command": "3217",
+                "arg_number": "379",
+                "category": "FR22 Radio",
+                "description": "Flight 7"
+            },
+            "FR22_FLIGHT_8": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_8",
+                "device_id": "30",
+                "command": "3218",
+                "arg_number": "380",
+                "category": "FR22 Radio",
+                "description": "Flight 8"
+            },
+            "FR22_FLIGHT_9": {
+                "type": "PushButton",
+                "msg": "FR22_FLIGHT_9",
+                "device_id": "30",
+                "command": "3219",
+                "arg_number": "381",
+                "category": "FR22 Radio",
+                "description": "Flight 9"
+            },
+            "FR22_CHANNEL_H": {
+                "type": "PushButton",
+                "msg": "FR22_CHANNEL_H",
+                "device_id": "30",
+                "command": "3200",
+                "arg_number": "362",
+                "category": "FR22 Radio",
+                "description": "Channel H"
+            },
+            "FR22_SPECIAL_1": {
+                "type": "PushButton",
+                "msg": "FR22_SPECIAL_1",
+                "device_id": "30",
+                "command": "3201",
+                "arg_number": "363",
+                "category": "FR22 Radio",
+                "description": "Special 1"
+            },
+            "FR22_SPECIAL_2": {
+                "type": "PushButton",
+                "msg": "FR22_SPECIAL_2",
+                "device_id": "30",
+                "command": "3202",
+                "arg_number": "364",
+                "category": "FR22 Radio",
+                "description": "Special 2"
+            },
+            "FR22_SPECIAL_3": {
+                "type": "PushButton",
+                "msg": "FR22_SPECIAL_3",
+                "device_id": "30",
+                "command": "3203",
+                "arg_number": "365",
+                "category": "FR22 Radio",
+                "description": "Special 3"
+            },
+            "FR22_MINUS": {
+                "type": "PushButton",
+                "msg": "FR22_MINUS",
+                "device_id": "30",
+                "command": "3204",
+                "arg_number": "366",
+                "category": "FR22 Radio",
+                "description": "Minus"
+            },
+            "FR22_CHANNEL_AG": {
+                "type": "PushButton",
+                "msg": "FR22_CHANNEL_AG",
+                "device_id": "30",
+                "command": "3205",
+                "arg_number": "367",
+                "category": "FR22 Radio",
+                "description": "Channel A/G"
+            },
+            "FR22_CHANNEL_B": {
+                "type": "PushButton",
+                "msg": "FR22_CHANNEL_B",
+                "device_id": "30",
+                "command": "3206",
+                "arg_number": "368",
+                "category": "FR22 Radio",
+                "description": "Channel B"
+            },
+            "FR22_CHANNEL_CF": {
+                "type": "PushButton",
+                "msg": "FR22_CHANNEL_CF",
+                "device_id": "30",
+                "command": "3207",
+                "arg_number": "369",
+                "category": "FR22 Radio",
+                "description": "Channel C/F"
+            },
+            "FR22_CHANNEL_C2": {
+                "type": "PushButton",
+                "msg": "FR22_CHANNEL_C2",
+                "device_id": "30",
+                "command": "3208",
+                "arg_number": "370",
+                "category": "FR22 Radio",
+                "description": "Channel C2"
+            },
+            "FR22_CHANNEL_DE": {
+                "type": "PushButton",
+                "msg": "FR22_CHANNEL_DE",
+                "device_id": "30",
+                "command": "3209",
+                "arg_number": "371",
+                "category": "FR22 Radio",
+                "description": "Channel D/E"
+            },
+            "FR22_GROUND_COM": {
+                "type": "PushButton",
+                "msg": "FR22_GROUND_COM",
+                "device_id": "30",
+                "command": "3011",
+                "arg_number": "382",
+                "category": "FR22 Radio",
+                "description": "Ground Intercom"
+            },
+            "FR24_MODE": {
+                "type": "Tumb",
+                "msg": "FR24_MODE",
+                "device_id": "30",
+                "command": "3110",
+                "arg_number": "386",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.5 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "FR22 Radio",
+                "description": "FR24 Mode Selector"
+            },
+            "FR22_VOL": {
+                "type": "Rotary",
+                "msg": "FR22_VOL",
+                "device_id": "21",
+                "command": "3112",
+                "arg_number": "385",
+                "category": "FR22 Radio",
+                "description": "Radio Volume"
+            },
+            "FR22_BASE": {
+                "type": "FixedStepTumb",
+                "msg": "FR22_BASE",
+                "device_id": "30",
+                "command": "3230",
+                "arg_number": "492",
+                "step": "0.01",
+                "limits": "{ 0, 0.85 }",
+                "rel_args": "{ -1, 1 }",
+                "output_map": "{ \" -- \", \" 01 \", \" 02 \", \" 03 \", \" 04 \", \" 05 \", \"ALLM\", \" 06 \", \" 07 \", \" 08 \", \" 09 \", \" 10 \", \"ALLM\", \" 11 \", \" 12 \", \" 13 \", \" 14 \", \" 15 \", \"ALLM\", \" 16 \", \" 17 \", \" 18 \", \" 19 \", \" 20 \", \"ALLM\", \" 21 \", \" 22 \", \" 23 \", \" 24 \", \" 25 \", \"ALLM\", \" 26 \", \" 27 \", \" 28 \", \" 29 \", \" 30 \", \"ALLM\", \" 31 \", \" 32 \", \" 33 \", \" 34 \", \" 35 \", \"ALLM\", \" 36 \", \" 37 \", \" 38 \", \" 39 \", \" 40 \", \"ALLM\", \" 41 \", \" 42 \", \" 43 \", \" 44 \", \" 45 \", \"ALLM\", \" 46 \", \" 47 \", \" 48 \", \" 49 \", \" 50 \", \"ALLM\", \" 51 \", \" 52 \", \" 53 \", \" 54 \", \" 55 \", \"ALLM\", \" 56 \", \" 57 \", \" 58 \", \" 59 \", \" 60 \", \"ALLM\", \" 61 \", \" 62 \", \" 63 \", \" 64 \", \" 65 \", \"ALLM\", \" 66 \", \" 67 \", \" 68 \", \" 69 \", \" T1 \", \" T2 \", \" -- \" }",
+                "category": "FR22 Radio",
+                "description": "FR22 Base Selector"
+            },
+            "FR22_GROUP": {
+                "type": "FixedStepTumb",
+                "msg": "FR22_GROUP",
+                "device_id": "30",
+                "command": "3307",
+                "arg_number": "360",
+                "step": "0.01",
+                "limits": "{ 0, 0.43 }",
+                "rel_args": "{ -1, 1 }",
+                "output_map": "{ \"--\", \"10\", \"11\", \"12\", \"13\", \"14\", \"15\", \"20\", \"21\", \"22\", \"23\", \"24\", \"25\", \"30\", \"31\", \"32\", \"33\", \"40\", \"41\", \"42\", \"43\", \"44\", \"45\", \"50\", \"51\", \"52\", \"53\", \"54\", \"55\", \"60\", \"61\", \"62\", \"63\", \"64\", \"70\", \"71\", \"72\", \"73\", \"74\", \"80\", \"81\", \"82\", \"T3\", \"--\" }",
+                "category": "FR22 Radio",
+                "description": "FR22 Group Selector"
+            }
+        },
+        "Cockpit": {
+            "TOGGLE_MIRRORS": {
+                "type": "ToggleSwitch",
+                "msg": "TOGGLE_MIRRORS",
+                "device_id": "0",
+                "command": "1625",
+                "arg_number": "0",
+                "category": "Cockpit",
+                "description": "Toggle Mirrors"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "AJS37",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

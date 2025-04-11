@@ -1,0 +1,2891 @@
+{
+    "commands": {
+        "Gunsight": {
+            "FRONT_GUNSIDE_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_GUNSIDE_MODE",
+                "device_id": "1",
+                "command": "3003",
+                "arg_number": "101",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Gunsight Mode, GYRO/FIXED"
+            },
+            "FRONT_GUNSIDE_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "FRONT_GUNSIDE_BRIGHT",
+                "device_id": "1",
+                "command": "3004",
+                "arg_number": "102",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Gunsight Brightness Knob"
+            },
+            "FRONT_GUNSIDE_WINGSPAN": {
+                "type": "Potentiometer",
+                "msg": "FRONT_GUNSIDE_WINGSPAN",
+                "device_id": "1",
+                "command": "3001",
+                "arg_number": "103",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Target Wingspan Adjustment Dial (m)"
+            },
+            "FRONT_GUNSIDE_FILTER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_GUNSIDE_FILTER",
+                "device_id": "1",
+                "command": "3012",
+                "arg_number": "104",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Gunsight Color Filter, ON/OFF"
+            },
+            "FRONT_GUNSIDE_RETICLE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_GUNSIDE_RETICLE",
+                "device_id": "1",
+                "command": "3011",
+                "arg_number": "105",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Gunsight Fixed Reticle Mask Lever"
+            },
+            "FRONT_GUNSIDE_DEPRESS": {
+                "type": "Potentiometer",
+                "msg": "FRONT_GUNSIDE_DEPRESS",
+                "device_id": "1",
+                "command": "3016",
+                "arg_number": "106",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Gunsight Mirror Depression"
+            },
+            "FRONT_GUNSIDE_DISTANCE": {
+                "type": "Potentiometer",
+                "msg": "FRONT_GUNSIDE_DISTANCE",
+                "device_id": "1",
+                "command": "3002",
+                "arg_number": "107",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsight",
+                "description": "Front ASP-3NMU Gunsight Target Distance"
+            }
+        },
+        "Clock": {
+            "FRONT_CLOCK_PUSH_L": {
+                "type": "PushButton",
+                "msg": "FRONT_CLOCK_PUSH_L",
+                "device_id": "12",
+                "command": "3001",
+                "arg_number": "335",
+                "category": "Clock",
+                "description": "Front Clock Left Push Button"
+            },
+            "FRONT_CLOCK_ROTATE_L": {
+                "type": "Rotary",
+                "msg": "FRONT_CLOCK_ROTATE_L",
+                "device_id": "12",
+                "command": "3003",
+                "arg_number": "336",
+                "category": "Clock",
+                "description": "Front Clock Left Rotate Knob"
+            },
+            "FRONT_CLOCK_PUSH_R": {
+                "type": "PushButton",
+                "msg": "FRONT_CLOCK_PUSH_R",
+                "device_id": "12",
+                "command": "3004",
+                "arg_number": "337",
+                "category": "Clock",
+                "description": "Front Clock Right Push Button"
+            },
+            "FRONT_CLOCK_ROTATE_R": {
+                "type": "Rotary",
+                "msg": "FRONT_CLOCK_ROTATE_R",
+                "device_id": "12",
+                "command": "3005",
+                "arg_number": "338",
+                "category": "Clock",
+                "description": "Front Clock Right Rotate Knob"
+            },
+            "BACK_CLOCK_PUSH_L": {
+                "type": "PushButton",
+                "msg": "BACK_CLOCK_PUSH_L",
+                "device_id": "13",
+                "command": "3001",
+                "arg_number": "412",
+                "category": "Clock",
+                "description": "Back Clock Left Push Button"
+            },
+            "BACK_CLOCK_ROTATE_L": {
+                "type": "Rotary",
+                "msg": "BACK_CLOCK_ROTATE_L",
+                "device_id": "13",
+                "command": "3003",
+                "arg_number": "413",
+                "category": "Clock",
+                "description": "Back Clock Left Rotate Knob"
+            },
+            "BACK_CLOCK_PUSH_R": {
+                "type": "PushButton",
+                "msg": "BACK_CLOCK_PUSH_R",
+                "device_id": "13",
+                "command": "3004",
+                "arg_number": "414",
+                "category": "Clock",
+                "description": "Back Clock Right Push Button"
+            },
+            "BACK_CLOCK_ROTATE_R": {
+                "type": "Rotary",
+                "msg": "BACK_CLOCK_ROTATE_R",
+                "device_id": "13",
+                "command": "3005",
+                "arg_number": "415",
+                "category": "Clock",
+                "description": "Back Clock Right Rotate Knob"
+            }
+        },
+        "VD20": {
+            "FRONT_VD20_PRESS": {
+                "type": "Potentiometer",
+                "msg": "FRONT_VD20_PRESS",
+                "device_id": "9",
+                "command": "3001",
+                "arg_number": "57",
+                "limits": "{ 0, 1 }",
+                "category": "VD20",
+                "description": "Front Baro Pressure QFE Knob"
+            },
+            "BACK_VD20_PRESS": {
+                "type": "Potentiometer",
+                "msg": "BACK_VD20_PRESS",
+                "device_id": "10",
+                "command": "3001",
+                "arg_number": "394",
+                "limits": "{ 0, 1 }",
+                "category": "VD20",
+                "description": "Back Baro Pressure QFE Knob"
+            }
+        },
+        "RV5M": {
+            "FRONT_RV5M_TEST": {
+                "type": "PushButton",
+                "msg": "FRONT_RV5M_TEST",
+                "device_id": "14",
+                "command": "3002",
+                "arg_number": "60",
+                "category": "RV5M",
+                "description": "Front RV-5M Radio Altimeter Test Button"
+            },
+            "FRONT_RV5M_HEIGH_KNOB": {
+                "type": "Rotary",
+                "msg": "FRONT_RV5M_HEIGH_KNOB",
+                "device_id": "14",
+                "command": "3001",
+                "arg_number": "61",
+                "category": "RV5M",
+                "description": "Front RV-5M Radio Altimeter Decision Height Knob"
+            },
+            "BACK_RV5M_TEST": {
+                "type": "PushButton",
+                "msg": "BACK_RV5M_TEST",
+                "device_id": "14",
+                "command": "3005",
+                "arg_number": "398",
+                "category": "RV5M",
+                "description": "Back RV-5M Radio Altimeter Test Button"
+            },
+            "BACK_RV5M_HEIGH_KNOB": {
+                "type": "Rotary",
+                "msg": "BACK_RV5M_HEIGH_KNOB",
+                "device_id": "14",
+                "command": "3004",
+                "arg_number": "399",
+                "category": "RV5M",
+                "description": "Back RV-5M Radio Altimeter Decision Height Knob"
+            }
+        },
+        "GMK": {
+            "FRONT_GMK_SELECT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_GMK_SELECT",
+                "device_id": "17",
+                "command": "3002",
+                "arg_number": "204",
+                "category": "GMK",
+                "description": "Front GMK-1AE GMC Hemisphere Selection Switch, N(orth)/S(outh)"
+            },
+            "FRONT_GMK_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_GMK_MODE",
+                "device_id": "17",
+                "command": "3004",
+                "arg_number": "207",
+                "category": "GMK",
+                "description": "Front GMK-1AE GMC Mode Switch, MC(Magnetic Compass Mode)/GC(Directional Gyro Mode)"
+            },
+            "FRONT_GMK_TEST": {
+                "type": "3PosTumb",
+                "msg": "FRONT_GMK_TEST",
+                "device_id": "17",
+                "command": "3003",
+                "arg_number": "205",
+                "category": "GMK",
+                "description": "Front GMK-1AE GMC Test Switch, 0/OFF/300"
+            },
+            "FRONT_GMK_CRS_SEL": {
+                "type": "3PosTumb",
+                "msg": "FRONT_GMK_CRS_SEL",
+                "device_id": "17",
+                "command": "3005",
+                "arg_number": "208",
+                "category": "GMK",
+                "description": "Front GMK-1AE GMC Course Selector Switch, CCW/OFF/CW"
+            },
+            "FRONT_GMK_LATITUDE": {
+                "type": "Potentiometer",
+                "msg": "FRONT_GMK_LATITUDE",
+                "device_id": "17",
+                "command": "3006",
+                "arg_number": "209",
+                "limits": "{ 0.0, 0.728 }",
+                "category": "GMK",
+                "description": "Front GMK-1AE GMC Latitude Selector Knob"
+            },
+            "FRONT_GMK_SET_GIRO": {
+                "type": "PushButton",
+                "msg": "FRONT_GMK_SET_GIRO",
+                "device_id": "17",
+                "command": "3012",
+                "arg_number": "124",
+                "category": "GMK",
+                "description": "Front GMK-1AE MC Synchronization Button"
+            },
+            "BACK_GMK_SET_GIRO": {
+                "type": "PushButton",
+                "msg": "BACK_GMK_SET_GIRO",
+                "device_id": "17",
+                "command": "3013",
+                "arg_number": "444",
+                "category": "GMK",
+                "description": "Back GMK-1AE MC Synchronization Button"
+            },
+            "FRONT_GMK_MAG_VAR": {
+                "type": "Potentiometer",
+                "msg": "FRONT_GMK_MAG_VAR",
+                "device_id": "17",
+                "command": "3014",
+                "arg_number": "532",
+                "limits": "{ 0.0, 1.0 }",
+                "category": "GMK",
+                "description": "Front GMK-1AE Magnetic Declination Set Knob"
+            }
+        },
+        "KPP": {
+            "FRONT_KPP_ARRETIR": {
+                "type": "PushButton",
+                "msg": "FRONT_KPP_ARRETIR",
+                "device_id": "22",
+                "command": "3002",
+                "arg_number": "30",
+                "category": "KPP",
+                "description": "Front KPP-1273K ADI Cage Button"
+            },
+            "FRONT_KPP_SET": {
+                "type": "Potentiometer",
+                "msg": "FRONT_KPP_SET",
+                "device_id": "22",
+                "command": "3003",
+                "arg_number": "39",
+                "limits": "{ -1, 1 }",
+                "category": "KPP",
+                "description": "Front KPP-1273K ADI Trim Knob"
+            },
+            "FRONT_SDU_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_SDU_SW",
+                "device_id": "41",
+                "command": "3001",
+                "arg_number": "177",
+                "category": "KPP",
+                "description": "Front SDU Switch, ON/OFF"
+            },
+            "BACK_AGD_FAIL_PITCH": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_AGD_FAIL_PITCH",
+                "device_id": "22",
+                "command": "3008",
+                "arg_number": "460",
+                "category": "KPP",
+                "description": "Back AGD Pitch Failure"
+            },
+            "BACK_AGD_FAIL_BANK": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_AGD_FAIL_BANK",
+                "device_id": "22",
+                "command": "3009",
+                "arg_number": "461",
+                "category": "KPP",
+                "description": "Back AGD Bank Failure"
+            },
+            "BACK_KPP_ARRETIR": {
+                "type": "PushButton",
+                "msg": "BACK_KPP_ARRETIR",
+                "device_id": "23",
+                "command": "3002",
+                "arg_number": "367",
+                "category": "KPP",
+                "description": "Back KPP-1273K ADI Cage Button"
+            },
+            "BACK_KPP_SET": {
+                "type": "Potentiometer",
+                "msg": "BACK_KPP_SET",
+                "device_id": "23",
+                "command": "3003",
+                "arg_number": "376",
+                "limits": "{ -1, 1 }",
+                "category": "KPP",
+                "description": "Back KPP-1273K ADI Trim Knob"
+            }
+        },
+        "NPP": {
+            "FRONT_HSI_CRS": {
+                "type": "Rotary",
+                "msg": "FRONT_HSI_CRS",
+                "device_id": "24",
+                "command": "3001",
+                "arg_number": "48",
+                "category": "NPP",
+                "description": "Front HSI Course Set Knob"
+            },
+            "BACK_FAIL_CRS": {
+                "type": "PushButton",
+                "msg": "BACK_FAIL_CRS",
+                "device_id": "25",
+                "command": "3002",
+                "arg_number": "526",
+                "category": "NPP",
+                "description": "Back Course Accordance"
+            },
+            "BACK_FAIL_GMK": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_FAIL_GMK",
+                "device_id": "24",
+                "command": "3002",
+                "arg_number": "458",
+                "category": "NPP",
+                "description": "Back GMK Failure"
+            },
+            "BACK_HSI_CRS": {
+                "type": "Rotary",
+                "msg": "BACK_HSI_CRS",
+                "device_id": "25",
+                "command": "3001",
+                "arg_number": "385",
+                "category": "NPP",
+                "description": "Back HSI Course Set Knob"
+            }
+        },
+        "ISKRA": {
+            "FRONT_RSBN_MODE": {
+                "type": "Tumb",
+                "msg": "FRONT_RSBN_MODE",
+                "device_id": "31",
+                "command": "3001",
+                "arg_number": "178",
+                "step": "0.1",
+                "limits": "{ 0, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "ISKRA",
+                "description": "Front RSBN Mode Switch, LANDING/NAVIGATION/GLIDE PATH"
+            },
+            "FRONT_RSBN_IDENT": {
+                "type": "PushButton",
+                "msg": "FRONT_RSBN_IDENT",
+                "device_id": "31",
+                "command": "3002",
+                "arg_number": "179",
+                "category": "ISKRA",
+                "description": "Front RSBN Identification Button"
+            },
+            "FRONT_RSBN_TEST": {
+                "type": "PushButton",
+                "msg": "FRONT_RSBN_TEST",
+                "device_id": "31",
+                "command": "3003",
+                "arg_number": "180",
+                "category": "ISKRA",
+                "description": "Front RSBN Test Button"
+            },
+            "FRONT_RSBN_LIGHT_KNOB": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RSBN_LIGHT_KNOB",
+                "device_id": "31",
+                "command": "3004",
+                "arg_number": "181",
+                "limits": "{ 0, 1 }",
+                "category": "ISKRA",
+                "description": "Front RSBN Control Box Lighting Intensity Knob"
+            },
+            "FRONT_RSBN_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RSBN_VOL",
+                "device_id": "31",
+                "command": "3005",
+                "arg_number": "184",
+                "limits": "{ 0.0, 0.8 }",
+                "category": "ISKRA",
+                "description": "Front RSBN Volume Knob"
+            },
+            "FRONT_RSBN_SET_AZ": {
+                "type": "3PosTumb",
+                "msg": "FRONT_RSBN_SET_AZ",
+                "device_id": "31",
+                "command": "3006",
+                "arg_number": "187",
+                "category": "ISKRA",
+                "description": "Front RSBN Initial Azimuth"
+            },
+            "FRONT_RSBN_SET_RANGE": {
+                "type": "3PosTumb",
+                "msg": "FRONT_RSBN_SET_RANGE",
+                "device_id": "31",
+                "command": "3007",
+                "arg_number": "188",
+                "category": "ISKRA",
+                "description": "Front RSBN Initial Range"
+            },
+            "FRONT_RSBN_CHAN_NAV_KNOB": {
+                "type": "MultipositionSwitch",
+                "msg": "FRONT_RSBN_CHAN_NAV_KNOB",
+                "device_id": "31",
+                "device_command": "3008",
+                "arg_number": "191",
+                "num_positions": "40",
+                "increment": "0.025",
+                "category": "ISKRA",
+                "description": "Front RSBN Navigation Channel Selector Knob"
+            },
+            "FRONT_RSBN_CHAN_LAND_KNOB": {
+                "type": "MultipositionSwitch",
+                "msg": "FRONT_RSBN_CHAN_LAND_KNOB",
+                "device_id": "31",
+                "device_command": "3009",
+                "arg_number": "192",
+                "num_positions": "40",
+                "increment": "0.025",
+                "category": "ISKRA",
+                "description": "Front RSBN Landing Channel Selector Knob"
+            },
+            "FRONT_RSBN_SET_AZ0": {
+                "type": "PushButton",
+                "msg": "FRONT_RSBN_SET_AZ0",
+                "device_id": "31",
+                "command": "3010",
+                "arg_number": "193",
+                "category": "ISKRA",
+                "description": "Front RSBN Set 0 Azimuth"
+            },
+            "FRONT_RSBN_ALT_SEL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RSBN_ALT_SEL",
+                "device_id": "31",
+                "command": "3011",
+                "arg_number": "201",
+                "limits": "{ 0.0, 1.0 }",
+                "category": "ISKRA",
+                "description": "Front RSBN Field Elevation Knob"
+            },
+            "FRONT_RSBN_BEACON": {
+                "type": "PushButton",
+                "msg": "FRONT_RSBN_BEACON",
+                "device_id": "31",
+                "command": "3012",
+                "arg_number": "297",
+                "category": "ISKRA",
+                "description": "Front RSBN Listen Callsign Button"
+            },
+            "FRONT_RSBN_EMERG_LAND": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RSBN_EMERG_LAND",
+                "device_id": "31",
+                "command": "3013",
+                "arg_number": "527",
+                "category": "ISKRA",
+                "description": "Front RSBN Emergency Landing Switch, ON/OFF"
+            }
+        },
+        "Variometer": {
+            "FRONT_VV_SET": {
+                "type": "Potentiometer",
+                "msg": "FRONT_VV_SET",
+                "device_id": "15",
+                "command": "3001",
+                "arg_number": "569",
+                "limits": "{ 0, 1 }",
+                "category": "Variometer",
+                "description": "Front Variometer Adjustment Knob"
+            },
+            "BACK_VV_SET": {
+                "type": "Potentiometer",
+                "msg": "BACK_VV_SET",
+                "device_id": "16",
+                "command": "3001",
+                "arg_number": "419",
+                "limits": "{ 0, 1 }",
+                "category": "Variometer",
+                "description": "Back Variometer Adjustment Knob"
+            }
+        },
+        "RKL41": {
+            "FRONT_RKL_BEACON_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RKL_BEACON_SW",
+                "device_id": "21",
+                "command": "3011",
+                "arg_number": "119",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Outer-Inner Beacon (Far-Near NDB) Switch"
+            },
+            "FRONT_RKL_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RKL_VOL",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "157",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Volume Knob"
+            },
+            "FRONT_RKL_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RKL_BRIGHT",
+                "device_id": "21",
+                "command": "3013",
+                "arg_number": "161",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Brightness Knob"
+            },
+            "FRONT_RKL_TLF_TLG": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RKL_TLF_TLG",
+                "device_id": "21",
+                "command": "3002",
+                "arg_number": "159",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Mode Switch, TLF(A3)/TLG(A1,A2)"
+            },
+            "FRONT_RKL_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "FRONT_RKL_MODE",
+                "device_id": "21",
+                "device_command": "3003",
+                "arg_number": "160",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Function Selector Switch, OFF/COMP(AUTO)/COMP(MAN)/ANT/LOOP"
+            },
+            "FRONT_RKL_LOOP_SW": {
+                "type": "3PosTumb",
+                "msg": "FRONT_RKL_LOOP_SW",
+                "device_id": "21",
+                "command": "3010",
+                "arg_number": "162",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Loop Switch, LEFT/OFF/RIGHT"
+            },
+            "FRONT_RKL_REMOTE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RKL_REMOTE",
+                "device_id": "21",
+                "command": "3012",
+                "arg_number": "158",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Control Switch, TAKE CONTROL/HAND OVER CONTROL"
+            },
+            "FRONT_RKL_FREQ_1_TUNE": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RKL_FREQ_1_TUNE",
+                "device_id": "21",
+                "command": "3004",
+                "arg_number": "165",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Far NDB Frequency Tune"
+            },
+            "FRONT_RKL_FREQ_1_XX00": {
+                "type": "Tumb",
+                "msg": "FRONT_RKL_FREQ_1_XX00",
+                "device_id": "21",
+                "command": "3005",
+                "arg_number": "163",
+                "step": "0.0588",
+                "limits": "{ 0.0, 0.938 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Far NDB 100kHz Rotary"
+            },
+            "FRONT_RKL_FREQ_1_00XX": {
+                "type": "Tumb",
+                "msg": "FRONT_RKL_FREQ_1_00XX",
+                "device_id": "21",
+                "command": "3006",
+                "arg_number": "164",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.9 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Far NDB 10kHz Rotary"
+            },
+            "FRONT_RKL_FREQ_2_TUNE": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RKL_FREQ_2_TUNE",
+                "device_id": "21",
+                "command": "3007",
+                "arg_number": "168",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Near NDB Frequency Tune"
+            },
+            "FRONT_RKL_FREQ_2_XX00": {
+                "type": "Tumb",
+                "msg": "FRONT_RKL_FREQ_2_XX00",
+                "device_id": "21",
+                "command": "3008",
+                "arg_number": "166",
+                "step": "0.0588",
+                "limits": "{ 0.0, 0.938 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Near NDB 100kHz Rotary"
+            },
+            "FRONT_RKL_FREQ_2_00XX": {
+                "type": "Tumb",
+                "msg": "FRONT_RKL_FREQ_2_00XX",
+                "device_id": "21",
+                "command": "3009",
+                "arg_number": "167",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.9 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Front RKL-41 ADF Near NDB 10kHz Rotary"
+            },
+            "BACK_RKL_BEACON_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_RKL_BEACON_SW",
+                "device_id": "21",
+                "command": "3024",
+                "arg_number": "440",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Outer-Inner Beacon (Far-Near NDB) Switch"
+            },
+            "BACK_RKL_VOL": {
+                "type": "Potentiometer",
+                "msg": "BACK_RKL_VOL",
+                "device_id": "21",
+                "command": "3014",
+                "arg_number": "514",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Volume Knob"
+            },
+            "BACK_RKL_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "BACK_RKL_BRIGHT",
+                "device_id": "21",
+                "command": "3026",
+                "arg_number": "518",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Brightness Knob"
+            },
+            "BACK_RKL_TLF_TLG": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_RKL_TLF_TLG",
+                "device_id": "21",
+                "command": "3015",
+                "arg_number": "516",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Mode Switch, TLF(A3)/TLG(A1,A2)"
+            },
+            "BACK_RKL_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "BACK_RKL_MODE",
+                "device_id": "21",
+                "device_command": "3016",
+                "arg_number": "517",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Function Selector Switch, OFF/COMP(AUTO)/COMP(MAN)/ANT/LOOP"
+            },
+            "BACK_RKL_LOOP_SW": {
+                "type": "3PosTumb",
+                "msg": "BACK_RKL_LOOP_SW",
+                "device_id": "21",
+                "command": "3010",
+                "arg_number": "519",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Loop Switch, LEFT/OFF/RIGHT"
+            },
+            "BACK_RKL_REMOTE": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_RKL_REMOTE",
+                "device_id": "21",
+                "command": "3025",
+                "arg_number": "515",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Control Switch, TAKE CONTROL/HAND OVER CONTROL"
+            },
+            "BACK_RKL_FREQ_1_TUNE": {
+                "type": "Potentiometer",
+                "msg": "BACK_RKL_FREQ_1_TUNE",
+                "device_id": "21",
+                "command": "3017",
+                "arg_number": "522",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Far NDB Frequency Tune"
+            },
+            "BACK_RKL_FREQ_1_XX00": {
+                "type": "Tumb",
+                "msg": "BACK_RKL_FREQ_1_XX00",
+                "device_id": "21",
+                "command": "3018",
+                "arg_number": "520",
+                "step": "0.0588",
+                "limits": "{ 0.0, 0.938 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Far NDB 100kHz Rotary"
+            },
+            "BACK_RKL_FREQ_1_00XX": {
+                "type": "Tumb",
+                "msg": "BACK_RKL_FREQ_1_00XX",
+                "device_id": "21",
+                "command": "3019",
+                "arg_number": "521",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.9 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Far NDB 10kHz Rotary"
+            },
+            "BACK_RKL_FREQ_2_TUNE": {
+                "type": "Potentiometer",
+                "msg": "BACK_RKL_FREQ_2_TUNE",
+                "device_id": "21",
+                "command": "3020",
+                "arg_number": "525",
+                "limits": "{ 0, 1 }",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Near NDB Frequency Tune"
+            },
+            "BACK_RKL_FREQ_2_XX00": {
+                "type": "Tumb",
+                "msg": "BACK_RKL_FREQ_2_XX00",
+                "device_id": "21",
+                "command": "3021",
+                "arg_number": "523",
+                "step": "0.0588",
+                "limits": "{ 0.0, 0.938 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Near NDB 100kHz Rotary"
+            },
+            "BACK_RKL_FREQ_2_00XX": {
+                "type": "Tumb",
+                "msg": "BACK_RKL_FREQ_2_00XX",
+                "device_id": "21",
+                "command": "3022",
+                "arg_number": "524",
+                "step": "0.1",
+                "limits": "{ 0.0, 0.9 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "RKL41",
+                "description": "Back RKL-41 ADF Near NDB 10kHz Rotary"
+            },
+            "BACK_RKL_ARK_FAIL": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_RKL_ARK_FAIL",
+                "device_id": "21",
+                "command": "3027",
+                "arg_number": "459",
+                "category": "RKL41",
+                "description": "Back RKL-41 ARK Failure"
+            }
+        },
+        "Electric System": {
+            "FRONT_BATTERY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_BATTERY_SW",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "141",
+                "category": "Electric System",
+                "description": "Front Accumulator Switch, ON/OFF"
+            },
+            "FRONT_MAIN_GEN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_MAIN_GEN_SW",
+                "device_id": "4",
+                "command": "3002",
+                "arg_number": "142",
+                "category": "Electric System",
+                "description": "Front Main Generator Switch, ON/OFF"
+            },
+            "FRONT_EMERG_GEN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_GEN_SW",
+                "device_id": "4",
+                "command": "3003",
+                "arg_number": "143",
+                "category": "Electric System",
+                "description": "Front Emergency Generator Switch, ON/OFF"
+            },
+            "FRONT_NET_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_NET_SW",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "502",
+                "category": "Electric System",
+                "description": "Front Net Switch, ON/OFF"
+            },
+            "FRONT_EMERG_ENG_INST_PW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_ENG_INST_PW",
+                "device_id": "4",
+                "command": "3072",
+                "arg_number": "169",
+                "category": "Electric System",
+                "description": "Front Emergency Engine Instruments Power Switch, ON/OFF"
+            },
+            "FRONT_TURBO_BTN": {
+                "type": "PushButton",
+                "msg": "FRONT_TURBO_BTN",
+                "device_id": "4",
+                "command": "3005",
+                "arg_number": "315",
+                "category": "Electric System",
+                "description": "Front Turbo Button"
+            },
+            "FRONT_TURBO_SW_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_TURBO_SW_COVER",
+                "device_id": "4",
+                "command": "3006",
+                "arg_number": "314",
+                "category": "Electric System",
+                "description": "Front Turbo Button Cover, Open/Close"
+            },
+            "BACK_TURBO_BTN": {
+                "type": "PushButton",
+                "msg": "BACK_TURBO_BTN",
+                "device_id": "4",
+                "command": "3007",
+                "arg_number": "488",
+                "category": "Electric System",
+                "description": "Back Turbo Button"
+            },
+            "BACK_TURBO_SW_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_TURBO_SW_COVER",
+                "device_id": "4",
+                "command": "3008",
+                "arg_number": "487",
+                "category": "Electric System",
+                "description": "Back Turbo Button Cover, Open/Close"
+            },
+            "FRONT_STOP_TURBO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_STOP_TURBO_SW",
+                "device_id": "4",
+                "command": "3009",
+                "arg_number": "313",
+                "category": "Electric System",
+                "description": "Front Stop Turbo Switch, ON/OFF"
+            },
+            "FRONT_STOP_TURBO_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_STOP_TURBO_COVER",
+                "device_id": "4",
+                "command": "3010",
+                "arg_number": "312",
+                "category": "Electric System",
+                "description": "Front Stop Turbo Switch Cover, Open/Close"
+            },
+            "FRONT_ENGINE": {
+                "type": "PushButton",
+                "msg": "FRONT_ENGINE",
+                "device_id": "4",
+                "command": "3011",
+                "arg_number": "326",
+                "category": "Electric System",
+                "description": "Front Engine Button"
+            },
+            "FRONT_ENGINE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_ENGINE_COVER",
+                "device_id": "4",
+                "command": "3012",
+                "arg_number": "325",
+                "category": "Electric System",
+                "description": "Front Engine Button Cover"
+            },
+            "BACK_ENGINE": {
+                "type": "PushButton",
+                "msg": "BACK_ENGINE",
+                "device_id": "4",
+                "command": "3013",
+                "arg_number": "494",
+                "category": "Electric System",
+                "description": "Back Engine Button"
+            },
+            "BACK_ENGINE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_ENGINE_COVER",
+                "device_id": "4",
+                "command": "3014",
+                "arg_number": "493",
+                "category": "Electric System",
+                "description": "Back Engine Button Cover"
+            },
+            "FRONT_STOP_ENGINE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_STOP_ENGINE",
+                "device_id": "4",
+                "command": "3015",
+                "arg_number": "318",
+                "category": "Electric System",
+                "description": "Front Stop Engine Switch"
+            },
+            "FRONT_STOP_ENGINE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_STOP_ENGINE_COVER",
+                "device_id": "4",
+                "command": "3016",
+                "arg_number": "317",
+                "category": "Electric System",
+                "description": "Front Stop Engine Switch Cover, Open/Close"
+            },
+            "BACK_STOP_ENGINE": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_STOP_ENGINE",
+                "device_id": "4",
+                "command": "3017",
+                "arg_number": "490",
+                "category": "Electric System",
+                "description": "Back Stop Engine Switch"
+            },
+            "BACK_STOP_ENGINE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_STOP_ENGINE_COVER",
+                "device_id": "4",
+                "command": "3018",
+                "arg_number": "489",
+                "category": "Electric System",
+                "description": "Back Stop Engine Switch Cover, Open/Close"
+            },
+            "L39C_FRONT_ENG_START_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "L39C_FRONT_ENG_START_MODE",
+                "device_id": "4",
+                "device_command": "3019",
+                "arg_number": "322",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "Electric System",
+                "description": "L-39C FRONT Engine Start Mode Switch"
+            },
+            "L39ZA_FRONT_ENG_START_MODE": {
+                "type": "3PosTumb",
+                "msg": "L39ZA_FRONT_ENG_START_MODE",
+                "device_id": "4",
+                "command": "3019",
+                "arg_number": "322",
+                "category": "Electric System",
+                "description": "L39ZA FRONT Engine Start Mode Switch"
+            },
+            "FRONT_ENG_STRT_MODE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_ENG_STRT_MODE_COVER",
+                "device_id": "4",
+                "command": "3020",
+                "arg_number": "321",
+                "category": "Electric System",
+                "description": "Front Engine Start Mode Switch Cover, Open/Close"
+            },
+            "FRONT_EMERG_FUEL": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_FUEL",
+                "device_id": "4",
+                "command": "3021",
+                "arg_number": "320",
+                "category": "Electric System",
+                "description": "Front Emergency Fuel Switch"
+            },
+            "FRONT_EMERG_FUEL_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_FUEL_COVER",
+                "device_id": "4",
+                "command": "3022",
+                "arg_number": "319",
+                "category": "Electric System",
+                "description": "Front Emergency Fuel Switch Cover"
+            },
+            "BACK_EMERG_FUEL": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_FUEL",
+                "device_id": "4",
+                "command": "3023",
+                "arg_number": "492",
+                "category": "Electric System",
+                "description": "Back Emergency Fuel Switch"
+            },
+            "BACK_EMERG_FUEL_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_FUEL_COVER",
+                "device_id": "4",
+                "command": "3024",
+                "arg_number": "491",
+                "category": "Electric System",
+                "description": "Back Emergency Fuel Switch Cover"
+            },
+            "CB_ENGINE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ENGINE",
+                "device_id": "4",
+                "command": "3025",
+                "arg_number": "144",
+                "category": "Electric System",
+                "description": "CB Engine"
+            },
+            "CB_AGD_GMK": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AGD_GMK",
+                "device_id": "4",
+                "command": "3026",
+                "arg_number": "145",
+                "category": "Electric System",
+                "description": "CB AGD-GMK"
+            },
+            "CB_INVERT1": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INVERT1",
+                "device_id": "4",
+                "command": "3027",
+                "arg_number": "146",
+                "category": "Electric System",
+                "description": "CB Inverter 1 (AC 115V)"
+            },
+            "CB_INVERT2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INVERT2",
+                "device_id": "4",
+                "command": "3028",
+                "arg_number": "147",
+                "category": "Electric System",
+                "description": "CB Inverter 2 (AC 115V)"
+            },
+            "CB_RTL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_RTL",
+                "device_id": "4",
+                "command": "3029",
+                "arg_number": "148",
+                "category": "Electric System",
+                "description": "CB RDO (ICS and Radio)"
+            },
+            "CB_MRP_RV": {
+                "type": "ToggleSwitch",
+                "msg": "CB_MRP_RV",
+                "device_id": "4",
+                "command": "3030",
+                "arg_number": "149",
+                "category": "Electric System",
+                "description": "CB MRP-RV (Marker Beacon Receiver and Radio Altimeter)"
+            },
+            "CB_ISKRA": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ISKRA",
+                "device_id": "4",
+                "command": "3031",
+                "arg_number": "150",
+                "category": "Electric System",
+                "description": "CB RSBN (ISKRA)"
+            },
+            "CB_EMERG_SRO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_EMERG_SRO",
+                "device_id": "4",
+                "command": "3032",
+                "arg_number": "151",
+                "category": "Electric System",
+                "description": "CB IFF (SRO) Emergency Connection"
+            },
+            "CB_EMERG_ISKRA": {
+                "type": "ToggleSwitch",
+                "msg": "CB_EMERG_ISKRA",
+                "device_id": "4",
+                "command": "3033",
+                "arg_number": "152",
+                "category": "Electric System",
+                "description": "CB RSBN (ISKRA) Emergency Connection"
+            },
+            "CB_WING_TANKS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WING_TANKS",
+                "device_id": "4",
+                "command": "3034",
+                "arg_number": "153",
+                "category": "Electric System",
+                "description": "CB Wing Tanks"
+            },
+            "CB_RIO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_RIO",
+                "device_id": "4",
+                "command": "3035",
+                "arg_number": "154",
+                "category": "Electric System",
+                "description": "CB RIO-3 De-Icing Signal"
+            },
+            "CB_SDU": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SDU",
+                "device_id": "4",
+                "command": "3036",
+                "arg_number": "155",
+                "category": "Electric System",
+                "description": "CB SDU"
+            },
+            "CB_HEAT_SENSOR_AOA": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HEAT_SENSOR_AOA",
+                "device_id": "4",
+                "command": "3037",
+                "arg_number": "628",
+                "category": "Electric System",
+                "description": "CB Heating Sensor AOA"
+            },
+            "CB_WEAPON": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WEAPON",
+                "device_id": "4",
+                "command": "3038",
+                "arg_number": "629",
+                "category": "Electric System",
+                "description": "CB Weapon"
+            },
+            "CB_AIR_COND": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AIR_COND",
+                "device_id": "4",
+                "command": "3040",
+                "arg_number": "211",
+                "category": "Electric System",
+                "description": "CB Air Conditioning"
+            },
+            "CB_ANTI_ICE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ANTI_ICE",
+                "device_id": "4",
+                "command": "3041",
+                "arg_number": "212",
+                "category": "Electric System",
+                "description": "CB Anti-Ice"
+            },
+            "CB_PITOT_L": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PITOT_L",
+                "device_id": "4",
+                "command": "3042",
+                "arg_number": "213",
+                "category": "Electric System",
+                "description": "CB Pitot Left"
+            },
+            "CB_PITOT_R": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PITOT_R",
+                "device_id": "4",
+                "command": "3043",
+                "arg_number": "214",
+                "category": "Electric System",
+                "description": "CB Pitot Right"
+            },
+            "CB_PT500C": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PT500C",
+                "device_id": "4",
+                "command": "3044",
+                "arg_number": "215",
+                "category": "Electric System",
+                "description": "CB PT-500C"
+            },
+            "CB_ARC": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ARC",
+                "device_id": "4",
+                "command": "3045",
+                "arg_number": "216",
+                "category": "Electric System",
+                "description": "CB ARC"
+            },
+            "CB_SRO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SRO",
+                "device_id": "4",
+                "command": "3046",
+                "arg_number": "217",
+                "category": "Electric System",
+                "description": "CB SRO"
+            },
+            "CB_SEAT_HELMET": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SEAT_HELMET",
+                "device_id": "4",
+                "command": "3047",
+                "arg_number": "218",
+                "category": "Electric System",
+                "description": "CB Seat Helmet"
+            },
+            "CB_GEARS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GEARS",
+                "device_id": "4",
+                "command": "3048",
+                "arg_number": "219",
+                "category": "Electric System",
+                "description": "CB Gears"
+            },
+            "CB_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CONTROL",
+                "device_id": "4",
+                "command": "3049",
+                "arg_number": "220",
+                "category": "Electric System",
+                "description": "CB Control"
+            },
+            "CB_SIGNALING": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SIGNALING",
+                "device_id": "4",
+                "command": "3050",
+                "arg_number": "221",
+                "category": "Electric System",
+                "description": "CB Signaling"
+            },
+            "CB_NAV_LIGHTS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_NAV_LIGHTS",
+                "device_id": "4",
+                "command": "3051",
+                "arg_number": "222",
+                "category": "Electric System",
+                "description": "CB Nav. Lights"
+            },
+            "CB_SPOTLIGHT_L": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SPOTLIGHT_L",
+                "device_id": "4",
+                "command": "3052",
+                "arg_number": "223",
+                "category": "Electric System",
+                "description": "CB Spotlight Left"
+            },
+            "CB_SPOTLIGHT_R": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SPOTLIGHT_R",
+                "device_id": "4",
+                "command": "3053",
+                "arg_number": "224",
+                "category": "Electric System",
+                "description": "CB Spotlight Right"
+            },
+            "CB_LIGHT_RED": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LIGHT_RED",
+                "device_id": "4",
+                "command": "3054",
+                "arg_number": "225",
+                "category": "Electric System",
+                "description": "CB Red Lights"
+            },
+            "CB_LIGHT_WHITE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LIGHT_WHITE",
+                "device_id": "4",
+                "command": "3055",
+                "arg_number": "226",
+                "category": "Electric System",
+                "description": "CB White Lights"
+            },
+            "CB_START_PANEL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_START_PANEL",
+                "device_id": "4",
+                "command": "3056",
+                "arg_number": "227",
+                "category": "Electric System",
+                "description": "CB Start Panel"
+            },
+            "CB_BOOST_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_BOOST_PUMP",
+                "device_id": "4",
+                "command": "3057",
+                "arg_number": "228",
+                "category": "Electric System",
+                "description": "CB Booster Pump"
+            },
+            "CB_INGNITION_1": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INGNITION_1",
+                "device_id": "4",
+                "command": "3058",
+                "arg_number": "229",
+                "category": "Electric System",
+                "description": "CB Ignition 1"
+            },
+            "CB_INGNITION_2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INGNITION_2",
+                "device_id": "4",
+                "command": "3059",
+                "arg_number": "230",
+                "category": "Electric System",
+                "description": "CB Ignition 2"
+            },
+            "CB_ENG_INSTR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ENG_INSTR",
+                "device_id": "4",
+                "command": "3060",
+                "arg_number": "231",
+                "category": "Electric System",
+                "description": "CB Engine Instruments"
+            },
+            "CB_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FIRE",
+                "device_id": "4",
+                "command": "3061",
+                "arg_number": "232",
+                "category": "Electric System",
+                "description": "CB Fire"
+            },
+            "CB_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_EMERG_JETT",
+                "device_id": "4",
+                "command": "3062",
+                "arg_number": "233",
+                "category": "Electric System",
+                "description": "CB Emergency Jettison"
+            },
+            "CB_SARPP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SARPP",
+                "device_id": "4",
+                "command": "3063",
+                "arg_number": "234",
+                "category": "Electric System",
+                "description": "CB SARPP"
+            },
+            "CB_SEAT_INSTRUCTOR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SEAT_INSTRUCTOR",
+                "device_id": "4",
+                "command": "3064",
+                "arg_number": "503",
+                "category": "Electric System",
+                "description": "CB Seat Instructor"
+            },
+            "CB_SIGNAL_INSTRUCTOR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SIGNAL_INSTRUCTOR",
+                "device_id": "4",
+                "command": "3065",
+                "arg_number": "504",
+                "category": "Electric System",
+                "description": "CB Signal Instructor"
+            },
+            "CB_WEAPON_INSTRUCTOR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WEAPON_INSTRUCTOR",
+                "device_id": "4",
+                "command": "3066",
+                "arg_number": "505",
+                "category": "Electric System",
+                "description": "CB Weapon Instructor"
+            },
+            "CB_GROUND_INTCOM": {
+                "type": "ToggleSwitch",
+                "msg": "CB_GROUND_INTCOM",
+                "device_id": "4",
+                "command": "3067",
+                "arg_number": "512",
+                "category": "Electric System",
+                "description": "CB Ground Intercom"
+            },
+            "PITOT_HEAT_ON_L": {
+                "type": "PushButton",
+                "msg": "PITOT_HEAT_ON_L",
+                "device_id": "4",
+                "command": "3068",
+                "arg_number": "294",
+                "category": "Electric System",
+                "description": "Standby (Left) Pitot Tube Heating ON Button"
+            },
+            "PITOT_HEAT_OFF_L": {
+                "type": "PushButton",
+                "msg": "PITOT_HEAT_OFF_L",
+                "device_id": "4",
+                "command": "3069",
+                "arg_number": "292",
+                "category": "Electric System",
+                "description": "Standby (Left) Pitot Tube Heating OFF Button"
+            },
+            "PITOT_HEAT_ON_R": {
+                "type": "PushButton",
+                "msg": "PITOT_HEAT_ON_R",
+                "device_id": "4",
+                "command": "3070",
+                "arg_number": "295",
+                "category": "Electric System",
+                "description": "Main (Right) Pitot Tube Heating ON Button"
+            },
+            "PITOT_HEAT_OFF_R": {
+                "type": "PushButton",
+                "msg": "PITOT_HEAT_OFF_R",
+                "device_id": "4",
+                "command": "3071",
+                "arg_number": "293",
+                "category": "Electric System",
+                "description": "Main (Right) Pitot Tube Heating OFF Button"
+            }
+        },
+        "Lights System": {
+            "FRONT_NAV_LIGHTS_FLASH": {
+                "type": "Tumb",
+                "msg": "FRONT_NAV_LIGHTS_FLASH",
+                "device_id": "20",
+                "command": "3003",
+                "arg_number": "176",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights System",
+                "description": "Front Navigation Lights Mode Control Switch, FLICKER/OFF/FIXED"
+            },
+            "FRONT_NAV_LIGHTS_BRIGHT": {
+                "type": "Tumb",
+                "msg": "FRONT_NAV_LIGHTS_BRIGHT",
+                "device_id": "20",
+                "command": "3004",
+                "arg_number": "175",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Lights System",
+                "description": "Front Navigation Lights Intensity Control Switch, DIM(30%)/BRT(60%)/MAX(100%)"
+            },
+            "FRONT_LAND_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "FRONT_LAND_LIGHTS",
+                "device_id": "20",
+                "command": "3006",
+                "arg_number": "311",
+                "category": "Lights System",
+                "description": "Front Taxi and Landing Lights Control Switch, TAXI/OFF/LANDING"
+            },
+            "BACK_LAND_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "BACK_LAND_LIGHTS",
+                "device_id": "20",
+                "command": "3007",
+                "arg_number": "486",
+                "category": "Lights System",
+                "description": "Back Taxi and Landing Lights Control Switch, TAXI/OFF/LANDING"
+            },
+            "FRONT_INST_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "FRONT_INST_LIGHTS",
+                "device_id": "20",
+                "command": "3008",
+                "arg_number": "330",
+                "category": "Lights System",
+                "description": "Front Instrument Lighting Switch, Red/OFF/White"
+            },
+            "BACK_INST_LIGHTS": {
+                "type": "3PosTumb",
+                "msg": "BACK_INST_LIGHTS",
+                "device_id": "20",
+                "command": "3010",
+                "arg_number": "497",
+                "category": "Lights System",
+                "description": "Back Instrument Lighting Switch, Red/OFF/White"
+            },
+            "FRONT_INST_LIGHTS_CON": {
+                "type": "Potentiometer",
+                "msg": "FRONT_INST_LIGHTS_CON",
+                "device_id": "20",
+                "command": "3009",
+                "arg_number": "331",
+                "limits": "{ 0.1, 0.9 }",
+                "category": "Lights System",
+                "description": "Front Instrument Lights Intensity Knob"
+            },
+            "BACK_INST_LIGHTS_CON": {
+                "type": "Potentiometer",
+                "msg": "BACK_INST_LIGHTS_CON",
+                "device_id": "20",
+                "command": "3011",
+                "arg_number": "498",
+                "limits": "{ 0.1, 0.9 }",
+                "category": "Lights System",
+                "description": "Back Instrument Lights Intensity Knob"
+            },
+            "FRONT_EMERG_LIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_LIGHT",
+                "device_id": "20",
+                "command": "3005",
+                "arg_number": "249",
+                "category": "Lights System",
+                "description": "Front Emergency Instrument Light Switch, ON/OFF"
+            },
+            "FRONT_WARN_LIGHTS_CON": {
+                "type": "Potentiometer",
+                "msg": "FRONT_WARN_LIGHTS_CON",
+                "device_id": "20",
+                "command": "3012",
+                "arg_number": "202",
+                "limits": "{ 0, 1 }",
+                "category": "Lights System",
+                "description": "Front Warning-Light Intensity Knob"
+            },
+            "FRONT_WARN_LIGHTS_TEST": {
+                "type": "PushButton",
+                "msg": "FRONT_WARN_LIGHTS_TEST",
+                "device_id": "20",
+                "command": "3013",
+                "arg_number": "203",
+                "category": "Lights System",
+                "description": "Front Warning-Light Check Button"
+            },
+            "BACK_WARN_LIGHTS_CON": {
+                "type": "Potentiometer",
+                "msg": "BACK_WARN_LIGHTS_CON",
+                "device_id": "20",
+                "command": "3014",
+                "arg_number": "537",
+                "limits": "{ 0, 1 }",
+                "category": "Lights System",
+                "description": "Back Warning-Light Intensity Knob"
+            },
+            "BACK_WARN_LIGHTS_TEST": {
+                "type": "PushButton",
+                "msg": "BACK_WARN_LIGHTS_TEST",
+                "device_id": "20",
+                "command": "3015",
+                "arg_number": "538",
+                "category": "Lights System",
+                "description": "Back Warning-Light Check Button"
+            }
+        },
+        "Weapon System": {
+            "FRONT_MASTER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_MASTER_ARM",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "254",
+                "category": "Weapon System",
+                "description": "Front CB Armament System Power Switch, ON/OFF"
+            },
+            "L39C_FRONT_ROCKET_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "L39C_FRONT_ROCKET_FIRE",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "255",
+                "category": "Weapon System",
+                "description": "L-39C FRONT CB UB-16 Rocket Firing Control Circuit Power Switch, ON/OFF"
+            },
+            "L39ZA_FRONT_ROCKET_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_ROCKET_FIRE",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "255",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT CB Missile Firing Control Circuit Power Switch, ON/OFF"
+            },
+            "FRONT_ASP_FKP": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_ASP_FKP",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "256",
+                "category": "Weapon System",
+                "description": "Front CB ASP-FKP (Gunsight and Gun Camera) Power Switch, ON/OFF"
+            },
+            "FRONT_HEATING_SS": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_HEATING_SS",
+                "device_id": "3",
+                "command": "3004",
+                "arg_number": "257",
+                "category": "Weapon System",
+                "description": "Front CB Missile Seeker Heating Circuit Power Switch, ON/OFF"
+            },
+            "FRONT_GLOWING_SS": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_GLOWING_SS",
+                "device_id": "3",
+                "command": "3005",
+                "arg_number": "258",
+                "category": "Weapon System",
+                "description": "Front CB Missile Seeker Glowing Circuit Power Switch, ON/OFF"
+            },
+            "FRONT_MISSILE_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_MISSILE_VOL",
+                "device_id": "3",
+                "command": "3006",
+                "arg_number": "259",
+                "limits": "{ 0, 1 }",
+                "category": "Weapon System",
+                "description": "Front Missile Seeker Tone Volume Knob"
+            },
+            "FRONT_BOMB_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_BOMB_EMERG_JETT",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "268",
+                "category": "Weapon System",
+                "description": "Front Arm/Safe Bombs Emergency Jettison Switch, LIVE/BLANK"
+            },
+            "FRONT_ROCKET_MODE": {
+                "type": "Tumb",
+                "msg": "FRONT_ROCKET_MODE",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "271",
+                "step": "0.1",
+                "limits": "{ 0.1, 0.3 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "Weapon System",
+                "description": "Front Rockets Firing Mode Selector Switch, AUT./2RS/4RS"
+            },
+            "BACK_BOMB_EMERG_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_BOMB_EMERG_JETT_COVER",
+                "device_id": "3",
+                "command": "3018",
+                "arg_number": "508",
+                "category": "Weapon System",
+                "description": "Back Arm/Safe Bombs Emergency Jettison Switch Cover, OPEN/CLOSE"
+            },
+            "BACK_BOMB_EMERG_JETT": {
+                "type": "3PosTumb",
+                "msg": "BACK_BOMB_EMERG_JETT",
+                "device_id": "3",
+                "command": "3019",
+                "arg_number": "509",
+                "category": "Weapon System",
+                "description": "Back Arm/Safe Bombs Emergency Jettison Switch, LIVE/BOMBS/BLANK"
+            },
+            "BACK_EMERG_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_JETT_COVER",
+                "device_id": "3",
+                "command": "3020",
+                "arg_number": "506",
+                "category": "Weapon System",
+                "description": "Back Emergency Jettison Switch Cover, OPEN/CLOSE"
+            },
+            "BACK_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_JETT",
+                "device_id": "3",
+                "command": "3021",
+                "arg_number": "507",
+                "category": "Weapon System",
+                "description": "Back Emergency Jettison Switch, ON/OFF"
+            },
+            "FRONT_FLARE_DISP": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FLARE_DISP",
+                "device_id": "3",
+                "command": "3013",
+                "arg_number": "273",
+                "category": "Weapon System",
+                "description": "Front EKSR-46 Signal Flare Dispenser Power Switch, ON/OFF"
+            },
+            "FRONT_FLARE_YE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FLARE_YE",
+                "device_id": "3",
+                "command": "3017",
+                "arg_number": "274",
+                "category": "Weapon System",
+                "description": "Front EKSR-46 Yellow Signal Flare Launch Button"
+            },
+            "FRONT_FLARE_GN": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FLARE_GN",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "275",
+                "category": "Weapon System",
+                "description": "Front EKSR-46 Green Signal Flare Launch Button"
+            },
+            "FRONT_FLARE_RD": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FLARE_RD",
+                "device_id": "3",
+                "command": "3015",
+                "arg_number": "276",
+                "category": "Weapon System",
+                "description": "Front EKSR-46 Red Signal Flare Launch Button"
+            },
+            "FRONT_FLARE_WH": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FLARE_WH",
+                "device_id": "3",
+                "command": "3016",
+                "arg_number": "277",
+                "category": "Weapon System",
+                "description": "Front EKSR-46 White Signal Flare Launch Button"
+            },
+            "FRONT_BOMB_REL_SEL": {
+                "type": "Tumb",
+                "msg": "FRONT_BOMB_REL_SEL",
+                "device_id": "3",
+                "command": "3007",
+                "arg_number": "260",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Weapon System",
+                "description": "Front Missile/Bomb Release Selector Switch, PORT(Left)/STARB-BOTH(Right for Missiles/Both)"
+            },
+            "L39ZA_FRONT_GUN_SW_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_GUN_SW_COVER",
+                "device_id": "3",
+                "command": "3041",
+                "arg_number": "582",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Gun+PK3 Switch Cover, OPEN/CLOSE"
+            },
+            "L39ZA_FRONT_GUN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_GUN_SW",
+                "device_id": "3",
+                "command": "3042",
+                "arg_number": "583",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Gun+PK3 Switch"
+            },
+            "L39ZA_FRONT_IN_EMERG_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_IN_EMERG_JETT_COVER",
+                "device_id": "3",
+                "command": "3043",
+                "arg_number": "589",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Emergency Jettison Inboard Stations Switch Cover, OPEN/CLOSE"
+            },
+            "L39ZA_FRONT_IN_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_IN_EMERG_JETT",
+                "device_id": "3",
+                "command": "3044",
+                "arg_number": "590",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Emergency Jettison Inboard Stations Switch, ON/OFF"
+            },
+            "L39ZA_FRONT_PYRO": {
+                "type": "Tumb",
+                "msg": "L39ZA_FRONT_PYRO",
+                "device_id": "3",
+                "command": "3045",
+                "arg_number": "607",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Pyro Charge Select"
+            },
+            "L39ZA_FRONT_ARM_GUN": {
+                "type": "PushButton",
+                "msg": "L39ZA_FRONT_ARM_GUN",
+                "device_id": "3",
+                "command": "3046",
+                "arg_number": "579",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Pyro Charge Apply"
+            },
+            "L39ZA_FRONT_CANNON": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_CANNON",
+                "device_id": "3",
+                "command": "3047",
+                "arg_number": "576",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Gsh-23 Arm/Safe"
+            },
+            "L39ZA_PYLON_OUT_ON": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_PYLON_OUT_ON",
+                "device_id": "3",
+                "command": "3048",
+                "arg_number": "585",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Outboard Stations Select"
+            },
+            "L39ZA_PYLON_OUT_OFF": {
+                "type": "PushButton",
+                "msg": "L39ZA_PYLON_OUT_OFF",
+                "device_id": "3",
+                "command": "3049",
+                "arg_number": "586",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Outboard Stations Deselect"
+            },
+            "L39ZA_PYLON_IN_ON": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_PYLON_IN_ON",
+                "device_id": "3",
+                "command": "3050",
+                "arg_number": "587",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Inboard Stations Select"
+            },
+            "L39ZA_PYLON_IN_OFF": {
+                "type": "PushButton",
+                "msg": "L39ZA_PYLON_IN_OFF",
+                "device_id": "3",
+                "command": "3051",
+                "arg_number": "588",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Inboard Stations Deselect"
+            },
+            "L39ZA_FRONT_CHARGE_GUN_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_CHARGE_GUN_OUT",
+                "device_id": "3",
+                "command": "3052",
+                "arg_number": "577",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Charge Outer Guns"
+            },
+            "L39ZA_FRONT_CHARGE_GUN_IN": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_CHARGE_GUN_IN",
+                "device_id": "3",
+                "command": "3053",
+                "arg_number": "578",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Charge Inner Guns"
+            },
+            "L39ZA_FRONT_EMERG_MISSILE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_EMERG_MISSILE_COVER",
+                "device_id": "3",
+                "command": "3054",
+                "arg_number": "591",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Emergency Launch Missiles Cover"
+            },
+            "L39ZA_FRONT_EMERG_MISSILE": {
+                "type": "PushButton",
+                "msg": "L39ZA_FRONT_EMERG_MISSILE",
+                "device_id": "3",
+                "command": "3055",
+                "arg_number": "592",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Emergency Launch Missiles"
+            },
+            "L39ZA_FRONT_ARM_GUN_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_ARM_GUN_OUT",
+                "device_id": "3",
+                "command": "3056",
+                "arg_number": "597",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Arm Outer Guns"
+            },
+            "L39ZA_FRONT_ARM_GUN_IN": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_ARM_GUN_IN",
+                "device_id": "3",
+                "command": "3057",
+                "arg_number": "598",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Arm Inner Guns"
+            },
+            "L39ZA_FRONT_ARM_BOMBS": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_ARM_BOMBS",
+                "device_id": "3",
+                "command": "3058",
+                "arg_number": "596",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Arm Bombs"
+            },
+            "L39ZA_FRONT_BOMB_SERIES": {
+                "type": "3PosTumb",
+                "msg": "L39ZA_FRONT_BOMB_SERIES",
+                "device_id": "3",
+                "command": "3059",
+                "arg_number": "584",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Bombs Series"
+            },
+            "L39ZA_FRONT_OUT_EMERG_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_OUT_EMERG_JETT_COVER",
+                "device_id": "3",
+                "command": "3010",
+                "arg_number": "269",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Emergency Jettison Outboard Stations Switch Cover, OPEN/CLOSE"
+            },
+            "L39ZA_FRONT_OUT_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_OUT_EMERG_JETT",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "270",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Emergency Jettison Outboard Stations Switch, ON/OFF"
+            },
+            "L39ZA_FRONT_WAEPON_SW": {
+                "type": "ToggleSwitch",
+                "msg": "L39ZA_FRONT_WAEPON_SW",
+                "device_id": "4",
+                "command": "3038",
+                "arg_number": "629",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT CB Weapon Switch, ON/OFF"
+            },
+            "L39ZA_FRONT_DEBLOCK_GUN": {
+                "type": "PushButton",
+                "msg": "L39ZA_FRONT_DEBLOCK_GUN",
+                "device_id": "3",
+                "command": "3077",
+                "arg_number": "599",
+                "category": "Weapon System",
+                "description": "L-39ZA FRONT Deblock Guns"
+            },
+            "L39C_FRONT_BOMB_EMERG_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L39C_FRONT_BOMB_EMERG_JETT_COVER",
+                "device_id": "3",
+                "command": "3008",
+                "arg_number": "267",
+                "category": "Weapon System",
+                "description": "L-39C FRONT Arm/Safe Bombs Emergency Jettison Switch Cover, OPEN/CLOSE"
+            },
+            "L39C_FRONT_EMERG_JETT_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "L39C_FRONT_EMERG_JETT_COVER",
+                "device_id": "3",
+                "command": "3010",
+                "arg_number": "269",
+                "category": "Weapon System",
+                "description": "L-39C FRONT Emergency Jettison Switch Cover, OPEN/CLOSE"
+            },
+            "L39C_FRONT_EMERG_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "L39C_FRONT_EMERG_JETT",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "270",
+                "category": "Weapon System",
+                "description": "L-39C FRONT Emergency Jettison Switch, ON/OFF"
+            }
+        },
+        "Oxygen System": {
+            "FRONT_OXY_EMERG": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OXY_EMERG",
+                "device_id": "30",
+                "command": "3004",
+                "arg_number": "303",
+                "category": "Oxygen System",
+                "description": "Front Emergency Oxygen Switch, ON/OFF"
+            },
+            "FRONT_OXY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_OXY_SW",
+                "device_id": "30",
+                "command": "3006",
+                "arg_number": "304",
+                "category": "Oxygen System",
+                "description": "Front Diluter Demand Switch, 100% / MIX"
+            },
+            "FRONT_HELM_VENT": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_HELM_VENT",
+                "device_id": "30",
+                "command": "3008",
+                "arg_number": "307",
+                "category": "Oxygen System",
+                "description": "Front Helmet Ventilation Switch, ON/OFF"
+            },
+            "FRONT_OXY_SUPPLY_VALVE": {
+                "type": "Potentiometer",
+                "msg": "FRONT_OXY_SUPPLY_VALVE",
+                "device_id": "30",
+                "command": "3001",
+                "arg_number": "306",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen System",
+                "description": "Front Oxygen Supply Valve (CLOSE - CW, OPEN - CCW)"
+            },
+            "BACK_OXY_EMERG": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_OXY_EMERG",
+                "device_id": "30",
+                "command": "3005",
+                "arg_number": "479",
+                "category": "Oxygen System",
+                "description": "Back Emergency Oxygen Switch, ON/OFF"
+            },
+            "BACK_OXY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_OXY_SW",
+                "device_id": "30",
+                "command": "3007",
+                "arg_number": "480",
+                "category": "Oxygen System",
+                "description": "Back Diluter Demand Switch, 100% / MIX"
+            },
+            "BACK_OXY_INTER_VALVE": {
+                "type": "Potentiometer",
+                "msg": "BACK_OXY_INTER_VALVE",
+                "device_id": "30",
+                "command": "3003",
+                "arg_number": "484",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen System",
+                "description": "Back Oxygen Interconnaction Valve (CLOSE - CW, OPEN - CCW)"
+            },
+            "BACK_OXY_SUPPLY_VALVE": {
+                "type": "Potentiometer",
+                "msg": "BACK_OXY_SUPPLY_VALVE",
+                "device_id": "30",
+                "command": "3002",
+                "arg_number": "482",
+                "limits": "{ 0, 1 }",
+                "category": "Oxygen System",
+                "description": "Back Oxygen Supply Valve (CLOSE - CW, OPEN - CCW)"
+            }
+        },
+        "SARPP": {
+            "FRONT_SARPP_REC_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_SARPP_REC_SWITCH",
+                "device_id": "36",
+                "command": "3001",
+                "arg_number": "298",
+                "category": "SARPP",
+                "description": "Front SARPP Flight Recorder, ON/OFF"
+            }
+        },
+        "Fuel System": {
+            "FRONT_FUEL_SHUTOFF": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FUEL_SHUTOFF",
+                "device_id": "5",
+                "command": "3002",
+                "arg_number": "296",
+                "category": "Fuel System",
+                "description": "Front Fuel Shut-Off Lever"
+            },
+            "BACK_FUEL_SHUTOFF": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_FUEL_SHUTOFF",
+                "device_id": "5",
+                "command": "3003",
+                "arg_number": "475",
+                "category": "Fuel System",
+                "description": "Back Fuel Shut-Off Lever"
+            }
+        },
+        "Air System": {
+            "FRONT_PRESS_HANDLE": {
+                "type": "Rotary",
+                "msg": "FRONT_PRESS_HANDLE",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "245",
+                "category": "Air System",
+                "description": "Front ECS and Pressurization Handle, OFF/CANOPIES SEALED/ECS ON"
+            },
+            "BACK_PRESS_HANDLE": {
+                "type": "Rotary",
+                "msg": "BACK_PRESS_HANDLE",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "245",
+                "category": "Air System",
+                "description": "Back ECS and Pressurization Handle, OFF/CANOPIES SEALED/ECS ON"
+            },
+            "FRONT_CABIN_HEAT_MODE": {
+                "type": "Tumb",
+                "msg": "FRONT_CABIN_HEAT_MODE",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "172",
+                "step": "0.05",
+                "limits": "{ 0.0, 0.25 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Air System",
+                "description": "Front Cabin Air Conditioning Control Switch, OFF/HEAT/COOL/AUTOMATIC"
+            },
+            "FRONT_CABIN_TEMP": {
+                "type": "Potentiometer",
+                "msg": "FRONT_CABIN_TEMP",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "173",
+                "limits": "{ 0, 1 }",
+                "category": "Air System",
+                "description": "Front Cabin Air Temperature Controller Rheostat"
+            },
+            "FRONT_SUIT_COND_MODE": {
+                "type": "Tumb",
+                "msg": "FRONT_SUIT_COND_MODE",
+                "device_id": "7",
+                "command": "3006",
+                "arg_number": "121",
+                "step": "0.05",
+                "limits": "{ 0.0, 0.25 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Air System",
+                "description": "Front Diffuser and Flight Suit Air Conditioning Control Switch, HEAT/AUTO/COOL"
+            },
+            "FRONT_SUIT_TEMP": {
+                "type": "Potentiometer",
+                "msg": "FRONT_SUIT_TEMP",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "120",
+                "limits": "{ 0, 1 }",
+                "category": "Air System",
+                "description": "Front Diffuser and Flight Suit Temperature Rheostat"
+            },
+            "BACK_AIR_COND_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_AIR_COND_COVER",
+                "device_id": "7",
+                "command": "3008",
+                "arg_number": "510",
+                "category": "Air System",
+                "description": "Back Conditioning Shutoff Switch Cover, OPEN/CLOSE"
+            },
+            "BACK_AIR_COND": {
+                "type": "3PosTumb",
+                "msg": "BACK_AIR_COND",
+                "device_id": "7",
+                "command": "3007",
+                "arg_number": "511",
+                "category": "Air System",
+                "description": "Back Conditioning Shutoff Switch, OPEN/FRONT PILOT CONTROL/CLOSE"
+            }
+        },
+        "AntiICE": {
+            "FRONT_ANTI_ICING": {
+                "type": "Tumb",
+                "msg": "FRONT_ANTI_ICING",
+                "device_id": "7",
+                "command": "3009",
+                "arg_number": "174",
+                "step": "0.1",
+                "limits": "{ 0, 0.2 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "AntiICE",
+                "description": "Front De-Icing Mode Switch, MANUAL/AUTOMATIC/OFF"
+            },
+            "FRONT_DE_ICE": {
+                "type": "PushButton",
+                "msg": "FRONT_DE_ICE",
+                "device_id": "7",
+                "command": "3010",
+                "arg_number": "183",
+                "category": "AntiICE",
+                "description": "Front RIO-3 De-Icing Sensor Heating Circuit Check Button"
+            }
+        },
+        "Helm Heat": {
+            "FRONT_HELMET_QUICK": {
+                "type": "PushButton",
+                "msg": "FRONT_HELMET_QUICK",
+                "device_id": "7",
+                "command": "3011",
+                "arg_number": "309",
+                "category": "Helm Heat",
+                "description": "Front Helmet Visor Quick Heating Button"
+            },
+            "FRONT_HELMET_MODE": {
+                "type": "Tumb",
+                "msg": "FRONT_HELMET_MODE",
+                "device_id": "7",
+                "command": "3012",
+                "arg_number": "308",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Helm Heat",
+                "description": "Front Helmet Heating Mode Switch, AUTO/OFF/ON"
+            },
+            "FRONT_HELMET_TEMP": {
+                "type": "Potentiometer",
+                "msg": "FRONT_HELMET_TEMP",
+                "device_id": "7",
+                "command": "3013",
+                "arg_number": "310",
+                "limits": "{ 0, 1 }",
+                "category": "Helm Heat",
+                "description": "Front Helmet Heating Temperature Rheostat"
+            }
+        },
+        "SPU": {
+            "FRONT_SPU_RESERV": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_SPU_RESERV",
+                "device_id": "34",
+                "command": "3004",
+                "arg_number": "290",
+                "category": "SPU",
+                "description": "Front Reserve Intercom Switch, ON/OFF"
+            },
+            "FRONT_SPU_ADF": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_SPU_ADF",
+                "device_id": "34",
+                "command": "3003",
+                "arg_number": "291",
+                "category": "SPU",
+                "description": "Front ADF Audio Switch, ADF/OFF"
+            },
+            "FRONT_SPU_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_SPU_VOL",
+                "device_id": "34",
+                "command": "3001",
+                "arg_number": "288",
+                "limits": "{ 0.0, 0.8 }",
+                "category": "SPU",
+                "description": "Front Intercom Volume Knob"
+            },
+            "FRONT_RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_RADIO_VOL",
+                "device_id": "34",
+                "command": "3002",
+                "arg_number": "289",
+                "limits": "{ 0.0, 0.8 }",
+                "category": "SPU",
+                "description": "Front Radio Volume Knob"
+            },
+            "FRONT_RADIO_BTN": {
+                "type": "PushButton",
+                "msg": "FRONT_RADIO_BTN",
+                "device_id": "34",
+                "command": "3005",
+                "arg_number": "134",
+                "category": "SPU",
+                "description": "Front Radio Button"
+            },
+            "FRONT_SPU_BTN": {
+                "type": "PushButton",
+                "msg": "FRONT_SPU_BTN",
+                "device_id": "34",
+                "command": "3006",
+                "arg_number": "133",
+                "category": "SPU",
+                "description": "Front Intercom Button"
+            },
+            "BACK_SPU_RESERV": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_SPU_RESERV",
+                "device_id": "34",
+                "command": "3010",
+                "arg_number": "473",
+                "category": "SPU",
+                "description": "Back Reserve Intercom Switch, ON/OFF"
+            },
+            "BACK_SPU_ADF": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_SPU_ADF",
+                "device_id": "34",
+                "command": "3009",
+                "arg_number": "474",
+                "category": "SPU",
+                "description": "Back ADF Audio Switch, ADF/OFF"
+            },
+            "BACK_SPU_VOL": {
+                "type": "Potentiometer",
+                "msg": "BACK_SPU_VOL",
+                "device_id": "34",
+                "command": "3007",
+                "arg_number": "471",
+                "limits": "{ 0.0, 0.8 }",
+                "category": "SPU",
+                "description": "Back Intercom Volume Knob"
+            },
+            "BACK_RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "BACK_RADIO_VOL",
+                "device_id": "34",
+                "command": "3008",
+                "arg_number": "472",
+                "limits": "{ 0.0, 0.8 }",
+                "category": "SPU",
+                "description": "Back Radio Volume Knob"
+            },
+            "BACK_RADIO_BTN": {
+                "type": "PushButton",
+                "msg": "BACK_RADIO_BTN",
+                "device_id": "34",
+                "command": "3011",
+                "arg_number": "547",
+                "category": "SPU",
+                "description": "Back Radio Button"
+            },
+            "BACK_SPU_BTN": {
+                "type": "PushButton",
+                "msg": "BACK_SPU_BTN",
+                "device_id": "34",
+                "command": "3012",
+                "arg_number": "546",
+                "category": "SPU",
+                "description": "Back Intercom Button"
+            }
+        },
+        "Radio": {
+            "FRONT_RADIO_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RADIO_CONTROL",
+                "device_id": "19",
+                "command": "3003",
+                "arg_number": "287",
+                "category": "Radio",
+                "description": "Front Radio Control Switch - Flip for Control"
+            },
+            "FRONT_RADIO_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RADIO_SQUELCH",
+                "device_id": "19",
+                "command": "3002",
+                "arg_number": "286",
+                "category": "Radio",
+                "description": "Front Radio Squelch Switch, ON/OFF"
+            },
+            "FRONT_RADIO_CHN": {
+                "type": "MultipositionSwitch",
+                "msg": "FRONT_RADIO_CHN",
+                "device_id": "19",
+                "device_command": "3001",
+                "arg_number": "284",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "Radio",
+                "description": "Front Radio Preset Channel Selector Knob"
+            },
+            "BACK_RADIO_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_RADIO_CONTROL",
+                "device_id": "19",
+                "command": "3006",
+                "arg_number": "470",
+                "category": "Radio",
+                "description": "Back Radio Control Switch - Flip for Control"
+            },
+            "BACK_RADIO_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_RADIO_SQUELCH",
+                "device_id": "19",
+                "command": "3005",
+                "arg_number": "469",
+                "category": "Radio",
+                "description": "Back Radio Squelch Switch, ON/OFF"
+            },
+            "BACK_RADIO_CHN": {
+                "type": "MultipositionSwitch",
+                "msg": "BACK_RADIO_CHN",
+                "device_id": "19",
+                "device_command": "3004",
+                "arg_number": "468",
+                "num_positions": "20",
+                "increment": "0.05",
+                "category": "Radio",
+                "description": "Back Radio Preset Channel Selector Knob"
+            }
+        },
+        "Engine Systems": {
+            "FRONT_CONTROL_IV300": {
+                "type": "PushButton",
+                "msg": "FRONT_CONTROL_IV300",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "329",
+                "category": "Engine Systems",
+                "description": "Front IV-300 Engine Vibration Test Button"
+            },
+            "FRONT_FIRE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_FIRE_COVER",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "327",
+                "category": "Engine Systems",
+                "description": "Front Fire Extinguish Button Cover"
+            },
+            "FRONT_FIRE": {
+                "type": "PushButton",
+                "msg": "FRONT_FIRE",
+                "device_id": "6",
+                "command": "3003",
+                "arg_number": "328",
+                "category": "Engine Systems",
+                "description": "Front Fire Extinguish Button"
+            },
+            "BACK_FIRE_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_FIRE_COVER",
+                "device_id": "6",
+                "command": "3004",
+                "arg_number": "495",
+                "category": "Engine Systems",
+                "description": "Back Fire Extinguish Button Cover"
+            },
+            "BACK_FIRE": {
+                "type": "PushButton",
+                "msg": "BACK_FIRE",
+                "device_id": "6",
+                "command": "3005",
+                "arg_number": "496",
+                "category": "Engine Systems",
+                "description": "Back Fire Extinguish Button"
+            },
+            "FRONT_TEST_SSP": {
+                "type": "3PosTumb",
+                "msg": "FRONT_TEST_SSP",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "272",
+                "category": "Engine Systems",
+                "description": "Front Fire Warning Signal Test Switch I/OFF/II"
+            },
+            "FRONT_RT12_OFF_COVER": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RT12_OFF_COVER",
+                "device_id": "6",
+                "command": "3007",
+                "arg_number": "323",
+                "category": "Engine Systems",
+                "description": "Front RT-12 JPT Regulator Manual Disable Switch Cover"
+            },
+            "FRONT_RT12_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RT12_OFF",
+                "device_id": "6",
+                "command": "3008",
+                "arg_number": "324",
+                "category": "Engine Systems",
+                "description": "Front RT-12 JPT Regulator Manual Disable Switch"
+            },
+            "FRONT_RT12_PW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_RT12_PW",
+                "device_id": "6",
+                "command": "3009",
+                "arg_number": "243",
+                "category": "Engine Systems",
+                "description": "Front RT-12 JPT Regulator Power Switch"
+            },
+            "FRONT_RT12_TEST": {
+                "type": "3PosTumb",
+                "msg": "FRONT_RT12_TEST",
+                "device_id": "6",
+                "command": "3010",
+                "arg_number": "242",
+                "category": "Engine Systems",
+                "description": "Front RT-12 JPT Regulator Test Switch I/OFF/II"
+            },
+            "BACK_EGT_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EGT_CONTROL",
+                "device_id": "6",
+                "command": "3011",
+                "arg_number": "499",
+                "category": "Engine Systems",
+                "description": "Back EGT Indicator Switch"
+            }
+        },
+        "Control System": {
+            "FRONT_FLAPS_0": {
+                "type": "PushButton",
+                "msg": "FRONT_FLAPS_0",
+                "device_id": "37",
+                "command": "3001",
+                "arg_number": "281",
+                "category": "Control System",
+                "description": "Front Flaps Flight Position 0"
+            },
+            "FRONT_FLAPS_25": {
+                "type": "PushButton",
+                "msg": "FRONT_FLAPS_25",
+                "device_id": "37",
+                "command": "3002",
+                "arg_number": "282",
+                "category": "Control System",
+                "description": "Front Flaps Takeoff Position 25"
+            },
+            "FRONT_FLAPS_44": {
+                "type": "PushButton",
+                "msg": "FRONT_FLAPS_44",
+                "device_id": "37",
+                "command": "3003",
+                "arg_number": "283",
+                "category": "Control System",
+                "description": "Front Flaps Landing Position 44"
+            },
+            "BACK_FLAPS_0": {
+                "type": "PushButton",
+                "msg": "BACK_FLAPS_0",
+                "device_id": "37",
+                "command": "3004",
+                "arg_number": "465",
+                "category": "Control System",
+                "description": "Back Flaps Flight Position 0"
+            },
+            "BACK_FLAPS_25": {
+                "type": "PushButton",
+                "msg": "BACK_FLAPS_25",
+                "device_id": "37",
+                "command": "3005",
+                "arg_number": "466",
+                "category": "Control System",
+                "description": "Back Flaps Takeoff Position 25"
+            },
+            "BACK_FLAPS_44": {
+                "type": "PushButton",
+                "msg": "BACK_FLAPS_44",
+                "device_id": "37",
+                "command": "3006",
+                "arg_number": "467",
+                "category": "Control System",
+                "description": "Back Flaps Landing Position 44"
+            },
+            "BACK_THROTTLE_LIMIT": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_THROTTLE_LIMIT",
+                "device_id": "37",
+                "command": "3021",
+                "arg_number": "549",
+                "category": "Control System",
+                "description": "Back Throttle Limiter"
+            },
+            "FRONT_AIR_BRAKE_BTN": {
+                "type": "PushButton",
+                "msg": "FRONT_AIR_BRAKE_BTN",
+                "device_id": "37",
+                "command": "3008",
+                "arg_number": "135",
+                "category": "Control System",
+                "description": "Front Air Brake Push Switch"
+            },
+            "FRONT_AIR_BRAKE_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_AIR_BRAKE_SW",
+                "device_id": "37",
+                "command": "3007",
+                "arg_number": "136",
+                "category": "Control System",
+                "description": "Front Air Brake Switch"
+            },
+            "BACK_AIR_BRAKE_SW": {
+                "type": "3PosTumb",
+                "msg": "BACK_AIR_BRAKE_SW",
+                "device_id": "37",
+                "command": "3009",
+                "arg_number": "548",
+                "category": "Control System",
+                "description": "Back Air Brake Switch"
+            },
+            "FRONT_GEAR_LEVER": {
+                "type": "3PosTumb",
+                "msg": "FRONT_GEAR_LEVER",
+                "device_id": "37",
+                "command": "3011",
+                "arg_number": "118",
+                "category": "Control System",
+                "description": "Front Landing Gear Control Lever"
+            },
+            "BACK_GEAR_LEVER": {
+                "type": "3PosTumb",
+                "msg": "BACK_GEAR_LEVER",
+                "device_id": "37",
+                "command": "3012",
+                "arg_number": "437",
+                "category": "Control System",
+                "description": "Back Landing Gear Control Lever"
+            },
+            "FRONT_BRAKE_CONTROL": {
+                "type": "Potentiometer",
+                "msg": "FRONT_BRAKE_CONTROL",
+                "device_id": "37",
+                "command": "3016",
+                "arg_number": "334",
+                "limits": "{ -1, 1 }",
+                "category": "Control System",
+                "description": "Front Emergency/Parking Wheel Brake Lever"
+            },
+            "BACK_BRAKE_CONTROL": {
+                "type": "Potentiometer",
+                "msg": "BACK_BRAKE_CONTROL",
+                "device_id": "37",
+                "command": "3017",
+                "arg_number": "501",
+                "limits": "{ -1, 1 }",
+                "category": "Control System",
+                "description": "Back Emergency/Parking Wheel Brake Lever"
+            },
+            "FRONT_BRAKE_CONTROL_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_BRAKE_CONTROL_LOCK",
+                "device_id": "37",
+                "command": "3024",
+                "arg_number": "334",
+                "category": "Control System",
+                "description": "Front Parking Brake Lever Flag"
+            },
+            "FRONT_EMERG_HYD": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_HYD",
+                "device_id": "35",
+                "command": "3001",
+                "arg_number": "197",
+                "category": "Control System",
+                "description": "Front Main and Emergency Hydraulic Systems Interconnection Lever ON/OFF"
+            },
+            "FRONT_EMERG_GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_GEAR",
+                "device_id": "35",
+                "command": "3003",
+                "arg_number": "194",
+                "category": "Control System",
+                "description": "Front Emergency Landing Gear Extension Lever ON/OFF"
+            },
+            "FRONT_EMERG_FLAPS": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_FLAPS",
+                "device_id": "35",
+                "command": "3005",
+                "arg_number": "195",
+                "category": "Control System",
+                "description": "Front Emergency Flaps Extension Lever ON/OFF"
+            },
+            "FRONT_EMERG_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_EMERG_GEN",
+                "device_id": "35",
+                "command": "3007",
+                "arg_number": "196",
+                "category": "Control System",
+                "description": "Front RAT Emergency Generator Lever ON/OFF"
+            },
+            "BACK_EMERG_HYD": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_HYD",
+                "device_id": "35",
+                "command": "3002",
+                "arg_number": "536",
+                "category": "Control System",
+                "description": "Back Main and Emergency Hydraulic Systems Interconnection Lever ON/OFF"
+            },
+            "BACK_EMERG_GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_GEAR",
+                "device_id": "35",
+                "command": "3004",
+                "arg_number": "533",
+                "category": "Control System",
+                "description": "Back Emergency Landing Gear Extension Lever ON/OFF"
+            },
+            "BACK_EMERG_FLAPS": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_FLAPS",
+                "device_id": "35",
+                "command": "3006",
+                "arg_number": "534",
+                "category": "Control System",
+                "description": "Back Emergency Flaps Extension Lever ON/OFF"
+            },
+            "BACK_EMERG_GEN": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_EMERG_GEN",
+                "device_id": "35",
+                "command": "3008",
+                "arg_number": "535",
+                "category": "Control System",
+                "description": "Back RAT Emergency Generator Lever ON/OFF"
+            },
+            "BACK_PRESS_TOTAL": {
+                "type": "3PosTumb",
+                "msg": "BACK_PRESS_TOTAL",
+                "device_id": "39",
+                "command": "3002",
+                "arg_number": "456",
+                "category": "Control System",
+                "description": "Back Full Pressure Failure Lever, ON/STBY/FAILURE"
+            },
+            "BACK_PRESS_STATIC": {
+                "type": "3PosTumb",
+                "msg": "BACK_PRESS_STATIC",
+                "device_id": "39",
+                "command": "3001",
+                "arg_number": "457",
+                "category": "Control System",
+                "description": "Back Static Pressure Failure Lever, ON/STBY/FAILURE"
+            }
+        },
+        "Accelerometer": {
+            "FRONT_G_RESET": {
+                "type": "PushButton",
+                "msg": "FRONT_G_RESET",
+                "device_id": "33",
+                "command": "3001",
+                "arg_number": "89",
+                "category": "Accelerometer",
+                "description": "Front Reset G Limits Button"
+            }
+        },
+        "Canopy": {
+            "FRONT_CANOPY_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CANOPY_HANDLE",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "998",
+                "category": "Canopy",
+                "description": "Front Canopy Handle"
+            },
+            "BACK_CANOPY_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_CANOPY_HANDLE",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "999",
+                "category": "Canopy",
+                "description": "Back Canopy Handle"
+            },
+            "FRONT_CANOPY_LOCK_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_CANOPY_LOCK_HANDLE",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "285",
+                "category": "Canopy",
+                "description": "Front Canopy Lock Handle"
+            },
+            "BACK_CANOPY_LOCK_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_CANOPY_LOCK_HANDLE",
+                "device_id": "2",
+                "command": "3008",
+                "arg_number": "485",
+                "category": "Canopy",
+                "description": "Back Canopy Lock Handle"
+            },
+            "FRONT_CANOPY_JETT": {
+                "type": "PushButton",
+                "msg": "FRONT_CANOPY_JETT",
+                "device_id": "2",
+                "command": "3009",
+                "arg_number": "244",
+                "category": "Canopy",
+                "description": "Front Canopy Emergency Jettison Handle"
+            },
+            "BACK_CANOPY_JETT": {
+                "type": "PushButton",
+                "msg": "BACK_CANOPY_JETT",
+                "device_id": "2",
+                "command": "3010",
+                "arg_number": "539",
+                "category": "Canopy",
+                "description": "Back Canopy Emergency Jettison Handle"
+            }
+        },
+        "Hood": {
+            "BACK_HOOD_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "BACK_HOOD_CONTROL",
+                "device_id": "2",
+                "command": "3006",
+                "arg_number": "1000",
+                "category": "Hood",
+                "description": "Back Instrument Flight Practice Hood Control Handle, EXTEND/RETRACT"
+            }
+        },
+        "Pitot": {
+            "FRONT_PITOT_CONTROL": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_PITOT_CONTROL",
+                "device_id": "37",
+                "command": "3022",
+                "arg_number": "333",
+                "category": "Pitot",
+                "description": "Front Pitot Tube Selector Lever, STBY(Left)/MAIN(Right)"
+            }
+        },
+        "Misc": {
+            "FRONT_PANEL_HOOD": {
+                "type": "ToggleSwitch",
+                "msg": "FRONT_PANEL_HOOD",
+                "device_id": "0",
+                "command": "3003",
+                "arg_number": "627",
+                "category": "Misc",
+                "description": "Front Panel Visor Extend"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "L-39",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

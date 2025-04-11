@@ -1,0 +1,1925 @@
+{
+    "commands": {
+        "Stick": {
+            "STICK_BTN_A": {
+                "type": "PushButton",
+                "msg": "STICK_BTN_A",
+                "device_id": "5",
+                "command": "3005",
+                "arg_number": "245",
+                "category": "Stick",
+                "description": "Stick Button A - MG Trigger"
+            },
+            "STICK_BTN_B1": {
+                "type": "PushButton",
+                "msg": "STICK_BTN_B1",
+                "device_id": "5",
+                "command": "3006",
+                "arg_number": "246",
+                "category": "Stick",
+                "description": "Stick Button B1 - Cannon Trigger"
+            },
+            "STICK_BTN_B2": {
+                "type": "PushButton",
+                "msg": "STICK_BTN_B2",
+                "device_id": "5",
+                "command": "3007",
+                "arg_number": "244",
+                "category": "Stick",
+                "description": "Stick Button B2 - Secondary & Drop Ordnance Trigger"
+            },
+            "STICK_WH_BRK": {
+                "type": "Potentiometer",
+                "msg": "STICK_WH_BRK",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "248",
+                "limits": "{ 0, 1 }",
+                "category": "Stick",
+                "description": "Stick Wheel Brakes Lever"
+            },
+            "STICK_WH_BRK_LOCK": {
+                "type": "PushButton",
+                "msg": "STICK_WH_BRK_LOCK",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "291",
+                "category": "Stick",
+                "description": "Stick Wheel Brakes Lever Lock"
+            }
+        },
+        "Cockpit": {
+            "WINDOW_CONTROL_L": {
+                "type": "ToggleSwitch",
+                "msg": "WINDOW_CONTROL_L",
+                "device_id": "2",
+                "command": "3022",
+                "arg_number": "251",
+                "category": "Cockpit",
+                "description": "Left Side Window Open/Close Control"
+            },
+            "WINDOW_CONTROL_R": {
+                "type": "ToggleSwitch",
+                "msg": "WINDOW_CONTROL_R",
+                "device_id": "2",
+                "command": "3063",
+                "arg_number": "253",
+                "category": "Cockpit",
+                "description": "Right Side Window Open/Close Control"
+            },
+            "ARMOR_HEADREST": {
+                "type": "PushButton",
+                "msg": "ARMOR_HEADREST",
+                "device_id": "2",
+                "command": "3071",
+                "arg_number": "312",
+                "category": "Cockpit",
+                "description": "Armor Headrest Lock"
+            }
+        },
+        "Reflector Sight": {
+            "GUNSIGHT_RANGE": {
+                "type": "Potentiometer",
+                "msg": "GUNSIGHT_RANGE",
+                "device_id": "5",
+                "command": "3045",
+                "arg_number": "107",
+                "limits": "{ 0, 1 }",
+                "category": "Reflector Sight",
+                "description": "Reflector Sight Setter Rings Range"
+            },
+            "GUNSIGHT_SPAN": {
+                "type": "Potentiometer",
+                "msg": "GUNSIGHT_SPAN",
+                "device_id": "5",
+                "command": "3048",
+                "arg_number": "108",
+                "limits": "{ 0, 1 }",
+                "category": "Reflector Sight",
+                "description": "Reflector Sight Setter Rings Span"
+            },
+            "GUNSIGHT_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "GUNSIGHT_L_DIM",
+                "device_id": "4",
+                "command": "3009",
+                "arg_number": "13",
+                "limits": "{ 0, 1 }",
+                "category": "Reflector Sight",
+                "description": "Reflector Sight Dimmer"
+            }
+        },
+        "JBA": {
+            "MASTER_SWITCH": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_SWITCH",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "124",
+                "category": "JBA",
+                "description": "Master Gate Switch"
+            },
+            "PORT_MAGNETO_1": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_MAGNETO_1",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "125",
+                "category": "JBA",
+                "description": "Magneto Switch Port 1"
+            },
+            "PORT_MAGNETO_2": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_MAGNETO_2",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "126",
+                "category": "JBA",
+                "description": "Magneto Switch Port 2"
+            },
+            "PORT_START_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_START_CVR",
+                "device_id": "3",
+                "command": "3052",
+                "arg_number": "129",
+                "category": "JBA",
+                "description": "Starter Switch Cover Port"
+            },
+            "PORT_START_SW": {
+                "type": "PushButton",
+                "msg": "PORT_START_SW",
+                "device_id": "3",
+                "command": "3054",
+                "arg_number": "131",
+                "category": "JBA",
+                "description": "Starter Switch Port"
+            },
+            "PORT_BOOST_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_BOOST_CVR",
+                "device_id": "3",
+                "command": "3058",
+                "arg_number": "133",
+                "category": "JBA",
+                "description": "Booster Switch Cover Port"
+            },
+            "PORT_BOOST_SW": {
+                "type": "PushButton",
+                "msg": "PORT_BOOST_SW",
+                "device_id": "3",
+                "command": "3060",
+                "arg_number": "135",
+                "category": "JBA",
+                "description": "Booster Switch Port"
+            },
+            "PORT_AIRSCREW": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_AIRSCREW",
+                "device_id": "3",
+                "command": "3081",
+                "arg_number": "354",
+                "category": "JBA",
+                "description": "Feathering Switch Port"
+            },
+            "PORT_RAD_FLAP": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_RAD_FLAP",
+                "device_id": "4",
+                "command": "3062",
+                "arg_number": "112",
+                "category": "JBA",
+                "description": "Radiator Flap Switch Port"
+            },
+            "STBD_RAD_FLAP": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_RAD_FLAP",
+                "device_id": "4",
+                "command": "3064",
+                "arg_number": "113",
+                "category": "JBA",
+                "description": "Radiator Flap Switch Starboard"
+            },
+            "STBD_AIRSCREW": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_AIRSCREW",
+                "device_id": "3",
+                "command": "3082",
+                "arg_number": "355",
+                "category": "JBA",
+                "description": "Feathering Switch Starboard"
+            },
+            "STBD_BOOST_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_BOOST_CVR",
+                "device_id": "3",
+                "command": "3061",
+                "arg_number": "134",
+                "category": "JBA",
+                "description": "Booster Switch Cover Starboard"
+            },
+            "STBD_BOOST_SW": {
+                "type": "PushButton",
+                "msg": "STBD_BOOST_SW",
+                "device_id": "3",
+                "command": "3063",
+                "arg_number": "136",
+                "category": "JBA",
+                "description": "Booster Switch Starboard"
+            },
+            "STBD_START_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_START_CVR",
+                "device_id": "3",
+                "command": "3055",
+                "arg_number": "130",
+                "category": "JBA",
+                "description": "Starter Switch Cover Starboard"
+            },
+            "STBD_START_SW": {
+                "type": "PushButton",
+                "msg": "STBD_START_SW",
+                "device_id": "3",
+                "command": "3057",
+                "arg_number": "132",
+                "category": "JBA",
+                "description": "Starter Switch Starboard"
+            },
+            "STBD_MAGNETO_1": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_MAGNETO_1",
+                "device_id": "3",
+                "command": "3005",
+                "arg_number": "127",
+                "category": "JBA",
+                "description": "Magneto Switch Starboard 1"
+            },
+            "STBD_MAGNETO_2": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_MAGNETO_2",
+                "device_id": "3",
+                "command": "3007",
+                "arg_number": "128",
+                "category": "JBA",
+                "description": "Magneto Switch Starboard 2"
+            },
+            "FLOOD_L_DIM_R": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_L_DIM_R",
+                "device_id": "4",
+                "command": "3053",
+                "arg_number": "14",
+                "limits": "{ 0, 1 }",
+                "category": "JBA",
+                "description": "Right Flood Light Dimmer"
+            },
+            "BOX_B_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "BOX_B_L_DIM",
+                "device_id": "4",
+                "command": "3056",
+                "arg_number": "15",
+                "limits": "{ 0, 1 }",
+                "category": "JBA",
+                "description": "J.B.B. Flood Light Dimmer"
+            },
+            "AIR_FILTER": {
+                "type": "ToggleSwitch",
+                "msg": "AIR_FILTER",
+                "device_id": "4",
+                "command": "3066",
+                "arg_number": "114",
+                "category": "JBA",
+                "description": "Tropical Air Filter Switch"
+            },
+            "FUEL_PUMP_L_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PUMP_L_CVR",
+                "device_id": "2",
+                "command": "3065",
+                "arg_number": "282",
+                "category": "JBA",
+                "description": "Fuel Pump Light Cover"
+            }
+        },
+        "Main Panel": {
+            "REP_COMP": {
+                "type": "Rotary",
+                "msg": "REP_COMP",
+                "device_id": "8",
+                "command": "3001",
+                "arg_number": "49",
+                "category": "Main Panel",
+                "description": "Repeater Compass Course Set"
+            },
+            "ALT_SET": {
+                "type": "Rotary",
+                "msg": "ALT_SET",
+                "device_id": "2",
+                "command": "3010",
+                "arg_number": "72",
+                "category": "Main Panel",
+                "description": "Altimeter Set"
+            },
+            "DI_SET": {
+                "type": "Rotary",
+                "msg": "DI_SET",
+                "device_id": "2",
+                "command": "3013",
+                "arg_number": "74",
+                "category": "Main Panel",
+                "description": "Directional Gyro Set"
+            },
+            "UC_BLIND": {
+                "type": "Rotary",
+                "msg": "UC_BLIND",
+                "device_id": "2",
+                "command": "3018",
+                "arg_number": "304",
+                "category": "Main Panel",
+                "description": "U/C Indicator Blind Up/Down"
+            },
+            "PORT_OXY_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_OXY_VALVE",
+                "device_id": "15",
+                "command": "3003",
+                "arg_number": "84",
+                "category": "Main Panel",
+                "description": "Oxygen Regulator Port"
+            },
+            "BOOST_CUT_OFF": {
+                "type": "PushButton",
+                "msg": "BOOST_CUT_OFF",
+                "device_id": "3",
+                "command": "3049",
+                "arg_number": "292",
+                "category": "Main Panel",
+                "description": "Boost Cut-Off T-Handle"
+            },
+            "PORT_LAND_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_LAND_L_SW",
+                "device_id": "4",
+                "command": "3018",
+                "arg_number": "62",
+                "category": "Main Panel",
+                "description": "Landing Light Switch Port"
+            },
+            "STBD_LAND_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_LAND_L_SW",
+                "device_id": "4",
+                "command": "3020",
+                "arg_number": "63",
+                "category": "Main Panel",
+                "description": "Landing Light Switch Starboard"
+            },
+            "BOMB_DOORS_LVR": {
+                "type": "3PosMossi",
+                "msg": "BOMB_DOORS_LVR",
+                "device_id": "17",
+                "command": "3001",
+                "arg_number": "115",
+                "category": "Main Panel",
+                "description": "Bomb Doors Lever"
+            },
+            "CHASSIS_LVR": {
+                "type": "3PosMossi",
+                "msg": "CHASSIS_LVR",
+                "device_id": "17",
+                "command": "3002",
+                "arg_number": "116",
+                "category": "Main Panel",
+                "description": "Chassis Lever"
+            },
+            "FLAPS_LVR": {
+                "type": "3PosMossi",
+                "msg": "FLAPS_LVR",
+                "device_id": "17",
+                "command": "3003",
+                "arg_number": "118",
+                "category": "Main Panel",
+                "description": "Flaps Lever"
+            },
+            "CHASSIS_GATE": {
+                "type": "ToggleSwitch",
+                "msg": "CHASSIS_GATE",
+                "device_id": "17",
+                "command": "3004",
+                "arg_number": "117",
+                "category": "Main Panel",
+                "description": "Chassis Lever Gate"
+            },
+            "FLAPS_GATE": {
+                "type": "ToggleSwitch",
+                "msg": "FLAPS_GATE",
+                "device_id": "17",
+                "command": "3006",
+                "arg_number": "119",
+                "category": "Main Panel",
+                "description": "Flaps Lever Gate"
+            },
+            "GUN_MASTER_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_MASTER_CVR",
+                "device_id": "5",
+                "command": "3001",
+                "arg_number": "120",
+                "category": "Main Panel",
+                "description": "Gun Firing Master Switch Cover"
+            },
+            "GUN_MASTER": {
+                "type": "Tumb",
+                "msg": "GUN_MASTER",
+                "device_id": "5",
+                "command": "3003",
+                "arg_number": "121",
+                "step": "2.0",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Main Panel",
+                "description": "Gun Firing Master Switch"
+            },
+            "DE_ICE_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "DE_ICE_PUMP",
+                "device_id": "23",
+                "command": "3001",
+                "arg_number": "370",
+                "category": "Main Panel",
+                "description": "De-Ice Glycol Pump Handle"
+            },
+            "RUDDER_TRIM": {
+                "type": "RockerSwitchMossi",
+                "msg": "RUDDER_TRIM",
+                "device_id": "2",
+                "command": "3053",
+                "arg_number": "111",
+                "category": "Main Panel",
+                "description": "Rudder Trim"
+            },
+            "AILERON_TRIM": {
+                "type": "RockerSwitchMossi",
+                "msg": "AILERON_TRIM",
+                "device_id": "2",
+                "command": "3051",
+                "arg_number": "280",
+                "category": "Main Panel",
+                "description": "Aileron Trim"
+            },
+            "BOMB_PANEL_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "BOMB_PANEL_L_DIM",
+                "device_id": "4",
+                "command": "3059",
+                "arg_number": "16",
+                "limits": "{ 0, 1 }",
+                "category": "Main Panel",
+                "description": "Bomb Panel Flood Dimmer"
+            },
+            "BOMB_DOOR_L_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "BOMB_DOOR_L_CVR",
+                "device_id": "2",
+                "command": "3067",
+                "arg_number": "284",
+                "category": "Main Panel",
+                "description": "Bomb Door Light Cover"
+            },
+            "JETT_CONT_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "JETT_CONT_CVR",
+                "device_id": "5",
+                "command": "3056",
+                "arg_number": "144",
+                "category": "Main Panel",
+                "description": "Container Jettison Cover"
+            },
+            "JETT_CONT": {
+                "type": "PushButton",
+                "msg": "JETT_CONT",
+                "device_id": "5",
+                "command": "3058",
+                "arg_number": "145",
+                "category": "Main Panel",
+                "description": "Container Jettison Button"
+            },
+            "BOMB_PANEL_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "BOMB_PANEL_CVR",
+                "device_id": "5",
+                "command": "3059",
+                "arg_number": "311",
+                "category": "Main Panel",
+                "description": "Bomb Panel Cover"
+            },
+            "CINE_CAM": {
+                "type": "ToggleSwitch",
+                "msg": "CINE_CAM",
+                "device_id": "5",
+                "command": "3061",
+                "arg_number": "143",
+                "category": "Main Panel",
+                "description": "Cine Camera Changeover Switch"
+            },
+            "WING_ORD_1": {
+                "type": "ToggleSwitch",
+                "msg": "WING_ORD_1",
+                "device_id": "5",
+                "command": "3063",
+                "arg_number": "148",
+                "category": "Main Panel",
+                "description": "Wing Ordnance 1 Switch"
+            },
+            "WING_ORD_2": {
+                "type": "ToggleSwitch",
+                "msg": "WING_ORD_2",
+                "device_id": "5",
+                "command": "3065",
+                "arg_number": "149",
+                "category": "Main Panel",
+                "description": "Wing Ordnance 2 Switch"
+            },
+            "FUSELAGE_BOMB_3": {
+                "type": "ToggleSwitch",
+                "msg": "FUSELAGE_BOMB_3",
+                "device_id": "5",
+                "command": "3067",
+                "arg_number": "150",
+                "category": "Main Panel",
+                "description": "Fuselage Bombs 3 Switch"
+            },
+            "FUSELAGE_BOMB_4": {
+                "type": "ToggleSwitch",
+                "msg": "FUSELAGE_BOMB_4",
+                "device_id": "5",
+                "command": "3069",
+                "arg_number": "151",
+                "category": "Main Panel",
+                "description": "Fuselage Bombs 4 Switch"
+            },
+            "NOSE_BOMBS": {
+                "type": "ToggleSwitch",
+                "msg": "NOSE_BOMBS",
+                "device_id": "5",
+                "command": "3071",
+                "arg_number": "152",
+                "category": "Main Panel",
+                "description": "All Nose Bombs Switch"
+            },
+            "TAIL_BOMBS": {
+                "type": "ToggleSwitch",
+                "msg": "TAIL_BOMBS",
+                "device_id": "5",
+                "command": "3073",
+                "arg_number": "153",
+                "category": "Main Panel",
+                "description": "All Tail Bombs Switch"
+            },
+            "FOOTAGE_SCALE": {
+                "type": "Rotary",
+                "msg": "FOOTAGE_SCALE",
+                "device_id": "18",
+                "command": "3003",
+                "arg_number": "90",
+                "category": "Main Panel",
+                "description": "Footage Indicator Scale"
+            },
+            "FOOTAGE_EXPOSURE": {
+                "type": "ToggleSwitch",
+                "msg": "FOOTAGE_EXPOSURE",
+                "device_id": "18",
+                "command": "3001",
+                "arg_number": "91",
+                "category": "Main Panel",
+                "description": "Footage Indicator Exposure Switch"
+            },
+            "FUEL_PRESS_WARN_L_L_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PRESS_WARN_L_L_CVR",
+                "device_id": "2",
+                "command": "3000",
+                "arg_number": "377",
+                "category": "Main Panel",
+                "description": "Left Fuel Pressure Warning Light Cover"
+            },
+            "FUEL_PRESS_WARN_L_R_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PRESS_WARN_L_R_CVR",
+                "device_id": "2",
+                "command": "3000",
+                "arg_number": "378",
+                "category": "Main Panel",
+                "description": "Left Fuel Pressure Warning Light Cover"
+            }
+        },
+        "Clock": {
+            "CLOCK_PIN_PULL": {
+                "type": "PushButton",
+                "msg": "CLOCK_PIN_PULL",
+                "device_id": "19",
+                "command": "3003",
+                "arg_number": "101",
+                "category": "Clock",
+                "description": "Clock Set (Pull)"
+            },
+            "CLOCK_PIN_TURN": {
+                "type": "Rotary",
+                "msg": "CLOCK_PIN_TURN",
+                "device_id": "19",
+                "command": "3001",
+                "arg_number": "102",
+                "category": "Clock",
+                "description": "Clock Set (Turn)"
+            },
+            "CLOCK_REF_H": {
+                "type": "Rotary",
+                "msg": "CLOCK_REF_H",
+                "device_id": "19",
+                "command": "3005",
+                "arg_number": "375",
+                "category": "Clock",
+                "description": "Clock Reference Hours"
+            },
+            "CLOCK_REF_M": {
+                "type": "Rotary",
+                "msg": "CLOCK_REF_M",
+                "device_id": "19",
+                "command": "3007",
+                "arg_number": "376",
+                "category": "Clock",
+                "description": "Clock Reference Minutes"
+            }
+        },
+        "Port Wall": {
+            "COMPASS_RING": {
+                "type": "Rotary",
+                "msg": "COMPASS_RING",
+                "device_id": "2",
+                "command": "3007",
+                "arg_number": "28",
+                "category": "Port Wall",
+                "description": "Magnetic Compass"
+            },
+            "EMERG_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "EMERG_L_DIM",
+                "device_id": "4",
+                "command": "3006",
+                "arg_number": "10",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "Emergency Light Rheostat"
+            },
+            "COMPASS_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "COMPASS_L_DIM",
+                "device_id": "4",
+                "command": "3012",
+                "arg_number": "11",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "Compass Flood Light Dimmer"
+            },
+            "L_SIDE_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "L_SIDE_L_DIM",
+                "device_id": "4",
+                "command": "3015",
+                "arg_number": "12",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "L.H. Flood Light Dimmer"
+            },
+            "JETT_W_TANK_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "JETT_W_TANK_CVR",
+                "device_id": "5",
+                "command": "3008",
+                "arg_number": "8",
+                "category": "Port Wall",
+                "description": "Wing Tank Jettison Cover"
+            },
+            "JETT_W_TANK": {
+                "type": "PushButton",
+                "msg": "JETT_W_TANK",
+                "device_id": "5",
+                "command": "3010",
+                "arg_number": "9",
+                "category": "Port Wall",
+                "description": "Wing Tank Jettison Button"
+            },
+            "UV_EXCITER": {
+                "type": "PushButton",
+                "msg": "UV_EXCITER",
+                "device_id": "4",
+                "command": "3024",
+                "arg_number": "294",
+                "category": "Port Wall",
+                "description": "UV Exciter Button"
+            },
+            "LH_UV_CAP": {
+                "type": "Potentiometer",
+                "msg": "LH_UV_CAP",
+                "device_id": "20",
+                "command": "3001",
+                "arg_number": "295",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "LH UV Lamp Cap"
+            },
+            "RH_UV_CAP": {
+                "type": "Potentiometer",
+                "msg": "RH_UV_CAP",
+                "device_id": "21",
+                "command": "3001",
+                "arg_number": "296",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "RH UV Lamp Cap"
+            },
+            "BA_VOLUME": {
+                "type": "Potentiometer",
+                "msg": "BA_VOLUME",
+                "device_id": "30",
+                "command": "3003",
+                "arg_number": "7",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "Beam Approach Volume Rheostat"
+            },
+            "REP_COMPASS_SW1": {
+                "type": "ToggleSwitch",
+                "msg": "REP_COMPASS_SW1",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "1",
+                "category": "Port Wall",
+                "description": "R.I. Compass Switch"
+            },
+            "REP_COMPASS_SW2": {
+                "type": "ToggleSwitch",
+                "msg": "REP_COMPASS_SW2",
+                "device_id": "4",
+                "command": "3002",
+                "arg_number": "2",
+                "category": "Port Wall",
+                "description": "R.I. Compass De-ground Switch"
+            },
+            "BEAM_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BEAM_SW",
+                "device_id": "4",
+                "command": "3004",
+                "arg_number": "3",
+                "category": "Port Wall",
+                "description": "Beam Approach Switch"
+            },
+            "SCR_PTT": {
+                "type": "ToggleSwitch",
+                "msg": "SCR_PTT",
+                "device_id": "24",
+                "command": "3099",
+                "arg_number": "4",
+                "category": "Port Wall",
+                "description": "SCR-522 PTT Button"
+            },
+            "ELEVATOR_TRIM": {
+                "type": "RockerSwitchMossi",
+                "msg": "ELEVATOR_TRIM",
+                "device_id": "2",
+                "command": "3016",
+                "arg_number": "279",
+                "category": "Port Wall",
+                "description": "Elevator Trim"
+            },
+            "CHART_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "CHART_L_DIM",
+                "device_id": "4",
+                "command": "3095",
+                "arg_number": "303",
+                "limits": "{ 0, 1 }",
+                "category": "Port Wall",
+                "description": "Chart Table Flood Light Dimmer"
+            }
+        },
+        "Radio": {
+            "RADIO_OFF": {
+                "type": "PushButton",
+                "msg": "RADIO_OFF",
+                "device_id": "24",
+                "command": "3001",
+                "arg_number": "32",
+                "category": "Radio",
+                "description": "Radio OFF Button"
+            },
+            "RADIO_A": {
+                "type": "PushButton",
+                "msg": "RADIO_A",
+                "device_id": "24",
+                "command": "3002",
+                "arg_number": "33",
+                "category": "Radio",
+                "description": "Radio A Button"
+            },
+            "RADIO_B": {
+                "type": "PushButton",
+                "msg": "RADIO_B",
+                "device_id": "24",
+                "command": "3003",
+                "arg_number": "34",
+                "category": "Radio",
+                "description": "Radio B Button"
+            },
+            "RADIO_C": {
+                "type": "PushButton",
+                "msg": "RADIO_C",
+                "device_id": "24",
+                "command": "3004",
+                "arg_number": "35",
+                "category": "Radio",
+                "description": "Radio C Button"
+            },
+            "RADIO_D": {
+                "type": "PushButton",
+                "msg": "RADIO_D",
+                "device_id": "24",
+                "command": "3005",
+                "arg_number": "36",
+                "category": "Radio",
+                "description": "Radio D Button"
+            },
+            "RADIO_L_DIM": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_L_DIM",
+                "device_id": "24",
+                "command": "3006",
+                "arg_number": "42",
+                "category": "Radio",
+                "description": "Radio Dimmer Toggle"
+            },
+            "RADIO_TLOCK": {
+                "type": "ToggleSwitch",
+                "msg": "RADIO_TLOCK",
+                "device_id": "24",
+                "command": "3017",
+                "arg_number": "43",
+                "category": "Radio",
+                "description": "Radio Transmit Lock Toggle"
+            },
+            "RADIO_T_MODE": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "RADIO_T_MODE",
+                "device_id": "24",
+                "downSwitch": "3008",
+                "upSwitch": "3007",
+                "arg_number": "44",
+                "category": "Radio",
+                "description": "Radio Mode Switch"
+            },
+            "RADIO_VOL": {
+                "type": "Potentiometer",
+                "msg": "RADIO_VOL",
+                "device_id": "24",
+                "command": "3015",
+                "arg_number": "364",
+                "limits": "{ 0, 1 }",
+                "category": "Radio",
+                "description": "Radio Volume"
+            }
+        },
+        "Throttle Quadrant": {
+            "THROTTLE_FRICTION": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_FRICTION",
+                "device_id": "3",
+                "command": "3030",
+                "arg_number": "25",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Throttle Friction"
+            },
+            "THROTTLE_CONTROL_L": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_CONTROL_L",
+                "device_id": "3",
+                "command": "3020",
+                "arg_number": "288",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Throttles Control L"
+            },
+            "THROTTLE_TRANSIT_L": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_TRANSIT_L",
+                "device_id": "3",
+                "command": "3016",
+                "arg_number": "18",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Throttles Transit L"
+            },
+            "THROTTLE_CONTROL_L_TRIG": {
+                "type": "Rotary",
+                "msg": "THROTTLE_CONTROL_L_TRIG",
+                "device_id": "3",
+                "command": "3014",
+                "arg_number": "20",
+                "category": "Throttle Quadrant",
+                "description": "Throttles Control L Trigger"
+            },
+            "THROTTLE_CONTROL_R": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_CONTROL_R",
+                "device_id": "3",
+                "command": "3023",
+                "arg_number": "289",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Throttles Control R"
+            },
+            "THROTTLE_TRANSIT_R": {
+                "type": "Potentiometer",
+                "msg": "THROTTLE_TRANSIT_R",
+                "device_id": "3",
+                "command": "3017",
+                "arg_number": "19",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Throttles Transit R"
+            },
+            "THROTTLE_CONTROL_R_TRIG": {
+                "type": "Rotary",
+                "msg": "THROTTLE_CONTROL_R_TRIG",
+                "device_id": "3",
+                "command": "3015",
+                "arg_number": "21",
+                "category": "Throttle Quadrant",
+                "description": "Throttles Control R Trigger"
+            },
+            "PROP_FRICTION": {
+                "type": "Potentiometer",
+                "msg": "PROP_FRICTION",
+                "device_id": "3",
+                "command": "3033",
+                "arg_number": "24",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Propeller Friction"
+            },
+            "PROP_CONTROL_L": {
+                "type": "Potentiometer",
+                "msg": "PROP_CONTROL_L",
+                "device_id": "3",
+                "command": "3036",
+                "arg_number": "22",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Propeller Control L"
+            },
+            "PROP_CONTROL_R": {
+                "type": "Potentiometer",
+                "msg": "PROP_CONTROL_R",
+                "device_id": "3",
+                "command": "3039",
+                "arg_number": "23",
+                "limits": "{ 0, 1 }",
+                "category": "Throttle Quadrant",
+                "description": "Propeller Control R"
+            },
+            "MIXTURE": {
+                "type": "ToggleSwitch",
+                "msg": "MIXTURE",
+                "device_id": "3",
+                "command": "3086",
+                "arg_number": "27",
+                "category": "Throttle Quadrant",
+                "description": "Mixture Control"
+            },
+            "SUPERCHARGER": {
+                "type": "ToggleSwitch",
+                "msg": "SUPERCHARGER",
+                "device_id": "4",
+                "command": "3022",
+                "arg_number": "26",
+                "category": "Throttle Quadrant",
+                "description": "Supercharger Gear Change Switch"
+            },
+            "RKT_FIRING_SW": {
+                "type": "PushButton",
+                "msg": "RKT_FIRING_SW",
+                "device_id": "32",
+                "command": "3006",
+                "arg_number": "386",
+                "category": "Throttle Quadrant",
+                "description": "Rockets Firing Switch"
+            },
+            "RKT_MASTER_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RKT_MASTER_SW",
+                "device_id": "32",
+                "command": "3001",
+                "arg_number": "385",
+                "category": "Throttle Quadrant",
+                "description": "Rockets Master Switch"
+            },
+            "RKT_SALVO_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RKT_SALVO_SW",
+                "device_id": "32",
+                "command": "3003",
+                "arg_number": "387",
+                "category": "Throttle Quadrant",
+                "description": "Rockets Salvo Switch"
+            },
+            "RKT_MAN_BTN": {
+                "type": "PushButton",
+                "msg": "RKT_MAN_BTN",
+                "device_id": "32",
+                "command": "3005",
+                "arg_number": "384",
+                "category": "Throttle Quadrant",
+                "description": "Rockets Manual Button"
+            }
+        },
+        "Starboard Wall": {
+            "DOOR_LOCK": {
+                "type": "PushButton",
+                "msg": "DOOR_LOCK",
+                "device_id": "2",
+                "command": "3072",
+                "arg_number": "254",
+                "category": "Starboard Wall",
+                "description": "Door Handle"
+            },
+            "DOOR_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "DOOR_JETT",
+                "device_id": "2",
+                "command": "3073",
+                "arg_number": "324",
+                "category": "Starboard Wall",
+                "description": "Door Jettison Handle"
+            },
+            "DN_IDENT_L_SW": {
+                "type": "Tumb",
+                "msg": "DN_IDENT_L_SW",
+                "device_id": "4",
+                "command": "3075",
+                "arg_number": "160",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Starboard Wall",
+                "description": "Down Ident Lights Switch"
+            },
+            "CAM_GUN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "CAM_GUN_SW",
+                "device_id": "4",
+                "command": "3078",
+                "arg_number": "161",
+                "category": "Starboard Wall",
+                "description": "Camera Gun Switch"
+            },
+            "NAV_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "NAV_L_SW",
+                "device_id": "4",
+                "command": "3080",
+                "arg_number": "162",
+                "category": "Starboard Wall",
+                "description": "Nav Lights Switch"
+            },
+            "UV_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "UV_L_SW",
+                "device_id": "4",
+                "command": "3082",
+                "arg_number": "163",
+                "category": "Starboard Wall",
+                "description": "UV Lighting Switch"
+            },
+            "PITOT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "PITOT_SW",
+                "device_id": "4",
+                "command": "3084",
+                "arg_number": "164",
+                "category": "Starboard Wall",
+                "description": "Pitot Head Switch"
+            },
+            "FUEL_PUMP_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FUEL_PUMP_SW",
+                "device_id": "4",
+                "command": "3086",
+                "arg_number": "165",
+                "category": "Starboard Wall",
+                "description": "Fuel Pump Switch"
+            },
+            "REFLECTOR_SIGHT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "REFLECTOR_SIGHT_SW",
+                "device_id": "4",
+                "command": "3051",
+                "arg_number": "166",
+                "category": "Starboard Wall",
+                "description": "Reflector Sight Switch"
+            },
+            "NAV_HEAD_L_SW": {
+                "type": "Tumb",
+                "msg": "NAV_HEAD_L_SW",
+                "device_id": "4",
+                "command": "3048",
+                "arg_number": "167",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Starboard Wall",
+                "description": "Nav. Head Lamp Switch"
+            },
+            "IFF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_SW",
+                "device_id": "4",
+                "command": "3088",
+                "arg_number": "168",
+                "category": "Starboard Wall",
+                "description": "IFF Switch"
+            },
+            "IFF_DESRUCT_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_DESRUCT_CVR",
+                "device_id": "4",
+                "command": "3036",
+                "arg_number": "169",
+                "category": "Starboard Wall",
+                "description": "IFF Detonator Cover"
+            },
+            "IFF_DESRUCT_L_BTN": {
+                "type": "PushButton",
+                "msg": "IFF_DESRUCT_L_BTN",
+                "device_id": "4",
+                "command": "3038",
+                "arg_number": "170",
+                "category": "Starboard Wall",
+                "description": "IFF Detonator Left Switch"
+            },
+            "IFF_DESRUCT_R_BTN": {
+                "type": "PushButton",
+                "msg": "IFF_DESRUCT_R_BTN",
+                "device_id": "4",
+                "command": "3039",
+                "arg_number": "171",
+                "category": "Starboard Wall",
+                "description": "IFF Detonator Right Switch"
+            },
+            "PORT_EXTG_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_EXTG_CVR",
+                "device_id": "4",
+                "command": "3040",
+                "arg_number": "172",
+                "category": "Starboard Wall",
+                "description": "Extinguisher Switch Cover Port"
+            },
+            "PORT_EXTG_BTN": {
+                "type": "PushButton",
+                "msg": "PORT_EXTG_BTN",
+                "device_id": "4",
+                "command": "3042",
+                "arg_number": "173",
+                "category": "Starboard Wall",
+                "description": "Extinguisher Switch Port"
+            },
+            "STBD_EXTG_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_EXTG_CVR",
+                "device_id": "4",
+                "command": "3043",
+                "arg_number": "174",
+                "category": "Starboard Wall",
+                "description": "Extinguisher Switch Cover Starboard"
+            },
+            "STBD_EXTG_BTN": {
+                "type": "PushButton",
+                "msg": "STBD_EXTG_BTN",
+                "device_id": "4",
+                "command": "3045",
+                "arg_number": "175",
+                "category": "Starboard Wall",
+                "description": "Extinguisher Switch Starboard"
+            },
+            "WIPER_RT": {
+                "type": "Potentiometer",
+                "msg": "WIPER_RT",
+                "device_id": "4",
+                "command": "3033",
+                "arg_number": "176",
+                "limits": "{ 0, 1 }",
+                "category": "Starboard Wall",
+                "description": "Windscreen Wiper Rheostat"
+            },
+            "RESIN_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "RESIN_L_SW",
+                "device_id": "4",
+                "command": "3046",
+                "arg_number": "178",
+                "category": "Starboard Wall",
+                "description": "Resin Lights Switch"
+            },
+            "MORSE_KEY": {
+                "type": "PushButton",
+                "msg": "MORSE_KEY",
+                "device_id": "4",
+                "command": "3068",
+                "arg_number": "157",
+                "category": "Starboard Wall",
+                "description": "Morse Key"
+            },
+            "DOWNWARD_LVR": {
+                "type": "Tumb",
+                "msg": "DOWNWARD_LVR",
+                "device_id": "4",
+                "command": "3069",
+                "arg_number": "158",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Starboard Wall",
+                "description": "Downward Lamp Mode Selector"
+            },
+            "UPWARD_LVR": {
+                "type": "Tumb",
+                "msg": "UPWARD_LVR",
+                "device_id": "4",
+                "command": "3072",
+                "arg_number": "159",
+                "step": "0.5",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Starboard Wall",
+                "description": "Upward Lamp Mode Selector"
+            },
+            "OXY_H_PRESS_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "OXY_H_PRESS_VALVE",
+                "device_id": "2",
+                "command": "3055",
+                "arg_number": "293",
+                "category": "Starboard Wall",
+                "description": "Oxygen High Pressure Valve"
+            },
+            "STBD_OXY_VALVE": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_OXY_VALVE",
+                "device_id": "16",
+                "command": "3003",
+                "arg_number": "187",
+                "category": "Starboard Wall",
+                "description": "Oxygen Regulator Starboard"
+            },
+            "AERIAL_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "AERIAL_BRAKE",
+                "device_id": "31",
+                "command": "3001",
+                "arg_number": "202",
+                "category": "Starboard Wall",
+                "description": "Aerial Winch  Brake Lever"
+            },
+            "AERIAL_WINCH": {
+                "type": "RockerSwitchMossi",
+                "msg": "AERIAL_WINCH",
+                "device_id": "31",
+                "command": "3004",
+                "arg_number": "356",
+                "category": "Starboard Wall",
+                "description": "Aerial Winch Rotary Handle"
+            },
+            "AERIAL_REEL": {
+                "type": "PushButton",
+                "msg": "AERIAL_REEL",
+                "device_id": "31",
+                "command": "3005",
+                "arg_number": "357",
+                "category": "Starboard Wall",
+                "description": "Aerial Winch Reel Lock"
+            },
+            "TRANS_TYPF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "TRANS_TYPF_SW",
+                "device_id": "4",
+                "command": "3113",
+                "arg_number": "307",
+                "category": "Starboard Wall",
+                "description": "Transmitter TypeF Switch"
+            },
+            "LT_T1154_PW": {
+                "type": "ToggleSwitch",
+                "msg": "LT_T1154_PW",
+                "device_id": "28",
+                "command": "3001",
+                "arg_number": "305",
+                "category": "Starboard Wall",
+                "description": "T.1154 R.1155 L.T. Power Unit Switch"
+            },
+            "HT_T1154_PW": {
+                "type": "ToggleSwitch",
+                "msg": "HT_T1154_PW",
+                "device_id": "28",
+                "command": "3003",
+                "arg_number": "306",
+                "category": "Starboard Wall",
+                "description": "T.1154 R.1155 H.T. Power Unit Switch"
+            }
+        },
+        "Lower Fuselage Part": {
+            "PORT_CUT_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_CUT_OUT",
+                "device_id": "3",
+                "command": "3071",
+                "arg_number": "192",
+                "category": "Lower Fuselage Part",
+                "description": "Engine Cut-Out Handle Port"
+            },
+            "STBD_CUT_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_CUT_OUT",
+                "device_id": "3",
+                "command": "3095",
+                "arg_number": "191",
+                "category": "Lower Fuselage Part",
+                "description": "Engine Cut-Out Handle Starboard"
+            },
+            "PORT_FUEL_COCK": {
+                "type": "3PosTumb",
+                "msg": "PORT_FUEL_COCK",
+                "device_id": "3",
+                "command": "3073",
+                "arg_number": "193",
+                "category": "Lower Fuselage Part",
+                "description": "Fuel Cock Port"
+            },
+            "STBD_FUEL_COCK": {
+                "type": "3PosTumb",
+                "msg": "STBD_FUEL_COCK",
+                "device_id": "3",
+                "command": "3076",
+                "arg_number": "194",
+                "category": "Lower Fuselage Part",
+                "description": "Fuel Cock Starboard"
+            },
+            "TRANSFER_COCK_OUT": {
+                "type": "ToggleSwitch",
+                "msg": "TRANSFER_COCK_OUT",
+                "device_id": "3",
+                "command": "3079",
+                "arg_number": "195",
+                "category": "Lower Fuselage Part",
+                "description": "Transfer Fuel Cock"
+            },
+            "PORT_OIL_DILUTION": {
+                "type": "PushButton",
+                "msg": "PORT_OIL_DILUTION",
+                "device_id": "3",
+                "command": "3050",
+                "arg_number": "197",
+                "category": "Lower Fuselage Part",
+                "description": "Oil Dilution Switch Port"
+            },
+            "STBD_OIL_DILUTION": {
+                "type": "PushButton",
+                "msg": "STBD_OIL_DILUTION",
+                "device_id": "3",
+                "command": "3051",
+                "arg_number": "198",
+                "category": "Lower Fuselage Part",
+                "description": "Oil Dilution Switch Starboard"
+            },
+            "TANK_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "TANK_PRESS",
+                "device_id": "3",
+                "command": "3089",
+                "arg_number": "196",
+                "category": "Lower Fuselage Part",
+                "description": "Tank Pressurizing Lever"
+            },
+            "PORT_OIL_SUPPLY": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_OIL_SUPPLY",
+                "device_id": "3",
+                "command": "3091",
+                "arg_number": "200",
+                "category": "Lower Fuselage Part",
+                "description": "Auxiliary Oil Supply Lever Port"
+            },
+            "STBD_OIL_SUPPLY": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_OIL_SUPPLY",
+                "device_id": "3",
+                "command": "3093",
+                "arg_number": "199",
+                "category": "Lower Fuselage Part",
+                "description": "Auxiliary Oil Supply Lever Starboard"
+            },
+            "CABIN_HEATER_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "CABIN_HEATER_LVR",
+                "device_id": "2",
+                "command": "3057",
+                "arg_number": "203",
+                "category": "Lower Fuselage Part",
+                "description": "Cabin Heater Control"
+            },
+            "GUN_HEATER_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "GUN_HEATER_LVR",
+                "device_id": "2",
+                "command": "3059",
+                "arg_number": "204",
+                "category": "Lower Fuselage Part",
+                "description": "Gun Heater Control"
+            },
+            "PORT_ARMREST": {
+                "type": "ToggleSwitch",
+                "msg": "PORT_ARMREST",
+                "device_id": "2",
+                "command": "3020",
+                "arg_number": "256",
+                "category": "Lower Fuselage Part",
+                "description": "Arm Rest Port"
+            },
+            "STBD_ARMREST": {
+                "type": "ToggleSwitch",
+                "msg": "STBD_ARMREST",
+                "device_id": "2",
+                "command": "3061",
+                "arg_number": "257",
+                "category": "Lower Fuselage Part",
+                "description": "Arm Rest Starboard"
+            },
+            "HARNESS_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "HARNESS_LVR",
+                "device_id": "5",
+                "command": "3043",
+                "arg_number": "323",
+                "category": "Lower Fuselage Part",
+                "description": "Arm Rest Port"
+            },
+            "HYDR_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "HYDR_SEL",
+                "device_id": "2",
+                "command": "3069",
+                "arg_number": "333",
+                "category": "Lower Fuselage Part",
+                "description": "Arm Rest Starboard"
+            }
+        },
+        "Quarter": {
+            "DOME_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "DOME_L_DIM",
+                "device_id": "4",
+                "command": "3101",
+                "arg_number": "302",
+                "limits": "{ 0, 1 }",
+                "category": "Quarter",
+                "description": "Roof Dome Light Dimmer"
+            },
+            "LOOP_ANT_L_DIM": {
+                "type": "Potentiometer",
+                "msg": "LOOP_ANT_L_DIM",
+                "device_id": "4",
+                "command": "3092",
+                "arg_number": "17",
+                "limits": "{ 0, 1 }",
+                "category": "Quarter",
+                "description": "Loop Antenna Flood Light Dimmer"
+            },
+            "TYPE_J_SEL": {
+                "type": "Tumb",
+                "msg": "TYPE_J_SEL",
+                "device_id": "25",
+                "command": "3059",
+                "arg_number": "224",
+                "step": "0.5",
+                "limits": "{ -1, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Quarter",
+                "description": "Aerial Selector Switch Type J"
+            },
+            "LOOP_ANT_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "LOOP_ANT_LOCK",
+                "device_id": "25",
+                "command": "3107",
+                "arg_number": "363",
+                "category": "Quarter",
+                "description": "Loop Antenna Lock"
+            },
+            "LOOP_ANT_SCALE": {
+                "type": "Rotary",
+                "msg": "LOOP_ANT_SCALE",
+                "device_id": "25",
+                "command": "3094",
+                "arg_number": "240",
+                "category": "Quarter",
+                "description": "Loop Antenna Scale"
+            },
+            "IFF_CHAN": {
+                "type": "Tumb",
+                "msg": "IFF_CHAN",
+                "device_id": "4",
+                "command": "3059",
+                "arg_number": "224",
+                "step": "0.2",
+                "limits": "{ 0, 1 }",
+                "output_map": "nil",
+                "cycle": "False",
+                "category": "Quarter",
+                "description": "IFF Channel Switch"
+            },
+            "IFF_DETONATE_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_DETONATE_CVR",
+                "device_id": "4",
+                "command": "3107",
+                "arg_number": "363",
+                "category": "Quarter",
+                "description": "IFF Detonate Switch Cover"
+            },
+            "IFF_DETONATE": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_DETONATE",
+                "device_id": "4",
+                "command": "3109",
+                "arg_number": "189",
+                "category": "Quarter",
+                "description": "IFF Detonate Switch"
+            },
+            "IFF_PW": {
+                "type": "ToggleSwitch",
+                "msg": "IFF_PW",
+                "device_id": "4",
+                "command": "3111",
+                "arg_number": "190",
+                "category": "Quarter",
+                "description": "IFF Power Switch"
+            }
+        },
+        "T1154": {
+            "T1154_KEY": {
+                "type": "PushButton",
+                "msg": "T1154_KEY",
+                "device_id": "25",
+                "command": "3001",
+                "arg_number": "365",
+                "category": "T1154",
+                "description": "T.1154 Key"
+            },
+            "T1154_C2": {
+                "type": "Rotary",
+                "msg": "T1154_C2",
+                "device_id": "25",
+                "command": "3002",
+                "arg_number": "358",
+                "category": "T1154",
+                "description": "T.1154 Master Oscillator Tuning Condenser C2"
+            },
+            "T1154_C4": {
+                "type": "Rotary",
+                "msg": "T1154_C4",
+                "device_id": "25",
+                "command": "3005",
+                "arg_number": "359",
+                "category": "T1154",
+                "description": "T.1154 Master Oscillator Tuning Condenser C4"
+            },
+            "T1154_C15": {
+                "type": "Rotary",
+                "msg": "T1154_C15",
+                "device_id": "25",
+                "command": "3008",
+                "arg_number": "360",
+                "category": "T1154",
+                "description": "T.1154 Output Tuning Condenser C15"
+            },
+            "T1154_C16": {
+                "type": "Rotary",
+                "msg": "T1154_C16",
+                "device_id": "25",
+                "command": "3011",
+                "arg_number": "361",
+                "category": "T1154",
+                "description": "T.1154 Output Tuning Condenser C16"
+            },
+            "T1154_C17": {
+                "type": "Rotary",
+                "msg": "T1154_C17",
+                "device_id": "25",
+                "command": "3014",
+                "arg_number": "362",
+                "category": "T1154",
+                "description": "T.1154 Master Oscillator Tuning Condenser C17"
+            },
+            "T1154_C2_B": {
+                "type": "Tumb",
+                "msg": "T1154_C2_B",
+                "device_id": "25",
+                "command": "3017",
+                "arg_number": "212",
+                "step": "0.1",
+                "limits": "{ 0, 0.7 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "T1154",
+                "description": "T.1154 Condenser C2 Presets Knob"
+            },
+            "T1154_C4_B": {
+                "type": "Tumb",
+                "msg": "T1154_C4_B",
+                "device_id": "25",
+                "command": "3020",
+                "arg_number": "211",
+                "step": "0.1",
+                "limits": "{ 0, 0.7 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "T1154",
+                "description": "T.1154 Condenser C4 Presets Knob"
+            },
+            "T1154_C15_B": {
+                "type": "Tumb",
+                "msg": "T1154_C15_B",
+                "device_id": "25",
+                "command": "3023",
+                "arg_number": "213",
+                "step": "0.1",
+                "limits": "{ 0, 0.7 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "T1154",
+                "description": "T.1154 Condenser C15 Presets Knob"
+            },
+            "T1154_C16_B": {
+                "type": "Tumb",
+                "msg": "T1154_C16_B",
+                "device_id": "25",
+                "command": "3026",
+                "arg_number": "214",
+                "step": "0.1",
+                "limits": "{ 0, 0.7 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "T1154",
+                "description": "T.1154 Condenser C16 Presets Knob"
+            },
+            "T1154_C17_B": {
+                "type": "Tumb",
+                "msg": "T1154_C17_B",
+                "device_id": "25",
+                "command": "3029",
+                "arg_number": "210",
+                "step": "0.1",
+                "limits": "{ 0, 0.7 }",
+                "output_map": "nil",
+                "cycle": "True",
+                "category": "T1154",
+                "description": "T.1154 Condenser C17 Presets Knob"
+            },
+            "T1154_C2_V": {
+                "type": "Potentiometer",
+                "msg": "T1154_C2_V",
+                "device_id": "25",
+                "command": "3032",
+                "arg_number": "223",
+                "limits": "{ -1, 1 }",
+                "category": "T1154",
+                "description": "T.1154 Master Oscillator C2 Vernier"
+            },
+            "T1154_C4_V": {
+                "type": "Potentiometer",
+                "msg": "T1154_C4_V",
+                "device_id": "25",
+                "command": "3035",
+                "arg_number": "222",
+                "limits": "{ -1, 1 }",
+                "category": "T1154",
+                "description": "T.1154 Master Oscillator C4 Vernier"
+            },
+            "T1154_FREQ_RANGE": {
+                "type": "MultipositionSwitch",
+                "msg": "T1154_FREQ_RANGE",
+                "device_id": "25",
+                "device_command": "3038",
+                "arg_number": "215",
+                "num_positions": "3",
+                "increment": "0.1",
+                "category": "T1154",
+                "description": "T.1154 Frequency Range Switch S1 S2"
+            },
+            "T1154_S3": {
+                "type": "MultipositionSwitch",
+                "msg": "T1154_S3",
+                "device_id": "25",
+                "device_command": "3041",
+                "arg_number": "216",
+                "num_positions": "9",
+                "increment": "0.1",
+                "category": "T1154",
+                "description": "T.1154 Inductance Tapping Switch S3"
+            },
+            "T1154_S4": {
+                "type": "MultipositionSwitch",
+                "msg": "T1154_S4",
+                "device_id": "25",
+                "device_command": "3044",
+                "arg_number": "217",
+                "num_positions": "9",
+                "increment": "0.1",
+                "category": "T1154",
+                "description": "T.1154 Inductance Tapping Switch S4"
+            },
+            "T1154_S5": {
+                "type": "MultipositionSwitch",
+                "msg": "T1154_S5",
+                "device_id": "25",
+                "device_command": "3047",
+                "arg_number": "218",
+                "num_positions": "6",
+                "increment": "0.1",
+                "category": "T1154",
+                "description": "T.1154 Master Switch S5"
+            },
+            "T1154_S6": {
+                "type": "MultipositionSwitch",
+                "msg": "T1154_S6",
+                "device_id": "25",
+                "device_command": "3050",
+                "arg_number": "219",
+                "num_positions": "17",
+                "increment": "0.05",
+                "category": "T1154",
+                "description": "T.1154 Inductance Tapping Switch S6"
+            },
+            "T1154_S7": {
+                "type": "MultipositionSwitch",
+                "msg": "T1154_S7",
+                "device_id": "25",
+                "device_command": "3053",
+                "arg_number": "220",
+                "num_positions": "17",
+                "increment": "0.05",
+                "category": "T1154",
+                "description": "T.1154 Inductance Tapping Switch S7"
+            },
+            "T1154_L6": {
+                "type": "Potentiometer",
+                "msg": "T1154_L6",
+                "device_id": "25",
+                "command": "3056",
+                "arg_number": "221",
+                "limits": "{ 0, 1 }",
+                "category": "T1154",
+                "description": "T.1154 Output Inductance Control L6"
+            }
+        },
+        "R1155": {
+            "R1155_MASTER": {
+                "type": "MultipositionSwitch",
+                "msg": "R1155_MASTER",
+                "device_id": "25",
+                "device_command": "3062",
+                "arg_number": "238",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "R1155",
+                "description": "R.1155 Master Selector Switch"
+            },
+            "R1155_FREQ": {
+                "type": "MultipositionSwitch",
+                "msg": "R1155_FREQ",
+                "device_id": "25",
+                "device_command": "3065",
+                "arg_number": "231",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "R1155",
+                "description": "R.1155 Frequency Range Switch"
+            },
+            "R1155_VOL": {
+                "type": "Potentiometer",
+                "msg": "R1155_VOL",
+                "device_id": "25",
+                "command": "3068",
+                "arg_number": "229",
+                "limits": "{ 0, 1 }",
+                "category": "R1155",
+                "description": "R.1155 Volume Knob"
+            },
+            "R1155_RANGE_HIGH": {
+                "type": "Rotary",
+                "msg": "R1155_RANGE_HIGH",
+                "device_id": "25",
+                "command": "3071",
+                "arg_number": "233",
+                "category": "R1155",
+                "description": "R.1155 Tuning (Fine)"
+            },
+            "R1155_RANGE_LOW": {
+                "type": "Rotary",
+                "msg": "R1155_RANGE_LOW",
+                "device_id": "25",
+                "command": "3074",
+                "arg_number": "234",
+                "category": "R1155",
+                "description": "R.1155 Tuning (Coarse)"
+            },
+            "R1155_HETI": {
+                "type": "ToggleSwitch",
+                "msg": "R1155_HETI",
+                "device_id": "25",
+                "command": "3077",
+                "arg_number": "230",
+                "category": "R1155",
+                "description": "R.1155 Heterodyne Switch"
+            },
+            "R1155_METER_BAL": {
+                "type": "Potentiometer",
+                "msg": "R1155_METER_BAL",
+                "device_id": "25",
+                "command": "3079",
+                "arg_number": "225",
+                "limits": "{ -1, 1 }",
+                "category": "R1155",
+                "description": "R.1155 Meter Balance Knob"
+            },
+            "R1155_FILTER": {
+                "type": "ToggleSwitch",
+                "msg": "R1155_FILTER",
+                "device_id": "25",
+                "command": "3082",
+                "arg_number": "226",
+                "category": "R1155",
+                "description": "R.1155 Filter Switch"
+            },
+            "R1155_METER_AMP": {
+                "type": "Potentiometer",
+                "msg": "R1155_METER_AMP",
+                "device_id": "25",
+                "command": "3084",
+                "arg_number": "227",
+                "limits": "{ 0, 1 }",
+                "category": "R1155",
+                "description": "R.1155 Meter Amplitude Knob"
+            },
+            "R1155_METER_DEF": {
+                "type": "ToggleSwitch",
+                "msg": "R1155_METER_DEF",
+                "device_id": "25",
+                "command": "3087",
+                "arg_number": "235",
+                "category": "R1155",
+                "description": "R.1155 Meter Deflection Sensitivity Switch"
+            },
+            "R1155_AURAL_SENSE": {
+                "type": "RockerSwitchMossi",
+                "msg": "R1155_AURAL_SENSE",
+                "device_id": "25",
+                "command": "3089",
+                "arg_number": "236",
+                "category": "R1155",
+                "description": "R.1155 Aural Sense Switch"
+            },
+            "R1155_SW_SPEED": {
+                "type": "ToggleSwitch",
+                "msg": "R1155_SW_SPEED",
+                "device_id": "25",
+                "command": "3090",
+                "arg_number": "237",
+                "category": "R1155",
+                "description": "R.1155 Meter Frequency Switch"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "Mosquito",
+        "date": "Dec 23 2024, 17:54 PM -0800",
+        "version": "v0.8.3"
+    }
+}

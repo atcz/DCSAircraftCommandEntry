@@ -1,0 +1,1243 @@
+{
+    "commands": {
+        "Engine System": {
+            "BATT_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BATT_SW",
+                "device_id": "3",
+                "command": "3001",
+                "arg_number": "700",
+                "category": "Engine System",
+                "description": "Battery Switch"
+            },
+            "APU_SW": {
+                "type": "3PosTumb",
+                "msg": "APU_SW",
+                "device_id": "3",
+                "command": "3002",
+                "arg_number": "701",
+                "category": "Engine System",
+                "description": "APU Switch"
+            },
+            "GEN_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GEN_L_SW",
+                "device_id": "3",
+                "command": "3003",
+                "arg_number": "702",
+                "category": "Engine System",
+                "description": "Left Generator Switch"
+            },
+            "GEN_R_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GEN_R_SW",
+                "device_id": "3",
+                "command": "3004",
+                "arg_number": "703",
+                "category": "Engine System",
+                "description": "Right Generator Switch"
+            },
+            "START_L_SW": {
+                "type": "ToggleSwitch",
+                "msg": "START_L_SW",
+                "device_id": "3",
+                "command": "3009",
+                "arg_number": "999",
+                "category": "Engine System",
+                "description": "Left Engine Start"
+            },
+            "START_R_SW": {
+                "type": "ToggleSwitch",
+                "msg": "START_R_SW",
+                "device_id": "3",
+                "command": "3010",
+                "arg_number": "999",
+                "category": "Engine System",
+                "description": "Right Engine Start"
+            },
+            "GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "GEAR",
+                "device_id": "3",
+                "command": "3011",
+                "arg_number": "999",
+                "category": "Engine System",
+                "description": "Landing Gear"
+            },
+            "P_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "P_BRAKE",
+                "device_id": "3",
+                "command": "3012",
+                "arg_number": "710",
+                "category": "Engine System",
+                "description": "Parking Brake"
+            }
+        },
+        "Electrical System": {
+            "AAR_PORT_OPEN": {
+                "type": "ToggleSwitch",
+                "msg": "AAR_PORT_OPEN",
+                "device_id": "2",
+                "command": "3001",
+                "arg_number": "712",
+                "category": "Electrical System",
+                "description": "Open/Close AAR Port"
+            },
+            "AAR_LIGHTS_SW": {
+                "type": "Potentiometer",
+                "msg": "AAR_LIGHTS_SW",
+                "device_id": "2",
+                "command": "3002",
+                "arg_number": "713",
+                "limits": "{ 0, 1 }",
+                "category": "Electrical System",
+                "description": "AAR Lights"
+            },
+            "NAV_LIGHTS_SW": {
+                "type": "MultipositionSwitch",
+                "msg": "NAV_LIGHTS_SW",
+                "device_id": "2",
+                "device_command": "3003",
+                "arg_number": "715",
+                "num_positions": "5",
+                "increment": "0.1",
+                "category": "Electrical System",
+                "description": "Navigation Lights"
+            },
+            "TAXI_LIGHTS_SW": {
+                "type": "3PosTumb",
+                "msg": "TAXI_LIGHTS_SW",
+                "device_id": "2",
+                "command": "3004",
+                "arg_number": "709",
+                "category": "Electrical System",
+                "description": "Taxi/Landing Lights"
+            }
+        },
+        "Weapon System": {
+            "MASTER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "MASTER_ARM",
+                "device_id": "4",
+                "command": "3001",
+                "arg_number": "708",
+                "category": "Weapon System",
+                "description": "Master Arm"
+            },
+            "EMERG_JETT": {
+                "type": "PushButton",
+                "msg": "EMERG_JETT",
+                "device_id": "4",
+                "command": "3002",
+                "arg_number": "711",
+                "category": "Weapon System",
+                "description": "Emergency Jettison"
+            }
+        },
+        "Avionics System": {
+            "MAP_LIGHT_L_SW": {
+                "type": "Potentiometer",
+                "msg": "MAP_LIGHT_L_SW",
+                "device_id": "1",
+                "command": "3001",
+                "arg_number": "716",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "Left Map Light"
+            },
+            "MAP_LIGHT_R_SW": {
+                "type": "Potentiometer",
+                "msg": "MAP_LIGHT_R_SW",
+                "device_id": "1",
+                "command": "3002",
+                "arg_number": "717",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "Right Map Light"
+            },
+            "EJECT_HANDLE": {
+                "type": "PushButton",
+                "msg": "EJECT_HANDLE",
+                "device_id": "1",
+                "command": "3011",
+                "arg_number": "999",
+                "category": "Avionics System",
+                "description": "Eject Handle"
+            },
+            "MFD_BRIGHT_SW": {
+                "type": "Potentiometer",
+                "msg": "MFD_BRIGHT_SW",
+                "device_id": "1",
+                "command": "3003",
+                "arg_number": "704",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "MFD Brightness"
+            },
+            "PFD_BRIGHT_SW": {
+                "type": "Potentiometer",
+                "msg": "PFD_BRIGHT_SW",
+                "device_id": "1",
+                "command": "3004",
+                "arg_number": "705",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "PFD Brightness"
+            },
+            "CONSOLE_LIGHTS_SW": {
+                "type": "Potentiometer",
+                "msg": "CONSOLE_LIGHTS_SW",
+                "device_id": "1",
+                "command": "3005",
+                "arg_number": "706",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "Console Lights"
+            },
+            "FLOOD_LIGHTS_SW": {
+                "type": "Potentiometer",
+                "msg": "FLOOD_LIGHTS_SW",
+                "device_id": "1",
+                "command": "3006",
+                "arg_number": "707",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "Flood Lights"
+            },
+            "FORMATION_LIGHTS_SW": {
+                "type": "Potentiometer",
+                "msg": "FORMATION_LIGHTS_SW",
+                "device_id": "1",
+                "command": "3007",
+                "arg_number": "714",
+                "limits": "{ 0, 1 }",
+                "category": "Avionics System",
+                "description": "Formation Lights"
+            },
+            "DAY_NIGHT_MODE": {
+                "type": "ToggleSwitch",
+                "msg": "DAY_NIGHT_MODE",
+                "device_id": "1",
+                "command": "3008",
+                "arg_number": "718",
+                "category": "Avionics System",
+                "description": "Day/Night Mode"
+            }
+        },
+        "Left UFD": {
+            "SMFD_1_L": {
+                "type": "PushButton",
+                "msg": "SMFD_1_L",
+                "device_id": "1",
+                "command": "3010",
+                "arg_number": "881",
+                "category": "Left UFD",
+                "description": "Left SMFD OSB 1"
+            }
+        },
+        "Right UFD": {
+            "SMFD_1_R": {
+                "type": "PushButton",
+                "msg": "SMFD_1_R",
+                "device_id": "1",
+                "command": "3009",
+                "arg_number": "885",
+                "category": "Right UFD",
+                "description": "SMFD OSB 1"
+            }
+        },
+        "Left MFD": {
+            "MFD_1_L": {
+                "type": "PushButton",
+                "msg": "MFD_1_L",
+                "device_id": "5",
+                "command": "3001",
+                "arg_number": "801",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 1"
+            },
+            "MFD_2_L": {
+                "type": "PushButton",
+                "msg": "MFD_2_L",
+                "device_id": "5",
+                "command": "3002",
+                "arg_number": "802",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 2"
+            },
+            "MFD_3_L": {
+                "type": "PushButton",
+                "msg": "MFD_3_L",
+                "device_id": "5",
+                "command": "3003",
+                "arg_number": "803",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 3"
+            },
+            "MFD_4_L": {
+                "type": "PushButton",
+                "msg": "MFD_4_L",
+                "device_id": "5",
+                "command": "3004",
+                "arg_number": "804",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 4"
+            },
+            "MFD_5_L": {
+                "type": "PushButton",
+                "msg": "MFD_5_L",
+                "device_id": "5",
+                "command": "3005",
+                "arg_number": "805",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 5"
+            },
+            "MFD_6_L": {
+                "type": "PushButton",
+                "msg": "MFD_6_L",
+                "device_id": "5",
+                "command": "3006",
+                "arg_number": "806",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 6"
+            },
+            "MFD_7_L": {
+                "type": "PushButton",
+                "msg": "MFD_7_L",
+                "device_id": "5",
+                "command": "3007",
+                "arg_number": "807",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 7"
+            },
+            "MFD_8_L": {
+                "type": "PushButton",
+                "msg": "MFD_8_L",
+                "device_id": "5",
+                "command": "3008",
+                "arg_number": "808",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 8"
+            },
+            "MFD_9_L": {
+                "type": "PushButton",
+                "msg": "MFD_9_L",
+                "device_id": "5",
+                "command": "3009",
+                "arg_number": "809",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 9"
+            },
+            "MFD_10_L": {
+                "type": "PushButton",
+                "msg": "MFD_10_L",
+                "device_id": "5",
+                "command": "3010",
+                "arg_number": "810",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 10"
+            },
+            "MFD_11_L": {
+                "type": "PushButton",
+                "msg": "MFD_11_L",
+                "device_id": "5",
+                "command": "3011",
+                "arg_number": "811",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 11"
+            },
+            "MFD_12_L": {
+                "type": "PushButton",
+                "msg": "MFD_12_L",
+                "device_id": "5",
+                "command": "3012",
+                "arg_number": "812",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 12"
+            },
+            "MFD_13_L": {
+                "type": "PushButton",
+                "msg": "MFD_13_L",
+                "device_id": "5",
+                "command": "3013",
+                "arg_number": "813",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 13"
+            },
+            "MFD_14_L": {
+                "type": "PushButton",
+                "msg": "MFD_14_L",
+                "device_id": "5",
+                "command": "3014",
+                "arg_number": "814",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 14"
+            },
+            "MFD_15_L": {
+                "type": "PushButton",
+                "msg": "MFD_15_L",
+                "device_id": "5",
+                "command": "3015",
+                "arg_number": "815",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 15"
+            },
+            "MFD_16_L": {
+                "type": "PushButton",
+                "msg": "MFD_16_L",
+                "device_id": "5",
+                "command": "3016",
+                "arg_number": "816",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 16"
+            },
+            "MFD_17_L": {
+                "type": "PushButton",
+                "msg": "MFD_17_L",
+                "device_id": "5",
+                "command": "3017",
+                "arg_number": "817",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 17"
+            },
+            "MFD_18_L": {
+                "type": "PushButton",
+                "msg": "MFD_18_L",
+                "device_id": "5",
+                "command": "3018",
+                "arg_number": "818",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 18"
+            },
+            "MFD_19_L": {
+                "type": "PushButton",
+                "msg": "MFD_19_L",
+                "device_id": "5",
+                "command": "3019",
+                "arg_number": "819",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 19"
+            },
+            "MFD_20_L": {
+                "type": "PushButton",
+                "msg": "MFD_20_L",
+                "device_id": "5",
+                "command": "3020",
+                "arg_number": "820",
+                "category": "Left MFD",
+                "description": "Left MFD OSB 20"
+            }
+        },
+        "PMFD": {
+            "PMFD_1": {
+                "type": "PushButton",
+                "msg": "PMFD_1",
+                "device_id": "6",
+                "command": "3001",
+                "arg_number": "821",
+                "category": "PMFD",
+                "description": "PMFD OSB 1"
+            },
+            "PMFD_2": {
+                "type": "PushButton",
+                "msg": "PMFD_2",
+                "device_id": "6",
+                "command": "3002",
+                "arg_number": "822",
+                "category": "PMFD",
+                "description": "PMFD OSB 2"
+            },
+            "PMFD_3": {
+                "type": "PushButton",
+                "msg": "PMFD_3",
+                "device_id": "6",
+                "command": "3003",
+                "arg_number": "823",
+                "category": "PMFD",
+                "description": "PMFD OSB 3"
+            },
+            "PMFD_4": {
+                "type": "PushButton",
+                "msg": "PMFD_4",
+                "device_id": "6",
+                "command": "3004",
+                "arg_number": "824",
+                "category": "PMFD",
+                "description": "PMFD OSB 4"
+            },
+            "PMFD_5": {
+                "type": "PushButton",
+                "msg": "PMFD_5",
+                "device_id": "6",
+                "command": "3005",
+                "arg_number": "825",
+                "category": "PMFD",
+                "description": "PMFD OSB 5"
+            },
+            "PMFD_6": {
+                "type": "PushButton",
+                "msg": "PMFD_6",
+                "device_id": "6",
+                "command": "3006",
+                "arg_number": "826",
+                "category": "PMFD",
+                "description": "PMFD OSB 6"
+            },
+            "PMFD_7": {
+                "type": "PushButton",
+                "msg": "PMFD_7",
+                "device_id": "6",
+                "command": "3007",
+                "arg_number": "827",
+                "category": "PMFD",
+                "description": "PMFD OSB 7"
+            },
+            "PMFD_8": {
+                "type": "PushButton",
+                "msg": "PMFD_8",
+                "device_id": "6",
+                "command": "3008",
+                "arg_number": "828",
+                "category": "PMFD",
+                "description": "PMFD OSB 8"
+            },
+            "PMFD_9": {
+                "type": "PushButton",
+                "msg": "PMFD_9",
+                "device_id": "6",
+                "command": "3009",
+                "arg_number": "829",
+                "category": "PMFD",
+                "description": "PMFD OSB 9"
+            },
+            "PMFD_10": {
+                "type": "PushButton",
+                "msg": "PMFD_10",
+                "device_id": "6",
+                "command": "3010",
+                "arg_number": "830",
+                "category": "PMFD",
+                "description": "PMFD OSB 10"
+            },
+            "PMFD_11": {
+                "type": "PushButton",
+                "msg": "PMFD_11",
+                "device_id": "6",
+                "command": "3011",
+                "arg_number": "831",
+                "category": "PMFD",
+                "description": "PMFD OSB 11"
+            },
+            "PMFD_12": {
+                "type": "PushButton",
+                "msg": "PMFD_12",
+                "device_id": "6",
+                "command": "3012",
+                "arg_number": "832",
+                "category": "PMFD",
+                "description": "PMFD OSB 12"
+            },
+            "PMFD_13": {
+                "type": "PushButton",
+                "msg": "PMFD_13",
+                "device_id": "6",
+                "command": "3013",
+                "arg_number": "833",
+                "category": "PMFD",
+                "description": "PMFD OSB 13"
+            },
+            "PMFD_14": {
+                "type": "PushButton",
+                "msg": "PMFD_14",
+                "device_id": "6",
+                "command": "3014",
+                "arg_number": "834",
+                "category": "PMFD",
+                "description": "PMFD OSB 14"
+            },
+            "PMFD_15": {
+                "type": "PushButton",
+                "msg": "PMFD_15",
+                "device_id": "6",
+                "command": "3015",
+                "arg_number": "835",
+                "category": "PMFD",
+                "description": "PMFD OSB 15"
+            },
+            "PMFD_16": {
+                "type": "PushButton",
+                "msg": "PMFD_16",
+                "device_id": "6",
+                "command": "3016",
+                "arg_number": "836",
+                "category": "PMFD",
+                "description": "PMFD OSB 16"
+            },
+            "PMFD_17": {
+                "type": "PushButton",
+                "msg": "PMFD_17",
+                "device_id": "6",
+                "command": "3017",
+                "arg_number": "837",
+                "category": "PMFD",
+                "description": "PMFD OSB 17"
+            },
+            "PMFD_18": {
+                "type": "PushButton",
+                "msg": "PMFD_18",
+                "device_id": "6",
+                "command": "3018",
+                "arg_number": "838",
+                "category": "PMFD",
+                "description": "PMFD OSB 18"
+            },
+            "PMFD_19": {
+                "type": "PushButton",
+                "msg": "PMFD_19",
+                "device_id": "6",
+                "command": "3019",
+                "arg_number": "839",
+                "category": "PMFD",
+                "description": "PMFD OSB 19"
+            },
+            "PMFD_20": {
+                "type": "PushButton",
+                "msg": "PMFD_20",
+                "device_id": "6",
+                "command": "3020",
+                "arg_number": "840",
+                "category": "PMFD",
+                "description": "PMFD OSB 20"
+            }
+        },
+        "Right MFD": {
+            "MFD_1_R": {
+                "type": "PushButton",
+                "msg": "MFD_1_R",
+                "device_id": "5",
+                "command": "3021",
+                "arg_number": "841",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 1"
+            },
+            "MFD_2_R": {
+                "type": "PushButton",
+                "msg": "MFD_2_R",
+                "device_id": "5",
+                "command": "3022",
+                "arg_number": "842",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 2"
+            },
+            "MFD_3_R": {
+                "type": "PushButton",
+                "msg": "MFD_3_R",
+                "device_id": "5",
+                "command": "3023",
+                "arg_number": "843",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 3"
+            },
+            "MFD_4_R": {
+                "type": "PushButton",
+                "msg": "MFD_4_R",
+                "device_id": "5",
+                "command": "3024",
+                "arg_number": "844",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 4"
+            },
+            "MFD_5_R": {
+                "type": "PushButton",
+                "msg": "MFD_5_R",
+                "device_id": "5",
+                "command": "3025",
+                "arg_number": "845",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 5"
+            },
+            "MFD_6_R": {
+                "type": "PushButton",
+                "msg": "MFD_6_R",
+                "device_id": "5",
+                "command": "3026",
+                "arg_number": "846",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 6"
+            },
+            "MFD_7_R": {
+                "type": "PushButton",
+                "msg": "MFD_7_R",
+                "device_id": "5",
+                "command": "3027",
+                "arg_number": "847",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 7"
+            },
+            "MFD_8_R": {
+                "type": "PushButton",
+                "msg": "MFD_8_R",
+                "device_id": "5",
+                "command": "3028",
+                "arg_number": "848",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 8"
+            },
+            "MFD_9_R": {
+                "type": "PushButton",
+                "msg": "MFD_9_R",
+                "device_id": "5",
+                "command": "3029",
+                "arg_number": "849",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 9"
+            },
+            "MFD_10_R": {
+                "type": "PushButton",
+                "msg": "MFD_10_R",
+                "device_id": "5",
+                "command": "3030",
+                "arg_number": "850",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 10"
+            },
+            "MFD_11_R": {
+                "type": "PushButton",
+                "msg": "MFD_11_R",
+                "device_id": "5",
+                "command": "3031",
+                "arg_number": "851",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 11"
+            },
+            "MFD_12_R": {
+                "type": "PushButton",
+                "msg": "MFD_12_R",
+                "device_id": "5",
+                "command": "3032",
+                "arg_number": "852",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 12"
+            },
+            "MFD_13_R": {
+                "type": "PushButton",
+                "msg": "MFD_13_R",
+                "device_id": "5",
+                "command": "3033",
+                "arg_number": "853",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 13"
+            },
+            "MFD_14_R": {
+                "type": "PushButton",
+                "msg": "MFD_14_R",
+                "device_id": "5",
+                "command": "3034",
+                "arg_number": "854",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 14"
+            },
+            "MFD_15_R": {
+                "type": "PushButton",
+                "msg": "MFD_15_R",
+                "device_id": "5",
+                "command": "3035",
+                "arg_number": "855",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 15"
+            },
+            "MFD_16_R": {
+                "type": "PushButton",
+                "msg": "MFD_16_R",
+                "device_id": "5",
+                "command": "3036",
+                "arg_number": "856",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 16"
+            },
+            "MFD_17_R": {
+                "type": "PushButton",
+                "msg": "MFD_17_R",
+                "device_id": "5",
+                "command": "3037",
+                "arg_number": "857",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 17"
+            },
+            "MFD_18_R": {
+                "type": "PushButton",
+                "msg": "MFD_18_R",
+                "device_id": "5",
+                "command": "3038",
+                "arg_number": "858",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 18"
+            },
+            "MFD_19_R": {
+                "type": "PushButton",
+                "msg": "MFD_19_R",
+                "device_id": "5",
+                "command": "3039",
+                "arg_number": "859",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 19"
+            },
+            "MFD_20_R": {
+                "type": "PushButton",
+                "msg": "MFD_20_R",
+                "device_id": "5",
+                "command": "3040",
+                "arg_number": "860",
+                "category": "Right MFD",
+                "description": "Right MFD OSB 20"
+            }
+        },
+        "Center MFD": {
+            "MFD_1_C": {
+                "type": "PushButton",
+                "msg": "MFD_1_C",
+                "device_id": "5",
+                "command": "3041",
+                "arg_number": "861",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 1"
+            },
+            "MFD_2_C": {
+                "type": "PushButton",
+                "msg": "MFD_2_C",
+                "device_id": "5",
+                "command": "3042",
+                "arg_number": "862",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 2"
+            },
+            "MFD_3_C": {
+                "type": "PushButton",
+                "msg": "MFD_3_C",
+                "device_id": "5",
+                "command": "3043",
+                "arg_number": "863",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 3"
+            },
+            "MFD_4_C": {
+                "type": "PushButton",
+                "msg": "MFD_4_C",
+                "device_id": "5",
+                "command": "3044",
+                "arg_number": "864",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 4"
+            },
+            "MFD_5_C": {
+                "type": "PushButton",
+                "msg": "MFD_5_C",
+                "device_id": "5",
+                "command": "3045",
+                "arg_number": "865",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 5"
+            },
+            "MFD_6_C": {
+                "type": "PushButton",
+                "msg": "MFD_6_C",
+                "device_id": "5",
+                "command": "3046",
+                "arg_number": "866",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 6"
+            },
+            "MFD_7_C": {
+                "type": "PushButton",
+                "msg": "MFD_7_C",
+                "device_id": "5",
+                "command": "3047",
+                "arg_number": "867",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 7"
+            },
+            "MFD_8_C": {
+                "type": "PushButton",
+                "msg": "MFD_8_C",
+                "device_id": "5",
+                "command": "3048",
+                "arg_number": "868",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 8"
+            },
+            "MFD_9_C": {
+                "type": "PushButton",
+                "msg": "MFD_9_C",
+                "device_id": "5",
+                "command": "3049",
+                "arg_number": "869",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 9"
+            },
+            "MFD_10_C": {
+                "type": "PushButton",
+                "msg": "MFD_10_C",
+                "device_id": "5",
+                "command": "3050",
+                "arg_number": "870",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 10"
+            },
+            "MFD_11_C": {
+                "type": "PushButton",
+                "msg": "MFD_11_C",
+                "device_id": "5",
+                "command": "3051",
+                "arg_number": "871",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 11"
+            },
+            "MFD_12_C": {
+                "type": "PushButton",
+                "msg": "MFD_12_C",
+                "device_id": "5",
+                "command": "3052",
+                "arg_number": "872",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 12"
+            },
+            "MFD_13_C": {
+                "type": "PushButton",
+                "msg": "MFD_13_C",
+                "device_id": "5",
+                "command": "3053",
+                "arg_number": "873",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 13"
+            },
+            "MFD_14_C": {
+                "type": "PushButton",
+                "msg": "MFD_14_C",
+                "device_id": "5",
+                "command": "3054",
+                "arg_number": "874",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 14"
+            },
+            "MFD_15_C": {
+                "type": "PushButton",
+                "msg": "MFD_15_C",
+                "device_id": "5",
+                "command": "3055",
+                "arg_number": "875",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 15"
+            },
+            "MFD_16_C": {
+                "type": "PushButton",
+                "msg": "MFD_16_C",
+                "device_id": "5",
+                "command": "3056",
+                "arg_number": "876",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 16"
+            },
+            "MFD_17_C": {
+                "type": "PushButton",
+                "msg": "MFD_17_C",
+                "device_id": "5",
+                "command": "3057",
+                "arg_number": "877",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 17"
+            },
+            "MFD_18_C": {
+                "type": "PushButton",
+                "msg": "MFD_18_C",
+                "device_id": "5",
+                "command": "3058",
+                "arg_number": "878",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 18"
+            },
+            "MFD_19_C": {
+                "type": "PushButton",
+                "msg": "MFD_19_C",
+                "device_id": "5",
+                "command": "3059",
+                "arg_number": "879",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 19"
+            },
+            "MFD_20_C": {
+                "type": "PushButton",
+                "msg": "MFD_20_C",
+                "device_id": "5",
+                "command": "3060",
+                "arg_number": "880",
+                "category": "Center MFD",
+                "description": "Center MFD OSB 20"
+            }
+        },
+        "ICP System": {
+            "ICP_COM1": {
+                "type": "PushButton",
+                "msg": "ICP_COM1",
+                "device_id": "7",
+                "command": "3001",
+                "arg_number": "889",
+                "category": "ICP System",
+                "description": "ICP Com 1"
+            },
+            "ICP_COM2": {
+                "type": "PushButton",
+                "msg": "ICP_COM2",
+                "device_id": "7",
+                "command": "3002",
+                "arg_number": "890",
+                "category": "ICP System",
+                "description": "ICP Com 2"
+            },
+            "ICP_NAV": {
+                "type": "PushButton",
+                "msg": "ICP_NAV",
+                "device_id": "7",
+                "command": "3003",
+                "arg_number": "891",
+                "category": "ICP System",
+                "description": "ICP NAV"
+            },
+            "ICP_STPT": {
+                "type": "PushButton",
+                "msg": "ICP_STPT",
+                "device_id": "7",
+                "command": "3004",
+                "arg_number": "892",
+                "category": "ICP System",
+                "description": "ICP STPT"
+            },
+            "ICP_ALT": {
+                "type": "PushButton",
+                "msg": "ICP_ALT",
+                "device_id": "7",
+                "command": "3005",
+                "arg_number": "894",
+                "category": "ICP System",
+                "description": "ICP ALT"
+            },
+            "ICP_HUD": {
+                "type": "PushButton",
+                "msg": "ICP_HUD",
+                "device_id": "7",
+                "command": "3006",
+                "arg_number": "895",
+                "category": "ICP System",
+                "description": "ICP HUD"
+            },
+            "ICP_OTHR": {
+                "type": "PushButton",
+                "msg": "ICP_OTHR",
+                "device_id": "7",
+                "command": "3007",
+                "arg_number": "896",
+                "category": "ICP System",
+                "description": "ICP OTHR"
+            },
+            "ICP_OPT1": {
+                "type": "PushButton",
+                "msg": "ICP_OPT1",
+                "device_id": "7",
+                "command": "3008",
+                "arg_number": "898",
+                "category": "ICP System",
+                "description": "ICP Option 1"
+            },
+            "ICP_OPT2": {
+                "type": "PushButton",
+                "msg": "ICP_OPT2",
+                "device_id": "7",
+                "command": "3009",
+                "arg_number": "899",
+                "category": "ICP System",
+                "description": "ICP Option 2"
+            },
+            "ICP_OPT3": {
+                "type": "PushButton",
+                "msg": "ICP_OPT3",
+                "device_id": "7",
+                "command": "3010",
+                "arg_number": "900",
+                "category": "ICP System",
+                "description": "ICP Option 3"
+            },
+            "ICP_OPT4": {
+                "type": "PushButton",
+                "msg": "ICP_OPT4",
+                "device_id": "7",
+                "command": "3011",
+                "arg_number": "901",
+                "category": "ICP System",
+                "description": "ICP Option 4"
+            },
+            "ICP_OPT5": {
+                "type": "PushButton",
+                "msg": "ICP_OPT5",
+                "device_id": "7",
+                "command": "3012",
+                "arg_number": "902",
+                "category": "ICP System",
+                "description": "ICP Option 5"
+            },
+            "ICP_ROCKER": {
+                "type": "RockerSwitch",
+                "msg": "ICP_ROCKER",
+                "device_id": "7",
+                "pos_command": "3013",
+                "pos_stop_command": "3013",
+                "neg_command": "3014",
+                "neg_stop_command": "3014",
+                "arg_number": "903",
+                "category": "ICP System",
+                "description": "ICP Rocker Switch Up/Down"
+            },
+            "ICP_AP": {
+                "type": "PushButton",
+                "msg": "ICP_AP",
+                "device_id": "7",
+                "command": "3015",
+                "arg_number": "904",
+                "category": "ICP System",
+                "description": "ICP Autopilot"
+            },
+            "ICP_1": {
+                "type": "PushButton",
+                "msg": "ICP_1",
+                "device_id": "7",
+                "command": "3017",
+                "arg_number": "906",
+                "category": "ICP System",
+                "description": "ICP 1"
+            },
+            "ICP_2": {
+                "type": "PushButton",
+                "msg": "ICP_2",
+                "device_id": "7",
+                "command": "3018",
+                "arg_number": "907",
+                "category": "ICP System",
+                "description": "ICP 2"
+            },
+            "ICP_3": {
+                "type": "PushButton",
+                "msg": "ICP_3",
+                "device_id": "7",
+                "command": "3019",
+                "arg_number": "908",
+                "category": "ICP System",
+                "description": "ICP 3"
+            },
+            "ICP_4": {
+                "type": "PushButton",
+                "msg": "ICP_4",
+                "device_id": "7",
+                "command": "3020",
+                "arg_number": "909",
+                "category": "ICP System",
+                "description": "ICP 4"
+            },
+            "ICP_5": {
+                "type": "PushButton",
+                "msg": "ICP_5",
+                "device_id": "7",
+                "command": "3021",
+                "arg_number": "910",
+                "category": "ICP System",
+                "description": "ICP 5"
+            },
+            "ICP_6": {
+                "type": "PushButton",
+                "msg": "ICP_6",
+                "device_id": "7",
+                "command": "3022",
+                "arg_number": "911",
+                "category": "ICP System",
+                "description": "ICP 6"
+            },
+            "ICP_7": {
+                "type": "PushButton",
+                "msg": "ICP_7",
+                "device_id": "7",
+                "command": "3023",
+                "arg_number": "912",
+                "category": "ICP System",
+                "description": "ICP 7"
+            },
+            "ICP_8": {
+                "type": "PushButton",
+                "msg": "ICP_8",
+                "device_id": "7",
+                "command": "3024",
+                "arg_number": "913",
+                "category": "ICP System",
+                "description": "ICP 8"
+            },
+            "ICP_9": {
+                "type": "PushButton",
+                "msg": "ICP_9",
+                "device_id": "7",
+                "command": "3025",
+                "arg_number": "914",
+                "category": "ICP System",
+                "description": "ICP 9"
+            },
+            "ICP_CLR": {
+                "type": "PushButton",
+                "msg": "ICP_CLR",
+                "device_id": "7",
+                "command": "3026",
+                "arg_number": "915",
+                "category": "ICP System",
+                "description": "ICP CLR"
+            },
+            "ICP_0": {
+                "type": "PushButton",
+                "msg": "ICP_0",
+                "device_id": "7",
+                "command": "3027",
+                "arg_number": "916",
+                "category": "ICP System",
+                "description": "ICP 0"
+            },
+            "ICP_UNDO": {
+                "type": "PushButton",
+                "msg": "ICP_UNDO",
+                "device_id": "7",
+                "command": "3028",
+                "arg_number": "917",
+                "category": "ICP System",
+                "description": "ICP UNDO"
+            },
+            "ICP_WHEEL_UP": {
+                "type": "Potentiometer",
+                "msg": "ICP_WHEEL_UP",
+                "device_id": "7",
+                "command": "3029",
+                "arg_number": "918",
+                "limits": "{ 0, 1 }",
+                "category": "ICP System",
+                "description": "ICP Wheel Up"
+            },
+            "ICP_WHEEL_DWN": {
+                "type": "Potentiometer",
+                "msg": "ICP_WHEEL_DWN",
+                "device_id": "7",
+                "command": "3030",
+                "arg_number": "918",
+                "limits": "{ 0, 1 }",
+                "category": "ICP System",
+                "description": "ICP Wheel Down"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "F-22A",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}

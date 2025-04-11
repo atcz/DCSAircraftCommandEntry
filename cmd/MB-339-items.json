@@ -1,0 +1,3748 @@
+{
+    "commands": {
+        "Circuit Breakers": {
+            "CB_IFF": {
+                "type": "ToggleSwitch",
+                "msg": "CB_IFF",
+                "device_id": "1",
+                "command": "3911",
+                "arg_number": "1114",
+                "category": "Circuit Breakers",
+                "description": "C/B IFF"
+            },
+            "CB_HYD_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_HYD_PRESS",
+                "device_id": "1",
+                "command": "3912",
+                "arg_number": "1115",
+                "category": "Circuit Breakers",
+                "description": "C/B Hyd Press"
+            },
+            "CB_OIL_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_OIL_PRESS",
+                "device_id": "1",
+                "command": "3913",
+                "arg_number": "1116",
+                "category": "Circuit Breakers",
+                "description": "C/B Oil Press"
+            },
+            "CB_ADI": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ADI",
+                "device_id": "1",
+                "command": "3915",
+                "arg_number": "1122",
+                "category": "Circuit Breakers",
+                "description": "C/B ADI"
+            },
+            "CB_SIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SIGHT",
+                "device_id": "1",
+                "command": "3917",
+                "arg_number": "1124",
+                "category": "Circuit Breakers",
+                "description": "C/B Sight"
+            },
+            "CB_AHR_GPS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AHR_GPS",
+                "device_id": "1",
+                "command": "3918",
+                "arg_number": "1125",
+                "category": "Circuit Breakers",
+                "description": "C/B AHR/GPS"
+            },
+            "CB_FORM_LT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FORM_LT",
+                "device_id": "1",
+                "command": "3923",
+                "arg_number": "1134",
+                "category": "Circuit Breakers",
+                "description": "C/B Form Lt"
+            },
+            "CB_AHR_GPS2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AHR_GPS2",
+                "device_id": "1",
+                "command": "3924",
+                "arg_number": "1135",
+                "category": "Circuit Breakers",
+                "description": "C/B AHR/GPS"
+            },
+            "CB_STBY_ATT_FWD": {
+                "type": "ToggleSwitch",
+                "msg": "CB_STBY_ATT_FWD",
+                "device_id": "1",
+                "command": "3929",
+                "arg_number": "1213",
+                "category": "Circuit Breakers",
+                "description": "C/B Fwd Stby Att Ind"
+            },
+            "CB_STBY_ATT_AFT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_STBY_ATT_AFT",
+                "device_id": "1",
+                "command": "3930",
+                "arg_number": "1214",
+                "category": "Circuit Breakers",
+                "description": "C/B Aft Stby Att Ind"
+            },
+            "CB_COMM2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_COMM2",
+                "device_id": "1",
+                "command": "3931",
+                "arg_number": "1215",
+                "category": "Circuit Breakers",
+                "description": "C/B COMM2"
+            },
+            "CB_IFF_2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_IFF_2",
+                "device_id": "1",
+                "command": "3933",
+                "arg_number": "1217",
+                "category": "Circuit Breakers",
+                "description": "C/B IFF 2"
+            },
+            "CB_WING_FLAP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WING_FLAP",
+                "device_id": "1",
+                "command": "3934",
+                "arg_number": "1221",
+                "category": "Circuit Breakers",
+                "description": "C/B Wing Flap"
+            },
+            "CB_SPD_BRAKE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SPD_BRAKE",
+                "device_id": "1",
+                "command": "3935",
+                "arg_number": "1222",
+                "category": "Circuit Breakers",
+                "description": "C/B Spd Brake"
+            },
+            "CB_POS_IND": {
+                "type": "ToggleSwitch",
+                "msg": "CB_POS_IND",
+                "device_id": "1",
+                "command": "3936",
+                "arg_number": "1223",
+                "category": "Circuit Breakers",
+                "description": "C/B Pos Ind"
+            },
+            "CB_LG": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LG",
+                "device_id": "1",
+                "command": "3937",
+                "arg_number": "1224",
+                "category": "Circuit Breakers",
+                "description": "C/B LG"
+            },
+            "CB_LG_DN_MON": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LG_DN_MON",
+                "device_id": "1",
+                "command": "3938",
+                "arg_number": "1225",
+                "category": "Circuit Breakers",
+                "description": "C/B LG Down Mon"
+            },
+            "CB_FUEL_QTY": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_QTY",
+                "device_id": "1",
+                "command": "3939",
+                "arg_number": "1226",
+                "category": "Circuit Breakers",
+                "description": "C/B Fuel Qty"
+            },
+            "CB_JPT_IND": {
+                "type": "ToggleSwitch",
+                "msg": "CB_JPT_IND",
+                "device_id": "1",
+                "command": "3940",
+                "arg_number": "1227",
+                "category": "Circuit Breakers",
+                "description": "C/B Jpt Ind"
+            },
+            "CB_AIR_COND": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AIR_COND",
+                "device_id": "1",
+                "command": "3941",
+                "arg_number": "1231",
+                "category": "Circuit Breakers",
+                "description": "C/B Air Cond"
+            },
+            "CB_ENG_START": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ENG_START",
+                "device_id": "1",
+                "command": "3942",
+                "arg_number": "1232",
+                "category": "Circuit Breakers",
+                "description": "C/B Eng Start"
+            },
+            "CB_DUMP_OFF": {
+                "type": "ToggleSwitch",
+                "msg": "CB_DUMP_OFF",
+                "device_id": "1",
+                "command": "3946",
+                "arg_number": "1236",
+                "category": "Circuit Breakers",
+                "description": "C/B Dump Shut-Off"
+            },
+            "CB_OXY_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_OXY_PRESS",
+                "device_id": "1",
+                "command": "3949",
+                "arg_number": "1242",
+                "category": "Circuit Breakers",
+                "description": "C/B Oxy Press"
+            },
+            "CB_ARMT_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ARMT_SEL",
+                "device_id": "1",
+                "command": "3950",
+                "arg_number": "1243",
+                "category": "Circuit Breakers",
+                "description": "C/B Armt Sel"
+            },
+            "CB_FUEL_PUMP": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_PUMP",
+                "device_id": "1",
+                "command": "3951",
+                "arg_number": "1244",
+                "category": "Circuit Breakers",
+                "description": "C/B Fuel Pump"
+            },
+            "CB_STORE_JETT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_STORE_JETT",
+                "device_id": "1",
+                "command": "3952",
+                "arg_number": "1245",
+                "category": "Circuit Breakers",
+                "description": "C/B Store Jett"
+            },
+            "CB_INV_MAIN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INV_MAIN",
+                "device_id": "1",
+                "command": "3953",
+                "arg_number": "1246",
+                "category": "Circuit Breakers",
+                "description": "C/B Main Inv"
+            },
+            "CB_INV_STBY": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INV_STBY",
+                "device_id": "1",
+                "command": "3954",
+                "arg_number": "1247",
+                "category": "Circuit Breakers",
+                "description": "C/B Stby Inv"
+            },
+            "CB_TRIM_A_E": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TRIM_A_E",
+                "device_id": "1",
+                "command": "3955",
+                "arg_number": "1251",
+                "category": "Circuit Breakers",
+                "description": "C/B Ail & Elev Trim"
+            },
+            "CB_AIL_SERVO": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AIL_SERVO",
+                "device_id": "1",
+                "command": "3956",
+                "arg_number": "1252",
+                "category": "Circuit Breakers",
+                "description": "C/B Ail Servo"
+            },
+            "CB_CAUTION_L": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CAUTION_L",
+                "device_id": "1",
+                "command": "3957",
+                "arg_number": "1253",
+                "category": "Circuit Breakers",
+                "description": "C/B Caution Lt"
+            },
+            "CB_INV_CONTR_MAIN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INV_CONTR_MAIN",
+                "device_id": "1",
+                "command": "3959",
+                "arg_number": "1255",
+                "category": "Circuit Breakers",
+                "description": "C/B Main Inv Contr"
+            },
+            "CB_INV_CONTR_STBY": {
+                "type": "ToggleSwitch",
+                "msg": "CB_INV_CONTR_STBY",
+                "device_id": "1",
+                "command": "3961",
+                "arg_number": "1257",
+                "category": "Circuit Breakers",
+                "description": "C/B Stby Inv Contr"
+            },
+            "CB_ANTI_SKID": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ANTI_SKID",
+                "device_id": "1",
+                "command": "3962",
+                "arg_number": "1411",
+                "category": "Circuit Breakers",
+                "description": "C/B Anti-Skid"
+            },
+            "CB_AC_PRI_BUS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AC_PRI_BUS",
+                "device_id": "1",
+                "command": "3963",
+                "arg_number": "1412",
+                "category": "Circuit Breakers",
+                "description": "C/B AC Pri Bus"
+            },
+            "CB_LDG_L_MTR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LDG_L_MTR",
+                "device_id": "1",
+                "command": "3965",
+                "arg_number": "1414",
+                "category": "Circuit Breakers",
+                "description": "C/B Ldg Lt Mtr"
+            },
+            "CB_BCN": {
+                "type": "ToggleSwitch",
+                "msg": "CB_BCN",
+                "device_id": "1",
+                "command": "3966",
+                "arg_number": "1415",
+                "category": "Circuit Breakers",
+                "description": "C/B Bcn"
+            },
+            "CB_NAV_L": {
+                "type": "ToggleSwitch",
+                "msg": "CB_NAV_L",
+                "device_id": "1",
+                "command": "3967",
+                "arg_number": "1416",
+                "category": "Circuit Breakers",
+                "description": "C/B Nav Lt"
+            },
+            "CB_AOA": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AOA",
+                "device_id": "1",
+                "command": "3973",
+                "arg_number": "1431",
+                "category": "Circuit Breakers",
+                "description": "C/B AOA"
+            },
+            "CB_NW_STEER": {
+                "type": "ToggleSwitch",
+                "msg": "CB_NW_STEER",
+                "device_id": "1",
+                "command": "3974",
+                "arg_number": "1432",
+                "category": "Circuit Breakers",
+                "description": "C/B NW Steer"
+            },
+            "CB_JPT_LIMIT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_JPT_LIMIT",
+                "device_id": "1",
+                "command": "3975",
+                "arg_number": "1433",
+                "category": "Circuit Breakers",
+                "description": "C/B JPT Limiter"
+            },
+            "CB_FUEL_FLOW_IND": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_FLOW_IND",
+                "device_id": "1",
+                "command": "3977",
+                "arg_number": "1435",
+                "category": "Circuit Breakers",
+                "description": "C/B Fuel Flow ind"
+            },
+            "CB_FUEL_TRANS": {
+                "type": "ToggleSwitch",
+                "msg": "CB_FUEL_TRANS",
+                "device_id": "1",
+                "command": "3978",
+                "arg_number": "1436",
+                "category": "Circuit Breakers",
+                "description": "C/B Fuel Trans"
+            },
+            "CB_TRIM_R": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TRIM_R",
+                "device_id": "1",
+                "command": "3979",
+                "arg_number": "1437",
+                "category": "Circuit Breakers",
+                "description": "C/B Rud Trim"
+            },
+            "CB_TAXI_L": {
+                "type": "ToggleSwitch",
+                "msg": "CB_TAXI_L",
+                "device_id": "1",
+                "command": "3982",
+                "arg_number": "1445",
+                "category": "Circuit Breakers",
+                "description": "C/B Taxi Lt"
+            },
+            "CB_LDG_L": {
+                "type": "ToggleSwitch",
+                "msg": "CB_LDG_L",
+                "device_id": "1",
+                "command": "3983",
+                "arg_number": "1446",
+                "category": "Circuit Breakers",
+                "description": "C/B Ldg Lt"
+            },
+            "CB_PITOT_FWD": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PITOT_FWD",
+                "device_id": "1",
+                "command": "3984",
+                "arg_number": "1452",
+                "category": "Circuit Breakers",
+                "description": "C/B Fwd Pitot"
+            },
+            "CB_PITOT_AFT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_PITOT_AFT",
+                "device_id": "1",
+                "command": "3985",
+                "arg_number": "1453",
+                "category": "Circuit Breakers",
+                "description": "C/B Aft Pitot"
+            },
+            "CB_ENG_ANTI_ICE": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ENG_ANTI_ICE",
+                "device_id": "1",
+                "command": "3986",
+                "arg_number": "1454",
+                "category": "Circuit Breakers",
+                "description": "C/B Engine Anti-Ice"
+            },
+            "CB_WHSLD_DEM": {
+                "type": "ToggleSwitch",
+                "msg": "CB_WHSLD_DEM",
+                "device_id": "1",
+                "command": "3987",
+                "arg_number": "1455",
+                "category": "Circuit Breakers",
+                "description": "C/B Whsld Dem"
+            },
+            "CB_ICE_DETR": {
+                "type": "ToggleSwitch",
+                "msg": "CB_ICE_DETR",
+                "device_id": "1",
+                "command": "3988",
+                "arg_number": "1456",
+                "category": "Circuit Breakers",
+                "description": "C/B Ice Detr"
+            },
+            "CB_SIGHT2": {
+                "type": "ToggleSwitch",
+                "msg": "CB_SIGHT2",
+                "device_id": "1",
+                "command": "3989",
+                "arg_number": "1457",
+                "category": "Circuit Breakers",
+                "description": "C/B Sight"
+            },
+            "CB_CDU_FWD": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CDU_FWD",
+                "device_id": "1",
+                "command": "3990",
+                "arg_number": "1511",
+                "category": "Circuit Breakers",
+                "description": "C/B Fwd Cdu"
+            },
+            "CB_CDU_AFT": {
+                "type": "ToggleSwitch",
+                "msg": "CB_CDU_AFT",
+                "device_id": "1",
+                "command": "3991",
+                "arg_number": "1512",
+                "category": "Circuit Breakers",
+                "description": "C/B Aft Cdu"
+            },
+            "CB_AHR_GPS3": {
+                "type": "ToggleSwitch",
+                "msg": "CB_AHR_GPS3",
+                "device_id": "1",
+                "command": "3992",
+                "arg_number": "1513",
+                "category": "Circuit Breakers",
+                "description": "C/B AHR/GPS"
+            },
+            "CB_COMM_RDU": {
+                "type": "ToggleSwitch",
+                "msg": "CB_COMM_RDU",
+                "device_id": "1",
+                "command": "3995",
+                "arg_number": "1522",
+                "category": "Circuit Breakers",
+                "description": "C/B COMM RDU"
+            }
+        },
+        "Electrical": {
+            "BATTERY_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BATTERY_SW",
+                "device_id": "1",
+                "command": "3095",
+                "arg_number": "300",
+                "category": "Electrical",
+                "description": "Battery Switch"
+            },
+            "GEN1_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GEN1_SW",
+                "device_id": "1",
+                "command": "3096",
+                "arg_number": "301",
+                "category": "Electrical",
+                "description": "Generator 1 Switch"
+            },
+            "GEN2_SW": {
+                "type": "ToggleSwitch",
+                "msg": "GEN2_SW",
+                "device_id": "1",
+                "command": "3097",
+                "arg_number": "302",
+                "category": "Electrical",
+                "description": "Generator 2 Switch"
+            },
+            "AC_PW_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AC_PW_SW",
+                "device_id": "1",
+                "command": "3098",
+                "arg_number": "303",
+                "category": "Electrical",
+                "description": "AC Power Switch"
+            },
+            "BUS_RESET_SW": {
+                "type": "ToggleSwitch",
+                "msg": "BUS_RESET_SW",
+                "device_id": "1",
+                "command": "3099",
+                "arg_number": "231",
+                "category": "Electrical",
+                "description": "Bus Reset Switch"
+            },
+            "BUS_RESET_CV": {
+                "type": "ToggleSwitch",
+                "msg": "BUS_RESET_CV",
+                "device_id": "1",
+                "command": "3100",
+                "arg_number": "233",
+                "category": "Electrical",
+                "description": "Bus Reset Cover"
+            }
+        },
+        "Avionics FW": {
+            "FW_SET_INDEX": {
+                "type": "Rotary",
+                "msg": "FW_SET_INDEX",
+                "device_id": "1",
+                "command": "3101",
+                "arg_number": "541",
+                "category": "Avionics FW",
+                "description": "Forward Set Index"
+            },
+            "FW_ALT_KNOB": {
+                "type": "Rotary",
+                "msg": "FW_ALT_KNOB",
+                "device_id": "1",
+                "command": "3102",
+                "arg_number": "241",
+                "category": "Avionics FW",
+                "description": "Forward Altimeter Pressure Setting"
+            },
+            "FW_G_RESET": {
+                "type": "PushButton",
+                "msg": "FW_G_RESET",
+                "device_id": "1",
+                "command": "3104",
+                "arg_number": "259",
+                "category": "Avionics FW",
+                "description": "Forward Reset Min/Max G"
+            }
+        },
+        "Avionics AFT": {
+            "AFT_ALTIMETER_KNOB": {
+                "type": "Rotary",
+                "msg": "AFT_ALTIMETER_KNOB",
+                "device_id": "1",
+                "command": "3103",
+                "arg_number": "570",
+                "category": "Avionics AFT",
+                "description": "Aft Altimeter Pressure Setting"
+            },
+            "AFT_G_RESET": {
+                "type": "PushButton",
+                "msg": "AFT_G_RESET",
+                "device_id": "1",
+                "command": "3105",
+                "arg_number": "691",
+                "category": "Avionics AFT",
+                "description": "Aft Reset Min/Max G"
+            }
+        },
+        "Clock FW": {
+            "FW_CLOCK_BTN": {
+                "type": "PushButton",
+                "msg": "FW_CLOCK_BTN",
+                "device_id": "1",
+                "command": "3106",
+                "arg_number": "44",
+                "category": "Clock FW",
+                "description": "Forward Clock Start/Stop/Reset"
+            },
+            "FW_CLOCK_SET_PULL": {
+                "type": "ToggleSwitch",
+                "msg": "FW_CLOCK_SET_PULL",
+                "device_id": "1",
+                "command": "3107",
+                "arg_number": "45",
+                "category": "Clock FW",
+                "description": "Forward Clock Set Pull"
+            },
+            "FW_CLOCK_SET_KNOB": {
+                "type": "Rotary",
+                "msg": "FW_CLOCK_SET_KNOB",
+                "device_id": "1",
+                "command": "3108",
+                "arg_number": "51",
+                "category": "Clock FW",
+                "description": "Forward Clock Set Rotate"
+            }
+        },
+        "Clock AFT": {
+            "AFT_CLOCK_BTN": {
+                "type": "PushButton",
+                "msg": "AFT_CLOCK_BTN",
+                "device_id": "1",
+                "command": "3109",
+                "arg_number": "28",
+                "category": "Clock AFT",
+                "description": "Aft Clock Start/Stop/Reset"
+            },
+            "AFT_CLOCK_SET_PULL": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_CLOCK_SET_PULL",
+                "device_id": "1",
+                "command": "3110",
+                "arg_number": "29",
+                "category": "Clock AFT",
+                "description": "Aft Clock Set Pull"
+            },
+            "AFT_CLOCK_SET_KNOB": {
+                "type": "Rotary",
+                "msg": "AFT_CLOCK_SET_KNOB",
+                "device_id": "1",
+                "command": "3111",
+                "arg_number": "30",
+                "category": "Clock AFT",
+                "description": "Aft Clock Set Rotate"
+            }
+        },
+        "ADI FW": {
+            "FW_ADI_PITCH": {
+                "type": "Potentiometer",
+                "msg": "FW_ADI_PITCH",
+                "device_id": "1",
+                "command": "3112",
+                "arg_number": "15",
+                "limits": "{ 0, 1 }",
+                "category": "ADI FW",
+                "description": "Forward ADI Pitch Adjustment"
+            },
+            "FW_ATT_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ATT_CAGE",
+                "device_id": "1",
+                "command": "3114",
+                "arg_number": "403",
+                "category": "ADI FW",
+                "description": "Forward Attitude Indicator Cage"
+            },
+            "FW_ATT_ADJUST": {
+                "type": "Potentiometer",
+                "msg": "FW_ATT_ADJUST",
+                "device_id": "1",
+                "command": "3115",
+                "arg_number": "401",
+                "limits": "{ -1, 1 }",
+                "category": "ADI FW",
+                "description": "Forward Attitude Indicator Adjust"
+            }
+        },
+        "ADI AFT": {
+            "AFT_ADI_PITCH": {
+                "type": "Potentiometer",
+                "msg": "AFT_ADI_PITCH",
+                "device_id": "1",
+                "command": "3113",
+                "arg_number": "388",
+                "limits": "{ 0, 1 }",
+                "category": "ADI AFT",
+                "description": "Aft ADI Pitch Adjustment"
+            },
+            "AFT_ATT_CAGE": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ATT_CAGE",
+                "device_id": "1",
+                "command": "3116",
+                "arg_number": "404",
+                "category": "ADI AFT",
+                "description": "Aft Attitude Indicator Cage"
+            },
+            "AFT_ATT_ADJUST": {
+                "type": "Potentiometer",
+                "msg": "AFT_ATT_ADJUST",
+                "device_id": "1",
+                "command": "3117",
+                "arg_number": "402",
+                "limits": "{ -1, 1 }",
+                "category": "ADI AFT",
+                "description": "Aft Attitude Indicator Adjust"
+            }
+        },
+        "HSI FW": {
+            "FW_HSI_HDG": {
+                "type": "Rotary",
+                "msg": "FW_HSI_HDG",
+                "device_id": "1",
+                "command": "3118",
+                "arg_number": "362",
+                "category": "HSI FW",
+                "description": "Forward HSI Heading Set"
+            },
+            "FW_HSI_CRS": {
+                "type": "Rotary",
+                "msg": "FW_HSI_CRS",
+                "device_id": "1",
+                "command": "3119",
+                "arg_number": "353",
+                "category": "HSI FW",
+                "description": "Forward HSI Course Set"
+            },
+            "FW_HSI_TCN": {
+                "type": "PushButton",
+                "msg": "FW_HSI_TCN",
+                "device_id": "1",
+                "command": "3213",
+                "arg_number": "346",
+                "category": "HSI FW",
+                "description": "Forward HSI TACAN"
+            },
+            "FW_HSI_VOR": {
+                "type": "PushButton",
+                "msg": "FW_HSI_VOR",
+                "device_id": "1",
+                "command": "3214",
+                "arg_number": "347",
+                "category": "HSI FW",
+                "description": "Forward HSI VOR"
+            },
+            "FW_HSI_RNAV": {
+                "type": "PushButton",
+                "msg": "FW_HSI_RNAV",
+                "device_id": "1",
+                "command": "3215",
+                "arg_number": "348",
+                "category": "HSI FW",
+                "description": "Forward HSI RNAV"
+            }
+        },
+        "HSI AFT": {
+            "AFT_HSI_HDG": {
+                "type": "Rotary",
+                "msg": "AFT_HSI_HDG",
+                "device_id": "1",
+                "command": "3120",
+                "arg_number": "196",
+                "category": "HSI AFT",
+                "description": "Aft HSI Heading Set"
+            },
+            "AFT_HSI_CRS": {
+                "type": "Rotary",
+                "msg": "AFT_HSI_CRS",
+                "device_id": "1",
+                "command": "3121",
+                "arg_number": "187",
+                "category": "HSI AFT",
+                "description": "Aft HSI Course Set"
+            },
+            "AFT_HSI_TCN": {
+                "type": "PushButton",
+                "msg": "AFT_HSI_TCN",
+                "device_id": "1",
+                "command": "3216",
+                "arg_number": "57",
+                "category": "HSI AFT",
+                "description": "Aft HSI TACAN"
+            },
+            "AFT_HSI_VOR": {
+                "type": "PushButton",
+                "msg": "AFT_HSI_VOR",
+                "device_id": "1",
+                "command": "3217",
+                "arg_number": "58",
+                "category": "HSI AFT",
+                "description": "Aft HSI VOR"
+            },
+            "AFT_HSI_RNAV": {
+                "type": "PushButton",
+                "msg": "AFT_HSI_RNAV",
+                "device_id": "1",
+                "command": "3218",
+                "arg_number": "59",
+                "category": "HSI AFT",
+                "description": "Aft HSI RNAV"
+            }
+        },
+        "Flight Dir FW": {
+            "FW_FD_HDG": {
+                "type": "PushButton",
+                "msg": "FW_FD_HDG",
+                "device_id": "1",
+                "command": "3122",
+                "arg_number": "333",
+                "category": "Flight Dir FW",
+                "description": "Forward F/D HDG"
+            },
+            "FW_FD_GS_ARM": {
+                "type": "PushButton",
+                "msg": "FW_FD_GS_ARM",
+                "device_id": "1",
+                "command": "3123",
+                "arg_number": "334",
+                "category": "Flight Dir FW",
+                "description": "Forward F/D GS ARM"
+            },
+            "FW_FD_STBY": {
+                "type": "PushButton",
+                "msg": "FW_FD_STBY",
+                "device_id": "1",
+                "command": "3124",
+                "arg_number": "335",
+                "category": "Flight Dir FW",
+                "description": "Forward F/D STBY"
+            },
+            "FW_FD_RADIO_NAV": {
+                "type": "PushButton",
+                "msg": "FW_FD_RADIO_NAV",
+                "device_id": "1",
+                "command": "3125",
+                "arg_number": "336",
+                "category": "Flight Dir FW",
+                "description": "Forward F/D RADIO NAV"
+            },
+            "FW_FD_GS": {
+                "type": "PushButton",
+                "msg": "FW_FD_GS",
+                "device_id": "1",
+                "command": "3126",
+                "arg_number": "337",
+                "category": "Flight Dir FW",
+                "description": "Forward F/D GS"
+            },
+            "FW_FD_ALT_HOLD": {
+                "type": "PushButton",
+                "msg": "FW_FD_ALT_HOLD",
+                "device_id": "1",
+                "command": "3127",
+                "arg_number": "338",
+                "category": "Flight Dir FW",
+                "description": "Forward F/D ALT HOLD"
+            }
+        },
+        "Flight Dir AFT": {
+            "AFT_FD_HDG": {
+                "type": "PushButton",
+                "msg": "AFT_FD_HDG",
+                "device_id": "1",
+                "command": "3128",
+                "arg_number": "693",
+                "category": "Flight Dir AFT",
+                "description": "Aft F/D HDG"
+            },
+            "AFT_FD_GS_ARM": {
+                "type": "PushButton",
+                "msg": "AFT_FD_GS_ARM",
+                "device_id": "1",
+                "command": "3129",
+                "arg_number": "695",
+                "category": "Flight Dir AFT",
+                "description": "Aft F/D GS ARM"
+            },
+            "AFT_FD_STBY": {
+                "type": "PushButton",
+                "msg": "AFT_FD_STBY",
+                "device_id": "1",
+                "command": "3130",
+                "arg_number": "697",
+                "category": "Flight Dir AFT",
+                "description": "Aft F/D STBY"
+            },
+            "AFT_FD_RADIO_NAV": {
+                "type": "PushButton",
+                "msg": "AFT_FD_RADIO_NAV",
+                "device_id": "1",
+                "command": "3131",
+                "arg_number": "699",
+                "category": "Flight Dir AFT",
+                "description": "Aft F/D RADIO NAV"
+            },
+            "AFT_FD_GS": {
+                "type": "PushButton",
+                "msg": "AFT_FD_GS",
+                "device_id": "1",
+                "command": "3132",
+                "arg_number": "701",
+                "category": "Flight Dir AFT",
+                "description": "Aft F/D GS"
+            },
+            "AFT_FD_ALT_HOLD": {
+                "type": "PushButton",
+                "msg": "AFT_FD_ALT_HOLD",
+                "device_id": "1",
+                "command": "3133",
+                "arg_number": "703",
+                "category": "Flight Dir AFT",
+                "description": "Aft F/D ALT HOLD"
+            }
+        },
+        "Fuel FW": {
+            "FW_FUEL_TANK_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_FUEL_TANK_SEL",
+                "device_id": "1",
+                "device_command": "3134",
+                "arg_number": "257",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Fuel FW",
+                "description": "Forward Fuel Tank Selector"
+            },
+            "FW_FUEL_TEST": {
+                "type": "PushButton",
+                "msg": "FW_FUEL_TEST",
+                "device_id": "1",
+                "command": "3135",
+                "arg_number": "258",
+                "category": "Fuel FW",
+                "description": "Forward Fuel Quantity Test"
+            },
+            "FW_FUEL_OFF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FUEL_OFF_SW",
+                "device_id": "1",
+                "command": "3138",
+                "arg_number": "248",
+                "category": "Fuel FW",
+                "description": "Foreward Fuel Shut-Off Switch"
+            },
+            "FW_FUEL_OFF_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FUEL_OFF_CVR",
+                "device_id": "1",
+                "command": "3139",
+                "arg_number": "237",
+                "category": "Fuel FW",
+                "description": "Foreward Fuel Shut-Off Guard"
+            },
+            "FW_FUEL_TRANS": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FUEL_TRANS",
+                "device_id": "1",
+                "command": "3142",
+                "arg_number": "249",
+                "category": "Fuel FW",
+                "description": "Foreward Fuel Transfer"
+            },
+            "FW_FUEL_DUMP": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FUEL_DUMP",
+                "device_id": "1",
+                "command": "3143",
+                "arg_number": "593",
+                "category": "Fuel FW",
+                "description": "Foreward Fuel Dump"
+            }
+        },
+        "Fuel AFT": {
+            "AFT_FUEL_TANK_SEL": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_FUEL_TANK_SEL",
+                "device_id": "1",
+                "device_command": "3136",
+                "arg_number": "328",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Fuel AFT",
+                "description": "Aft Fuel Tank Selector"
+            },
+            "AFT_FUEL_TEST": {
+                "type": "PushButton",
+                "msg": "AFT_FUEL_TEST",
+                "device_id": "1",
+                "command": "3137",
+                "arg_number": "374",
+                "category": "Fuel AFT",
+                "description": "Aft Fuel Quantity Test"
+            },
+            "AFT_FUEL_OFF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_FUEL_OFF_SW",
+                "device_id": "1",
+                "command": "3140",
+                "arg_number": "516",
+                "category": "Fuel AFT",
+                "description": "Aft Fuel Shut-Off Switch"
+            },
+            "AFT_FUEL_OFF_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_FUEL_OFF_CVR",
+                "device_id": "1",
+                "command": "3141",
+                "arg_number": "517",
+                "category": "Fuel AFT",
+                "description": "Aft Fuel Shut-Off Guard"
+            },
+            "AFT_FUEL_DUMP": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_FUEL_DUMP",
+                "device_id": "1",
+                "command": "3144",
+                "arg_number": "160",
+                "category": "Fuel AFT",
+                "description": "Aft Fuel Dump"
+            }
+        },
+        "Gear FW": {
+            "FW_LG_GEAR_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LG_GEAR_LVR",
+                "device_id": "1",
+                "command": "5002",
+                "arg_number": "4",
+                "category": "Gear FW",
+                "description": "Foreward Gear Lever"
+            },
+            "FW_LG_ASKID": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LG_ASKID",
+                "device_id": "1",
+                "command": "3145",
+                "arg_number": "250",
+                "category": "Gear FW",
+                "description": "Foreward Anti-Skid"
+            },
+            "FW_LG_PBRAKE": {
+                "type": "Potentiometer",
+                "msg": "FW_LG_PBRAKE",
+                "device_id": "1",
+                "command": "3147",
+                "arg_number": "266",
+                "limits": "{ 0, 1 }",
+                "category": "Gear FW",
+                "description": "Forward Parking Brake Pull"
+            },
+            "FW_LG_PBRAKE_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LG_PBRAKE_LOCK",
+                "device_id": "1",
+                "command": "3148",
+                "arg_number": "263",
+                "category": "Gear FW",
+                "description": "Foreward Parking Brake Lock"
+            },
+            "FW_LG_EMERG_GEAR": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LG_EMERG_GEAR",
+                "device_id": "1",
+                "command": "3149",
+                "arg_number": "681",
+                "category": "Gear FW",
+                "description": "Foreward Emergency Landing Gear"
+            },
+            "FW_LG_DL_OVERRIDE": {
+                "type": "PushButton",
+                "msg": "FW_LG_DL_OVERRIDE",
+                "device_id": "1",
+                "command": "5000",
+                "arg_number": "379",
+                "category": "Gear FW",
+                "description": "Foreward Down-Lock Override"
+            },
+            "FW_RUDDER_TRIM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_RUDDER_TRIM",
+                "device_id": "1",
+                "downSwitch": "3150",
+                "upSwitch": "3151",
+                "arg_number": "540",
+                "category": "Gear FW",
+                "description": "Foreward Rudder Trim"
+            }
+        },
+        "Gear AFT": {
+            "AFT_LG_GEAR_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_LG_GEAR_LVR",
+                "device_id": "1",
+                "command": "5002",
+                "arg_number": "106",
+                "category": "Gear AFT",
+                "description": "Aft Gear Lever"
+            },
+            "AFT_LG_ASKID": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_LG_ASKID",
+                "device_id": "1",
+                "command": "3146",
+                "arg_number": "518",
+                "category": "Gear AFT",
+                "description": "Aft Anti-Skid"
+            },
+            "AFT_LG_DL_OVERRIDE": {
+                "type": "PushButton",
+                "msg": "AFT_LG_DL_OVERRIDE",
+                "device_id": "1",
+                "command": "5001",
+                "arg_number": "14",
+                "category": "Gear AFT",
+                "description": "Aft Down-Lock Override"
+            },
+            "AFT_RUDDER_TRIM": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_RUDDER_TRIM",
+                "device_id": "1",
+                "downSwitch": "3152",
+                "upSwitch": "3153",
+                "arg_number": "519",
+                "category": "Gear AFT",
+                "description": "Aft Rudder Trim"
+            }
+        },
+        "Lights FW": {
+            "FW_LIGHT_TAXI_LAND": {
+                "type": "3PosTumb",
+                "msg": "FW_LIGHT_TAXI_LAND",
+                "device_id": "1",
+                "command": "3154",
+                "arg_number": "321",
+                "category": "Lights FW",
+                "description": "Forward Taxi/Landing Lights"
+            },
+            "FW_LIGHT_FORMATION": {
+                "type": "Potentiometer",
+                "msg": "FW_LIGHT_FORMATION",
+                "device_id": "1",
+                "command": "3155",
+                "arg_number": "502",
+                "limits": "{ 0, 1 }",
+                "category": "Lights FW",
+                "description": "Forward Formation Lights"
+            },
+            "FW_LIGHT_INSTRUMENT": {
+                "type": "Potentiometer",
+                "msg": "FW_LIGHT_INSTRUMENT",
+                "device_id": "1",
+                "command": "3156",
+                "arg_number": "503",
+                "limits": "{ 0, 1 }",
+                "category": "Lights FW",
+                "description": "Forward Instruments Lights"
+            },
+            "FW_LIGHT_FLOOD": {
+                "type": "Potentiometer",
+                "msg": "FW_LIGHT_FLOOD",
+                "device_id": "1",
+                "command": "3157",
+                "arg_number": "504",
+                "limits": "{ 0, 1 }",
+                "category": "Lights FW",
+                "description": "Forward Flood Lights"
+            },
+            "FW_LIGHT_CONSOLE": {
+                "type": "Potentiometer",
+                "msg": "FW_LIGHT_CONSOLE",
+                "device_id": "1",
+                "command": "3158",
+                "arg_number": "505",
+                "limits": "{ 0, 1 }",
+                "category": "Lights FW",
+                "description": "Forward Console Lights"
+            },
+            "FW_LIGHT_NAV_FLASH": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LIGHT_NAV_FLASH",
+                "device_id": "1",
+                "command": "3167",
+                "arg_number": "41",
+                "category": "Lights FW",
+                "description": "Forward Nav Lights Flash/Steady"
+            },
+            "FW_LIGHT_NAV_BRIGHT": {
+                "type": "3PosTumb",
+                "msg": "FW_LIGHT_NAV_BRIGHT",
+                "device_id": "1",
+                "command": "3166",
+                "arg_number": "40",
+                "category": "Lights FW",
+                "description": "Forward Nav Lights Bright/Dim"
+            },
+            "FW_LIGHT_BEACON": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LIGHT_BEACON",
+                "device_id": "1",
+                "command": "3167",
+                "arg_number": "685",
+                "category": "Lights FW",
+                "description": "Forward Beacon Lights"
+            },
+            "FW_LIGHT_WARN_BRIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "FW_LIGHT_WARN_BRIGHT",
+                "device_id": "1",
+                "command": "3168",
+                "arg_number": "322",
+                "category": "Lights FW",
+                "description": "Forward Warn Lights Bright/Dim"
+            }
+        },
+        "Lights AFT": {
+            "AFT_LIGHT_INSTRUMENT": {
+                "type": "Potentiometer",
+                "msg": "AFT_LIGHT_INSTRUMENT",
+                "device_id": "1",
+                "command": "3159",
+                "arg_number": "510",
+                "limits": "{ 0, 1 }",
+                "category": "Lights AFT",
+                "description": "Aft Instruments Lights"
+            },
+            "AFT_LIGHT_FLOOD": {
+                "type": "Potentiometer",
+                "msg": "AFT_LIGHT_FLOOD",
+                "device_id": "1",
+                "command": "3160",
+                "arg_number": "512",
+                "limits": "{ 0, 1 }",
+                "category": "Lights AFT",
+                "description": "Aft Flood Lights"
+            },
+            "AFT_LIGHT_CONSOLE": {
+                "type": "Potentiometer",
+                "msg": "AFT_LIGHT_CONSOLE",
+                "device_id": "1",
+                "command": "3161",
+                "arg_number": "511",
+                "limits": "{ 0, 1 }",
+                "category": "Lights AFT",
+                "description": "Aft Console Lights"
+            },
+            "AFT_LIGHT_WARN_BRIGHT": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_LIGHT_WARN_BRIGHT",
+                "device_id": "1",
+                "command": "3169",
+                "arg_number": "107",
+                "category": "Lights AFT",
+                "description": "Aft Warn Lights Bright/Dim"
+            }
+        },
+        "Warning Panel": {
+            "WARN_L_TEST": {
+                "type": "PushButton",
+                "msg": "WARN_L_TEST",
+                "device_id": "1",
+                "command": "3170",
+                "arg_number": "304",
+                "category": "Warning Panel",
+                "description": "Warn Lights Test"
+            },
+            "FW_MASTER_CAUTION": {
+                "type": "PushButton",
+                "msg": "FW_MASTER_CAUTION",
+                "device_id": "1",
+                "command": "3171",
+                "arg_number": "591",
+                "category": "Warning Panel",
+                "description": "Forward Master Caution Reset"
+            },
+            "AFT_MASTER_CAUTION": {
+                "type": "PushButton",
+                "msg": "AFT_MASTER_CAUTION",
+                "device_id": "1",
+                "command": "3171",
+                "arg_number": "592",
+                "category": "Warning Panel",
+                "description": "Aft Master Caution Reset"
+            },
+            "WARN_SILENT": {
+                "type": "PushButton",
+                "msg": "WARN_SILENT",
+                "device_id": "1",
+                "command": "3173",
+                "arg_number": "382",
+                "category": "Warning Panel",
+                "description": "Warning Silence"
+            }
+        },
+        "Engine": {
+            "ENG_MASTER": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_MASTER",
+                "device_id": "1",
+                "command": "3174",
+                "arg_number": "238",
+                "category": "Engine",
+                "description": "Engine Master"
+            },
+            "ENG_JPT_LIMIT": {
+                "type": "ToggleSwitch",
+                "msg": "ENG_JPT_LIMIT",
+                "device_id": "1",
+                "command": "3177",
+                "arg_number": "240",
+                "category": "Engine",
+                "description": "JPT Limiter"
+            },
+            "ENG_START": {
+                "type": "PushButton",
+                "msg": "ENG_START",
+                "device_id": "1",
+                "command": "3178",
+                "arg_number": "239",
+                "category": "Engine",
+                "description": "Engine Start"
+            }
+        },
+        "Flight Controls FW": {
+            "FW_FC_CANOPY_LOCK": {
+                "type": "PushButton",
+                "msg": "FW_FC_CANOPY_LOCK",
+                "device_id": "1",
+                "command": "5004",
+                "arg_number": "182",
+                "category": "Flight Controls FW",
+                "description": "Forward Canopy LOCK/UNLOCK"
+            },
+            "FW_FC_CANOPY_HOOK": {
+                "type": "PushButton",
+                "msg": "FW_FC_CANOPY_HOOK",
+                "device_id": "1",
+                "command": "5005",
+                "arg_number": "183",
+                "category": "Flight Controls FW",
+                "description": "Forward Partial Opening Hook"
+            },
+            "FW_FC_CANOPY_UNLOCK": {
+                "type": "PushButton",
+                "msg": "FW_FC_CANOPY_UNLOCK",
+                "device_id": "1",
+                "command": "5006",
+                "arg_number": "582",
+                "category": "Flight Controls FW",
+                "description": "Forward Canopy UNLOCK"
+            },
+            "FW_FC_CANOPY_HND": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FC_CANOPY_HND",
+                "device_id": "1",
+                "command": "3179",
+                "arg_number": "750",
+                "category": "Flight Controls FW",
+                "description": "Forward Canopy Handle"
+            },
+            "FW_FC_LOCK": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FC_LOCK",
+                "device_id": "1",
+                "command": "5009",
+                "arg_number": "232",
+                "category": "Flight Controls FW",
+                "description": "Forward Flight Controls LOCK/UNLOCK"
+            },
+            "FW_FC_MIRRORS": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FC_MIRRORS",
+                "device_id": "1",
+                "command": "3181",
+                "arg_number": "400",
+                "category": "Flight Controls FW",
+                "description": "Forward Mirrors OPEN/CLOSE"
+            },
+            "FW_FC_AILERON_SERVO_CV": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FC_AILERON_SERVO_CV",
+                "device_id": "1",
+                "command": "3187",
+                "arg_number": "235",
+                "category": "Flight Controls FW",
+                "description": "Forward Aileron Servo Guard"
+            },
+            "FW_FC_AILERON_SERVO": {
+                "type": "ToggleSwitch",
+                "msg": "FW_FC_AILERON_SERVO",
+                "device_id": "1",
+                "command": "3188",
+                "arg_number": "260",
+                "category": "Flight Controls FW",
+                "description": "Forward Aileron Servo Switch"
+            }
+        },
+        "Flight Controls AFT": {
+            "AFT_FC_CANOPY_LOCK": {
+                "type": "PushButton",
+                "msg": "AFT_FC_CANOPY_LOCK",
+                "device_id": "1",
+                "command": "5008",
+                "arg_number": "43",
+                "category": "Flight Controls AFT",
+                "description": "Aft Canopy LOCK/UNLOCK"
+            },
+            "AFT_FC_MIRRORS": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_FC_MIRRORS",
+                "device_id": "1",
+                "command": "3181",
+                "arg_number": "594",
+                "category": "Flight Controls AFT",
+                "description": "Aft Mirrors OPEN/CLOSE"
+            },
+            "AFT_FC_AILERON_SERVO_CV": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_FC_AILERON_SERVO_CV",
+                "device_id": "1",
+                "command": "3189",
+                "arg_number": "288",
+                "category": "Flight Controls AFT",
+                "description": "Aft Aileron Servo Guard"
+            },
+            "AFT_FC_AILERON_SERVO": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_FC_AILERON_SERVO",
+                "device_id": "1",
+                "command": "3190",
+                "arg_number": "289",
+                "category": "Flight Controls AFT",
+                "description": "Aft Aileron Servo Switch"
+            }
+        },
+        "Pressurisation": {
+            "PRESS_RAMAIR_SCOOP": {
+                "type": "ToggleSwitch",
+                "msg": "PRESS_RAMAIR_SCOOP",
+                "device_id": "1",
+                "command": "3191",
+                "arg_number": "590",
+                "category": "Pressurisation",
+                "description": "Ram Air Scoop"
+            },
+            "PRESS_CABIN_PRESS": {
+                "type": "ToggleSwitch",
+                "msg": "PRESS_CABIN_PRESS",
+                "device_id": "1",
+                "command": "3192",
+                "arg_number": "264",
+                "category": "Pressurisation",
+                "description": "Cabin Pressure Switch"
+            },
+            "PRESS_CABIN_PRESS_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "PRESS_CABIN_PRESS_CVR",
+                "device_id": "1",
+                "command": "3193",
+                "arg_number": "234",
+                "category": "Pressurisation",
+                "description": "Cabin Pressure Switch Guard"
+            },
+            "PRESS_CABIN_TEMP": {
+                "type": "Potentiometer",
+                "msg": "PRESS_CABIN_TEMP",
+                "device_id": "1",
+                "command": "3194",
+                "arg_number": "179",
+                "limits": "{ 0, 1 }",
+                "category": "Pressurisation",
+                "description": "Cabin Temp"
+            }
+        },
+        "Smoke": {
+            "SMOKE_MASTER": {
+                "type": "ToggleSwitch",
+                "msg": "SMOKE_MASTER",
+                "device_id": "1",
+                "command": "3195",
+                "arg_number": "330",
+                "category": "Smoke",
+                "description": "Smoke Master Switch"
+            },
+            "SMOKE_WHITE": {
+                "type": "ToggleSwitch",
+                "msg": "SMOKE_WHITE",
+                "device_id": "1",
+                "command": "3196",
+                "arg_number": "331",
+                "category": "Smoke",
+                "description": "Smoke White Switch"
+            },
+            "SMOKE_COLOR": {
+                "type": "ToggleSwitch",
+                "msg": "SMOKE_COLOR",
+                "device_id": "1",
+                "command": "3197",
+                "arg_number": "332",
+                "category": "Smoke",
+                "description": "Smoke Color Switch"
+            }
+        },
+        "Anti Ice": {
+            "AI_ENG_AICE": {
+                "type": "3PosTumb",
+                "msg": "AI_ENG_AICE",
+                "device_id": "1",
+                "command": "3198",
+                "arg_number": "262",
+                "category": "Anti Ice",
+                "description": "Engine Anti-Ice"
+            },
+            "AI_FW_PITOT_AICE": {
+                "type": "3PosTumb",
+                "msg": "AI_FW_PITOT_AICE",
+                "device_id": "1",
+                "command": "3199",
+                "arg_number": "261",
+                "category": "Anti Ice",
+                "description": "Front Pitot Anti-Ice"
+            },
+            "AI_AFT_PITOT_AICE": {
+                "type": "3PosTumb",
+                "msg": "AI_AFT_PITOT_AICE",
+                "device_id": "1",
+                "command": "3200",
+                "arg_number": "149",
+                "category": "Anti Ice",
+                "description": "Rear Pitot Anti-Ice"
+            },
+            "AI_WS_DEMIST": {
+                "type": "3PosTumb",
+                "msg": "AI_WS_DEMIST",
+                "device_id": "1",
+                "command": "3201",
+                "arg_number": "178",
+                "category": "Anti Ice",
+                "description": "Windshield Demist"
+            },
+            "AI_WS_RAIN": {
+                "type": "3PosTumb",
+                "msg": "AI_WS_RAIN",
+                "device_id": "1",
+                "command": "3202",
+                "arg_number": "177",
+                "category": "Anti Ice",
+                "description": "Windshield Rain RMVL"
+            }
+        },
+        "Seat": {
+            "SEAT_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "SEAT_FIRE",
+                "device_id": "1",
+                "command": "3203",
+                "arg_number": "205",
+                "category": "Seat",
+                "description": "Seat Firing Handle"
+            },
+            "SEAT_ADJ": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "SEAT_ADJ",
+                "device_id": "1",
+                "downSwitch": "3205",
+                "upSwitch": "3206",
+                "arg_number": "323",
+                "category": "Seat",
+                "description": "Adj Seat UP/DOWN"
+            },
+            "SEAT_PIN_CANOPY": {
+                "type": "ToggleSwitch",
+                "msg": "SEAT_PIN_CANOPY",
+                "device_id": "1",
+                "command": "3207",
+                "arg_number": "377",
+                "category": "Seat",
+                "description": "Ejection Safety Pin to Canopy"
+            },
+            "SEAT_PIN_SEAT": {
+                "type": "ToggleSwitch",
+                "msg": "SEAT_PIN_SEAT",
+                "device_id": "1",
+                "command": "3208",
+                "arg_number": "376",
+                "category": "Seat",
+                "description": "Ejection Safety Pin to Seat"
+            }
+        },
+        "Control Shift FW": {
+            "FW_CONTROL_TCN": {
+                "type": "PushButton",
+                "msg": "FW_CONTROL_TCN",
+                "device_id": "1",
+                "command": "3219",
+                "arg_number": "324",
+                "category": "Control Shift FW",
+                "description": "Forward TACAN Control Shift"
+            },
+            "FW_CONTROL_ILS": {
+                "type": "PushButton",
+                "msg": "FW_CONTROL_ILS",
+                "device_id": "1",
+                "command": "3220",
+                "arg_number": "326",
+                "category": "Control Shift FW",
+                "description": "Forward VOR-ILS Control Shift"
+            },
+            "FW_CONTROL_NAV": {
+                "type": "PushButton",
+                "msg": "FW_CONTROL_NAV",
+                "device_id": "1",
+                "command": "3221",
+                "arg_number": "384",
+                "category": "Control Shift FW",
+                "description": "Forward NAV Control Shift"
+            },
+            "FW_CONTROL_COM1": {
+                "type": "PushButton",
+                "msg": "FW_CONTROL_COM1",
+                "device_id": "1",
+                "command": "3225",
+                "arg_number": "307",
+                "category": "Control Shift FW",
+                "description": "Forward COMM1 Control Shift"
+            },
+            "FW_CONTROL_COM2": {
+                "type": "PushButton",
+                "msg": "FW_CONTROL_COM2",
+                "device_id": "1",
+                "command": "3226",
+                "arg_number": "309",
+                "category": "Control Shift FW",
+                "description": "Forward COMM2 Control Shift"
+            },
+            "FW_CONTROL_ADF": {
+                "type": "PushButton",
+                "msg": "FW_CONTROL_ADF",
+                "device_id": "1",
+                "command": "3227",
+                "arg_number": "317",
+                "category": "Control Shift FW",
+                "description": "Forward ADF Control Shift"
+            }
+        },
+        "Control Shift AFT": {
+            "AFT_CONTROL_TCN": {
+                "type": "PushButton",
+                "msg": "AFT_CONTROL_TCN",
+                "device_id": "1",
+                "command": "3222",
+                "arg_number": "273",
+                "category": "Control Shift AFT",
+                "description": "Aft TACAN Control Shift"
+            },
+            "AFT_CONTROL_ILS": {
+                "type": "PushButton",
+                "msg": "AFT_CONTROL_ILS",
+                "device_id": "1",
+                "command": "3223",
+                "arg_number": "275",
+                "category": "Control Shift AFT",
+                "description": "Aft VOR-ILS Control Shift"
+            },
+            "AFT_CONTROL_NAV": {
+                "type": "PushButton",
+                "msg": "AFT_CONTROL_NAV",
+                "device_id": "1",
+                "command": "3224",
+                "arg_number": "277",
+                "category": "Control Shift AFT",
+                "description": "Aft NAV Control Shift"
+            },
+            "AFT_CONTROL_COM1": {
+                "type": "PushButton",
+                "msg": "AFT_CONTROL_COM1",
+                "device_id": "1",
+                "command": "3228",
+                "arg_number": "267",
+                "category": "Control Shift AFT",
+                "description": "Aft COMM1 Control Shift"
+            },
+            "AFT_CONTROL_COM2": {
+                "type": "PushButton",
+                "msg": "AFT_CONTROL_COM2",
+                "device_id": "1",
+                "command": "3229",
+                "arg_number": "269",
+                "category": "Control Shift AFT",
+                "description": "Aft COMM2 Control Shift"
+            },
+            "AFT_CONTROL_ADF": {
+                "type": "PushButton",
+                "msg": "AFT_CONTROL_ADF",
+                "device_id": "1",
+                "command": "3230",
+                "arg_number": "271",
+                "category": "Control Shift AFT",
+                "description": "Aft ADF Control Shift"
+            }
+        },
+        "CDU FW": {
+            "FW_CDU_GPS_PW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_CDU_GPS_PW",
+                "device_id": "1",
+                "command": "3231",
+                "arg_number": "345",
+                "category": "CDU FW",
+                "description": "Forward CDU AHRS/GPS System"
+            },
+            "FW_CDU_ROW1": {
+                "type": "PushButton",
+                "msg": "FW_CDU_ROW1",
+                "device_id": "1",
+                "command": "3232",
+                "arg_number": "600",
+                "category": "CDU FW",
+                "description": "Forward CDU Row 1"
+            },
+            "FW_CDU_ROW2": {
+                "type": "PushButton",
+                "msg": "FW_CDU_ROW2",
+                "device_id": "1",
+                "command": "3233",
+                "arg_number": "601",
+                "category": "CDU FW",
+                "description": "Forward CDU Row 2"
+            },
+            "FW_CDU_ROW3": {
+                "type": "PushButton",
+                "msg": "FW_CDU_ROW3",
+                "device_id": "1",
+                "command": "3234",
+                "arg_number": "602",
+                "category": "CDU FW",
+                "description": "Forward CDU Row 3"
+            },
+            "FW_CDU_ROW4": {
+                "type": "PushButton",
+                "msg": "FW_CDU_ROW4",
+                "device_id": "1",
+                "command": "3235",
+                "arg_number": "603",
+                "category": "CDU FW",
+                "description": "Forward CDU Row 4"
+            },
+            "FW_CDU_MARK": {
+                "type": "PushButton",
+                "msg": "FW_CDU_MARK",
+                "device_id": "1",
+                "command": "3236",
+                "arg_number": "605",
+                "category": "CDU FW",
+                "description": "Forward CDU MARK"
+            },
+            "FW_CDU_SET": {
+                "type": "PushButton",
+                "msg": "FW_CDU_SET",
+                "device_id": "1",
+                "command": "3237",
+                "arg_number": "609",
+                "category": "CDU FW",
+                "description": "Forward CDU SET"
+            },
+            "FW_CDU_BRT": {
+                "type": "PushButton",
+                "msg": "FW_CDU_BRT",
+                "device_id": "1",
+                "command": "3238",
+                "arg_number": "610",
+                "category": "CDU FW",
+                "description": "Forward CDU BRT"
+            },
+            "FW_CDU_INC": {
+                "type": "PushButton",
+                "msg": "FW_CDU_INC",
+                "device_id": "1",
+                "command": "3239",
+                "arg_number": "611",
+                "category": "CDU FW",
+                "description": "Forward CDU +"
+            },
+            "FW_CDU_DEC": {
+                "type": "PushButton",
+                "msg": "FW_CDU_DEC",
+                "device_id": "1",
+                "command": "3240",
+                "arg_number": "612",
+                "category": "CDU FW",
+                "description": "Forward CDU -"
+            },
+            "FW_CDU_N1": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N1",
+                "device_id": "1",
+                "command": "3241",
+                "arg_number": "613",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 1"
+            },
+            "FW_CDU_N2": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N2",
+                "device_id": "1",
+                "command": "3242",
+                "arg_number": "614",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 2"
+            },
+            "FW_CDU_N3": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N3",
+                "device_id": "1",
+                "command": "3243",
+                "arg_number": "615",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 3"
+            },
+            "FW_CDU_N4": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N4",
+                "device_id": "1",
+                "command": "3244",
+                "arg_number": "616",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 4"
+            },
+            "FW_CDU_N5": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N5",
+                "device_id": "1",
+                "command": "3245",
+                "arg_number": "617",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 5"
+            },
+            "FW_CDU_N6": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N6",
+                "device_id": "1",
+                "command": "3246",
+                "arg_number": "618",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 6"
+            },
+            "FW_CDU_N7": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N7",
+                "device_id": "1",
+                "command": "3247",
+                "arg_number": "619",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 7"
+            },
+            "FW_CDU_N8": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N8",
+                "device_id": "1",
+                "command": "3248",
+                "arg_number": "620",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 8"
+            },
+            "FW_CDU_N9": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N9",
+                "device_id": "1",
+                "command": "3249",
+                "arg_number": "621",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 9"
+            },
+            "FW_CDU_N0": {
+                "type": "PushButton",
+                "msg": "FW_CDU_N0",
+                "device_id": "1",
+                "command": "3250",
+                "arg_number": "622",
+                "category": "CDU FW",
+                "description": "Forward CDU N. 0"
+            },
+            "FW_CDU_CLR": {
+                "type": "PushButton",
+                "msg": "FW_CDU_CLR",
+                "device_id": "1",
+                "command": "3251",
+                "arg_number": "623",
+                "category": "CDU FW",
+                "description": "Forward CDU CLR"
+            },
+            "FW_CDU_ENT": {
+                "type": "PushButton",
+                "msg": "FW_CDU_ENT",
+                "device_id": "1",
+                "command": "3252",
+                "arg_number": "624",
+                "category": "CDU FW",
+                "description": "Forward CDU ENT"
+            },
+            "FW_CDU_MODE": {
+                "type": "PushButton",
+                "msg": "FW_CDU_MODE",
+                "device_id": "1",
+                "command": "3253",
+                "arg_number": "606",
+                "category": "CDU FW",
+                "description": "Forward CDU MODE"
+            },
+            "FW_CDU_STEER": {
+                "type": "PushButton",
+                "msg": "FW_CDU_STEER",
+                "device_id": "1",
+                "command": "3254",
+                "arg_number": "607",
+                "category": "CDU FW",
+                "description": "Forward CDU STEER"
+            },
+            "FW_CDU_FIX": {
+                "type": "PushButton",
+                "msg": "FW_CDU_FIX",
+                "device_id": "1",
+                "command": "3255",
+                "arg_number": "604",
+                "category": "CDU FW",
+                "description": "Forward CDU FIX"
+            },
+            "FW_CDU_FLT_PLN": {
+                "type": "PushButton",
+                "msg": "FW_CDU_FLT_PLN",
+                "device_id": "1",
+                "command": "3257",
+                "arg_number": "608",
+                "category": "CDU FW",
+                "description": "Forward CDU FLT PLN"
+            }
+        },
+        "CDU AFT": {
+            "AFT_CDU_ROW1": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_ROW1",
+                "device_id": "1",
+                "command": "3258",
+                "arg_number": "625",
+                "category": "CDU AFT",
+                "description": "Aft CDU Row 1"
+            },
+            "AFT_CDU_ROW2": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_ROW2",
+                "device_id": "1",
+                "command": "3259",
+                "arg_number": "626",
+                "category": "CDU AFT",
+                "description": "Aft CDU Row 2"
+            },
+            "AFT_CDU_ROW3": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_ROW3",
+                "device_id": "1",
+                "command": "3260",
+                "arg_number": "627",
+                "category": "CDU AFT",
+                "description": "Aft CDU Row 3"
+            },
+            "AFT_CDU_ROW4": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_ROW4",
+                "device_id": "1",
+                "command": "3261",
+                "arg_number": "628",
+                "category": "CDU AFT",
+                "description": "Aft CDU Row 4"
+            },
+            "AFT_CDU_MARK": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_MARK",
+                "device_id": "1",
+                "command": "3262",
+                "arg_number": "630",
+                "category": "CDU AFT",
+                "description": "Aft CDU MARK"
+            },
+            "AFT_CDU_SET": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_SET",
+                "device_id": "1",
+                "command": "3263",
+                "arg_number": "634",
+                "category": "CDU AFT",
+                "description": "Aft CDU SET"
+            },
+            "AFT_CDU_BRT": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_BRT",
+                "device_id": "1",
+                "command": "3264",
+                "arg_number": "635",
+                "category": "CDU AFT",
+                "description": "Aft CDU BRT"
+            },
+            "AFT_CDU_INC": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_INC",
+                "device_id": "1",
+                "command": "3265",
+                "arg_number": "636",
+                "category": "CDU AFT",
+                "description": "Aft CDU +"
+            },
+            "AFT_CDU_DEC": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_DEC",
+                "device_id": "1",
+                "command": "3266",
+                "arg_number": "637",
+                "category": "CDU AFT",
+                "description": "Aft CDU -"
+            },
+            "AFT_CDU_N1": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N1",
+                "device_id": "1",
+                "command": "3267",
+                "arg_number": "638",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 1"
+            },
+            "AFT_CDU_N2": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N2",
+                "device_id": "1",
+                "command": "3268",
+                "arg_number": "639",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 2"
+            },
+            "AFT_CDU_N3": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N3",
+                "device_id": "1",
+                "command": "3269",
+                "arg_number": "640",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 3"
+            },
+            "AFT_CDU_N4": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N4",
+                "device_id": "1",
+                "command": "3270",
+                "arg_number": "641",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 4"
+            },
+            "AFT_CDU_N5": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N5",
+                "device_id": "1",
+                "command": "3271",
+                "arg_number": "642",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 5"
+            },
+            "AFT_CDU_N6": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N6",
+                "device_id": "1",
+                "command": "3272",
+                "arg_number": "643",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 6"
+            },
+            "AFT_CDU_N7": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N7",
+                "device_id": "1",
+                "command": "3273",
+                "arg_number": "644",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 7"
+            },
+            "AFT_CDU_N8": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N8",
+                "device_id": "1",
+                "command": "3274",
+                "arg_number": "645",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 8"
+            },
+            "AFT_CDU_N9": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N9",
+                "device_id": "1",
+                "command": "3275",
+                "arg_number": "646",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 9"
+            },
+            "AFT_CDU_N0": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_N0",
+                "device_id": "1",
+                "command": "3276",
+                "arg_number": "647",
+                "category": "CDU AFT",
+                "description": "Aft CDU N. 0"
+            },
+            "AFT_CDU_CLR": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_CLR",
+                "device_id": "1",
+                "command": "3277",
+                "arg_number": "648",
+                "category": "CDU AFT",
+                "description": "Aft CDU CLR"
+            },
+            "AFT_CDU_ENT": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_ENT",
+                "device_id": "1",
+                "command": "3278",
+                "arg_number": "649",
+                "category": "CDU AFT",
+                "description": "Aft CDU ENT"
+            },
+            "AFT_CDU_MODE": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_MODE",
+                "device_id": "1",
+                "command": "3279",
+                "arg_number": "631",
+                "category": "CDU AFT",
+                "description": "Aft CDU MODE"
+            },
+            "AFT_CDU_STEER": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_STEER",
+                "device_id": "1",
+                "command": "3280",
+                "arg_number": "632",
+                "category": "CDU AFT",
+                "description": "Aft CDU STEER"
+            },
+            "AFT_CDU_FIX": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_FIX",
+                "device_id": "1",
+                "command": "3281",
+                "arg_number": "629",
+                "category": "CDU AFT",
+                "description": "Aft CDU FIX"
+            },
+            "AFT_CDU_FLT_PLN": {
+                "type": "PushButton",
+                "msg": "AFT_CDU_FLT_PLN",
+                "device_id": "1",
+                "command": "3282",
+                "arg_number": "633",
+                "category": "CDU AFT",
+                "description": "Aft CDU FLT PLN"
+            }
+        },
+        "Weapons": {
+            "WP_GND_FIRE_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "WP_GND_FIRE_CVR",
+                "device_id": "1",
+                "command": "3283",
+                "arg_number": "236",
+                "category": "Weapons",
+                "description": "Ground Fire Guard"
+            },
+            "WP_MASTER_ARM": {
+                "type": "ToggleSwitch",
+                "msg": "WP_MASTER_ARM",
+                "device_id": "1",
+                "command": "3284",
+                "arg_number": "475",
+                "category": "Weapons",
+                "description": "Master Armament"
+            },
+            "WP_JETT_SALVO": {
+                "type": "PushButton",
+                "msg": "WP_JETT_SALVO",
+                "device_id": "1",
+                "command": "3285",
+                "arg_number": "473",
+                "category": "Weapons",
+                "description": "Salvo Jettison"
+            },
+            "WP_JETT_SEL": {
+                "type": "PushButton",
+                "msg": "WP_JETT_SEL",
+                "device_id": "1",
+                "command": "3286",
+                "arg_number": "70",
+                "category": "Weapons",
+                "description": "Selective Jettison"
+            },
+            "WP_BOMB_FUZE": {
+                "type": "3PosTumb",
+                "msg": "WP_BOMB_FUZE",
+                "device_id": "1",
+                "command": "3287",
+                "arg_number": "494",
+                "category": "Weapons",
+                "description": "Bomb Fuze"
+            },
+            "WP_SEQUENCE": {
+                "type": "ToggleSwitch",
+                "msg": "WP_SEQUENCE",
+                "device_id": "1",
+                "command": "3288",
+                "arg_number": "495",
+                "category": "Weapons",
+                "description": "Sequence Ripple/Single"
+            },
+            "WP_STAT1": {
+                "type": "ToggleSwitch",
+                "msg": "WP_STAT1",
+                "device_id": "1",
+                "command": "3289",
+                "arg_number": "488",
+                "category": "Weapons",
+                "description": "Station 1"
+            },
+            "WP_STAT2": {
+                "type": "ToggleSwitch",
+                "msg": "WP_STAT2",
+                "device_id": "1",
+                "command": "3290",
+                "arg_number": "489",
+                "category": "Weapons",
+                "description": "Station 2"
+            },
+            "WP_STAT3": {
+                "type": "ToggleSwitch",
+                "msg": "WP_STAT3",
+                "device_id": "1",
+                "command": "3291",
+                "arg_number": "490",
+                "category": "Weapons",
+                "description": "Station 3"
+            },
+            "WP_STAT4": {
+                "type": "ToggleSwitch",
+                "msg": "WP_STAT4",
+                "device_id": "1",
+                "command": "3292",
+                "arg_number": "491",
+                "category": "Weapons",
+                "description": "Station 4"
+            },
+            "WP_STAT5": {
+                "type": "ToggleSwitch",
+                "msg": "WP_STAT5",
+                "device_id": "1",
+                "command": "3293",
+                "arg_number": "492",
+                "category": "Weapons",
+                "description": "Station 5"
+            },
+            "WP_STAT6": {
+                "type": "ToggleSwitch",
+                "msg": "WP_STAT6",
+                "device_id": "1",
+                "command": "3294",
+                "arg_number": "493",
+                "category": "Weapons",
+                "description": "Station 6"
+            },
+            "WP_GND_FIRE": {
+                "type": "ToggleSwitch",
+                "msg": "WP_GND_FIRE",
+                "device_id": "1",
+                "command": "3295",
+                "arg_number": "506",
+                "category": "Weapons",
+                "description": "Ground Fire"
+            },
+            "WP_MASTER_ARM_INIB_CVR": {
+                "type": "ToggleSwitch",
+                "msg": "WP_MASTER_ARM_INIB_CVR",
+                "device_id": "1",
+                "command": "3296",
+                "arg_number": "169",
+                "category": "Weapons",
+                "description": "Master Arm Inib Guard"
+            },
+            "WP_MASTER_ARM_INIB": {
+                "type": "ToggleSwitch",
+                "msg": "WP_MASTER_ARM_INIB",
+                "device_id": "1",
+                "command": "3297",
+                "arg_number": "170",
+                "category": "Weapons",
+                "description": "Master Arm Inib"
+            }
+        },
+        "Gunsight": {
+            "GUN_PWR": {
+                "type": "3PosTumb",
+                "msg": "GUN_PWR",
+                "device_id": "1",
+                "command": "3298",
+                "arg_number": "478",
+                "category": "Gunsight",
+                "description": "Gunsight Power"
+            },
+            "GUN_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "GUN_BRIGHT",
+                "device_id": "1",
+                "command": "3300",
+                "arg_number": "479",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsight",
+                "description": "Gunsight Brightness"
+            },
+            "GUN_TEST": {
+                "type": "PushButton",
+                "msg": "GUN_TEST",
+                "device_id": "1",
+                "command": "3301",
+                "arg_number": "480",
+                "category": "Gunsight",
+                "description": "Gunsight Test"
+            },
+            "GUN_DEP_100": {
+                "type": "MultipositionSwitch",
+                "msg": "GUN_DEP_100",
+                "device_id": "1",
+                "device_command": "3302",
+                "arg_number": "481",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "Gunsight",
+                "description": "Gunsight Depression reticle x 100"
+            },
+            "GUN_DEP_10": {
+                "type": "MultipositionSwitch",
+                "msg": "GUN_DEP_10",
+                "device_id": "1",
+                "device_command": "3303",
+                "arg_number": "482",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "Gunsight",
+                "description": "Gunsight Depression reticle x 10"
+            },
+            "GUN_DEP_1": {
+                "type": "MultipositionSwitch",
+                "msg": "GUN_DEP_1",
+                "device_id": "1",
+                "device_command": "3304",
+                "arg_number": "483",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "Gunsight",
+                "description": "Gunsight Depression reticle x 1"
+            }
+        },
+        "VOR FW": {
+            "FW_VOR_FREQU_1MHZ": {
+                "type": "Potentiometer",
+                "msg": "FW_VOR_FREQU_1MHZ",
+                "device_id": "1",
+                "command": "3307",
+                "arg_number": "563",
+                "limits": "{ 0, 1 }",
+                "category": "VOR FW",
+                "description": "Forward VOR Frequency 1MHz"
+            },
+            "FW_VOR_FREQU_50KHZ": {
+                "type": "Potentiometer",
+                "msg": "FW_VOR_FREQU_50KHZ",
+                "device_id": "1",
+                "command": "3308",
+                "arg_number": "564",
+                "limits": "{ 0, 1 }",
+                "category": "VOR FW",
+                "description": "Forward VOR Frequency 50 kHz"
+            },
+            "FW_VOR_TEST": {
+                "type": "PushButton",
+                "msg": "FW_VOR_TEST",
+                "device_id": "1",
+                "command": "3309",
+                "arg_number": "561",
+                "category": "VOR FW",
+                "description": "Forward VOR Frequency Test"
+            },
+            "FW_VOR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_VOR_PW",
+                "device_id": "1",
+                "command": "3310",
+                "arg_number": "562",
+                "category": "VOR FW",
+                "description": "Forward VOR Frequency Power Switch"
+            }
+        },
+        "VOR AFT": {
+            "AFT_VOR_FREQU_1MHZ": {
+                "type": "Potentiometer",
+                "msg": "AFT_VOR_FREQU_1MHZ",
+                "device_id": "1",
+                "command": "3311",
+                "arg_number": "539",
+                "limits": "{ 0, 1 }",
+                "category": "VOR AFT",
+                "description": "Aft VOR Frequency 1MHz"
+            },
+            "AFT_VOR_FREQU_50KHZ": {
+                "type": "Potentiometer",
+                "msg": "AFT_VOR_FREQU_50KHZ",
+                "device_id": "1",
+                "command": "3312",
+                "arg_number": "34",
+                "limits": "{ 0, 1 }",
+                "category": "VOR AFT",
+                "description": "Aft VOR Frequency 50 kHz"
+            },
+            "AFT_VOR_TEST": {
+                "type": "PushButton",
+                "msg": "AFT_VOR_TEST",
+                "device_id": "1",
+                "command": "3313",
+                "arg_number": "537",
+                "category": "VOR AFT",
+                "description": "Aft VOR Frequency Test"
+            },
+            "AFT_VOR_PW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_VOR_PW",
+                "device_id": "1",
+                "command": "3314",
+                "arg_number": "538",
+                "category": "VOR AFT",
+                "description": "Aft VOR Frequency Power Switch"
+            }
+        },
+        "TACAN FW": {
+            "FW_TCN_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_TCN_MODE",
+                "device_id": "1",
+                "device_command": "3315",
+                "arg_number": "569",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "TACAN FW",
+                "description": "Forward TACAN Mode"
+            },
+            "FW_TCN_XY": {
+                "type": "ToggleSwitch",
+                "msg": "FW_TCN_XY",
+                "device_id": "1",
+                "command": "3316",
+                "arg_number": "552",
+                "category": "TACAN FW",
+                "description": "Forward TACAN X/Y Switch"
+            },
+            "FW_TCN_1": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_TCN_1",
+                "device_id": "1",
+                "device_command": "3317",
+                "arg_number": "553",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "TACAN FW",
+                "description": "Forward TACAN Units"
+            },
+            "FW_TCN_10": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_TCN_10",
+                "device_id": "1",
+                "device_command": "3318",
+                "arg_number": "554",
+                "num_positions": "13",
+                "increment": "0.08333",
+                "category": "TACAN FW",
+                "description": "Forward TACAN Tens"
+            },
+            "FW_TCN_TEST": {
+                "type": "PushButton",
+                "msg": "FW_TCN_TEST",
+                "device_id": "1",
+                "command": "3319",
+                "arg_number": "555",
+                "category": "TACAN FW",
+                "description": "Forward TACAN Test"
+            }
+        },
+        "TACAN AFT": {
+            "AFT_TCN_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_TCN_MODE",
+                "device_id": "1",
+                "device_command": "3320",
+                "arg_number": "571",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "TACAN AFT",
+                "description": "Aft TACAN Mode"
+            },
+            "AFT_TCN_XY": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_TCN_XY",
+                "device_id": "1",
+                "command": "3321",
+                "arg_number": "572",
+                "category": "TACAN AFT",
+                "description": "Aft TACAN X/Y Switch"
+            },
+            "AFT_TCN_1": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_TCN_1",
+                "device_id": "1",
+                "device_command": "3322",
+                "arg_number": "573",
+                "num_positions": "10",
+                "increment": "0.1",
+                "category": "TACAN AFT",
+                "description": "Aft TACAN Units"
+            },
+            "AFT_TCN_10": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_TCN_10",
+                "device_id": "1",
+                "device_command": "3323",
+                "arg_number": "574",
+                "num_positions": "13",
+                "increment": "0.08333",
+                "category": "TACAN AFT",
+                "description": "Aft TACAN Tens"
+            },
+            "AFT_TCN_TEST": {
+                "type": "PushButton",
+                "msg": "AFT_TCN_TEST",
+                "device_id": "1",
+                "command": "3324",
+                "arg_number": "575",
+                "category": "TACAN AFT",
+                "description": "Aft TACAN Test"
+            }
+        },
+        "Comm1 FW": {
+            "FW_COM1_FUNC": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_FUNC",
+                "device_id": "1",
+                "device_command": "3325",
+                "arg_number": "664",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Function"
+            },
+            "FW_COM1_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_MODE",
+                "device_id": "1",
+                "device_command": "3326",
+                "arg_number": "665",
+                "num_positions": "3",
+                "increment": "0.50",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Mode"
+            },
+            "FW_COM1_FREQU_1": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_FREQU_1",
+                "device_id": "1",
+                "device_command": "3327",
+                "arg_number": "678",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Frequency xxxx1"
+            },
+            "FW_COM1_FREQU_10": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_FREQU_10",
+                "device_id": "1",
+                "device_command": "3328",
+                "arg_number": "677",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Frequency xxx1x"
+            },
+            "FW_COM1_FREQU_100": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_FREQU_100",
+                "device_id": "1",
+                "device_command": "3329",
+                "arg_number": "676",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Frequency xx1xx"
+            },
+            "FW_COM1_FREQU_1000": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_FREQU_1000",
+                "device_id": "1",
+                "device_command": "3330",
+                "arg_number": "675",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Frequency x1xxx"
+            },
+            "FW_COM1_FREQU_10000": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_FREQU_10000",
+                "device_id": "1",
+                "device_command": "3331",
+                "arg_number": "674",
+                "num_positions": "2",
+                "increment": "1",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Frequency 1xxxx"
+            },
+            "FW_COM1_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "FW_COM1_SQUELCH",
+                "device_id": "1",
+                "command": "3332",
+                "arg_number": "173",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Squelch"
+            },
+            "FW_COM1_TONE": {
+                "type": "PushButton",
+                "msg": "FW_COM1_TONE",
+                "device_id": "1",
+                "command": "3333",
+                "arg_number": "175",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Tone"
+            },
+            "FW_COM1_MEM": {
+                "type": "PushButton",
+                "msg": "FW_COM1_MEM",
+                "device_id": "1",
+                "command": "3334",
+                "arg_number": "679",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Mem"
+            },
+            "FW_COM1_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM1_CHAN",
+                "device_id": "1",
+                "device_command": "3335",
+                "arg_number": "673",
+                "num_positions": "20",
+                "increment": "0.0526",
+                "category": "Comm1 FW",
+                "description": "Forward Comm 1 Channel"
+            }
+        },
+        "Comm1 AFT": {
+            "AFT_COM1_FUNC": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_FUNC",
+                "device_id": "1",
+                "device_command": "3336",
+                "arg_number": "279",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Function"
+            },
+            "AFT_COM1_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_MODE",
+                "device_id": "1",
+                "device_command": "3337",
+                "arg_number": "280",
+                "num_positions": "3",
+                "increment": "0.50",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Mode"
+            },
+            "AFT_COM1_FREQU_1": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_FREQU_1",
+                "device_id": "1",
+                "device_command": "3338",
+                "arg_number": "526",
+                "num_positions": "4",
+                "increment": "0.33",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Frequency xxxx1"
+            },
+            "AFT_COM1_FREQU_10": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_FREQU_10",
+                "device_id": "1",
+                "device_command": "3339",
+                "arg_number": "525",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Frequency xxx1x"
+            },
+            "AFT_COM1_FREQU_100": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_FREQU_100",
+                "device_id": "1",
+                "device_command": "3340",
+                "arg_number": "524",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Frequency xx1xx"
+            },
+            "AFT_COM1_FREQU_1000": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_FREQU_1000",
+                "device_id": "1",
+                "device_command": "3341",
+                "arg_number": "523",
+                "num_positions": "10",
+                "increment": "0.111",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Frequency x1xxx"
+            },
+            "AFT_COM1_FREQU_10000": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_FREQU_10000",
+                "device_id": "1",
+                "device_command": "3342",
+                "arg_number": "522",
+                "num_positions": "2",
+                "increment": "1",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Frequency 1xxxx"
+            },
+            "AFT_COM1_SQUELCH": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_COM1_SQUELCH",
+                "device_id": "1",
+                "command": "3343",
+                "arg_number": "174",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Squelch"
+            },
+            "AFT_COM1_TONE": {
+                "type": "PushButton",
+                "msg": "AFT_COM1_TONE",
+                "device_id": "1",
+                "command": "3344",
+                "arg_number": "176",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Tone"
+            },
+            "AFT_COM1_MEM": {
+                "type": "PushButton",
+                "msg": "AFT_COM1_MEM",
+                "device_id": "1",
+                "command": "3345",
+                "arg_number": "527",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Mem"
+            },
+            "AFT_COM1_CHAN": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM1_CHAN",
+                "device_id": "1",
+                "device_command": "3346",
+                "arg_number": "521",
+                "num_positions": "20",
+                "increment": "0.0526",
+                "category": "Comm1 AFT",
+                "description": "Aft Comm 1 Channel"
+            }
+        },
+        "Comm2 FW": {
+            "FW_COM2_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM2_MODE",
+                "device_id": "1",
+                "device_command": "3347",
+                "arg_number": "650",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Mode"
+            },
+            "FW_COM2_FUNC": {
+                "type": "MultipositionSwitch",
+                "msg": "FW_COM2_FUNC",
+                "device_id": "1",
+                "device_command": "3348",
+                "arg_number": "651",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Function"
+            },
+            "FW_COM2_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "FW_COM2_BRIGHT",
+                "device_id": "1",
+                "command": "3349",
+                "arg_number": "652",
+                "limits": "{ 0, 1 }",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Brightness"
+            },
+            "FW_COM2_CHN_1": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_CHN_1",
+                "device_id": "1",
+                "downSwitch": "3350",
+                "upSwitch": "3351",
+                "arg_number": "654",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Channel x1"
+            },
+            "FW_COM2_CHN_10": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_CHN_10",
+                "device_id": "1",
+                "downSwitch": "3352",
+                "upSwitch": "3353",
+                "arg_number": "655",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Channel 1x"
+            },
+            "FW_COM2_FREQU_1": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_FREQU_1",
+                "device_id": "1",
+                "downSwitch": "3354",
+                "upSwitch": "3355",
+                "arg_number": "656",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Frequency xxxx1"
+            },
+            "FW_COM2_FREQU_10": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_FREQU_10",
+                "device_id": "1",
+                "downSwitch": "3356",
+                "upSwitch": "3357",
+                "arg_number": "657",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Frequency xxx1x"
+            },
+            "FW_COM2_FREQU_100": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_FREQU_100",
+                "device_id": "1",
+                "downSwitch": "3358",
+                "upSwitch": "3359",
+                "arg_number": "658",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Frequency xx1xx"
+            },
+            "FW_COM2_FREQU_1000": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_FREQU_1000",
+                "device_id": "1",
+                "downSwitch": "3360",
+                "upSwitch": "3361",
+                "arg_number": "659",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Frequency x1xxx"
+            },
+            "FW_COM2_FREQU_10000": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_FREQU_10000",
+                "device_id": "1",
+                "downSwitch": "3362",
+                "upSwitch": "3363",
+                "arg_number": "660",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Frequency 1xxxx"
+            },
+            "FW_COM2_SQUELCH": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "FW_COM2_SQUELCH",
+                "device_id": "1",
+                "downSwitch": "3364",
+                "upSwitch": "3364",
+                "arg_number": "662",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Squelch"
+            },
+            "FW_COM2_MOD": {
+                "type": "ToggleSwitch",
+                "msg": "FW_COM2_MOD",
+                "device_id": "1",
+                "command": "3366",
+                "arg_number": "661",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 Modulation"
+            },
+            "FW_COM2_TOD": {
+                "type": "ToggleSwitch",
+                "msg": "FW_COM2_TOD",
+                "device_id": "1",
+                "command": "3367",
+                "arg_number": "663",
+                "category": "Comm2 FW",
+                "description": "Forward Comm 2 TOD"
+            }
+        },
+        "Comm2 AFT": {
+            "AFT_COM2_MODE": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM2_MODE",
+                "device_id": "1",
+                "device_command": "3368",
+                "arg_number": "290",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Mode"
+            },
+            "AFT_COM2_FUNC": {
+                "type": "MultipositionSwitch",
+                "msg": "AFT_COM2_FUNC",
+                "device_id": "1",
+                "device_command": "3369",
+                "arg_number": "291",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Function"
+            },
+            "AFT_COM2_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "AFT_COM2_BRIGHT",
+                "device_id": "1",
+                "command": "3370",
+                "arg_number": "292",
+                "limits": "{ 0, 1 }",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Brightness"
+            },
+            "AFT_COM2_CHN_1": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_CHN_1",
+                "device_id": "1",
+                "downSwitch": "3371",
+                "upSwitch": "3372",
+                "arg_number": "294",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Channel x1"
+            },
+            "AFT_COM2_CHN_10": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_CHN_10",
+                "device_id": "1",
+                "downSwitch": "3373",
+                "upSwitch": "3374",
+                "arg_number": "295",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Channel 1x"
+            },
+            "AFT_COM2_FREQU_1": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_FREQU_1",
+                "device_id": "1",
+                "downSwitch": "3375",
+                "upSwitch": "3376",
+                "arg_number": "296",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Frequency xxxx1"
+            },
+            "AFT_COM2_FREQU_10": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_FREQU_10",
+                "device_id": "1",
+                "downSwitch": "3377",
+                "upSwitch": "3378",
+                "arg_number": "297",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Frequency xxx1x"
+            },
+            "AFT_COM2_FREQU_100": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_FREQU_100",
+                "device_id": "1",
+                "downSwitch": "3379",
+                "upSwitch": "3380",
+                "arg_number": "154",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Frequency xx1xx"
+            },
+            "AFT_COM2_FREQU_1000": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_FREQU_1000",
+                "device_id": "1",
+                "downSwitch": "3381",
+                "upSwitch": "3382",
+                "arg_number": "155",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Frequency x1xxx"
+            },
+            "AFT_COM2_FREQU_10000": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_FREQU_10000",
+                "device_id": "1",
+                "downSwitch": "3383",
+                "upSwitch": "3384",
+                "arg_number": "156",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Frequency 1xxxx"
+            },
+            "AFT_COM2_SQUELCH": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "AFT_COM2_SQUELCH",
+                "device_id": "1",
+                "downSwitch": "3385",
+                "upSwitch": "3385",
+                "arg_number": "158",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Squelch"
+            },
+            "AFT_COM2_MOD": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_COM2_MOD",
+                "device_id": "1",
+                "command": "3387",
+                "arg_number": "157",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 Modulation"
+            },
+            "AFT_COM2_TOD": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_COM2_TOD",
+                "device_id": "1",
+                "command": "3388",
+                "arg_number": "159",
+                "category": "Comm2 AFT",
+                "description": "Aft Comm 2 TOD"
+            }
+        },
+        "ICS FW": {
+            "FW_ICS_COM1_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_COM1_SW",
+                "device_id": "1",
+                "command": "3389",
+                "arg_number": "115",
+                "category": "ICS FW",
+                "description": "Forward ICS COM1 Switch"
+            },
+            "FW_ICS_COM1_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_COM1_VOL",
+                "device_id": "1",
+                "command": "3390",
+                "arg_number": "116",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS COM1 Volume"
+            },
+            "FW_ICS_COM2_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_COM2_SW",
+                "device_id": "1",
+                "command": "3391",
+                "arg_number": "117",
+                "category": "ICS FW",
+                "description": "Forward ICS COM2 Switch"
+            },
+            "FW_ICS_COM2_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_COM2_VOL",
+                "device_id": "1",
+                "command": "3392",
+                "arg_number": "118",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS COM2 Volume"
+            },
+            "FW_ICS_TCN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_TCN_SW",
+                "device_id": "1",
+                "command": "3393",
+                "arg_number": "119",
+                "category": "ICS FW",
+                "description": "Forward ICS TACAN Switch"
+            },
+            "FW_ICS_TCN_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_TCN_VOL",
+                "device_id": "1",
+                "command": "3394",
+                "arg_number": "120",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS TACAN Volume"
+            },
+            "FW_ICS_VORLOC_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_VORLOC_SW",
+                "device_id": "1",
+                "command": "3395",
+                "arg_number": "121",
+                "category": "ICS FW",
+                "description": "Forward ICS VOR/LOC Switch"
+            },
+            "FW_ICS_VORLOC_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_VORLOC_VOL",
+                "device_id": "1",
+                "command": "3396",
+                "arg_number": "122",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS VOR/LOC Volume"
+            },
+            "FW_ICS_ADF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_ADF_SW",
+                "device_id": "1",
+                "command": "3397",
+                "arg_number": "123",
+                "category": "ICS FW",
+                "description": "Forward ICS ADF Switch"
+            },
+            "FW_ICS_ADF_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_ADF_VOL",
+                "device_id": "1",
+                "command": "3398",
+                "arg_number": "124",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS ADF Volume"
+            },
+            "FW_ICS_MARK_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_MARK_SW",
+                "device_id": "1",
+                "command": "3399",
+                "arg_number": "125",
+                "category": "ICS FW",
+                "description": "Forward ICS Markers Switch"
+            },
+            "FW_ICS_MARK_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_MARK_VOL",
+                "device_id": "1",
+                "command": "3400",
+                "arg_number": "126",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS Markers Volume"
+            },
+            "FW_ICS_INTPH_SW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_INTPH_SW",
+                "device_id": "1",
+                "command": "3401",
+                "arg_number": "127",
+                "category": "ICS FW",
+                "description": "Forward ICS Interphone Switch"
+            },
+            "FW_ICS_INTPH_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_INTPH_VOL",
+                "device_id": "1",
+                "command": "3402",
+                "arg_number": "128",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS Interphone Volume"
+            },
+            "FW_ICS_MASTER_VOL": {
+                "type": "Potentiometer",
+                "msg": "FW_ICS_MASTER_VOL",
+                "device_id": "1",
+                "command": "3403",
+                "arg_number": "129",
+                "limits": "{ 0, 1 }",
+                "category": "ICS FW",
+                "description": "Forward ICS Master Volume"
+            },
+            "FW_ICS_CALL": {
+                "type": "PushButton",
+                "msg": "FW_ICS_CALL",
+                "device_id": "1",
+                "command": "3404",
+                "arg_number": "130",
+                "category": "ICS FW",
+                "description": "Forward ICS Call Switch"
+            },
+            "FW_ICS_RADIO_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "FW_ICS_RADIO_SEL",
+                "device_id": "1",
+                "command": "3405",
+                "arg_number": "131",
+                "category": "ICS FW",
+                "description": "Forward ICS COM1/COM2 TX Selector"
+            }
+        },
+        "ICS AFT": {
+            "AFT_ICS_COM1_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_COM1_SW",
+                "device_id": "1",
+                "command": "3406",
+                "arg_number": "132",
+                "category": "ICS AFT",
+                "description": "Aft ICS COM1 Switch"
+            },
+            "AFT_ICS_COM1_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_COM1_VOL",
+                "device_id": "1",
+                "command": "3407",
+                "arg_number": "133",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS COM1 Volume"
+            },
+            "AFT_ICS_COM2_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_COM2_SW",
+                "device_id": "1",
+                "command": "3408",
+                "arg_number": "134",
+                "category": "ICS AFT",
+                "description": "Aft ICS COM2 Switch"
+            },
+            "AFT_ICS_COM2_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_COM2_VOL",
+                "device_id": "1",
+                "command": "3409",
+                "arg_number": "135",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS COM2 Volume"
+            },
+            "AFT_ICS_TCN_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_TCN_SW",
+                "device_id": "1",
+                "command": "3410",
+                "arg_number": "136",
+                "category": "ICS AFT",
+                "description": "Aft ICS TACAN Switch"
+            },
+            "AFT_ICS_TCN_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_TCN_VOL",
+                "device_id": "1",
+                "command": "3411",
+                "arg_number": "137",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS TACAN Volume"
+            },
+            "AFT_ICS_VORLOC_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_VORLOC_SW",
+                "device_id": "1",
+                "command": "3412",
+                "arg_number": "138",
+                "category": "ICS AFT",
+                "description": "Aft ICS VOR/LOC Switch"
+            },
+            "AFT_ICS_VORLOC_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_VORLOC_VOL",
+                "device_id": "1",
+                "command": "3413",
+                "arg_number": "139",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS VOR/LOC Volume"
+            },
+            "AFT_ICS_ADF_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_ADF_SW",
+                "device_id": "1",
+                "command": "3414",
+                "arg_number": "140",
+                "category": "ICS AFT",
+                "description": "Aft ICS ADF Switch"
+            },
+            "AFT_ICS_ADF_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_ADF_VOL",
+                "device_id": "1",
+                "command": "3415",
+                "arg_number": "141",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS ADF Volume"
+            },
+            "AFT_ICS_MARK_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_MARK_SW",
+                "device_id": "1",
+                "command": "3416",
+                "arg_number": "142",
+                "category": "ICS AFT",
+                "description": "Aft ICS Markers Switch"
+            },
+            "AFT_ICS_MARK_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_MARK_VOL",
+                "device_id": "1",
+                "command": "3417",
+                "arg_number": "143",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS Markers Volume"
+            },
+            "AFT_ICS_INTPH_SW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_INTPH_SW",
+                "device_id": "1",
+                "command": "3418",
+                "arg_number": "144",
+                "category": "ICS AFT",
+                "description": "Aft ICS Interphone Switch"
+            },
+            "AFT_ICS_INTPH_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_INTPH_VOL",
+                "device_id": "1",
+                "command": "3419",
+                "arg_number": "145",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS Interphone Volume"
+            },
+            "AFT_ICS_MASTER_VOL": {
+                "type": "Potentiometer",
+                "msg": "AFT_ICS_MASTER_VOL",
+                "device_id": "1",
+                "command": "3420",
+                "arg_number": "146",
+                "limits": "{ 0, 1 }",
+                "category": "ICS AFT",
+                "description": "Aft ICS Master Volume"
+            },
+            "AFT_ICS_CALL": {
+                "type": "PushButton",
+                "msg": "AFT_ICS_CALL",
+                "device_id": "1",
+                "command": "3421",
+                "arg_number": "147",
+                "category": "ICS AFT",
+                "description": "Aft ICS Call Switch"
+            },
+            "AFT_ICS_RADIO_SEL": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_ICS_RADIO_SEL",
+                "device_id": "1",
+                "command": "3422",
+                "arg_number": "148",
+                "category": "ICS AFT",
+                "description": "Aft ICS COM1/COM2 TX Selector"
+            }
+        },
+        "Oxygen FW": {
+            "FW_OXY_PW": {
+                "type": "ToggleSwitch",
+                "msg": "FW_OXY_PW",
+                "device_id": "1",
+                "command": "3423",
+                "arg_number": "587",
+                "category": "Oxygen FW",
+                "description": "Forward Oxygen Power Supply"
+            },
+            "FW_OXY_DILUIT": {
+                "type": "ToggleSwitch",
+                "msg": "FW_OXY_DILUIT",
+                "device_id": "1",
+                "command": "3424",
+                "arg_number": "589",
+                "category": "Oxygen FW",
+                "description": "Forward Oxygen Diluiter Lever (Normal / 100%)"
+            },
+            "FW_OXY_EMERG": {
+                "type": "ToggleSwitch",
+                "msg": "FW_OXY_EMERG",
+                "device_id": "1",
+                "command": "3425",
+                "arg_number": "588",
+                "category": "Oxygen FW",
+                "description": "Forward Oxygen Emergency Lever"
+            }
+        },
+        "Oxygen AFT": {
+            "AFT_OXY_PW": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_OXY_PW",
+                "device_id": "1",
+                "command": "3426",
+                "arg_number": "113",
+                "category": "Oxygen AFT",
+                "description": "Aft Oxygen Power Supply"
+            },
+            "AFT_OXY_DILUIT": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_OXY_DILUIT",
+                "device_id": "1",
+                "command": "3426",
+                "arg_number": "113",
+                "category": "Oxygen AFT",
+                "description": "Aft Oxygen Diluiter Lever (Normal / 100%)"
+            },
+            "AFT_OXY_EMERG": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_OXY_EMERG",
+                "device_id": "1",
+                "command": "3428",
+                "arg_number": "111",
+                "category": "Oxygen AFT",
+                "description": "Aft Oxygen Emergency Lever"
+            }
+        },
+        "Cockpit": {
+            "FW_GLOVE_COMP": {
+                "type": "PushButton",
+                "msg": "FW_GLOVE_COMP",
+                "device_id": "1",
+                "command": "3429",
+                "arg_number": "206",
+                "category": "Cockpit",
+                "description": "Forward Glove Compartment"
+            },
+            "FW_CANOPY_SEVERANCE_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "FW_CANOPY_SEVERANCE_LVR",
+                "device_id": "1",
+                "command": "3209",
+                "arg_number": "583",
+                "category": "Cockpit",
+                "description": "Forward Canopy Severance Handle"
+            },
+            "FW_CANOPY_SEVERANCE_PIN": {
+                "type": "ToggleSwitch",
+                "msg": "FW_CANOPY_SEVERANCE_PIN",
+                "device_id": "1",
+                "command": "3210",
+                "arg_number": "584",
+                "category": "Cockpit",
+                "description": "Forward Canopy Severance Safety Pin"
+            },
+            "AFT_GLOVE_COMP": {
+                "type": "PushButton",
+                "msg": "AFT_GLOVE_COMP",
+                "device_id": "1",
+                "command": "3430",
+                "arg_number": "207",
+                "category": "Cockpit",
+                "description": "Aft Glove Compartment"
+            },
+            "AFT_CANOPY_SEVERANCE_LVR": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_CANOPY_SEVERANCE_LVR",
+                "device_id": "1",
+                "command": "3211",
+                "arg_number": "741",
+                "category": "Cockpit",
+                "description": "Aft Canopy Severance Handle"
+            },
+            "AFT_CANOPY_SEVERANCE_PIN": {
+                "type": "ToggleSwitch",
+                "msg": "AFT_CANOPY_SEVERANCE_PIN",
+                "device_id": "1",
+                "command": "3212",
+                "arg_number": "742",
+                "category": "Cockpit",
+                "description": "Aft Canopy Severance Safety Pin"
+            },
+            "CURTAIN_HANDLE": {
+                "type": "ToggleSwitch",
+                "msg": "CURTAIN_HANDLE",
+                "device_id": "1",
+                "command": "3431",
+                "arg_number": "1999",
+                "category": "Cockpit",
+                "description": "Curtain Handle"
+            }
+        },
+        "ELT": {
+            "ELT_SW": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "ELT_SW",
+                "device_id": "1",
+                "downSwitch": "3432",
+                "upSwitch": "3432",
+                "arg_number": "727",
+                "category": "ELT",
+                "description": "ELT Switch"
+            }
+        },
+        "IFF": {
+            "IFF_MASTER": {
+                "type": "MultipositionSwitch",
+                "msg": "IFF_MASTER",
+                "device_id": "1",
+                "device_command": "3434",
+                "arg_number": "714",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "IFF",
+                "description": "IFF Master"
+            },
+            "IFF_CODE": {
+                "type": "MultipositionSwitch",
+                "msg": "IFF_CODE",
+                "device_id": "1",
+                "device_command": "3435",
+                "arg_number": "713",
+                "num_positions": "5",
+                "increment": "0.25",
+                "category": "IFF",
+                "description": "IFF Code"
+            },
+            "IFF_ANT": {
+                "type": "3PosTumb",
+                "msg": "IFF_ANT",
+                "device_id": "1",
+                "command": "3436",
+                "arg_number": "715",
+                "category": "IFF",
+                "description": "IFF ANT Switch"
+            },
+            "IFF_M4_CONT": {
+                "type": "3PosTumb",
+                "msg": "IFF_M4_CONT",
+                "device_id": "1",
+                "command": "3437",
+                "arg_number": "710",
+                "category": "IFF",
+                "description": "IFF Mode 4 Control"
+            },
+            "IFF_M4_AUDIO": {
+                "type": "3PosTumb",
+                "msg": "IFF_M4_AUDIO",
+                "device_id": "1",
+                "command": "3438",
+                "arg_number": "711",
+                "category": "IFF",
+                "description": "IFF Mode 4 Audio"
+            },
+            "IFF_RAD": {
+                "type": "PushButton",
+                "msg": "IFF_RAD",
+                "device_id": "1",
+                "command": "3439",
+                "arg_number": "716",
+                "category": "IFF",
+                "description": "IFF RAD Switch"
+            },
+            "IFF_M1_CONT": {
+                "type": "3PosTumb",
+                "msg": "IFF_M1_CONT",
+                "device_id": "1",
+                "command": "3440",
+                "arg_number": "720",
+                "category": "IFF",
+                "description": "IFF Mode 1 Control"
+            },
+            "IFF_M2_CONT": {
+                "type": "3PosTumb",
+                "msg": "IFF_M2_CONT",
+                "device_id": "1",
+                "command": "3441",
+                "arg_number": "719",
+                "category": "IFF",
+                "description": "IFF Mode 2 Control"
+            },
+            "IFF_M3A_CONT": {
+                "type": "3PosTumb",
+                "msg": "IFF_M3A_CONT",
+                "device_id": "1",
+                "command": "3442",
+                "arg_number": "718",
+                "category": "IFF",
+                "description": "IFF Mode 3/A Control"
+            },
+            "IFF_M3C_CONT": {
+                "type": "3PosTumb",
+                "msg": "IFF_M3C_CONT",
+                "device_id": "1",
+                "command": "3443",
+                "arg_number": "717",
+                "category": "IFF",
+                "description": "IFF Mode 3/C Control"
+            },
+            "IFF_IDENT_MIC": {
+                "type": "Springloaded_3PosTumb",
+                "msg": "IFF_IDENT_MIC",
+                "device_id": "1",
+                "downSwitch": "3444",
+                "upSwitch": "3444",
+                "arg_number": "712",
+                "category": "IFF",
+                "description": "IFF IDENT-MIC Switch"
+            },
+            "IFF_CODE_SW_1": {
+                "type": "PushButton",
+                "msg": "IFF_CODE_SW_1",
+                "device_id": "1",
+                "command": "3446",
+                "arg_number": "734",
+                "category": "IFF",
+                "description": "IFF Code Switch 1"
+            },
+            "IFF_CODE_SW_2": {
+                "type": "PushButton",
+                "msg": "IFF_CODE_SW_2",
+                "device_id": "1",
+                "command": "3447",
+                "arg_number": "735",
+                "category": "IFF",
+                "description": "IFF Code Switch 2"
+            },
+            "IFF_CODE_SW_3": {
+                "type": "PushButton",
+                "msg": "IFF_CODE_SW_3",
+                "device_id": "1",
+                "command": "3448",
+                "arg_number": "736",
+                "category": "IFF",
+                "description": "IFF Code Switch 3"
+            },
+            "IFF_CODE_SW_4": {
+                "type": "PushButton",
+                "msg": "IFF_CODE_SW_4",
+                "device_id": "1",
+                "command": "3449",
+                "arg_number": "737",
+                "category": "IFF",
+                "description": "IFF Code Switch 4"
+            },
+            "IFF_CODE_SW_5": {
+                "type": "PushButton",
+                "msg": "IFF_CODE_SW_5",
+                "device_id": "1",
+                "command": "3450",
+                "arg_number": "738",
+                "category": "IFF",
+                "description": "IFF Code Switch 5"
+            },
+            "IFF_CODE_SW_6": {
+                "type": "PushButton",
+                "msg": "IFF_CODE_SW_6",
+                "device_id": "1",
+                "command": "3451",
+                "arg_number": "739",
+                "category": "IFF",
+                "description": "IFF Code Switch 6"
+            },
+            "IFF_TEST_GO": {
+                "type": "PushButton",
+                "msg": "IFF_TEST_GO",
+                "device_id": "1",
+                "command": "3452",
+                "arg_number": "743",
+                "category": "IFF",
+                "description": "IFF Test Switch GO"
+            },
+            "IFF_TEST_NOGO": {
+                "type": "PushButton",
+                "msg": "IFF_TEST_NOGO",
+                "device_id": "1",
+                "command": "3453",
+                "arg_number": "744",
+                "category": "IFF",
+                "description": "IFF Test Switch NOGO"
+            },
+            "IFF_TEST_REPLY": {
+                "type": "PushButton",
+                "msg": "IFF_TEST_REPLY",
+                "device_id": "1",
+                "command": "3454",
+                "arg_number": "745",
+                "category": "IFF",
+                "description": "IFF Test Switch REPLY"
+            }
+        },
+        "Gunsight Repeater": {
+            "GUN_REP_PWR": {
+                "type": "3PosTumb",
+                "msg": "GUN_REP_PWR",
+                "device_id": "1",
+                "command": "3305",
+                "arg_number": "409",
+                "category": "Gunsight Repeater",
+                "description": "Gunsight Repeater Power"
+            },
+            "GUN_REP_BRIGHT": {
+                "type": "Potentiometer",
+                "msg": "GUN_REP_BRIGHT",
+                "device_id": "1",
+                "command": "3306",
+                "arg_number": "408",
+                "limits": "{ 0, 1 }",
+                "category": "Gunsight Repeater",
+                "description": "Gunsight Repeater Brightness"
+            }
+        }
+    },
+    "id": {
+        "aircraft": "MB-339",
+        "date": "Dec 20 2024, 18:35 PM -0800",
+        "version": "v0.8.3"
+    }
+}
